@@ -1,0 +1,13 @@
+Sources and credit
+
+Four practices in `.cursor/skills/forecaster/` were adapted from
+https://github.com/anthropics/financial-services (Apache License 2.0,
+https://www.apache.org/licenses/LICENSE-2.0):
+
+- revision table, from the model-update skill
+- pre-release dated consensus, from the earnings-analysis workflow
+- one-time versus sustainable beat/miss classification, from earnings-analysis step 5
+- "a driver explains why, not what", from the fund-admin variance-commentary skill
+
+The wording in this repository is our own. The upstream license covers that project.
+No upstream text is shipped here beyond the short phrase above.

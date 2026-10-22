@@ -1,0 +1,1715 @@
+{
+  "ticker": "HROW",
+  "company": "Harrow, Inc.",
+  "units": "USD millions",
+  "baseline_period": "FY25A",
+  "explicit_periods": [
+    "FY26E",
+    "FY27E"
+  ],
+  "as_of": "2026-10-22",
+  "method_note": "Re-derived under the guidance-position method. FY25 guidance was a single point, so no coefficient. FY26 revenue leaves the range because H1 missed the low end and a revenue consensus exists.",
+  "lines": [
+    {
+      "name": "IHEEZO",
+      "periods": {
+        "FY24A": {
+          "value": 49.303,
+          "tag": "A",
+          "citation": {
+            "text": "FY2025 10-K product revenue, IHEEZO. FY2024 is the prior-year column of the same table.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "FY25A": {
+          "value": 81.348,
+          "tag": "A",
+          "citation": {
+            "text": "FY2025 10-K product revenue, IHEEZO. FY2024 is the prior-year column of the same table.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "YoY": {
+          "value": 0.64996,
+          "tag": "C",
+          "citation": {
+            "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "H1A": {
+          "value": 17.535,
+          "tag": "A",
+          "citation": {
+            "text": "Q2 2026 10-Q six-month IHEEZO revenue. H1 is reported; it is not forecast.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+          }
+        },
+        "H2E": {
+          "value": 55.608299,
+          "tag": "S",
+          "citation": {
+            "text": "Price: July 1, 2026 net price per unit +25%, so H2 quarters are Q2 revenue times 1.25 with units held at the Q2 run rate (65,477, already +34% year over year). FY27 units grow 17%, half that Q2 unit growth, because a recent launch rarely keeps a 34% unit step. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        },
+        "FY26E": {
+          "value": 73.143299,
+          "tag": "S",
+          "citation": {
+            "text": "Price: July 1, 2026 net price per unit +25%, so H2 quarters are Q2 revenue times 1.25 with units held at the Q2 run rate (65,477, already +34% year over year). FY27 units grow 17%, half that Q2 unit growth, because a recent launch rarely keeps a 34% unit step. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        },
+        "FY27E": {
+          "value": 125.372945,
+          "tag": "S",
+          "citation": {
+            "text": "Price: July 1, 2026 net price per unit +25%, so H2 quarters are Q2 revenue times 1.25 with units held at the Q2 run rate (65,477, already +34% year over year). FY27 units grow 17%, half that Q2 unit growth, because a recent launch rarely keeps a 34% unit step. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        }
+      }
+    },
+    {
+      "name": "VEVYE",
+      "periods": {
+        "FY24A": {
+          "value": 28.061,
+          "tag": "A",
+          "citation": {
+            "text": "FY2025 10-K product revenue, VEVYE. FY2024 is the prior-year column of the same table.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "FY25A": {
+          "value": 88.688,
+          "tag": "A",
+          "citation": {
+            "text": "FY2025 10-K product revenue, VEVYE. FY2024 is the prior-year column of the same table.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "YoY": {
+          "value": 2.160543,
+          "tag": "C",
+          "citation": {
+            "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "H1A": {
+          "value": 50.335,
+          "tag": "A",
+          "citation": {
+            "text": "Q2 2026 10-Q six-month VEVYE revenue.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+          }
+        },
+        "H2E": {
+          "value": 93.352982,
+          "tag": "S",
+          "citation": {
+            "text": "Volume and mix after the August 1 coverage win: H2 steps +7.5% a quarter off Q2, faster than the 'momentum continues' default of holding the prior growth rate, and FY27 is the Q4 run rate times 4 times 1.10. The 'over $100 million' 2026 floor is met. The Q1 gross-to-net cut of about $8 million is one-time and is not in this run rate. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        },
+        "FY26E": {
+          "value": 143.687982,
+          "tag": "S",
+          "citation": {
+            "text": "Volume and mix after the August 1 coverage win: H2 steps +7.5% a quarter off Q2, faster than the 'momentum continues' default of holding the prior growth rate, and FY27 is the Q4 run rate times 4 times 1.10. The 'over $100 million' 2026 floor is met. The Q1 gross-to-net cut of about $8 million is one-time and is not in this run rate. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        },
+        "FY27E": {
+          "value": 205.03103,
+          "tag": "S",
+          "citation": {
+            "text": "Volume and mix after the August 1 coverage win: H2 steps +7.5% a quarter off Q2, faster than the 'momentum continues' default of holding the prior growth rate, and FY27 is the Q4 run rate times 4 times 1.10. The 'over $100 million' 2026 floor is met. The Q1 gross-to-net cut of about $8 million is one-time and is not in this run rate. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        }
+      }
+    },
+    {
+      "name": "Other branded",
+      "periods": {
+        "FY24A": {
+          "value": 38.751,
+          "tag": "A",
+          "citation": {
+            "text": "FY2025 10-K 'other branded products' plus 'other revenues'. Same split for FY2024. Not a finer cut than the filing.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "FY25A": {
+          "value": 25.72,
+          "tag": "A",
+          "citation": {
+            "text": "FY2025 10-K 'other branded products' plus 'other revenues'. Same split for FY2024. Not a finer cut than the filing.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "YoY": {
+          "value": -0.336275,
+          "tag": "C",
+          "citation": {
+            "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "H1A": {
+          "value": 18.939,
+          "tag": "A",
+          "citation": {
+            "text": "Q2 2026 10-Q six-month other branded products plus other revenues.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+          }
+        },
+        "H2E": {
+          "value": 44.859758,
+          "tag": "S",
+          "citation": {
+            "text": "BYOOVIZ and the rest of the branded book are a new-line ramp (Q3 13 and Q4 14.5 are judgments; the filing only says revenue builds over the balance of 2026). TYRVAYA adds a $4 million Q4 stub, inside the 1-3% 'modest' band, and a $30 million 2027 floor ('more than $30 million'). The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        },
+        "FY26E": {
+          "value": 63.798758,
+          "tag": "S",
+          "citation": {
+            "text": "BYOOVIZ and the rest of the branded book are a new-line ramp (Q3 13 and Q4 14.5 are judgments; the filing only says revenue builds over the balance of 2026). TYRVAYA adds a $4 million Q4 stub, inside the 1-3% 'modest' band, and a $30 million 2027 floor ('more than $30 million'). The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        },
+        "FY27E": {
+          "value": 132.684811,
+          "tag": "S",
+          "citation": {
+            "text": "BYOOVIZ and the rest of the branded book are a new-line ramp (Q3 13 and Q4 14.5 are judgments; the filing only says revenue builds over the balance of 2026). TYRVAYA adds a $4 million Q4 stub, inside the 1-3% 'modest' band, and a $30 million 2027 floor ('more than $30 million'). The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        }
+      }
+    },
+    {
+      "name": "ImprimisRx",
+      "periods": {
+        "FY24A": {
+          "value": 83.499,
+          "tag": "A",
+          "citation": {
+            "text": "FY2025 10-K ImprimisRx (compounding) revenue. FY2024 is the prior-year column.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "FY25A": {
+          "value": 76.547,
+          "tag": "A",
+          "citation": {
+            "text": "FY2025 10-K ImprimisRx (compounding) revenue. FY2024 is the prior-year column.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "YoY": {
+          "value": -0.083258,
+          "tag": "C",
+          "citation": {
+            "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "H1A": {
+          "value": 28.055,
+          "tag": "A",
+          "citation": {
+            "text": "Q2 2026 10-Q six-month compounding revenue.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+          }
+        },
+        "H2E": {
+          "value": 41.458961,
+          "tag": "S",
+          "citation": {
+            "text": "Mature compounding book: H2 is flat at the Q2 run rate, and FY27 applies the FY25 volume decline (ImprimisRx fell year over year). No structural change was guided. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        },
+        "FY26E": {
+          "value": 69.513961,
+          "tag": "S",
+          "citation": {
+            "text": "Mature compounding book: H2 is flat at the Q2 run rate, and FY27 applies the FY25 volume decline (ImprimisRx fell year over year). No structural change was guided. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        },
+        "FY27E": {
+          "value": 73.239214,
+          "tag": "S",
+          "citation": {
+            "text": "Mature compounding book: H2 is flat at the Q2 run rate, and FY27 applies the FY25 volume decline (ImprimisRx fell year over year). No structural change was guided. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        }
+      }
+    }
+  ],
+  "totals": {
+    "revenue": {
+      "FY24A": {
+        "value": 199.614,
+        "tag": "A",
+        "citation": {
+          "text": "FY2024 revenue, prior-year column of the FY2025 10-K.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+        }
+      },
+      "FY25A": {
+        "value": 272.303,
+        "tag": "A",
+        "citation": {
+          "text": "FY2025 revenue, 10-K and the March 2, 2026 release.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+        }
+      },
+      "YoY": {
+        "value": 0.364148,
+        "tag": "C",
+        "citation": {
+          "text": "Reported FY25 revenue over FY24 revenue, minus 1.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+        }
+      },
+      "H1A": {
+        "value": 114.864,
+        "tag": "A",
+        "citation": {
+          "text": "Six months ended June 30, 2026 revenue, Q2 10-Q.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+        }
+      },
+      "H2E": {
+        "value": 235.28,
+        "tag": "E",
+        "citation": {
+          "text": "H1 revenue was $114.864 million against an original H1 range of $133-153 million, so the position coefficient is negative. Analyst revenue estimates exist, so FY26 uses the Yahoo consensus carried from yfinance on 2026-10-22 ($350.144 million; range $341-355 million), not the $350-365 million guide. That pull was not repeated for this file. The live Yahoo page will have moved. H2 is the consensus (or scenario) year minus reported H1.",
+          "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+        }
+      },
+      "FY26E": {
+        "value": 350.144,
+        "tag": "E",
+        "citation": {
+          "text": "H1 revenue was $114.864 million against an original H1 range of $133-153 million, so the position coefficient is negative. Analyst revenue estimates exist, so FY26 uses the Yahoo consensus carried from yfinance on 2026-10-22 ($350.144 million; range $341-355 million), not the $350-365 million guide. That pull was not repeated for this file. The live Yahoo page will have moved.",
+          "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+        }
+      },
+      "FY27E": {
+        "value": 536.328,
+        "tag": "E",
+        "citation": {
+          "text": "FY27 has no formal range. The same branch, estimates because the latest completed range was missed, uses the carried FY27 consensus.",
+          "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+        }
+      }
+    },
+    "ebitda": {
+      "FY24A": {
+        "value": 40.327,
+        "tag": "A",
+        "citation": {
+          "text": "FY2024 adjusted EBITDA, March 2, 2026 release reconciliation.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+        }
+      },
+      "FY25A": {
+        "value": 61.923,
+        "tag": "A",
+        "citation": {
+          "text": "FY2025 adjusted EBITDA, March 2, 2026 release reconciliation.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+        }
+      },
+      "YoY": {
+        "value": 0.535522,
+        "tag": "C",
+        "citation": {
+          "text": "FY25 adjusted EBITDA over FY24 adjusted EBITDA, minus 1.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+        }
+      },
+      "H1A": {
+        "value": -13.891,
+        "tag": "A",
+        "citation": {
+          "text": "First-half 2026 adjusted EBITDA, August 10, 2026 release reconciliation.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+        }
+      },
+      "H2E": {
+        "value": 66.225503,
+        "tag": "C",
+        "citation": {
+          "text": "H2 gross profit at the scenario gross margin, minus Q2 cash-opex run rate times two and the assumed TYRVAYA stub cost. No EBITDA consensus was in the carried Yahoo pull, and no completed EBITDA range exists to place a coefficient.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+        }
+      },
+      "FY26E": {
+        "value": 52.334503,
+        "tag": "C",
+        "citation": {
+          "text": "H1 adjusted EBITDA plus the H2 cost build. The $80-100 million guide is not used: the coefficient is undefined for EBITDA and there is no carried EBITDA estimate.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+        }
+      },
+      "FY27E": {
+        "value": 160.455046,
+        "tag": "S",
+        "citation": {
+          "text": "FY27 revenue times the gross-margin assumption, minus four quarters of the Q2 cash-opex run rate grown by the scenario inflation, minus an assumed $20 million TYRVAYA cost. Evidence for a specific FY27 margin has run out; this is the cost build.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+        }
+      }
+    }
+  },
+  "organic": {
+    "revenue": {
+      "FY25A": {
+        "value": 272.303,
+        "tag": "A",
+        "citation": {
+          "text": "Year-0 revenue. TYRVAYA had not closed, so year-0 is already organic.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+        }
+      },
+      "FY26E": {
+        "value": 344.447523,
+        "tag": "C",
+        "citation": {
+          "text": "Consensus revenue minus TYRVAYA, which closed after year 0 and is booked as an acquisition rather than in the organic path.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+        }
+      },
+      "FY27E": {
+        "value": 495.16415,
+        "tag": "C",
+        "citation": {
+          "text": "FY27 consensus revenue minus TYRVAYA's scaled 2027 floor, kept out of organic sales growth.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+        }
+      }
+    },
+    "ebitda": {
+      "FY25A": {
+        "value": 61.923,
+        "tag": "A",
+        "citation": {
+          "text": "FY2025 adjusted EBITDA from the March 2, 2026 earnings release reconciliation.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+        }
+      },
+      "FY26E": {
+        "value": 51.160069,
+        "tag": "C",
+        "citation": {
+          "text": "Cost-build EBITDA minus TYRVAYA's contribution (its revenue times the gross-margin assumption, less the assumed incremental cost).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+        }
+      },
+      "FY27E": {
+        "value": 150.28977,
+        "tag": "C",
+        "citation": {
+          "text": "FY27 cost-build EBITDA minus TYRVAYA, so forecast_ebitda does not also get EBITDA that acquisitions will add.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+        }
+      }
+    }
+  },
+  "finagle": {
+    "ebitda_basis": {
+      "value": "organic",
+      "tag": "C",
+      "citation": {
+        "text": "TYRVAYA closes in October 2026, after FY2025, so the EBITDA path stays organic and the purchase is an acquisition.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+      }
+    },
+    "ebitda_growth": {
+      "value": [
+        -0.173812,
+        1.937638
+      ],
+      "tag": "C",
+      "citation": {
+        "text": "Organic adjusted-EBITDA growth for FY26 and FY27 off FY25. The FY27 step is large because consensus revenue is scaled up and cash opex stays on the Q2 run rate; that is a flagged consequence, not a margin target management stated.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+      }
+    },
+    "sales_growth": {
+      "value": [
+        0.264942,
+        0.43756
+      ],
+      "tag": "C",
+      "citation": {
+        "text": "Organic sales growth for the same two years. Finagle recomputes the margin it passes to forecast_ebitda as ending organic EBITDA over ending organic revenue, so these rates are the ones that reproduce those dollars.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+      }
+    },
+    "me": {
+      "value": 0.303515,
+      "tag": "C",
+      "citation": {
+        "text": "Final explicit year organic EBITDA divided by organic revenue. This is the margin forecast_ebitda uses once sales growth reaches that year, not the year-0 margin.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+      }
+    },
+    "mc": {
+      "value": 0.518162,
+      "tag": "S",
+      "citation": {
+        "text": "Contribution margin set halfway between that ending EBITDA margin and the trailing gross margin, which is the band a dollar of extra sales should fall in. Finagle's own filler would average the year-0 margin instead; this is set on purpose so the fade is not that default.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+      }
+    },
+    "gsnext": {
+      "value": 0.2,
+      "tag": "S",
+      "citation": {
+        "text": "First sales growth after the explicit window. FY25 revenue grew 36%, and management still expects a launch a year through 2029 inside the existing cost structure, but there is no FY28 dollar evidence, so 20% fades the explicit step-up instead of repeating it. Terminal growth after that is Finagle's.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+      }
+    },
+    "deal_spend": {
+      "value": [
+        0,
+        30
+      ],
+      "tag": "G",
+      "citation": {
+        "text": "Cash paid at the October 5, 2026 close. Index 0 is FY2025, which had no deal. Contingent milestones of up to $70 million are not included.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+      }
+    },
+    "acquisition": {
+      "year": {
+        "value": 1,
+        "tag": "G",
+        "citation": {
+          "text": "Close is October 5, 2026, the first forecast year if year 0 is FY2025.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+        }
+      },
+      "deal_value": {
+        "value": 30,
+        "tag": "G",
+        "citation": {
+          "text": "Harrow paid $30 million in cash at closing.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+        }
+      },
+      "multiple": {
+        "value": 2.951224,
+        "tag": "S",
+        "citation": {
+          "text": "Cash paid divided by FY27 TYRVAYA EBITDA. That EBITDA is the scaled revenue floor times gross margin, less an assumed $20 million of incremental cost, because the filing says revenue exceeds incremental cost and does not give the cost.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+        }
+      },
+      "leverage": {
+        "value": 0,
+        "tag": "G",
+        "citation": {
+          "text": "Funded with cash at closing, so the deal adds no debt.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+        }
+      },
+      "next_growth": {
+        "value": 0.15,
+        "tag": "S",
+        "citation": {
+          "text": "No growth rate after the 2027 floor was stated. 15% is a placeholder below the organic gsnext fade and should be replaced if a later source appears.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+        }
+      },
+      "capex_frac": {
+        "value": 0.02,
+        "tag": "S",
+        "citation": {
+          "text": "No capex figure was given for the brand. 2% of acquired EBITDA is a thin asset-light placeholder.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+        }
+      },
+      "pay_from_cash": {
+        "value": false,
+        "tag": "C",
+        "citation": {
+          "text": "The cash left the company at a year-1 close. Finagle's pay_from_cash flag only reduces year-0 cash, so it is false here.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+        }
+      }
+    }
+  },
+  "bridge": {
+    "h1_coefficient": {
+      "value": -0.9068,
+      "tag": "C",
+      "citation": {
+        "text": "H1 actual minus the original low, divided by the original high minus low. Negative means the low end was missed, so the revenue total switches to estimates.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+      }
+    },
+    "q2_coefficient": {
+      "value": -0.0339,
+      "tag": "C",
+      "citation": {
+        "text": "Q2 actual versus the May 11 range of $71-81 million. Also below the low end. Shown as a second completed window; the H1 window is the one that sets the branch.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226022227/ex99-1.htm"
+      }
+    },
+    "scale_fy26_h2": {
+      "value": 1.424119,
+      "tag": "C",
+      "citation": {
+        "text": "Consensus H2 revenue divided by the unscaled line build. More than 10% from 1, so line commentary and the top-level total disagree.",
+        "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+      }
+    },
+    "scale_fy27": {
+      "value": 1.372128,
+      "tag": "C",
+      "citation": {
+        "text": "FY27 consensus divided by the unscaled line build. More than 10% from 1.",
+        "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+      }
+    },
+    "ltm_gross_margin": {
+      "value": 0.73281,
+      "tag": "C",
+      "citation": {
+        "text": "Trailing gross profit over trailing revenue: FY25 gross profit, minus H1 2025 gross profit, plus H1 2026 gross profit. Held for the unreported periods because no newer margin guide was given.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+      }
+    },
+    "q2_cash_opex": {
+      "value": 51.595,
+      "tag": "C",
+      "citation": {
+        "text": "Q2 gross profit minus Q2 adjusted EBITDA. This is the latest-quarter run rate used as cash operating cost. It is a bridge, not a GAAP opex line.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+      }
+    },
+    "unscaled_h2_revenue": {
+      "value": 165.210877,
+      "tag": "S",
+      "citation": {
+        "text": "Sum of the line drivers before scaling: IHEEZO price step, VEVYE sequential step, other-branded ramp plus the TYRVAYA stub, ImprimisRx flat at Q2.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+      }
+    },
+    "unscaled_fy27_revenue": {
+      "value": 390.873056,
+      "tag": "S",
+      "citation": {
+        "text": "Sum of the FY27 line drivers before scaling, including the $30 million TYRVAYA floor.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+      }
+    }
+  },
+  "scenarios": {
+    "bear": {
+      "levers": "Consensus low, Q2 reported gross margin 71%, FY27 cash opex +8%.",
+      "lines": [
+        {
+          "name": "IHEEZO",
+          "periods": {
+            "FY24A": {
+              "value": 49.303,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K product revenue, IHEEZO. FY2024 is the prior-year column of the same table.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "FY25A": {
+              "value": 81.348,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K product revenue, IHEEZO. FY2024 is the prior-year column of the same table.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "YoY": {
+              "value": 0.64996,
+              "tag": "C",
+              "citation": {
+                "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "H1A": {
+              "value": 17.535,
+              "tag": "A",
+              "citation": {
+                "text": "Q2 2026 10-Q six-month IHEEZO revenue. H1 is reported; it is not forecast.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 53.447119,
+              "tag": "S",
+              "citation": {
+                "text": "Price: July 1, 2026 net price per unit +25%, so H2 quarters are Q2 revenue times 1.25 with units held at the Q2 run rate (65,477, already +34% year over year). FY27 units grow 17%, half that Q2 unit growth, because a recent launch rarely keeps a 34% unit step. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 70.982119,
+              "tag": "S",
+              "citation": {
+                "text": "Price: July 1, 2026 net price per unit +25%, so H2 quarters are Q2 revenue times 1.25 with units held at the Q2 run rate (65,477, already +34% year over year). FY27 units grow 17%, half that Q2 unit growth, because a recent launch rarely keeps a 34% unit step. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY27E": {
+              "value": 111.971854,
+              "tag": "S",
+              "citation": {
+                "text": "Price: July 1, 2026 net price per unit +25%, so H2 quarters are Q2 revenue times 1.25 with units held at the Q2 run rate (65,477, already +34% year over year). FY27 units grow 17%, half that Q2 unit growth, because a recent launch rarely keeps a 34% unit step. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            }
+          }
+        },
+        {
+          "name": "VEVYE",
+          "periods": {
+            "FY24A": {
+              "value": 28.061,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K product revenue, VEVYE. FY2024 is the prior-year column of the same table.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "FY25A": {
+              "value": 88.688,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K product revenue, VEVYE. FY2024 is the prior-year column of the same table.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "YoY": {
+              "value": 2.160543,
+              "tag": "C",
+              "citation": {
+                "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "H1A": {
+              "value": 50.335,
+              "tag": "A",
+              "citation": {
+                "text": "Q2 2026 10-Q six-month VEVYE revenue.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 89.72488,
+              "tag": "S",
+              "citation": {
+                "text": "Volume and mix after the August 1 coverage win: H2 steps +7.5% a quarter off Q2, faster than the 'momentum continues' default of holding the prior growth rate, and FY27 is the Q4 run rate times 4 times 1.10. The 'over $100 million' 2026 floor is met. The Q1 gross-to-net cut of about $8 million is one-time and is not in this run rate. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 140.05988,
+              "tag": "S",
+              "citation": {
+                "text": "Volume and mix after the August 1 coverage win: H2 steps +7.5% a quarter off Q2, faster than the 'momentum continues' default of holding the prior growth rate, and FY27 is the Q4 run rate times 4 times 1.10. The 'over $100 million' 2026 floor is met. The Q1 gross-to-net cut of about $8 million is one-time and is not in this run rate. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY27E": {
+              "value": 183.115302,
+              "tag": "S",
+              "citation": {
+                "text": "Volume and mix after the August 1 coverage win: H2 steps +7.5% a quarter off Q2, faster than the 'momentum continues' default of holding the prior growth rate, and FY27 is the Q4 run rate times 4 times 1.10. The 'over $100 million' 2026 floor is met. The Q1 gross-to-net cut of about $8 million is one-time and is not in this run rate. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            }
+          }
+        },
+        {
+          "name": "Other branded",
+          "periods": {
+            "FY24A": {
+              "value": 38.751,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K 'other branded products' plus 'other revenues'. Same split for FY2024. Not a finer cut than the filing.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "FY25A": {
+              "value": 25.72,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K 'other branded products' plus 'other revenues'. Same split for FY2024. Not a finer cut than the filing.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "YoY": {
+              "value": -0.336275,
+              "tag": "C",
+              "citation": {
+                "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "H1A": {
+              "value": 18.939,
+              "tag": "A",
+              "citation": {
+                "text": "Q2 2026 10-Q six-month other branded products plus other revenues.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 43.116314,
+              "tag": "S",
+              "citation": {
+                "text": "BYOOVIZ and the rest of the branded book are a new-line ramp (Q3 13 and Q4 14.5 are judgments; the filing only says revenue builds over the balance of 2026). TYRVAYA adds a $4 million Q4 stub, inside the 1-3% 'modest' band, and a $30 million 2027 floor ('more than $30 million'). The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 62.055314,
+              "tag": "S",
+              "citation": {
+                "text": "BYOOVIZ and the rest of the branded book are a new-line ramp (Q3 13 and Q4 14.5 are judgments; the filing only says revenue builds over the balance of 2026). TYRVAYA adds a $4 million Q4 stub, inside the 1-3% 'modest' band, and a $30 million 2027 floor ('more than $30 million'). The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY27E": {
+              "value": 118.502156,
+              "tag": "S",
+              "citation": {
+                "text": "BYOOVIZ and the rest of the branded book are a new-line ramp (Q3 13 and Q4 14.5 are judgments; the filing only says revenue builds over the balance of 2026). TYRVAYA adds a $4 million Q4 stub, inside the 1-3% 'modest' band, and a $30 million 2027 floor ('more than $30 million'). The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            }
+          }
+        },
+        {
+          "name": "ImprimisRx",
+          "periods": {
+            "FY24A": {
+              "value": 83.499,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K ImprimisRx (compounding) revenue. FY2024 is the prior-year column.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "FY25A": {
+              "value": 76.547,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K ImprimisRx (compounding) revenue. FY2024 is the prior-year column.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "YoY": {
+              "value": -0.083258,
+              "tag": "C",
+              "citation": {
+                "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "H1A": {
+              "value": 28.055,
+              "tag": "A",
+              "citation": {
+                "text": "Q2 2026 10-Q six-month compounding revenue.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 39.847687,
+              "tag": "S",
+              "citation": {
+                "text": "Mature compounding book: H2 is flat at the Q2 run rate, and FY27 applies the FY25 volume decline (ImprimisRx fell year over year). No structural change was guided. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 67.902687,
+              "tag": "S",
+              "citation": {
+                "text": "Mature compounding book: H2 is flat at the Q2 run rate, and FY27 applies the FY25 volume decline (ImprimisRx fell year over year). No structural change was guided. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY27E": {
+              "value": 65.410688,
+              "tag": "S",
+              "citation": {
+                "text": "Mature compounding book: H2 is flat at the Q2 run rate, and FY27 applies the FY25 volume decline (ImprimisRx fell year over year). No structural change was guided. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            }
+          }
+        }
+      ],
+      "totals": {
+        "revenue": {
+          "FY24A": {
+            "value": 199.614,
+            "tag": "A",
+            "citation": {
+              "text": "FY2024 revenue, prior-year column of the FY2025 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+            }
+          },
+          "FY25A": {
+            "value": 272.303,
+            "tag": "A",
+            "citation": {
+              "text": "FY2025 revenue, 10-K and the March 2, 2026 release.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+            }
+          },
+          "YoY": {
+            "value": 0.364148,
+            "tag": "C",
+            "citation": {
+              "text": "Reported FY25 revenue over FY24 revenue, minus 1.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+            }
+          },
+          "H1A": {
+            "value": 114.864,
+            "tag": "A",
+            "citation": {
+              "text": "Six months ended June 30, 2026 revenue, Q2 10-Q.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+            }
+          },
+          "H2E": {
+            "value": 226.136,
+            "tag": "E",
+            "citation": {
+              "text": "Bear uses the low end of the carried Yahoo range, $341 million for FY26 and $479 million for FY27. Not re-pulled. H2 is the consensus (or scenario) year minus reported H1.",
+              "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+            }
+          },
+          "FY26E": {
+            "value": 341.0,
+            "tag": "E",
+            "citation": {
+              "text": "Bear uses the low end of the carried Yahoo range, $341 million for FY26 and $479 million for FY27. Not re-pulled.",
+              "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+            }
+          },
+          "FY27E": {
+            "value": 479.0,
+            "tag": "E",
+            "citation": {
+              "text": "FY27 has no formal range. The same branch, estimates because the latest completed range was missed, uses the carried FY27 consensus.",
+              "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+            }
+          }
+        },
+        "ebitda": {
+          "FY24A": {
+            "value": 40.327,
+            "tag": "A",
+            "citation": {
+              "text": "FY2024 adjusted EBITDA, March 2, 2026 release reconciliation.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+            }
+          },
+          "FY25A": {
+            "value": 61.923,
+            "tag": "A",
+            "citation": {
+              "text": "FY2025 adjusted EBITDA, March 2, 2026 release reconciliation.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+            }
+          },
+          "YoY": {
+            "value": 0.535522,
+            "tag": "C",
+            "citation": {
+              "text": "FY25 adjusted EBITDA over FY24 adjusted EBITDA, minus 1.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+            }
+          },
+          "H1A": {
+            "value": -13.891,
+            "tag": "A",
+            "citation": {
+              "text": "First-half 2026 adjusted EBITDA, August 10, 2026 release reconciliation.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+            }
+          },
+          "H2E": {
+            "value": 54.36656,
+            "tag": "C",
+            "citation": {
+              "text": "H2 gross profit at the scenario gross margin, minus Q2 cash-opex run rate times two and the assumed TYRVAYA stub cost. No EBITDA consensus was in the carried Yahoo pull, and no completed EBITDA range exists to place a coefficient.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+            }
+          },
+          "FY26E": {
+            "value": 40.47556,
+            "tag": "C",
+            "citation": {
+              "text": "H1 adjusted EBITDA plus the H2 cost build. The $80-100 million guide is not used: the coefficient is undefined for EBITDA and there is no carried EBITDA estimate.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+            }
+          },
+          "FY27E": {
+            "value": 97.1996,
+            "tag": "S",
+            "citation": {
+              "text": "FY27 revenue times the gross-margin assumption, minus four quarters of the Q2 cash-opex run rate grown by the scenario inflation, minus an assumed $20 million TYRVAYA cost. Evidence for a specific FY27 margin has run out; this is the cost build.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+            }
+          }
+        }
+      },
+      "organic": {
+        "revenue": {
+          "FY25A": {
+            "value": 272.303,
+            "tag": "A",
+            "citation": {
+              "text": "Year-0 revenue. TYRVAYA had not closed, so year-0 is already organic.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+            }
+          },
+          "FY26E": {
+            "value": 335.524913,
+            "tag": "C",
+            "citation": {
+              "text": "Consensus revenue minus TYRVAYA, which closed after year 0 and is booked as an acquisition rather than in the organic path.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "FY27E": {
+            "value": 442.236146,
+            "tag": "C",
+            "citation": {
+              "text": "FY27 consensus revenue minus TYRVAYA's scaled 2027 floor, kept out of organic sales growth.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": 61.923,
+            "tag": "A",
+            "citation": {
+              "text": "FY2025 adjusted EBITDA from the March 2, 2026 earnings release reconciliation.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+            }
+          },
+          "FY26E": {
+            "value": 39.588248,
+            "tag": "C",
+            "citation": {
+              "text": "Cost-build EBITDA minus TYRVAYA's contribution (its revenue times the gross-margin assumption, less the assumed incremental cost).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+            }
+          },
+          "FY27E": {
+            "value": 91.097264,
+            "tag": "C",
+            "citation": {
+              "text": "FY27 cost-build EBITDA minus TYRVAYA, so forecast_ebitda does not also get EBITDA that acquisitions will add.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          }
+        }
+      },
+      "finagle": {
+        "ebitda_basis": {
+          "value": "organic",
+          "tag": "C",
+          "citation": {
+            "text": "TYRVAYA closes in October 2026, after FY2025, so the EBITDA path stays organic and the purchase is an acquisition.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+          }
+        },
+        "ebitda_growth": {
+          "value": [
+            -0.360686,
+            1.301119
+          ],
+          "tag": "C",
+          "citation": {
+            "text": "Organic adjusted-EBITDA growth for FY26 and FY27 off FY25. The FY27 step is large because consensus revenue is scaled up and cash opex stays on the Q2 run rate; that is a flagged consequence, not a margin target management stated.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+          }
+        },
+        "sales_growth": {
+          "value": [
+            0.232175,
+            0.318043
+          ],
+          "tag": "C",
+          "citation": {
+            "text": "Organic sales growth for the same two years. Finagle recomputes the margin it passes to forecast_ebitda as ending organic EBITDA over ending organic revenue, so these rates are the ones that reproduce those dollars.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "me": {
+          "value": 0.205992,
+          "tag": "C",
+          "citation": {
+            "text": "Final explicit year organic EBITDA divided by organic revenue. This is the margin forecast_ebitda uses once sales growth reaches that year, not the year-0 margin.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+          }
+        },
+        "mc": {
+          "value": 0.457996,
+          "tag": "S",
+          "citation": {
+            "text": "Contribution margin set halfway between that ending EBITDA margin and the trailing gross margin, which is the band a dollar of extra sales should fall in. Finagle's own filler would average the year-0 margin instead; this is set on purpose so the fade is not that default.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+          }
+        },
+        "gsnext": {
+          "value": 0.2,
+          "tag": "S",
+          "citation": {
+            "text": "First sales growth after the explicit window. FY25 revenue grew 36%, and management still expects a launch a year through 2029 inside the existing cost structure, but there is no FY28 dollar evidence, so 20% fades the explicit step-up instead of repeating it. Terminal growth after that is Finagle's.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        },
+        "deal_spend": {
+          "value": [
+            0,
+            30
+          ],
+          "tag": "G",
+          "citation": {
+            "text": "Cash paid at the October 5, 2026 close. Index 0 is FY2025, which had no deal. Contingent milestones of up to $70 million are not included.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+          }
+        },
+        "acquisition": {
+          "year": {
+            "value": 1,
+            "tag": "G",
+            "citation": {
+              "text": "Close is October 5, 2026, the first forecast year if year 0 is FY2025.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "deal_value": {
+            "value": 30,
+            "tag": "G",
+            "citation": {
+              "text": "Harrow paid $30 million in cash at closing.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "multiple": {
+            "value": 4.91615,
+            "tag": "S",
+            "citation": {
+              "text": "Cash paid divided by FY27 TYRVAYA EBITDA. That EBITDA is the scaled revenue floor times gross margin, less an assumed $20 million of incremental cost, because the filing says revenue exceeds incremental cost and does not give the cost.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "leverage": {
+            "value": 0,
+            "tag": "G",
+            "citation": {
+              "text": "Funded with cash at closing, so the deal adds no debt.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "next_growth": {
+            "value": 0.15,
+            "tag": "S",
+            "citation": {
+              "text": "No growth rate after the 2027 floor was stated. 15% is a placeholder below the organic gsnext fade and should be replaced if a later source appears.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "capex_frac": {
+            "value": 0.02,
+            "tag": "S",
+            "citation": {
+              "text": "No capex figure was given for the brand. 2% of acquired EBITDA is a thin asset-light placeholder.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "pay_from_cash": {
+            "value": false,
+            "tag": "C",
+            "citation": {
+              "text": "The cash left the company at a year-1 close. Finagle's pay_from_cash flag only reduces year-0 cash, so it is false here.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          }
+        }
+      }
+    },
+    "bull": {
+      "levers": "Consensus high, FY25 reported gross margin 75%, no FY27 opex inflation.",
+      "lines": [
+        {
+          "name": "IHEEZO",
+          "periods": {
+            "FY24A": {
+              "value": 49.303,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K product revenue, IHEEZO. FY2024 is the prior-year column of the same table.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "FY25A": {
+              "value": 81.348,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K product revenue, IHEEZO. FY2024 is the prior-year column of the same table.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "YoY": {
+              "value": 0.64996,
+              "tag": "C",
+              "citation": {
+                "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "H1A": {
+              "value": 17.535,
+              "tag": "A",
+              "citation": {
+                "text": "Q2 2026 10-Q six-month IHEEZO revenue. H1 is reported; it is not forecast.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 56.756012,
+              "tag": "S",
+              "citation": {
+                "text": "Price: July 1, 2026 net price per unit +25%, so H2 quarters are Q2 revenue times 1.25 with units held at the Q2 run rate (65,477, already +34% year over year). FY27 units grow 17%, half that Q2 unit growth, because a recent launch rarely keeps a 34% unit step. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 74.291012,
+              "tag": "S",
+              "citation": {
+                "text": "Price: July 1, 2026 net price per unit +25%, so H2 quarters are Q2 revenue times 1.25 with units held at the Q2 run rate (65,477, already +34% year over year). FY27 units grow 17%, half that Q2 unit growth, because a recent launch rarely keeps a 34% unit step. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY27E": {
+              "value": 137.218118,
+              "tag": "S",
+              "citation": {
+                "text": "Price: July 1, 2026 net price per unit +25%, so H2 quarters are Q2 revenue times 1.25 with units held at the Q2 run rate (65,477, already +34% year over year). FY27 units grow 17%, half that Q2 unit growth, because a recent launch rarely keeps a 34% unit step. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            }
+          }
+        },
+        {
+          "name": "VEVYE",
+          "periods": {
+            "FY24A": {
+              "value": 28.061,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K product revenue, VEVYE. FY2024 is the prior-year column of the same table.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "FY25A": {
+              "value": 88.688,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K product revenue, VEVYE. FY2024 is the prior-year column of the same table.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "YoY": {
+              "value": 2.160543,
+              "tag": "C",
+              "citation": {
+                "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "H1A": {
+              "value": 50.335,
+              "tag": "A",
+              "citation": {
+                "text": "Q2 2026 10-Q six-month VEVYE revenue.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 95.279716,
+              "tag": "S",
+              "citation": {
+                "text": "Volume and mix after the August 1 coverage win: H2 steps +7.5% a quarter off Q2, faster than the 'momentum continues' default of holding the prior growth rate, and FY27 is the Q4 run rate times 4 times 1.10. The 'over $100 million' 2026 floor is met. The Q1 gross-to-net cut of about $8 million is one-time and is not in this run rate. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 145.614716,
+              "tag": "S",
+              "citation": {
+                "text": "Volume and mix after the August 1 coverage win: H2 steps +7.5% a quarter off Q2, faster than the 'momentum continues' default of holding the prior growth rate, and FY27 is the Q4 run rate times 4 times 1.10. The 'over $100 million' 2026 floor is met. The Q1 gross-to-net cut of about $8 million is one-time and is not in this run rate. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY27E": {
+              "value": 224.402259,
+              "tag": "S",
+              "citation": {
+                "text": "Volume and mix after the August 1 coverage win: H2 steps +7.5% a quarter off Q2, faster than the 'momentum continues' default of holding the prior growth rate, and FY27 is the Q4 run rate times 4 times 1.10. The 'over $100 million' 2026 floor is met. The Q1 gross-to-net cut of about $8 million is one-time and is not in this run rate. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            }
+          }
+        },
+        {
+          "name": "Other branded",
+          "periods": {
+            "FY24A": {
+              "value": 38.751,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K 'other branded products' plus 'other revenues'. Same split for FY2024. Not a finer cut than the filing.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "FY25A": {
+              "value": 25.72,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K 'other branded products' plus 'other revenues'. Same split for FY2024. Not a finer cut than the filing.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "YoY": {
+              "value": -0.336275,
+              "tag": "C",
+              "citation": {
+                "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "H1A": {
+              "value": 18.939,
+              "tag": "A",
+              "citation": {
+                "text": "Q2 2026 10-Q six-month other branded products plus other revenues.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 45.78563,
+              "tag": "S",
+              "citation": {
+                "text": "BYOOVIZ and the rest of the branded book are a new-line ramp (Q3 13 and Q4 14.5 are judgments; the filing only says revenue builds over the balance of 2026). TYRVAYA adds a $4 million Q4 stub, inside the 1-3% 'modest' band, and a $30 million 2027 floor ('more than $30 million'). The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 64.72463,
+              "tag": "S",
+              "citation": {
+                "text": "BYOOVIZ and the rest of the branded book are a new-line ramp (Q3 13 and Q4 14.5 are judgments; the filing only says revenue builds over the balance of 2026). TYRVAYA adds a $4 million Q4 stub, inside the 1-3% 'modest' band, and a $30 million 2027 floor ('more than $30 million'). The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY27E": {
+              "value": 145.220805,
+              "tag": "S",
+              "citation": {
+                "text": "BYOOVIZ and the rest of the branded book are a new-line ramp (Q3 13 and Q4 14.5 are judgments; the filing only says revenue builds over the balance of 2026). TYRVAYA adds a $4 million Q4 stub, inside the 1-3% 'modest' band, and a $30 million 2027 floor ('more than $30 million'). The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            }
+          }
+        },
+        {
+          "name": "ImprimisRx",
+          "periods": {
+            "FY24A": {
+              "value": 83.499,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K ImprimisRx (compounding) revenue. FY2024 is the prior-year column.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "FY25A": {
+              "value": 76.547,
+              "tag": "A",
+              "citation": {
+                "text": "FY2025 10-K ImprimisRx (compounding) revenue. FY2024 is the prior-year column.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "YoY": {
+              "value": -0.083258,
+              "tag": "C",
+              "citation": {
+                "text": "Year-over-year growth of the reported line, FY25 divided by FY24 minus 1.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+              }
+            },
+            "H1A": {
+              "value": 28.055,
+              "tag": "A",
+              "citation": {
+                "text": "Q2 2026 10-Q six-month compounding revenue.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 42.314643,
+              "tag": "S",
+              "citation": {
+                "text": "Mature compounding book: H2 is flat at the Q2 run rate, and FY27 applies the FY25 volume decline (ImprimisRx fell year over year). No structural change was guided. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. H2 is the unreported half only.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 70.369643,
+              "tag": "S",
+              "citation": {
+                "text": "Mature compounding book: H2 is flat at the Q2 run rate, and FY27 applies the FY25 volume decline (ImprimisRx fell year over year). No structural change was guided. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            },
+            "FY27E": {
+              "value": 80.158818,
+              "tag": "S",
+              "citation": {
+                "text": "Mature compounding book: H2 is flat at the Q2 run rate, and FY27 applies the FY25 volume decline (ImprimisRx fell year over year). No structural change was guided. The line is then scaled so unreported revenue hits the scenario total. The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it. FY27 is still inside the explicit window; no FY28 dollars are set.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+              }
+            }
+          }
+        }
+      ],
+      "totals": {
+        "revenue": {
+          "FY24A": {
+            "value": 199.614,
+            "tag": "A",
+            "citation": {
+              "text": "FY2024 revenue, prior-year column of the FY2025 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+            }
+          },
+          "FY25A": {
+            "value": 272.303,
+            "tag": "A",
+            "citation": {
+              "text": "FY2025 revenue, 10-K and the March 2, 2026 release.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+            }
+          },
+          "YoY": {
+            "value": 0.364148,
+            "tag": "C",
+            "citation": {
+              "text": "Reported FY25 revenue over FY24 revenue, minus 1.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+            }
+          },
+          "H1A": {
+            "value": 114.864,
+            "tag": "A",
+            "citation": {
+              "text": "Six months ended June 30, 2026 revenue, Q2 10-Q.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+            }
+          },
+          "H2E": {
+            "value": 240.136,
+            "tag": "E",
+            "citation": {
+              "text": "Bull uses the high end of the carried Yahoo range, $355 million for FY26 and $587 million for FY27. Not re-pulled. H2 is the consensus (or scenario) year minus reported H1.",
+              "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+            }
+          },
+          "FY26E": {
+            "value": 355.0,
+            "tag": "E",
+            "citation": {
+              "text": "Bull uses the high end of the carried Yahoo range, $355 million for FY26 and $587 million for FY27. Not re-pulled.",
+              "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+            }
+          },
+          "FY27E": {
+            "value": 587.0,
+            "tag": "E",
+            "citation": {
+              "text": "FY27 has no formal range. The same branch, estimates because the latest completed range was missed, uses the carried FY27 consensus.",
+              "url": "https://finance.yahoo.com/quote/HROW/analysis/"
+            }
+          }
+        },
+        "ebitda": {
+          "FY24A": {
+            "value": 40.327,
+            "tag": "A",
+            "citation": {
+              "text": "FY2024 adjusted EBITDA, March 2, 2026 release reconciliation.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+            }
+          },
+          "FY25A": {
+            "value": 61.923,
+            "tag": "A",
+            "citation": {
+              "text": "FY2025 adjusted EBITDA, March 2, 2026 release reconciliation.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+            }
+          },
+          "YoY": {
+            "value": 0.535522,
+            "tag": "C",
+            "citation": {
+              "text": "FY25 adjusted EBITDA over FY24 adjusted EBITDA, minus 1.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+            }
+          },
+          "H1A": {
+            "value": -13.891,
+            "tag": "A",
+            "citation": {
+              "text": "First-half 2026 adjusted EBITDA, August 10, 2026 release reconciliation.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+            }
+          },
+          "H2E": {
+            "value": 73.912,
+            "tag": "C",
+            "citation": {
+              "text": "H2 gross profit at the scenario gross margin, minus Q2 cash-opex run rate times two and the assumed TYRVAYA stub cost. No EBITDA consensus was in the carried Yahoo pull, and no completed EBITDA range exists to place a coefficient.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+            }
+          },
+          "FY26E": {
+            "value": 60.021,
+            "tag": "C",
+            "citation": {
+              "text": "H1 adjusted EBITDA plus the H2 cost build. The $80-100 million guide is not used: the coefficient is undefined for EBITDA and there is no carried EBITDA estimate.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+            }
+          },
+          "FY27E": {
+            "value": 213.87,
+            "tag": "S",
+            "citation": {
+              "text": "FY27 revenue times the gross-margin assumption, minus four quarters of the Q2 cash-opex run rate grown by the scenario inflation, minus an assumed $20 million TYRVAYA cost. Evidence for a specific FY27 margin has run out; this is the cost build.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+            }
+          }
+        }
+      },
+      "organic": {
+        "revenue": {
+          "FY25A": {
+            "value": 272.303,
+            "tag": "A",
+            "citation": {
+              "text": "Year-0 revenue. TYRVAYA had not closed, so year-0 is already organic.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+            }
+          },
+          "FY26E": {
+            "value": 349.185952,
+            "tag": "C",
+            "citation": {
+              "text": "Consensus revenue minus TYRVAYA, which closed after year 0 and is booked as an acquisition rather than in the organic path.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "FY27E": {
+            "value": 541.94701,
+            "tag": "C",
+            "citation": {
+              "text": "FY27 consensus revenue minus TYRVAYA's scaled 2027 floor, kept out of organic sales growth.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": 61.923,
+            "tag": "A",
+            "citation": {
+              "text": "FY2025 adjusted EBITDA from the March 2, 2026 earnings release reconciliation.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+            }
+          },
+          "FY26E": {
+            "value": 58.660464,
+            "tag": "C",
+            "citation": {
+              "text": "Cost-build EBITDA minus TYRVAYA's contribution (its revenue times the gross-margin assumption, less the assumed incremental cost).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+            }
+          },
+          "FY27E": {
+            "value": 200.080257,
+            "tag": "C",
+            "citation": {
+              "text": "FY27 cost-build EBITDA minus TYRVAYA, so forecast_ebitda does not also get EBITDA that acquisitions will add.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          }
+        }
+      },
+      "finagle": {
+        "ebitda_basis": {
+          "value": "organic",
+          "tag": "C",
+          "citation": {
+            "text": "TYRVAYA closes in October 2026, after FY2025, so the EBITDA path stays organic and the purchase is an acquisition.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+          }
+        },
+        "ebitda_growth": {
+          "value": [
+            -0.052687,
+            2.41082
+          ],
+          "tag": "C",
+          "citation": {
+            "text": "Organic adjusted-EBITDA growth for FY26 and FY27 off FY25. The FY27 step is large because consensus revenue is scaled up and cash opex stays on the Q2 run rate; that is a flagged consequence, not a margin target management stated.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+          }
+        },
+        "sales_growth": {
+          "value": [
+            0.282343,
+            0.55203
+          ],
+          "tag": "C",
+          "citation": {
+            "text": "Organic sales growth for the same two years. Finagle recomputes the margin it passes to forecast_ebitda as ending organic EBITDA over ending organic revenue, so these rates are the ones that reproduce those dollars.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008562/form10-k.htm"
+          }
+        },
+        "me": {
+          "value": 0.369188,
+          "tag": "C",
+          "citation": {
+            "text": "Final explicit year organic EBITDA divided by organic revenue. This is the margin forecast_ebitda uses once sales growth reaches that year, not the year-0 margin.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-1.htm"
+          }
+        },
+        "mc": {
+          "value": 0.559594,
+          "tag": "S",
+          "citation": {
+            "text": "Contribution margin set halfway between that ending EBITDA margin and the trailing gross margin, which is the band a dollar of extra sales should fall in. Finagle's own filler would average the year-0 margin instead; this is set on purpose so the fade is not that default.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026055271/hrow-20260630.htm"
+          }
+        },
+        "gsnext": {
+          "value": 0.2,
+          "tag": "S",
+          "citation": {
+            "text": "First sales growth after the explicit window. FY25 revenue grew 36%, and management still expects a launch a year through 2029 inside the existing cost structure, but there is no FY28 dollar evidence, so 20% fades the explicit step-up instead of repeating it. Terminal growth after that is Finagle's.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+          }
+        },
+        "deal_spend": {
+          "value": [
+            0,
+            30
+          ],
+          "tag": "G",
+          "citation": {
+            "text": "Cash paid at the October 5, 2026 close. Index 0 is FY2025, which had no deal. Contingent milestones of up to $70 million are not included.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+          }
+        },
+        "acquisition": {
+          "year": {
+            "value": 1,
+            "tag": "G",
+            "citation": {
+              "text": "Close is October 5, 2026, the first forecast year if year 0 is FY2025.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "deal_value": {
+            "value": 30,
+            "tag": "G",
+            "citation": {
+              "text": "Harrow paid $30 million in cash at closing.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "multiple": {
+            "value": 2.17553,
+            "tag": "S",
+            "citation": {
+              "text": "Cash paid divided by FY27 TYRVAYA EBITDA. That EBITDA is the scaled revenue floor times gross margin, less an assumed $20 million of incremental cost, because the filing says revenue exceeds incremental cost and does not give the cost.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "leverage": {
+            "value": 0,
+            "tag": "G",
+            "citation": {
+              "text": "Funded with cash at closing, so the deal adds no debt.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "next_growth": {
+            "value": 0.15,
+            "tag": "S",
+            "citation": {
+              "text": "No growth rate after the 2027 floor was stated. 15% is a placeholder below the organic gsnext fade and should be replaced if a later source appears.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "capex_frac": {
+            "value": 0.02,
+            "tag": "S",
+            "citation": {
+              "text": "No capex figure was given for the brand. 2% of acquired EBITDA is a thin asset-light placeholder.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          },
+          "pay_from_cash": {
+            "value": false,
+            "tag": "C",
+            "citation": {
+              "text": "The cash left the company at a year-1 close. Finagle's pay_from_cash flag only reduces year-0 cash, so it is false here.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001xex991.htm"
+            }
+          }
+        }
+      }
+    }
+  }
+}

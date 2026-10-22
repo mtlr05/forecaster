@@ -1,0 +1,39 @@
+{
+  "note": "Leaves the user fills after build_baseline and after the forecaster's operating path. Values here are notes, not facts about any company. The forecaster does not set rates.gt.",
+  "year": {
+    "value": null,
+    "note": "How many years to forecast before the terminal year. 10 is a common assumption, not a fact."
+  },
+  "rates.rd": {
+    "value": null,
+    "note": "Cost of debt, decimal. Required on the EBITDA path. Take it from a stated rate or label an assumption."
+  },
+  "rates.t": {
+    "value": null,
+    "note": "Marginal tax rate, decimal. The US federal statutory rate is only an assumption until a source says otherwise."
+  },
+  "rates.gt": {
+    "value": null,
+    "note": "Terminal growth. Finagle's default is the 10-year yield, and it must stay below the cost of equity. The forecaster never sets this."
+  },
+  "baseline.nol": {
+    "value": null,
+    "note": "Net operating loss, millions. Not filled by the SEC or yfinance helpers. Use the filing or an explicit assumption. Zero only if you mean zero."
+  },
+  "baseline.noa": {
+    "value": null,
+    "note": "Non-operating assets, millions. Same rule as nol."
+  },
+  "forecast.dwc.mode": {
+    "value": null,
+    "note": "zero or path. Silence is an assumption and has to be labeled. path needs one value per year, including the baseline."
+  },
+  "distribution.mode": {
+    "value": null,
+    "note": "none, max_buybacks, buyback_schedule, or retain. none pays free cash flow out as dividends and does no buybacks."
+  },
+  "debt.mode": {
+    "value": null,
+    "note": "hold, path, or target. If you leave it empty, build_baseline re-borrows toward year-0 Debt/EBITDA. On a prior HROW run that default was worth about $12 a share versus holding the debt flat. Choose explicitly. target also needs leverage and start_year; path needs values."
+  }
+}
