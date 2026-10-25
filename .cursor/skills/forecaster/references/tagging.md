@@ -20,3 +20,23 @@ Lines reconcile to totals. In `forecast.json` a fact is:
 ```
 
 No bare numbers. `pytest` walks the file and checks that, the line totals, and the Finagle leaves.
+
+## Numbered tags and the source list
+
+Every tag carries an ID (A1, A2, G1, E1, S1, S2, C1, P1, D1) that points to a numbered source list at the end of `forecast.md` (and in the report's Appendix B).
+
+- **D entries:** documents (publisher, title, date, URL; note "HTML; no page numbers" where relevant).
+- **A/G/E entries:** the exact quote, the document ID, the page or slide (or `page unverified`), and the date. E entries also give the source and as-of date.
+- **S entries:** the reasoning plus the quote it rests on, with page and link. Don't restate the number.
+- **C entries:** the formula and the input IDs.
+- **P entries:** what the prompt supplied.
+- Reuse an ID when the same fact appears again. Anything without a verified link, page or date goes under "Not verified".
+
+In `forecast.json` every citation carries `id` and `page` (or `page_status: "unverified"`), and the IDs resolve in a top-level `sources` list:
+
+```json
+{"value": 81.348, "tag": "A", "citation": {"id": "A1", "page": "p.8", "text": "...", "url": "https://www.sec.gov/..."}}
+"sources": [{"id": "D1", "text": "..."}, {"id": "A1", "document": "D1", "page": "p.8", "text": "..."}, {"id": "C1", "inputs": ["A1", "A2"], "text": "A2 / A1 - 1"}]
+```
+
+`pytest` checks, when `sources` is present, that each ID names one fact, that every ID used in the lines and totals resolves in `sources`, and that C entries list existing input IDs.

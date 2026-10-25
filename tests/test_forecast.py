@@ -228,3 +228,82 @@ def test_line_pattern_is_validated():
     report = validate_payload(payload)
     assert not report["ok"]
     assert any("pattern" in error for error in report["errors"])
+
+
+def _with_ids():
+    """The minimal case with numbered citations and a sources list."""
+    payload = _minimal()
+    counters = {}
+    for _, fact in _iter_facts(payload):
+        tag = fact["tag"]
+        key = (tag, repr(fact["value"]))
+        if key not in counters:
+            counters[key] = "%s%d" % (tag, sum(1 for k in counters if k[0] == tag) + 1)
+        fact["citation"]["id"] = counters[key]
+        fact["citation"]["page"] = "p.1"
+    sources = [{"id": "D1", "text": "Example filing: https://example.test/filing"}]
+    for sid in sorted(set(counters.values())):
+        entry = {"id": sid, "text": "example", "document": "D1"}
+        if sid.startswith("C"):
+            entry["inputs"] = ["D1"]
+        sources.append(entry)
+    payload["sources"] = sources
+    return payload
+
+
+def _iter_facts(obj):
+    if isinstance(obj, dict) and "value" in obj and "tag" in obj:
+        yield None, obj
+    elif isinstance(obj, dict):
+        for value in obj.values():
+            yield from _iter_facts(value)
+    elif isinstance(obj, list):
+        for item in obj:
+            yield from _iter_facts(item)
+
+
+def test_numbered_citations_pass():
+    report = validate_payload(_with_ids())
+    assert report["ok"], report["errors"]
+
+
+def test_unresolved_id_fails():
+    payload = _with_ids()
+    payload["lines"][0]["periods"]["FY25A"]["citation"]["id"] = "A99"
+    report = validate_payload(payload)
+    assert not report["ok"]
+    assert any("A99 does not resolve" in error for error in report["errors"])
+
+
+def test_duplicate_id_for_different_facts_fails():
+    payload = _with_ids()
+    reused = payload["lines"][0]["periods"]["FY25A"]["citation"]["id"]
+    payload["lines"][1]["periods"]["FY25A"]["citation"]["id"] = reused
+    report = validate_payload(payload)
+    assert not report["ok"]
+    assert any("different fact" in error for error in report["errors"])
+
+
+def test_duplicate_source_entry_fails():
+    payload = _with_ids()
+    payload["sources"].append({"id": "D1", "text": "again"})
+    report = validate_payload(payload)
+    assert not report["ok"]
+    assert any("listed twice" in error for error in report["errors"])
+
+
+def test_calculation_inputs_must_exist():
+    payload = _with_ids()
+    calc = next(entry for entry in payload["sources"] if entry["id"].startswith("C"))
+    calc["inputs"] = ["A42"]
+    report = validate_payload(payload)
+    assert not report["ok"]
+    assert any("input A42" in error for error in report["errors"])
+
+
+def test_citation_needs_page_or_unverified():
+    payload = _with_ids()
+    del payload["lines"][0]["periods"]["FY25A"]["citation"]["page"]
+    assert not validate_payload(payload)["ok"]
+    payload["lines"][0]["periods"]["FY25A"]["citation"]["page_status"] = "unverified"
+    assert validate_payload(payload)["ok"]
