@@ -26,8 +26,12 @@ SUM_TOLERANCE = 0.02  # millions
 # Period keys are derived from their names, not a fixed list.
 FISCAL_YEAR = re.compile(r"^FY\d{2}[AE]$")
 PART_YEAR = re.compile(r"^(H[12]|Q[1-4]|9M)[AE]$")
+# A lone reference quarter (e.g. the latest quarter, Q4FY26A). Summed across
+# lines like any dollar period, but never required to make up a full year.
+REFERENCE_QUARTER = re.compile(r"^Q[1-4]FY\d{2}[AE]$")
 # Growth rates live beside the dollar periods and must not be added across lines.
 NON_DOLLAR_KEYS = {"YoY"}
+NON_DOLLAR_PREFIXES = ("YoY_",)  # e.g. YoY_FY26, YoY_Q4
 # Part-year groups that make up one fiscal year.
 STUB_GROUPS = (("H1", "H2"), ("9M", "Q4"), ("Q1", "Q2", "Q3", "Q4"))
 PATTERNS = {
@@ -41,7 +45,11 @@ PATTERNS = {
 
 
 def _is_dollar_period(key):
-    return bool(FISCAL_YEAR.match(key) or PART_YEAR.match(key))
+    return bool(FISCAL_YEAR.match(key) or PART_YEAR.match(key) or REFERENCE_QUARTER.match(key))
+
+
+def _is_non_dollar_key(key):
+    return key in NON_DOLLAR_KEYS or key.startswith(NON_DOLLAR_PREFIXES)
 
 
 def validate_payload(payload):
@@ -110,7 +118,8 @@ def _check_block(block, ctx, errors, prefix):
     for line in lines:
         _check_stubs(line, ctx, errors, prefix)
         pattern = line.get("pattern")
-        if pattern is not None and str(pattern).strip().lower() not in PATTERNS:
+        # A trailing parenthetical note is allowed: "ramping (share gain abroad)".
+        if pattern is not None and re.sub(r"\s*\(.*\)\s*$", "", str(pattern)).strip().lower() not in PATTERNS:
             errors.append(
                 "%sline %s pattern %r is not one of: %s"
                 % (prefix, line.get("name"), pattern, ", ".join(sorted(PATTERNS)))
@@ -126,7 +135,7 @@ def _check_period_keys(lines, totals, errors, prefix):
     maps += [("totals.%s" % key, value) for key, value in totals.items() if isinstance(value, dict)]
     for label, periods_map in maps:
         for key in periods_map:
-            if key in NON_DOLLAR_KEYS or _is_dollar_period(key):
+            if _is_non_dollar_key(key) or _is_dollar_period(key):
                 continue
             errors.append("%s%s has unrecognized period %r" % (prefix, label, key))
 
