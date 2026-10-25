@@ -1,20 +1,42 @@
 """Validate a forecast file.
 
 Every numeric forecast figure is a fact: ``{"value", "tag", "citation"}``.
-``citation`` has a non-empty ``text`` and a ``url``. Line items in dollar
-periods sum to ``totals.revenue``. When a line has both ``H1A`` and ``H2E``,
-they sum to ``FY26E``. Organic revenue and EBITDA compound through
+``citation`` has a non-empty ``text`` and a ``url``. Line items in every
+dollar period sum to ``totals.revenue``. Part-year periods on a line (H1A +
+H2E, 9MA + Q4E, Q1A..Q4E) sum to their fiscal year, taken from ``stub_of``
+or, when that is absent, the first explicit period. Organic revenue and
+EBITDA compound from ``baseline_period`` through ``explicit_periods`` via
 ``finagle.sales_growth`` and ``finagle.ebitda_growth``, and ``me`` is the
-final explicit year's organic EBITDA margin.
+final explicit year's organic EBITDA margin. The Finagle leaves are required
+unless the case sets ``finagle_handoff: false``.
 """
 
 from __future__ import annotations
 
+import re
+
 TAGS = {"A", "G", "E", "P", "S", "C"}
 FINAGLE_LEAVES = ("ebitda_growth", "sales_growth", "me", "mc", "gsnext")
 SUM_TOLERANCE = 0.02  # millions
+# Period keys are derived from their names, not a fixed list.
+FISCAL_YEAR = re.compile(r"^FY\d{2}[AE]$")
+PART_YEAR = re.compile(r"^(H[12]|Q[1-4]|9M)[AE]$")
 # Growth rates live beside the dollar periods and must not be added across lines.
-DOLLAR_PERIODS = {"FY24A", "FY25A", "H1A", "H2E", "FY26E", "FY27E"}
+NON_DOLLAR_KEYS = {"YoY"}
+# Part-year groups that make up one fiscal year.
+STUB_GROUPS = (("H1", "H2"), ("9M", "Q4"), ("Q1", "Q2", "Q3", "Q4"))
+PATTERNS = {
+    "ramping",
+    "new or acquired",
+    "mature or declining",
+    "milestone-dependent",
+    "acquisition-driven",
+    "recurring",
+}
+
+
+def _is_dollar_period(key):
+    return bool(FISCAL_YEAR.match(key) or PART_YEAR.match(key))
 
 
 def validate_payload(payload):
@@ -27,15 +49,29 @@ def validate_payload(payload):
     if not isinstance(explicit, list) or not explicit:
         errors.append("explicit_periods must be a non-empty list")
         explicit = []
+    for period in explicit:
+        if not isinstance(period, str) or not FISCAL_YEAR.match(period):
+            errors.append("explicit period %r is not a fiscal year (FYyyE)" % (period,))
+    baseline = payload.get("baseline_period")
+    if not isinstance(baseline, str) or not FISCAL_YEAR.match(baseline):
+        errors.append("baseline_period must be a fiscal year (FYyyA), got %r" % (baseline,))
+        baseline = None
+    stub_of = payload.get("stub_of") or {}
+    if not isinstance(stub_of, dict):
+        errors.append("stub_of must map part-year periods to a fiscal year")
+        stub_of = {}
+    handoff = payload.get("finagle_handoff", True) is not False
+    ctx = {"explicit": explicit, "baseline": baseline, "stub_of": stub_of, "handoff": handoff}
     _walk_numbers(payload, errors)
-    _check_block(payload, explicit, errors, prefix="")
+    _check_block(payload, ctx, errors, prefix="")
     for name, scenario in (payload.get("scenarios") or {}).items():
         if isinstance(scenario, dict):
-            _check_block(scenario, explicit, errors, prefix="scenarios.%s." % name)
+            _check_block(scenario, ctx, errors, prefix="scenarios.%s." % name)
     return {"ok": not errors, "errors": errors}
 
 
-def _check_block(block, explicit, errors, prefix):
+def _check_block(block, ctx, errors, prefix):
+    explicit = ctx["explicit"]
     lines = block.get("lines")
     totals = block.get("totals") or {}
     revenue = totals.get("revenue") or {}
@@ -43,10 +79,10 @@ def _check_block(block, explicit, errors, prefix):
         if prefix == "":
             errors.append("lines must be a non-empty list")
         return
-    periods = ["FY25A", *explicit] if "FY25A" in (lines[0].get("periods") or {}) else list(explicit)
-    # Sum whichever dollar periods the totals actually publish.
+    _check_period_keys(lines, totals, errors, prefix)
+    # Sum every dollar period the totals publish.
     for period in revenue:
-        if period not in DOLLAR_PERIODS:
+        if not _is_dollar_period(period):
             continue
         if not isinstance(revenue.get(period), dict):
             continue
@@ -65,25 +101,68 @@ def _check_block(block, explicit, errors, prefix):
                     % (prefix, period, sum(values), total)
                 )
     for line in lines:
-        periods_map = line.get("periods") or {}
-        h1 = periods_map.get("H1A")
-        h2 = periods_map.get("H2E")
-        fy26 = periods_map.get("FY26E")
-        if isinstance(h1, dict) and isinstance(h2, dict) and isinstance(fy26, dict):
-            a, b, c = h1.get("value"), h2.get("value"), fy26.get("value")
-            if all(isinstance(x, (int, float)) for x in (a, b, c)):
-                if abs(a + b - c) > SUM_TOLERANCE:
-                    errors.append(
-                        "%sline %s H1A+H2E %.4f != FY26E %.4f"
-                        % (prefix, line.get("name"), a + b, c)
-                    )
+        _check_stubs(line, ctx, errors, prefix)
+        pattern = line.get("pattern")
+        if pattern is not None and str(pattern).strip().lower() not in PATTERNS:
+            errors.append(
+                "%sline %s pattern %r is not one of: %s"
+                % (prefix, line.get("name"), pattern, ", ".join(sorted(PATTERNS)))
+            )
     organic = block.get("organic") or {}
     finagle = block.get("finagle") or {}
-    if prefix == "" or finagle:
-        _check_finagle(organic, finagle, explicit, errors, prefix)
+    if (prefix == "" and ctx["handoff"]) or finagle:
+        _check_finagle(organic, finagle, ctx, errors, prefix)
 
 
-def _check_finagle(organic, finagle, explicit, errors, prefix):
+def _check_period_keys(lines, totals, errors, prefix):
+    maps = [("line %s" % line.get("name"), line.get("periods") or {}) for line in lines]
+    maps += [("totals.%s" % key, value) for key, value in totals.items() if isinstance(value, dict)]
+    for label, periods_map in maps:
+        for key in periods_map:
+            if key in NON_DOLLAR_KEYS or _is_dollar_period(key):
+                continue
+            errors.append("%s%s has unrecognized period %r" % (prefix, label, key))
+
+
+def _check_stubs(line, ctx, errors, prefix):
+    periods_map = line.get("periods") or {}
+    parts = [key for key in periods_map if PART_YEAR.match(key)]
+    if not parts:
+        return
+    default = ctx["explicit"][0] if ctx["explicit"] else None
+    by_year = {}
+    for key in parts:
+        year = ctx["stub_of"].get(key, default)
+        if not year:
+            errors.append("%sline %s %s has no fiscal year in stub_of" % (prefix, line.get("name"), key))
+            continue
+        by_year.setdefault(year, []).append(key)
+    for year, keys in by_year.items():
+        stems = {key[:-1] for key in keys}
+        group = next((g for g in STUB_GROUPS if stems == set(g)), None)
+        if group is None:
+            errors.append(
+                "%sline %s part-year periods %s do not form a full %s"
+                % (prefix, line.get("name"), "+".join(sorted(keys)), year)
+            )
+            continue
+        target = (periods_map.get(year) or {}).get("value") if isinstance(periods_map.get(year), dict) else None
+        values = [(periods_map.get(key) or {}).get("value") for key in keys]
+        if not isinstance(target, (int, float)):
+            errors.append("%sline %s has %s but no numeric %s" % (prefix, line.get("name"), "+".join(keys), year))
+            continue
+        if not all(isinstance(x, (int, float)) for x in values):
+            continue
+        ordered = sorted(keys, key=lambda k: group.index(k[:-1]))
+        if abs(sum(values) - target) > SUM_TOLERANCE:
+            errors.append(
+                "%sline %s %s %.4f != %s %.4f"
+                % (prefix, line.get("name"), "+".join(ordered), sum(values), year, target)
+            )
+
+
+def _check_finagle(organic, finagle, ctx, errors, prefix):
+    explicit = ctx["explicit"]
     if not isinstance(finagle, dict):
         errors.append("%sfinagle leaves are required" % prefix)
         return
@@ -98,8 +177,8 @@ def _check_finagle(organic, finagle, explicit, errors, prefix):
                 "%sfinagle growth lists must cover the explicit years (%d)"
                 % (prefix, len(explicit))
             )
-        _compounds(organic, "ebitda", growth, "ebitda_growth", errors, prefix)
-        _compounds(organic, "revenue", sales, "sales_growth", errors, prefix)
+        _compounds(organic, "ebitda", growth, "ebitda_growth", ctx, errors, prefix)
+        _compounds(organic, "revenue", sales, "sales_growth", ctx, errors, prefix)
         ebitda = organic.get("ebitda") or {}
         revenue = organic.get("revenue") or {}
         if explicit:
@@ -121,16 +200,23 @@ def _check_finagle(organic, finagle, explicit, errors, prefix):
         errors.append("%sfinagle.mc must be non-zero" % prefix)
 
 
-def _compounds(organic, key, rates, label, errors, prefix):
+def _compounds(organic, key, rates, label, ctx, errors, prefix):
     series = organic.get(key) or {}
-    # Baseline is the period that is not an explicit forecast key.
-    ordered = [name for name in ("FY25A", "FY26E", "FY27E", "FY28E") if name in series]
+    if ctx["baseline"] is None:
+        return  # already reported as an error
+    ordered = [ctx["baseline"], *ctx["explicit"]]
     values = []
     for name in ordered:
         value = (series.get(name) or {}).get("value")
-        if isinstance(value, (int, float)):
-            values.append(value)
+        if not isinstance(value, (int, float)):
+            errors.append("%sorganic.%s missing numeric %s for compounding" % (prefix, key, name))
+            return
+        values.append(value)
     if len(values) != len(rates) + 1:
+        errors.append(
+            "%sfinagle.%s has %d rates but organic.%s has %d periods after %s"
+            % (prefix, label, len(rates), key, len(values) - 1, ctx["baseline"])
+        )
         return
     level = values[0]
     for index, rate in enumerate(rates):

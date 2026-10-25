@@ -21,11 +21,11 @@ History comes from a CEO repo when one exists, from EDGAR or SEDAR+, and from th
 ## Check
 
 ```bash
-pip install pytest
+pip install -r requirements-dev.txt
 pytest
 ```
 
-`pytest` checks `forecasts/<TICKER>/forecast.json`: every number has a tag and a citation, the lines add up, and the Finagle leaves (`ebitda_growth`, `sales_growth`, `me`, `mc`, `gsnext`) are present and consistent with the organic dollars.
+`pytest` checks `forecasts/<TICKER>/forecast.json`: every number has a tag and a citation, the lines add up, part-year periods add up to their fiscal year, and, unless a case sets `finagle_handoff: false`, the Finagle leaves (`ebitda_growth`, `sales_growth`, `me`, `mc`, `gsnext`) are present and consistent with the organic dollars.
 
 ## Sources and credit
 
