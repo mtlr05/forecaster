@@ -39,4 +39,4 @@ In `forecast.json` every citation carries `id` and `page` (or `page_status: "unv
 "sources": [{"id": "D1", "text": "..."}, {"id": "A1", "document": "D1", "page": "p.8", "text": "..."}, {"id": "C1", "inputs": ["A1", "A2"], "text": "A2 / A1 - 1"}]
 ```
 
-`pytest` checks, when `sources` is present, that each ID names one fact, that every ID used in the lines and totals resolves in `sources`, and that C entries list existing input IDs.
+`pytest` checks, when `sources` is present, that each ID names one fact, that every ID used in the lines and totals resolves in `sources`, that A/G/E entries carry the quoted `text`, and that C entries list existing input IDs. A case without `sources` passes with a warning; new cases should carry IDs.

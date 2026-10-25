@@ -13,7 +13,8 @@ unless the case sets ``finagle_handoff: false``.
 When the case has a ``sources`` list, every citation also carries an ``id``
 (A1, G1, E1, S1, C1, P1, D1) and a ``page`` (or ``page_status:
 "unverified"``). Each ID names one fact, resolves in ``sources``, and C
-entries list ``inputs`` that are existing IDs.
+entries list ``inputs`` that are existing IDs. A/G/E entries carry their
+quoted ``text``. Without a ``sources`` list the case passes with a warning.
 """
 
 from __future__ import annotations
@@ -54,8 +55,9 @@ def _is_non_dollar_key(key):
 
 def validate_payload(payload):
     errors = []
+    warnings = []
     if not isinstance(payload, dict):
-        return {"ok": False, "errors": ["forecast must be an object"]}
+        return {"ok": False, "errors": ["forecast must be an object"], "warnings": []}
     if not payload.get("ticker"):
         errors.append("ticker is required")
     explicit = payload.get("explicit_periods")
@@ -78,11 +80,13 @@ def validate_payload(payload):
     _walk_numbers({k: v for k, v in payload.items() if k != "sources"}, errors)
     if "sources" in payload:
         _check_ids(payload, errors)
+    else:
+        warnings.append("no sources block: numbered citation IDs and a sources list are expected for new cases")
     _check_block(payload, ctx, errors, prefix="")
     for name, scenario in (payload.get("scenarios") or {}).items():
         if isinstance(scenario, dict):
             _check_block(scenario, ctx, errors, prefix="scenarios.%s." % name)
-    return {"ok": not errors, "errors": errors}
+    return {"ok": not errors, "errors": errors, "warnings": warnings}
 
 
 def _check_block(block, ctx, errors, prefix):
@@ -309,6 +313,8 @@ def _check_ids(payload, errors):
         if sid in known:
             errors.append("sources id %s is listed twice" % sid)
         known[sid] = entry
+        if sid[:1] in ("A", "G", "E") and not str(entry.get("text") or "").strip():
+            errors.append("sources %s needs the quoted source text" % sid)
     for sid, entry in known.items():
         if sid.startswith("C"):
             inputs = entry.get("inputs")
