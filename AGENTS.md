@@ -2,7 +2,7 @@
 
 Near-term revenue and EBITDA forecasts for a public company, handed to Finagle. The method is the skill, not this file.
 
-Read `.cursor/skills/forecaster/SKILL.md` before forecasting. Tables and the Finagle contract are in `.cursor/skills/forecaster/references/`.
+Read `.cursor/skills/forecaster/SKILL.md` before forecasting. Tables and the Finagle contract are in `.cursor/skills/forecaster/references/`. Every forecast also gets an analyst-style `report.md` and `report.pdf` beside it, written with `.cursor/skills/forecast-report/SKILL.md`.
 
 ## Layout
 
