@@ -10,7 +10,7 @@ A line that is still being built: a recently launched product, a coverage win th
 
 Use volume times price when you have both. Otherwise grow off the latest quarter and assume a slowdown, tagged `[S]`, because a new line rarely keeps its first-year growth. Watch a price change and a channel-inventory swing before you annualize a quarter. Inventory rebuild is not demand.
 
-## New or acquired line
+## New or acquired
 
 Management gave an amount or a floor (`more than $X`) and a start date. Phase it from the close or the launch. A floor is a floor, not a midpoint. Keep an acquired line out of the organic path if Finagle will book the deal in `acquisitions`.
 

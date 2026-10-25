@@ -228,3 +228,33 @@ def test_line_pattern_is_validated():
     report = validate_payload(payload)
     assert not report["ok"]
     assert any("pattern" in error for error in report["errors"])
+
+
+def test_yoy_prefixed_keys_are_growth_not_dollars():
+    payload = _minimal()
+    for line in payload["lines"]:
+        line["periods"]["YoY_FY26"] = _fact(0.2, "C")
+    payload["totals"]["revenue"]["YoY_FY26"] = _fact(0.2, "C")
+    report = validate_payload(payload)
+    assert report["ok"], report["errors"]
+
+
+def test_reference_quarter_is_summed_but_not_a_stub():
+    payload = _minimal()
+    payload["lines"][0]["periods"]["Q4FY26A"] = _fact(12)
+    payload["lines"][1]["periods"]["Q4FY26A"] = _fact(18)
+    payload["totals"]["revenue"]["Q4FY26A"] = _fact(30)
+    report = validate_payload(payload)
+    assert report["ok"], report["errors"]
+    payload["totals"]["revenue"]["Q4FY26A"] = _fact(31)
+    report = validate_payload(payload)
+    assert not report["ok"]
+    assert any("Q4FY26A lines sum" in error for error in report["errors"])
+
+
+def test_pattern_may_carry_a_parenthetical_note():
+    payload = _minimal()
+    payload["lines"][0]["pattern"] = "ramping (share gain abroad)"
+    assert validate_payload(payload)["ok"]
+    payload["lines"][0]["pattern"] = "mature"
+    assert not validate_payload(payload)["ok"]
