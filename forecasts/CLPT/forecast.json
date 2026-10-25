@@ -1,0 +1,4019 @@
+{
+  "ticker": "CLPT",
+  "company": "ClearPoint Neuro, Inc. (Nasdaq: CLPT)",
+  "units": "USD millions",
+  "baseline_period": "FY25A",
+  "explicit_periods": [
+    "FY26E",
+    "FY27E",
+    "FY28E",
+    "FY29E",
+    "FY30E",
+    "FY31E",
+    "FY32E"
+  ],
+  "as_of": "2026-10-23",
+  "explicit_window_note": "Window extended to FY32E (David t350u, 2026-10-23) so bemdaneprocel reaches steady state inside the explicit years in all cases (base FY31, bull FY30, bear FY32). FY28E-FY32E rest on judgments; forecastcheck checks growth compounding only to FY28E.",
+  "lines": [
+    {
+      "name": "Biologics and drug delivery",
+      "periods": {
+        "FY24A": {
+          "value": 17.31,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2024 column, disaggregated revenue, 2025 Form 10-K (Note 2 / MD&A).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "FY25A": {
+          "value": 19.04,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2025 column, disaggregated revenue, 2025 Form 10-K.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "YoY": {
+          "value": 0.099942,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "FY25A / FY24A - 1 (A2).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "H1A": {
+          "value": 8.839,
+          "tag": "A",
+          "citation": {
+            "id": "A4",
+            "text": "Six months ended June 30, 2026, disaggregated revenue, Q2 2026 Form 10-Q.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+          }
+        },
+        "H2E": {
+          "value": 10.811954,
+          "tag": "S",
+          "citation": {
+            "id": "S1",
+            "text": "Unscaled H2 driver x scale C4 (see forecast.md).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+          }
+        },
+        "FY26E": {
+          "value": 19.650954,
+          "tag": "C",
+          "citation": {
+            "id": "C5",
+            "text": "H1A (A4) + H2E.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+          }
+        },
+        "FY27E": {
+          "value": 22.843582,
+          "tag": "S",
+          "citation": {
+            "id": "S4",
+            "text": "FY26E x (1 + driver growth) x scale C6.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY28E": {
+          "value": 26.270119,
+          "tag": "S",
+          "citation": {
+            "id": "S7",
+            "text": "FY27E x (1 + core growth S7). No consensus for FY28.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY29E": {
+          "value": 30.210637,
+          "tag": "S",
+          "citation": {
+            "id": "S26",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY30E": {
+          "value": 34.742233,
+          "tag": "S",
+          "citation": {
+            "id": "S26",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY31E": {
+          "value": 39.953567,
+          "tag": "S",
+          "citation": {
+            "id": "S32",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY32E": {
+          "value": 45.946602,
+          "tag": "S",
+          "citation": {
+            "id": "S32",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        }
+      }
+    },
+    {
+      "name": "Neurosurgery navigation and therapy",
+      "periods": {
+        "FY24A": {
+          "value": 10.285,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2024 column, disaggregated revenue, 2025 Form 10-K (Note 2 / MD&A).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "FY25A": {
+          "value": 14.831,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2025 column, disaggregated revenue, 2025 Form 10-K.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "YoY": {
+          "value": 0.442003,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "FY25A / FY24A - 1 (A2).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "H1A": {
+          "value": 11.439,
+          "tag": "A",
+          "citation": {
+            "id": "A4",
+            "text": "Six months ended June 30, 2026, disaggregated revenue, Q2 2026 Form 10-Q.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+          }
+        },
+        "H2E": {
+          "value": 12.254855,
+          "tag": "S",
+          "citation": {
+            "id": "S2",
+            "text": "Unscaled H2 driver x scale C4 (see forecast.md).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+          }
+        },
+        "FY26E": {
+          "value": 23.693855,
+          "tag": "C",
+          "citation": {
+            "id": "C5",
+            "text": "H1A (A4) + H2E.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+          }
+        },
+        "FY27E": {
+          "value": 27.54332,
+          "tag": "S",
+          "citation": {
+            "id": "S5",
+            "text": "FY26E x (1 + driver growth) x scale C6.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY28E": {
+          "value": 31.674818,
+          "tag": "S",
+          "citation": {
+            "id": "S7",
+            "text": "FY27E x (1 + core growth S7). No consensus for FY28.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY29E": {
+          "value": 36.426041,
+          "tag": "S",
+          "citation": {
+            "id": "S26",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY30E": {
+          "value": 41.889947,
+          "tag": "S",
+          "citation": {
+            "id": "S26",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY31E": {
+          "value": 48.173439,
+          "tag": "S",
+          "citation": {
+            "id": "S32",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY32E": {
+          "value": 55.399455,
+          "tag": "S",
+          "citation": {
+            "id": "S32",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        }
+      }
+    },
+    {
+      "name": "Capital equipment and software",
+      "periods": {
+        "FY24A": {
+          "value": 3.795,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2024 column, disaggregated revenue, 2025 Form 10-K (Note 2 / MD&A).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "FY25A": {
+          "value": 3.1,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2025 column, disaggregated revenue, 2025 Form 10-K.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "YoY": {
+          "value": -0.183136,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "FY25A / FY24A - 1 (A2).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "H1A": {
+          "value": 2.73,
+          "tag": "A",
+          "citation": {
+            "id": "A4",
+            "text": "Six months ended June 30, 2026, disaggregated revenue, Q2 2026 Form 10-Q.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+          }
+        },
+        "H2E": {
+          "value": 2.925191,
+          "tag": "S",
+          "citation": {
+            "id": "S3",
+            "text": "Unscaled H2 driver x scale C4 (see forecast.md).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+          }
+        },
+        "FY26E": {
+          "value": 5.655191,
+          "tag": "C",
+          "citation": {
+            "id": "C5",
+            "text": "H1A (A4) + H2E.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+          }
+        },
+        "FY27E": {
+          "value": 6.163098,
+          "tag": "S",
+          "citation": {
+            "id": "S6",
+            "text": "FY26E x (1 + driver growth) x scale C6.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY28E": {
+          "value": 7.087563,
+          "tag": "S",
+          "citation": {
+            "id": "S7",
+            "text": "FY27E x (1 + core growth S7). No consensus for FY28.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY29E": {
+          "value": 8.150697,
+          "tag": "S",
+          "citation": {
+            "id": "S26",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY30E": {
+          "value": 9.373302,
+          "tag": "S",
+          "citation": {
+            "id": "S26",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY31E": {
+          "value": 10.779297,
+          "tag": "S",
+          "citation": {
+            "id": "S32",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY32E": {
+          "value": 12.396192,
+          "tag": "S",
+          "citation": {
+            "id": "S32",
+            "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        }
+      }
+    },
+    {
+      "name": "Commercial drug delivery (AMT-130, one-time Parkinson's cell/gene therapy class) [scenario]",
+      "periods": {
+        "FY24A": {
+          "value": 0.0,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "No commercial (approved-product) drug delivery revenue reported.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "FY25A": {
+          "value": 0.0,
+          "tag": "A",
+          "citation": {
+            "id": "G3",
+            "text": "Management: 2026 guidance 'does not include any meaningful expected revenue from commercial drug delivery'.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "H1A": {
+          "value": 0.0,
+          "tag": "A",
+          "citation": {
+            "id": "A4",
+            "text": "None reported in H1 2026.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+          }
+        },
+        "H2E": {
+          "value": 0.0,
+          "tag": "S",
+          "citation": {
+            "id": "S8",
+            "text": "AMT-130 action date no earlier than late Apr/early May 2027 (uniQure).",
+            "url": "https://www.biopharmadive.com/news/uniqure-submit-fda-approval-huntingtons-gene-therapy/829400/"
+          }
+        },
+        "FY26E": {
+          "value": 0.0,
+          "tag": "C",
+          "citation": {
+            "id": "C5",
+            "text": "H1A + H2E.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+          }
+        },
+        "FY27E": {
+          "value": 6.6,
+          "tag": "P",
+          "citation": {
+            "id": "P2",
+            "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 330 + one-time PD class 0 procedures x $20k (S20-S22, G7).",
+            "url": "prompt:t342u"
+          }
+        },
+        "FY28E": {
+          "value": 50.0,
+          "tag": "P",
+          "citation": {
+            "id": "P2",
+            "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 2500 + one-time PD class 0 procedures x $20k (S20-S22, G7).",
+            "url": "prompt:t342u"
+          }
+        },
+        "FY29E": {
+          "value": 141.78,
+          "tag": "P",
+          "citation": {
+            "id": "P2",
+            "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 3170 + one-time PD class 3919 procedures x $20k (S20-S22, G7).",
+            "url": "prompt:t342u"
+          }
+        },
+        "FY30E": {
+          "value": 211.88,
+          "tag": "P",
+          "citation": {
+            "id": "P2",
+            "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 3000 + one-time PD class 7594 procedures x $20k (S20-S22, G7).",
+            "url": "prompt:t342u"
+          }
+        },
+        "FY31E": {
+          "value": 282.52,
+          "tag": "P",
+          "citation": {
+            "id": "P2",
+            "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 3000 + one-time PD class 11126 procedures x $20k (S20-S22, G7).",
+            "url": "prompt:t342u"
+          }
+        },
+        "FY32E": {
+          "value": 278.9,
+          "tag": "P",
+          "citation": {
+            "id": "P2",
+            "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 3000 + one-time PD class 10945 procedures x $20k (S20-S22, G7).",
+            "url": "prompt:t342u"
+          }
+        }
+      }
+    },
+    {
+      "name": "Preclinical services uplift, CAL GLP facility [scenario]",
+      "periods": {
+        "FY24A": {
+          "value": 0.0,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "No CAL facility before the June 2025 lease (inside BDD line).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "FY25A": {
+          "value": 0.0,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "Lease signed June 2025; first sponsor study 2025, in BDD line (D7).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+          }
+        },
+        "H2E": {
+          "value": 0.0,
+          "tag": "G",
+          "citation": {
+            "id": "G10",
+            "text": "No large CAL study in H2 2026 guidance; first GLP SOW to complete H1 2027.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "H1A": {
+          "value": 0.0,
+          "tag": "A",
+          "citation": {
+            "id": "A4",
+            "text": "CAL revenue so far reported inside BDD; Q2 miss 'attributed to a delayed ramp of these preclinical CAL services' (G9).",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY26E": {
+          "value": 0.0,
+          "tag": "G",
+          "citation": {
+            "id": "G10",
+            "text": "FY26 guidance 'does not include the execution of any of these large studies'.",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY27E": {
+          "value": 0.0,
+          "tag": "S",
+          "citation": {
+            "id": "S37",
+            "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY28E": {
+          "value": 7.0,
+          "tag": "S",
+          "citation": {
+            "id": "S37",
+            "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY29E": {
+          "value": 14.0,
+          "tag": "S",
+          "citation": {
+            "id": "S37",
+            "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY30E": {
+          "value": 22.0,
+          "tag": "S",
+          "citation": {
+            "id": "S37",
+            "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY31E": {
+          "value": 29.0,
+          "tag": "S",
+          "citation": {
+            "id": "S37",
+            "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "FY32E": {
+          "value": 36.0,
+          "tag": "S",
+          "citation": {
+            "id": "S37",
+            "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        }
+      }
+    }
+  ],
+  "totals": {
+    "revenue": {
+      "FY24A": {
+        "value": 31.39,
+        "tag": "A",
+        "citation": {
+          "id": "A1",
+          "text": "Total revenue 2024, 2025 Form 10-K.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "FY25A": {
+        "value": 36.971,
+        "tag": "A",
+        "citation": {
+          "id": "A1",
+          "text": "Total revenue 2025, 2025 Form 10-K.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "YoY": {
+        "value": 0.177795,
+        "tag": "C",
+        "citation": {
+          "id": "C1",
+          "text": "A1 FY25 / FY24 - 1.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "H1A": {
+        "value": 23.008,
+        "tag": "A",
+        "citation": {
+          "id": "A4",
+          "text": "Total revenue six months ended June 30, 2026.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+        }
+      },
+      "H2E": {
+        "value": 25.992,
+        "tag": "C",
+        "citation": {
+          "id": "C3",
+          "text": "E1 FY26 consensus - A4.",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY26E": {
+        "value": 49.0,
+        "tag": "E",
+        "citation": {
+          "id": "E1",
+          "text": "base FY26 revenue consensus, Equibles (2 analysts), captured 2026-09-30.",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY27E": {
+        "value": 63.15,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "E1 FY27 core consensus 56.55 + procedure line P2.",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY28E": {
+        "value": 122.0325,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY29E": {
+        "value": 230.567375,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY30E": {
+        "value": 319.885481,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY31E": {
+        "value": 410.426303,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY32E": {
+        "value": 428.642249,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      }
+    },
+    "gross_margin": {
+      "FY25A": {
+        "value": 0.613778,
+        "tag": "C",
+        "citation": {
+          "id": "C8",
+          "text": "Gross profit 22.692 / revenue 36.971, 2025 Form 10-K.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "H1A": {
+        "value": 0.628738,
+        "tag": "C",
+        "citation": {
+          "id": "C8",
+          "text": "Gross profit 14.466 / revenue 23.008, H1 2026 (A5).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY26E": {
+        "value": 0.628738,
+        "tag": "S",
+        "citation": {
+          "id": "S13",
+          "text": "H2 at trailing H1 gross margin.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY27E": {
+        "value": 0.636186,
+        "tag": "S",
+        "citation": {
+          "id": "S23",
+          "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "FY28E": {
+        "value": 0.657936,
+        "tag": "S",
+        "citation": {
+          "id": "S23",
+          "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "FY29E": {
+        "value": 0.672558,
+        "tag": "S",
+        "citation": {
+          "id": "S23",
+          "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "FY30E": {
+        "value": 0.675939,
+        "tag": "S",
+        "citation": {
+          "id": "S23",
+          "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "FY31E": {
+        "value": 0.677792,
+        "tag": "S",
+        "citation": {
+          "id": "S23",
+          "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "FY32E": {
+        "value": 0.675105,
+        "tag": "S",
+        "citation": {
+          "id": "S23",
+          "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      }
+    },
+    "ebitda": {
+      "FY25A": {
+        "value": -15.17,
+        "tag": "C",
+        "citation": {
+          "id": "A3",
+          "text": "Operating loss -24.164 + D&A 0.814 + SBC 8.180 (2025 10-K; Finagle build_baseline basis, before SBC).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "H1A": {
+        "value": -12.99,
+        "tag": "C",
+        "citation": {
+          "id": "C2",
+          "text": "H1 2026 operating loss -18.722 + D&A 0.236 + intangible amortization 1.007 + SBC 4.489 (A5).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY26E": {
+        "value": -23.554726,
+        "tag": "C",
+        "citation": {
+          "id": "C9",
+          "text": "H1A + H2 revenue x gross margin - H2 cash opex (S14). No EBITDA guidance or consensus.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY27E": {
+        "value": -19.527461,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY28E": {
+        "value": 11.994843,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY29E": {
+        "value": 71.202531,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY30E": {
+        "value": 120.601209,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY31E": {
+        "value": 170.795912,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY32E": {
+        "value": 177.486216,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      }
+    },
+    "ebitda_margin": {
+      "FY25A": {
+        "value": -0.410322,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "EBITDA / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "H1A": {
+        "value": -0.564586,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "EBITDA / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY26E": {
+        "value": -0.480709,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "EBITDA / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY27E": {
+        "value": -0.309223,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "EBITDA / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY28E": {
+        "value": 0.098292,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "EBITDA / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY29E": {
+        "value": 0.308814,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "EBITDA / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY30E": {
+        "value": 0.377014,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "EBITDA / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY31E": {
+        "value": 0.416143,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "EBITDA / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY32E": {
+        "value": 0.414066,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "EBITDA / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      }
+    },
+    "cash_opex": {
+      "H1A": {
+        "value": 27.456,
+        "tag": "C",
+        "citation": {
+          "id": "C2",
+          "text": "H1 gross profit 14.466 - H1 EBITDA (C2).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "H2E": {
+        "value": 26.90688,
+        "tag": "S",
+        "citation": {
+          "id": "S14",
+          "text": "H1 run rate x (1 -2%): 'operational cash burn to decrease in the second half'.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY27E": {
+        "value": 59.702586,
+        "tag": "S",
+        "citation": {
+          "id": "S16",
+          "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 2.660 (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY28E": {
+        "value": 68.294715,
+        "tag": "S",
+        "citation": {
+          "id": "S16",
+          "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 8.400 (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY29E": {
+        "value": 83.867451,
+        "tag": "S",
+        "citation": {
+          "id": "S16",
+          "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 20.978 (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY30E": {
+        "value": 95.621923,
+        "tag": "S",
+        "citation": {
+          "id": "S16",
+          "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 29.588 (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY31E": {
+        "value": 107.387619,
+        "tag": "S",
+        "citation": {
+          "id": "S16",
+          "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 38.052 (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY32E": {
+        "value": 111.8924,
+        "tag": "S",
+        "citation": {
+          "id": "S16",
+          "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 39.090 (S24/S25).",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      }
+    },
+    "procedures": {
+      "FY27E": {
+        "value": 330,
+        "tag": "S",
+        "citation": {
+          "id": "S20",
+          "text": "AMT-130 330 + one-time Parkinson's cell/gene therapy procedures (class) 0.",
+          "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+        }
+      },
+      "FY28E": {
+        "value": 2500,
+        "tag": "S",
+        "citation": {
+          "id": "S20",
+          "text": "AMT-130 2500 + one-time Parkinson's cell/gene therapy procedures (class) 0.",
+          "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+        }
+      },
+      "FY29E": {
+        "value": 7089,
+        "tag": "S",
+        "citation": {
+          "id": "S20",
+          "text": "AMT-130 3170 + one-time Parkinson's cell/gene therapy procedures (class) 3919.",
+          "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+        }
+      },
+      "FY30E": {
+        "value": 10594,
+        "tag": "S",
+        "citation": {
+          "id": "S20",
+          "text": "AMT-130 3000 + one-time Parkinson's cell/gene therapy procedures (class) 7594.",
+          "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+        }
+      },
+      "FY31E": {
+        "value": 14126,
+        "tag": "S",
+        "citation": {
+          "id": "S20",
+          "text": "AMT-130 3000 + one-time Parkinson's cell/gene therapy procedures (class) 11126.",
+          "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+        }
+      },
+      "FY32E": {
+        "value": 13945,
+        "tag": "S",
+        "citation": {
+          "id": "S20",
+          "text": "AMT-130 3000 + one-time Parkinson's cell/gene therapy procedures (class) 10945.",
+          "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+        }
+      }
+    }
+  },
+  "organic": {
+    "revenue": {
+      "FY25A": {
+        "value": 36.971,
+        "tag": "A",
+        "citation": {
+          "id": "A1",
+          "text": "Organic = total; IRRAS closed Nov 2025 (inside year 0); no future deal.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "FY26E": {
+        "value": 49.0,
+        "tag": "E",
+        "citation": {
+          "id": "E1",
+          "text": "Organic = total.",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY27E": {
+        "value": 63.15,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Organic = total.",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY28E": {
+        "value": 122.0325,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Organic = total.",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY29E": {
+        "value": 230.567375,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Organic = total.",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY30E": {
+        "value": 319.885481,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Organic = total.",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY31E": {
+        "value": 410.426303,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Organic = total.",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      },
+      "FY32E": {
+        "value": 428.642249,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Organic = total.",
+          "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+        }
+      }
+    },
+    "ebitda": {
+      "FY25A": {
+        "value": -15.17,
+        "tag": "C",
+        "citation": {
+          "id": "A3",
+          "text": "Organic = total.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+        }
+      },
+      "FY26E": {
+        "value": -23.554726,
+        "tag": "C",
+        "citation": {
+          "id": "C9",
+          "text": "Organic = total.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY27E": {
+        "value": -19.527461,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Organic = total.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY28E": {
+        "value": 11.994843,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Organic = total.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY29E": {
+        "value": 71.202531,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Organic = total.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY30E": {
+        "value": 120.601209,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Organic = total.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY31E": {
+        "value": 170.795912,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Organic = total.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      },
+      "FY32E": {
+        "value": 177.486216,
+        "tag": "S",
+        "citation": {
+          "id": "S15",
+          "text": "Organic = total.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+        }
+      }
+    }
+  },
+  "finagle": {
+    "ebitda_growth": {
+      "value": [
+        0.552718,
+        -0.170975,
+        -1.614255,
+        4.936095,
+        0.693777,
+        0.416204,
+        0.039171
+      ],
+      "tag": "C",
+      "citation": {
+        "id": "C11",
+        "text": "EBITDA growth FY26-FY32: ratio of consecutive EBITDA levels - 1 (sign changes make some rates large).",
+        "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+      }
+    },
+    "sales_growth": {
+      "value": [
+        0.325363,
+        0.288776,
+        0.932423,
+        0.889393,
+        0.387384,
+        0.283041,
+        0.044383
+      ],
+      "tag": "C",
+      "citation": {
+        "id": "C11",
+        "text": "Revenue growth FY26-FY32.",
+        "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+      }
+    },
+    "me": {
+      "value": 0.414066,
+      "tag": "C",
+      "citation": {
+        "id": "C12",
+        "text": "FY32E EBITDA / FY32E revenue.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+      }
+    },
+    "mc": {
+      "value": 0.5,
+      "tag": "S",
+      "citation": {
+        "id": "S17",
+        "text": "Incremental EBITDA per incremental revenue dollar after FY32: procedure GM 70% less 10% specialists, blended with core.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+      }
+    },
+    "gsnext": {
+      "value": 0.051095,
+      "tag": "C",
+      "citation": {
+        "id": "C29",
+        "text": "v5: FY33 growth = (FY32 core x core growth S26 + one more year of the FY32 CAL increment, capped at $60M G9, + procedures stepping to steady state S30/S31 if not yet there, bear only) / FY32 revenue; Finagle then fades it linearly to its default gt over FY34-FY45 (year=20).",
+        "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+      }
+    },
+    "ebitda_basis": "total",
+    "acquisition_disclosure": {
+      "status": "none"
+    }
+  },
+  "bridge": {
+    "c_fy25_revenue": {
+      "value": 0.1942,
+      "tag": "C",
+      "citation": {
+        "id": "C13",
+        "text": "(36.971 - 36.0) / (41.0 - 36.0): FY25 original range $36.0-41.0M (G1).",
+        "url": "https://www.sec.gov/Archives/edgar/data/1285550/000095017025027716/clpt-ex99_1.htm"
+      }
+    },
+    "fy26_guidance_low": {
+      "value": 48.0,
+      "tag": "G",
+      "citation": {
+        "id": "G2",
+        "text": "'adjusting our 2026 revenue guidance to between $48.0 - $52.0 million' (Aug 3, 2026; original $52.0-56.0M).",
+        "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+      }
+    },
+    "fy26_guidance_high": {
+      "value": 52.0,
+      "tag": "G",
+      "citation": {
+        "id": "G2",
+        "text": "Revised range high.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+      }
+    },
+    "scale_h2": {
+      "value": 1.071498,
+      "tag": "C",
+      "citation": {
+        "id": "C4",
+        "text": "Consensus H2 / unscaled H2 line build.",
+        "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+      }
+    },
+    "scale_fy27": {
+      "value": 1.037917,
+      "tag": "C",
+      "citation": {
+        "id": "C6",
+        "text": "FY27 core consensus / unscaled FY27 line build.",
+        "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+      }
+    },
+    "unscaled_h2": {
+      "value": 24.25762,
+      "tag": "S",
+      "citation": {
+        "id": "S1",
+        "text": "Sum of S1-S3 drivers (diagnostic).",
+        "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+      }
+    },
+    "amt130_rev_per_procedure_range_low": {
+      "value": 0.015,
+      "tag": "G",
+      "citation": {
+        "id": "G4",
+        "text": "'$15,000 to $25,000 per procedure' for a typical uniQure procedure (Q2 2026 call).",
+        "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+      }
+    },
+    "amt130_rev_per_procedure_range_high": {
+      "value": 0.025,
+      "tag": "G",
+      "citation": {
+        "id": "G4",
+        "text": "Same quote.",
+        "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+      }
+    },
+    "partner_rev_per_patient_low": {
+      "value": 0.012,
+      "tag": "G",
+      "citation": {
+        "id": "G5",
+        "text": "'$12,000 to $15,000 range per patient' across pharma partners (Q2 2026 call).",
+        "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+      }
+    },
+    "partner_rev_per_patient_high": {
+      "value": 0.015,
+      "tag": "G",
+      "citation": {
+        "id": "G5",
+        "text": "Same quote.",
+        "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+      }
+    },
+    "price_per_procedure": {
+      "value": 0.02,
+      "tag": "P",
+      "citation": {
+        "id": "P2",
+        "text": "David: all procedures at $20k, both therapies, all cases.",
+        "url": "prompt:t342u"
+      }
+    },
+    "amt130_treatable_pool": {
+      "value": 6000,
+      "tag": "G",
+      "citation": {
+        "id": "G8",
+        "text": "uniQure: '~6,000 patients* Initial Treatable Patients at Launch' (*management estimate), Sept 2025 deck p.25.",
+        "url": "https://cdn.craft.cloud/fe68e1a2-b284-4f69-ba29-921f065edf17/assets/uploads/AMT-130-Pivotal-Sept-2025_final_09.24.25.pdf"
+      }
+    },
+    "hd_incidence_per_person_year": {
+      "value": 1.2e-05,
+      "tag": "A",
+      "citation": {
+        "id": "A7",
+        "text": "Age-adjusted cumulative incidence 1.22 per 100,000 person-years, US insured cohort 2003-2016 (Bruzelius et al. 2019).",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6579693/"
+      }
+    },
+    "new_eligible_per_year": {
+      "value": 1226.1,
+      "tag": "C",
+      "citation": {
+        "id": "C22",
+        "text": "US population 335M (S28) x 1.22/100k (A7) x treatable/diagnosed 6,000/20,000 (C21).",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6579693/"
+      }
+    },
+    "us_hd_incidence_cases": {
+      "value": 4087.0,
+      "tag": "C",
+      "citation": {
+        "id": "C23",
+        "text": "335M (S28) x 1.22/100k (A7).",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6579693/"
+      }
+    },
+    "usuk_hd_incidence_cases": {
+      "value": 4542.6,
+      "tag": "C",
+      "citation": {
+        "id": "C24",
+        "text": "C23 + 68M (S28) x 0.67/100k UK (A8).",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10086981/"
+      }
+    },
+    "amt130_steady_state": {
+      "value": 3000,
+      "tag": "S",
+      "citation": {
+        "id": "S30",
+        "text": "David: treated ~3,000/yr from FY30 = 73% of US / 66% of US+UK incident HD (C25).",
+        "url": "prompt:t342u"
+      }
+    },
+    "pd_incidence_us": {
+      "value": 90000,
+      "tag": "A",
+      "citation": {
+        "id": "A9",
+        "text": "'nearly 90,000 people are diagnosed with Parkinson's disease every year in the U.S.'",
+        "url": "https://www.parkinson.org/understanding-parkinsons/statistics/prevalence-incidence"
+      }
+    },
+    "dbs_pd_per_year": {
+      "value": 3990,
+      "tag": "A",
+      "citation": {
+        "id": "A10",
+        "text": "NIS 2019: 3,990 DBS for PD (1.10% of PD discharges; 3,615-4,025 a year 2016-19), Table 4.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10898494/"
+      }
+    },
+    "pd_class_fy33_volume": {
+      "value": 10837,
+      "tag": "S",
+      "citation": {
+        "id": "S31",
+        "text": "FY33 one-time PD class procedures = class demand (C40 10837 base, C46 13530 bull); bear capped at 4,500 capacity (S43; bear class demand C50 8306) = {'base': 10837, 'bull': 13530, 'bear': 4500}.",
+        "url": "https://doi.org/10.1038/s41531-018-0058-0"
+      }
+    },
+    "pd_class_demand": {
+      "value": [
+        0,
+        0,
+        11756,
+        11391,
+        11126,
+        10945
+      ],
+      "tag": "C",
+      "citation": {
+        "id": "C40",
+        "text": "FY27-32: eligible-pool model one-time treated (6% of opening pool from FY29, S45); DBS not deducted (S44); Appendix C.",
+        "url": "https://doi.org/10.1038/s41531-018-0058-0"
+      }
+    },
+    "pd_untreated_pool_2026": {
+      "value": 179812.906957,
+      "tag": "C",
+      "citation": {
+        "id": "C42",
+        "text": "Appendix C funnel: 1.104M x (0.729-0.28) x 0.50 x 0.806 x 0.90 = 179,813 (DBS patients included, S44).",
+        "url": "https://doi.org/10.1038/s41531-018-0058-0"
+      }
+    },
+    "cal_capacity_quote": {
+      "value": 60.0,
+      "tag": "G",
+      "citation": {
+        "id": "G9",
+        "text": "Burnett: prior preclinical capacity '$8 million a year'; new CAL facility 'could surpass $60 million or so' (Q2 2026 call).",
+        "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+      }
+    },
+    "capacity_quote": {
+      "value": 4500,
+      "tag": "G",
+      "citation": {
+        "id": "G7",
+        "text": "Burnett: 15 centres 'ready to do 1, if not 2' a week; 20-30 centres '50 to 100 cases a week' (Q2 2026 call); 4,500/yr = 30 centres x 3/wk x 50 wks (S20).",
+        "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+      }
+    }
+  },
+  "scenarios": {
+    "bull": {
+      "lines": [
+        {
+          "name": "Biologics and drug delivery",
+          "periods": {
+            "FY24A": {
+              "value": 17.31,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, disaggregated revenue, 2025 Form 10-K (Note 2 / MD&A).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "FY25A": {
+              "value": 19.04,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, disaggregated revenue, 2025 Form 10-K.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "YoY": {
+              "value": 0.099942,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "H1A": {
+              "value": 8.839,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Six months ended June 30, 2026, disaggregated revenue, Q2 2026 Form 10-Q.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 11.227927,
+              "tag": "S",
+              "citation": {
+                "id": "S1",
+                "text": "Unscaled H2 driver x scale C4 (see forecast.md).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 20.066927,
+              "tag": "C",
+              "citation": {
+                "id": "C5",
+                "text": "H1A (A4) + H2E.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "FY27E": {
+              "value": 23.08285,
+              "tag": "S",
+              "citation": {
+                "id": "S4",
+                "text": "FY26E x (1 + driver growth) x scale C6.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY28E": {
+              "value": 27.237763,
+              "tag": "S",
+              "citation": {
+                "id": "S7",
+                "text": "FY27E x (1 + core growth S7). No consensus for FY28.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY29E": {
+              "value": 32.14056,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY30E": {
+              "value": 37.925861,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY31E": {
+              "value": 44.752516,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY32E": {
+              "value": 52.807969,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            }
+          }
+        },
+        {
+          "name": "Neurosurgery navigation and therapy",
+          "periods": {
+            "FY24A": {
+              "value": 10.285,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, disaggregated revenue, 2025 Form 10-K (Note 2 / MD&A).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "FY25A": {
+              "value": 14.831,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, disaggregated revenue, 2025 Form 10-K.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "YoY": {
+              "value": 0.442003,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "H1A": {
+              "value": 11.439,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Six months ended June 30, 2026, disaggregated revenue, Q2 2026 Form 10-Q.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 12.726341,
+              "tag": "S",
+              "citation": {
+                "id": "S2",
+                "text": "Unscaled H2 driver x scale C4 (see forecast.md).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 24.165341,
+              "tag": "C",
+              "citation": {
+                "id": "C5",
+                "text": "H1A (A4) + H2E.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "FY27E": {
+              "value": 27.797228,
+              "tag": "S",
+              "citation": {
+                "id": "S5",
+                "text": "FY26E x (1 + driver growth) x scale C6.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY28E": {
+              "value": 32.800729,
+              "tag": "S",
+              "citation": {
+                "id": "S7",
+                "text": "FY27E x (1 + core growth S7). No consensus for FY28.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY29E": {
+              "value": 38.70486,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY30E": {
+              "value": 45.671735,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY31E": {
+              "value": 53.892648,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY32E": {
+              "value": 63.593324,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            }
+          }
+        },
+        {
+          "name": "Capital equipment and software",
+          "periods": {
+            "FY24A": {
+              "value": 3.795,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, disaggregated revenue, 2025 Form 10-K (Note 2 / MD&A).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "FY25A": {
+              "value": 3.1,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, disaggregated revenue, 2025 Form 10-K.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "YoY": {
+              "value": -0.183136,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "H1A": {
+              "value": 2.73,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Six months ended June 30, 2026, disaggregated revenue, Q2 2026 Form 10-Q.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 3.037732,
+              "tag": "S",
+              "citation": {
+                "id": "S3",
+                "text": "Unscaled H2 driver x scale C4 (see forecast.md).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 5.767732,
+              "tag": "C",
+              "citation": {
+                "id": "C5",
+                "text": "H1A (A4) + H2E.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "FY27E": {
+              "value": 6.219922,
+              "tag": "S",
+              "citation": {
+                "id": "S6",
+                "text": "FY26E x (1 + driver growth) x scale C6.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY28E": {
+              "value": 7.339508,
+              "tag": "S",
+              "citation": {
+                "id": "S7",
+                "text": "FY27E x (1 + core growth S7). No consensus for FY28.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY29E": {
+              "value": 8.66062,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY30E": {
+              "value": 10.219531,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY31E": {
+              "value": 12.059047,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY32E": {
+              "value": 14.229675,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            }
+          }
+        },
+        {
+          "name": "Commercial drug delivery (AMT-130, one-time Parkinson's cell/gene therapy class) [scenario]",
+          "periods": {
+            "FY24A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "No commercial (approved-product) drug delivery revenue reported.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "FY25A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "G3",
+                "text": "Management: 2026 guidance 'does not include any meaningful expected revenue from commercial drug delivery'.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "H1A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "None reported in H1 2026.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 0.0,
+              "tag": "S",
+              "citation": {
+                "id": "S8",
+                "text": "AMT-130 action date no earlier than late Apr/early May 2027 (uniQure).",
+                "url": "https://www.biopharmadive.com/news/uniqure-submit-fda-approval-huntingtons-gene-therapy/829400/"
+              }
+            },
+            "FY26E": {
+              "value": 0.0,
+              "tag": "C",
+              "citation": {
+                "id": "C5",
+                "text": "H1A + H2E.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "FY27E": {
+              "value": 17.6,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 880 + one-time PD class 0 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            },
+            "FY28E": {
+              "value": 90.0,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 4500 + one-time PD class 0 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            },
+            "FY29E": {
+              "value": 186.9,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 4120 + one-time PD class 5225 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            },
+            "FY30E": {
+              "value": 268.34,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 3500 + one-time PD class 9917 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            },
+            "FY31E": {
+              "value": 355.44,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 3500 + one-time PD class 14272 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            },
+            "FY32E": {
+              "value": 346.66,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 3500 + one-time PD class 13833 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            }
+          }
+        },
+        {
+          "name": "Preclinical services uplift, CAL GLP facility [scenario]",
+          "periods": {
+            "FY24A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "No CAL facility before the June 2025 lease (inside BDD line).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "FY25A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "Lease signed June 2025; first sponsor study 2025, in BDD line (D7).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "H2E": {
+              "value": 0.0,
+              "tag": "G",
+              "citation": {
+                "id": "G10",
+                "text": "No large CAL study in H2 2026 guidance; first GLP SOW to complete H1 2027.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "H1A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "CAL revenue so far reported inside BDD; Q2 miss 'attributed to a delayed ramp of these preclinical CAL services' (G9).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY26E": {
+              "value": 0.0,
+              "tag": "G",
+              "citation": {
+                "id": "G10",
+                "text": "FY26 guidance 'does not include the execution of any of these large studies'.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY27E": {
+              "value": 3.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY28E": {
+              "value": 10.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY29E": {
+              "value": 18.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY30E": {
+              "value": 27.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY31E": {
+              "value": 36.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY32E": {
+              "value": 45.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            }
+          }
+        }
+      ],
+      "totals": {
+        "revenue": {
+          "FY24A": {
+            "value": 31.39,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Total revenue 2024, 2025 Form 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY25A": {
+            "value": 36.971,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Total revenue 2025, 2025 Form 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "YoY": {
+            "value": 0.177795,
+            "tag": "C",
+            "citation": {
+              "id": "C1",
+              "text": "A1 FY25 / FY24 - 1.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "H1A": {
+            "value": 23.008,
+            "tag": "A",
+            "citation": {
+              "id": "A4",
+              "text": "Total revenue six months ended June 30, 2026.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+            }
+          },
+          "H2E": {
+            "value": 26.992,
+            "tag": "C",
+            "citation": {
+              "id": "C3",
+              "text": "E1 FY26 consensus - A4.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY26E": {
+            "value": 50.0,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "bull FY26 revenue consensus, Equibles (2 analysts), captured 2026-09-30.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY27E": {
+            "value": 77.7,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "E1 FY27 core consensus 57.10 + procedure line P2.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY28E": {
+            "value": 167.378,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY29E": {
+            "value": 284.40604,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY30E": {
+            "value": 389.157127,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY31E": {
+            "value": 502.14421,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY32E": {
+            "value": 522.290968,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          }
+        },
+        "gross_margin": {
+          "FY25A": {
+            "value": 0.613778,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "Gross profit 22.692 / revenue 36.971, 2025 Form 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "H1A": {
+            "value": 0.628738,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "Gross profit 14.466 / revenue 23.008, H1 2026 (A5).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY26E": {
+            "value": 0.628738,
+            "tag": "S",
+            "citation": {
+              "id": "S13",
+              "text": "H2 at trailing H1 gross margin.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY27E": {
+            "value": 0.64488,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY28E": {
+            "value": 0.667056,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY29E": {
+            "value": 0.675568,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY30E": {
+            "value": 0.677876,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY31E": {
+            "value": 0.67918,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY32E": {
+            "value": 0.676037,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": -15.17,
+            "tag": "C",
+            "citation": {
+              "id": "A3",
+              "text": "Operating loss -24.164 + D&A 0.814 + SBC 8.180 (2025 10-K; Finagle build_baseline basis, before SBC).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "H1A": {
+            "value": -12.99,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "H1 2026 operating loss -18.722 + D&A 0.236 + intangible amortization 1.007 + SBC 4.489 (A5).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY26E": {
+            "value": -22.925988,
+            "tag": "C",
+            "citation": {
+              "id": "C9",
+              "text": "H1A + H2 revenue x gross margin - H2 cash opex (S14). No EBITDA guidance or consensus.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY27E": {
+            "value": -11.295442,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY28E": {
+            "value": 38.755761,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY29E": {
+            "value": 102.956285,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY30E": {
+            "value": 161.532375,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY31E": {
+            "value": 224.966867,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY32E": {
+            "value": 232.619433,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          }
+        },
+        "ebitda_margin": {
+          "FY25A": {
+            "value": -0.410322,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "H1A": {
+            "value": -0.564586,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY26E": {
+            "value": -0.45852,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY27E": {
+            "value": -0.145372,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY28E": {
+            "value": 0.231546,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY29E": {
+            "value": 0.362005,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY30E": {
+            "value": 0.415083,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY31E": {
+            "value": 0.448012,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY32E": {
+            "value": 0.445383,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          }
+        },
+        "cash_opex": {
+          "H1A": {
+            "value": 27.456,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "H1 gross profit 14.466 - H1 EBITDA (C2).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "H2E": {
+            "value": 26.90688,
+            "tag": "S",
+            "citation": {
+              "id": "S14",
+              "text": "H1 run rate x (1 -2%): 'operational cash burn to decrease in the second half'.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY27E": {
+            "value": 61.402586,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 4.360 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY28E": {
+            "value": 72.894715,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 13.000 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY29E": {
+            "value": 89.179451,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 26.290 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY30E": {
+            "value": 102.267923,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 36.234 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY31E": {
+            "value": 116.079619,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 46.744 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY32E": {
+            "value": 120.4684,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+6%), then +5%/yr) + procedure opex 47.666 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          }
+        },
+        "procedures": {
+          "FY27E": {
+            "value": 880,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 880 + one-time Parkinson's cell/gene therapy procedures (class) 0.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          },
+          "FY28E": {
+            "value": 4500,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 4500 + one-time Parkinson's cell/gene therapy procedures (class) 0.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          },
+          "FY29E": {
+            "value": 9345,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 4120 + one-time Parkinson's cell/gene therapy procedures (class) 5225.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          },
+          "FY30E": {
+            "value": 13417,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 3500 + one-time Parkinson's cell/gene therapy procedures (class) 9917.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          },
+          "FY31E": {
+            "value": 17772,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 3500 + one-time Parkinson's cell/gene therapy procedures (class) 14272.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          },
+          "FY32E": {
+            "value": 17333,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 3500 + one-time Parkinson's cell/gene therapy procedures (class) 13833.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          }
+        }
+      },
+      "organic": {
+        "revenue": {
+          "FY25A": {
+            "value": 36.971,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Organic = total; IRRAS closed Nov 2025 (inside year 0); no future deal.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY26E": {
+            "value": 50.0,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY27E": {
+            "value": 77.7,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY28E": {
+            "value": 167.378,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY29E": {
+            "value": 284.40604,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY30E": {
+            "value": 389.157127,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY31E": {
+            "value": 502.14421,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY32E": {
+            "value": 522.290968,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": -15.17,
+            "tag": "C",
+            "citation": {
+              "id": "A3",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY26E": {
+            "value": -22.925988,
+            "tag": "C",
+            "citation": {
+              "id": "C9",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY27E": {
+            "value": -11.295442,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY28E": {
+            "value": 38.755761,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY29E": {
+            "value": 102.956285,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY30E": {
+            "value": 161.532375,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY31E": {
+            "value": 224.966867,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY32E": {
+            "value": 232.619433,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          }
+        }
+      },
+      "finagle": {
+        "ebitda_growth": {
+          "value": [
+            0.511271,
+            -0.507308,
+            -4.431097,
+            1.656541,
+            0.568941,
+            0.392705,
+            0.034016
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C11",
+            "text": "EBITDA growth FY26-FY32: ratio of consecutive EBITDA levels - 1 (sign changes make some rates large).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+          }
+        },
+        "sales_growth": {
+          "value": [
+            0.352411,
+            0.554,
+            1.154157,
+            0.699184,
+            0.368315,
+            0.290338,
+            0.040121
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C11",
+            "text": "Revenue growth FY26-FY32.",
+            "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+          }
+        },
+        "me": {
+          "value": 0.445383,
+          "tag": "C",
+          "citation": {
+            "id": "C12",
+            "text": "FY32E EBITDA / FY32E revenue.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+          }
+        },
+        "mc": {
+          "value": 0.55,
+          "tag": "S",
+          "citation": {
+            "id": "S17",
+            "text": "Incremental EBITDA per incremental revenue dollar after FY32: procedure GM 70% less 10% specialists, blended with core.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+          }
+        },
+        "gsnext": {
+          "value": 0.050649,
+          "tag": "C",
+          "citation": {
+            "id": "C29",
+            "text": "v5: FY33 growth = (FY32 core x core growth S26 + one more year of the FY32 CAL increment, capped at $60M G9, + procedures stepping to steady state S30/S31 if not yet there, bear only) / FY32 revenue; Finagle then fades it linearly to its default gt over FY34-FY45 (year=20).",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "ebitda_basis": "total",
+        "acquisition_disclosure": {
+          "status": "none"
+        }
+      }
+    },
+    "bear": {
+      "lines": [
+        {
+          "name": "Biologics and drug delivery",
+          "periods": {
+            "FY24A": {
+              "value": 17.31,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, disaggregated revenue, 2025 Form 10-K (Note 2 / MD&A).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "FY25A": {
+              "value": 19.04,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, disaggregated revenue, 2025 Form 10-K.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "YoY": {
+              "value": 0.099942,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "H1A": {
+              "value": 8.839,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Six months ended June 30, 2026, disaggregated revenue, Q2 2026 Form 10-Q.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 10.395982,
+              "tag": "S",
+              "citation": {
+                "id": "S1",
+                "text": "Unscaled H2 driver x scale C4 (see forecast.md).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 19.234982,
+              "tag": "C",
+              "citation": {
+                "id": "C5",
+                "text": "H1A (A4) + H2E.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "FY27E": {
+              "value": 22.603945,
+              "tag": "S",
+              "citation": {
+                "id": "S4",
+                "text": "FY26E x (1 + driver growth) x scale C6.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY28E": {
+              "value": 24.41226,
+              "tag": "S",
+              "citation": {
+                "id": "S7",
+                "text": "FY27E x (1 + core growth S7). No consensus for FY28.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY29E": {
+              "value": 26.365241,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY30E": {
+              "value": 28.47446,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY31E": {
+              "value": 30.752417,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY32E": {
+              "value": 33.21261,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            }
+          }
+        },
+        {
+          "name": "Neurosurgery navigation and therapy",
+          "periods": {
+            "FY24A": {
+              "value": 10.285,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, disaggregated revenue, 2025 Form 10-K (Note 2 / MD&A).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "FY25A": {
+              "value": 14.831,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, disaggregated revenue, 2025 Form 10-K.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "YoY": {
+              "value": 0.442003,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "H1A": {
+              "value": 11.439,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Six months ended June 30, 2026, disaggregated revenue, Q2 2026 Form 10-Q.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 11.78337,
+              "tag": "S",
+              "citation": {
+                "id": "S2",
+                "text": "Unscaled H2 driver x scale C4 (see forecast.md).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 23.22237,
+              "tag": "C",
+              "citation": {
+                "id": "C5",
+                "text": "H1A (A4) + H2E.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "FY27E": {
+              "value": 27.289714,
+              "tag": "S",
+              "citation": {
+                "id": "S5",
+                "text": "FY26E x (1 + driver growth) x scale C6.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY28E": {
+              "value": 29.472891,
+              "tag": "S",
+              "citation": {
+                "id": "S7",
+                "text": "FY27E x (1 + core growth S7). No consensus for FY28.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY29E": {
+              "value": 31.830723,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY30E": {
+              "value": 34.37718,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY31E": {
+              "value": 37.127355,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY32E": {
+              "value": 40.097543,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            }
+          }
+        },
+        {
+          "name": "Capital equipment and software",
+          "periods": {
+            "FY24A": {
+              "value": 3.795,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, disaggregated revenue, 2025 Form 10-K (Note 2 / MD&A).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "FY25A": {
+              "value": 3.1,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, disaggregated revenue, 2025 Form 10-K.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "YoY": {
+              "value": -0.183136,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "H1A": {
+              "value": 2.73,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Six months ended June 30, 2026, disaggregated revenue, Q2 2026 Form 10-Q.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 2.812649,
+              "tag": "S",
+              "citation": {
+                "id": "S3",
+                "text": "Unscaled H2 driver x scale C4 (see forecast.md).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+              }
+            },
+            "FY26E": {
+              "value": 5.542649,
+              "tag": "C",
+              "citation": {
+                "id": "C5",
+                "text": "H1A (A4) + H2E.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "FY27E": {
+              "value": 6.106341,
+              "tag": "S",
+              "citation": {
+                "id": "S6",
+                "text": "FY26E x (1 + driver growth) x scale C6.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY28E": {
+              "value": 6.594849,
+              "tag": "S",
+              "citation": {
+                "id": "S7",
+                "text": "FY27E x (1 + core growth S7). No consensus for FY28.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY29E": {
+              "value": 7.122436,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY30E": {
+              "value": 7.692231,
+              "tag": "S",
+              "citation": {
+                "id": "S26",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY31E": {
+              "value": 8.30761,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY32E": {
+              "value": 8.972219,
+              "tag": "S",
+              "citation": {
+                "id": "S32",
+                "text": "Prior year x (1 + core growth S26, judgment). No consensus.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            }
+          }
+        },
+        {
+          "name": "Commercial drug delivery (AMT-130, one-time Parkinson's cell/gene therapy class) [scenario]",
+          "periods": {
+            "FY24A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "No commercial (approved-product) drug delivery revenue reported.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "FY25A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "G3",
+                "text": "Management: 2026 guidance 'does not include any meaningful expected revenue from commercial drug delivery'.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "H1A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "None reported in H1 2026.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "H2E": {
+              "value": 0.0,
+              "tag": "S",
+              "citation": {
+                "id": "S8",
+                "text": "AMT-130 action date no earlier than late Apr/early May 2027 (uniQure).",
+                "url": "https://www.biopharmadive.com/news/uniqure-submit-fda-approval-huntingtons-gene-therapy/829400/"
+              }
+            },
+            "FY26E": {
+              "value": 0.0,
+              "tag": "C",
+              "citation": {
+                "id": "C5",
+                "text": "H1A + H2E.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+              }
+            },
+            "FY27E": {
+              "value": 0.0,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 0 + one-time PD class 0 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            },
+            "FY28E": {
+              "value": 5.4,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 270 + one-time PD class 0 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            },
+            "FY29E": {
+              "value": 20.0,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 1000 + one-time PD class 0 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            },
+            "FY30E": {
+              "value": 42.6,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 1800 + one-time PD class 330 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            },
+            "FY31E": {
+              "value": 96.0,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 2300 + one-time PD class 2500 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            },
+            "FY32E": {
+              "value": 144.0,
+              "tag": "P",
+              "citation": {
+                "id": "P2",
+                "text": "Prompt P1 (approved) + P2 ($20k, full ClearPoint capacity): AMT-130 2700 + one-time PD class 4500 procedures x $20k (S20-S22, G7).",
+                "url": "prompt:t342u"
+              }
+            }
+          }
+        },
+        {
+          "name": "Preclinical services uplift, CAL GLP facility [scenario]",
+          "periods": {
+            "FY24A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "No CAL facility before the June 2025 lease (inside BDD line).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "FY25A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "Lease signed June 2025; first sponsor study 2025, in BDD line (D7).",
+                "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+              }
+            },
+            "H2E": {
+              "value": 0.0,
+              "tag": "G",
+              "citation": {
+                "id": "G10",
+                "text": "No large CAL study in H2 2026 guidance; first GLP SOW to complete H1 2027.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "H1A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "CAL revenue so far reported inside BDD; Q2 miss 'attributed to a delayed ramp of these preclinical CAL services' (G9).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY26E": {
+              "value": 0.0,
+              "tag": "G",
+              "citation": {
+                "id": "G10",
+                "text": "FY26 guidance 'does not include the execution of any of these large studies'.",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY27E": {
+              "value": 0.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY28E": {
+              "value": 2.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY29E": {
+              "value": 4.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY30E": {
+              "value": 6.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY31E": {
+              "value": 8.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            },
+            "FY32E": {
+              "value": 10.0,
+              "tag": "S",
+              "citation": {
+                "id": "S37",
+                "text": "CAL GLP uplift above core BDD growth (judgment; capacity >$60M vs ~$8M before, G9; large studies from H2 2027, G10; single large GLP study $15-20M, G11).",
+                "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+              }
+            }
+          }
+        }
+      ],
+      "totals": {
+        "revenue": {
+          "FY24A": {
+            "value": 31.39,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Total revenue 2024, 2025 Form 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY25A": {
+            "value": 36.971,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Total revenue 2025, 2025 Form 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "YoY": {
+            "value": 0.177795,
+            "tag": "C",
+            "citation": {
+              "id": "C1",
+              "text": "A1 FY25 / FY24 - 1.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "H1A": {
+            "value": 23.008,
+            "tag": "A",
+            "citation": {
+              "id": "A4",
+              "text": "Total revenue six months ended June 30, 2026.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330842/clpt-20260630.htm"
+            }
+          },
+          "H2E": {
+            "value": 24.992,
+            "tag": "C",
+            "citation": {
+              "id": "C3",
+              "text": "E1 FY26 consensus - A4.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY26E": {
+            "value": 48.0,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "bear FY26 revenue consensus, Equibles (2 analysts), captured 2026-09-30.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY27E": {
+            "value": 56.0,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "E1 FY27 core consensus 56.00 + procedure line P2.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY28E": {
+            "value": 67.88,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY29E": {
+            "value": 89.3184,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY30E": {
+            "value": 119.143872,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY31E": {
+            "value": 180.187382,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY32E": {
+            "value": 236.282372,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Sum of lines (core S7/S26 + CAL S37 + procedure line P2).",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          }
+        },
+        "gross_margin": {
+          "FY25A": {
+            "value": 0.613778,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "Gross profit 22.692 / revenue 36.971, 2025 Form 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "H1A": {
+            "value": 0.628738,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "Gross profit 14.466 / revenue 23.008, H1 2026 (A5).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY26E": {
+            "value": 0.628738,
+            "tag": "S",
+            "citation": {
+              "id": "S13",
+              "text": "H2 at trailing H1 gross margin.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY27E": {
+            "value": 0.628738,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY28E": {
+            "value": 0.634407,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY29E": {
+            "value": 0.644695,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY30E": {
+            "value": 0.654218,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY31E": {
+            "value": 0.666705,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY32E": {
+            "value": 0.672168,
+            "tag": "S",
+            "citation": {
+              "id": "S23",
+              "text": "Core at 62.9% (S13) + procedure revenue at 70% (S23, judgment; 10-K says disposables are 'high margin', no % disclosed).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": -15.17,
+            "tag": "C",
+            "citation": {
+              "id": "A3",
+              "text": "Operating loss -24.164 + D&A 0.814 + SBC 8.180 (2025 10-K; Finagle build_baseline basis, before SBC).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "H1A": {
+            "value": -12.99,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "H1 2026 operating loss -18.722 + D&A 0.236 + intangible amortization 1.007 + SBC 4.489 (A5).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY26E": {
+            "value": -24.732584,
+            "tag": "C",
+            "citation": {
+              "id": "C9",
+              "text": "H1A + H2 revenue x gross margin - H2 cash opex (S14). No EBITDA guidance or consensus.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY27E": {
+            "value": -25.193882,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY28E": {
+            "value": -24.507884,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY29E": {
+            "value": -16.372523,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY30E": {
+            "value": -5.510489,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY31E": {
+            "value": 25.755518,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY32E": {
+            "value": 53.702806,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Core GP + procedure GP - core opex (S15/S16) - procedure opex (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          }
+        },
+        "ebitda_margin": {
+          "FY25A": {
+            "value": -0.410322,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "H1A": {
+            "value": -0.564586,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY26E": {
+            "value": -0.515262,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY27E": {
+            "value": -0.449891,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY28E": {
+            "value": -0.361047,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY29E": {
+            "value": -0.183305,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY30E": {
+            "value": -0.046251,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY31E": {
+            "value": 0.142937,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY32E": {
+            "value": 0.227282,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "EBITDA / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          }
+        },
+        "cash_opex": {
+          "H1A": {
+            "value": 27.456,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "H1 gross profit 14.466 - H1 EBITDA (C2).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "H2E": {
+            "value": 27.456,
+            "tag": "S",
+            "citation": {
+              "id": "S14",
+              "text": "H1 run rate x (1 +0%): 'operational cash burn to decrease in the second half'.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY27E": {
+            "value": 60.4032,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+10%), then +7%/yr) + procedure opex 0.000 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY28E": {
+            "value": 67.571424,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+10%), then +7%/yr) + procedure opex 2.940 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY29E": {
+            "value": 73.955624,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+10%), then +7%/yr) + procedure opex 4.800 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY30E": {
+            "value": 83.456517,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+10%), then +7%/yr) + procedure opex 9.460 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY31E": {
+            "value": 94.376274,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+10%), then +7%/yr) + procedure opex 15.200 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY32E": {
+            "value": 105.118613,
+            "tag": "S",
+            "citation": {
+              "id": "S16",
+              "text": "Core opex (FY27 2xH2 x (1+10%), then +7%/yr) + procedure opex 20.400 (S24/S25).",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          }
+        },
+        "procedures": {
+          "FY27E": {
+            "value": 0,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 0 + one-time Parkinson's cell/gene therapy procedures (class) 0.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          },
+          "FY28E": {
+            "value": 270,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 270 + one-time Parkinson's cell/gene therapy procedures (class) 0.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          },
+          "FY29E": {
+            "value": 1000,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 1000 + one-time Parkinson's cell/gene therapy procedures (class) 0.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          },
+          "FY30E": {
+            "value": 2130,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 1800 + one-time Parkinson's cell/gene therapy procedures (class) 330.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          },
+          "FY31E": {
+            "value": 4800,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 2300 + one-time Parkinson's cell/gene therapy procedures (class) 2500.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          },
+          "FY32E": {
+            "value": 7200,
+            "tag": "S",
+            "citation": {
+              "id": "S20",
+              "text": "AMT-130 2700 + one-time Parkinson's cell/gene therapy procedures (class) 4500.",
+              "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+            }
+          }
+        }
+      },
+      "organic": {
+        "revenue": {
+          "FY25A": {
+            "value": 36.971,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Organic = total; IRRAS closed Nov 2025 (inside year 0); no future deal.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY26E": {
+            "value": 48.0,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY27E": {
+            "value": 56.0,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY28E": {
+            "value": 67.88,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY29E": {
+            "value": 89.3184,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY30E": {
+            "value": 119.143872,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY31E": {
+            "value": 180.187382,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          },
+          "FY32E": {
+            "value": 236.282372,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic = total.",
+              "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": -15.17,
+            "tag": "C",
+            "citation": {
+              "id": "A3",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526111231/clpt-20251231.htm"
+            }
+          },
+          "FY26E": {
+            "value": -24.732584,
+            "tag": "C",
+            "citation": {
+              "id": "C9",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY27E": {
+            "value": -25.193882,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY28E": {
+            "value": -24.507884,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY29E": {
+            "value": -16.372523,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY30E": {
+            "value": -5.510489,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY31E": {
+            "value": 25.755518,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          },
+          "FY32E": {
+            "value": 53.702806,
+            "tag": "S",
+            "citation": {
+              "id": "S15",
+              "text": "Organic = total.",
+              "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+            }
+          }
+        }
+      },
+      "finagle": {
+        "ebitda_growth": {
+          "value": [
+            0.630362,
+            0.018651,
+            -0.027229,
+            -0.331949,
+            -0.663431,
+            -5.673908,
+            1.085099
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C11",
+            "text": "EBITDA growth FY26-FY32: ratio of consecutive EBITDA levels - 1 (sign changes make some rates large).",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+          }
+        },
+        "sales_growth": {
+          "value": [
+            0.298315,
+            0.166667,
+            0.212143,
+            0.315828,
+            0.333923,
+            0.512351,
+            0.311315
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C11",
+            "text": "Revenue growth FY26-FY32.",
+            "url": "https://equibles.com/stocks/clpt/analyst-estimates"
+          }
+        },
+        "me": {
+          "value": 0.227282,
+          "tag": "C",
+          "citation": {
+            "id": "C12",
+            "text": "FY32E EBITDA / FY32E revenue.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+          }
+        },
+        "mc": {
+          "value": 0.45,
+          "tag": "S",
+          "citation": {
+            "id": "S17",
+            "text": "Incremental EBITDA per incremental revenue dollar after FY32: procedure GM 70% less 10% specialists, blended with core.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1285550/000119312526330541/clpt-ex99_1.htm"
+          }
+        },
+        "gsnext": {
+          "value": 0.061717,
+          "tag": "C",
+          "citation": {
+            "id": "C29",
+            "text": "v5: FY33 growth = (FY32 core x core growth S26 + one more year of the FY32 CAL increment, capped at $60M G9, + procedures stepping to steady state S30/S31 if not yet there, bear only) / FY32 revenue; Finagle then fades it linearly to its default gt over FY34-FY45 (year=20).",
+            "url": "https://seekingalpha.com/article/4929731-clearpoint-neuro-inc-clpt-q2-2026-earnings-call-transcript"
+          }
+        },
+        "ebitda_basis": "total",
+        "acquisition_disclosure": {
+          "status": "none"
+        }
+      }
+    }
+  }
+}
