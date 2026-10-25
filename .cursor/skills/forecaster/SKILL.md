@@ -104,7 +104,9 @@ An acquired line is not scaled to consensus, because consensus coverage of the d
 
 ### 2d. Run rate
 
-Start from the latest reported quarter. Remove a one-time item only when the company flags it. Before a beat or a miss touches the run rate, classify the driver as one-time or recurring, and say why. Catastrophe or hurricane volume at an insurance-auction business (e.g. CPRT FY25 Helene/Milton) is one-time.
+Start from the latest reported quarter. Remove a one-time item only when the company flags it. Before a beat or a miss touches the run rate, classify the driver as one-time or recurring, and say why.
+
+*Example (insurance-auction businesses):* catastrophe or hurricane volume, such as CPRT's FY25 Helene/Milton volume, is one-time.
 
 ### 2e. Costs
 

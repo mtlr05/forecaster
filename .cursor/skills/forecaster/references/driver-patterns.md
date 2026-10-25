@@ -19,7 +19,7 @@ Record an acquired line in a standard block on the line in `forecast.json`, with
 ```json
 "acquired": {
   "close_date": "2026-10-16",
-  "stub_fraction": {"value": 0.0, "tag": "C", "citation": {"text": "days from close to fiscal year end / days in the year", "url": "..."}},
+  "stub_fraction": {"value": "<fraction, e.g. 0.21>", "tag": "C", "citation": {"text": "days from close to fiscal year end / days in the year", "url": "..."}},
   "target_source": {"text": "target's own guidance or consensus, as-of date", "url": "..."},
   "synergies": {"text": "separate from the target's revenue; none unless announced"}
 }
