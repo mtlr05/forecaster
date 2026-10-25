@@ -42,7 +42,7 @@ For `forecasts/<TICKER>/`:
 
 Reported periods stay put. Forecast only periods the company has not reported.
 
-A business line is a unit the company already reports revenue for, and margin if it reports that too: a segment, a product, an operating business, a geography, a channel. Do not split finer than the disclosure.
+A business line is a unit the company already reports revenue for, and margin if it reports that too: a segment, a product, an operating business, a geography, a channel. Do not split finer than the disclosure. A single-segment filer's lines are the revenue breakdown it reports: geography, revenue type (e.g. service vs. vehicle sales), or both crossed if both are reported. Say which one you used.
 
 The baseline year shows year-over-year growth for the total and for each line.
 
@@ -78,7 +78,7 @@ If `C < 0` and no estimate exists, apply `C` anyway and flag it.
 
 Single-point guidance (`more than $X`, `about $X`) does not have a `C`. Build the total from the lines (2b–2d) and enforce the words: `more than $X` means the total stays at or above `X`; `about $X` means it stays inside a stated band. If the build violates the words, flag it and adjust.
 
-No guidance at all: use estimates if they exist, otherwise the bottom-up total, and flag it.
+No guidance at all: use estimates if they exist, otherwise the bottom-up total, and flag it. There is no `C` to calculate. Say so in the `[C]` block, name the branch taken (consensus, or the line build when there is no consensus), and flag it in the assumptions list.
 
 Show `C`, the low, the high, the actual, and which branch you took. Tag that block `[C]`.
 
@@ -94,11 +94,17 @@ Where a line splits price and volume, tag the phrase as a price effect (price, m
 
 Build the lines, then scale the unreported periods so they hit the 2a total. Actuals do not scale.
 
+When consensus or guidance sets the total, say that the lines are scaled to it. The unscaled build is a diagnostic only, never an alternative forecast.
+
 If the factor is more than 10% away from 1, the line commentary and the top-level target disagree. Flag it. The lines are then allocating a total they did not earn on their own.
+
+Above about 1.25×, scaling revenue with costs held fixed inflates margins mechanically. Scale the variable costs too, or show the unscaled case beside the scaled one as a sensitivity.
+
+An acquired line is not scaled to consensus, because consensus coverage of the deal is uncertain. See [driver-patterns.md](references/driver-patterns.md).
 
 ### 2d. Run rate
 
-Start from the latest reported quarter. Remove a one-time item only when the company flags it. Before a beat or a miss touches the run rate, classify the driver as one-time or recurring, and say why.
+Start from the latest reported quarter. Remove a one-time item only when the company flags it. Before a beat or a miss touches the run rate, classify the driver as one-time or recurring, and say why. Catastrophe or hurricane volume at an insurance-auction business (e.g. CPRT FY25 Helene/Milton) is one-time.
 
 ### 2e. Costs
 
@@ -129,7 +135,7 @@ End every case with an assumptions list:
 
 Each entry says what to revise. A driver explains why (volume, price, a coverage win, destocking), not the number over again.
 
-On an update, add a revision-log row per line for this year and next year: old, new, change, one line of why, including the growth rate old to new. Store it in `forecasts/<TICKER>/revision_log.md`.
+On an update, first check EDGAR or SEDAR+ for filings since the last revision, and record the consensus pull date and source in the file. Then add a revision-log row per line for this year and next year: old, new, change, one line of why, including the growth rate old to new. Store it in `forecasts/<TICKER>/revision_log.md`.
 
 ## 5. Hand off to Finagle, or refuse
 

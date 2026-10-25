@@ -14,6 +14,19 @@ Use volume times price when you have both. Otherwise grow off the latest quarter
 
 Management gave an amount or a floor (`more than $X`) and a start date. Phase it from the close or the launch. A floor is a floor, not a midpoint. Keep an acquired line out of the organic path if Finagle will book the deal in `acquisitions`.
 
+Record an acquired line in a standard block on the line in `forecast.json`, with synergies kept separate:
+
+```json
+"acquired": {
+  "close_date": "2026-10-16",
+  "stub_fraction": {"value": 0.0, "tag": "C", "citation": {"text": "days from close to fiscal year end / days in the year", "url": "..."}},
+  "target_source": {"text": "target's own guidance or consensus, as-of date", "url": "..."},
+  "synergies": {"text": "separate from the target's revenue; none unless announced"}
+}
+```
+
+Consensus scaling (skill 2c) does not apply to the acquired line, because consensus coverage of the deal is uncertain. Flag a target consensus that may be stale after the target delisted.
+
 ## Mature or declining
 
 Flat at the latest-quarter run rate, or the recent trend, plus only the structural changes management names (a lost contract, a discontinued SKU, a price reset). Do not mean-revert a decline just because it looks tired.
