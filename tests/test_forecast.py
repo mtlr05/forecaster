@@ -230,7 +230,6 @@ def test_line_pattern_is_validated():
     assert any("pattern" in error for error in report["errors"])
 
 
-<<<<<<< HEAD
 def _with_ids():
     """The minimal case with numbered citations and a sources list."""
     payload = _minimal()
@@ -308,7 +307,7 @@ def test_citation_needs_page_or_unverified():
     assert not validate_payload(payload)["ok"]
     payload["lines"][0]["periods"]["FY25A"]["citation"]["page_status"] = "unverified"
     assert validate_payload(payload)["ok"]
-=======
+
 def test_yoy_prefixed_keys_are_growth_not_dollars():
     payload = _minimal()
     for line in payload["lines"]:
@@ -337,7 +336,6 @@ def test_pattern_may_carry_a_parenthetical_note():
     assert validate_payload(payload)["ok"]
     payload["lines"][0]["pattern"] = "mature"
     assert not validate_payload(payload)["ok"]
->>>>>>> validator-periods-and-housekeeping
 
 
 def test_missing_sources_is_a_warning_not_an_error():
