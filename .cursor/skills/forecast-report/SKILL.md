@@ -40,6 +40,7 @@ Appendices:
 
 ## Numbers
 - Tables: US$M (or the reporting currency) to 1 decimal, whole numbers at $100M and above. Growth and margins to 1 decimal.
+- When a converted display currency is shown (e.g. CPH in USD while consensus is in CAD), use the same cited conversion rate as the forecast file.
 - Prose: about 3 significant figures for dollar amounts, whole percentages, margin changes in bps.
 - Per share to 2 decimals, multiples to 1 decimal with an x.
 - Years marked A or E (FY2025A, H2 2026E).
@@ -50,7 +51,7 @@ Appendices:
 
 ## Citations
 - **Inline:** every factual or numeric claim ends with bracketed tags placed just before the full stop, e.g. `... converted from CAD [G1][E1][C3].` No footnotes.
-- **Tag letters:** A = actuals, G = guidance and management statements, E = estimates (consensus), S = assumptions and judgments, C = calculations, D = documents. Reuse the forecast file's tags verbatim, and number new ones after them.
+- **Tag letters:** A = actuals, G = guidance and management statements, E = estimates (consensus), S = assumptions and judgments, C = calculations, P = figures or instructions supplied in the prompt, D = documents. Reuse the forecast file's tags verbatim, and number new ones after them.
 - **Appendix B, "Numbered sources":** grouped Documents → Actuals → Guidance and management statements → Estimates → Assumptions → Calculations → Not verified.
   - Document entries: **D#**, then publisher, title (contents), date, then a colon and the raw URL, with a note such as "(HTML; no page numbers)". URLs appear only here.
   - Fact entries: bold tag, the quoted source text, then the document and page (e.g. "D2, p.8"). Calculation entries give the formula with the input tags.
