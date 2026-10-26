@@ -36,7 +36,7 @@ For `forecasts/<TICKER>/`:
 - `forecast.json`, the case the tests check
 - `revision_log.md`, one row per line for this year and next year, on every update
 
-`forecast.json` has to pass `pytest`. Every number is a fact: a value, a tag, and a citation. See [tagging](references/tagging.md).
+`forecast.json` has to pass `pytest`. Periods are named `FYyyA`/`FYyyE` for fiscal years and `H1A`, `H2E`, `9MA`, `Q4E` and the like for part years; `baseline_period` and `explicit_periods` set which years the checks run on. Growth keys are `YoY` or `YoY_*`. A lone reference quarter such as `Q4FY26A` (the latest quarter) is summed across lines but not to a year. Part years sum to the first explicit year unless `stub_of` maps them (e.g. `{"H1E": "FY27E", "H2E": "FY27E"}`). A line's `pattern`, when given, is one of the [driver patterns](references/driver-patterns.md) in lower case, optionally followed by a note in parentheses. Every number is a fact: a value, a tag, and a citation. See [tagging](references/tagging.md).
 
 ## 1. Frame the forecast
 
@@ -112,7 +112,7 @@ If you have a 2a EBITDA total, and the operating cost it implies differs from th
 
 Stop when the specific evidence stops. That is usually two years. Do not fill a third year to make a DCF look complete.
 
-`me`, `mc`, and `gsnext` are required and are judgments about the path you just built, set against the history. Tag them. What happens after `gsnext` is Finagle fading toward `gt`. You do not choose `gt`.
+When the case hands off to Finagle, `me`, `mc`, and `gsnext` are required and are judgments about the path you just built, set against the history. Tag them. What happens after `gsnext` is Finagle fading toward `gt`. You do not choose `gt`.
 
 ## 3. Pick a driver pattern
 
@@ -132,6 +132,8 @@ Each entry says what to revise. A driver explains why (volume, price, a coverage
 On an update, add a revision-log row per line for this year and next year: old, new, change, one line of why, including the growth rate old to new. Store it in `forecasts/<TICKER>/revision_log.md`.
 
 ## 5. Hand off to Finagle, or refuse
+
+The handoff is optional. A case built without one sets `finagle_handoff: false` in `forecast.json` and skips this step; the Finagle leaves are then not required. A case that omits the field is treated as a handoff.
 
 Follow [finagle-handoff.md](references/finagle-handoff.md). The order is `describe_inputs`, `build_baseline`, the leaves this skill fills, the leaves the template fills, `validate_case`, `run_case`.
 
