@@ -9,6 +9,12 @@ EBITDA compound from ``baseline_period`` through ``explicit_periods`` via
 ``finagle.sales_growth`` and ``finagle.ebitda_growth``, and ``me`` is the
 final explicit year's organic EBITDA margin. The Finagle leaves are required
 unless the case sets ``finagle_handoff: false``.
+
+When the case has a ``sources`` list, every citation also carries an ``id``
+(A1, G1, E1, S1, C1, P1, D1) and a ``page`` (or ``page_status:
+"unverified"``). Each ID names one fact, resolves in ``sources``, and C
+entries list ``inputs`` that are existing IDs. A/G/E entries carry their
+quoted ``text``. Without a ``sources`` list the case passes with a warning.
 """
 
 from __future__ import annotations
@@ -49,8 +55,9 @@ def _is_non_dollar_key(key):
 
 def validate_payload(payload):
     errors = []
+    warnings = []
     if not isinstance(payload, dict):
-        return {"ok": False, "errors": ["forecast must be an object"]}
+        return {"ok": False, "errors": ["forecast must be an object"], "warnings": []}
     if not payload.get("ticker"):
         errors.append("ticker is required")
     explicit = payload.get("explicit_periods")
@@ -70,12 +77,16 @@ def validate_payload(payload):
         stub_of = {}
     handoff = payload.get("finagle_handoff", True) is not False
     ctx = {"explicit": explicit, "baseline": baseline, "stub_of": stub_of, "handoff": handoff}
-    _walk_numbers(payload, errors)
+    _walk_numbers({k: v for k, v in payload.items() if k != "sources"}, errors)
+    if "sources" in payload:
+        _check_ids(payload, errors)
+    else:
+        warnings.append("no sources block: numbered citation IDs and a sources list are expected for new cases")
     _check_block(payload, ctx, errors, prefix="")
     for name, scenario in (payload.get("scenarios") or {}).items():
         if isinstance(scenario, dict):
             _check_block(scenario, ctx, errors, prefix="scenarios.%s." % name)
-    return {"ok": not errors, "errors": errors}
+    return {"ok": not errors, "errors": errors, "warnings": warnings}
 
 
 def _check_block(block, ctx, errors, prefix):
@@ -286,3 +297,59 @@ def _check_fact(obj, errors, path):
         return
     if not url:
         errors.append("%s citation needs a url" % path)
+
+
+def _check_ids(payload, errors):
+    sources = payload.get("sources")
+    if not isinstance(sources, list):
+        errors.append("sources must be a list of entries with an id")
+        return
+    known = {}
+    for index, entry in enumerate(sources):
+        sid = entry.get("id") if isinstance(entry, dict) else None
+        if not isinstance(sid, str) or not sid:
+            errors.append("sources[%d] needs an id" % index)
+            continue
+        if sid in known:
+            errors.append("sources id %s is listed twice" % sid)
+        known[sid] = entry
+        if sid[:1] in ("A", "G", "E") and not str(entry.get("text") or "").strip():
+            errors.append("sources %s needs the quoted source text" % sid)
+    for sid, entry in known.items():
+        if sid.startswith("C"):
+            inputs = entry.get("inputs")
+            if not isinstance(inputs, list) or not inputs:
+                errors.append("sources %s (calculation) must list its input ids" % sid)
+                continue
+            for ref in inputs:
+                if ref not in known:
+                    errors.append("sources %s input %s does not resolve" % (sid, ref))
+    seen = {}
+    for path, fact in _facts({k: v for k, v in payload.items() if k != "sources"}, "$"):
+        citation = fact.get("citation")
+        if not isinstance(citation, dict):
+            continue
+        cid = citation.get("id")
+        if not isinstance(cid, str) or not cid:
+            errors.append("%s citation needs an id" % path)
+            continue
+        if not citation.get("page") and citation.get("page_status") != "unverified":
+            errors.append("%s citation needs a page or page_status 'unverified'" % path)
+        if cid not in known:
+            errors.append("%s citation id %s does not resolve in sources" % (path, cid))
+        key = (fact.get("tag"), repr(fact.get("value")))
+        if cid in seen and seen[cid][0] != key:
+            errors.append("%s citation id %s is already used for a different fact at %s" % (path, cid, seen[cid][1]))
+        seen.setdefault(cid, (key, path))
+
+
+def _facts(obj, path):
+    if isinstance(obj, dict) and _is_fact(obj):
+        yield path, obj
+        return
+    if isinstance(obj, dict):
+        for key, value in obj.items():
+            yield from _facts(value, "%s.%s" % (path, key))
+    elif isinstance(obj, list):
+        for index, item in enumerate(obj):
+            yield from _facts(item, "%s[%d]" % (path, index))
