@@ -1,3 +1,28 @@
+## Status and open items
+
+**Current:** v10, as of 2026-10-25. Finagle `run_case` value per share: base $54.29, bull $72.68, bear $16.72. The sections below this block still carry their earlier version label; `report.md` and the `partners/pd_simple4_*` and `partners/partners_v4_*` files are current.
+
+**Open items**
+1. Bull at 8% treated share not yet confirmed (an earlier ask was a bull reaching about 10k procedures/yr; 8% gives about 14k).
+2. Valuation rerun at a 12–13% cost of equity pending.
+3. Report Appendix B: sources A41–A43 and D71–D76 are out of order.
+4. `partners/partners_v4.md` has no PDF or Word version.
+5. Epilepsy, FTD and glioblastoma funnels not rebuilt on the pool method.
+6. ClearPoint platform share (100%) is an assumption: each 1,000 procedures/yr lost is about $2.58/share.
+7. Motor-complication share (50%) and surgical fitness (90%) in the PD pool are judgments.
+
+**How to resume** (from `forecasts/CLPT/`, in order)
+1. `python partners/pd_simple4_model.py` → `pd_simple4_model.json` (PD pool and class demand; inputs coded in the script, plus `partners/census_nc-est2024-agesex-res.csv`).
+2. `python partners/partners_v4_model.py` → `partners_v4_model.json` (partner table; reads the PD model JSON).
+3. `python build_forecast.py` → `forecast.json` and the `CLPT_base/bull/bear.xlsx` files (reads the PD model JSON).
+4. `python run_finagle.py` → `finagle_run.json` (needs a read-only `finagle` checkout beside this repo; its input `clpt_baseline.json`, the `build_baseline('CLPT')` output of 2026-10-23, is in this folder). `finagle_perpetuity.py` reruns the perpetuity yardstick.
+5. `python render_report.py` → `report.pdf`; `python ../../tools/md2docx.py report.md report.docx` → Word.
+6. `pytest` from the repo root.
+
+finagle and ceochat are read-only inputs.
+
+**Where the reasoning lives:** `report.md` — Business Drivers by Line, Forecast (including Valuation), Appendix A (Bull and Bear Cases), Appendix C (Parkinson's eligible-pool model), Appendix D (Partner programs) and Appendix E (Method). Changes by version are in `revision_log.md`.
+
 # ClearPoint Neuro (Nasdaq: CLPT) forecast, FY2026E–FY2032E (v8)
 
 USD millions. As of 2026-10-23. Built with `.cursor/skills/forecaster` (forecaster b915ace). Numbers come from `build_forecast.py` → `forecast.json` (passes `forecastcheck.validate_payload`; 14 tests pass). Finagle: `run_finagle.py` → `finagle_run.json` (finagle bb39642, read-only). The v1 inputs are recorded in `revision_log.md`.

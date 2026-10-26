@@ -6,7 +6,7 @@ sys.path.insert(0, str(HERE.parents[2] / "finagle"))
 from finagle.agent.validate import validate_case
 from finagle.agent.runner import run_case
 
-base = json.load(open(HERE.parents[2] / "clpt_baseline.json"))  # build_baseline('CLPT') output, 2026-10-23
+base = json.load(open(HERE / "clpt_baseline.json"))  # build_baseline('CLPT') output, 2026-10-23
 fc = json.load(open(HERE / "forecast.json"))
 Q10 = "Q2 2026 Form 10-Q"
 
