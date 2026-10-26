@@ -40,6 +40,15 @@ For `forecasts/<TICKER>/`:
 
 `forecast.json` has to pass `pytest`. Periods are named `FYyyA`/`FYyyE` for fiscal years and `H1A`, `H2E`, `9MA`, `Q4E` and the like for part years; `baseline_period` and `explicit_periods` set which years the checks run on. Growth keys are `YoY` or `YoY_*`. A lone reference quarter such as `Q4FY26A` (the latest quarter) is summed across lines but not to a year. Part years sum to the first explicit year unless `stub_of` maps them (e.g. `{"H1E": "FY27E", "H2E": "FY27E"}`). A line's `pattern`, when given, is one of the [driver patterns](references/driver-patterns.md) in lower case, optionally followed by a note in parentheses. Every number is a fact: a value, a tag, and a citation. See [tagging](references/tagging.md).
 
+## Status and open items
+
+`forecast.md` can open with a short `## Status and open items` block. It replaces a separate handoff file.
+
+- When a task names a ticker, read `forecasts/<TICKER>/forecast.md` first, starting with its Status block if it has one.
+- The block holds only the open items, the current version and values, and how to resume (which scripts rebuild what, and their inputs). Assumptions and reasoning stay in the report and the rest of `forecast.md`; point to their sections, do not restate them.
+- Update the block at each agreed change of a decision, a value or an open item. A value change also gets a `revision_log.md` row.
+- Create the block when a ticker's work first has open items, or a resume procedure that `forecast.md` does not already give.
+
 ## 1. Frame the forecast
 
 Reported periods stay put. Forecast only periods the company has not reported.
