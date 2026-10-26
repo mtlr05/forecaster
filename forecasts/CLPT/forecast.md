@@ -12,11 +12,10 @@
 3. Oberland revenue participation and prepayment premiums are approximated through the 9.2% rate; model starts from 10-K debt $49.077M vs. $50.2M at Q2 2026.
 4. About 86% of base value comes after FY2031E and 54% from terminal value.
 5. The Parkinson's capacity decomposition ($39.25) and the per-$20M add-on ($2.69/share) in the report are from Oct 25 runs and were not rerun on v11 inputs.
-6. Report Appendix B: sources A41–A43 and D71–D76 are out of order.
-7. `partners/partners_v4.md` has no PDF or Word version.
-8. Epilepsy, FTD and glioblastoma funnels not rebuilt on the pool method.
-9. ClearPoint platform share (100%) is an assumption.
-10. Motor-complication share (50%) and surgical fitness (90%) in the PD pool are judgments.
+6. `partners/partners_v4.md` has no PDF or Word version.
+7. Epilepsy, FTD and glioblastoma funnels not rebuilt on the pool method.
+8. ClearPoint platform share (100%) is an assumption.
+9. Motor-complication share (50%) and surgical fitness (90%) in the PD pool are judgments.
 
 **How to resume** (from `forecasts/CLPT/`, in order)
 1. `python partners/pd_simple4_model.py` → `pd_simple4_model.json` (PD pool and class demand; inputs coded in the script, plus `partners/census_nc-est2024-agesex-res.csv`).

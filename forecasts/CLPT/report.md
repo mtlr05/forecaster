@@ -509,6 +509,7 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **D13** MRI Interventions, Form 8-K (Burnett appointment and biography), Oct 10, 2017: https://www.sec.gov/Archives/edgar/data/1285550/000153442417000429/f17-1202.htm (HTML)
 - **D14** MRI Interventions, Form 10-K for FY2018 (2017 revenue), filed Apr 1, 2019, accession 0001534424-19-000092: https://www.sec.gov/Archives/edgar/data/1285550/000153442419000092/ (filing index; document not opened)
 - **D15** Stockanalysis.com, CLPT analyst ratings, viewed Oct 2026: https://stockanalysis.com/stocks/clpt/forecast/ (HTML)
+- **D16** Finagle discounted-cash-flow valuation runs of the base, bull and bear cases and of add-on cases, Oct 25, 2026 (model output, not published; superseded; not used)
 - **D17** uniQure, AMT-130 Pivotal Update (commercial slides), Sept 2025: https://cdn.craft.cloud/fe68e1a2-b284-4f69-ba29-921f065edf17/assets/uploads/AMT-130-Pivotal-Sept-2025_final_09.24.25.pdf (PDF, p.25)
 - **D18** Bruzelius et al., "Huntington's Disease in the United States: Variation by demographic and socioeconomic factors", 2019: https://pmc.ncbi.nlm.nih.gov/articles/PMC6579693/ (HTML)
 - **D19** Reuters, "Parkinson's disease at forefront of Bayer bet on cell and gene therapies", Sep 25, 2025: https://www.reuters.com/business/healthcare-pharmaceuticals/parkinsons-disease-forefront-bayer-bet-cell-gene-therapies-2025-09-25/ (paywalled; read via search snippet only)
@@ -516,6 +517,9 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **D21** Neurology (2021 abstract 4377), "Incidence and Prevalence of Motor Fluctuations and Deep Brain Stimulation in Parkinson's disease": https://www.neurology.org/doi/10.1212/WNL.96.15_supplement.4377 (HTML)
 - **D22** ASGCT 2026 abstract via Larvol, reflections on approved gene therapies: https://delta.larvol.com/Products/?ProductId=d32f5525-efb7-4110-a0a8-4eab2ca91fe6 (secondary source)
 - **D23** BioPharma Dive, "BioMarin preaches patience amid slow sales for hemophilia gene therapy": https://www.biopharmadive.com/news/biomarin-roctavian-sales-hemophilia-gene-therapy/708321/ (HTML)
+- **D24** Systematic review and meta-analysis of Huntington's disease incidence (regional rates; UK studies incl. Wexler 2016): https://pmc.ncbi.nlm.nih.gov/articles/PMC10086981/ (HTML)
+- **D25** Parkinson's Foundation, Prevalence & Incidence: https://www.parkinson.org/understanding-parkinsons/statistics/prevalence-incidence (HTML); Willis et al., npj Parkinson's Disease 2022: https://www.nature.com/articles/s41531-022-00410-y (HTML)
+- **D26** Venkatraman et al., J Neurosurg 2024, "Disparities in the treatment of movement disorders using deep brain stimulation" (NIS 2012–19, Table 4): https://pmc.ncbi.nlm.nih.gov/articles/PMC10898494/ (HTML)
 - **D27** Clinical survey abstract, "Reasons for underutilisation of Deep Brain Stimulation (DBS) for Parkinson's Disease (PD): a clinical survey", German Society of Neurosurgery 2012 (GMS): https://doi.org/10.3205/12dgnc047 (HTML; abstract only)
 - **D29** "How to improve patient education on deep brain stimulation in Parkinson's disease: the CARE Monitor study", BMC Neurology 2017: https://doi.org/10.1186/s12883-017-0820-7 (HTML)
 - **D31** AskBio, "AskBio's Viralgen to Supply Commercial-Scale Drug Product for REGENERATE-PD…", Apr 20, 2026: https://www.askbio.com/viralgen-to-supply-commercial-scale-drug-product-for-regenerate-pd-investigational-gene-therapy-trial-parkinsons-disease/ (HTML)
@@ -527,10 +531,6 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **D37** CamPaIGN cohort, motor complications at 13-year follow-up: https://pmc.ncbi.nlm.nih.gov/articles/PMC7063985/ (HTML)
 - **D38** Rizzo et al., "Accuracy of clinical diagnosis of Parkinson disease", Neurology, 2016: https://doi.org/10.1212/WNL.0000000000002350 (HTML; abstract)
 - **D39** Aspen Neuroscience, Form S-1, Oct 2026: https://www.sec.gov/Archives/edgar/data/2124080/000119312526419104/na-20261009.htm (HTML; no page numbers)
-- **D51** Morgante et al., Parkinsonism and Related Disorders, 2007 (eligibility for DBS in movement-disorder clinics): https://pubmed.ncbi.nlm.nih.gov/17347021/ (abstract)
-- **D52** Moes et al. (D-DATS), Parkinsonism and Related Disorders, 2023 (eligibility for device-aided therapies): https://doi.org/10.1016/j.parkreldis.2023.105359 (HTML; abstract)
-- **D53** Gibson et al., "Risk of dementia in Parkinson's disease: a systematic review and meta-analysis", Movement Disorders, 2024: https://doi.org/10.1002/mds.29918 (HTML; abstract)
-- **D54** Multidisciplinary DBS screening, Movement Disorders Clinical Practice, 2018: https://pmc.ncbi.nlm.nih.gov/articles/PMC6183455/ (HTML)
 - **D40** ClearPoint Neuro, Corporate Presentation, 2Q26 earnings call, Aug 3, 2026, slide 23 (partner programs): https://d1io3yog0oux5.cloudfront.net/_e2d8bbba8f3850e103a2f7c8a42a59c6/clearpointneuro/db/77/2924/pdf/ClearPoint+Neuro+Corporate+Presentation+2Q26+Earnings+Call+-+08.03.26.pdf (PDF, slide 23)
 - **D41** BlueRock Therapeutics, Fast Track designation for DA01: https://www.bluerocktx.com/bluerock-therapeutics-receives-fda-fast-track-designation-for-da01-in-the-treatment-of-advanced-parkinsons-disease/ ; RMAT designation for bemdaneprocel: https://www.bluerocktx.com/bluerock-therapeutics-receives-fda-regenerative-medicine-advanced-therapy-designation-for-parkinsons-disease-cell-therapy-candidate-bemdaneprocel/ (HTML)
 - **D42** AskBio, Fast Track for AB-1005, Jul 11, 2024: https://www.askbio.com/askbio-receives-fda-fast-track-and-mhra-innovation-passport-designations-for-ab-1005-investigational-gdnf-gene-therapy-for-parkinsons-disease/ ; RMAT, Feb 19, 2025: https://www.askbio.com/askbio-receives-fda-regenerative-medicine-advanced-therapy-designation-for-parkinsons-disease-investigational-gene-therapy/ (HTML)
@@ -542,6 +542,10 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **D48** ClinicalTrials.gov NCT07826949 (SRN-101 before resection in recurrent high-grade glioma; not yet recruiting): https://clinicaltrials.gov/study/NCT07826949 (HTML)
 - **D49** FDA, approval of KEBILIDI for AADC deficiency, Nov 13, 2024: https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapy-treatment-aromatic-l-amino-acid-decarboxylase-deficiency (HTML)
 - **D50** REGENXBIO, Fast Track for RGX-121: https://ir.regenxbio.com/news-releases/news-release-details/regenxbio-receives-fda-fast-track-designation-rgx-121-gene-0/ ; RMAT: https://ir.regenxbio.com/news-releases/news-release-details/regenxbio-receives-fda-regenerative-medicine-advanced-therapy/ ; regulatory update (complete response letter): https://ir.regenxbio.com/news-releases/news-release-details/regenxbio-announces-regulatory-update-rgx-121-bla-mps-ii ; Form 8-K, Aug 24, 2026: https://www.sec.gov/Archives/edgar/data/1590877/000119312526363786/rgnx-20260824.htm (HTML)
+- **D51** Morgante et al., Parkinsonism and Related Disorders, 2007 (eligibility for DBS in movement-disorder clinics): https://pubmed.ncbi.nlm.nih.gov/17347021/ (abstract)
+- **D52** Moes et al. (D-DATS), Parkinsonism and Related Disorders, 2023 (eligibility for device-aided therapies): https://doi.org/10.1016/j.parkreldis.2023.105359 (HTML; abstract)
+- **D53** Gibson et al., "Risk of dementia in Parkinson's disease: a systematic review and meta-analysis", Movement Disorders, 2024: https://doi.org/10.1002/mds.29918 (HTML; abstract)
+- **D54** Multidisciplinary DBS screening, Movement Disorders Clinical Practice, 2018: https://pmc.ncbi.nlm.nih.gov/articles/PMC6183455/ (HTML)
 - **D55** Asadi-Pooya et al., World Neurosurgery, 2017 (drug-resistant mesial temporal lobe epilepsy prevalence and incidence): https://doi.org/10.1016/j.wneu.2016.12.074 (abstract)
 - **D56** Knopman and Roberts, 2011 (frontotemporal lobar degeneration incidence and prevalence): https://pmc.ncbi.nlm.nih.gov/articles/PMC3208074/ (HTML)
 - **D57** GeneReviews, GRN frontotemporal dementia: https://www.ncbi.nlm.nih.gov/books/NBK1371/ ; Practical Neurology on ASPIRE-FTD (age 30–75): https://practicalneurology.com/news/fda-fast-track-designation-and-ind-clearance-granted-to-novel-gene-therapy-for-grn-related-frontotemporal-dementia/2470333/ (HTML)
@@ -557,24 +561,17 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **D67** Whone et al., "Randomized trial of intermittent intraputamenal GDNF in Parkinson's disease", Brain, 2019: https://pmc.ncbi.nlm.nih.gov/articles/PMC6391602/ (HTML)
 - **D68** Aspen Neuroscience, ASPIRO uses ClearPoint Navigation System and SmartFlow Cannula, Jun 20, 2024: https://aspenneuroscience.com/parkinsons-disease-clinical-trial-uses-intraoperative-mri-to-guide-precision-implantation-of-patients-own-autologous-replacement-neurons/ (HTML)
 - **D69** Neurochase, "Neurochase announces acquisition of strategic Renishaw Neuro Solutions' assets" (agreement announced Nov 20, 2025): https://neurochase.com/Blog/neurochase-announces-acquisition-of-strategic-renishaw-neuro-solutions-assets/ (HTML)
+- **D70** Neurochase home page (nFuse: "Currently For investigational use only. Not approved for clinical use in any geography"): https://neurochase.com/ ; ASGCT 2026 poster post ("designed to be compatible with existing neurosurgical robots and frames"): https://www.linkedin.com/posts/fearsomedesign_asgct2026-asgct2026-genetherapy-activity-7460266710869213184-F5YQ (HTML)
 - **D71** ClinicalTrials.gov registry entries, eligibility criteria (API v2, full criteria read Oct 25, 2026): https://clinicaltrials.gov/study/NCT06944522 ; https://clinicaltrials.gov/study/NCT06285643 ; https://clinicaltrials.gov/study/NCT07566429 ; https://clinicaltrials.gov/study/NCT01621581 ; https://clinicaltrials.gov/study/NCT04167540 ; https://clinicaltrials.gov/study/NCT06344026 ; https://clinicaltrials.gov/study/NCT07106021 ; https://clinicaltrials.gov/study/NCT01973543 ; https://clinicaltrials.gov/study/NCT03562494 ; https://clinicaltrials.gov/study/NCT00985517
 - **D72** Herzog et al., Mov Disord 2008, DBS in fetal-graft patients (abstract): https://pubmed.ncbi.nlm.nih.gov/18536037/
 - **D73** Graff-Radford et al., Arch Neurol 2006, GPi DBS for dyskinesia 11 years after a graft (abstract): https://jamanetwork.com/journals/jamaneurology/fullarticle/791926
 - **D74** Freed group, npj Parkinson's Dis 2021, pallidal stimulation in graft recipients (abstract): https://www.nature.com/articles/s41531-021-00183-w
 - **D75** MDS abstract, cell-based therapy in patients with an existing DBS system: https://www.mdsabstracts.org/abstract/unilateral-delivery-of-cell-based-therapy-to-the-putamen-and-substantia-nigra-in-patients-with-parkinsons-disease-who-have-an-existing-dbs-system/
 - **D76** Mov Disord 2015, "Combining cell transplants or gene therapy with DBS" (abstract): https://doi.org/10.1002/mds.26083
-- **D70** Neurochase home page (nFuse: "Currently For investigational use only. Not approved for clinical use in any geography"): https://neurochase.com/ ; ASGCT 2026 poster post ("designed to be compatible with existing neurosurgical robots and frames"): https://www.linkedin.com/posts/fearsomedesign_asgct2026-asgct2026-genetherapy-activity-7460266710869213184-F5YQ (HTML)
-- **D16** Finagle discounted-cash-flow valuation runs of the base, bull and bear cases and of add-on cases, Oct 25, 2026 (model output, not published; superseded; not used)
 - **D77** Finagle discounted-cash-flow valuation runs of the base, bull and bear cases and one-at-a-time sensitivity reruns on P3 inputs, Oct 26, 2026 (model output, not published): run_finagle_v11.py, sensitivity_v11.py
-- **D24** Systematic review and meta-analysis of Huntington's disease incidence (regional rates; UK studies incl. Wexler 2016): https://pmc.ncbi.nlm.nih.gov/articles/PMC10086981/ (HTML)
-- **D25** Parkinson's Foundation, Prevalence & Incidence: https://www.parkinson.org/understanding-parkinsons/statistics/prevalence-incidence (HTML); Willis et al., npj Parkinson's Disease 2022: https://www.nature.com/articles/s41531-022-00410-y (HTML)
-- **D26** Venkatraman et al., J Neurosurg 2024, "Disparities in the treatment of movement disorders using deep brain stimulation" (NIS 2012–19, Table 4): https://pmc.ncbi.nlm.nih.gov/articles/PMC10898494/ (HTML)
 
 **Actuals**
 
-- **A12** "It is estimated that 10–15% of PD-patients are DBS-candidates". D27.
-- **A14** "114 (43.2%) patients preselected as eligible for DBS … agreed to show up at a specialized DBS center". D29.
-- **A15** "By 2030, an estimated 1.2 million people in the U.S. will be living with Parkinson's." D25.
 - **A1** Total revenue $31.390M (FY2024A) and $36.971M (FY2025A). D1.
 - **A2** FY2024A/FY2025A disaggregated revenue: BDD 17.310/19.040; NNT 10.285/14.831; CES 3.795/3.100. D1, Note 2/MD&A.
 - **A3** FY2025A EBITDA (before SBC) −$15.170M = operating loss −24.164 + D&A 0.814 + SBC 8.180. D1 via Finagle's baseline data.
@@ -585,6 +582,18 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **A8** UK HD incidence 0.67 per 100,000 (Wexler 2016, as compiled in D24); Europe pooled 0.38. D24.
 - **A9** "nearly 90,000 people … diagnosed with Parkinson's disease every year" in the US. D25.
 - **A10** DBS for PD in US inpatient discharges: 3,615–4,025 a year 2016–19; 3,990 (1.10% of PD discharges) in 2019. D26, Table 4.
+- **A12** "It is estimated that 10–15% of PD-patients are DBS-candidates". D27.
+- **A14** "114 (43.2%) patients preselected as eligible for DBS … agreed to show up at a specialized DBS center". D29.
+- **A15** "By 2030, an estimated 1.2 million people in the U.S. will be living with Parkinson's." D25.
+- **A21** Drug-resistant MTLE (hippocampal sclerosis): US prevalence 143,000–191,000; incidence 3.1–3.4 per 100,000 a year (× 324M ≈ 10,000–11,000). D55 (abstract).
+- **A22** FTLD incidence 2.7–4.1 per 100,000 person-years (age 45–64); US prevalence 20,000–30,000. D56.
+- **A23** GRN mutations about 5% of FTD; US GRN-FTD prevalence about 1,000–1,500 (derived from A22 × 5%). D57.
+- **A24** ASPIRE-FTD enrols age 30–75. D57 (Practical Neurology).
+- **A25** AADC deficiency about 1 in 90,000 births (screening-based range 1/64,000–1/766,660). D58.
+- **A26** US births 2024: 3,628,934. D59.
+- **A27** MPS II about 1 in 162,000 male births (range 0.26–1.4 per 100,000 births). D60.
+- **A28** Glioblastoma: 67,250 US cases 2018–2022, about 13,450 a year. D61.
+- **A29** Friedreich's ataxia about 1 in 50,000; about 5,000 US patients. D62.
 - **A30** At least 930,000 Americans aged 45 or over with PD in 2020 and 1,238,000 in 2030; the authors call these minimum estimates. D33.
 - **A31** Survival in PD falls by about 5% for each year of follow-up. D34.
 - **A32** Point prevalence of dementia in PD 24.5% across all studies, 31.1% in the highest-quality studies. D35.
@@ -595,26 +604,13 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **A37** 4.5% of patients eligible for DBS under flexible criteria in Italian movement-disorder clinics. D51.
 - **A38** 6.6% eligible for referral to any device-aided therapy in a Dutch general hospital. D52.
 - **A39** Dementia incidence in PD 4.45 per 100 person-years. D53.
+- **A40** 58.7% of patients evaluated in multidisciplinary DBS screening proceeded to implant. D54. 43.2% of preselected eligible patients agreed to referral to a DBS centre (A14).
 - **A41** Every PD cell/gene therapy trial checked excludes prior DBS at entry (bemdaneprocel exPDite-2, AB-1005 REGENERATE-PD and Japan, AAV2-GDNF Ph1 and Ph1b, ANPD001 ASPIRO, RNDP-001, VY-AADC01/02, CERE-120); none states a biological or safety reason; RESTORE-1 cites prior surgery that "could complicate the study procedure or negatively impact study evaluations". D71.
 - **A42** DBS has been added after cell grafts in small series: 2 patients (D72), 1 patient 11 years after a graft (D73), 3 of 34 graft recipients (D74). Abstracts.
 - **A43** Grafts were placed in 3 patients with an existing DBS lead, with adverse events "comparable to standard DBS surgery" (D75); combining cell or gene therapy with DBS is proposed in an expert review (D76). Abstracts.
-- **A40** 58.7% of patients evaluated in multidisciplinary DBS screening proceeded to implant. D54. 43.2% of preselected eligible patients agreed to referral to a DBS centre (A14).
-- **A21** Drug-resistant MTLE (hippocampal sclerosis): US prevalence 143,000–191,000; incidence 3.1–3.4 per 100,000 a year (× 324M ≈ 10,000–11,000). D55 (abstract).
-- **A22** FTLD incidence 2.7–4.1 per 100,000 person-years (age 45–64); US prevalence 20,000–30,000. D56.
-- **A23** GRN mutations about 5% of FTD; US GRN-FTD prevalence about 1,000–1,500 (derived from A22 × 5%). D57.
-- **A24** ASPIRE-FTD enrols age 30–75. D57 (Practical Neurology).
-- **A25** AADC deficiency about 1 in 90,000 births (screening-based range 1/64,000–1/766,660). D58.
-- **A26** US births 2024: 3,628,934. D59.
-- **A27** MPS II about 1 in 162,000 male births (range 0.26–1.4 per 100,000 births). D60.
-- **A28** Glioblastoma: 67,250 US cases 2018–2022, about 13,450 a year. D61.
-- **A29** Friedreich's ataxia about 1 in 50,000; about 5,000 US patients. D62.
 
 **Guidance and management statements**
 
-- **G9** Burnett: prior preclinical capacity "$8 million a year or something like that"; the CAL "could surpass $60 million or so at this facility"; "our revenue miss in the quarter … was largely attributed to a delayed ramp of these preclinical CAL services"; "accelerated adoption of GLP studies at the CAL could go faster than" high-teens 2027 growth; added people are "built into that cost structure". D6.
-- **G10** First GLP statement of work "in the multi-million dollar range", expected to be fully recognised by end of H1 2027; 2026 guidance "does not include the execution of any of these large studies"; larger studies expected to start "in the second half of next year". D6; D3.
-- **G11** "a single study could be in that $15,000,000 to $20,000,000 range" once GLP capability is in place. D7.
-- **G12** Burnett: "if we generally can grow in that 15% to 20%, maybe even north of 20% range for the foreseeable future" (D7); 2027 "high teens, I would say if not 20% growth" with CAL as an accelerator (D6).
 - **G1** FY2025 revenue guidance $36.0–41.0M. D5.
 - **G2** "adjusting our 2026 revenue guidance to between $48.0 - $52.0 million" (original $52.0–56.0M). Also: 10–15 trials enrolling, about 10 readouts in 18 months, CAL, SONOCARE, commercial reorganization. D3.
 - **G3** 2026 guidance "does not include any meaningful expected revenue from commercial drug delivery". D7.
@@ -623,6 +619,10 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **G6** "operational cash burn to decrease in the second half". D3.
 - **G7** 15 centres "could be ready to do 1, if not 2 of these procedures a week"; 20–30 centres would mean "50 to 100 cases a week". D6.
 - **G8** "~6,000 patients* Initial Treatable Patients at Launch" (*management estimate); "~20,000 patients Diagnosed HD". D17, p.25.
+- **G9** Burnett: prior preclinical capacity "$8 million a year or something like that"; the CAL "could surpass $60 million or so at this facility"; "our revenue miss in the quarter … was largely attributed to a delayed ramp of these preclinical CAL services"; "accelerated adoption of GLP studies at the CAL could go faster than" high-teens 2027 growth; added people are "built into that cost structure". D6.
+- **G10** First GLP statement of work "in the multi-million dollar range", expected to be fully recognised by end of H1 2027; 2026 guidance "does not include the execution of any of these large studies"; larger studies expected to start "in the second half of next year". D6; D3.
+- **G11** "a single study could be in that $15,000,000 to $20,000,000 range" once GLP capability is in place. D7.
+- **G12** Burnett: "if we generally can grow in that 15% to 20%, maybe even north of 20% range for the foreseeable future" (D7); 2027 "high teens, I would say if not 20% growth" with CAL as an accelerator (D6).
 
 **Estimates**
 
@@ -652,25 +652,25 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **S25** $2.0M a year of fixed field support per launched therapy.
 - **S26** Core growth FY2029E–31E 15% (bear 8%, bull 18%); see S7.
 - **S28** US population about 335M (approximation, not sourced).
+- **S29** Finagle filled inputs: 15-year horizon (FY2040E; Finagle fades gsnext linearly to its default gt at year 15); cost of debt 9.2% (C63); tax 21%; non-operating assets 0; working-capital change 0; distributions "none" (each year's FCFE treated as paid out), no buybacks; debt in target mode at 2.0× EBITDA after the P3 draw. Terminal growth left at the Finagle default.
 - **S30** AMT-130 steady state 3,000 a year from FY2030E (David, Oct 23, 2026), as a share of HD incidence (bull 3,500).
 - **S31** PD class volume: base and bull, three-year ramp from the FY2029E launch (S64): 1/3, 2/3, then 100% of class demand (C40, C46), class demand from FY2031E; bear, capacity ramp toward 4,500 (S22, S43).
 - **S32** Explicit window to FY2031E (David, Oct 26, 2026; earlier FY2032E, Oct 23, 2026). Core growth as S26; core opex growth as S16. PD class volume: base and bull see S31 and S64; bear see S22.
 - **S37** CAL uplift above core growth (US$M, FY2027E–31E): base 0 / 7 / 14 / 22 / 29 (toward 60% of capacity); bull 3 / 10 / 18 / 27 / 36; bear 0 / 2 / 4 / 6 / 8 (G9–G11). Judgment.
+- **S38** CAL incremental opex 20% of CAL revenue (lease and staff already in core opex, G9); CAL gross margin = core 62.9% (S13). Judgment.
 - **S43** PD platform capacity: base and bull not capped; volume follows class demand (S64), implying about 74 (base) and 95 (bull) centres at 3 cases/wk × 50 wks for Parkinson's alone by FY2031E, against Burnett's 20–30 centres × 50–100 cases/wk (G7). Bear capacity ramp toward 4,500 (2,500 in FY2031E). AMT-130 per-therapy cap 4,500 (S20). Aggressive judgment.
 - **S44** DBS and one-time therapy are not mutually exclusive: patients who have had DBS stay in the eligible pool, and DBS (3,990 a year, A10) continues alongside and is not deducted from one-time class demand. Trial exclusion of prior DBS is treated as a trial-entry rule (A41–A43). David, Oct 25, 2026: "6% applies to one-time therapy and DBS patients are eligible so I think the pool size should be 180k?" Judgment.
 - **S45** From launch in FY2029E, 6% of the opening eligible pool receives a one-time therapy each year (none before). Judgment anchored on the measured DBS rate: about 2.7 times the 2.2% of the 180,000 pool that receives DBS each year (C49), on the view that many more eligible patients would choose a one-time, potentially disease-modifying therapy than symptomatic DBS hardware surgery. No published willingness study supports the multiple. David, Oct 25, 2026: "So we can make it 6% and underpin it on the basis of that 3% (2.9%) receive DBS and we think many more would favour a gene therapy with a disease modifying effect." The 2.9% is 3,990 measured against a pool with prior-DBS patients excluded (137,813; C49); against the 180,000 pool used here the DBS rate is 2.2%. Lifetime uptake 0.06 / (0.095 + 0.06) = 39%, somewhat above a referral × willingness × coverage funnel of about 30% (A14, A40).
 - **S46** Half of patients with PD for at least four years and no dementia have motor complications. Judgment anchored to A33 and A34.
 - **S47** 90% of otherwise eligible patients are fit for neurosurgery. Judgment; no population figure found.
-- **S59** Bull: 8% of the opening eligible pool treated each year from FY2029E (base 6%, S45), on the base three-year ramp; the smallest round change that keeps bull volume above the base in every year. David, Oct 25, 2026, on an earlier bull: "Bull case should show growing to 10k." This bull exceeds 10,000 from FY2030E, to be confirmed by David. Judgment.
-- **S62** Class lumping: the PD procedure line is all one-time Parkinson's cell/gene therapy procedures (the class), not one product; volume follows class demand (C40, C46) through the three-year ramp (S64). David, Oct 25, 2026: "And class lumping for the valuation too." Judgment.
-- **S63** ClearPoint delivers 100% of one-time Parkinson's cell/gene therapy procedures. David's judgment, Oct 25, 2026: "nobody will risk a multi-billion dollar therapy to save a few thousand on a cannula that wasn't used in the trial". The device used in the pivotal trial becomes part of the approved procedure, so the share stays near 100% for each therapy approved with ClearPoint. Consistent evidence: D12, D68. Devices for other programs not confirmed (D10). Competitor findings: D63–D67, D69, D70. Sizing: about $2.69 a share per 1,000 procedures a year from FY2030E (C43).
-- **S64** Three-year ramp to class demand: one-time PD class volume = 1/3 of class demand in FY2029E, 2/3 in FY2030E and 100% from FY2031E (base and bull). David, Oct 25, 2026: "ramp the patient over 3 years up to the demand" and "since that also gives time for other therapies to get approved." The other quantified PD therapies are expected after FY2031E (2033–34, Appendix D), after the ramp ends, so the rationale is a judgment, not a timeline match. Judgment.
 - **S48** Superseded (value add-on for earlier runs; not used).
 - **S52** Non-BlueRock PD demand split AB-1005 52% / ANPD001 24% / RNDP-001 24% (Appendix D). Judgment.
 - **S53–S57** Funnel rates for NRTX-1001, AVB-101, KEBILIDI, RGX-121 and SRN-101 in Figure D2. Judgment.
 - **S58** Approval years and ramps for partner programs in Figures D1 and D3: large indications ≈300 → ~1,200 → ~2,200 → steady; one-year ramp for ultra-rare. Judgment.
-- **S38** CAL incremental opex 20% of CAL revenue (lease and staff already in core opex, G9); CAL gross margin = core 62.9% (S13). Judgment.
-- **S29** Finagle filled inputs: 15-year horizon (FY2040E; Finagle fades gsnext linearly to its default gt at year 15); cost of debt 9.2% (C63); tax 21%; non-operating assets 0; working-capital change 0; distributions "none" (each year's FCFE treated as paid out), no buybacks; debt in target mode at 2.0× EBITDA after the P3 draw. Terminal growth left at the Finagle default.
+- **S59** Bull: 8% of the opening eligible pool treated each year from FY2029E (base 6%, S45), on the base three-year ramp; the smallest round change that keeps bull volume above the base in every year. David, Oct 25, 2026, on an earlier bull: "Bull case should show growing to 10k." This bull exceeds 10,000 from FY2030E, to be confirmed by David. Judgment.
+- **S62** Class lumping: the PD procedure line is all one-time Parkinson's cell/gene therapy procedures (the class), not one product; volume follows class demand (C40, C46) through the three-year ramp (S64). David, Oct 25, 2026: "And class lumping for the valuation too." Judgment.
+- **S63** ClearPoint delivers 100% of one-time Parkinson's cell/gene therapy procedures. David's judgment, Oct 25, 2026: "nobody will risk a multi-billion dollar therapy to save a few thousand on a cannula that wasn't used in the trial". The device used in the pivotal trial becomes part of the approved procedure, so the share stays near 100% for each therapy approved with ClearPoint. Consistent evidence: D12, D68. Devices for other programs not confirmed (D10). Competitor findings: D63–D67, D69, D70. Sizing: about $2.69 a share per 1,000 procedures a year from FY2030E (C43).
+- **S64** Three-year ramp to class demand: one-time PD class volume = 1/3 of class demand in FY2029E, 2/3 in FY2030E and 100% from FY2031E (base and bull). David, Oct 25, 2026: "ramp the patient over 3 years up to the demand" and "since that also gives time for other therapies to get approved." The other quantified PD therapies are expected after FY2031E (2033–34, Appendix D), after the ramp ends, so the rationale is a judgment, not a timeline match. Judgment.
 
 **Calculations**
 
@@ -699,18 +699,19 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **C27** Superseded; see C60.
 - **C28** Superseded; see C61.
 - **C29** Superseded (earlier gsnext derivation, Oct 25, 2026); the valuation uses 15% from P3.
+- **C30** Finagle template table: Finagle's annual output for each case, laid out row for row as in Finagle's standard company template.
 - **C33** Steady state / 90,000 (A9): 4,500 = 5.0%; 10,837 = 12.0%; 13,530 = 15.0%.
 - **C34** Superseded; see C65.
 - **C35** CAL FY2031E EBITDA = 29.0 × (62.9% − 20%) = 12.4 (S13, S37, S38).
 - **C40** One-time PD class demand = one-time treated in the eligible-pool model (6% of the opening pool from FY2029E, S45; DBS not deducted, S44): 11,756 / 11,391 / 11,126 / 10,945 (FY2029E–32E); 10,837 (FY2033E); 10,792 (FY2034E); 10,801 (FY2035E); 11,454 (FY2040E); 12,780 (FY2045E). Growth FY2033E–40E 0.8% a year. Appendix C. FY2032E onward is demand context; the valuation does not use it (P3).
-- **C46** Bull class demand = pool model (C45 inputs) re-run with 8% treated from FY2029E (S59): 15,674 / 14,875 / 14,272 / 13,833 (FY2029E–32E); 13,530 (FY2033E); 13,250 (FY2035E); 13,792 (FY2040E). Steady-state treated share of entrants 0.08 / (0.095 + 0.08 + 0.029) = 39%.
-- **C48** Superseded (Oct 25, 2026 value decomposition on earlier inputs; not used).
-- **C49** DBS rate = 3,990 DBS a year (A10) ÷ eligible pool: 179,813 at start FY2026E = 2.2%; 190,401 at start FY2028E = 2.1%. 6% ÷ 2.2% = 2.7. Against a pool excluding prior-DBS patients (137,813) the same 3,990 is 2.9%. Pool model.
 - **C41** FY2026E US PD prevalence = log-linear interpolation of 930,000 (2020) and 1,238,000 (2030) (A30): growth 2.9% a year, 1.104M in FY2026E.
 - **C42** Eligible pool FY2026E = 1.104M (C41) × (0.729 − 0.28) (A31, A32, C44) × 0.50 (S46) × 0.806 (A35) × 0.90 (S47) = 179,813, 16.3% of PD; patients who have had DBS included (S44).
 - **C43** Superseded (Oct 25, 2026 add-on runs on earlier inputs; not used).
 - **C44** Share of prevalent patients diagnosed four or more years = exp(−4 × (0.05 + 0.029)) = 0.73, survival loss 5% a year (A31) weighted for 2.9% prevalence growth (C41); cross-check 1.1M prevalent / 90,000 new a year ≈ 12 years lived with diagnosis (A9). Dementia (0.28, midpoint of A32) is subtracted from this group, not multiplied.
 - **C45** Leave rate m = 5% death (A31) + 4.45% new dementia (A39) = 0.095 a year; entrants FY2026E = (m + g) × pool = 0.124 × 179,813 = 22,300, growing 2.9% a year; no one-time therapy before launch, so the pool grows at g to FY2028E; pool end = start + entrants − leavers − treated.
+- **C46** Bull class demand = pool model (C45 inputs) re-run with 8% treated from FY2029E (S59): 15,674 / 14,875 / 14,272 / 13,833 (FY2029E–32E); 13,530 (FY2033E); 13,250 (FY2035E); 13,792 (FY2040E). Steady-state treated share of entrants 0.08 / (0.095 + 0.08 + 0.029) = 39%.
+- **C48** Superseded (Oct 25, 2026 value decomposition on earlier inputs; not used).
+- **C49** DBS rate = 3,990 DBS a year (A10) ÷ eligible pool: 179,813 at start FY2026E = 2.2%; 190,401 at start FY2028E = 2.1%. 6% ÷ 2.2% = 2.7. Against a pool excluding prior-DBS patients (137,813) the same 3,990 is 2.9%. Pool model.
 - **C50** Partner steady states = Figure D2 funnel results, rounded (PD to 100s; AVB-101 to 5s). **C52** NRTX-1001 = 10,500 × 0.85 × 0.5 × 0.5 × 0.8 × 0.7 = 1,249 + 167,000 (A21 mid) × 11.9% ÷ 10 = 1,987 → 3,200. **C53** FTD-GRN incidence = ~83M US aged 45–64 (unsourced) × 3.4/100k ≈ 2,800 × 5% = 140.
 - **C54** Illustrative non-BlueRock PD rows = min(launch ramp, S52 share of class demand C40 less BRT-DA01) each year; all zero to FY2031E because their launches are after FY2031E. Not used in the valuation, which uses the class (S62).
 - **C55** Bear class demand = pool model with patients who have had DBS excluded (3,990 ÷ 0.095 ≈ 42,000; pool 137,813, trial-style, A41), 6% treated: 9,010 / 8,731 / 8,527 / 8,389 (FY2029E–32E); 8,306 (FY2033E). Above bear volume through FY2031E (S43); FY2032E–33E are demand context.
@@ -724,7 +725,6 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **C63** Cost of debt: 8.25% minimum coupon + ≈0.7% (2% issue discount and costs spread over the term) + ≈0.25% (revenue participation 0.375% + 0.15% of net revenue up to $50M from 2027) ≈ 9.2% (D2; P3). Reported effective rate 11.3% at June 30, 2026 (D2) not used, to avoid double counting.
 - **C64** Return evidence (roic_evidence.md): EBITDA negative in every year FY2015A–25A, so historical returns are undefined; capex 0.1%–3% of revenue; revenue added per $ of capex 12.5–34. Forecast capex is about 10% of revenue. David's 25% (P3) is within the 20%–50%+ range this supports on physical capital.
 - **C65** Growth path = consecutive Finagle revenue (D77); me = FY2031E EBITDA ÷ revenue: base 170.8 / 410.4 = 41.6%, bull 44.8%, bear 14.3%.
-- **C30** Finagle template table: Finagle's annual output for each case, laid out row for row as in Finagle's standard company template.
 
 **Not verified**
 
