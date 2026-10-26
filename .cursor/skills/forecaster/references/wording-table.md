@@ -16,6 +16,9 @@ Use the midpoint of a band unless the quote pushes you to an edge (`more than`, 
 | low teens | 11–13% |
 | mid-teens | 14–16% |
 | high teens | 17–19% |
+| low 70s | 71–73% (same bands for other levels: low 60s 61–63%, and so on) |
+| mid 70s | 74–76% |
+| high 70s | 77–79% |
 | modest, modestly | 1–3% of the total the sentence is about |
 | more than / over / greater than $X | floor of X. Not a coefficient. The total stays ≥ X. |
 | about / approximately $X | not a coefficient. Build bottom-up and keep the total in a band. Start at ±5% of X. |

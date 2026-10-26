@@ -104,11 +104,17 @@ Start from the latest reported quarter. Remove a one-time item only when the com
 
 ### 2e. Costs
 
-Gross margin stays at the trailing level unless a source moves it.
+Gross margin stays at the trailing level unless a source moves it. State the gross margin basis (GAAP or cash), and keep management's margin language on the same basis.
 
-Cash operating cost is the latest-quarter run rate plus step changes the company has actually announced. The run rate used here is gross profit minus adjusted EBITDA when that is the EBITDA the company guides. Say so. It is not a GAAP operating-expense line.
+Define the cost base first. Cash opex = GAAP operating expenses − stock comp − depreciation (− company-flagged one-time items). Reconcile it to reported adjusted EBITDA: gross profit + amortization in COGS − cash opex = adjusted EBITDA (HROW Q2'26: 50.363 + 5.527 − 57.122 = −1.232). State where amortization and stock comp sit. Gross profit minus adjusted EBITDA is not the cost base: it nets amortization into opex and understates EBITDA.
 
-If you have a 2a EBITDA total, and the operating cost it implies differs from this run-rate build by more than 10%, keep the guidance-based EBITDA, flag the gap, and show the cost-based EBITDA beside it.
+When management describes how it gets to its EBITDA guide (HROW: "substantially higher revenue, increasing gross margins into the high 70s, and a base operating expense structure that remains approximately flat"), the cost step follows that description first. Only when there isn't one, cash operating cost is the latest-quarter run rate plus step changes the company has actually announced, grown for inflation.
+
+When the company doesn't report adjusted EBITDA, state the definition as a calculation, e.g. operating income + D&A + stock comp, tagged `[C]`. Keep it consistent with any acquired company's own definition, and show the effect of including or excluding stock comp.
+
+When a revenue consensus exists but no EBITDA estimate does, build EBITDA from costs as above, and flag it.
+
+If you have a 2a EBITDA total, and the operating cost it implies differs from this cost build by more than 10%, keep the guidance-based EBITDA, flag the gap, and show the cost-based EBITDA beside it.
 
 ### 2f. Where the explicit years stop
 
