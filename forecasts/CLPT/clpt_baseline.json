@@ -1,0 +1,469 @@
+{
+ "ok": true,
+ "ticker": "CLPT",
+ "canadian": false,
+ "period_end": "2025-12-31",
+ "period_source": "10k",
+ "currency": "USD",
+ "baseline": {
+  "date": {
+   "value": "2025-12-31",
+   "source": "10k",
+   "evidence": "Period end of the latest 10-K.",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "note": "Period end of the latest 10-K."
+  },
+  "revenue": {
+   "value": 36.971,
+   "source": "10k",
+   "evidence": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD"
+  },
+  "ebitda": {
+   "value": -15.17,
+   "source": "10k",
+   "evidence": "OperatingIncomeLoss, DepreciationDepletionAndAmortization, ShareBasedCompensation",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD",
+   "note": "Operating income plus depreciation and amortization plus stock-based compensation."
+  },
+  "capex": {
+   "value": 0.522,
+   "source": "10k",
+   "evidence": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD",
+   "note": "Positive cash outflow."
+  },
+  "da": {
+   "value": 0.814,
+   "source": "10k",
+   "evidence": "DepreciationDepletionAndAmortization",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD"
+  },
+  "tax": {
+   "value": 0.055,
+   "source": "10k",
+   "evidence": "IncomeTaxExpenseBenefit",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD"
+  },
+  "interest": {
+   "value": 2.388,
+   "source": "yahoo",
+   "evidence": "Interest Expense",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD",
+   "note": "Interest expense, as a positive number."
+  },
+  "sbc": {
+   "value": 8.18,
+   "source": "10k",
+   "evidence": "ShareBasedCompensation",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD"
+  },
+  "debt": {
+   "value": 49.077,
+   "source": "10k",
+   "evidence": "LongTermDebt",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD",
+   "note": "LongTermDebt plus short-term borrowings and commercial paper. DebtCurrent and LongTermDebtCurrent were not added, because they are often already inside LongTermDebt."
+  },
+  "cash": {
+   "value": 45.923,
+   "source": "10k",
+   "evidence": "CashAndCashEquivalentsAtCarryingValue",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD",
+   "note": "Cash and cash equivalents. Short-term investments were not found."
+  },
+  "gross_margin": {
+   "value": 0.6137783668280545,
+   "source": "10k",
+   "evidence": "us-gaap:GrossProfit / revenue",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "note": "Gross profit 22.692 million divided by revenue 36.971 million."
+  },
+  "ebitda_definition": {
+   "value": "before_sbc",
+   "source": "10k",
+   "evidence": "last_10k adds stock-based compensation back to EBITDA"
+  }
+ },
+ "shares": {
+  "value": 29.663875,
+  "source": "10k",
+  "evidence": "dei:EntityCommonStockSharesOutstanding",
+  "period_end": "2026-03-06",
+  "note": "Share count is as of 2026-03-06, the 10-K cover date, not the fiscal period end."
+ },
+ "price": {
+  "value": 9.25,
+  "source": "yahoo",
+  "evidence": "info.previousClose",
+  "as_of": "2026-10-23",
+  "currency": "USD"
+ },
+ "rates": {
+  "risk_free": {
+   "value": 0.049530000000000005,
+   "source": "yahoo",
+   "evidence": "^TNX info.previousClose 4.953 on 2026-10-23, percent divided by 100",
+   "as_of": "2026-10-23"
+  },
+  "re": {
+   "value": 0.10453000000000001,
+   "source": "assumption",
+   "evidence": "0.055 plus the 10-year yield.",
+   "derived_from": [
+    "rates.risk_free"
+   ]
+  },
+  "gt": {
+   "value": 0.049530000000000005,
+   "source": "assumption",
+   "evidence": "Terminal growth equals the 10-year yield.",
+   "derived_from": [
+    "rates.risk_free"
+   ]
+  },
+  "roict": {
+   "value": 0.15,
+   "source": "assumption",
+   "evidence": "Terminal ROIC of 15 percent."
+  }
+ },
+ "forecast": {
+  "margin_path": {
+   "me": {
+    "value": -0.41032160341889595,
+    "source": "assumption",
+    "evidence": "Year-0 EBITDA divided by year-0 revenue.",
+    "derived_from": [
+     "baseline.ebitda",
+     "baseline.revenue"
+    ]
+   },
+   "mc": {
+    "value": 0.10172838170457929,
+    "source": "assumption",
+    "evidence": "Average of the EBITDA margin and the gross margin.",
+    "derived_from": [
+     "forecast.margin_path.me",
+     "baseline.gross_margin"
+    ]
+   },
+   "gsnext": {
+    "value": 0.049530000000000005,
+    "source": "assumption",
+    "evidence": "No sales growth was stated and EBITDA growth could not be turned into one, so the next sales growth equals terminal growth.",
+    "derived_from": [
+     "rates.gt"
+    ]
+   }
+  }
+ },
+ "debt": {
+  "mode": {
+   "value": "target",
+   "source": "assumption",
+   "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+   "derived_from": [
+    "baseline.debt",
+    "baseline.ebitda"
+   ]
+  },
+  "leverage": {
+   "value": -3.235135135135135,
+   "source": "assumption",
+   "evidence": "Year-0 debt divided by year-0 EBITDA.",
+   "derived_from": [
+    "baseline.debt",
+    "baseline.ebitda"
+   ]
+  },
+  "start_year": {
+   "value": 1,
+   "source": "assumption",
+   "evidence": "The target applies from the first forecast year."
+  }
+ },
+ "distribution": {},
+ "case": {
+  "ticker": "CLPT",
+  "baseline": {
+   "date": {
+    "value": "2025-12-31",
+    "source": "10k",
+    "evidence": "Period end of the latest 10-K.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "note": "Period end of the latest 10-K."
+   },
+   "revenue": {
+    "value": 36.971,
+    "source": "10k",
+    "evidence": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD"
+   },
+   "ebitda": {
+    "value": -15.17,
+    "source": "10k",
+    "evidence": "OperatingIncomeLoss, DepreciationDepletionAndAmortization, ShareBasedCompensation",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD",
+    "note": "Operating income plus depreciation and amortization plus stock-based compensation."
+   },
+   "capex": {
+    "value": 0.522,
+    "source": "10k",
+    "evidence": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD",
+    "note": "Positive cash outflow."
+   },
+   "da": {
+    "value": 0.814,
+    "source": "10k",
+    "evidence": "DepreciationDepletionAndAmortization",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD"
+   },
+   "tax": {
+    "value": 0.055,
+    "source": "10k",
+    "evidence": "IncomeTaxExpenseBenefit",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD"
+   },
+   "interest": {
+    "value": 2.388,
+    "source": "yahoo",
+    "evidence": "Interest Expense",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD",
+    "note": "Interest expense, as a positive number."
+   },
+   "sbc": {
+    "value": 8.18,
+    "source": "10k",
+    "evidence": "ShareBasedCompensation",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD"
+   },
+   "debt": {
+    "value": 49.077,
+    "source": "10k",
+    "evidence": "LongTermDebt",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD",
+    "note": "LongTermDebt plus short-term borrowings and commercial paper. DebtCurrent and LongTermDebtCurrent were not added, because they are often already inside LongTermDebt."
+   },
+   "cash": {
+    "value": 45.923,
+    "source": "10k",
+    "evidence": "CashAndCashEquivalentsAtCarryingValue",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD",
+    "note": "Cash and cash equivalents. Short-term investments were not found."
+   },
+   "gross_margin": {
+    "value": 0.6137783668280545,
+    "source": "10k",
+    "evidence": "us-gaap:GrossProfit / revenue",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "note": "Gross profit 22.692 million divided by revenue 36.971 million."
+   },
+   "ebitda_definition": {
+    "value": "before_sbc",
+    "source": "10k",
+    "evidence": "last_10k adds stock-based compensation back to EBITDA"
+   }
+  },
+  "market": {
+   "shares": {
+    "value": 29.663875,
+    "source": "10k",
+    "evidence": "dei:EntityCommonStockSharesOutstanding",
+    "period_end": "2026-03-06",
+    "note": "Share count is as of 2026-03-06, the 10-K cover date, not the fiscal period end."
+   },
+   "price": {
+    "value": 9.25,
+    "source": "yahoo",
+    "evidence": "info.previousClose",
+    "as_of": "2026-10-23",
+    "currency": "USD"
+   }
+  },
+  "rates": {
+   "risk_free": {
+    "value": 0.049530000000000005,
+    "source": "yahoo",
+    "evidence": "^TNX info.previousClose 4.953 on 2026-10-23, percent divided by 100",
+    "as_of": "2026-10-23"
+   },
+   "re": {
+    "value": 0.10453000000000001,
+    "source": "assumption",
+    "evidence": "0.055 plus the 10-year yield.",
+    "derived_from": [
+     "rates.risk_free"
+    ]
+   },
+   "gt": {
+    "value": 0.049530000000000005,
+    "source": "assumption",
+    "evidence": "Terminal growth equals the 10-year yield.",
+    "derived_from": [
+     "rates.risk_free"
+    ]
+   },
+   "roict": {
+    "value": 0.15,
+    "source": "assumption",
+    "evidence": "Terminal ROIC of 15 percent."
+   }
+  },
+  "forecast": {
+   "margin_path": {
+    "me": {
+     "value": -0.41032160341889595,
+     "source": "assumption",
+     "evidence": "Year-0 EBITDA divided by year-0 revenue.",
+     "derived_from": [
+      "baseline.ebitda",
+      "baseline.revenue"
+     ]
+    },
+    "mc": {
+     "value": 0.10172838170457929,
+     "source": "assumption",
+     "evidence": "Average of the EBITDA margin and the gross margin.",
+     "derived_from": [
+      "forecast.margin_path.me",
+      "baseline.gross_margin"
+     ]
+    },
+    "gsnext": {
+     "value": 0.049530000000000005,
+     "source": "assumption",
+     "evidence": "No sales growth was stated and EBITDA growth could not be turned into one, so the next sales growth equals terminal growth.",
+     "derived_from": [
+      "rates.gt"
+     ]
+    }
+   }
+  },
+  "debt": {
+   "mode": {
+    "value": "target",
+    "source": "assumption",
+    "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+    "derived_from": [
+     "baseline.debt",
+     "baseline.ebitda"
+    ]
+   },
+   "leverage": {
+    "value": -3.235135135135135,
+    "source": "assumption",
+    "evidence": "Year-0 debt divided by year-0 EBITDA.",
+    "derived_from": [
+     "baseline.debt",
+     "baseline.ebitda"
+    ]
+   },
+   "start_year": {
+    "value": 1,
+    "source": "assumption",
+    "evidence": "The target applies from the first forecast year."
+   }
+  }
+ },
+ "assumptions": [
+  "forecast.margin_path.me",
+  "forecast.margin_path.mc",
+  "rates.risk_free",
+  "rates.re",
+  "rates.gt",
+  "rates.roict",
+  "forecast.margin_path.gsnext",
+  "debt.mode",
+  "debt.leverage",
+  "debt.start_year"
+ ],
+ "sources_used": {
+  "date": "10k",
+  "revenue": "10k",
+  "ebitda": "10k",
+  "capex": "10k",
+  "da": "10k",
+  "tax": "10k",
+  "interest": "yahoo",
+  "sbc": "10k",
+  "debt": "10k",
+  "cash": "10k",
+  "gross_margin": "10k",
+  "ebitda_definition": "10k",
+  "shares": "10k",
+  "price": "yahoo",
+  "forecast.margin_path.me": "assumption",
+  "forecast.margin_path.mc": "assumption",
+  "rates.risk_free": "assumption",
+  "rates.re": "assumption",
+  "rates.gt": "assumption",
+  "rates.roict": "assumption",
+  "forecast.margin_path.gsnext": "assumption",
+  "debt.mode": "assumption",
+  "debt.leverage": "assumption",
+  "debt.start_year": "assumption"
+ },
+ "missing": [
+  "nol",
+  "noa"
+ ],
+ "skipped": [],
+ "warnings": [],
+ "layers": {
+  "article": {
+   "status": "not_given"
+  },
+  "attachment": {
+   "status": "not_given"
+  },
+  "10k": {
+   "status": "used"
+  },
+  "yahoo": {
+   "status": "used"
+  }
+ },
+ "note": "Year 0 is the fiscal year ending 2025-12-31. case holds the merged leaves and the computed assumptions. Copy it, fill what is still missing, then validate_case. nol and noa are never in the data feeds."
+}

@@ -15,7 +15,7 @@
 1. `python partners/pd_simple4_model.py` → `pd_simple4_model.json` (PD pool and class demand; inputs coded in the script, plus `partners/census_nc-est2024-agesex-res.csv`).
 2. `python partners/partners_v4_model.py` → `partners_v4_model.json` (partner table; reads the PD model JSON).
 3. `python build_forecast.py` → `forecast.json` and the `CLPT_base/bull/bear.xlsx` files (reads the PD model JSON).
-4. `python run_finagle.py` → `finagle_run.json` (needs a `finagle` checkout and `clpt_baseline.json`, the `build_baseline('CLPT')` output, two levels above the repo; neither is in this repo). `finagle_perpetuity.py` reruns the perpetuity yardstick.
+4. `python run_finagle.py` → `finagle_run.json` (needs a read-only `finagle` checkout beside this repo; its input `clpt_baseline.json`, the `build_baseline('CLPT')` output of 2026-10-23, is in this folder). `finagle_perpetuity.py` reruns the perpetuity yardstick.
 5. `python render_report.py` → `report.pdf`; `python ../../tools/md2docx.py report.md report.docx` → Word.
 6. `pytest` from the repo root.
 
