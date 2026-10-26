@@ -16,6 +16,8 @@ Read the references when you reach that step. They hold the tables; this file ho
 - [Driver patterns](references/driver-patterns.md)
 - [Finagle handoff](references/finagle-handoff.md)
 
+After the forecast, write the report with the [forecast-report skill](../forecast-report/SKILL.md).
+
 Worked case: [forecasts/HROW](../../../forecasts/HROW/forecast.md). Layout: [AGENTS.md](../../../AGENTS.md).
 
 ## Where the history comes from

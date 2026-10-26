@@ -11,6 +11,10 @@ Every number in `forecast.md` and in `forecast.json` carries one tag and a citat
 | `[S]` | An assumption. The citation says why: volume, price, a coverage win, destocking, a launch ramp. It does not restate the number. |
 | `[C]` | Arithmetic from the method: a coefficient, a scale factor, a growth rate, a sum. Cite the inputs. |
 
+## Currency
+
+Forecast in the filer's reporting currency. Convert any input reported in another currency at a stated, cited rate, tagged `[C]` (or `[E]` for a market rate), with its as-of date. Flag the lines exposed to FX.
+
 `[S]` and any other judgment go on the assumptions list so a person can change them without rereading the whole case.
 
 Lines reconcile to totals. In `forecast.json` a fact is:
