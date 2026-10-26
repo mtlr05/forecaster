@@ -1,21 +1,28 @@
 ## Status and open items
 
-**Current:** v10, as of 2026-10-25. Finagle `run_case` value per share: base $54.29, bull $72.68, bear $16.72. The sections below this block still carry their earlier version label; `report.md` and the `partners/pd_simple4_*` and `partners/partners_v4_*` files are current.
+**Current:** v11, as of 2026-10-26. Finagle `run_case` value per share (cost of equity 10.453% = 10-year 4.953% + 5.5% ERP; gt default 4.953%): base $65.20, bull $88.36, bear $14.56; after David's ×0.90 dilution estimate $58.68 / $79.52 / $13.10. Valuation inputs are David's (2026-10-26): +$50M Oberland draw in 2026, debt 2.0× EBITDA from the first positive-EBITDA year, SBC $8M until then and linear in dollars to 5% of FY2040E EBITDA, explicit EBITDA to FY2031E, gsnext 15% fading to terminal by FY2040E (year 15), roict 25%, rd 9.2%. Scripts and outputs are in `valuation_v11/`. The sections below this block still carry their earlier version label; `report.md` and the `partners/pd_simple4_*` and `partners/partners_v4_*` files are current.
+
+**Presentation window (2026-10-26, David):** the report's explicit forecast ends at FY2031E (base revenue $410.4M, EBITDA $170.8M; bull $502.1M / $225.0M; bear $180.2M / $25.8M). forecast.json still runs to FY2032E (unchanged; model outputs unchanged), but FY2032E is not presented; the valuation fades growth with Finagle from FY2032E (15.0% → ~6.1% by FY2040E). Exception (David, 2026-10-26, later): Parkinson's demand and patient-pool tables, chart (pd_pool_chart, FY2026E–FY2040E) and discussion continue past FY2031E as demand context only (not a revenue forecast; Finagle does not use them). Notes below for v8–v10 that mention FY2032E+ are history.
+
+**Closed in v11:** bull at 8% treated share confirmed by David; cost of equity set to 10-year + ERP (no beta; David: med-tech beta is low); SBC fade artifact fixed (explicit dollar path replaces the ratio fade that produced negative SBC); $50M 2026 draw and 2× leverage modelled; rd 9.2% (no double count of the 11.3% effective rate).
 
 **Open items**
-1. Bull at 8% treated share not yet confirmed (an earlier ask was a bull reaching about 10k procedures/yr; 8% gives about 14k).
-2. Valuation rerun at a 12–13% cost of equity pending.
-3. Report Appendix B: sources A41–A43 and D71–D76 are out of order.
-4. `partners/partners_v4.md` has no PDF or Word version.
-5. Epilepsy, FTD and glioblastoma funnels not rebuilt on the pool method.
-6. ClearPoint platform share (100%) is an assumption: each 1,000 procedures/yr lost is about $2.58/share.
-7. Motor-complication share (50%) and surgical fitness (90%) in the PD pool are judgments.
+1. Dilution is a flat ×0.90 outside Finagle; the borrowing an equity raise would replace stays in the model.
+2. Bear cash reaches −$98M (FY2030E–32E) with no funding modelled.
+3. Oberland revenue participation and prepayment premiums are approximated through the 9.2% rate; model starts from 10-K debt $49.077M vs. $50.2M at Q2 2026.
+4. About 86% of base value comes after FY2031E and 54% from terminal value.
+5. The Parkinson's capacity decomposition ($39.25) and the per-$20M add-on ($2.69/share) in the report are from Oct 25 runs and were not rerun on v11 inputs.
+6. Report Appendix B: sources A41–A43 and D71–D76 are out of order.
+7. `partners/partners_v4.md` has no PDF or Word version.
+8. Epilepsy, FTD and glioblastoma funnels not rebuilt on the pool method.
+9. ClearPoint platform share (100%) is an assumption.
+10. Motor-complication share (50%) and surgical fitness (90%) in the PD pool are judgments.
 
 **How to resume** (from `forecasts/CLPT/`, in order)
 1. `python partners/pd_simple4_model.py` → `pd_simple4_model.json` (PD pool and class demand; inputs coded in the script, plus `partners/census_nc-est2024-agesex-res.csv`).
 2. `python partners/partners_v4_model.py` → `partners_v4_model.json` (partner table; reads the PD model JSON).
 3. `python build_forecast.py` → `forecast.json` and the `CLPT_base/bull/bear.xlsx` files (reads the PD model JSON).
-4. `python run_finagle.py` → `finagle_run.json` (needs a read-only `finagle` checkout beside this repo; its input `clpt_baseline.json`, the `build_baseline('CLPT')` output of 2026-10-23, is in this folder). `finagle_perpetuity.py` reruns the perpetuity yardstick.
+4. `python run_finagle.py` → `finagle_run.json` (needs a read-only `finagle` checkout beside this repo; its input `clpt_baseline.json`, the `build_baseline('CLPT')` output of 2026-10-23, is in this folder). `finagle_perpetuity.py` reruns the perpetuity yardstick. The current valuation: `python valuation_v11/run_finagle_v11.py` and `python valuation_v11/sensitivity_v11.py` (paths inside point to the working output folder; adjust before rerunning).
 5. `python render_report.py` → `report.pdf`; `python ../../tools/md2docx.py report.md report.docx` → Word.
 6. `pytest` from the repo root.
 
