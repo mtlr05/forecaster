@@ -17,8 +17,9 @@ Lines are the ones Harrow reports: IHEEZO, VEVYE, other branded (other branded p
 | Other branded | 25.720 [A] | −33.6% | 18.939 + 44.860 = **63.799** [S] | **132.685** [S] |
 | ImprimisRx | 76.547 [A] | −8.3% | 28.055 + 41.459 = **69.514** [S] | **73.239** [S] |
 | **Revenue** | **272.303** [A] | +36.4% | 114.864 + 235.280 = **350.144** [E] | **536.328** [E] |
-| Gross margin | 75.1% [C] | | 73.3% LTM on H2 [C] | 73.3% [C] |
-| **Adj. EBITDA** | **61.923** [A] | +53.6% | −13.891 + 66.226 = **52.335** [C] | **160.455** [S] |
+| GAAP gross margin | 75.1% [C] | | 67.4% H1A, 78% H2 [S] → **74.5%** [C] | **78.0%** [S] |
+| **Adj. EBITDA** | **61.923** [A] | +53.6% | −13.891 + 75.328 = **61.437** [C] | **185.101** [S] |
+| Adj. EBITDA margin | 22.7% [C] | | **17.5%** [C] | **34.5%** [C] |
 
 FY24, for the growth rates: IHEEZO 49.303, VEVYE 28.061, other branded 38.751, ImprimisRx 83.499, total 199.614. Adjusted EBITDA 40.327. All [A].
 
@@ -78,7 +79,7 @@ H1 actual 114.864 plus that H2 is an unscaled FY26 of 280.075. Consensus H2 is 3
 
 Unscaled FY27 is 390.873 (IHEEZO 91.371, VEVYE 149.426, other branded 96.700, ImprimisRx 53.376). Consensus 536.328. **Scale = 1.372.** [C]
 
-Both factors are more than 10% from 1. The line commentary does not support the consensus total. The lines allocate it. Flagged.
+Both factors are more than 10% from 1. The skill's method is to scale the lines to the total, so the line dollars above are the consensus allocated by driver. The unscaled sums are a diagnostic of how far the line commentary is from the total, not an alternative forecast. Flagged, as 2c requires.
 
 An earlier build used 14.5 as the ImprimisRx quarter instead of the Q2 actual 14.556. This file uses 14.556. Recomputed.
 
@@ -94,33 +95,45 @@ An earlier build used 14.5 as the ImprimisRx quarter instead of the Q2 actual 14
 
 ## Costs
 
-Trailing gross margin = (204.369 − 79.819 + 77.408) / (272.303 − 111.573 + 114.864) = **73.28%**. [C] Inputs are FY25 gross profit, H1 2025 gross profit, and H1 2026 gross profit, from the March 2 and August 10, 2026 releases. FY25 gross margin on the year is 204.369 / 272.303 = 75.1%; the release states 75%. Q2 gross margin is stated as 71% (50.363 / 70.661 = 71.3%).
+Revised October 22, 2026 to follow the bridge management gave on the Q2 2026 call (August 2026; Seeking Alpha transcript, https://seekingalpha.com/article/4934770-harrow-inc-hrow-q2-2026-earnings-call-transcript, read from David's ceochat copy). Quotes checked against that transcript: [G]
 
-Q2 cash operating cost = Q2 gross profit 50.363 − Q2 adjusted EBITDA (−1.232) = **51.595**. [C] This bridge is not GAAP opex. It is the cost that reconciles to the adjusted EBITDA the company guides. H1 adjusted EBITDA was −13.891. [A]
+- "GAAP gross margin was 71%. For the second half, we expect gross margins to trend back towards the high 70s supported by IHEEZO's return to a normal revenue cycle, increased overall revenue, continued VEVYE growth, and more favorable product mix."
+- "Excluding the additional headcount expected to be added through the TYRVAYA transaction at closing, we expect base SG&A dollars to remain approximately flat with second quarter levels for the balance of the year."
+- "The adjusted EBITDA bridge follows directly from the revenue bridge, substantially higher revenue, increasing gross margins into the high 70s, and a base operating expense structure that remains approximately flat."
+- TYRVAYA: "increasing SG&A expenses by approximately $20 million on an annualized basis once fully integrated." The October 5, 2026 close release says Harrow "expects to onboard these new colleagues during the fourth quarter of 2026" and "expects TYRVAYA to contribute more than $30 million in revenue in 2027." [G]
 
-H2 cost = 2 × 51.595 + 3.0 assumed TYRVAYA stub cost = 106.190. [S on the 3.0]
+**Q2 adjusted opex = 57.122** [C] = total operating expenses 61.370 − stock-based compensation 3.788 − depreciation 0.460 (Q2 release income statement and adjusted EBITDA reconciliation). [A inputs]
 
-H2 EBITDA = 235.280 × 73.28% − 106.190 = 66.226. FY26 EBITDA = −13.891 + 66.226 = **52.335**.
+**Where amortization and SBC sit.** Amortization of intangibles (Q2 5.527 [A]) is in cost of sales: the Q2 letter attributes the gross-margin decline partly to "amortization of acquired NDAs", and the reconciliation closes only that way: gross profit 50.363 + amortization 5.527 − 57.122 = −1.232, the reported Q2 adjusted EBITDA. [C] SBC (3.788) and depreciation are treated as opex. The release does not split SBC by line; the exact reconciliation is consistent with all of it in opex. [C, flagged]
 
-If FY26 EBITDA had been the guidance midpoint of 90, H2 operating cost would have had to be about 68.5, which is 35% below the 106.2 run rate. The gap is wider than 10%. There is no 2a EBITDA total to "keep" (no coefficient, no estimate), so the forecast keeps the cost build and shows the guide beside it. **Flag: FY26 adjusted EBITDA 52.3 versus guide $80–100 million.** This is the largest risk in the case. The sales force built in the first half is already inside the Q2 run rate; nothing further was quantified.
+**Margin basis: GAAP.** Management's 71% and "high 70s" are GAAP gross margin, so the ramp is applied on GAAP and amortization is added back to reach adjusted EBITDA. Q2 cash gross margin (before amortization) was 79.1%. Using "high 70s" as a cash margin would double-count nothing but would understate EBITDA by about 11 in H2 (no amortization add-back). "High 70s" is read as 77–79% by analogy with the wording table's "high single-digit" 7–9%; base 78%, bear 77%, bull 79%. [S]
 
-FY27 cost = 4 × 51.595 × 1.03 + 20 assumed TYRVAYA cost = 232.571. [S] EBITDA = 536.328 × 73.28% − 232.571 = **160.455** (29.9% margin).
+H2 adjusted EBITDA = H2 revenue 235.280 × 78% + 2 × 5.527 amortization − (2 × 57.122 + 5.0 TYRVAYA Q4 cost) = **75.328**. FY26 = −13.891 + 75.328 = **61.437** (17.5%). The 5.0 is David's estimate of a Q4 partial of the ~$20M annual run rate. [P]
 
-That margin expansion is mostly the scale factor. Revenue was lifted 37% above the line build and operating cost was not. Management also said it expects "at least one new product every year through 2029, within its existing cost structure and commercial footprint" (August 10, 2026). [G] That sentence argues against a large organic cost step, and it is why the organic launches are not given their own opex add. It does not, by itself, justify a 30% EBITDA margin. Listed below.
+FY27 = 536.328 × 78% + 4 × 5.527 − (4 × 57.122 × 1.03 + 20.0) = **185.101** (34.5%). The 78% is held from H2 [S]; amortization is held at Q2 [S] (TYRVAYA intangibles will add amortization, but it is added back, so adjusted EBITDA is unaffected on this basis); base opex +3% [S]; TYRVAYA 20 [G/P].
 
-The $20 million TYRVAYA cost is an assumption. The filing says 2027 revenue is "expected to exceed the incremental operating costs" and does not give the cost. [G][S]
+**Cross-check against David's source** ($67–72M at midpoint revenue, $73–78M at the top, both below the $80M low end). Same bridge, other revenues: [C]
+
+| FY26 revenue | GM 77% | GM 78% | GM 79% | 78%, no TYRVAYA cost |
+|---|---:|---:|---:|---:|
+| 357.5 (guide midpoint) | 64.7 | 67.2 | 69.6 | 72.2 |
+| 365.0 (guide top) | 70.5 | 73.0 | 75.5 | 78.0 |
+
+At 78% the build reproduces David's ranges: the low end with the $5M TYRVAYA cost, the high end without it. It agrees. The base here is lower, 61.4, only because revenue is consensus 350.1 rather than the 357.5 guide midpoint: 7.4 less revenue × 78% ≈ 5.8. Even the bull (79%, 355 revenue) gives 67.6. **Flag: every scenario stays below the $80–100M guide**; reaching $80M on this bridge needs roughly 365 revenue at 79%+ with no TYRVAYA cost, or opex below the Q2 level.
+
+FY27 margin expansion still comes mostly from the revenue scale (1.37×) against flat base opex. That is now consistent with management's stated intent ("our objective is to grow revenue against that expense base"), but no FY27 margin was guided. Listed below.
 
 ## Scenarios
 
-Three levers only: where in the carried consensus range the revenue total sits, the gross margin, and FY27 operating-cost inflation. The line drivers do not change. Scaling does, because the total does.
+Three levers: where in the consensus range revenue sits, GAAP gross margin within "high 70s" (H2 and FY27), and FY27 base-opex inflation. The line drivers, the Q2 opex base and the TYRVAYA costs (5 / 20) do not change.
 
-| | Revenue | Gross margin | FY27 opex inflation | FY26 rev | FY26 EBITDA | FY27 rev | FY27 EBITDA |
-|---|---|---|---:|---:|---:|---:|---:|
-| Bear | consensus low | 71% (Q2, as stated) | +8% | 341.0 | 40.476 | 479.0 | 97.200 (20.3%) |
-| Base | consensus point | 73.3% LTM | +3% | 350.144 | 52.335 | 536.328 | 160.455 (29.9%) |
-| Bull | consensus high | 75% (FY25, as stated) | 0% | 355.0 | 60.021 | 587.0 | 213.870 (36.4%) |
+| | Revenue | GAAP GM (H2, FY27) | FY27 opex infl. | FY26 rev | FY26 GM | FY26 EBITDA | FY27 rev | FY27 GM | FY27 EBITDA |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Bear | consensus low | 77% | +8% | 341.0 | 73.8% | 52.044 (15.3%) | 479.0 | 77% | 124.171 (25.9%) |
+| Base | consensus point | 78% | +3% | 350.144 | 74.5% | 61.437 (17.5%) | 536.328 | 78% | 185.101 (34.5%) |
+| Bull | consensus high | 79% | 0% | 355.0 | 75.2% | 67.626 (19.0%) | 587.0 | 79% | 237.350 (40.4%) |
 
-Bear H2 scale 1.369, FY27 scale 1.225. Bull 1.454 and 1.502. All still more than 10% from 1.
+Bear H2 scale 1.369, FY27 scale 1.225. Bull 1.454 and 1.502.
 
 ## Finagle leaves (base, organic)
 
@@ -129,22 +142,22 @@ TYRVAYA is not in these rates. Year 0 is already organic.
 | Leaf | Value | Tag |
 |---|---|---|
 | `forecast.ebitda_basis` | organic | [C] |
-| `forecast.ebitda_growth` | −0.1738, +1.9376 | [C] |
+| `forecast.ebitda_growth` | +0.0011, +1.7905 | [C] |
 | `forecast.sales_growth` | +0.2649, +0.4376 | [C] |
-| `me` | 0.3035 | [C] |
-| `mc` | 0.5182 | [S] |
+| `me` | 0.3494 | [C] |
+| `mc` | 0.5647 | [S] |
 | `gsnext` | 0.20 | [S] |
 | `deal_spend` | [0, 30] | [G] |
 
-Organic dollars those rates compound: revenue 272.303 → 344.448 → 495.164; adjusted EBITDA 61.923 → 51.160 → 150.290.
+Organic dollars: see `forecast.json` `organic` (recomputed with the revised cost build). These leaves are carried for the file's tests only; Finagle was not run.
 
 `me` is FY27 organic EBITDA / FY27 organic revenue. That is the margin `forecast_ebitda` uses when sales growth reaches the last explicit year. It is not the year-0 margin (61.923 / 272.303 = 22.7%).
 
-`mc` is the average of that ending margin and the 73.3% gross margin [S]. Finagle's filler would have averaged the year-0 margin instead. This sets the one the fade should use.
+`mc` is the average of that ending margin and the 78% gross margin [S]. Finagle's filler would have averaged the year-0 margin instead. This sets the one the fade should use.
 
 `gsnext` 20% [S]. FY25 revenue grew 36%. Launches are still described through 2029, and there is no FY28 dollar. 20% fades the FY27 step-up instead of repeating it. The fade from 20% down to terminal growth is Finagle's. `gt` is not set.
 
-Acquisition, all seven fields: year 1 [G], deal value 30 [G], multiple 2.95 [S] (30 / FY27 TYRVAYA EBITDA of about 10.2), leverage 0 [G] (cash at close), next growth 0.15 [S], capex fraction 0.02 [S], `pay_from_cash` false [C] because that flag only touches year-0 cash and the close is in year 1. Milestones of up to $70 million are excluded [G]; they are contingent and not in the base.
+Acquisition, all seven fields: year 1 [G], deal value 30 [G], multiple 2.48 [S] (30 / FY27 TYRVAYA EBITDA of about 12.1), leverage 0 [G] (cash at close), next growth 0.15 [S], capex fraction 0.02 [S], `pay_from_cash` false [C] because that flag only touches year-0 cash and the close is in year 1. Milestones of up to $70 million are excluded [G]; they are contingent and not in the base.
 
 Template leaves (horizon, cost of debt, tax, NOL, non-operating assets, working capital, distribution, debt policy, terminal growth) are not filled. The FY2025 10-K does say federal NOL carryforwards were about $37.124 million. That is a filing fact a person can put in the template. It is not a forecast output.
 
@@ -152,15 +165,18 @@ Template leaves (horizon, cost of debt, tax, NOL, non-operating assets, working 
 
 The moves that change the answer:
 
-1. Revenue is the October 22, 2026 Yahoo consensus, because H1 `C` is −0.91. H2 scale is 1.42 and FY27 scale is 1.37. Replacing the consensus with the unscaled build (FY26 about 280, FY27 about 391) is the whole forecast.
-2. FY26 EBITDA is the cost build, 52.3, not the $80–100 million guide. Holding H2 operating cost at 106 instead of the roughly 69 a midpoint guide would need is the largest single risk.
-3. FY27 operating cost is the Q2 run rate +3% plus $20 million for TYRVAYA. The $20 million is assumed. The "existing cost structure" sentence pulls the other way for organic launches.
-4. Gross margin stays at the 73.3% trailing level.
-5. `gsnext` is 20%. It is a fade, not a sourced FY28.
+1. Revenue is the Yahoo consensus (re-pulled 2026-10-22, unchanged), because H1 `C` is −0.91. Lines are scaled to it (H2 1.42×, FY27 1.37×); that is the method, and the unscaled build is a diagnostic only.
+2. GAAP gross margin 78% in H2 and FY27, reading "high 70s" as 77–79%. Each point is about 2.4 of FY26 EBITDA and 5.4 of FY27.
+3. Base adjusted opex flat at Q2's 57.122 a quarter through Q4, then +3% in FY27. The flat-through-2026 part is management's; the FY27 inflation is mine.
+4. TYRVAYA SG&A 5 in Q4 2026 [P] and 20 in FY27 ("approximately $20 million on an annualized basis once fully integrated" [G]).
+5. Amortization held at Q2's 5.527 a quarter and added back (GAAP margin basis). `gsnext` 20%.
 
-Other judgments, each tagged `[S]` in the file: IHEEZO units flat then +17%; VEVYE +7.5% a quarter (above the "hold" default) and FY27 × 1.10; other branded Q3 13 and Q4 14.5; TYRVAYA Q4 stub of 4; ImprimisRx flat then the FY25 decline; TYRVAYA costs of 3 and 20; scenario inflation of 8% / 3% / 0%; `mc`; acquisition next growth 0.15 and capex fraction 0.02; milestones left out.
+Other judgments, each tagged `[S]` in the file: IHEEZO units flat then +17%; VEVYE +7.5% a quarter and FY27 × 1.10; other branded Q3 13 and Q4 14.5; TYRVAYA Q4 revenue stub of 4; ImprimisRx flat then the FY25 decline; SBC treated as entirely in opex; scenario GM 77/79 and inflation 8%/0%; `mc`; acquisition next growth 0.15 and capex fraction 0.02; milestones left out.
 
 ## Links
+
+- Q2 2026 stockholder letter: https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-2.htm
+- Q2 2026 call transcript (Seeking Alpha; read from ceochat `companies/hrow/sources/calls/seeking-alpha/2026-Q2.md`, read-only): https://seekingalpha.com/article/4934770-harrow-inc-hrow-q2-2026-earnings-call-transcript
 
 Opened and read for this case. Each `[A]` and `[G]` above uses one of these.
 
@@ -179,8 +195,8 @@ Opened and read for this case. Each `[A]` and `[G]` above uses one of these.
 
 ## Not verified
 
-- The consensus dollars were not pulled again. They are the yfinance figures dated 2026-10-22 from the source note (FY26 350.144, range 341–355; FY27 536.328, range 479–587).
+- Consensus re-pulled via yfinance on 2026-10-22: FY26 350.144 (341–355), FY27 536.328 (479–587). Unchanged.
 - No EBITDA consensus was available to carry, so none is used.
-- Ceochat was not read. The public clone was not available.
+- Ceochat was read only for the Q2 2026 call transcript, which David supplied. No other ceochat content was used.
 - Finagle was not run. No value per share.
-- Q3 13 and Q4 14.5 for other branded, the VEVYE +7.5% step, the FY27 × 1.10, the TYRVAYA costs of 3 and 20, and `gsnext` of 0.20 are assumptions. The quotes they hang on were checked; the magnitudes were not in the filings.
+- Q3 13 and Q4 14.5 for other branded, the VEVYE +7.5% step, the FY27 × 1.10, the 78% margin point inside "high 70s", FY27 opex inflation, and `gsnext` of 0.20 are assumptions. The quotes they hang on were checked; the magnitudes were not in the filings.

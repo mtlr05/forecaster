@@ -293,7 +293,7 @@
         "value": 235.28,
         "tag": "E",
         "citation": {
-          "text": "H1 revenue was $114.864 million against an original H1 range of $133-153 million, so the position coefficient is negative. Analyst revenue estimates exist, so FY26 uses the Yahoo consensus carried from yfinance on 2026-10-22 ($350.144 million; range $341-355 million), not the $350-365 million guide. That pull was not repeated for this file. The live Yahoo page will have moved. H2 is the consensus (or scenario) year minus reported H1.",
+          "text": "H1 revenue was $114.864 million against an original H1 range of $133-153 million, so the position coefficient is negative. Analyst revenue estimates exist, so FY26 uses the Yahoo consensus carried from yfinance on 2026-10-22 ($350.144 million; range $341-355 million), not the $350-365 million guide. Re-pulled from yfinance on 2026-10-22 and unchanged. The lines are scaled to this total; the unscaled build is a diagnostic only. H2 is the consensus (or scenario) year minus reported H1.",
           "url": "https://finance.yahoo.com/quote/HROW/analysis/"
         }
       },
@@ -301,7 +301,7 @@
         "value": 350.144,
         "tag": "E",
         "citation": {
-          "text": "H1 revenue was $114.864 million against an original H1 range of $133-153 million, so the position coefficient is negative. Analyst revenue estimates exist, so FY26 uses the Yahoo consensus carried from yfinance on 2026-10-22 ($350.144 million; range $341-355 million), not the $350-365 million guide. That pull was not repeated for this file. The live Yahoo page will have moved.",
+          "text": "H1 revenue was $114.864 million against an original H1 range of $133-153 million, so the position coefficient is negative. Analyst revenue estimates exist, so FY26 uses the Yahoo consensus carried from yfinance on 2026-10-22 ($350.144 million; range $341-355 million), not the $350-365 million guide. Re-pulled from yfinance on 2026-10-22 and unchanged. The lines are scaled to this total; the unscaled build is a diagnostic only.",
           "url": "https://finance.yahoo.com/quote/HROW/analysis/"
         }
       },
@@ -348,26 +348,26 @@
         }
       },
       "H2E": {
-        "value": 66.225503,
+        "value": 75.3284,
         "tag": "C",
         "citation": {
-          "text": "H2 gross profit at the scenario gross margin, minus Q2 cash-opex run rate times two and the assumed TYRVAYA stub cost. No EBITDA consensus was in the carried Yahoo pull, and no completed EBITDA range exists to place a coefficient.",
+          "text": "H2 revenue times the scenario GAAP gross margin ('increasing gross margins into the high 70s'), plus two quarters of Q2 amortization in cost of sales (5.527 each, added back to adjusted EBITDA), minus base adjusted opex held flat at Q2 (57.122 a quarter; 'base SG&A dollars to remain approximately flat with second quarter levels for the balance of the year') and an assumed $5 million Q4 TYRVAYA cost. Q2 2026 call, August 2026.",
           "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
         }
       },
       "FY26E": {
-        "value": 52.334503,
+        "value": 61.4374,
         "tag": "C",
         "citation": {
-          "text": "H1 adjusted EBITDA plus the H2 cost build. The $80-100 million guide is not used: the coefficient is undefined for EBITDA and there is no carried EBITDA estimate.",
+          "text": "H1 adjusted EBITDA plus the H2 bridge management described: 'substantially higher revenue, increasing gross margins into the high 70s, and a base operating expense structure that remains approximately flat.' Revenue is consensus, so the result sits below the $80-100 million guide. No EBITDA coefficient or estimate exists.",
           "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
         }
       },
       "FY27E": {
-        "value": 160.455046,
+        "value": 185.1012,
         "tag": "S",
         "citation": {
-          "text": "FY27 revenue times the gross-margin assumption, minus four quarters of the Q2 cash-opex run rate grown by the scenario inflation, minus an assumed $20 million TYRVAYA cost. Evidence for a specific FY27 margin has run out; this is the cost build.",
+          "text": "FY27 revenue times the scenario GAAP gross margin held at the H2 level, plus four quarters of Q2 amortization, minus four quarters of Q2 base adjusted opex grown by the scenario inflation, minus about $20 million of TYRVAYA SG&A ('increasing SG&A expenses by approximately $20 million on an annualized basis once fully integrated', Q2 call).",
           "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
         }
       }
@@ -410,7 +410,7 @@
         }
       },
       "FY26E": {
-        "value": 51.160069,
+        "value": 61.994148,
         "tag": "C",
         "citation": {
           "text": "Cost-build EBITDA minus TYRVAYA's contribution (its revenue times the gross-margin assumption, less the assumed incremental cost).",
@@ -418,7 +418,7 @@
         }
       },
       "FY27E": {
-        "value": 150.28977,
+        "value": 172.993397,
         "tag": "C",
         "citation": {
           "text": "FY27 cost-build EBITDA minus TYRVAYA, so forecast_ebitda does not also get EBITDA that acquisitions will add.",
@@ -438,8 +438,8 @@
     },
     "ebitda_growth": {
       "value": [
-        -0.173812,
-        1.937638
+        0.001149,
+        1.790479
       ],
       "tag": "C",
       "citation": {
@@ -459,7 +459,7 @@
       }
     },
     "me": {
-      "value": 0.303515,
+      "value": 0.349366,
       "tag": "C",
       "citation": {
         "text": "Final explicit year organic EBITDA divided by organic revenue. This is the margin forecast_ebitda uses once sales growth reaches that year, not the year-0 margin.",
@@ -467,7 +467,7 @@
       }
     },
     "mc": {
-      "value": 0.518162,
+      "value": 0.564683,
       "tag": "S",
       "citation": {
         "text": "Contribution margin set halfway between that ending EBITDA margin and the trailing gross margin, which is the band a dollar of extra sales should fall in. Finagle's own filler would average the year-0 margin instead; this is set on purpose so the fade is not that default.",
@@ -511,7 +511,7 @@
         }
       },
       "multiple": {
-        "value": 2.951224,
+        "value": 2.477741,
         "tag": "S",
         "citation": {
           "text": "Cash paid divided by FY27 TYRVAYA EBITDA. That EBITDA is the scaled revenue floor times gross margin, less an assumed $20 million of incremental cost, because the filing says revenue exceeds incremental cost and does not give the cost.",
@@ -585,6 +585,22 @@
         "url": "https://finance.yahoo.com/quote/HROW/analysis/"
       }
     },
+    "q2_amortization_in_cogs": {
+      "value": 5.527,
+      "tag": "A",
+      "citation": {
+        "text": "Q2 2026 amortization of intangible assets, from the adjusted EBITDA reconciliation. The Q2 letter attributes the gross-margin decline partly to 'amortization of acquired NDAs', so it is in cost of sales.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
+      }
+    },
+    "gross_margin_basis": {
+      "value": 0.78,
+      "tag": "S",
+      "citation": {
+        "text": "Base H2 and FY27 GAAP gross margin, the midpoint of a 77-79% reading of 'high 70s'. GAAP basis because management's 71% Q2 figure and 'trend back towards the high 70s' are both GAAP gross margin. Amortization is then added back to reach adjusted EBITDA. Q2 cash gross margin was (50.363 + 5.527) / 70.661 = 79.1%.",
+        "url": "https://seekingalpha.com/article/4934770-harrow-inc-hrow-q2-2026-earnings-call-transcript"
+      }
+    },
     "ltm_gross_margin": {
       "value": 0.73281,
       "tag": "C",
@@ -594,10 +610,10 @@
       }
     },
     "q2_cash_opex": {
-      "value": 51.595,
+      "value": 57.122,
       "tag": "C",
       "citation": {
-        "text": "Q2 gross profit minus Q2 adjusted EBITDA. This is the latest-quarter run rate used as cash operating cost. It is a bridge, not a GAAP opex line.",
+        "text": "Q2 total operating expenses 61.370 minus stock-based compensation 3.788 and depreciation 0.460. Amortization of intangibles (5.527) sits in cost of sales, so it is not in opex. Check: gross profit 50.363 + amortization 5.527 - 57.122 = -1.232, the reported Q2 adjusted EBITDA.",
         "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
       }
     },
@@ -620,7 +636,7 @@
   },
   "scenarios": {
     "bear": {
-      "levers": "Consensus low, Q2 reported gross margin 71%, FY27 cash opex +8%.",
+      "levers": "Consensus low, GAAP gross margin 77% (low edge of 'high 70s') H2 and FY27, FY27 base opex +8%.",
       "lines": [
         {
           "name": "IHEEZO",
@@ -960,26 +976,26 @@
             }
           },
           "H2E": {
-            "value": 54.36656,
+            "value": 65.93472,
             "tag": "C",
             "citation": {
-              "text": "H2 gross profit at the scenario gross margin, minus Q2 cash-opex run rate times two and the assumed TYRVAYA stub cost. No EBITDA consensus was in the carried Yahoo pull, and no completed EBITDA range exists to place a coefficient.",
+              "text": "H2 revenue times the scenario GAAP gross margin ('increasing gross margins into the high 70s'), plus two quarters of Q2 amortization in cost of sales (5.527 each, added back to adjusted EBITDA), minus base adjusted opex held flat at Q2 (57.122 a quarter; 'base SG&A dollars to remain approximately flat with second quarter levels for the balance of the year') and an assumed $5 million Q4 TYRVAYA cost. Q2 2026 call, August 2026.",
               "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
             }
           },
           "FY26E": {
-            "value": 40.47556,
+            "value": 52.04372,
             "tag": "C",
             "citation": {
-              "text": "H1 adjusted EBITDA plus the H2 cost build. The $80-100 million guide is not used: the coefficient is undefined for EBITDA and there is no carried EBITDA estimate.",
+              "text": "H1 adjusted EBITDA plus the H2 bridge management described: 'substantially higher revenue, increasing gross margins into the high 70s, and a base operating expense structure that remains approximately flat.' Revenue is consensus, so the result sits below the $80-100 million guide. No EBITDA coefficient or estimate exists.",
               "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
             }
           },
           "FY27E": {
-            "value": 97.1996,
+            "value": 124.17096,
             "tag": "S",
             "citation": {
-              "text": "FY27 revenue times the gross-margin assumption, minus four quarters of the Q2 cash-opex run rate grown by the scenario inflation, minus an assumed $20 million TYRVAYA cost. Evidence for a specific FY27 margin has run out; this is the cost build.",
+              "text": "FY27 revenue times the scenario GAAP gross margin held at the H2 level, plus four quarters of Q2 amortization, minus four quarters of Q2 base adjusted opex grown by the scenario inflation, minus about $20 million of TYRVAYA SG&A ('increasing SG&A expenses by approximately $20 million on an annualized basis once fully integrated', Q2 call).",
               "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
             }
           }
@@ -1022,7 +1038,7 @@
             }
           },
           "FY26E": {
-            "value": 39.588248,
+            "value": 52.827903,
             "tag": "C",
             "citation": {
               "text": "Cost-build EBITDA minus TYRVAYA's contribution (its revenue times the gross-margin assumption, less the assumed incremental cost).",
@@ -1030,7 +1046,7 @@
             }
           },
           "FY27E": {
-            "value": 91.097264,
+            "value": 115.862792,
             "tag": "C",
             "citation": {
               "text": "FY27 cost-build EBITDA minus TYRVAYA, so forecast_ebitda does not also get EBITDA that acquisitions will add.",
@@ -1050,8 +1066,8 @@
         },
         "ebitda_growth": {
           "value": [
-            -0.360686,
-            1.301119
+            -0.146878,
+            1.193212
           ],
           "tag": "C",
           "citation": {
@@ -1071,7 +1087,7 @@
           }
         },
         "me": {
-          "value": 0.205992,
+          "value": 0.261993,
           "tag": "C",
           "citation": {
             "text": "Final explicit year organic EBITDA divided by organic revenue. This is the margin forecast_ebitda uses once sales growth reaches that year, not the year-0 margin.",
@@ -1079,7 +1095,7 @@
           }
         },
         "mc": {
-          "value": 0.457996,
+          "value": 0.515997,
           "tag": "S",
           "citation": {
             "text": "Contribution margin set halfway between that ending EBITDA margin and the trailing gross margin, which is the band a dollar of extra sales should fall in. Finagle's own filler would average the year-0 margin instead; this is set on purpose so the fade is not that default.",
@@ -1123,7 +1139,7 @@
             }
           },
           "multiple": {
-            "value": 4.91615,
+            "value": 3.610905,
             "tag": "S",
             "citation": {
               "text": "Cash paid divided by FY27 TYRVAYA EBITDA. That EBITDA is the scaled revenue floor times gross margin, less an assumed $20 million of incremental cost, because the filing says revenue exceeds incremental cost and does not give the cost.",
@@ -1166,7 +1182,7 @@
       }
     },
     "bull": {
-      "levers": "Consensus high, FY25 reported gross margin 75%, no FY27 opex inflation.",
+      "levers": "Consensus high, GAAP gross margin 79% (high edge of 'high 70s') H2 and FY27, no FY27 base opex inflation.",
       "lines": [
         {
           "name": "IHEEZO",
@@ -1506,26 +1522,26 @@
             }
           },
           "H2E": {
-            "value": 73.912,
+            "value": 81.51744,
             "tag": "C",
             "citation": {
-              "text": "H2 gross profit at the scenario gross margin, minus Q2 cash-opex run rate times two and the assumed TYRVAYA stub cost. No EBITDA consensus was in the carried Yahoo pull, and no completed EBITDA range exists to place a coefficient.",
+              "text": "H2 revenue times the scenario GAAP gross margin ('increasing gross margins into the high 70s'), plus two quarters of Q2 amortization in cost of sales (5.527 each, added back to adjusted EBITDA), minus base adjusted opex held flat at Q2 (57.122 a quarter; 'base SG&A dollars to remain approximately flat with second quarter levels for the balance of the year') and an assumed $5 million Q4 TYRVAYA cost. Q2 2026 call, August 2026.",
               "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
             }
           },
           "FY26E": {
-            "value": 60.021,
+            "value": 67.62644,
             "tag": "C",
             "citation": {
-              "text": "H1 adjusted EBITDA plus the H2 cost build. The $80-100 million guide is not used: the coefficient is undefined for EBITDA and there is no carried EBITDA estimate.",
+              "text": "H1 adjusted EBITDA plus the H2 bridge management described: 'substantially higher revenue, increasing gross margins into the high 70s, and a base operating expense structure that remains approximately flat.' Revenue is consensus, so the result sits below the $80-100 million guide. No EBITDA coefficient or estimate exists.",
               "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
             }
           },
           "FY27E": {
-            "value": 213.87,
+            "value": 237.35,
             "tag": "S",
             "citation": {
-              "text": "FY27 revenue times the gross-margin assumption, minus four quarters of the Q2 cash-opex run rate grown by the scenario inflation, minus an assumed $20 million TYRVAYA cost. Evidence for a specific FY27 margin has run out; this is the cost build.",
+              "text": "FY27 revenue times the scenario GAAP gross margin held at the H2 level, plus four quarters of Q2 amortization, minus four quarters of Q2 base adjusted opex grown by the scenario inflation, minus about $20 million of TYRVAYA SG&A ('increasing SG&A expenses by approximately $20 million on an annualized basis once fully integrated', Q2 call).",
               "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315226036865/ex99-1.htm"
             }
           }
@@ -1568,7 +1584,7 @@
             }
           },
           "FY26E": {
-            "value": 58.660464,
+            "value": 68.033342,
             "tag": "C",
             "citation": {
               "text": "Cost-build EBITDA minus TYRVAYA's contribution (its revenue times the gross-margin assumption, less the assumed incremental cost).",
@@ -1576,7 +1592,7 @@
             }
           },
           "FY27E": {
-            "value": 200.080257,
+            "value": 221.758138,
             "tag": "C",
             "citation": {
               "text": "FY27 cost-build EBITDA minus TYRVAYA, so forecast_ebitda does not also get EBITDA that acquisitions will add.",
@@ -1596,8 +1612,8 @@
         },
         "ebitda_growth": {
           "value": [
-            -0.052687,
-            2.41082
+            0.098676,
+            2.259551
           ],
           "tag": "C",
           "citation": {
@@ -1617,7 +1633,7 @@
           }
         },
         "me": {
-          "value": 0.369188,
+          "value": 0.409188,
           "tag": "C",
           "citation": {
             "text": "Final explicit year organic EBITDA divided by organic revenue. This is the margin forecast_ebitda uses once sales growth reaches that year, not the year-0 margin.",
@@ -1625,7 +1641,7 @@
           }
         },
         "mc": {
-          "value": 0.559594,
+          "value": 0.599594,
           "tag": "S",
           "citation": {
             "text": "Contribution margin set halfway between that ending EBITDA margin and the trailing gross margin, which is the band a dollar of extra sales should fall in. Finagle's own filler would average the year-0 margin instead; this is set on purpose so the fade is not that default.",
@@ -1669,7 +1685,7 @@
             }
           },
           "multiple": {
-            "value": 2.17553,
+            "value": 1.924081,
             "tag": "S",
             "citation": {
               "text": "Cash paid divided by FY27 TYRVAYA EBITDA. That EBITDA is the scaled revenue floor times gross margin, less an assumed $20 million of incremental cost, because the filing says revenue exceeds incremental cost and does not give the cost.",

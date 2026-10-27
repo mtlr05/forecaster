@@ -1,0 +1,2396 @@
+{
+  "ticker": "CPRT",
+  "company": "Copart, Inc. (NASDAQ: CPRT)",
+  "units": "USD millions",
+  "fiscal_year_end": "July 31",
+  "baseline_period": "FY26A",
+  "explicit_periods": [
+    "FY27E",
+    "FY28E"
+  ],
+  "period_note": "True fiscal labels kept. validate.py DOLLAR_PERIODS only sums FY24A/FY25A/FY27E and _compounds needs FY25A; build_forecast.py self-checks FY26A/FY28E sums and compounding.",
+  "as_of": "2026-10-22",
+  "lines": [
+    {
+      "name": "U.S. service revenues",
+      "pattern": "mature or declining",
+      "periods": {
+        "FY24A": {
+          "value": 3126.102,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2024 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY25A": {
+          "value": 3451.558,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2025 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY26A": {
+          "value": 3388.287,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2026 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "YoY_FY26": {
+          "value": -0.018331,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "FY26A / FY25A - 1 (A1).",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "Q4FY26A": {
+          "value": 817.822,
+          "tag": "A",
+          "citation": {
+            "id": "A4",
+            "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "YoY_Q4": {
+          "value": -0.008476,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY27E": {
+          "value": 3433.277201,
+          "tag": "S",
+          "citation": {
+            "id": "S1",
+            "text": "U.S. service FY27 +2%, FY28 +3% before scale x scale C5.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY28E": {
+          "value": 3706.561924,
+          "tag": "S",
+          "citation": {
+            "id": "S1",
+            "text": "U.S. service FY27 +2%, FY28 +3% before scale x scale C5.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        }
+      }
+    },
+    {
+      "name": "U.S. vehicle sales",
+      "pattern": "mature or declining",
+      "periods": {
+        "FY24A": {
+          "value": 338.633,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2024 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY25A": {
+          "value": 403.546,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2025 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY26A": {
+          "value": 419.143,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2026 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "YoY_FY26": {
+          "value": 0.03865,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "FY26A / FY25A - 1 (A1).",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "Q4FY26A": {
+          "value": 112.512,
+          "tag": "A",
+          "citation": {
+            "id": "A4",
+            "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "YoY_Q4": {
+          "value": 0.109039,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY27E": {
+          "value": 428.872254,
+          "tag": "S",
+          "citation": {
+            "id": "S2",
+            "text": "U.S. vehicle sales +3% a year before scale x scale C5.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY28E": {
+          "value": 463.009968,
+          "tag": "S",
+          "citation": {
+            "id": "S2",
+            "text": "U.S. vehicle sales +3% a year before scale x scale C5.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        }
+      }
+    },
+    {
+      "name": "International service revenues",
+      "pattern": "ramping",
+      "periods": {
+        "FY24A": {
+          "value": 434.9,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2024 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY25A": {
+          "value": 517.104,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2025 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY26A": {
+          "value": 581.233,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2026 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "YoY_FY26": {
+          "value": 0.124016,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "FY26A / FY25A - 1 (A1).",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "Q4FY26A": {
+          "value": 151.722,
+          "tag": "A",
+          "citation": {
+            "id": "A4",
+            "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "YoY_Q4": {
+          "value": 0.154693,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY27E": {
+          "value": 629.368888,
+          "tag": "S",
+          "citation": {
+            "id": "S3",
+            "text": "International service +9% a year before scale x scale C5.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY28E": {
+          "value": 719.046429,
+          "tag": "S",
+          "citation": {
+            "id": "S3",
+            "text": "International service +9% a year before scale x scale C5.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        }
+      },
+      "pattern_note": "share gain abroad"
+    },
+    {
+      "name": "International vehicle sales",
+      "pattern": "mature or declining",
+      "periods": {
+        "FY24A": {
+          "value": 337.188,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2024 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY25A": {
+          "value": 274.75,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2025 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY26A": {
+          "value": 277.546,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "FY2026 column, segment table, FY2026 10-K notes.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "YoY_FY26": {
+          "value": 0.010177,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "FY26A / FY25A - 1 (A1).",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "Q4FY26A": {
+          "value": 70.383,
+          "tag": "A",
+          "citation": {
+            "id": "A4",
+            "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "YoY_Q4": {
+          "value": 0.04367,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY27E": {
+          "value": 278.474129,
+          "tag": "S",
+          "citation": {
+            "id": "S4",
+            "text": "International vehicle sales +1% a year before scale x scale C5.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY28E": {
+          "value": 294.802658,
+          "tag": "S",
+          "citation": {
+            "id": "S4",
+            "text": "International vehicle sales +1% a year before scale x scale C5.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        }
+      }
+    },
+    {
+      "name": "ACV Auctions (acquired 2026-10-16)",
+      "pattern": "acquisition-driven",
+      "periods": {
+        "FY24A": {
+          "value": 0.0,
+          "tag": "A",
+          "citation": {
+            "id": "A13",
+            "text": "Not owned; closed 2026-10-16.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526423478/d129535dex991.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY25A": {
+          "value": 0.0,
+          "tag": "A",
+          "citation": {
+            "id": "A13",
+            "text": "Not owned; closed 2026-10-16.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526423478/d129535dex991.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY26A": {
+          "value": 0.0,
+          "tag": "A",
+          "citation": {
+            "id": "A13",
+            "text": "Not owned; closed 2026-10-16.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526423478/d129535dex991.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY27E": {
+          "value": 717.768858,
+          "tag": "S",
+          "citation": {
+            "id": "S5",
+            "text": "ACV Oct 16-Dec 31 2026 (C6 x 77/92) + 7/12 of CY27 consensus E2, x scale C5.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY28E": {
+          "value": 1033.123022,
+          "tag": "S",
+          "citation": {
+            "id": "S6",
+            "text": "5/12 of CY27 E2 + 7/12 of CY27 x (1 + 10%), x scale C5.",
+            "url": "https://finance.yahoo.com/quote/ACVA/analysis/",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        }
+      }
+    }
+  ],
+  "totals": {
+    "revenue": {
+      "FY24A": {
+        "value": 4236.823,
+        "tag": "A",
+        "citation": {
+          "id": "A2",
+          "text": "Total service revenues and vehicle sales, FY2026 10-K income statement.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY25A": {
+        "value": 4646.958,
+        "tag": "A",
+        "citation": {
+          "id": "A2",
+          "text": "Total service revenues and vehicle sales, FY2026 10-K.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY26A": {
+        "value": 4666.209,
+        "tag": "A",
+        "citation": {
+          "id": "A2",
+          "text": "Total service revenues and vehicle sales, FY2026 10-K.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY27E": {
+        "value": 5487.76133,
+        "tag": "E",
+        "citation": {
+          "id": "E1",
+          "text": "Mean FY27 (Jul-27) revenue consensus, Yahoo/yfinance 2026-10-22 ('0y').",
+          "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY28E": {
+        "value": 6216.544,
+        "tag": "E",
+        "citation": {
+          "id": "E1",
+          "text": "Mean FY28 (Jul-28) revenue consensus, Yahoo/yfinance 2026-10-22 ('+1y').",
+          "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      }
+    },
+    "gross_margin": {
+      "FY25A": {
+        "value": 0.451832,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Reported gross profit / revenue (A3).",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY26A": {
+        "value": 0.446585,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Reported gross profit 2,083.9 / revenue 4,666.2 (A3).",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY27E": {
+        "value": 0.454522,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Organic revenue x case reported GM + ACV x C9, / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY28E": {
+        "value": 0.45667,
+        "tag": "C",
+        "citation": {
+          "id": "C7",
+          "text": "Organic revenue x case reported GM + ACV x C9, / revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      }
+    },
+    "ebitda": {
+      "FY25A": {
+        "value": 1950.567,
+        "tag": "C",
+        "citation": {
+          "id": "C2",
+          "text": "Operating income + D&A + SBC (A1, A2, A3). Copart does not report adjusted EBITDA.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY26A": {
+        "value": 1920.781,
+        "tag": "C",
+        "citation": {
+          "id": "C2",
+          "text": "Operating income 1,652.6 + D&A 229.4 + SBC 38.8 (A1, A2, A3).",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY27E": {
+        "value": 2020.262299,
+        "tag": "S",
+        "citation": {
+          "id": "S7",
+          "text": "Organic: cash GM C3 x organic revenue - G&A C4; plus ACV at S8 margin.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY28E": {
+        "value": 2247.031976,
+        "tag": "S",
+        "citation": {
+          "id": "S7",
+          "text": "Organic: cash GM C3 x organic revenue - G&A C4 x growth; plus ACV at S8.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      }
+    },
+    "ebitda_margin": {
+      "FY25A": {
+        "value": 0.419751,
+        "tag": "C",
+        "citation": {
+          "id": "C8",
+          "text": "C2 / A2.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY26A": {
+        "value": 0.411636,
+        "tag": "C",
+        "citation": {
+          "id": "C8",
+          "text": "C2 / A2.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY27E": {
+        "value": 0.36814,
+        "tag": "C",
+        "citation": {
+          "id": "C8",
+          "text": "S7 / E1.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY28E": {
+        "value": 0.36146,
+        "tag": "C",
+        "citation": {
+          "id": "C8",
+          "text": "S7 / E1.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      }
+    }
+  },
+  "organic": {
+    "note": "Organic = Copart excluding ACV.",
+    "revenue": {
+      "FY26A": {
+        "value": 4666.209,
+        "tag": "A",
+        "citation": {
+          "id": "A2",
+          "text": "FY26 total = organic.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY27E": {
+        "value": 4769.992472,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "Sum of four Copart lines, scaled.",
+          "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY28E": {
+        "value": 5183.420978,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "Sum of four Copart lines, scaled.",
+          "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      }
+    },
+    "ebitda": {
+      "FY26A": {
+        "value": 1920.781,
+        "tag": "C",
+        "citation": {
+          "id": "C2",
+          "text": "FY26 adjusted EBITDA (analyst-defined).",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY27E": {
+        "value": 1953.768971,
+        "tag": "S",
+        "citation": {
+          "id": "S7",
+          "text": "Organic EBITDA, cash GM x organic revenue - G&A.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      },
+      "FY28E": {
+        "value": 2137.455857,
+        "tag": "S",
+        "citation": {
+          "id": "S7",
+          "text": "Organic EBITDA, cash GM x organic revenue - G&A.",
+          "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+          "page": "page unverified (HTML filing, no page numbers)"
+        }
+      }
+    },
+    "acquired": {
+      "revenue": {
+        "FY27E": {
+          "value": 717.768858,
+          "tag": "S",
+          "citation": {
+            "id": "S5",
+            "text": "ACV line.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY28E": {
+          "value": 1033.123022,
+          "tag": "S",
+          "citation": {
+            "id": "S6",
+            "text": "ACV line.",
+            "url": "https://finance.yahoo.com/quote/ACVA/analysis/",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        }
+      },
+      "ebitda": {
+        "FY27E": {
+          "value": 66.493328,
+          "tag": "S",
+          "citation": {
+            "id": "S8",
+            "text": "ACV adjusted EBITDA contribution.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "FY28E": {
+          "value": 109.576119,
+          "tag": "S",
+          "citation": {
+            "id": "S8",
+            "text": "ACV adjusted EBITDA contribution.",
+            "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        }
+      }
+    }
+  },
+  "finagle": {
+    "note": "Operating-path leaves required by the skill. NOT handed to Finagle; no valuation run.",
+    "ebitda_growth": {
+      "value": [
+        0.017174,
+        0.094017
+      ],
+      "tag": "C",
+      "citation": {
+        "id": "C11",
+        "text": "Organic EBITDA growth FY27, FY28.",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "sales_growth": {
+      "value": [
+        0.022241,
+        0.086673
+      ],
+      "tag": "C",
+      "citation": {
+        "id": "C11",
+        "text": "Organic revenue growth FY27, FY28.",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "me": {
+      "value": 0.412364,
+      "tag": "C",
+      "citation": {
+        "id": "C12",
+        "text": "FY28 organic EBITDA / organic revenue.",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "mc": {
+      "value": 0.429474,
+      "tag": "S",
+      "citation": {
+        "id": "S10",
+        "text": "Average of me and organic reported gross margin.",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "gsnext": {
+      "value": 0.05,
+      "tag": "S",
+      "citation": {
+        "id": "S9",
+        "text": "Organic growth after FY28; see S9.",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    }
+  },
+  "bridge": {
+    "cash_gross_margin_fy26": {
+      "value": 0.491619,
+      "tag": "C",
+      "citation": {
+        "id": "C3",
+        "text": "(Gross profit 2,083.9 + facility D&A 201.7 + facility SBC 8.5) / revenue 4,666.2 (A3).",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "cash_gross_margin_q4": {
+      "value": 0.466387,
+      "tag": "C",
+      "citation": {
+        "id": "C3",
+        "text": "(Q4 gross profit 481.4 + facility D&A 53.8 + SBC 2.3) / Q4 revenue 1,152.4 (A3).",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "cash_gross_margin_fy25": {
+      "value": 0.494845,
+      "tag": "C",
+      "citation": {
+        "id": "C3",
+        "text": "FY25 equivalent (A3).",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "ga_run_rate": {
+      "value": 391.252,
+      "tag": "C",
+      "citation": {
+        "id": "C4",
+        "text": "4 x Q4 G&A ex D&A and SBC 97.813 (A3).",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "scale_fy27": {
+      "value": 0.99341,
+      "tag": "C",
+      "citation": {
+        "id": "C5",
+        "text": "E1 FY27 / (unscaled Copart lines + ACV S5).",
+        "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "scale_fy28": {
+      "value": 1.041247,
+      "tag": "C",
+      "citation": {
+        "id": "C5",
+        "text": "E1 FY28 / (unscaled Copart lines + ACV S6).",
+        "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "acv_q4cy26_rev": {
+      "value": 209.867,
+      "tag": "C",
+      "citation": {
+        "id": "C6",
+        "text": "G1 midpoint 850 - A11 H1 418.1 - G2 midpoint 222.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "acv_q4cy26_ebitda": {
+      "value": 14.632,
+      "tag": "C",
+      "citation": {
+        "id": "C6",
+        "text": "G1 midpoint 75 - A11 H1 37.9 - G2 midpoint 22.5.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "acv_gross_margin": {
+      "value": 0.507272,
+      "tag": "C",
+      "citation": {
+        "id": "C9",
+        "text": "1 - (165.3 + 40.7) / 418.1, ACV H1 CY26 (A11).",
+        "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "unscaled_fy27": {
+      "value": 5524.165824,
+      "tag": "S",
+      "citation": {
+        "id": "S1",
+        "text": "Diagnostic only.",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    },
+    "unscaled_fy28": {
+      "value": 5970.288774,
+      "tag": "S",
+      "citation": {
+        "id": "S1",
+        "text": "Diagnostic only.",
+        "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+        "page": "page unverified (HTML filing, no page numbers)"
+      }
+    }
+  },
+  "scenarios": {
+    "bear": {
+      "lines": [
+        {
+          "name": "U.S. service revenues",
+          "pattern": "mature or declining",
+          "periods": {
+            "FY24A": {
+              "value": 3126.102,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2024 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY25A": {
+              "value": 3451.558,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2025 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY26A": {
+              "value": 3388.287,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2026 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_FY26": {
+              "value": -0.018331,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY26A / FY25A - 1 (A1).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "Q4FY26A": {
+              "value": 817.822,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_Q4": {
+              "value": -0.008476,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY27E": {
+              "value": 3380.735809,
+              "tag": "S",
+              "citation": {
+                "id": "S1",
+                "text": "U.S. service FY27 +2%, FY28 +3% before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 3611.302794,
+              "tag": "S",
+              "citation": {
+                "id": "S1",
+                "text": "U.S. service FY27 +2%, FY28 +3% before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          }
+        },
+        {
+          "name": "U.S. vehicle sales",
+          "pattern": "mature or declining",
+          "periods": {
+            "FY24A": {
+              "value": 338.633,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2024 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY25A": {
+              "value": 403.546,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2025 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY26A": {
+              "value": 419.143,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2026 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_FY26": {
+              "value": 0.03865,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY26A / FY25A - 1 (A1).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "Q4FY26A": {
+              "value": 112.512,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_Q4": {
+              "value": 0.109039,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY27E": {
+              "value": 422.308978,
+              "tag": "S",
+              "citation": {
+                "id": "S2",
+                "text": "U.S. vehicle sales +3% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 451.110551,
+              "tag": "S",
+              "citation": {
+                "id": "S2",
+                "text": "U.S. vehicle sales +3% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          }
+        },
+        {
+          "name": "International service revenues",
+          "pattern": "ramping",
+          "periods": {
+            "FY24A": {
+              "value": 434.9,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2024 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY25A": {
+              "value": 517.104,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2025 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY26A": {
+              "value": 581.233,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2026 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_FY26": {
+              "value": 0.124016,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY26A / FY25A - 1 (A1).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "Q4FY26A": {
+              "value": 151.722,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_Q4": {
+              "value": 0.154693,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY27E": {
+              "value": 619.737298,
+              "tag": "S",
+              "citation": {
+                "id": "S3",
+                "text": "International service +9% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 700.566841,
+              "tag": "S",
+              "citation": {
+                "id": "S3",
+                "text": "International service +9% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          },
+          "pattern_note": "share gain abroad"
+        },
+        {
+          "name": "International vehicle sales",
+          "pattern": "mature or declining",
+          "periods": {
+            "FY24A": {
+              "value": 337.188,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2024 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY25A": {
+              "value": 274.75,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2025 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY26A": {
+              "value": 277.546,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2026 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_FY26": {
+              "value": 0.010177,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY26A / FY25A - 1 (A1).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "Q4FY26A": {
+              "value": 70.383,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_Q4": {
+              "value": 0.04367,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY27E": {
+              "value": 274.212481,
+              "tag": "S",
+              "citation": {
+                "id": "S4",
+                "text": "International vehicle sales +1% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 287.22619,
+              "tag": "S",
+              "citation": {
+                "id": "S4",
+                "text": "International vehicle sales +1% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          }
+        },
+        {
+          "name": "ACV Auctions (acquired 2026-10-16)",
+          "pattern": "acquisition-driven",
+          "periods": {
+            "FY24A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A13",
+                "text": "Not owned; closed 2026-10-16.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526423478/d129535dex991.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY25A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A13",
+                "text": "Not owned; closed 2026-10-16.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526423478/d129535dex991.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY26A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A13",
+                "text": "Not owned; closed 2026-10-16.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526423478/d129535dex991.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY27E": {
+              "value": 706.784433,
+              "tag": "S",
+              "citation": {
+                "id": "S5",
+                "text": "ACV Oct 16-Dec 31 2026 (C6 x 77/92) + 7/12 of CY27 consensus E2, x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 1006.571624,
+              "tag": "S",
+              "citation": {
+                "id": "S6",
+                "text": "5/12 of CY27 E2 + 7/12 of CY27 x (1 + 10%), x scale C5.",
+                "url": "https://finance.yahoo.com/quote/ACVA/analysis/",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          }
+        }
+      ],
+      "totals": {
+        "revenue": {
+          "FY24A": {
+            "value": 4236.823,
+            "tag": "A",
+            "citation": {
+              "id": "A2",
+              "text": "Total service revenues and vehicle sales, FY2026 10-K income statement.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY25A": {
+            "value": 4646.958,
+            "tag": "A",
+            "citation": {
+              "id": "A2",
+              "text": "Total service revenues and vehicle sales, FY2026 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY26A": {
+            "value": 4666.209,
+            "tag": "A",
+            "citation": {
+              "id": "A2",
+              "text": "Total service revenues and vehicle sales, FY2026 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 5403.779,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "Low FY27 (Jul-27) revenue consensus, Yahoo/yfinance 2026-10-22 ('0y').",
+              "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 6056.778,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "Low FY28 (Jul-28) revenue consensus, Yahoo/yfinance 2026-10-22 ('+1y').",
+              "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        },
+        "gross_margin": {
+          "FY25A": {
+            "value": 0.451832,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Reported gross profit / revenue (A3).",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY26A": {
+            "value": 0.446585,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Reported gross profit 2,083.9 / revenue 4,666.2 (A3).",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 0.429472,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic revenue x case reported GM + ACV x C9, / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 0.43264,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic revenue x case reported GM + ACV x C9, / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": 1950.567,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "Operating income + D&A + SBC (A1, A2, A3). Copart does not report adjusted EBITDA.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY26A": {
+            "value": 1920.781,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "Operating income 1,652.6 + D&A 229.4 + SBC 38.8 (A1, A2, A3).",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 1842.405894,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "Organic: cash GM C3 x organic revenue - G&A C4; plus ACV at S8 margin.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 2010.782231,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "Organic: cash GM C3 x organic revenue - G&A C4 x growth; plus ACV at S8.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        },
+        "ebitda_margin": {
+          "FY25A": {
+            "value": 0.419751,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "C2 / A2.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY26A": {
+            "value": 0.411636,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "C2 / A2.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 0.340948,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "S7 / E1.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 0.331989,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "S7 / E1.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        }
+      },
+      "organic": {
+        "note": "Organic = Copart excluding ACV.",
+        "revenue": {
+          "FY26A": {
+            "value": 4666.209,
+            "tag": "A",
+            "citation": {
+              "id": "A2",
+              "text": "FY26 total = organic.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 4696.994567,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "Sum of four Copart lines, scaled.",
+              "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 5050.206376,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "Sum of four Copart lines, scaled.",
+              "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        },
+        "ebitda": {
+          "FY26A": {
+            "value": 1920.781,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "FY26 adjusted EBITDA (analyst-defined).",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 1787.629406,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "Organic EBITDA, cash GM x organic revenue - G&A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 1924.153665,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "Organic EBITDA, cash GM x organic revenue - G&A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        },
+        "acquired": {
+          "revenue": {
+            "FY27E": {
+              "value": 706.784433,
+              "tag": "S",
+              "citation": {
+                "id": "S5",
+                "text": "ACV line.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 1006.571624,
+              "tag": "S",
+              "citation": {
+                "id": "S6",
+                "text": "ACV line.",
+                "url": "https://finance.yahoo.com/quote/ACVA/analysis/",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          },
+          "ebitda": {
+            "FY27E": {
+              "value": 54.776487,
+              "tag": "S",
+              "citation": {
+                "id": "S8",
+                "text": "ACV adjusted EBITDA contribution.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 86.628566,
+              "tag": "S",
+              "citation": {
+                "id": "S8",
+                "text": "ACV adjusted EBITDA contribution.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          }
+        }
+      },
+      "finagle": {
+        "note": "Operating-path leaves required by the skill. NOT handed to Finagle; no valuation run.",
+        "ebitda_growth": {
+          "value": [
+            -0.069322,
+            0.076372
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C11",
+            "text": "Organic EBITDA growth FY27, FY28.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "sales_growth": {
+          "value": [
+            0.006598,
+            0.0752
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C11",
+            "text": "Organic revenue growth FY27, FY28.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "me": {
+          "value": 0.381005,
+          "tag": "C",
+          "citation": {
+            "id": "C12",
+            "text": "FY28 organic EBITDA / organic revenue.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "mc": {
+          "value": 0.399385,
+          "tag": "S",
+          "citation": {
+            "id": "S10",
+            "text": "Average of me and organic reported gross margin.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "gsnext": {
+          "value": 0.05,
+          "tag": "S",
+          "citation": {
+            "id": "S9",
+            "text": "Organic growth after FY28; see S9.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        }
+      }
+    },
+    "bull": {
+      "lines": [
+        {
+          "name": "U.S. service revenues",
+          "pattern": "mature or declining",
+          "periods": {
+            "FY24A": {
+              "value": 3126.102,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2024 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY25A": {
+              "value": 3451.558,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2025 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY26A": {
+              "value": 3388.287,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2026 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_FY26": {
+              "value": -0.018331,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY26A / FY25A - 1 (A1).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "Q4FY26A": {
+              "value": 817.822,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_Q4": {
+              "value": -0.008476,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY27E": {
+              "value": 3485.353341,
+              "tag": "S",
+              "citation": {
+                "id": "S1",
+                "text": "U.S. service FY27 +2%, FY28 +3% before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 3768.15964,
+              "tag": "S",
+              "citation": {
+                "id": "S1",
+                "text": "U.S. service FY27 +2%, FY28 +3% before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          }
+        },
+        {
+          "name": "U.S. vehicle sales",
+          "pattern": "mature or declining",
+          "periods": {
+            "FY24A": {
+              "value": 338.633,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2024 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY25A": {
+              "value": 403.546,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2025 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY26A": {
+              "value": 419.143,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2026 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_FY26": {
+              "value": 0.03865,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY26A / FY25A - 1 (A1).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "Q4FY26A": {
+              "value": 112.512,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_Q4": {
+              "value": 0.109039,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY27E": {
+              "value": 435.377412,
+              "tag": "S",
+              "citation": {
+                "id": "S2",
+                "text": "U.S. vehicle sales +3% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 470.704526,
+              "tag": "S",
+              "citation": {
+                "id": "S2",
+                "text": "U.S. vehicle sales +3% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          }
+        },
+        {
+          "name": "International service revenues",
+          "pattern": "ramping",
+          "periods": {
+            "FY24A": {
+              "value": 434.9,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2024 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY25A": {
+              "value": 517.104,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2025 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY26A": {
+              "value": 581.233,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2026 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_FY26": {
+              "value": 0.124016,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY26A / FY25A - 1 (A1).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "Q4FY26A": {
+              "value": 151.722,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_Q4": {
+              "value": 0.154693,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY27E": {
+              "value": 638.91519,
+              "tag": "S",
+              "citation": {
+                "id": "S3",
+                "text": "International service +9% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 730.995944,
+              "tag": "S",
+              "citation": {
+                "id": "S3",
+                "text": "International service +9% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          },
+          "pattern_note": "share gain abroad"
+        },
+        {
+          "name": "International vehicle sales",
+          "pattern": "mature or declining",
+          "periods": {
+            "FY24A": {
+              "value": 337.188,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2024 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY25A": {
+              "value": 274.75,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2025 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY26A": {
+              "value": 277.546,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "FY2026 column, segment table, FY2026 10-K notes.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_FY26": {
+              "value": 0.010177,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY26A / FY25A - 1 (A1).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "Q4FY26A": {
+              "value": 70.383,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Three months ended July 31, 2026 segment table, Q4 release.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "YoY_Q4": {
+              "value": 0.04367,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "Q4 FY26 / Q4 FY25 - 1 (A4).",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY27E": {
+              "value": 282.69804,
+              "tag": "S",
+              "citation": {
+                "id": "S4",
+                "text": "International vehicle sales +1% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 299.701853,
+              "tag": "S",
+              "citation": {
+                "id": "S4",
+                "text": "International vehicle sales +1% a year before scale x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          }
+        },
+        {
+          "name": "ACV Auctions (acquired 2026-10-16)",
+          "pattern": "acquisition-driven",
+          "periods": {
+            "FY24A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A13",
+                "text": "Not owned; closed 2026-10-16.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526423478/d129535dex991.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY25A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A13",
+                "text": "Not owned; closed 2026-10-16.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526423478/d129535dex991.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY26A": {
+              "value": 0.0,
+              "tag": "A",
+              "citation": {
+                "id": "A13",
+                "text": "Not owned; closed 2026-10-16.",
+                "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526423478/d129535dex991.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY27E": {
+              "value": 728.656016,
+              "tag": "S",
+              "citation": {
+                "id": "S5",
+                "text": "ACV Oct 16-Dec 31 2026 (C6 x 77/92) + 7/12 of CY27 consensus E2, x scale C5.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 1050.292037,
+              "tag": "S",
+              "citation": {
+                "id": "S6",
+                "text": "5/12 of CY27 E2 + 7/12 of CY27 x (1 + 10%), x scale C5.",
+                "url": "https://finance.yahoo.com/quote/ACVA/analysis/",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          }
+        }
+      ],
+      "totals": {
+        "revenue": {
+          "FY24A": {
+            "value": 4236.823,
+            "tag": "A",
+            "citation": {
+              "id": "A2",
+              "text": "Total service revenues and vehicle sales, FY2026 10-K income statement.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY25A": {
+            "value": 4646.958,
+            "tag": "A",
+            "citation": {
+              "id": "A2",
+              "text": "Total service revenues and vehicle sales, FY2026 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY26A": {
+            "value": 4666.209,
+            "tag": "A",
+            "citation": {
+              "id": "A2",
+              "text": "Total service revenues and vehicle sales, FY2026 10-K.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 5571.0,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "High FY27 (Jul-27) revenue consensus, Yahoo/yfinance 2026-10-22 ('0y').",
+              "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 6319.854,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "High FY28 (Jul-28) revenue consensus, Yahoo/yfinance 2026-10-22 ('+1y').",
+              "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        },
+        "gross_margin": {
+          "FY25A": {
+            "value": 0.451832,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Reported gross profit / revenue (A3).",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY26A": {
+            "value": 0.446585,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Reported gross profit 2,083.9 / revenue 4,666.2 (A3).",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 0.459083,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic revenue x case reported GM + ACV x C9, / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 0.461045,
+            "tag": "C",
+            "citation": {
+              "id": "C7",
+              "text": "Organic revenue x case reported GM + ACV x C9, / revenue.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": 1950.567,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "Operating income + D&A + SBC (A1, A2, A3). Copart does not report adjusted EBITDA.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY26A": {
+            "value": 1920.781,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "Operating income 1,652.6 + D&A 229.4 + SBC 38.8 (A1, A2, A3).",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 2077.975898,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "Organic: cash GM C3 x organic revenue - G&A C4; plus ACV at S8 margin.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 2332.89599,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "Organic: cash GM C3 x organic revenue - G&A C4 x growth; plus ACV at S8.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        },
+        "ebitda_margin": {
+          "FY25A": {
+            "value": 0.419751,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "C2 / A2.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY26A": {
+            "value": 0.411636,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "C2 / A2.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 0.372999,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "S7 / E1.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 0.369138,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "S7 / E1.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        }
+      },
+      "organic": {
+        "note": "Organic = Copart excluding ACV.",
+        "revenue": {
+          "FY26A": {
+            "value": 4666.209,
+            "tag": "A",
+            "citation": {
+              "id": "A2",
+              "text": "FY26 total = organic.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 4842.343984,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "Sum of four Copart lines, scaled.",
+              "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 5269.561963,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "Sum of four Copart lines, scaled.",
+              "url": "https://finance.yahoo.com/quote/CPRT/analysis/",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        },
+        "ebitda": {
+          "FY26A": {
+            "value": 1920.781,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "FY26 adjusted EBITDA (analyst-defined).",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY27E": {
+            "value": 2004.958822,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "Organic EBITDA, cash GM x organic revenue - G&A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          },
+          "FY28E": {
+            "value": 2204.628041,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "Organic EBITDA, cash GM x organic revenue - G&A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+              "page": "page unverified (HTML filing, no page numbers)"
+            }
+          }
+        },
+        "acquired": {
+          "revenue": {
+            "FY27E": {
+              "value": 728.656016,
+              "tag": "S",
+              "citation": {
+                "id": "S5",
+                "text": "ACV line.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 1050.292037,
+              "tag": "S",
+              "citation": {
+                "id": "S6",
+                "text": "ACV line.",
+                "url": "https://finance.yahoo.com/quote/ACVA/analysis/",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          },
+          "ebitda": {
+            "FY27E": {
+              "value": 73.017075,
+              "tag": "S",
+              "citation": {
+                "id": "S8",
+                "text": "ACV adjusted EBITDA contribution.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            },
+            "FY28E": {
+              "value": 128.267949,
+              "tag": "S",
+              "citation": {
+                "id": "S8",
+                "text": "ACV adjusted EBITDA contribution.",
+                "url": "https://www.sec.gov/Archives/edgar/data/1637873/000163787326000031/q2-26earningspressrelease.htm",
+                "page": "page unverified (HTML filing, no page numbers)"
+              }
+            }
+          }
+        }
+      },
+      "finagle": {
+        "note": "Operating-path leaves required by the skill. NOT handed to Finagle; no valuation run.",
+        "ebitda_growth": {
+          "value": [
+            0.043825,
+            0.099588
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C11",
+            "text": "Organic EBITDA growth FY27, FY28.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "sales_growth": {
+          "value": [
+            0.037747,
+            0.088225
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C11",
+            "text": "Organic revenue growth FY27, FY28.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "me": {
+          "value": 0.41837,
+          "tag": "C",
+          "citation": {
+            "id": "C12",
+            "text": "FY28 organic EBITDA / organic revenue.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "mc": {
+          "value": 0.435101,
+          "tag": "S",
+          "citation": {
+            "id": "S10",
+            "text": "Average of me and organic reported gross margin.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        },
+        "gsnext": {
+          "value": 0.05,
+          "tag": "S",
+          "citation": {
+            "id": "S9",
+            "text": "Organic growth after FY28; see S9.",
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "page": "page unverified (HTML filing, no page numbers)"
+          }
+        }
+      }
+    }
+  }
+}

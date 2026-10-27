@@ -1,0 +1,1902 @@
+{
+  "ticker": "CPH",
+  "company": "Cipher Pharmaceuticals Inc. (TSX: CPH)",
+  "units": "USD millions",
+  "currency_note": "Cipher reports in USD. Yahoo consensus is shown in CAD and converted at C3.",
+  "baseline_period": "FY25A",
+  "explicit_periods": [
+    "FY26E",
+    "FY27E"
+  ],
+  "as_of": "2026-10-22",
+  "lines": [
+    {
+      "name": "Natroba (U.S. product)",
+      "periods": {
+        "FY24A": {
+          "value": 11.95,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2024 column, segment note (Note 19), 2025 annual report.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+            "page": 83
+          }
+        },
+        "FY25A": {
+          "value": 29.99,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2025 column, segment note (Note 19), 2025 annual report.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+            "page": 83
+          }
+        },
+        "YoY": {
+          "value": 1.509623,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "FY25A / FY24A - 1 (A2).",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+            "page": 83
+          }
+        },
+        "H1A": {
+          "value": 13.187,
+          "tag": "A",
+          "citation": {
+            "id": "A6",
+            "text": "Six months ended June 30, 2026, segment note (Note 15), Q2 2026 report.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 39
+          }
+        },
+        "H2E": {
+          "value": 15.789061,
+          "tag": "S",
+          "citation": {
+            "id": "S1",
+            "text": "Unscaled H2 driver x scale C5. See source list.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 8
+          }
+        },
+        "FY26E": {
+          "value": 28.976061,
+          "tag": "C",
+          "citation": {
+            "id": "C6",
+            "text": "H1A (A6) + H2E.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 39
+          }
+        },
+        "FY27E": {
+          "value": 32.688657,
+          "tag": "S",
+          "citation": {
+            "id": "S2",
+            "text": "Unscaled FY27 driver x scale C7. See source list.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 8
+          }
+        }
+      },
+      "gross_margin": {
+        "value": 0.86,
+        "tag": "A",
+        "citation": {
+          "id": "A9",
+          "text": "Line gross margin used for H2 and FY27.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 9
+        }
+      }
+    },
+    {
+      "name": "Canadian product portfolio",
+      "periods": {
+        "FY24A": {
+          "value": 14.79,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2024 column, segment note (Note 19), 2025 annual report.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+            "page": 83
+          }
+        },
+        "FY25A": {
+          "value": 16.907,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2025 column, segment note (Note 19), 2025 annual report.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+            "page": 83
+          }
+        },
+        "YoY": {
+          "value": 0.143137,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "FY25A / FY24A - 1 (A2).",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+            "page": 83
+          }
+        },
+        "H1A": {
+          "value": 9.121,
+          "tag": "A",
+          "citation": {
+            "id": "A6",
+            "text": "Six months ended June 30, 2026, segment note (Note 15), Q2 2026 report.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 39
+          }
+        },
+        "H2E": {
+          "value": 10.157456,
+          "tag": "S",
+          "citation": {
+            "id": "S3",
+            "text": "Unscaled H2 driver x scale C5. See source list.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 8
+          }
+        },
+        "FY26E": {
+          "value": 19.278456,
+          "tag": "C",
+          "citation": {
+            "id": "C6",
+            "text": "H1A (A6) + H2E.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 39
+          }
+        },
+        "FY27E": {
+          "value": 23.27136,
+          "tag": "S",
+          "citation": {
+            "id": "S4",
+            "text": "Unscaled FY27 driver x scale C7. See source list.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 8
+          }
+        }
+      },
+      "gross_margin": {
+        "value": 0.71,
+        "tag": "A",
+        "citation": {
+          "id": "A9",
+          "text": "Line gross margin used for H2 and FY27.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 9
+        }
+      }
+    },
+    {
+      "name": "Licensing (U.S.)",
+      "periods": {
+        "FY24A": {
+          "value": 6.623,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2024 column, segment note (Note 19), 2025 annual report.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+            "page": 83
+          }
+        },
+        "FY25A": {
+          "value": 3.554,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "FY2025 column, segment note (Note 19), 2025 annual report.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+            "page": 83
+          }
+        },
+        "YoY": {
+          "value": -0.463385,
+          "tag": "C",
+          "citation": {
+            "id": "C1",
+            "text": "FY25A / FY24A - 1 (A2).",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+            "page": 83
+          }
+        },
+        "H1A": {
+          "value": 2.264,
+          "tag": "A",
+          "citation": {
+            "id": "A6",
+            "text": "Six months ended June 30, 2026, segment note (Note 15), Q2 2026 report.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 39
+          }
+        },
+        "H2E": {
+          "value": 1.491791,
+          "tag": "S",
+          "citation": {
+            "id": "S5",
+            "text": "Unscaled H2 driver x scale C5. See source list.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 8
+          }
+        },
+        "FY26E": {
+          "value": 3.755791,
+          "tag": "C",
+          "citation": {
+            "id": "C6",
+            "text": "H1A (A6) + H2E.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 39
+          }
+        },
+        "FY27E": {
+          "value": 3.760734,
+          "tag": "S",
+          "citation": {
+            "id": "S6",
+            "text": "Unscaled FY27 driver x scale C7. See source list.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 8
+          }
+        }
+      },
+      "gross_margin": {
+        "value": 0.962575,
+        "tag": "C",
+        "citation": {
+          "id": "C8",
+          "text": "Line gross margin used for H2 and FY27.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 9
+        }
+      }
+    }
+  ],
+  "totals": {
+    "revenue": {
+      "FY24A": {
+        "value": 33.363,
+        "tag": "A",
+        "citation": {
+          "id": "A1",
+          "text": "Net revenue 2024, 2025 annual report.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+          "page": 8
+        }
+      },
+      "FY25A": {
+        "value": 50.451,
+        "tag": "A",
+        "citation": {
+          "id": "A1",
+          "text": "Net revenue 2025, 2025 annual report.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+          "page": 8
+        }
+      },
+      "YoY": {
+        "value": 0.512184,
+        "tag": "C",
+        "citation": {
+          "id": "C1",
+          "text": "A1 FY25 / FY24 - 1.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+          "page": 8
+        }
+      },
+      "H1A": {
+        "value": 24.572,
+        "tag": "A",
+        "citation": {
+          "id": "A5",
+          "text": "Net revenue YTD Q2 2026.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 5
+        }
+      },
+      "H2E": {
+        "value": 27.438308,
+        "tag": "C",
+        "citation": {
+          "id": "C4",
+          "text": "E1 FY26 consensus (USD) - A5.",
+          "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+        }
+      },
+      "FY26E": {
+        "value": 52.010308,
+        "tag": "E",
+        "citation": {
+          "id": "E1",
+          "text": "Mean FY26 revenue consensus, Yahoo/yfinance 2026-10-22, CAD converted at C3.",
+          "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+        }
+      },
+      "FY27E": {
+        "value": 59.720751,
+        "tag": "E",
+        "citation": {
+          "id": "E1",
+          "text": "Mean FY27 revenue consensus, Yahoo/yfinance 2026-10-22, CAD converted at C3.",
+          "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+        }
+      }
+    },
+    "gross_margin": {
+      "FY25A": {
+        "value": 0.801213,
+        "tag": "C",
+        "citation": {
+          "id": "C9",
+          "text": "(A1 revenue - A3 cost of products sold) / revenue.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+          "page": 9
+        }
+      },
+      "H1A": {
+        "value": 0.813772,
+        "tag": "A",
+        "citation": {
+          "id": "A5",
+          "text": "Gross profit 19,996 / net revenue 24,572, YTD Q2 2026.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 5
+        }
+      },
+      "FY26E": {
+        "value": 0.811807,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "(A5 H1 gross profit + sum of H2 line revenue x line margin) / FY26 revenue.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 9
+        }
+      },
+      "FY27E": {
+        "value": 0.808009,
+        "tag": "C",
+        "citation": {
+          "id": "C10",
+          "text": "Sum of FY27 line revenue x line margin / FY27 revenue.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 9
+        }
+      }
+    },
+    "ebitda": {
+      "FY24A": {
+        "value": 15.684,
+        "tag": "A",
+        "citation": {
+          "id": "A4",
+          "text": "Adjusted EBITDA 2024 reconciliation.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+          "page": 14
+        }
+      },
+      "FY25A": {
+        "value": 28.057,
+        "tag": "A",
+        "citation": {
+          "id": "A4",
+          "text": "Adjusted EBITDA 2025 reconciliation.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+          "page": 14
+        }
+      },
+      "YoY": {
+        "value": 0.788893,
+        "tag": "C",
+        "citation": {
+          "id": "C1",
+          "text": "A4 FY25/FY24 - 1.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+          "page": 14
+        }
+      },
+      "H1A": {
+        "value": 14.552,
+        "tag": "A",
+        "citation": {
+          "id": "A7",
+          "text": "Adjusted EBITDA six months ended June 30, 2026.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 13
+        }
+      },
+      "H2E": {
+        "value": 16.512347,
+        "tag": "C",
+        "citation": {
+          "id": "C11",
+          "text": "H2 gross profit (C10 inputs) - 2 x Q2 cash opex C2.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 10
+        }
+      },
+      "FY26E": {
+        "value": 31.064347,
+        "tag": "C",
+        "citation": {
+          "id": "C11",
+          "text": "A7 + H2E. No EBITDA guidance or EBITDA consensus.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 13
+        }
+      },
+      "FY27E": {
+        "value": 36.48406,
+        "tag": "S",
+        "citation": {
+          "id": "S7",
+          "text": "FY27 gross profit - 4 x C2 x (1 + inflation S7).",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 10
+        }
+      }
+    },
+    "ebitda_margin": {
+      "FY25A": {
+        "value": 0.556124,
+        "tag": "C",
+        "citation": {
+          "id": "C12",
+          "text": "A4 / A1.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+          "page": 14
+        }
+      },
+      "H1A": {
+        "value": 0.592219,
+        "tag": "C",
+        "citation": {
+          "id": "C12",
+          "text": "A7 / A5.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 13
+        }
+      },
+      "FY26E": {
+        "value": 0.597273,
+        "tag": "C",
+        "citation": {
+          "id": "C12",
+          "text": "C11 / E1.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 13
+        }
+      },
+      "FY27E": {
+        "value": 0.610911,
+        "tag": "C",
+        "citation": {
+          "id": "C12",
+          "text": "S7 / E1.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 13
+        }
+      }
+    }
+  },
+  "organic": {
+    "revenue": {
+      "FY25A": {
+        "value": 50.451,
+        "tag": "A",
+        "citation": {
+          "id": "A1",
+          "text": "Organic = total; no deal in the window.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+          "page": 8
+        }
+      },
+      "FY26E": {
+        "value": 52.010308,
+        "tag": "E",
+        "citation": {
+          "id": "E1",
+          "text": "Organic = total.",
+          "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+        }
+      },
+      "FY27E": {
+        "value": 59.720751,
+        "tag": "E",
+        "citation": {
+          "id": "E1",
+          "text": "Organic = total.",
+          "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+        }
+      }
+    },
+    "ebitda": {
+      "FY25A": {
+        "value": 28.057,
+        "tag": "A",
+        "citation": {
+          "id": "A4",
+          "text": "Organic = total.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+          "page": 14
+        }
+      },
+      "FY26E": {
+        "value": 31.064347,
+        "tag": "C",
+        "citation": {
+          "id": "C11",
+          "text": "Organic = total.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 13
+        }
+      },
+      "FY27E": {
+        "value": 36.48406,
+        "tag": "S",
+        "citation": {
+          "id": "S7",
+          "text": "Organic = total.",
+          "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+          "page": 10
+        }
+      }
+    }
+  },
+  "finagle": {
+    "note": "Operating-path leaves the skill requires in the file. NOT handed to Finagle; no valuation run.",
+    "ebitda_growth": {
+      "value": [
+        0.107187,
+        0.174467
+      ],
+      "tag": "C",
+      "citation": {
+        "id": "C13",
+        "text": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7).",
+        "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+        "page": 13
+      }
+    },
+    "sales_growth": {
+      "value": [
+        0.030907,
+        0.148248
+      ],
+      "tag": "C",
+      "citation": {
+        "id": "C13",
+        "text": "Organic revenue growth FY26, FY27 (A1, E1).",
+        "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+      }
+    },
+    "me": {
+      "value": 0.610911,
+      "tag": "C",
+      "citation": {
+        "id": "C14",
+        "text": "FY27 EBITDA / FY27 revenue.",
+        "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+        "page": 13
+      }
+    },
+    "mc": {
+      "value": 0.70946,
+      "tag": "S",
+      "citation": {
+        "id": "S8",
+        "text": "Average of me and FY27 gross margin.",
+        "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+        "page": 9
+      }
+    },
+    "gsnext": {
+      "value": 0.05,
+      "tag": "S",
+      "citation": {
+        "id": "S9",
+        "text": "First growth after FY27; see S9.",
+        "url": "https://stockanalysis.com/quote/tsx/CPH/transcripts/663762-q2-2026/"
+      }
+    }
+  },
+  "bridge": {
+    "fx_cad_per_usd": {
+      "value": 1.36222,
+      "tag": "C",
+      "citation": {
+        "id": "C3",
+        "text": "Yahoo FY25 'year ago revenue' CAD 68.725 / reported FY25 USD 50.451 (A1).",
+        "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+      }
+    },
+    "q2_cash_opex": {
+      "value": 2.857,
+      "tag": "C",
+      "citation": {
+        "id": "C2",
+        "text": "Q2 SG&A 3.439 - SBC 0.323 - acquisition/restructuring 0.259 (A8); R&D nil. Check: Q2 GP 9.699 - 2.857 = 6.842 = reported Q2 adjusted EBITDA.",
+        "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+        "page": 10
+      }
+    },
+    "scale_h2": {
+      "value": 1.112446,
+      "tag": "C",
+      "citation": {
+        "id": "C5",
+        "text": "Consensus H2 / unscaled H2 line build.",
+        "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+      }
+    },
+    "scale_fy27": {
+      "value": 1.159111,
+      "tag": "C",
+      "citation": {
+        "id": "C7",
+        "text": "FY27 consensus / unscaled FY27 line build.",
+        "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+      }
+    },
+    "licensing_gm": {
+      "value": 0.962575,
+      "tag": "C",
+      "citation": {
+        "id": "C8",
+        "text": "(H1 gross profit A5 - Natroba and Canada line GP at A9 margins) / H1 licensing revenue A6.",
+        "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+        "page": 9
+      }
+    },
+    "unscaled_h2": {
+      "value": 24.664835,
+      "tag": "S",
+      "citation": {
+        "id": "S1",
+        "text": "Sum of S1, S3, S5 drivers (diagnostic only).",
+        "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+        "page": 8
+      }
+    },
+    "unscaled_fy27": {
+      "value": 51.522912,
+      "tag": "S",
+      "citation": {
+        "id": "S2",
+        "text": "Sum of S2, S4, S6 drivers (diagnostic only).",
+        "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+        "page": 8
+      }
+    }
+  },
+  "scenarios": {
+    "bear": {
+      "lines": [
+        {
+          "name": "Natroba (U.S. product)",
+          "periods": {
+            "FY24A": {
+              "value": 11.95,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "FY25A": {
+              "value": 29.99,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "YoY": {
+              "value": 1.509623,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "H1A": {
+              "value": 13.187,
+              "tag": "A",
+              "citation": {
+                "id": "A6",
+                "text": "Six months ended June 30, 2026, segment note (Note 15), Q2 2026 report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "H2E": {
+              "value": 15.555678,
+              "tag": "S",
+              "citation": {
+                "id": "S1",
+                "text": "Unscaled H2 driver x scale C5. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            },
+            "FY26E": {
+              "value": 28.742678,
+              "tag": "C",
+              "citation": {
+                "id": "C6",
+                "text": "H1A (A6) + H2E.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "FY27E": {
+              "value": 30.113788,
+              "tag": "S",
+              "citation": {
+                "id": "S2",
+                "text": "Unscaled FY27 driver x scale C7. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            }
+          },
+          "gross_margin": {
+            "value": 0.84,
+            "tag": "A",
+            "citation": {
+              "id": "A9",
+              "text": "Line gross margin used for H2 and FY27.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 9
+            }
+          }
+        },
+        {
+          "name": "Canadian product portfolio",
+          "periods": {
+            "FY24A": {
+              "value": 14.79,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "FY25A": {
+              "value": 16.907,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "YoY": {
+              "value": 0.143137,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "H1A": {
+              "value": 9.121,
+              "tag": "A",
+              "citation": {
+                "id": "A6",
+                "text": "Six months ended June 30, 2026, segment note (Note 15), Q2 2026 report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "H2E": {
+              "value": 10.007316,
+              "tag": "S",
+              "citation": {
+                "id": "S3",
+                "text": "Unscaled H2 driver x scale C5. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            },
+            "FY26E": {
+              "value": 19.128316,
+              "tag": "C",
+              "citation": {
+                "id": "C6",
+                "text": "H1A (A6) + H2E.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "FY27E": {
+              "value": 21.438286,
+              "tag": "S",
+              "citation": {
+                "id": "S4",
+                "text": "Unscaled FY27 driver x scale C7. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            }
+          },
+          "gross_margin": {
+            "value": 0.7,
+            "tag": "A",
+            "citation": {
+              "id": "A9",
+              "text": "Line gross margin used for H2 and FY27.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 9
+            }
+          }
+        },
+        {
+          "name": "Licensing (U.S.)",
+          "periods": {
+            "FY24A": {
+              "value": 6.623,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "FY25A": {
+              "value": 3.554,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "YoY": {
+              "value": -0.463385,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "H1A": {
+              "value": 2.264,
+              "tag": "A",
+              "citation": {
+                "id": "A6",
+                "text": "Six months ended June 30, 2026, segment note (Note 15), Q2 2026 report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "H2E": {
+              "value": 1.46974,
+              "tag": "S",
+              "citation": {
+                "id": "S5",
+                "text": "Unscaled H2 driver x scale C5. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            },
+            "FY26E": {
+              "value": 3.73374,
+              "tag": "C",
+              "citation": {
+                "id": "C6",
+                "text": "H1A (A6) + H2E.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "FY27E": {
+              "value": 3.464503,
+              "tag": "S",
+              "citation": {
+                "id": "S6",
+                "text": "Unscaled FY27 driver x scale C7. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            }
+          },
+          "gross_margin": {
+            "value": 0.962575,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "Line gross margin used for H2 and FY27.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 9
+            }
+          }
+        }
+      ],
+      "totals": {
+        "revenue": {
+          "FY24A": {
+            "value": 33.363,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Net revenue 2024, 2025 annual report.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 8
+            }
+          },
+          "FY25A": {
+            "value": 50.451,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Net revenue 2025, 2025 annual report.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 8
+            }
+          },
+          "YoY": {
+            "value": 0.512184,
+            "tag": "C",
+            "citation": {
+              "id": "C1",
+              "text": "A1 FY25 / FY24 - 1.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 8
+            }
+          },
+          "H1A": {
+            "value": 24.572,
+            "tag": "A",
+            "citation": {
+              "id": "A5",
+              "text": "Net revenue YTD Q2 2026.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 5
+            }
+          },
+          "H2E": {
+            "value": 27.032734,
+            "tag": "C",
+            "citation": {
+              "id": "C4",
+              "text": "E1 FY26 consensus (USD) - A5.",
+              "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+            }
+          },
+          "FY26E": {
+            "value": 51.604734,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "Low FY26 revenue consensus, Yahoo/yfinance 2026-10-22, CAD converted at C3.",
+              "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+            }
+          },
+          "FY27E": {
+            "value": 55.016577,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "Low FY27 revenue consensus, Yahoo/yfinance 2026-10-22, CAD converted at C3.",
+              "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+            }
+          }
+        },
+        "gross_margin": {
+          "FY25A": {
+            "value": 0.801213,
+            "tag": "C",
+            "citation": {
+              "id": "C9",
+              "text": "(A1 revenue - A3 cost of products sold) / revenue.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 9
+            }
+          },
+          "H1A": {
+            "value": 0.813772,
+            "tag": "A",
+            "citation": {
+              "id": "A5",
+              "text": "Gross profit 19,996 / net revenue 24,572, YTD Q2 2026.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 5
+            }
+          },
+          "FY26E": {
+            "value": 0.803853,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "(A5 H1 gross profit + sum of H2 line revenue x line margin) / FY26 revenue.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 9
+            }
+          },
+          "FY27E": {
+            "value": 0.793165,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "Sum of FY27 line revenue x line margin / FY27 revenue.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 9
+            }
+          }
+        },
+        "ebitda": {
+          "FY24A": {
+            "value": 15.684,
+            "tag": "A",
+            "citation": {
+              "id": "A4",
+              "text": "Adjusted EBITDA 2024 reconciliation.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 14
+            }
+          },
+          "FY25A": {
+            "value": 28.057,
+            "tag": "A",
+            "citation": {
+              "id": "A4",
+              "text": "Adjusted EBITDA 2025 reconciliation.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 14
+            }
+          },
+          "YoY": {
+            "value": 0.788893,
+            "tag": "C",
+            "citation": {
+              "id": "C1",
+              "text": "A4 FY25/FY24 - 1.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 14
+            }
+          },
+          "H1A": {
+            "value": 14.552,
+            "tag": "A",
+            "citation": {
+              "id": "A7",
+              "text": "Adjusted EBITDA six months ended June 30, 2026.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          },
+          "H2E": {
+            "value": 15.772626,
+            "tag": "C",
+            "citation": {
+              "id": "C11",
+              "text": "H2 gross profit (C10 inputs) - 2 x Q2 cash opex C2.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 10
+            }
+          },
+          "FY26E": {
+            "value": 30.324626,
+            "tag": "C",
+            "citation": {
+              "id": "C11",
+              "text": "A7 + H2E. No EBITDA guidance or EBITDA consensus.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          },
+          "FY27E": {
+            "value": 31.294986,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "FY27 gross profit - 4 x C2 x (1 + inflation S7).",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 10
+            }
+          }
+        },
+        "ebitda_margin": {
+          "FY25A": {
+            "value": 0.556124,
+            "tag": "C",
+            "citation": {
+              "id": "C12",
+              "text": "A4 / A1.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 14
+            }
+          },
+          "H1A": {
+            "value": 0.592219,
+            "tag": "C",
+            "citation": {
+              "id": "C12",
+              "text": "A7 / A5.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          },
+          "FY26E": {
+            "value": 0.587633,
+            "tag": "C",
+            "citation": {
+              "id": "C12",
+              "text": "C11 / E1.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          },
+          "FY27E": {
+            "value": 0.568828,
+            "tag": "C",
+            "citation": {
+              "id": "C12",
+              "text": "S7 / E1.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          }
+        }
+      },
+      "organic": {
+        "revenue": {
+          "FY25A": {
+            "value": 50.451,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Organic = total; no deal in the window.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 8
+            }
+          },
+          "FY26E": {
+            "value": 51.604734,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "Organic = total.",
+              "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+            }
+          },
+          "FY27E": {
+            "value": 55.016577,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "Organic = total.",
+              "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": 28.057,
+            "tag": "A",
+            "citation": {
+              "id": "A4",
+              "text": "Organic = total.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 14
+            }
+          },
+          "FY26E": {
+            "value": 30.324626,
+            "tag": "C",
+            "citation": {
+              "id": "C11",
+              "text": "Organic = total.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          },
+          "FY27E": {
+            "value": 31.294986,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "Organic = total.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 10
+            }
+          }
+        }
+      },
+      "finagle": {
+        "note": "Operating-path leaves the skill requires in the file. NOT handed to Finagle; no valuation run.",
+        "ebitda_growth": {
+          "value": [
+            0.080822,
+            0.031999
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C13",
+            "text": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7).",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 13
+          }
+        },
+        "sales_growth": {
+          "value": [
+            0.022868,
+            0.066115
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C13",
+            "text": "Organic revenue growth FY26, FY27 (A1, E1).",
+            "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+          }
+        },
+        "me": {
+          "value": 0.568828,
+          "tag": "C",
+          "citation": {
+            "id": "C14",
+            "text": "FY27 EBITDA / FY27 revenue.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 13
+          }
+        },
+        "mc": {
+          "value": 0.680997,
+          "tag": "S",
+          "citation": {
+            "id": "S8",
+            "text": "Average of me and FY27 gross margin.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 9
+          }
+        },
+        "gsnext": {
+          "value": 0.05,
+          "tag": "S",
+          "citation": {
+            "id": "S9",
+            "text": "First growth after FY27; see S9.",
+            "url": "https://stockanalysis.com/quote/tsx/CPH/transcripts/663762-q2-2026/"
+          }
+        }
+      }
+    },
+    "bull": {
+      "lines": [
+        {
+          "name": "Natroba (U.S. product)",
+          "periods": {
+            "FY24A": {
+              "value": 11.95,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "FY25A": {
+              "value": 29.99,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "YoY": {
+              "value": 1.509623,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "H1A": {
+              "value": 13.187,
+              "tag": "A",
+              "citation": {
+                "id": "A6",
+                "text": "Six months ended June 30, 2026, segment note (Note 15), Q2 2026 report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "H2E": {
+              "value": 15.964144,
+              "tag": "S",
+              "citation": {
+                "id": "S1",
+                "text": "Unscaled H2 driver x scale C5. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            },
+            "FY26E": {
+              "value": 29.151144,
+              "tag": "C",
+              "citation": {
+                "id": "C6",
+                "text": "H1A (A6) + H2E.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "FY27E": {
+              "value": 37.118081,
+              "tag": "S",
+              "citation": {
+                "id": "S2",
+                "text": "Unscaled FY27 driver x scale C7. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            }
+          },
+          "gross_margin": {
+            "value": 0.86,
+            "tag": "A",
+            "citation": {
+              "id": "A9",
+              "text": "Line gross margin used for H2 and FY27.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 9
+            }
+          }
+        },
+        {
+          "name": "Canadian product portfolio",
+          "periods": {
+            "FY24A": {
+              "value": 14.79,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "FY25A": {
+              "value": 16.907,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "YoY": {
+              "value": 0.143137,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "H1A": {
+              "value": 9.121,
+              "tag": "A",
+              "citation": {
+                "id": "A6",
+                "text": "Six months ended June 30, 2026, segment note (Note 15), Q2 2026 report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "H2E": {
+              "value": 10.270091,
+              "tag": "S",
+              "citation": {
+                "id": "S3",
+                "text": "Unscaled H2 driver x scale C5. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            },
+            "FY26E": {
+              "value": 19.391091,
+              "tag": "C",
+              "citation": {
+                "id": "C6",
+                "text": "H1A (A6) + H2E.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "FY27E": {
+              "value": 26.424708,
+              "tag": "S",
+              "citation": {
+                "id": "S4",
+                "text": "Unscaled FY27 driver x scale C7. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            }
+          },
+          "gross_margin": {
+            "value": 0.71,
+            "tag": "A",
+            "citation": {
+              "id": "A9",
+              "text": "Line gross margin used for H2 and FY27.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 9
+            }
+          }
+        },
+        {
+          "name": "Licensing (U.S.)",
+          "periods": {
+            "FY24A": {
+              "value": 6.623,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2024 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "FY25A": {
+              "value": 3.554,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "FY2025 column, segment note (Note 19), 2025 annual report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "YoY": {
+              "value": -0.463385,
+              "tag": "C",
+              "citation": {
+                "id": "C1",
+                "text": "FY25A / FY24A - 1 (A2).",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+                "page": 83
+              }
+            },
+            "H1A": {
+              "value": 2.264,
+              "tag": "A",
+              "citation": {
+                "id": "A6",
+                "text": "Six months ended June 30, 2026, segment note (Note 15), Q2 2026 report.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "H2E": {
+              "value": 1.508333,
+              "tag": "S",
+              "citation": {
+                "id": "S5",
+                "text": "Unscaled H2 driver x scale C5. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            },
+            "FY26E": {
+              "value": 3.772333,
+              "tag": "C",
+              "citation": {
+                "id": "C6",
+                "text": "H1A (A6) + H2E.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 39
+              }
+            },
+            "FY27E": {
+              "value": 4.270326,
+              "tag": "S",
+              "citation": {
+                "id": "S6",
+                "text": "Unscaled FY27 driver x scale C7. See source list.",
+                "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+                "page": 8
+              }
+            }
+          },
+          "gross_margin": {
+            "value": 0.962575,
+            "tag": "C",
+            "citation": {
+              "id": "C8",
+              "text": "Line gross margin used for H2 and FY27.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 9
+            }
+          }
+        }
+      ],
+      "totals": {
+        "revenue": {
+          "FY24A": {
+            "value": 33.363,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Net revenue 2024, 2025 annual report.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 8
+            }
+          },
+          "FY25A": {
+            "value": 50.451,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Net revenue 2025, 2025 annual report.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 8
+            }
+          },
+          "YoY": {
+            "value": 0.512184,
+            "tag": "C",
+            "citation": {
+              "id": "C1",
+              "text": "A1 FY25 / FY24 - 1.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 8
+            }
+          },
+          "H1A": {
+            "value": 24.572,
+            "tag": "A",
+            "citation": {
+              "id": "A5",
+              "text": "Net revenue YTD Q2 2026.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 5
+            }
+          },
+          "H2E": {
+            "value": 27.742568,
+            "tag": "C",
+            "citation": {
+              "id": "C4",
+              "text": "E1 FY26 consensus (USD) - A5.",
+              "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+            }
+          },
+          "FY26E": {
+            "value": 52.314568,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "High FY26 revenue consensus, Yahoo/yfinance 2026-10-22, CAD converted at C3.",
+              "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+            }
+          },
+          "FY27E": {
+            "value": 67.813115,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "High FY27 revenue consensus, Yahoo/yfinance 2026-10-22, CAD converted at C3.",
+              "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+            }
+          }
+        },
+        "gross_margin": {
+          "FY25A": {
+            "value": 0.801213,
+            "tag": "C",
+            "citation": {
+              "id": "C9",
+              "text": "(A1 revenue - A3 cost of products sold) / revenue.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 9
+            }
+          },
+          "H1A": {
+            "value": 0.813772,
+            "tag": "A",
+            "citation": {
+              "id": "A5",
+              "text": "Gross profit 19,996 / net revenue 24,572, YTD Q2 2026.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 5
+            }
+          },
+          "FY26E": {
+            "value": 0.811797,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "(A5 H1 gross profit + sum of H2 line revenue x line margin) / FY26 revenue.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 9
+            }
+          },
+          "FY27E": {
+            "value": 0.808009,
+            "tag": "C",
+            "citation": {
+              "id": "C10",
+              "text": "Sum of FY27 line revenue x line margin / FY27 revenue.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 9
+            }
+          }
+        },
+        "ebitda": {
+          "FY24A": {
+            "value": 15.684,
+            "tag": "A",
+            "citation": {
+              "id": "A4",
+              "text": "Adjusted EBITDA 2024 reconciliation.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 14
+            }
+          },
+          "FY25A": {
+            "value": 28.057,
+            "tag": "A",
+            "citation": {
+              "id": "A4",
+              "text": "Adjusted EBITDA 2025 reconciliation.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 14
+            }
+          },
+          "YoY": {
+            "value": 0.788893,
+            "tag": "C",
+            "citation": {
+              "id": "C1",
+              "text": "A4 FY25/FY24 - 1.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 14
+            }
+          },
+          "H1A": {
+            "value": 14.552,
+            "tag": "A",
+            "citation": {
+              "id": "A7",
+              "text": "Adjusted EBITDA six months ended June 30, 2026.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          },
+          "H2E": {
+            "value": 16.758812,
+            "tag": "C",
+            "citation": {
+              "id": "C11",
+              "text": "H2 gross profit (C10 inputs) - 2 x Q2 cash opex C2.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 10
+            }
+          },
+          "FY26E": {
+            "value": 31.310812,
+            "tag": "C",
+            "citation": {
+              "id": "C11",
+              "text": "A7 + H2E. No EBITDA guidance or EBITDA consensus.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          },
+          "FY27E": {
+            "value": 43.365602,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "FY27 gross profit - 4 x C2 x (1 + inflation S7).",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 10
+            }
+          }
+        },
+        "ebitda_margin": {
+          "FY25A": {
+            "value": 0.556124,
+            "tag": "C",
+            "citation": {
+              "id": "C12",
+              "text": "A4 / A1.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 14
+            }
+          },
+          "H1A": {
+            "value": 0.592219,
+            "tag": "C",
+            "citation": {
+              "id": "C12",
+              "text": "A7 / A5.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          },
+          "FY26E": {
+            "value": 0.59851,
+            "tag": "C",
+            "citation": {
+              "id": "C12",
+              "text": "C11 / E1.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          },
+          "FY27E": {
+            "value": 0.639487,
+            "tag": "C",
+            "citation": {
+              "id": "C12",
+              "text": "S7 / E1.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          }
+        }
+      },
+      "organic": {
+        "revenue": {
+          "FY25A": {
+            "value": 50.451,
+            "tag": "A",
+            "citation": {
+              "id": "A1",
+              "text": "Organic = total; no deal in the window.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 8
+            }
+          },
+          "FY26E": {
+            "value": 52.314568,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "Organic = total.",
+              "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+            }
+          },
+          "FY27E": {
+            "value": 67.813115,
+            "tag": "E",
+            "citation": {
+              "id": "E1",
+              "text": "Organic = total.",
+              "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": 28.057,
+            "tag": "A",
+            "citation": {
+              "id": "A4",
+              "text": "Organic = total.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/03/Cipher-Annual-Report-2025.pdf",
+              "page": 14
+            }
+          },
+          "FY26E": {
+            "value": 31.310812,
+            "tag": "C",
+            "citation": {
+              "id": "C11",
+              "text": "Organic = total.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 13
+            }
+          },
+          "FY27E": {
+            "value": 43.365602,
+            "tag": "S",
+            "citation": {
+              "id": "S7",
+              "text": "Organic = total.",
+              "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+              "page": 10
+            }
+          }
+        }
+      },
+      "finagle": {
+        "note": "Operating-path leaves the skill requires in the file. NOT handed to Finagle; no valuation run.",
+        "ebitda_growth": {
+          "value": [
+            0.115972,
+            0.385004
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C13",
+            "text": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7).",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 13
+          }
+        },
+        "sales_growth": {
+          "value": [
+            0.036938,
+            0.296257
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C13",
+            "text": "Organic revenue growth FY26, FY27 (A1, E1).",
+            "url": "https://finance.yahoo.com/quote/CPH.TO/analysis/"
+          }
+        },
+        "me": {
+          "value": 0.639487,
+          "tag": "C",
+          "citation": {
+            "id": "C14",
+            "text": "FY27 EBITDA / FY27 revenue.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 13
+          }
+        },
+        "mc": {
+          "value": 0.723748,
+          "tag": "S",
+          "citation": {
+            "id": "S8",
+            "text": "Average of me and FY27 gross margin.",
+            "url": "https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf",
+            "page": 9
+          }
+        },
+        "gsnext": {
+          "value": 0.05,
+          "tag": "S",
+          "citation": {
+            "id": "S9",
+            "text": "First growth after FY27; see S9.",
+            "url": "https://stockanalysis.com/quote/tsx/CPH/transcripts/663762-q2-2026/"
+          }
+        }
+      }
+    }
+  }
+}
