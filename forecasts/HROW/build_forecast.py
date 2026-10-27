@@ -49,7 +49,10 @@ H1 = {
 }
 FY25_EBITDA = 61.923
 H1_EBITDA = -13.891
-OPEX_Q = 50.363 - (-1.232)  # Q2 gross profit minus Q2 adjusted EBITDA
+OPEX_Q = 61.370 - 3.788 - 0.460  # Q2 GAAP opex less SBC and depreciation (amortization sits in cost of sales)
+AMORT_Q = 5.527  # Q2 amortization of intangibles, in cost of sales; added back to reach adjusted EBITDA
+assert abs((50.363 + AMORT_Q - OPEX_Q) - (-1.232)) < 0.001  # reconciles to reported Q2 adjusted EBITDA
+USA = "https://seekingalpha.com/article/4934770-harrow-inc-hrow-q2-2026-earnings-call-transcript"
 LTM_GP = 204.369 - 79.819 + 77.408
 LTM_REV = 272.303 - 111.573 + 114.864
 LTM_GM = LTM_GP / LTM_REV
@@ -71,7 +74,7 @@ F27_U = {
     "Other branded": 4 * 14.5 * 1.15 + 30.0,
     "ImprimisRx": 4 * Q2["ImprimisRx"] * (1 + DECLINE),
 }
-TYR_OPEX_26 = 3.0
+TYR_OPEX_26 = 5.0
 TYR_OPEX_27 = 20.0
 H1_REV = sum(H1.values())
 
@@ -94,9 +97,9 @@ def scenario(revenue_26, revenue_27, gross_margin, opex_inflation):
     tyr26 = 4.0 * scale_26
     tyr27 = 30.0 * scale_27
     opex_h2 = 2 * OPEX_Q + TYR_OPEX_26
-    ebitda_26 = H1_EBITDA + h2_target * gross_margin - opex_h2
+    ebitda_26 = H1_EBITDA + h2_target * gross_margin + 2 * AMORT_Q - opex_h2
     opex_27 = 4 * OPEX_Q * (1 + opex_inflation) + TYR_OPEX_27
-    ebitda_27 = revenue_27 * gross_margin - opex_27
+    ebitda_27 = revenue_27 * gross_margin + 4 * AMORT_Q - opex_27
     tyr_ebitda_26 = tyr26 * gross_margin - TYR_OPEX_26
     tyr_ebitda_27 = tyr27 * gross_margin - TYR_OPEX_27
     organic_revenue_26 = revenue_26 - tyr26
@@ -370,19 +373,19 @@ def totals(result, revenue_text, revenue_tag):
             "H2E": fact(
                 result["ebitda_26"] - H1_EBITDA,
                 "C",
-                "H2 gross profit at the scenario gross margin, minus Q2 cash-opex run rate times two and the assumed TYRVAYA stub cost. No EBITDA consensus was in the carried Yahoo pull, and no completed EBITDA range exists to place a coefficient.",
+                "H2 revenue times the scenario GAAP gross margin ('increasing gross margins into the high 70s'), plus two quarters of Q2 amortization in cost of sales (5.527 each, added back to adjusted EBITDA), minus base adjusted opex held flat at Q2 (57.122 a quarter; 'base SG&A dollars to remain approximately flat with second quarter levels for the balance of the year') and an assumed $5 million Q4 TYRVAYA cost. Q2 2026 call, August 2026.",
                 UQ2,
             ),
             "FY26E": fact(
                 result["ebitda_26"],
                 "C",
-                "H1 adjusted EBITDA plus the H2 cost build. The $80-100 million guide is not used: the coefficient is undefined for EBITDA and there is no carried EBITDA estimate.",
+                "H1 adjusted EBITDA plus the H2 bridge management described: 'substantially higher revenue, increasing gross margins into the high 70s, and a base operating expense structure that remains approximately flat.' Revenue is consensus, so the result sits below the $80-100 million guide. No EBITDA coefficient or estimate exists.",
                 UQ2,
             ),
             "FY27E": fact(
                 result["ebitda_27"],
                 "S",
-                "FY27 revenue times the gross-margin assumption, minus four quarters of the Q2 cash-opex run rate grown by the scenario inflation, minus an assumed $20 million TYRVAYA cost. Evidence for a specific FY27 margin has run out; this is the cost build.",
+                "FY27 revenue times the scenario GAAP gross margin held at the H2 level, plus four quarters of Q2 amortization, minus four quarters of Q2 base adjusted opex grown by the scenario inflation, minus about $20 million of TYRVAYA SG&A ('increasing SG&A expenses by approximately $20 million on an annualized basis once fully integrated', Q2 call).",
                 UQ2,
             ),
         },
@@ -390,9 +393,9 @@ def totals(result, revenue_text, revenue_tag):
 
 
 def main():
-    base = scenario(350.144, 536.328, LTM_GM, 0.03)
-    bear = scenario(341.0, 479.0, 0.71, 0.08)
-    bull = scenario(355.0, 587.0, 0.75, 0.00)
+    base = scenario(350.144, 536.328, 0.78, 0.03)
+    bear = scenario(341.0, 479.0, 0.77, 0.08)
+    bull = scenario(355.0, 587.0, 0.79, 0.00)
     scale_note = (
         "The line is then scaled so unreported revenue hits the scenario total. "
         "The factor is well above 1.1, so the filing commentary does not by itself support the total; the lines allocate it."
@@ -400,7 +403,7 @@ def main():
     revenue_text = (
         "H1 revenue was $114.864 million against an original H1 range of $133-153 million, so the position coefficient is negative. "
         "Analyst revenue estimates exist, so FY26 uses the Yahoo consensus carried from yfinance on 2026-10-22 ($350.144 million; range $341-355 million), not the $350-365 million guide. "
-        "That pull was not repeated for this file. The live Yahoo page will have moved."
+        "Re-pulled from yfinance on 2026-10-22 and unchanged. The lines are scaled to this total; the unscaled build is a diagnostic only."
     )
     c_h1 = (114.864 - 133) / (153 - 133)
     c_q2 = (70.661 - 71) / (81 - 71)
@@ -444,6 +447,8 @@ def main():
                 "FY27 consensus divided by the unscaled line build. More than 10% from 1.",
                 UYAHOO,
             ),
+            "q2_amortization_in_cogs": fact(AMORT_Q, "A", "Q2 2026 amortization of intangible assets, from the adjusted EBITDA reconciliation. The Q2 letter attributes the gross-margin decline partly to 'amortization of acquired NDAs', so it is in cost of sales.", UQ2),
+            "gross_margin_basis": fact(0.78, "S", "Base H2 and FY27 GAAP gross margin, the midpoint of a 77-79% reading of 'high 70s'. GAAP basis because management's 71% Q2 figure and 'trend back towards the high 70s' are both GAAP gross margin. Amortization is then added back to reach adjusted EBITDA. Q2 cash gross margin was (50.363 + 5.527) / 70.661 = 79.1%.", USA),
             "ltm_gross_margin": fact(
                 LTM_GM,
                 "C",
@@ -453,7 +458,7 @@ def main():
             "q2_cash_opex": fact(
                 OPEX_Q,
                 "C",
-                "Q2 gross profit minus Q2 adjusted EBITDA. This is the latest-quarter run rate used as cash operating cost. It is a bridge, not a GAAP opex line.",
+                "Q2 total operating expenses 61.370 minus stock-based compensation 3.788 and depreciation 0.460. Amortization of intangibles (5.527) sits in cost of sales, so it is not in opex. Check: gross profit 50.363 + amortization 5.527 - 57.122 = -1.232, the reported Q2 adjusted EBITDA.",
                 UQ2,
             ),
             "unscaled_h2_revenue": fact(
@@ -471,7 +476,7 @@ def main():
         },
         "scenarios": {
             "bear": {
-                "levers": "Consensus low, Q2 reported gross margin 71%, FY27 cash opex +8%.",
+                "levers": "Consensus low, GAAP gross margin 77% (low edge of 'high 70s') H2 and FY27, FY27 base opex +8%.",
                 "lines": line_block(bear, "Bear revenue is the low end of the carried consensus range.", scale_note),
                 "totals": totals(
                     bear,
@@ -482,7 +487,7 @@ def main():
                 "finagle": finagle_block(bear),
             },
             "bull": {
-                "levers": "Consensus high, FY25 reported gross margin 75%, no FY27 opex inflation.",
+                "levers": "Consensus high, GAAP gross margin 79% (high edge of 'high 70s') H2 and FY27, no FY27 base opex inflation.",
                 "lines": line_block(bull, "Bull revenue is the high end of the carried consensus range.", scale_note),
                 "totals": totals(
                     bull,

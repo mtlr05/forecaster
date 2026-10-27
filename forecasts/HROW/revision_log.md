@@ -18,3 +18,24 @@ The "old" column is the prior pass, which haircut guidance by the historical mis
 | Revenue | FY27 | 483.7 | 536.328 | +52.6 | +45.0% → +53.2% | Same branch. No FY27 range to apply a coefficient to. |
 | Adj. EBITDA | FY26 | 72.5 | 52.335 | −20.2 | +17.1% → −15.5% | Cost build. Guide of $80–100 million is not an estimate and has no coefficient. H2 opex stays on the Q2 run rate. |
 | Adj. EBITDA | FY27 | 121.9 | 160.455 | +38.6 | +68.1% → +206.6% | Higher consensus revenue times the trailing gross margin, opex only +3% plus $20 million TYRVAYA. The growth rate is the scale, and it is flagged. |
+
+## 2026-10-22 revision: management's cost bridge (David's review)
+
+Revenue and the four product lines are unchanged (consensus total, lines scaled to it). EBITDA now follows the Q2 2026 call bridge: GAAP gross margin into the high 70s in H2 (78% base), base adjusted opex flat at Q2's 57.122 a quarter (was the 51.595 gross-profit-minus-EBITDA bridge, which netted amortization against opex), amortization of 5.527 a quarter added back, TYRVAYA SG&A 5 in Q4 2026 (was 3) and 20 in FY27.
+
+| Line | Year | Old | New | Change | Growth, old → new | Why |
+|---|---|---:|---:|---:|---|---|
+| IHEEZO | FY26 | 73.143 | 73.143 | 0 | −10.1% → −10.1% | Unchanged. |
+| IHEEZO | FY27 | 125.373 | 125.373 | 0 | +71.4% → +71.4% | Unchanged. |
+| VEVYE | FY26 | 143.688 | 143.688 | 0 | +62.0% → +62.0% | Unchanged. |
+| VEVYE | FY27 | 205.031 | 205.031 | 0 | +42.7% → +42.7% | Unchanged. |
+| Other branded | FY26 | 63.799 | 63.799 | 0 | +148.1% → +148.1% | Unchanged. |
+| Other branded | FY27 | 132.685 | 132.685 | 0 | +108.0% → +108.0% | Unchanged. |
+| ImprimisRx | FY26 | 69.514 | 69.514 | 0 | −9.2% → −9.2% | Unchanged. |
+| ImprimisRx | FY27 | 73.239 | 73.239 | 0 | +5.4% → +5.4% | Unchanged. |
+| Revenue | FY26 | 350.144 | 350.144 | 0 | +28.6% → +28.6% | Consensus re-pulled, unchanged. |
+| Revenue | FY27 | 536.328 | 536.328 | 0 | +53.2% → +53.2% | Same. |
+| Gross margin (GAAP) | FY26 | 73.3% | 74.5% | +1.2 pt | n/a | H2 at 78% ("trend back towards the high 70s") instead of trailing 73.3%. |
+| Gross margin (GAAP) | FY27 | 73.3% | 78.0% | +4.7 pt | n/a | H2 level held. |
+| Adj. EBITDA | FY26 | 52.335 | 61.437 | +9.1 | −15.5% → −0.8% | Higher H2 gross margin and amortization add-back outweigh the higher opex base (57.1 vs 51.6) and TYRVAYA 5 vs 3. |
+| Adj. EBITDA | FY27 | 160.455 | 185.101 | +24.6 | +206.6% → +201.3% | 78% margin vs 73.3% (+25.2) and amortization add-back (+22.1), less the higher opex base (−22.8). |
