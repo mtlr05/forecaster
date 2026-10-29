@@ -1,0 +1,19 @@
+{
+  "_label": "Expected CLPT v11 value per share. Test sample only.",
+  "finagle_commit_prefix": "bb39642",
+  "scenarios": {
+    "base": {
+      "value_per_share": 65.2013,
+      "adjusted": 58.6812
+    },
+    "bull": {
+      "value_per_share": 88.355,
+      "adjusted": 79.5195
+    },
+    "bear": {
+      "value_per_share": 14.5577,
+      "adjusted": 13.1019
+    }
+  },
+  "tolerance": 0.05
+}

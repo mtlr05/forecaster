@@ -12,7 +12,7 @@ Use volume times price when you have both. Otherwise grow off the latest quarter
 
 ## New or acquired
 
-Management gave an amount or a floor (`more than $X`) and a start date. Phase it from the close or the launch. A floor is a floor, not a midpoint. Keep an acquired line out of the organic path if Finagle will book the deal in `acquisitions`.
+Management gave an amount or a floor (`more than $X`) and a start date. Phase it from the close or the launch. A floor is a floor, not a midpoint. Keep an acquired line out of the organic path when the deal is listed separately under `acquisitions`.
 
 Record an acquired line in a standard block on the line in `forecast.json`, with synergies kept separate:
 
@@ -37,7 +37,7 @@ Revenue equals the event amount times a probability. The probability is `[S]` un
 
 ## Acquisition-driven
 
-Show organic revenue and the deal separately. Deal spend, year, and what the organic path excludes are the handoff to Finagle. Do not hide the deal inside a growth rate and also list it under `acquisitions`.
+Show organic revenue and the deal separately. Record the deal spend, the year, and what the organic path excludes. Do not hide the deal inside a growth rate and also list it under `acquisitions`.
 
 ## Recurring
 

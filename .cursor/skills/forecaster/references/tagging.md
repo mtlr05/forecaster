@@ -23,7 +23,7 @@ Lines reconcile to totals. In `forecast.json` a fact is:
 {"value": 81.348, "tag": "A", "citation": {"text": "...", "url": "https://www.sec.gov/..."}}
 ```
 
-No bare numbers. `pytest` walks the file and checks that, the line totals, and the Finagle leaves.
+No bare numbers. `pytest` walks the file and checks that, the line totals, and the growth and margin leaves.
 
 ## Numbered tags and the source list
 

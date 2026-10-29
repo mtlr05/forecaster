@@ -1,0 +1,59 @@
+{
+  "_label": "Synthetic company. No prompt inputs and no post-run factor.",
+  "mode": "collaborative",
+  "ticker": "SYNTH",
+  "version": "v1",
+  "parent_version": null,
+  "forecast_commit": "uncommitted",
+  "scenarios": [
+    "base"
+  ],
+  "forecaster": {
+    "base": {
+      "forecast.sales_growth": {
+        "value": [
+          0.1,
+          0.08
+        ],
+        "tag": "C",
+        "cite_id": "S1",
+        "evidence": "synthetic"
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.12,
+          0.09
+        ],
+        "tag": "C",
+        "cite_id": "S1",
+        "evidence": "synthetic"
+      },
+      "forecast.ebitda_basis": {
+        "value": "organic",
+        "tag": "C",
+        "cite_id": "S1",
+        "evidence": "synthetic"
+      },
+      "forecast.margin_path.me": {
+        "value": 0.2,
+        "tag": "C",
+        "cite_id": "S1",
+        "evidence": "synthetic"
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.25,
+        "tag": "S",
+        "cite_id": "S1",
+        "evidence": "synthetic"
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.06,
+        "tag": "S",
+        "cite_id": "S1",
+        "evidence": "synthetic"
+      }
+    }
+  },
+  "prompt_inputs": [],
+  "post_finagle": null
+}

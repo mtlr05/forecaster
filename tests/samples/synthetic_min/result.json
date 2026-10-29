@@ -1,0 +1,30 @@
+{
+  "ticker": "SYNTH",
+  "version": "v1",
+  "finagle_commit": "deadbeef",
+  "fetched": {
+    "price": 10.0,
+    "price_date": "2026-10-29",
+    "rf": 0.04,
+    "rf_date": "2026-10-29",
+    "shares": 1.0,
+    "shares_source": "10k"
+  },
+  "scenarios": {
+    "base": {
+      "ok": true,
+      "value_per_share": 10.0,
+      "defaults_filled": [
+        "rates.re",
+        "rates.gt",
+        "rates.roict",
+        "debt.mode",
+        "rates.t"
+      ],
+      "sanity_flags": [],
+      "validation": {
+        "warnings": []
+      }
+    }
+  }
+}
