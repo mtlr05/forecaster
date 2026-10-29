@@ -50,6 +50,15 @@
       "basis": "fiscal_year",
       "currency": "USD"
     },
+    "interest": {
+      "value": 1.165,
+      "source": "yahoo",
+      "evidence": "Net Interest Income",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "currency": "USD",
+      "note": "Interest Expense was blank. Net interest income, with the sign flipped so an expense is positive."
+    },
     "sbc": {
       "value": 1.738,
       "source": "yahoo",
@@ -87,6 +96,16 @@
       "value": "before_sbc",
       "source": "yahoo",
       "evidence": "rebuilt as Operating Income + D&A + Stock Based Compensation"
+    },
+    "nol": {
+      "value": 0,
+      "source": "assumption",
+      "evidence": "No net operating loss was stated."
+    },
+    "noa": {
+      "value": 0,
+      "source": "assumption",
+      "evidence": "No non-operating assets were stated."
     }
   },
   "market": {
@@ -97,9 +116,9 @@
       "as_of": "2026-10-29"
     },
     "price": {
-      "value": 9.652510106563568,
+      "value": 9.649060517549515,
       "source": "yahoo",
-      "evidence": "info.previousClose 13.5 CAD x CADUSD=X 0.715001 on 2026-10-29",
+      "evidence": "info.previousClose 13.5 CAD x CADUSD=X 0.714745 on 2026-10-29",
       "as_of": "2026-10-29",
       "currency": "USD",
       "note": "Converted from the CAD listing price to the reporting currency."
@@ -132,6 +151,20 @@
       "value": 0.15,
       "source": "assumption",
       "evidence": "Terminal ROIC of 15 percent."
+    },
+    "t": {
+      "value": 0.21,
+      "source": "assumption",
+      "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "rd": {
+      "value": 0.21162579473206178,
+      "source": "assumption",
+      "evidence": "Year-0 interest divided by year-0 debt.",
+      "derived_from": [
+        "baseline.interest",
+        "baseline.debt"
+      ]
     }
   },
   "forecast": {
@@ -150,6 +183,13 @@
         "value": 0.05,
         "source": "article",
         "evidence": "First growth after FY27; see S9. [S9]"
+      }
+    },
+    "dwc": {
+      "mode": {
+        "value": "zero",
+        "source": "assumption",
+        "evidence": "No working-capital change was stated."
       }
     },
     "sales_growth": {
@@ -205,5 +245,13 @@
       "source": "assumption",
       "evidence": "The target applies from the first forecast year."
     }
-  }
+  },
+  "distribution": {
+    "mode": {
+      "value": "none",
+      "source": "assumption",
+      "evidence": "No distribution was stated."
+    }
+  },
+  "year": 10
 }

@@ -18,6 +18,7 @@ th, td { border-bottom: 1px solid #ccc; padding: 2px 4px; text-align: right; ver
 th:first-child, td:first-child { text-align: left; }
 th { background: #e8eef6; }
 div.fig { break-inside: avoid; page-break-inside: avoid; margin: 8px 0 12px; }
+div.fig.tight table { font-size: 6pt; }
 div.fig p:first-child { break-after: avoid; page-break-after: avoid; }
 thead { display: table-header-group; }
 tr { break-inside: avoid; page-break-inside: avoid; }

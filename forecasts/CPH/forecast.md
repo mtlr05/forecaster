@@ -4,7 +4,7 @@
 
 Version: operating path dated 22 October 2026, rechecked 29 October 2026. Base case is unchanged: FY2026E revenue 52.010 and adjusted EBITDA 31.064; FY2027E revenue 59.721 and adjusted EBITDA 36.484. Yahoo revenue consensus was pulled again on 29 October 2026 and matches E1. No financial filing has been posted since the Q2 report.
 
-Open: the 1 September 2026 court confirmation of the Sun arbitration award (CAD 4.242 million of damages, plus a 15% royalty on Absorica LD net sales in Canada from 2026 through 2040) is not in the revenue or EBITDA path. Cipher had not recognized it at 30 June 2026, and Absorica LD Canada sales are not disclosed, so there is no base to phase the royalty. A joint valuation request is in `collab/valuation_request_v01.json`. It carries the operating leaves only. It does not set a horizon, a tax rate, a cost of debt, working capital, a debt policy, or a distribution policy, because those were not stated in the request. Rebuild the forecast with `build_forecast.py`. Run the joint case with `templates/run_collaborative.py` on the Finagle checkout beside this repo. The report is `report.md`.
+Open: the 1 September 2026 court confirmation of the Sun arbitration award (CAD 4.242 million of damages, plus a 15% royalty on Absorica LD net sales in Canada from 2026 through 2040) is not in the revenue or EBITDA path. Cipher had not recognized it at 30 June 2026, and Absorica LD Canada sales are not disclosed, so there is no base to phase the royalty. A joint valuation request is in `collab/valuation_request_v01.json`. It carries the operating leaves only. It does not set a horizon, a tax rate, a cost of debt, working capital, a debt policy, or a distribution policy, because those were not stated in the request. Finagle's own defaults fill those on the run. Rebuild the forecast with `build_forecast.py`. Run the joint case with `templates/run_collaborative.py` on the Finagle checkout beside this repo. The report is `report.md`.
 
 Explicit window FY2026 and FY2027; year 0 is FY2025. **Currency: USD millions.** Cipher reports in U.S. dollars [A1]; the only CAD figure is the Yahoo consensus, converted at C3. Tests: `forecast.json` passes `forecastcheck.validate_payload`; it is built by `build_forecast.py`.
 
@@ -95,7 +95,7 @@ Other judgments: licensing flat in H2 (S5) and −10% in FY27 (S6); `mc` (S8); `
 
 ## Joint run
 
-The operating leaves above are what the forecast hands to Finagle. The joint request does not add a horizon, tax rate, cost of debt, net operating loss, non-operating assets, working-capital mode, debt policy, or distribution policy. Those are filled only when the request states them. See `collab/valuation_request_v01.json` and the result beside it.
+The operating leaves above are what the forecast hands to Finagle. The joint request does not add a horizon, tax rate, cost of debt, net operating loss, non-operating assets, working-capital mode, debt policy, or distribution policy. Finagle assigns those from its source chain when the request is silent. See `collab/valuation_request_v01.json` and the result beside it.
 
 ## Numbered sources
 
