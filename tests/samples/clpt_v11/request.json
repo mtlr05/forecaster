@@ -1,0 +1,407 @@
+{
+  "_label": "CLPT v11 worked example. One-off values for that valuation only. Not defaults for another company.",
+  "mode": "collaborative",
+  "ticker": "CLPT",
+  "version": "v11",
+  "parent_version": null,
+  "forecast_commit": "uncommitted",
+  "scenarios": [
+    "base",
+    "bull",
+    "bear"
+  ],
+  "forecaster": {
+    "base": {
+      "forecast.sales_growth": {
+        "value": [
+          0.325363,
+          0.288776,
+          0.932423,
+          0.889393,
+          0.387384,
+          0.283041
+        ],
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "revenue growth over the explicit years"
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.552718,
+          -0.170975,
+          -1.614255,
+          4.936095,
+          0.693777,
+          0.416204
+        ],
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "EBITDA growth over the explicit years"
+      },
+      "forecast.margin_path.me": {
+        "value": 0.416143,
+        "tag": "C",
+        "cite_id": "C12",
+        "evidence": "last explicit year EBITDA divided by revenue"
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.5,
+        "tag": "S",
+        "cite_id": "S17",
+        "evidence": "contribution margin set against history"
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.051095,
+        "tag": "C",
+        "cite_id": "C29",
+        "evidence": "sales growth in the year after the explicit window"
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "no deal after the baseline year"
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "no announced future deals"
+      }
+    },
+    "bull": {
+      "forecast.sales_growth": {
+        "value": [
+          0.352411,
+          0.554,
+          1.154157,
+          0.699184,
+          0.368315,
+          0.290338
+        ],
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "revenue growth over the explicit years"
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.511271,
+          -0.507308,
+          -4.431097,
+          1.656541,
+          0.568941,
+          0.392705
+        ],
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "EBITDA growth over the explicit years"
+      },
+      "forecast.margin_path.me": {
+        "value": 0.448012,
+        "tag": "C",
+        "cite_id": "C12",
+        "evidence": "last explicit year EBITDA divided by revenue"
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.55,
+        "tag": "S",
+        "cite_id": "S17",
+        "evidence": "contribution margin set against history"
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.051095,
+        "tag": "C",
+        "cite_id": "C29",
+        "evidence": "sales growth in the year after the explicit window"
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "no deal after the baseline year"
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "no announced future deals"
+      }
+    },
+    "bear": {
+      "forecast.sales_growth": {
+        "value": [
+          0.298315,
+          0.166667,
+          0.212143,
+          0.315828,
+          0.333923,
+          0.512351
+        ],
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "revenue growth over the explicit years"
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.630362,
+          0.018651,
+          -0.027229,
+          -0.331949,
+          -0.663431,
+          -5.673908
+        ],
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "EBITDA growth over the explicit years"
+      },
+      "forecast.margin_path.me": {
+        "value": 0.142937,
+        "tag": "C",
+        "cite_id": "C12",
+        "evidence": "last explicit year EBITDA divided by revenue"
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.45,
+        "tag": "S",
+        "cite_id": "S17",
+        "evidence": "contribution margin set against history"
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.051095,
+        "tag": "C",
+        "cite_id": "C29",
+        "evidence": "sales growth in the year after the explicit window"
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "no deal after the baseline year"
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "C",
+        "cite_id": "C11",
+        "evidence": "no announced future deals"
+      }
+    }
+  },
+  "prompt_inputs": [
+    {
+      "path": "forecast.sbc",
+      "value": [
+        8.18,
+        8.0,
+        8.0,
+        8.0,
+        9.289597,
+        10.579194,
+        11.86879,
+        13.158387,
+        14.447984,
+        15.737581,
+        17.027178,
+        18.316775,
+        19.606371,
+        20.895968,
+        22.185565,
+        23.475162
+      ],
+      "applies_to": [
+        "base"
+      ],
+      "quote": "stock-based compensation of 8 million a year through the first positive-EBITDA year, then a straight line to 5 percent of terminal EBITDA",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "forecast.sbc",
+      "value": [
+        8.18,
+        8.0,
+        8.0,
+        8.0,
+        9.945717,
+        11.891434,
+        13.837152,
+        15.782869,
+        17.728586,
+        19.674303,
+        21.62002,
+        23.565738,
+        25.511455,
+        27.457172,
+        29.402889,
+        31.348607
+      ],
+      "applies_to": [
+        "bull"
+      ],
+      "quote": "stock-based compensation of 8 million a year through the first positive-EBITDA year, then a straight line to 5 percent of terminal EBITDA",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "forecast.sbc",
+      "value": [
+        8.18,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        7.909897,
+        7.819794,
+        7.729692,
+        7.639589,
+        7.549486,
+        7.459383,
+        7.36928,
+        7.279178,
+        7.189075
+      ],
+      "applies_to": [
+        "bear"
+      ],
+      "quote": "stock-based compensation of 8 million a year through the first positive-EBITDA year, then a straight line to 5 percent of terminal EBITDA",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "debt.mode",
+      "value": "target",
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "2x Debt/EBITDA from the first positive-EBITDA year",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "debt.leverage",
+      "value": 2.0,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "2x Debt/EBITDA from the first positive-EBITDA year",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "debt.start_year",
+      "value": 3,
+      "applies_to": [
+        "base"
+      ],
+      "quote": "first positive-EBITDA year, as a year index",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "debt.start_year",
+      "value": 3,
+      "applies_to": [
+        "bull"
+      ],
+      "quote": "first positive-EBITDA year, as a year index",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "debt.start_year",
+      "value": 6,
+      "applies_to": [
+        "bear"
+      ],
+      "quote": "first positive-EBITDA year, as a year index",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "debt.values",
+      "value": [
+        49.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077,
+        99.077
+      ],
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "baseline debt plus a 50 million draw in the first forecast year",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "rates.rd",
+      "value": 0.092,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "8.25 percent minimum coupon plus about 0.7 percent a year of costs",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "rates.roict",
+      "value": 0.25,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "terminal-year return on invested capital 25 percent",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "baseline.nol",
+      "value": 258.2,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "federal net operating loss from the 10-K",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "year",
+      "value": 15,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "horizon of 15 years",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "forecast.margin_path.gsnext",
+      "value": 0.15,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "sales growth 15 percent in the first year after the explicit window",
+      "date": "2026-10-26"
+    }
+  ],
+  "post_finagle": {
+    "factor": 0.9,
+    "label": "dilution",
+    "quote": "about 10 percent dilution from an equity raise, for this company only",
+    "date": "2026-10-26"
+  }
+}

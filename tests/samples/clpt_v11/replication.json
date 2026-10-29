@@ -1,0 +1,82 @@
+{
+  "_label": "Included only so a replication of the v11 run matches. Not prompt inputs and not defaults.",
+  "prompt_inputs": [
+    {
+      "path": "rates.t",
+      "value": 0.21,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "replication only: tax rate used in the v11 run",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "baseline.noa",
+      "value": 0.0,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "replication only: non-operating assets used in the v11 run",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "forecast.dwc.mode",
+      "value": "zero",
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "replication only: working-capital mode used in the v11 run",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "distribution.mode",
+      "value": "none",
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "replication only: distribution mode used in the v11 run",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "market.price",
+      "value": 9.25,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "replication only: pinned v11 price",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "market.shares",
+      "value": 30.503132,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "replication only: pinned v11 shares, millions",
+      "date": "2026-10-26"
+    },
+    {
+      "path": "rates.risk_free",
+      "value": 0.04953,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "replication only: pinned v11 risk-free rate",
+      "date": "2026-10-26"
+    }
+  ]
+}

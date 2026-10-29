@@ -1,20 +1,17 @@
 ---
 name: forecaster
-description: Build an evidence-based near-term (explicit-year, usually two-year) revenue and EBITDA forecast for a public company and hand the operating path to Finagle. Use when forecasting a ticker, updating forecasts/<TICKER>/, or filling Finagle leaves (ebitda_growth, sales_growth, me, mc, gsnext). Does not set terminal growth and does not compute a value per share.
+description: Build an evidence-based near-term (explicit-year, usually two-year) revenue and EBITDA forecast for a public company. Use when forecasting a ticker or updating forecasts/<TICKER>/.
 ---
 
 # Forecaster
 
-A way to build a near-term operating forecast and hand it to [Finagle](https://github.com/mtlr05/finagle). Judgment is the work. The steps below are the default method, not a rulebook: a figure or an instruction in the prompt overrides them, and that override is tagged `[P]`.
-
-Terminal growth, and the fade after the explicit window, belong to Finagle. This skill never sets `rates.gt`.
+A way to build a near-term operating forecast. Judgment is the work. The steps below are the default method, not a rulebook: a figure or an instruction in the prompt overrides them, and that override is tagged `[P]`.
 
 Read the references when you reach that step. They hold the tables; this file holds the method.
 
 - [Tagging](references/tagging.md)
 - [Wording](references/wording-table.md)
 - [Driver patterns](references/driver-patterns.md)
-- [Finagle handoff](references/finagle-handoff.md)
 
 After the forecast, write the report with the [forecast-report skill](../forecast-report/SKILL.md).
 
@@ -22,11 +19,10 @@ Worked case: [forecasts/HROW](../../../forecasts/HROW/forecast.md). Layout: [AGE
 
 ## Where the history comes from
 
-Read, in this order, and do not write to the last two:
+Read, in this order. Do not write outside this repo.
 
 1. The prompt.
-2. The company's CEO repo from [ceochat](https://github.com/mtlr05/ceochat), if one is cloned beside this repo. It is how management talks about the lines. It is not a source of unpublished numbers.
-3. The filing (EDGAR for a US issuer, SEDAR+ for a Canadian one) and the company's own IR release or transcript.
+2. The filing (EDGAR for a US issuer, SEDAR+ for a Canadian one) and the company's own IR release or transcript.
 
 A number you cannot open stays out, or goes in with the citation text `link unverified`. Do not invent a URL or a figure.
 
@@ -36,13 +32,14 @@ For `forecasts/<TICKER>/`:
 
 - `forecast.md`, the case a person can read
 - `forecast.json`, the case the tests check
+- `report.md` and `report.pdf`, the analyst-style update
 - `revision_log.md`, one row per line for this year and next year, on every update
 
 `forecast.json` has to pass `pytest`. Periods are named `FYyyA`/`FYyyE` for fiscal years and `H1A`, `H2E`, `9MA`, `Q4E` and the like for part years; `baseline_period` and `explicit_periods` set which years the checks run on. Growth keys are `YoY` or `YoY_*`. A lone reference quarter such as `Q4FY26A` (the latest quarter) is summed across lines but not to a year. Part years sum to the first explicit year unless `stub_of` maps them (e.g. `{"H1E": "FY27E", "H2E": "FY27E"}`). A line's `pattern`, when given, is one of the [driver patterns](references/driver-patterns.md) in lower case, optionally followed by a note in parentheses. Every number is a fact: a value, a tag, and a citation. See [tagging](references/tagging.md).
 
 ## Status and open items
 
-`forecast.md` can open with a short `## Status and open items` block. It replaces a separate handoff file.
+`forecast.md` can open with a short `## Status and open items` block. It replaces a separate status note.
 
 - When a task names a ticker, read `forecasts/<TICKER>/forecast.md` first, starting with its Status block if it has one.
 - The block holds only the open items, the current version and values, and how to resume (which scripts rebuild what, and their inputs). Assumptions and reasoning stay in the report and the rest of `forecast.md`; point to their sections, do not restate them.
@@ -135,9 +132,9 @@ If you have a 2a EBITDA total, and the operating cost it implies differs from th
 
 ### 2f. Where the explicit years stop
 
-Stop when the specific evidence stops. That is usually two years. Do not fill a third year to make a DCF look complete.
+Stop when the specific evidence stops. That is usually two years.
 
-When the case hands off to Finagle, `me`, `mc`, and `gsnext` are required and are judgments about the path you just built, set against the history. Tag them. What happens after `gsnext` is Finagle fading toward `gt`. You do not choose `gt`.
+Write the growth of those dollars on `forecast.json` under `finagle`. That is the block the tests check. `sales_growth` and `ebitda_growth` are one rate per explicit year, and they compound back to the revenue and EBITDA you just wrote. `me` is the last explicit year's EBITDA divided by revenue. `mc` is the contribution margin, set against the history. `gsnext` is sales growth in the year after the explicit window. Tag them. `me` and `mc` are not zero.
 
 ## 3. Pick a driver pattern
 
@@ -156,17 +153,13 @@ Each entry says what to revise. A driver explains why (volume, price, a coverage
 
 On an update, first check EDGAR or SEDAR+ for filings since the last revision, and record the consensus pull date and source in the file. Then add a revision-log row per line for this year and next year: old, new, change, one line of why, including the growth rate old to new. Store it in `forecasts/<TICKER>/revision_log.md`.
 
-## 5. Hand off to Finagle, or refuse
+## 5. Check
 
-The handoff is optional. A case built without one sets `finagle_handoff: false` in `forecast.json` and skips this step; the Finagle leaves are then not required. A case that omits the field is treated as a handoff.
+`pytest` from the repo root. The HROW forecast is the case that has to pass.
 
-Follow [finagle-handoff.md](references/finagle-handoff.md). The order is `describe_inputs`, `build_baseline`, the leaves this skill fills, the leaves the template fills, `validate_case`, `run_case`.
+## Collaborative run
 
-Refuse the handoff if `forecast.ebitda_growth`, `forecast.sales_growth`, `me`, `mc`, or `gsnext` is missing. Omitting the margin path on a prior HROW case changed the value from $56.69 to $171.62. Do not compute a value anywhere except `run_case`. An update goes through `update_case`.
-
-## 6. Check
-
-`pytest` from the repo root. The HROW file is the fixture that has to pass.
+Only when the user asks for a joint valuation. Follow [collaborative-run.md](references/collaborative-run.md). Copy the user's `prompt_inputs` into the request unchanged. Add nothing the user did not state. The published value is the one in the result file. Write the valuation section of the report from that file. Apply a post-run factor only when the request has one, and show the raw and adjusted values side by side, tagged `[P]` with the user's date.
 
 ## Sources and credit
 

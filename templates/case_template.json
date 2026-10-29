@@ -1,5 +1,5 @@
 {
-  "note": "Leaves the user fills after build_baseline and after the forecaster's operating path. Values here are notes, not facts about any company. The forecaster does not set rates.gt.",
+  "note": "Values the user may state in a joint valuation. They are notes, not facts about any company, and the forecast does not fill them. In a joint run they are prompt_inputs. The forecast does not set rates.gt.",
   "year": {
     "value": null,
     "note": "How many years to forecast before the terminal year. 10 is a common assumption, not a fact."
