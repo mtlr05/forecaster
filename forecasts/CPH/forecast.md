@@ -1,6 +1,12 @@
 # Cipher Pharmaceuticals Inc. (TSX: CPH)
 
-Explicit window FY2026 and FY2027; year 0 is FY2025. **Currency: USD millions.** Cipher reports in U.S. dollars [A1]; the only CAD figure is the Yahoo consensus, converted at C3. Forecast only: no Finagle handoff, no valuation, ceochat not used. Tests: `forecast.json` passes `forecastcheck.validate_payload`; it is built by `build_forecast.py`.
+## Status and open items
+
+Version: operating path dated 22 October 2026, rechecked 29 October 2026. Base case is unchanged: FY2026E revenue 52.010 and adjusted EBITDA 31.064; FY2027E revenue 59.721 and adjusted EBITDA 36.484. Yahoo revenue consensus was pulled again on 29 October 2026 and matches E1. No financial filing has been posted since the Q2 report.
+
+Open: the 1 September 2026 court confirmation of the Sun arbitration award (CAD 4.242 million of damages, plus a 15% royalty on Absorica LD net sales in Canada from 2026 through 2040) is not in the revenue or EBITDA path. Cipher had not recognized it at 30 June 2026, and Absorica LD Canada sales are not disclosed, so there is no base to phase the royalty. A joint valuation request is in `collab/valuation_request_v01.json`. It carries the operating leaves only. It does not set a horizon, a tax rate, a cost of debt, working capital, a debt policy, or a distribution policy, because those were not stated in the request. Rebuild the forecast with `build_forecast.py`. Run the joint case with `templates/run_collaborative.py` on the Finagle checkout beside this repo. The report is `report.md`.
+
+Explicit window FY2026 and FY2027; year 0 is FY2025. **Currency: USD millions.** Cipher reports in U.S. dollars [A1]; the only CAD figure is the Yahoo consensus, converted at C3. Tests: `forecast.json` passes `forecastcheck.validate_payload`; it is built by `build_forecast.py`.
 
 Every number has a skill tag letter plus a number (A1, G1, E1, S1, C1...) pointing to the **Numbered sources** list at the end. Page numbers are PDF page numbers (the Q2 2026 report's MD&A pages match its printed page numbers; the notes do not).
 
@@ -26,7 +32,7 @@ FY26 base growth: revenue +3.1%, adjusted EBITDA +10.7%. FY27: revenue +14.8%, a
 
 - **No guidance.** Cipher gave no revenue or EBITDA range for 2026 [G1]. The only statements about the future are directional: "Our expectations for the product have not changed... We expect performance of the product to improve in future quarters" for Natroba [G2], "we believe the Canadian portfolio will continue its growth" and pCPA listing agreements "expected to be finalized over the next 30 to 60 days" [G3].
 - **No coefficient.** With no range, `C` is undefined. The skill's branch for no guidance is to use estimates where they exist. **Revenue total = analyst consensus [E1]**, then the lines are scaled to it (2c). The unscaled line build is only a diagnostic.
-- **Consensus [E1]** (Yahoo via yfinance, pulled 2026-10-22, after the Q2 release; 4 analysts on EPS): FY26 CAD 70.849M (range 70.297–71.264), FY27 CAD 81.353M (74.945–92.376). Converted at **1.3622 CAD/USD [C3]**, which is Yahoo's own FY25 CAD "year-ago revenue" (68.725) divided by reported FY25 USD revenue (50.451). In USD that is FY26 **52.010** (51.605–52.315) and FY27 **59.721** (55.017–67.813). No pre-release consensus was available, so the Q2 print is not scored against one.
+- **Consensus [E1]** (Yahoo via yfinance, pulled 2026-10-22, after the Q2 release; 4 analysts on EPS): FY26 CAD 70.849M (range 70.297–71.264), FY27 CAD 81.353M (74.945–92.376). Converted at **1.3622 CAD/USD [C3]**, which is Yahoo's own FY25 CAD "year-ago revenue" (68.725) divided by reported FY25 USD revenue (50.451). In USD that is FY26 **52.010** (51.605–52.315) and FY27 **59.721** (55.017–67.813). No pre-release consensus was available, so the Q2 print is not scored against one. Rechecked 2026-10-29 [E2]: the same CAD averages, lows and highs. The path is not revised.
 - **EBITDA:** no guidance and no EBITDA consensus (Yahoo gives revenue and EPS only). EBITDA is the cost build (2e). Flagged.
 
 ## Lines, then the scale (2b–2d)
@@ -72,6 +78,8 @@ The skill requires these in `forecast.json`, and the validator checks them. They
 | `me` | 0.6109 | [C14] |
 | `mc` | 0.7095 | [S8] |
 | `gsnext` | 0.05 | [S9] |
+| `ebitda_basis` | organic | [S10] |
+| acquisition status | none | [G5] |
 
 ## Assumptions to revise
 
@@ -85,11 +93,9 @@ The moves that change the answer:
 
 Other judgments: licensing flat in H2 (S5) and −10% in FY27 (S6); `mc` (S8); `gsnext` (S9); scenario inflation of 8% / 0%.
 
-## Steps skipped as instructed
+## Joint run
 
-- Skill §5 Finagle handoff (`describe_inputs`, `build_baseline`, `validate_case`, `run_case`): skipped, no valuation.
-- Skill source step 2 (ceochat CEO repo): skipped.
-- No commits or pushes.
+The operating leaves above are what the forecast hands to Finagle. The joint request does not add a horizon, tax rate, cost of debt, net operating loss, non-operating assets, working-capital mode, debt policy, or distribution policy. Those are filled only when the request states them. See `collab/valuation_request_v01.json` and the result beside it.
 
 ## Numbered sources
 
@@ -98,7 +104,8 @@ Other judgments: licensing flat in H2 (S5) and −10% in FY27 (S6); `mc` (S8); `
 - [D2] Cipher Pharmaceuticals, Quarterly Report Q2 2026 (MD&A and interim financial statements), filed August 12, 2026: https://www.cipherpharma.com/wp-content/uploads/2026/08/Cipher-Quarterly-Report-Q2-2026.pdf. The same filing is on SEDAR+ (mirror: https://newsfile.futunn.com/public/NN-PersistNoticeAttachment/7781/20260812/SEDAR_PLUS/CSA_SEDAR_PLUS_NOTICE_RECORD_ID_2474478.pdf, mirror not opened).
 - [D3] Q2 2026 results press release, August 12, 2026: https://www.newswire.ca/news-releases/cipher-pharmaceuticals-reports-second-quarter-2026-results-817186565.html (HTML; no page numbers)
 - [D4] Q2 2026 earnings call transcript, August 12, 2026 (stockanalysis.com): https://stockanalysis.com/quote/tsx/CPH/transcripts/663762-q2-2026/ (HTML; no page numbers)
-- [D5] Yahoo Finance analysis page for CPH.TO, figures pulled via yfinance on 2026-10-22: https://finance.yahoo.com/quote/CPH.TO/analysis/
+- [D5] Yahoo Finance analysis page for CPH.TO, figures pulled via yfinance on 2026-10-22 and again on 2026-10-29: https://finance.yahoo.com/quote/CPH.TO/analysis/
+- [D6] Q2 2026 earnings call transcript, August 12, 2026 (Alpha Spread): https://www.alphaspread.com/security/tsx/cph/investor-relations/earnings-call/q2-2026 (HTML; no page numbers). Used for the abandoned-acquisition quote (G5). D4 remains the transcript cited for G2–G4.
 
 **Actuals**
 - **A1** "Net revenue 50,451 / 33,363" (2025 / 2024, thousands USD); "Total net revenue of $50.5 million for the year ended December 31, 2025 increased by $17.1 million or 51%". D1, p.8. All amounts are "IN THOUSANDS OF U.S. DOLLARS".
@@ -117,9 +124,11 @@ Other judgments: licensing flat in H2 (S5) and −10% in FY27 (S6); `mc` (S8); `
 - **G2** CFO: "Our expectations for the product have not changed despite market dynamics that may emerge over time. We expect performance of the product to improve in future quarters as the implementation of our strategy related to Natroba... takes effect, including an expanded focus on commercial channels." CEO: "investing in and building new business verticals... direct-to-patient platform... a program to have the product available at Walmart." D4, August 12, 2026.
 - **G3** CEO: "we believe the Canadian portfolio will continue its growth"; product listing agreements "which we expect to be finalized over the next 30 to 60 days"; "We expect our market share to grow meaningfully in time." D4, August 12, 2026. Also: "Market share of Epuris has decreased to 47.1% at June 30, 2026, from 51.3%... market share has increased throughout the current year-to-date". D2, p.8.
 - **G4** CFO: licensing was affected by "reduced product shipments to Cipher's distribution partners, which are subject to variability from period to period." D4, August 12, 2026.
+- **G5** Interim CEO, Q2 2026 call: "During the second quarter, we were in advanced stages of a process for an acquisition target. However, ultimately -- we ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize." D6, August 12, 2026. HTML; no page numbers.
 
 **Estimates**
 - **E1** Yahoo Finance revenue consensus for CPH.TO, in CAD, pulled via yfinance 2026-10-22: current year avg 70,849,480 (low 70,297,000, high 71,263,950); next year avg 81,352,800 (low 74,944,680, high 92,376,380); "yearAgoRevenue" 68,725,360. D5. The page shows CAD; the conversion is C3.
+- **E2** Same Yahoo series, pulled via yfinance 2026-10-29: current year avg 70,849,480 (low 70,297,000, high 71,263,950); next year avg 81,352,800 (low 74,944,680, high 92,376,380). D5. Unchanged from E1.
 
 **Assumptions**
 - **S1** Natroba H2 2026 = H2 2025 (A2 − A6 H1 2025 = 15.546) × (1 + H1 2026 YoY of −8.7%), then × C5. Why: the Medicaid volume loss is structural (A10), so H2 does not rebound to flat. The H1 rate rather than Q2's −19% gives some credit to "expect performance... to improve in future quarters" (G2). Price/volume split: the decline is volume (patients), A10.
@@ -131,6 +140,7 @@ Other judgments: licensing flat in H2 (S5) and −10% in FY27 (S6); `mc` (S8); `
 - **S7** FY27 adjusted EBITDA = Σ FY27 line revenue × A9/C8 margins − 4 × C2 × 1.03. Why +3%: wage and price inflation on a cost base that management says it is "continuously monitoring" (D4); no cost step was announced.
 - **S8** `mc` = average of `me` (C14) and FY27 gross margin (C10) = 0.7095. A judgment for the fade margin; not used here.
 - **S9** `gsnext` = 5%. Why: FY27 growth is lifted by scaling (C7); Canada coverage gains and Natroba channel programs (G2, G3) support mid-single-digit growth, but there is no FY28 evidence.
+- **S10** `ebitda_basis` = organic. Why: the explicit EBITDA is the existing business. The only process that reached an advanced stage in the quarter did not close (G5), and the path includes no acquired EBITDA.
 
 **Calculations**
 - **C1** YoY = current period / prior period − 1 (inputs A1, A2, A4).
@@ -151,5 +161,6 @@ Other judgments: licensing flat in H2 (S5) and −10% in FY27 (S6); `mc` (S8); `
 ## Not verified
 
 - E1 is the yfinance pull of Yahoo's page; the analyst names and the as-of date per estimate are not shown. The conversion (C3) relies on Yahoo's own year-ago figure.
-- D4 is a third-party transcript (stockanalysis.com), not the company webcast. The quotes come from that text.
+- D4 is a third-party transcript (stockanalysis.com), not the company webcast. The quotes for G2–G4 come from that text.
+- D6 is a third-party transcript (Alpha Spread), not the company webcast. G5 is taken from that text. The same call is D4.
 - The SEDAR+ mirror link in D2 was found in search but not opened; the cipherpharma.com PDF was opened and read.
