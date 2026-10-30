@@ -1,0 +1,166 @@
+{
+  "mode": "collaborative",
+  "ticker": "CPH.TO",
+  "version": "v01",
+  "parent_version": null,
+  "forecast_commit": "4b17df2e0e58604616d17ebe400b683eee5bb59a",
+  "scenarios": [
+    "base",
+    "bear",
+    "bull"
+  ],
+  "forecaster": {
+    "base": {
+      "forecast.sales_growth": {
+        "value": [
+          0.030907,
+          0.148248
+        ],
+        "tag": "C",
+        "cite_id": "C13",
+        "evidence": "Organic revenue growth FY26, FY27 (A1, E1)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.107187,
+          0.174467
+        ],
+        "tag": "C",
+        "cite_id": "C13",
+        "evidence": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7)."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.610911,
+        "tag": "C",
+        "cite_id": "C14",
+        "evidence": "FY27 EBITDA / FY27 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.70946,
+        "tag": "S",
+        "cite_id": "S8",
+        "evidence": "Average of me and FY27 gross margin."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.05,
+        "tag": "S",
+        "cite_id": "S9",
+        "evidence": "First growth after FY27; see S9."
+      },
+      "forecast.ebitda_basis": {
+        "value": "organic",
+        "tag": "S",
+        "cite_id": "S10",
+        "evidence": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G5",
+        "evidence": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize."
+      }
+    },
+    "bear": {
+      "forecast.sales_growth": {
+        "value": [
+          0.022868,
+          0.066115
+        ],
+        "tag": "C",
+        "cite_id": "C13",
+        "evidence": "Organic revenue growth FY26, FY27 (A1, E1)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.080822,
+          0.031999
+        ],
+        "tag": "C",
+        "cite_id": "C13",
+        "evidence": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7)."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.568828,
+        "tag": "C",
+        "cite_id": "C14",
+        "evidence": "FY27 EBITDA / FY27 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.680997,
+        "tag": "S",
+        "cite_id": "S8",
+        "evidence": "Average of me and FY27 gross margin."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.05,
+        "tag": "S",
+        "cite_id": "S9",
+        "evidence": "First growth after FY27; see S9."
+      },
+      "forecast.ebitda_basis": {
+        "value": "organic",
+        "tag": "S",
+        "cite_id": "S10",
+        "evidence": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G5",
+        "evidence": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize."
+      }
+    },
+    "bull": {
+      "forecast.sales_growth": {
+        "value": [
+          0.036938,
+          0.296257
+        ],
+        "tag": "C",
+        "cite_id": "C13",
+        "evidence": "Organic revenue growth FY26, FY27 (A1, E1)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.115972,
+          0.385004
+        ],
+        "tag": "C",
+        "cite_id": "C13",
+        "evidence": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7)."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.639487,
+        "tag": "C",
+        "cite_id": "C14",
+        "evidence": "FY27 EBITDA / FY27 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.723748,
+        "tag": "S",
+        "cite_id": "S8",
+        "evidence": "Average of me and FY27 gross margin."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.05,
+        "tag": "S",
+        "cite_id": "S9",
+        "evidence": "First growth after FY27; see S9."
+      },
+      "forecast.ebitda_basis": {
+        "value": "organic",
+        "tag": "S",
+        "cite_id": "S10",
+        "evidence": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G5",
+        "evidence": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize."
+      }
+    }
+  },
+  "prompt_inputs": [],
+  "post_finagle": null
+}

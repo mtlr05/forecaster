@@ -558,7 +558,7 @@
     }
   },
   "finagle": {
-    "note": "Operating-path leaves the skill requires in the file. NOT handed to Finagle; no valuation run.",
+    "note": "Operating-path leaves for the collaborative run. ebitda_basis and acquisition status are the forecast's; price, shares, rates and year-0 statements are Finagle's unless a prompt input states them.",
     "ebitda_growth": {
       "value": [
         0.107187,
@@ -611,6 +611,28 @@
         "id": "S9",
         "text": "First growth after FY27; see S9.",
         "url": "https://stockanalysis.com/quote/tsx/CPH/transcripts/663762-q2-2026/"
+      }
+    },
+    "ebitda_basis": {
+      "value": "organic",
+      "tag": "S",
+      "citation": {
+        "id": "S10",
+        "text": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates.",
+        "url": "https://www.alphaspread.com/security/tsx/cph/investor-relations/earnings-call/q2-2026",
+        "page_status": "unverified"
+      }
+    },
+    "acquisition_disclosure": {
+      "status": {
+        "value": "none",
+        "tag": "G",
+        "citation": {
+          "id": "G5",
+          "text": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize.",
+          "url": "https://www.alphaspread.com/security/tsx/cph/investor-relations/earnings-call/q2-2026",
+          "page_status": "unverified"
+        }
       }
     }
   },
@@ -1234,7 +1256,7 @@
         }
       },
       "finagle": {
-        "note": "Operating-path leaves the skill requires in the file. NOT handed to Finagle; no valuation run.",
+        "note": "Operating-path leaves for the collaborative run. ebitda_basis and acquisition status are the forecast's; price, shares, rates and year-0 statements are Finagle's unless a prompt input states them.",
         "ebitda_growth": {
           "value": [
             0.080822,
@@ -1287,6 +1309,28 @@
             "id": "S9",
             "text": "First growth after FY27; see S9.",
             "url": "https://stockanalysis.com/quote/tsx/CPH/transcripts/663762-q2-2026/"
+          }
+        },
+        "ebitda_basis": {
+          "value": "organic",
+          "tag": "S",
+          "citation": {
+            "id": "S10",
+            "text": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates.",
+            "url": "https://www.alphaspread.com/security/tsx/cph/investor-relations/earnings-call/q2-2026",
+            "page_status": "unverified"
+          }
+        },
+        "acquisition_disclosure": {
+          "status": {
+            "value": "none",
+            "tag": "G",
+            "citation": {
+              "id": "G5",
+              "text": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize.",
+              "url": "https://www.alphaspread.com/security/tsx/cph/investor-relations/earnings-call/q2-2026",
+              "page_status": "unverified"
+            }
           }
         }
       }
@@ -1841,7 +1885,7 @@
         }
       },
       "finagle": {
-        "note": "Operating-path leaves the skill requires in the file. NOT handed to Finagle; no valuation run.",
+        "note": "Operating-path leaves for the collaborative run. ebitda_basis and acquisition status are the forecast's; price, shares, rates and year-0 statements are Finagle's unless a prompt input states them.",
         "ebitda_growth": {
           "value": [
             0.115972,
@@ -1894,6 +1938,28 @@
             "id": "S9",
             "text": "First growth after FY27; see S9.",
             "url": "https://stockanalysis.com/quote/tsx/CPH/transcripts/663762-q2-2026/"
+          }
+        },
+        "ebitda_basis": {
+          "value": "organic",
+          "tag": "S",
+          "citation": {
+            "id": "S10",
+            "text": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates.",
+            "url": "https://www.alphaspread.com/security/tsx/cph/investor-relations/earnings-call/q2-2026",
+            "page_status": "unverified"
+          }
+        },
+        "acquisition_disclosure": {
+          "status": {
+            "value": "none",
+            "tag": "G",
+            "citation": {
+              "id": "G5",
+              "text": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize.",
+              "url": "https://www.alphaspread.com/security/tsx/cph/investor-relations/earnings-call/q2-2026",
+              "page_status": "unverified"
+            }
           }
         }
       }

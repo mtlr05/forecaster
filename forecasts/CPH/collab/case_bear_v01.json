@@ -1,0 +1,257 @@
+{
+  "ticker": "CPH.TO",
+  "baseline": {
+    "date": {
+      "value": "2025-12-31",
+      "source": "yahoo",
+      "evidence": "annual statement column",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year"
+    },
+    "revenue": {
+      "value": 50.451,
+      "source": "yahoo",
+      "evidence": "Total Revenue",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "currency": "USD"
+    },
+    "ebitda": {
+      "value": 25.835,
+      "source": "yahoo",
+      "evidence": "Operating Income + Depreciation And Amortization + Stock Based Compensation",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "currency": "USD",
+      "note": "Operating income plus depreciation and amortization plus stock-based compensation. Yahoo's own EBITDA row does not add back SBC."
+    },
+    "capex": {
+      "value": 0.201,
+      "source": "yahoo",
+      "evidence": "Capital Expenditure",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "currency": "USD",
+      "note": "Positive cash outflow."
+    },
+    "da": {
+      "value": 7.232,
+      "source": "yahoo",
+      "evidence": "Depreciation And Amortization",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "currency": "USD"
+    },
+    "tax": {
+      "value": -10.166,
+      "source": "yahoo",
+      "evidence": "Tax Provision",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "currency": "USD"
+    },
+    "interest": {
+      "value": 1.165,
+      "source": "yahoo",
+      "evidence": "Net Interest Income",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "currency": "USD",
+      "note": "Interest Expense was blank. Net interest income, with the sign flipped so an expense is positive."
+    },
+    "sbc": {
+      "value": 1.738,
+      "source": "yahoo",
+      "evidence": "Stock Based Compensation",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "currency": "USD"
+    },
+    "debt": {
+      "value": 5.505,
+      "source": "yahoo",
+      "evidence": "Total Debt",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "currency": "USD",
+      "note": "Yahoo Total Debt can include lease liabilities."
+    },
+    "cash": {
+      "value": 7.493,
+      "source": "yahoo",
+      "evidence": "Cash Cash Equivalents And Short Term Investments",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "currency": "USD"
+    },
+    "gross_margin": {
+      "value": 0.8012130582149015,
+      "source": "yahoo",
+      "evidence": "Gross Profit / Total Revenue",
+      "period_end": "2025-12-31",
+      "basis": "fiscal_year",
+      "note": "Gross profit divided by revenue."
+    },
+    "ebitda_definition": {
+      "value": "before_sbc",
+      "source": "yahoo",
+      "evidence": "rebuilt as Operating Income + D&A + Stock Based Compensation"
+    },
+    "nol": {
+      "value": 0,
+      "source": "assumption",
+      "evidence": "No net operating loss was stated."
+    },
+    "noa": {
+      "value": 0,
+      "source": "assumption",
+      "evidence": "No non-operating assets were stated."
+    }
+  },
+  "market": {
+    "shares": {
+      "value": 25.415072,
+      "source": "yahoo",
+      "evidence": "info.sharesOutstanding",
+      "as_of": "2026-10-29"
+    },
+    "price": {
+      "value": 9.649060517549515,
+      "source": "yahoo",
+      "evidence": "info.previousClose 13.5 CAD x CADUSD=X 0.714745 on 2026-10-29",
+      "as_of": "2026-10-29",
+      "currency": "USD",
+      "note": "Converted from the CAD listing price to the reporting currency."
+    }
+  },
+  "rates": {
+    "risk_free": {
+      "value": 0.05045,
+      "source": "yahoo",
+      "evidence": "^TNX info.previousClose 5.045 on 2026-10-29, percent divided by 100",
+      "as_of": "2026-10-29"
+    },
+    "re": {
+      "value": 0.10545,
+      "source": "assumption",
+      "evidence": "0.055 plus the 10-year yield.",
+      "derived_from": [
+        "rates.risk_free"
+      ]
+    },
+    "gt": {
+      "value": 0.05045,
+      "source": "assumption",
+      "evidence": "Terminal growth equals the 10-year yield.",
+      "derived_from": [
+        "rates.risk_free"
+      ]
+    },
+    "roict": {
+      "value": 0.15,
+      "source": "assumption",
+      "evidence": "Terminal ROIC of 15 percent."
+    },
+    "t": {
+      "value": 0.21,
+      "source": "assumption",
+      "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "rd": {
+      "value": 0.21162579473206178,
+      "source": "assumption",
+      "evidence": "Year-0 interest divided by year-0 debt.",
+      "derived_from": [
+        "baseline.interest",
+        "baseline.debt"
+      ]
+    }
+  },
+  "forecast": {
+    "margin_path": {
+      "me": {
+        "value": 0.568828,
+        "source": "article",
+        "evidence": "FY27 EBITDA / FY27 revenue. [C14]"
+      },
+      "mc": {
+        "value": 0.680997,
+        "source": "article",
+        "evidence": "Average of me and FY27 gross margin. [S8]"
+      },
+      "gsnext": {
+        "value": 0.05,
+        "source": "article",
+        "evidence": "First growth after FY27; see S9. [S9]"
+      }
+    },
+    "dwc": {
+      "mode": {
+        "value": "zero",
+        "source": "assumption",
+        "evidence": "No working-capital change was stated."
+      }
+    },
+    "sales_growth": {
+      "value": [
+        0.022868,
+        0.066115
+      ],
+      "source": "article",
+      "evidence": "Organic revenue growth FY26, FY27 (A1, E1). [C13]"
+    },
+    "ebitda_growth": {
+      "value": [
+        0.080822,
+        0.031999
+      ],
+      "source": "article",
+      "evidence": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7). [C13]"
+    },
+    "ebitda_basis": {
+      "value": "organic",
+      "source": "article",
+      "evidence": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates. [S10]"
+    },
+    "acquisition_disclosure": {
+      "status": {
+        "value": "none",
+        "source": "article",
+        "evidence": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize. [G5]"
+      }
+    }
+  },
+  "debt": {
+    "mode": {
+      "value": "target",
+      "source": "assumption",
+      "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+      "derived_from": [
+        "baseline.debt",
+        "baseline.ebitda"
+      ]
+    },
+    "leverage": {
+      "value": 0.21308302690149022,
+      "source": "assumption",
+      "evidence": "Year-0 debt divided by year-0 EBITDA.",
+      "derived_from": [
+        "baseline.debt",
+        "baseline.ebitda"
+      ]
+    },
+    "start_year": {
+      "value": 1,
+      "source": "assumption",
+      "evidence": "The target applies from the first forecast year."
+    }
+  },
+  "distribution": {
+    "mode": {
+      "value": "none",
+      "source": "assumption",
+      "evidence": "No distribution was stated."
+    }
+  },
+  "year": 10
+}

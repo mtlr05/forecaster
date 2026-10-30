@@ -1,0 +1,2922 @@
+{
+  "ticker": "CPH.TO",
+  "version": "v01",
+  "finagle_commit": "f00ccb27943c7e5d4fd8f4b4d41352060acbe216",
+  "run_at": "2026-10-29T21:50:21.469803+00:00",
+  "scenarios": {
+    "base": {
+      "ok": true,
+      "ticker": "CPH.TO",
+      "path": "ebitda",
+      "value_per_share": 10.079801295361328,
+      "value_per_share_DDM": 10.07980129536133,
+      "vpsbb": 0,
+      "equity": 248.68587566730142,
+      "firm": 254.19087566730144,
+      "fcfet": 19.38001322901036,
+      "terminal_wacc": 0.10739932838763049,
+      "article_price_target": null,
+      "years": [
+        {
+          "year": 0,
+          "date": "2025-12-31",
+          "revenue": 50.451,
+          "ebitda": 25.835,
+          "capex": 0.201,
+          "MnA": 0,
+          "dDebt": 0.0,
+          "fcf": 32.897000000000006,
+          "fcfe": 32.897000000000006,
+          "fcff": 33.817350000000005,
+          "debt": 5.505,
+          "cash": 7.493,
+          "cashBS": 7.493,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 1.2943894079859388,
+          "equity": 248.68587566730142,
+          "firm": 254.19087566730144
+        },
+        {
+          "year": 1,
+          "date": "2026-12-31",
+          "revenue": 52.010289057,
+          "ebitda": 28.604176145,
+          "capex": 1.1247806413530868,
+          "MnA": 0,
+          "dDebt": 0.5900644350000004,
+          "fcf": 20.597637697496914,
+          "fcfe": 21.187702132496916,
+          "fcff": 21.517987697496913,
+          "debt": 6.095064435,
+          "cash": 28.68070213249692,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8336668152070125,
+          "equity": 253.72209912392145,
+          "firm": 259.8171635589215
+        },
+        {
+          "year": 2,
+          "date": "2027-12-31",
+          "revenue": 59.72071038912213,
+          "ebitda": 33.59466094448971,
+          "capex": 5.69272006946279,
+          "MnA": 0,
+          "dDebt": 1.063387606781144,
+          "fcf": 19.840414562318,
+          "fcfe": 20.903802169099144,
+          "fcff": 20.859414117767997,
+          "debt": 7.158452041781144,
+          "cash": 49.58450430159606,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8224962797311433,
+          "equity": 259.57329230743983,
+          "firm": 266.731744349221
+        },
+        {
+          "year": 3,
+          "date": "2028-12-30",
+          "revenue": 62.70674590857824,
+          "ebitda": 35.713133704123045,
+          "capex": 7.461758205710199,
+          "MnA": 0,
+          "dDebt": 0.45141058803102396,
+          "fcf": 19.54448856938697,
+          "fcfe": 19.995899157417995,
+          "fcff": 20.741269920277666,
+          "debt": 7.609862629812168,
+          "cash": 69.58040345901406,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7867732642039337,
+          "equity": 266.9493968238414,
+          "firm": 274.55925945365357
+        },
+        {
+          "year": 4,
+          "date": "2029-12-30",
+          "revenue": 65.84561045846449,
+          "ebitda": 37.940032547685355,
+          "capex": 9.321337925068407,
+          "MnA": 0,
+          "dDebt": 0.47451434618968413,
+          "fcf": 19.34482880587924,
+          "fcfe": 19.819343152068924,
+          "fcff": 20.617078955079535,
+          "debt": 8.084376976001852,
+          "cash": 89.39974661108299,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7798263625642661,
+          "equity": 275.2798675668466,
+          "firm": 283.36424454284844
+        },
+        {
+          "year": 5,
+          "date": "2030-12-30",
+          "revenue": 69.14529861256429,
+          "ebitda": 40.28102930549301,
+          "capex": 11.276195509411407,
+          "MnA": 0,
+          "dDebt": 0.49882667512022927,
+          "fcf": 19.13494337736125,
+          "fcfe": 19.633770052481477,
+          "fcff": 20.486524912304628,
+          "debt": 8.583203651122082,
+          "cash": 109.03351666356447,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7725246677436711,
+          "equity": 284.67435954928914,
+          "firm": 293.2575632004112
+        },
+        {
+          "year": 6,
+          "date": "2031-12-30",
+          "revenue": 72.61423181233339,
+          "ebitda": 42.742098653401186,
+          "capex": 13.331320132846578,
+          "MnA": 0,
+          "dDebt": 0.5244121060667517,
+          "fcf": 18.914297030548646,
+          "fcfe": 19.438709136615397,
+          "fcff": 20.349274592821164,
+          "debt": 9.107615757188833,
+          "cash": 128.47222580017987,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7648496583686798,
+          "equity": 295.2545616271463,
+          "firm": 304.3621773843351
+        },
+        {
+          "year": 7,
+          "date": "2032-12-29",
+          "revenue": 76.26128160510783,
+          "ebitda": 45.329534599382946,
+          "capex": 15.491967628890547,
+          "MnA": 0,
+          "dDebt": 0.5513386832835145,
+          "fcf": 18.6823259148455,
+          "fcfe": 19.23366459812901,
+          "fcff": 20.204976988801672,
+          "debt": 9.658954440472348,
+          "cash": 147.7058903983089,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.756781826080564,
+          "equity": 307.1554905525999,
+          "firm": 316.8144449930722
+        },
+        {
+          "year": 8,
+          "date": "2033-12-29",
+          "revenue": 80.09579417081466,
+          "ebitda": 48.04996788424931,
+          "capex": 17.763675021001823,
+          "MnA": 0,
+          "dDebt": 0.5796781588228903,
+          "fcf": 18.43843602461049,
+          "fcfe": 19.01811418343338,
+          "fcff": 20.05326231330962,
+          "debt": 10.238632599295238,
+          "cash": 166.72400458174226,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7483006219078734,
+          "equity": 320.5269228479381,
+          "firm": 330.76555544723334
+        },
+        {
+          "year": 9,
+          "date": "2034-12-29",
+          "revenue": 84.12761620988803,
+          "ebitda": 50.91038434809032,
+          "capex": 20.152275859541994,
+          "MnA": 0,
+          "dDebt": 0.6095061983140972,
+          "fcf": 18.182001555000898,
+          "fcfe": 18.791507753314995,
+          "fcff": 19.893740976029303,
+          "debt": 10.848138797609336,
+          "cash": 185.51551233505725,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7393843996709903,
+          "equity": 335.5349791089382,
+          "firm": 346.38311790654757
+        },
+        {
+          "year": 10,
+          "date": "2035-12-29",
+          "revenue": 88.36712226926508,
+          "ebitda": 53.918144316975955,
+          "capex": 22.66391641070866,
+          "MnA": 0,
+          "dDebt": 0.6409025983632848,
+          "fcf": 17.91236316651507,
+          "fcfe": 18.553265764878354,
+          "fcff": 19.726002502097224,
+          "debt": 11.48904139597262,
+          "cash": 204.0687780999356,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7300103562515328,
+          "equity": 352.36387689109745,
+          "firm": 363.85291828707
+        }
+      ],
+      "acquisitions_summary": [],
+      "ebitda_reconciliation": [],
+      "log": [],
+      "sanity_flags": [],
+      "validation": {
+        "errors": [],
+        "warnings": [
+          "average EBITDA growth is 14.1% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+          "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+        ],
+        "missing": []
+      },
+      "case": {
+        "ticker": "CPH.TO",
+        "baseline": {
+          "date": {
+            "value": "2025-12-31",
+            "source": "yahoo",
+            "evidence": "annual statement column",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year"
+          },
+          "revenue": {
+            "value": 50.451,
+            "source": "yahoo",
+            "evidence": "Total Revenue",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "ebitda": {
+            "value": 25.835,
+            "source": "yahoo",
+            "evidence": "Operating Income + Depreciation And Amortization + Stock Based Compensation",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Operating income plus depreciation and amortization plus stock-based compensation. Yahoo's own EBITDA row does not add back SBC."
+          },
+          "capex": {
+            "value": 0.201,
+            "source": "yahoo",
+            "evidence": "Capital Expenditure",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Positive cash outflow."
+          },
+          "da": {
+            "value": 7.232,
+            "source": "yahoo",
+            "evidence": "Depreciation And Amortization",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "tax": {
+            "value": -10.166,
+            "source": "yahoo",
+            "evidence": "Tax Provision",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "interest": {
+            "value": 1.165,
+            "source": "yahoo",
+            "evidence": "Net Interest Income",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Interest Expense was blank. Net interest income, with the sign flipped so an expense is positive."
+          },
+          "sbc": {
+            "value": 1.738,
+            "source": "yahoo",
+            "evidence": "Stock Based Compensation",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "debt": {
+            "value": 5.505,
+            "source": "yahoo",
+            "evidence": "Total Debt",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Yahoo Total Debt can include lease liabilities."
+          },
+          "cash": {
+            "value": 7.493,
+            "source": "yahoo",
+            "evidence": "Cash Cash Equivalents And Short Term Investments",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "gross_margin": {
+            "value": 0.8012130582149015,
+            "source": "yahoo",
+            "evidence": "Gross Profit / Total Revenue",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "note": "Gross profit divided by revenue."
+          },
+          "ebitda_definition": {
+            "value": "before_sbc",
+            "source": "yahoo",
+            "evidence": "rebuilt as Operating Income + D&A + Stock Based Compensation"
+          },
+          "nol": {
+            "value": 0,
+            "source": "assumption",
+            "evidence": "No net operating loss was stated."
+          },
+          "noa": {
+            "value": 0,
+            "source": "assumption",
+            "evidence": "No non-operating assets were stated."
+          }
+        },
+        "market": {
+          "shares": {
+            "value": 25.415072,
+            "source": "yahoo",
+            "evidence": "info.sharesOutstanding",
+            "as_of": "2026-10-29"
+          },
+          "price": {
+            "value": 9.649060517549515,
+            "source": "yahoo",
+            "evidence": "info.previousClose 13.5 CAD x CADUSD=X 0.714745 on 2026-10-29",
+            "as_of": "2026-10-29",
+            "currency": "USD",
+            "note": "Converted from the CAD listing price to the reporting currency."
+          }
+        },
+        "rates": {
+          "risk_free": {
+            "value": 0.05045,
+            "source": "yahoo",
+            "evidence": "^TNX info.previousClose 5.045 on 2026-10-29, percent divided by 100",
+            "as_of": "2026-10-29"
+          },
+          "re": {
+            "value": 0.10545,
+            "source": "assumption",
+            "evidence": "0.055 plus the 10-year yield.",
+            "derived_from": [
+              "rates.risk_free"
+            ]
+          },
+          "gt": {
+            "value": 0.05045,
+            "source": "assumption",
+            "evidence": "Terminal growth equals the 10-year yield.",
+            "derived_from": [
+              "rates.risk_free"
+            ]
+          },
+          "roict": {
+            "value": 0.15,
+            "source": "assumption",
+            "evidence": "Terminal ROIC of 15 percent."
+          },
+          "t": {
+            "value": 0.21,
+            "source": "assumption",
+            "evidence": "US federal statutory tax rate. No marginal rate was stated."
+          },
+          "rd": {
+            "value": 0.21162579473206178,
+            "source": "assumption",
+            "evidence": "Year-0 interest divided by year-0 debt.",
+            "derived_from": [
+              "baseline.interest",
+              "baseline.debt"
+            ]
+          }
+        },
+        "forecast": {
+          "margin_path": {
+            "me": {
+              "value": 0.610911,
+              "source": "article",
+              "evidence": "FY27 EBITDA / FY27 revenue. [C14]"
+            },
+            "mc": {
+              "value": 0.70946,
+              "source": "article",
+              "evidence": "Average of me and FY27 gross margin. [S8]"
+            },
+            "gsnext": {
+              "value": 0.05,
+              "source": "article",
+              "evidence": "First growth after FY27; see S9. [S9]"
+            }
+          },
+          "dwc": {
+            "mode": {
+              "value": "zero",
+              "source": "assumption",
+              "evidence": "No working-capital change was stated."
+            }
+          },
+          "sales_growth": {
+            "value": [
+              0.030907,
+              0.148248
+            ],
+            "source": "article",
+            "evidence": "Organic revenue growth FY26, FY27 (A1, E1). [C13]"
+          },
+          "ebitda_growth": {
+            "value": [
+              0.107187,
+              0.174467
+            ],
+            "source": "article",
+            "evidence": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7). [C13]"
+          },
+          "ebitda_basis": {
+            "value": "organic",
+            "source": "article",
+            "evidence": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates. [S10]"
+          },
+          "acquisition_disclosure": {
+            "status": {
+              "value": "none",
+              "source": "article",
+              "evidence": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize. [G5]"
+            }
+          }
+        },
+        "debt": {
+          "mode": {
+            "value": "target",
+            "source": "assumption",
+            "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+            "derived_from": [
+              "baseline.debt",
+              "baseline.ebitda"
+            ]
+          },
+          "leverage": {
+            "value": 0.21308302690149022,
+            "source": "assumption",
+            "evidence": "Year-0 debt divided by year-0 EBITDA.",
+            "derived_from": [
+              "baseline.debt",
+              "baseline.ebitda"
+            ]
+          },
+          "start_year": {
+            "value": 1,
+            "source": "assumption",
+            "evidence": "The target applies from the first forecast year."
+          }
+        },
+        "distribution": {
+          "mode": {
+            "value": "none",
+            "source": "assumption",
+            "evidence": "No distribution was stated."
+          }
+        },
+        "year": 10
+      },
+      "steps": [
+        {
+          "method": "forecast_ebitda",
+          "args": {
+            "ebitda_ttm": 25.835,
+            "gf": [
+              0.107187,
+              0.174467
+            ],
+            "me": 0.5625294931288833,
+            "mc": 0.70946,
+            "gsnext": 0.05
+          },
+          "pass_financials": true
+        },
+        {
+          "method": "forecast_sbc",
+          "args": {
+            "sbc_f": [
+              1.738
+            ]
+          },
+          "pass_financials": true
+        },
+        {
+          "method": "forecast_capex",
+          "args": {
+            "capex_f": [
+              0.201
+            ],
+            "method": 1
+          },
+          "pass_financials": true
+        },
+        {
+          "method": "load_financials",
+          "args": {},
+          "pass_financials": true
+        },
+        {
+          "method": "fcf_from_ebitda",
+          "args": {}
+        },
+        {
+          "method": "fcf_to_debt",
+          "args": {
+            "leverage": 0.21308302690149022,
+            "year_d": 1
+          }
+        },
+        {
+          "method": "value",
+          "args": {}
+        }
+      ],
+      "notebook_code": "import finagle as cmp\n\n# Scenario copy. Edit this cell; leave the cell above as the base case.\n# First variant: uncomment the margin-path forecast_ebitda and comment the growth-only call.\n\nticker = 'CPH.TO'\nrd = 0.21162579473206178\nre = 0.10545\nt = 0.21\nte = None\nshares = 25.415072\nprice = 9.649060517549515\ngt = 0.05045\nroict = 0.15\nyear = 10\ndividend = 0\n\nco = cmp.company(\n    ticker=ticker, rd=rd, re=re, t=t, te=te,\n    shares=shares, price=price, gt=gt, roict=roict,\n    year=year, dividend=dividend,\n)\n\nn = year + 1\nfinancials = {\n    'date': '2025-12-31',\n    'revenue': [50.451, 52.010289057, 59.72071038912213],  # leave [0] if forecast_ebitda is commented; that call overwrites it\n    'ebitda': [25.835],  # TTM only, or a full list of year + 1 values\n    'capex': [0.201],\n    'dwc': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n    'sbc': [1.738],\n    'tax': [-10.166],\n    'da': [7.232],\n    'debt': [5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505],\n    'interest': [1.165],\n    'cash': 7.493,\n    'nol': 0,\n    'noa': 0,\n}\n\n# gf: explicit EBITDA growth. Interpolated toward gt. Non-NaN prefix = explicit years.\n# Growth-only: ebitda[i+1] = ebitda[i] * (1 + g[i]); revenue is 0.\n# Margin path (me, mc, and gsnext all set), after the explicit gf years:\n#   me = EBITDA/sales at the handoff; revenue = ebitda/me * (1+gs)\n#   mc = incremental EBITDA / incremental sales\n#   gsnext = sales growth in the first year after explicit EBITDA growth, then faded to gt\n#   ebitda[i+1] = ebitda[i] * (1 + (mc/me) * gs[i]); me is updated to the new margin\nebitda_ttm = 25.835\ngf = [0.107187, 0.174467]\n\n# Comment this out when ebitda is already a full list. Keep revenue at [0] in that case.\n# co.forecast_ebitda(ebitda_ttm, gf, financials)\n\nme = 0.5625294931288833\nmc = 0.70946\ngsnext = 0.05\nco.forecast_ebitda(ebitda_ttm, gf, financials, me=me, mc=mc, gsnext=gsnext)\n\nco.forecast_sbc(sbc_f=[1.738], financials=financials)\n# method omitted: 1 when revenue was forecast, 2 when revenue stays 0.\nco.forecast_capex(capex_f=[0.201], method=1, financials=financials)\n\nco.load_financials(financials=financials.copy())\nco.fcf_from_ebitda()\n# co.fcf_from_earnings(payout=1, gf=0, ROE=1)  # alternate path; do not combine with EBITDA\n\n# co.fcf_to_acquire(adjust_cash=False, year_a=1, ebitda_frac=0.10, multiple=10, leverage=3, gnext=0.10, cap_frac=0.20)\n# co.fcf_to_acquire(adjust_cash=False, year_a=2, ebitda_frac=0.10, multiple=10, leverage=3, gnext=0.10, cap_frac=0.20)\n# co.noa_to_dispose(dnoa=0, tax=0, year_dis=1)\nco.fcf_to_debt(leverage=0.21308302690149022, year_d=1)\n\n# Exactly one distribution method:\n# co.fcf_to_allocate(price=price, dp='proportional', buybacks=None)\n# co.fcf_to_buyback(price=price, dp='proportional')\n# co.fcf_to_bs()\n\nco.value()\nco.display_fin()\n",
+      "provenance": [
+        {
+          "path": "baseline.date",
+          "value": "2025-12-31",
+          "source": "yahoo",
+          "evidence": "annual statement column",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.revenue",
+          "value": 50.451,
+          "source": "yahoo",
+          "evidence": "Total Revenue",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.ebitda",
+          "value": 25.835,
+          "source": "yahoo",
+          "evidence": "Operating Income + Depreciation And Amortization + Stock Based Compensation",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.capex",
+          "value": 0.201,
+          "source": "yahoo",
+          "evidence": "Capital Expenditure",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.da",
+          "value": 7.232,
+          "source": "yahoo",
+          "evidence": "Depreciation And Amortization",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.tax",
+          "value": -10.166,
+          "source": "yahoo",
+          "evidence": "Tax Provision",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.interest",
+          "value": 1.165,
+          "source": "yahoo",
+          "evidence": "Net Interest Income",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.sbc",
+          "value": 1.738,
+          "source": "yahoo",
+          "evidence": "Stock Based Compensation",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.debt",
+          "value": 5.505,
+          "source": "yahoo",
+          "evidence": "Total Debt",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.cash",
+          "value": 7.493,
+          "source": "yahoo",
+          "evidence": "Cash Cash Equivalents And Short Term Investments",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.gross_margin",
+          "value": 0.8012130582149015,
+          "source": "yahoo",
+          "evidence": "Gross Profit / Total Revenue",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.ebitda_definition",
+          "value": "before_sbc",
+          "source": "yahoo",
+          "evidence": "rebuilt as Operating Income + D&A + Stock Based Compensation",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.nol",
+          "value": 0,
+          "source": "assumption",
+          "evidence": "No net operating loss was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.noa",
+          "value": 0,
+          "source": "assumption",
+          "evidence": "No non-operating assets were stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "market.shares",
+          "value": 25.415072,
+          "source": "yahoo",
+          "evidence": "info.sharesOutstanding",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": "2026-10-29",
+          "derived_from": null
+        },
+        {
+          "path": "market.price",
+          "value": 9.649060517549515,
+          "source": "yahoo",
+          "evidence": "info.previousClose 13.5 CAD x CADUSD=X 0.714745 on 2026-10-29",
+          "period_end": null,
+          "basis": null,
+          "currency": "USD",
+          "as_of": "2026-10-29",
+          "derived_from": null
+        },
+        {
+          "path": "rates.risk_free",
+          "value": 0.05045,
+          "source": "yahoo",
+          "evidence": "^TNX info.previousClose 5.045 on 2026-10-29, percent divided by 100",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": "2026-10-29",
+          "derived_from": null
+        },
+        {
+          "path": "rates.re",
+          "value": 0.10545,
+          "source": "assumption",
+          "evidence": "0.055 plus the 10-year yield.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "rates.risk_free"
+          ]
+        },
+        {
+          "path": "rates.gt",
+          "value": 0.05045,
+          "source": "assumption",
+          "evidence": "Terminal growth equals the 10-year yield.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "rates.risk_free"
+          ]
+        },
+        {
+          "path": "rates.roict",
+          "value": 0.15,
+          "source": "assumption",
+          "evidence": "Terminal ROIC of 15 percent.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "rates.t",
+          "value": 0.21,
+          "source": "assumption",
+          "evidence": "US federal statutory tax rate. No marginal rate was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "rates.rd",
+          "value": 0.21162579473206178,
+          "source": "assumption",
+          "evidence": "Year-0 interest divided by year-0 debt.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "baseline.interest",
+            "baseline.debt"
+          ]
+        },
+        {
+          "path": "forecast.margin_path.me",
+          "value": 0.610911,
+          "source": "article",
+          "evidence": "FY27 EBITDA / FY27 revenue. [C14]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.margin_path.mc",
+          "value": 0.70946,
+          "source": "article",
+          "evidence": "Average of me and FY27 gross margin. [S8]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.margin_path.gsnext",
+          "value": 0.05,
+          "source": "article",
+          "evidence": "First growth after FY27; see S9. [S9]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.dwc.mode",
+          "value": "zero",
+          "source": "assumption",
+          "evidence": "No working-capital change was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.sales_growth",
+          "value": [
+            0.030907,
+            0.148248
+          ],
+          "source": "article",
+          "evidence": "Organic revenue growth FY26, FY27 (A1, E1). [C13]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.ebitda_growth",
+          "value": [
+            0.107187,
+            0.174467
+          ],
+          "source": "article",
+          "evidence": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7). [C13]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.ebitda_basis",
+          "value": "organic",
+          "source": "article",
+          "evidence": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates. [S10]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.acquisition_disclosure.status",
+          "value": "none",
+          "source": "article",
+          "evidence": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize. [G5]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "debt.mode",
+          "value": "target",
+          "source": "assumption",
+          "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "baseline.debt",
+            "baseline.ebitda"
+          ]
+        },
+        {
+          "path": "debt.leverage",
+          "value": 0.21308302690149022,
+          "source": "assumption",
+          "evidence": "Year-0 debt divided by year-0 EBITDA.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "baseline.debt",
+            "baseline.ebitda"
+          ]
+        },
+        {
+          "path": "debt.start_year",
+          "value": 1,
+          "source": "assumption",
+          "evidence": "The target applies from the first forecast year.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "distribution.mode",
+          "value": "none",
+          "source": "assumption",
+          "evidence": "No distribution was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        }
+      ],
+      "defaults_filled": [
+        "baseline.nol",
+        "baseline.noa",
+        "rates.re",
+        "rates.gt",
+        "rates.roict",
+        "rates.t",
+        "rates.rd",
+        "forecast.dwc.mode",
+        "debt.mode",
+        "debt.leverage",
+        "debt.start_year",
+        "distribution.mode"
+      ]
+    },
+    "bear": {
+      "ok": true,
+      "ticker": "CPH.TO",
+      "path": "ebitda",
+      "value_per_share": 8.91991376114447,
+      "value_per_share_DDM": 8.919913761144471,
+      "vpsbb": 0,
+      "equity": 219.2072504732775,
+      "firm": 224.71225047327752,
+      "fcfet": 16.444175147925446,
+      "terminal_wacc": 0.10744212144777676,
+      "article_price_target": null,
+      "years": [
+        {
+          "year": 0,
+          "date": "2025-12-31",
+          "revenue": 50.451,
+          "ebitda": 25.835,
+          "capex": 0.201,
+          "MnA": 0,
+          "dDebt": 0.0,
+          "fcf": 32.897000000000006,
+          "fcfe": 32.897000000000006,
+          "fcff": 33.817350000000005,
+          "debt": 5.505,
+          "cash": 7.493,
+          "cashBS": 7.493,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 1.2943894079859388,
+          "equity": 219.2072504732775,
+          "firm": 224.71225047327752
+        },
+        {
+          "year": 1,
+          "date": "2026-12-31",
+          "revenue": 51.60471346799999,
+          "ebitda": 27.92303637,
+          "capex": 0.9450293866398576,
+          "MnA": 0,
+          "dDebt": 0.4449251099999998,
+          "fcf": 20.26327921218014,
+          "fcfe": 20.70820432218014,
+          "fcff": 21.18362921218014,
+          "debt": 5.94992511,
+          "cash": 28.20120432218014,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8148001438744751,
+          "equity": 221.61445071350448,
+          "firm": 227.56437582350446
+        },
+        {
+          "year": 2,
+          "date": "2027-12-31",
+          "revenue": 55.01655909893681,
+          "ebitda": 28.816545610803626,
+          "capex": 3.1453273657354917,
+          "MnA": 0,
+          "dDebt": 0.1903916535948893,
+          "fcf": 18.749689155123104,
+          "fcfe": 18.940080808717994,
+          "fcff": 19.744423682823104,
+          "debt": 6.140316763594889,
+          "cash": 47.14128513089813,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7452302637080074,
+          "equity": 226.04361373252556,
+          "firm": 232.18393049612038
+        },
+        {
+          "year": 3,
+          "date": "2028-12-30",
+          "revenue": 57.76738705388366,
+          "ebitda": 30.68985119563856,
+          "capex": 4.919335291307261,
+          "MnA": 0,
+          "dDebt": 0.39916962432809466,
+          "fcf": 18.40701175593371,
+          "fcfe": 18.806181380261805,
+          "fcff": 19.433576793785583,
+          "debt": 6.539486387922984,
+          "cash": 65.94746651115994,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7399617589224932,
+          "equity": 231.0737314203586,
+          "firm": 237.61321780828146
+        },
+        {
+          "year": 4,
+          "date": "2029-12-30",
+          "revenue": 60.659005822099616,
+          "ebitda": 32.659034901937325,
+          "capex": 6.7841391600196905,
+          "MnA": 0,
+          "dDebt": 0.41959962466323564,
+          "fcf": 18.013520409261385,
+          "fcfe": 18.43312003392462,
+          "fcff": 19.10682037240851,
+          "debt": 6.959086012586219,
+          "cash": 84.38058654508457,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7252830145011835,
+          "equity": 237.00733636471082,
+          "firm": 243.96642237729688
+        },
+        {
+          "year": 5,
+          "date": "2030-12-30",
+          "revenue": 63.69878025135958,
+          "ebitda": 34.72911216894008,
+          "capex": 8.744488559465056,
+          "MnA": 0,
+          "dDebt": 0.44109832997291054,
+          "fcf": 17.599871716639864,
+          "fcfe": 18.040970046612774,
+          "fcff": 18.76332218197751,
+          "debt": 7.40018434255913,
+          "cash": 102.42155659169734,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.7098531944592867,
+          "equity": 243.9587899377568,
+          "firm": 251.35897428031578
+        },
+        {
+          "year": 6,
+          "date": "2031-12-30",
+          "revenue": 66.89446843309499,
+          "ebitda": 36.90536623363733,
+          "capex": 10.80538667992355,
+          "MnA": 0,
+          "dDebt": 0.46372280341236216,
+          "fcf": 17.165010333569235,
+          "fcfe": 17.628733136981598,
+          "fcff": 18.402205548768926,
+          "debt": 7.863907145971492,
+          "cash": 120.05028972867893,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.6936330196893244,
+          "equity": 252.05551119971165,
+          "firm": 259.919418345683
+        },
+        {
+          "year": 7,
+          "date": "2032-12-29",
+          "revenue": 70.25424311014717,
+          "ebitda": 39.19336270938585,
+          "capex": 12.972104120215477,
+          "MnA": 0,
+          "dDebt": 0.48753321459243715,
+          "fcf": 16.707824519370245,
+          "fcfe": 17.195357733962684,
+          "fcff": 18.02254694294788,
+          "debt": 8.35144036056393,
+          "cash": 137.2456474626416,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.6765811143073954,
+          "equity": 261.43940712175856,
+          "firm": 269.79084748232236
+        },
+        {
+          "year": 8,
+          "date": "2033-12-29",
+          "revenue": 73.78671427152926,
+          "ebitda": 41.59896497287357,
+          "capex": 15.250193459054781,
+          "MnA": 0,
+          "dDebt": 0.5125930118250395,
+          "fcf": 16.227143064597875,
+          "fcfe": 16.739736076422915,
+          "fcff": 17.623373425332666,
+          "debt": 8.864033372388969,
+          "cash": 153.98538353906451,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.6586538915342406,
+          "equity": 272.2684565263251,
+          "firm": 281.13248989871397
+        },
+        {
+          "year": 9,
+          "date": "2034-12-29",
+          "revenue": 77.50095300117236,
+          "ebitda": 44.12835040504433,
+          "capex": 17.64550463509661,
+          "MnA": 0,
+          "dDebt": 0.5389691040874798,
+          "fcf": 15.721732047956683,
+          "fcfe": 16.260701152044167,
+          "fcff": 17.203659952457716,
+          "debt": 9.403002476476448,
+          "cash": 170.24608469110868,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.6398054332501661,
+          "equity": 284.7184641149819,
+          "firm": 294.1214665914583
+        },
+        {
+          "year": 10,
+          "date": "2035-12-29",
+          "revenue": 81.40651665147519,
+          "ebitda": 46.78802753420961,
+          "capex": 20.164201181350116,
+          "MnA": 0,
+          "dDebt": 0.5667320532632036,
+          "fcf": 15.190291413089959,
+          "fcfe": 15.75702346635316,
+          "fcff": 16.76232653193194,
+          "debt": 9.969734529739652,
+          "cash": 186.00310815746184,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.6199873628669303,
+          "equity": 298.98500268955354,
+          "firm": 308.9547372192931
+        }
+      ],
+      "acquisitions_summary": [],
+      "ebitda_reconciliation": [],
+      "log": [],
+      "sanity_flags": [],
+      "validation": {
+        "errors": [],
+        "warnings": [
+          "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+        ],
+        "missing": []
+      },
+      "case": {
+        "ticker": "CPH.TO",
+        "baseline": {
+          "date": {
+            "value": "2025-12-31",
+            "source": "yahoo",
+            "evidence": "annual statement column",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year"
+          },
+          "revenue": {
+            "value": 50.451,
+            "source": "yahoo",
+            "evidence": "Total Revenue",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "ebitda": {
+            "value": 25.835,
+            "source": "yahoo",
+            "evidence": "Operating Income + Depreciation And Amortization + Stock Based Compensation",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Operating income plus depreciation and amortization plus stock-based compensation. Yahoo's own EBITDA row does not add back SBC."
+          },
+          "capex": {
+            "value": 0.201,
+            "source": "yahoo",
+            "evidence": "Capital Expenditure",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Positive cash outflow."
+          },
+          "da": {
+            "value": 7.232,
+            "source": "yahoo",
+            "evidence": "Depreciation And Amortization",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "tax": {
+            "value": -10.166,
+            "source": "yahoo",
+            "evidence": "Tax Provision",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "interest": {
+            "value": 1.165,
+            "source": "yahoo",
+            "evidence": "Net Interest Income",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Interest Expense was blank. Net interest income, with the sign flipped so an expense is positive."
+          },
+          "sbc": {
+            "value": 1.738,
+            "source": "yahoo",
+            "evidence": "Stock Based Compensation",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "debt": {
+            "value": 5.505,
+            "source": "yahoo",
+            "evidence": "Total Debt",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Yahoo Total Debt can include lease liabilities."
+          },
+          "cash": {
+            "value": 7.493,
+            "source": "yahoo",
+            "evidence": "Cash Cash Equivalents And Short Term Investments",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "gross_margin": {
+            "value": 0.8012130582149015,
+            "source": "yahoo",
+            "evidence": "Gross Profit / Total Revenue",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "note": "Gross profit divided by revenue."
+          },
+          "ebitda_definition": {
+            "value": "before_sbc",
+            "source": "yahoo",
+            "evidence": "rebuilt as Operating Income + D&A + Stock Based Compensation"
+          },
+          "nol": {
+            "value": 0,
+            "source": "assumption",
+            "evidence": "No net operating loss was stated."
+          },
+          "noa": {
+            "value": 0,
+            "source": "assumption",
+            "evidence": "No non-operating assets were stated."
+          }
+        },
+        "market": {
+          "shares": {
+            "value": 25.415072,
+            "source": "yahoo",
+            "evidence": "info.sharesOutstanding",
+            "as_of": "2026-10-29"
+          },
+          "price": {
+            "value": 9.649060517549515,
+            "source": "yahoo",
+            "evidence": "info.previousClose 13.5 CAD x CADUSD=X 0.714745 on 2026-10-29",
+            "as_of": "2026-10-29",
+            "currency": "USD",
+            "note": "Converted from the CAD listing price to the reporting currency."
+          }
+        },
+        "rates": {
+          "risk_free": {
+            "value": 0.05045,
+            "source": "yahoo",
+            "evidence": "^TNX info.previousClose 5.045 on 2026-10-29, percent divided by 100",
+            "as_of": "2026-10-29"
+          },
+          "re": {
+            "value": 0.10545,
+            "source": "assumption",
+            "evidence": "0.055 plus the 10-year yield.",
+            "derived_from": [
+              "rates.risk_free"
+            ]
+          },
+          "gt": {
+            "value": 0.05045,
+            "source": "assumption",
+            "evidence": "Terminal growth equals the 10-year yield.",
+            "derived_from": [
+              "rates.risk_free"
+            ]
+          },
+          "roict": {
+            "value": 0.15,
+            "source": "assumption",
+            "evidence": "Terminal ROIC of 15 percent."
+          },
+          "t": {
+            "value": 0.21,
+            "source": "assumption",
+            "evidence": "US federal statutory tax rate. No marginal rate was stated."
+          },
+          "rd": {
+            "value": 0.21162579473206178,
+            "source": "assumption",
+            "evidence": "Year-0 interest divided by year-0 debt.",
+            "derived_from": [
+              "baseline.interest",
+              "baseline.debt"
+            ]
+          }
+        },
+        "forecast": {
+          "margin_path": {
+            "me": {
+              "value": 0.568828,
+              "source": "article",
+              "evidence": "FY27 EBITDA / FY27 revenue. [C14]"
+            },
+            "mc": {
+              "value": 0.680997,
+              "source": "article",
+              "evidence": "Average of me and FY27 gross margin. [S8]"
+            },
+            "gsnext": {
+              "value": 0.05,
+              "source": "article",
+              "evidence": "First growth after FY27; see S9. [S9]"
+            }
+          },
+          "dwc": {
+            "mode": {
+              "value": "zero",
+              "source": "assumption",
+              "evidence": "No working-capital change was stated."
+            }
+          },
+          "sales_growth": {
+            "value": [
+              0.022868,
+              0.066115
+            ],
+            "source": "article",
+            "evidence": "Organic revenue growth FY26, FY27 (A1, E1). [C13]"
+          },
+          "ebitda_growth": {
+            "value": [
+              0.080822,
+              0.031999
+            ],
+            "source": "article",
+            "evidence": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7). [C13]"
+          },
+          "ebitda_basis": {
+            "value": "organic",
+            "source": "article",
+            "evidence": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates. [S10]"
+          },
+          "acquisition_disclosure": {
+            "status": {
+              "value": "none",
+              "source": "article",
+              "evidence": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize. [G5]"
+            }
+          }
+        },
+        "debt": {
+          "mode": {
+            "value": "target",
+            "source": "assumption",
+            "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+            "derived_from": [
+              "baseline.debt",
+              "baseline.ebitda"
+            ]
+          },
+          "leverage": {
+            "value": 0.21308302690149022,
+            "source": "assumption",
+            "evidence": "Year-0 debt divided by year-0 EBITDA.",
+            "derived_from": [
+              "baseline.debt",
+              "baseline.ebitda"
+            ]
+          },
+          "start_year": {
+            "value": 1,
+            "source": "assumption",
+            "evidence": "The target applies from the first forecast year."
+          }
+        },
+        "distribution": {
+          "mode": {
+            "value": "none",
+            "source": "assumption",
+            "evidence": "No distribution was stated."
+          }
+        },
+        "year": 10
+      },
+      "steps": [
+        {
+          "method": "forecast_ebitda",
+          "args": {
+            "ebitda_ttm": 25.835,
+            "gf": [
+              0.080822,
+              0.031999
+            ],
+            "me": 0.5237794962600724,
+            "mc": 0.680997,
+            "gsnext": 0.05
+          },
+          "pass_financials": true
+        },
+        {
+          "method": "forecast_sbc",
+          "args": {
+            "sbc_f": [
+              1.738
+            ]
+          },
+          "pass_financials": true
+        },
+        {
+          "method": "forecast_capex",
+          "args": {
+            "capex_f": [
+              0.201
+            ],
+            "method": 1
+          },
+          "pass_financials": true
+        },
+        {
+          "method": "load_financials",
+          "args": {},
+          "pass_financials": true
+        },
+        {
+          "method": "fcf_from_ebitda",
+          "args": {}
+        },
+        {
+          "method": "fcf_to_debt",
+          "args": {
+            "leverage": 0.21308302690149022,
+            "year_d": 1
+          }
+        },
+        {
+          "method": "value",
+          "args": {}
+        }
+      ],
+      "notebook_code": "import finagle as cmp\n\n# Scenario copy. Edit this cell; leave the cell above as the base case.\n# First variant: uncomment the margin-path forecast_ebitda and comment the growth-only call.\n\nticker = 'CPH.TO'\nrd = 0.21162579473206178\nre = 0.10545\nt = 0.21\nte = None\nshares = 25.415072\nprice = 9.649060517549515\ngt = 0.05045\nroict = 0.15\nyear = 10\ndividend = 0\n\nco = cmp.company(\n    ticker=ticker, rd=rd, re=re, t=t, te=te,\n    shares=shares, price=price, gt=gt, roict=roict,\n    year=year, dividend=dividend,\n)\n\nn = year + 1\nfinancials = {\n    'date': '2025-12-31',\n    'revenue': [50.451, 51.60471346799999, 55.01655909893681],  # leave [0] if forecast_ebitda is commented; that call overwrites it\n    'ebitda': [25.835],  # TTM only, or a full list of year + 1 values\n    'capex': [0.201],\n    'dwc': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n    'sbc': [1.738],\n    'tax': [-10.166],\n    'da': [7.232],\n    'debt': [5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505],\n    'interest': [1.165],\n    'cash': 7.493,\n    'nol': 0,\n    'noa': 0,\n}\n\n# gf: explicit EBITDA growth. Interpolated toward gt. Non-NaN prefix = explicit years.\n# Growth-only: ebitda[i+1] = ebitda[i] * (1 + g[i]); revenue is 0.\n# Margin path (me, mc, and gsnext all set), after the explicit gf years:\n#   me = EBITDA/sales at the handoff; revenue = ebitda/me * (1+gs)\n#   mc = incremental EBITDA / incremental sales\n#   gsnext = sales growth in the first year after explicit EBITDA growth, then faded to gt\n#   ebitda[i+1] = ebitda[i] * (1 + (mc/me) * gs[i]); me is updated to the new margin\nebitda_ttm = 25.835\ngf = [0.080822, 0.031999]\n\n# Comment this out when ebitda is already a full list. Keep revenue at [0] in that case.\n# co.forecast_ebitda(ebitda_ttm, gf, financials)\n\nme = 0.5237794962600724\nmc = 0.680997\ngsnext = 0.05\nco.forecast_ebitda(ebitda_ttm, gf, financials, me=me, mc=mc, gsnext=gsnext)\n\nco.forecast_sbc(sbc_f=[1.738], financials=financials)\n# method omitted: 1 when revenue was forecast, 2 when revenue stays 0.\nco.forecast_capex(capex_f=[0.201], method=1, financials=financials)\n\nco.load_financials(financials=financials.copy())\nco.fcf_from_ebitda()\n# co.fcf_from_earnings(payout=1, gf=0, ROE=1)  # alternate path; do not combine with EBITDA\n\n# co.fcf_to_acquire(adjust_cash=False, year_a=1, ebitda_frac=0.10, multiple=10, leverage=3, gnext=0.10, cap_frac=0.20)\n# co.fcf_to_acquire(adjust_cash=False, year_a=2, ebitda_frac=0.10, multiple=10, leverage=3, gnext=0.10, cap_frac=0.20)\n# co.noa_to_dispose(dnoa=0, tax=0, year_dis=1)\nco.fcf_to_debt(leverage=0.21308302690149022, year_d=1)\n\n# Exactly one distribution method:\n# co.fcf_to_allocate(price=price, dp='proportional', buybacks=None)\n# co.fcf_to_buyback(price=price, dp='proportional')\n# co.fcf_to_bs()\n\nco.value()\nco.display_fin()\n",
+      "provenance": [
+        {
+          "path": "baseline.date",
+          "value": "2025-12-31",
+          "source": "yahoo",
+          "evidence": "annual statement column",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.revenue",
+          "value": 50.451,
+          "source": "yahoo",
+          "evidence": "Total Revenue",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.ebitda",
+          "value": 25.835,
+          "source": "yahoo",
+          "evidence": "Operating Income + Depreciation And Amortization + Stock Based Compensation",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.capex",
+          "value": 0.201,
+          "source": "yahoo",
+          "evidence": "Capital Expenditure",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.da",
+          "value": 7.232,
+          "source": "yahoo",
+          "evidence": "Depreciation And Amortization",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.tax",
+          "value": -10.166,
+          "source": "yahoo",
+          "evidence": "Tax Provision",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.interest",
+          "value": 1.165,
+          "source": "yahoo",
+          "evidence": "Net Interest Income",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.sbc",
+          "value": 1.738,
+          "source": "yahoo",
+          "evidence": "Stock Based Compensation",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.debt",
+          "value": 5.505,
+          "source": "yahoo",
+          "evidence": "Total Debt",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.cash",
+          "value": 7.493,
+          "source": "yahoo",
+          "evidence": "Cash Cash Equivalents And Short Term Investments",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.gross_margin",
+          "value": 0.8012130582149015,
+          "source": "yahoo",
+          "evidence": "Gross Profit / Total Revenue",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.ebitda_definition",
+          "value": "before_sbc",
+          "source": "yahoo",
+          "evidence": "rebuilt as Operating Income + D&A + Stock Based Compensation",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.nol",
+          "value": 0,
+          "source": "assumption",
+          "evidence": "No net operating loss was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.noa",
+          "value": 0,
+          "source": "assumption",
+          "evidence": "No non-operating assets were stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "market.shares",
+          "value": 25.415072,
+          "source": "yahoo",
+          "evidence": "info.sharesOutstanding",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": "2026-10-29",
+          "derived_from": null
+        },
+        {
+          "path": "market.price",
+          "value": 9.649060517549515,
+          "source": "yahoo",
+          "evidence": "info.previousClose 13.5 CAD x CADUSD=X 0.714745 on 2026-10-29",
+          "period_end": null,
+          "basis": null,
+          "currency": "USD",
+          "as_of": "2026-10-29",
+          "derived_from": null
+        },
+        {
+          "path": "rates.risk_free",
+          "value": 0.05045,
+          "source": "yahoo",
+          "evidence": "^TNX info.previousClose 5.045 on 2026-10-29, percent divided by 100",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": "2026-10-29",
+          "derived_from": null
+        },
+        {
+          "path": "rates.re",
+          "value": 0.10545,
+          "source": "assumption",
+          "evidence": "0.055 plus the 10-year yield.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "rates.risk_free"
+          ]
+        },
+        {
+          "path": "rates.gt",
+          "value": 0.05045,
+          "source": "assumption",
+          "evidence": "Terminal growth equals the 10-year yield.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "rates.risk_free"
+          ]
+        },
+        {
+          "path": "rates.roict",
+          "value": 0.15,
+          "source": "assumption",
+          "evidence": "Terminal ROIC of 15 percent.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "rates.t",
+          "value": 0.21,
+          "source": "assumption",
+          "evidence": "US federal statutory tax rate. No marginal rate was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "rates.rd",
+          "value": 0.21162579473206178,
+          "source": "assumption",
+          "evidence": "Year-0 interest divided by year-0 debt.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "baseline.interest",
+            "baseline.debt"
+          ]
+        },
+        {
+          "path": "forecast.margin_path.me",
+          "value": 0.568828,
+          "source": "article",
+          "evidence": "FY27 EBITDA / FY27 revenue. [C14]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.margin_path.mc",
+          "value": 0.680997,
+          "source": "article",
+          "evidence": "Average of me and FY27 gross margin. [S8]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.margin_path.gsnext",
+          "value": 0.05,
+          "source": "article",
+          "evidence": "First growth after FY27; see S9. [S9]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.dwc.mode",
+          "value": "zero",
+          "source": "assumption",
+          "evidence": "No working-capital change was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.sales_growth",
+          "value": [
+            0.022868,
+            0.066115
+          ],
+          "source": "article",
+          "evidence": "Organic revenue growth FY26, FY27 (A1, E1). [C13]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.ebitda_growth",
+          "value": [
+            0.080822,
+            0.031999
+          ],
+          "source": "article",
+          "evidence": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7). [C13]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.ebitda_basis",
+          "value": "organic",
+          "source": "article",
+          "evidence": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates. [S10]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.acquisition_disclosure.status",
+          "value": "none",
+          "source": "article",
+          "evidence": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize. [G5]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "debt.mode",
+          "value": "target",
+          "source": "assumption",
+          "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "baseline.debt",
+            "baseline.ebitda"
+          ]
+        },
+        {
+          "path": "debt.leverage",
+          "value": 0.21308302690149022,
+          "source": "assumption",
+          "evidence": "Year-0 debt divided by year-0 EBITDA.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "baseline.debt",
+            "baseline.ebitda"
+          ]
+        },
+        {
+          "path": "debt.start_year",
+          "value": 1,
+          "source": "assumption",
+          "evidence": "The target applies from the first forecast year.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "distribution.mode",
+          "value": "none",
+          "source": "assumption",
+          "evidence": "No distribution was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        }
+      ],
+      "defaults_filled": [
+        "baseline.nol",
+        "baseline.noa",
+        "rates.re",
+        "rates.gt",
+        "rates.roict",
+        "rates.t",
+        "rates.rd",
+        "forecast.dwc.mode",
+        "debt.mode",
+        "debt.leverage",
+        "debt.start_year",
+        "distribution.mode"
+      ]
+    },
+    "bull": {
+      "ok": true,
+      "ticker": "CPH.TO",
+      "path": "ebitda",
+      "value_per_share": 11.531941978440313,
+      "value_per_share_DDM": 11.531941978440312,
+      "vpsbb": 0,
+      "equity": 285.592135681883,
+      "firm": 291.09713568188295,
+      "fcfet": 23.105508770434447,
+      "terminal_wacc": 0.10737554256179892,
+      "article_price_target": null,
+      "years": [
+        {
+          "year": 0,
+          "date": "2025-12-31",
+          "revenue": 50.451,
+          "ebitda": 25.835,
+          "capex": 0.201,
+          "MnA": 0,
+          "dDebt": 0.0,
+          "fcf": 32.897000000000006,
+          "fcfe": 32.897000000000006,
+          "fcff": 33.817350000000005,
+          "debt": 5.505,
+          "cash": 7.493,
+          "cashBS": 7.493,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 1.2943894079859388,
+          "equity": 285.592135681883,
+          "firm": 291.09713568188295
+        },
+        {
+          "year": 1,
+          "date": "2026-12-31",
+          "revenue": 52.314559038,
+          "ebitda": 28.83113662,
+          "capex": 1.1755956863041233,
+          "MnA": 0,
+          "dDebt": 0.6384258599999999,
+          "fcf": 20.723218847415875,
+          "fcfe": 21.361644707415877,
+          "fcff": 21.643568847415875,
+          "debt": 6.14342586,
+          "cash": 28.85464470741588,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.840510886902696,
+          "equity": 294.34618168212165,
+          "firm": 300.4896075421217
+        },
+        {
+          "year": 2,
+          "date": "2027-12-31",
+          "revenue": 67.81311335492076,
+          "ebitda": 39.93123954324648,
+          "capex": 9.280959601917907,
+          "MnA": 0,
+          "dDebt": 2.365243529803439,
+          "fcf": 21.156829308154663,
+          "fcfe": 23.522072837958103,
+          "fcff": 22.183914138354663,
+          "debt": 8.508669389803439,
+          "cash": 52.37671754537398,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.9255166712869475,
+          "equity": 301.8629137025433,
+          "firm": 310.3715830923467
+        },
+        {
+          "year": 3,
+          "date": "2028-12-30",
+          "revenue": 71.2037690226668,
+          "ebitda": 42.385219801466334,
+          "capex": 11.054189384363857,
+          "MnA": 0,
+          "dDebt": 0.5229015413779887,
+          "fcf": 20.898462057170505,
+          "fcfe": 21.421363598548496,
+          "fcff": 22.320978655336827,
+          "debt": 9.031570931181427,
+          "cash": 73.79808114392247,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8428606300445852,
+          "equity": 312.272994353928,
+          "firm": 321.30456528510945
+        },
+        {
+          "year": 4,
+          "date": "2029-12-30",
+          "revenue": 74.76796268580766,
+          "ebitda": 44.96479783677721,
+          "capex": 12.91817528361261,
+          "MnA": 0,
+          "dDebt": 0.5496642958926401,
+          "fcf": 20.955120738596495,
+          "fcfe": 21.504785034489135,
+          "fcff": 22.465058305628798,
+          "debt": 9.581235227074067,
+          "cash": 95.3028661784116,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8461429908398109,
+          "equity": 323.69739657406063,
+          "firm": 333.2786318011347
+        },
+        {
+          "year": 5,
+          "date": "2030-12-30",
+          "revenue": 78.5147722159002,
+          "ebitda": 47.67654374056262,
+          "capex": 14.877664803917986,
+          "MnA": 0,
+          "dDebt": 0.5778270253663127,
+          "fcf": 21.01468720449564,
+          "fcfe": 21.59251422986195,
+          "fcff": 22.616520054856696,
+          "debt": 10.15906225244038,
+          "cash": 116.89538040827355,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8495948478864019,
+          "equity": 336.2387728129334,
+          "firm": 346.3978350653737
+        },
+        {
+          "year": 6,
+          "date": "2031-12-30",
+          "revenue": 82.45376019450664,
+          "ebitda": 50.527378412103076,
+          "capex": 16.937658940982534,
+          "MnA": 0,
+          "dDebt": 0.6074644810075558,
+          "fcf": 21.0773139605621,
+          "fcfe": 21.68477844156966,
+          "fcff": 22.775750462657196,
+          "debt": 10.766526733447936,
+          "cash": 138.5801588498432,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8532251430005652,
+          "equity": 350.0103729644876,
+          "firm": 360.7768996979355
+        },
+        {
+          "year": 7,
+          "date": "2032-12-29",
+          "revenue": 86.59500030027574,
+          "ebitda": 53.52459265617325,
+          "capex": 19.103425981754008,
+          "MnA": 0,
+          "dDebt": 0.6386554833987343,
+          "fcf": 21.143161675942654,
+          "fcfe": 21.78181715934139,
+          "fcff": 22.943156749353882,
+          "debt": 11.40518221684667,
+          "cash": 160.3619760091846,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8570432993202377,
+          "equity": 365.13714963425144,
+          "firm": 376.5423318510981
+        },
+        {
+          "year": 8,
+          "date": "2033-12-29",
+          "revenue": 90.94910515912399,
+          "ebitda": 56.67586733955494,
+          "capex": 21.38051606938735,
+          "MnA": 0,
+          "dDebt": 0.6714831481330066,
+          "fcf": 21.21239962872209,
+          "fcfe": 21.883882776855096,
+          "fcff": 23.11916792177837,
+          "debt": 12.076665364979677,
+          "cash": 182.2458587860397,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8610592477115586,
+          "equity": 381.75697928632815,
+          "firm": 393.8336446513078
+        },
+        {
+          "year": 9,
+          "date": "2034-12-29",
+          "revenue": 95.52725574007138,
+          "ebitda": 59.98929466621446,
+          "capex": 23.77477657654605,
+          "MnA": 0,
+          "dDebt": 0.7060351241827227,
+          "fcf": 21.285206176167442,
+          "fcfe": 21.991241300350165,
+          "fcff": 23.304235961573262,
+          "debt": 12.7827004891624,
+          "cash": 204.23710008638986,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8652834546504596,
+          "equity": 400.0220114517213,
+          "firm": 412.8047119408836
+        },
+        {
+          "year": 10,
+          "date": "2035-12-29",
+          "revenue": 100.3412323840226,
+          "ebitda": 63.473400634320875,
+          "capex": 26.292368332693922,
+          "MnA": 0,
+          "dDebt": 0.7424038457296618,
+          "fcf": 21.361769251131182,
+          "fcfe": 22.104173096860844,
+          "fcff": 23.4988370795055,
+          "debt": 13.525104334892061,
+          "cash": 226.3412731832507,
+          "cashBS": 0.0,
+          "shares": 25.415072,
+          "price": 9.649060517549515,
+          "dividend": 0.8697269516632038,
+          "equity": 420.1001594624445,
+          "firm": 433.6252637973364
+        }
+      ],
+      "acquisitions_summary": [],
+      "ebitda_reconciliation": [],
+      "log": [],
+      "sanity_flags": [],
+      "validation": {
+        "errors": [],
+        "warnings": [
+          "average EBITDA growth is 25.0% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+          "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+        ],
+        "missing": []
+      },
+      "case": {
+        "ticker": "CPH.TO",
+        "baseline": {
+          "date": {
+            "value": "2025-12-31",
+            "source": "yahoo",
+            "evidence": "annual statement column",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year"
+          },
+          "revenue": {
+            "value": 50.451,
+            "source": "yahoo",
+            "evidence": "Total Revenue",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "ebitda": {
+            "value": 25.835,
+            "source": "yahoo",
+            "evidence": "Operating Income + Depreciation And Amortization + Stock Based Compensation",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Operating income plus depreciation and amortization plus stock-based compensation. Yahoo's own EBITDA row does not add back SBC."
+          },
+          "capex": {
+            "value": 0.201,
+            "source": "yahoo",
+            "evidence": "Capital Expenditure",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Positive cash outflow."
+          },
+          "da": {
+            "value": 7.232,
+            "source": "yahoo",
+            "evidence": "Depreciation And Amortization",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "tax": {
+            "value": -10.166,
+            "source": "yahoo",
+            "evidence": "Tax Provision",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "interest": {
+            "value": 1.165,
+            "source": "yahoo",
+            "evidence": "Net Interest Income",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Interest Expense was blank. Net interest income, with the sign flipped so an expense is positive."
+          },
+          "sbc": {
+            "value": 1.738,
+            "source": "yahoo",
+            "evidence": "Stock Based Compensation",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "debt": {
+            "value": 5.505,
+            "source": "yahoo",
+            "evidence": "Total Debt",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD",
+            "note": "Yahoo Total Debt can include lease liabilities."
+          },
+          "cash": {
+            "value": 7.493,
+            "source": "yahoo",
+            "evidence": "Cash Cash Equivalents And Short Term Investments",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "currency": "USD"
+          },
+          "gross_margin": {
+            "value": 0.8012130582149015,
+            "source": "yahoo",
+            "evidence": "Gross Profit / Total Revenue",
+            "period_end": "2025-12-31",
+            "basis": "fiscal_year",
+            "note": "Gross profit divided by revenue."
+          },
+          "ebitda_definition": {
+            "value": "before_sbc",
+            "source": "yahoo",
+            "evidence": "rebuilt as Operating Income + D&A + Stock Based Compensation"
+          },
+          "nol": {
+            "value": 0,
+            "source": "assumption",
+            "evidence": "No net operating loss was stated."
+          },
+          "noa": {
+            "value": 0,
+            "source": "assumption",
+            "evidence": "No non-operating assets were stated."
+          }
+        },
+        "market": {
+          "shares": {
+            "value": 25.415072,
+            "source": "yahoo",
+            "evidence": "info.sharesOutstanding",
+            "as_of": "2026-10-29"
+          },
+          "price": {
+            "value": 9.649060517549515,
+            "source": "yahoo",
+            "evidence": "info.previousClose 13.5 CAD x CADUSD=X 0.714745 on 2026-10-29",
+            "as_of": "2026-10-29",
+            "currency": "USD",
+            "note": "Converted from the CAD listing price to the reporting currency."
+          }
+        },
+        "rates": {
+          "risk_free": {
+            "value": 0.05045,
+            "source": "yahoo",
+            "evidence": "^TNX info.previousClose 5.045 on 2026-10-29, percent divided by 100",
+            "as_of": "2026-10-29"
+          },
+          "re": {
+            "value": 0.10545,
+            "source": "assumption",
+            "evidence": "0.055 plus the 10-year yield.",
+            "derived_from": [
+              "rates.risk_free"
+            ]
+          },
+          "gt": {
+            "value": 0.05045,
+            "source": "assumption",
+            "evidence": "Terminal growth equals the 10-year yield.",
+            "derived_from": [
+              "rates.risk_free"
+            ]
+          },
+          "roict": {
+            "value": 0.15,
+            "source": "assumption",
+            "evidence": "Terminal ROIC of 15 percent."
+          },
+          "t": {
+            "value": 0.21,
+            "source": "assumption",
+            "evidence": "US federal statutory tax rate. No marginal rate was stated."
+          },
+          "rd": {
+            "value": 0.21162579473206178,
+            "source": "assumption",
+            "evidence": "Year-0 interest divided by year-0 debt.",
+            "derived_from": [
+              "baseline.interest",
+              "baseline.debt"
+            ]
+          }
+        },
+        "forecast": {
+          "margin_path": {
+            "me": {
+              "value": 0.639487,
+              "source": "article",
+              "evidence": "FY27 EBITDA / FY27 revenue. [C14]"
+            },
+            "mc": {
+              "value": 0.723748,
+              "source": "article",
+              "evidence": "Average of me and FY27 gross margin. [S8]"
+            },
+            "gsnext": {
+              "value": 0.05,
+              "source": "article",
+              "evidence": "First growth after FY27; see S9. [S9]"
+            }
+          },
+          "dwc": {
+            "mode": {
+              "value": "zero",
+              "source": "assumption",
+              "evidence": "No working-capital change was stated."
+            }
+          },
+          "sales_growth": {
+            "value": [
+              0.036938,
+              0.296257
+            ],
+            "source": "article",
+            "evidence": "Organic revenue growth FY26, FY27 (A1, E1). [C13]"
+          },
+          "ebitda_growth": {
+            "value": [
+              0.115972,
+              0.385004
+            ],
+            "source": "article",
+            "evidence": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7). [C13]"
+          },
+          "ebitda_basis": {
+            "value": "organic",
+            "source": "article",
+            "evidence": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates. [S10]"
+          },
+          "acquisition_disclosure": {
+            "status": {
+              "value": "none",
+              "source": "article",
+              "evidence": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize. [G5]"
+            }
+          }
+        },
+        "debt": {
+          "mode": {
+            "value": "target",
+            "source": "assumption",
+            "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+            "derived_from": [
+              "baseline.debt",
+              "baseline.ebitda"
+            ]
+          },
+          "leverage": {
+            "value": 0.21308302690149022,
+            "source": "assumption",
+            "evidence": "Year-0 debt divided by year-0 EBITDA.",
+            "derived_from": [
+              "baseline.debt",
+              "baseline.ebitda"
+            ]
+          },
+          "start_year": {
+            "value": 1,
+            "source": "assumption",
+            "evidence": "The target applies from the first forecast year."
+          }
+        },
+        "distribution": {
+          "mode": {
+            "value": "none",
+            "source": "assumption",
+            "evidence": "No distribution was stated."
+          }
+        },
+        "year": 10
+      },
+      "steps": [
+        {
+          "method": "forecast_ebitda",
+          "args": {
+            "ebitda_ttm": 25.835,
+            "gf": [
+              0.115972,
+              0.385004
+            ],
+            "me": 0.5888424460657642,
+            "mc": 0.723748,
+            "gsnext": 0.05
+          },
+          "pass_financials": true
+        },
+        {
+          "method": "forecast_sbc",
+          "args": {
+            "sbc_f": [
+              1.738
+            ]
+          },
+          "pass_financials": true
+        },
+        {
+          "method": "forecast_capex",
+          "args": {
+            "capex_f": [
+              0.201
+            ],
+            "method": 1
+          },
+          "pass_financials": true
+        },
+        {
+          "method": "load_financials",
+          "args": {},
+          "pass_financials": true
+        },
+        {
+          "method": "fcf_from_ebitda",
+          "args": {}
+        },
+        {
+          "method": "fcf_to_debt",
+          "args": {
+            "leverage": 0.21308302690149022,
+            "year_d": 1
+          }
+        },
+        {
+          "method": "value",
+          "args": {}
+        }
+      ],
+      "notebook_code": "import finagle as cmp\n\n# Scenario copy. Edit this cell; leave the cell above as the base case.\n# First variant: uncomment the margin-path forecast_ebitda and comment the growth-only call.\n\nticker = 'CPH.TO'\nrd = 0.21162579473206178\nre = 0.10545\nt = 0.21\nte = None\nshares = 25.415072\nprice = 9.649060517549515\ngt = 0.05045\nroict = 0.15\nyear = 10\ndividend = 0\n\nco = cmp.company(\n    ticker=ticker, rd=rd, re=re, t=t, te=te,\n    shares=shares, price=price, gt=gt, roict=roict,\n    year=year, dividend=dividend,\n)\n\nn = year + 1\nfinancials = {\n    'date': '2025-12-31',\n    'revenue': [50.451, 52.314559038, 67.81311335492076],  # leave [0] if forecast_ebitda is commented; that call overwrites it\n    'ebitda': [25.835],  # TTM only, or a full list of year + 1 values\n    'capex': [0.201],\n    'dwc': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n    'sbc': [1.738],\n    'tax': [-10.166],\n    'da': [7.232],\n    'debt': [5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505, 5.505],\n    'interest': [1.165],\n    'cash': 7.493,\n    'nol': 0,\n    'noa': 0,\n}\n\n# gf: explicit EBITDA growth. Interpolated toward gt. Non-NaN prefix = explicit years.\n# Growth-only: ebitda[i+1] = ebitda[i] * (1 + g[i]); revenue is 0.\n# Margin path (me, mc, and gsnext all set), after the explicit gf years:\n#   me = EBITDA/sales at the handoff; revenue = ebitda/me * (1+gs)\n#   mc = incremental EBITDA / incremental sales\n#   gsnext = sales growth in the first year after explicit EBITDA growth, then faded to gt\n#   ebitda[i+1] = ebitda[i] * (1 + (mc/me) * gs[i]); me is updated to the new margin\nebitda_ttm = 25.835\ngf = [0.115972, 0.385004]\n\n# Comment this out when ebitda is already a full list. Keep revenue at [0] in that case.\n# co.forecast_ebitda(ebitda_ttm, gf, financials)\n\nme = 0.5888424460657642\nmc = 0.723748\ngsnext = 0.05\nco.forecast_ebitda(ebitda_ttm, gf, financials, me=me, mc=mc, gsnext=gsnext)\n\nco.forecast_sbc(sbc_f=[1.738], financials=financials)\n# method omitted: 1 when revenue was forecast, 2 when revenue stays 0.\nco.forecast_capex(capex_f=[0.201], method=1, financials=financials)\n\nco.load_financials(financials=financials.copy())\nco.fcf_from_ebitda()\n# co.fcf_from_earnings(payout=1, gf=0, ROE=1)  # alternate path; do not combine with EBITDA\n\n# co.fcf_to_acquire(adjust_cash=False, year_a=1, ebitda_frac=0.10, multiple=10, leverage=3, gnext=0.10, cap_frac=0.20)\n# co.fcf_to_acquire(adjust_cash=False, year_a=2, ebitda_frac=0.10, multiple=10, leverage=3, gnext=0.10, cap_frac=0.20)\n# co.noa_to_dispose(dnoa=0, tax=0, year_dis=1)\nco.fcf_to_debt(leverage=0.21308302690149022, year_d=1)\n\n# Exactly one distribution method:\n# co.fcf_to_allocate(price=price, dp='proportional', buybacks=None)\n# co.fcf_to_buyback(price=price, dp='proportional')\n# co.fcf_to_bs()\n\nco.value()\nco.display_fin()\n",
+      "provenance": [
+        {
+          "path": "baseline.date",
+          "value": "2025-12-31",
+          "source": "yahoo",
+          "evidence": "annual statement column",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.revenue",
+          "value": 50.451,
+          "source": "yahoo",
+          "evidence": "Total Revenue",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.ebitda",
+          "value": 25.835,
+          "source": "yahoo",
+          "evidence": "Operating Income + Depreciation And Amortization + Stock Based Compensation",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.capex",
+          "value": 0.201,
+          "source": "yahoo",
+          "evidence": "Capital Expenditure",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.da",
+          "value": 7.232,
+          "source": "yahoo",
+          "evidence": "Depreciation And Amortization",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.tax",
+          "value": -10.166,
+          "source": "yahoo",
+          "evidence": "Tax Provision",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.interest",
+          "value": 1.165,
+          "source": "yahoo",
+          "evidence": "Net Interest Income",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.sbc",
+          "value": 1.738,
+          "source": "yahoo",
+          "evidence": "Stock Based Compensation",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.debt",
+          "value": 5.505,
+          "source": "yahoo",
+          "evidence": "Total Debt",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.cash",
+          "value": 7.493,
+          "source": "yahoo",
+          "evidence": "Cash Cash Equivalents And Short Term Investments",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": "USD",
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.gross_margin",
+          "value": 0.8012130582149015,
+          "source": "yahoo",
+          "evidence": "Gross Profit / Total Revenue",
+          "period_end": "2025-12-31",
+          "basis": "fiscal_year",
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.ebitda_definition",
+          "value": "before_sbc",
+          "source": "yahoo",
+          "evidence": "rebuilt as Operating Income + D&A + Stock Based Compensation",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.nol",
+          "value": 0,
+          "source": "assumption",
+          "evidence": "No net operating loss was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "baseline.noa",
+          "value": 0,
+          "source": "assumption",
+          "evidence": "No non-operating assets were stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "market.shares",
+          "value": 25.415072,
+          "source": "yahoo",
+          "evidence": "info.sharesOutstanding",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": "2026-10-29",
+          "derived_from": null
+        },
+        {
+          "path": "market.price",
+          "value": 9.649060517549515,
+          "source": "yahoo",
+          "evidence": "info.previousClose 13.5 CAD x CADUSD=X 0.714745 on 2026-10-29",
+          "period_end": null,
+          "basis": null,
+          "currency": "USD",
+          "as_of": "2026-10-29",
+          "derived_from": null
+        },
+        {
+          "path": "rates.risk_free",
+          "value": 0.05045,
+          "source": "yahoo",
+          "evidence": "^TNX info.previousClose 5.045 on 2026-10-29, percent divided by 100",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": "2026-10-29",
+          "derived_from": null
+        },
+        {
+          "path": "rates.re",
+          "value": 0.10545,
+          "source": "assumption",
+          "evidence": "0.055 plus the 10-year yield.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "rates.risk_free"
+          ]
+        },
+        {
+          "path": "rates.gt",
+          "value": 0.05045,
+          "source": "assumption",
+          "evidence": "Terminal growth equals the 10-year yield.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "rates.risk_free"
+          ]
+        },
+        {
+          "path": "rates.roict",
+          "value": 0.15,
+          "source": "assumption",
+          "evidence": "Terminal ROIC of 15 percent.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "rates.t",
+          "value": 0.21,
+          "source": "assumption",
+          "evidence": "US federal statutory tax rate. No marginal rate was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "rates.rd",
+          "value": 0.21162579473206178,
+          "source": "assumption",
+          "evidence": "Year-0 interest divided by year-0 debt.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "baseline.interest",
+            "baseline.debt"
+          ]
+        },
+        {
+          "path": "forecast.margin_path.me",
+          "value": 0.639487,
+          "source": "article",
+          "evidence": "FY27 EBITDA / FY27 revenue. [C14]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.margin_path.mc",
+          "value": 0.723748,
+          "source": "article",
+          "evidence": "Average of me and FY27 gross margin. [S8]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.margin_path.gsnext",
+          "value": 0.05,
+          "source": "article",
+          "evidence": "First growth after FY27; see S9. [S9]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.dwc.mode",
+          "value": "zero",
+          "source": "assumption",
+          "evidence": "No working-capital change was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.sales_growth",
+          "value": [
+            0.036938,
+            0.296257
+          ],
+          "source": "article",
+          "evidence": "Organic revenue growth FY26, FY27 (A1, E1). [C13]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.ebitda_growth",
+          "value": [
+            0.115972,
+            0.385004
+          ],
+          "source": "article",
+          "evidence": "Organic adjusted EBITDA growth FY26, FY27 (A4, C11, S7). [C13]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.ebitda_basis",
+          "value": "organic",
+          "source": "article",
+          "evidence": "The explicit path is the existing business. The Q2 acquisition process did not close, so no acquired EBITDA is in the growth rates. [S10]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "forecast.acquisition_disclosure.status",
+          "value": "none",
+          "source": "article",
+          "evidence": "We ultimately determined that not continuing with the process was the right decision at this time. Cipher -- and therefore, the deal did not materialize. [G5]",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "debt.mode",
+          "value": "target",
+          "source": "assumption",
+          "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "baseline.debt",
+            "baseline.ebitda"
+          ]
+        },
+        {
+          "path": "debt.leverage",
+          "value": 0.21308302690149022,
+          "source": "assumption",
+          "evidence": "Year-0 debt divided by year-0 EBITDA.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": [
+            "baseline.debt",
+            "baseline.ebitda"
+          ]
+        },
+        {
+          "path": "debt.start_year",
+          "value": 1,
+          "source": "assumption",
+          "evidence": "The target applies from the first forecast year.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        },
+        {
+          "path": "distribution.mode",
+          "value": "none",
+          "source": "assumption",
+          "evidence": "No distribution was stated.",
+          "period_end": null,
+          "basis": null,
+          "currency": null,
+          "as_of": null,
+          "derived_from": null
+        }
+      ],
+      "defaults_filled": [
+        "baseline.nol",
+        "baseline.noa",
+        "rates.re",
+        "rates.gt",
+        "rates.roict",
+        "rates.t",
+        "rates.rd",
+        "forecast.dwc.mode",
+        "debt.mode",
+        "debt.leverage",
+        "debt.start_year",
+        "distribution.mode"
+      ]
+    }
+  },
+  "fetched": {
+    "price": 9.649060517549515,
+    "price_date": "2026-10-29",
+    "rf": 0.05045,
+    "rf_date": "2026-10-29",
+    "shares": 25.415072,
+    "shares_source": "yahoo"
+  }
+}
