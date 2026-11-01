@@ -1,0 +1,586 @@
+# uniQure N.V. (Nasdaq: QURE)
+
+## Company Update: FY2026E–FY2030E Revenue and EBITDA Forecast
+
+*29 October 2026, report v3. US$ millions unless stated. This report includes a Finagle valuation but carries no rating or price target; Finagle itself states that the values in this run are not a meaningful valuation: base and bull are inflated by a Finagle default (Section 8). Forecast file: `forecasts/QURE/forecast.json` (v1, unchanged; sha256 c706bf29…); numbered sources in Appendix B.*
+
+## Changes from v2
+
+**Read this first: none of the v3 values is a meaningful valuation.** Base and bull turn positive only because of a Finagle default: its stock-comp forecast holds the year-0 ratio of stock comp to EBITDA (17.679 / −152.911 = −11.6%), so once EBITDA turns positive, stock comp turns negative and adds to free cash flow [D14]. That is how Finagle's default works, not an economic view of uniQure. **The positive base and bull values must not be read as a value for the shares.** Bear is negative and carries Finagle's negative-capex warning [D14].
+
+**What David added (2026-10-29).** [P3] "set the year 0 depreciation and amortization to 3% of revenue and rerun", mapped to year-0 D&A of $0.48294M (3% × FY2025 revenue of $16.098M) in all three cases, replacing the 10-K's $14.759M [D15]. Each case file confirms it landed with source prompt, period end 2025-12-31 [D14]. The debt policy [P1] and the 10% cost of debt [P2] stay. The forecast is unchanged [D15].
+
+**What changed in the values.** Figure 0 compares the three result files side by side.
+
+**Figure 0 – Value per share, v1 vs. v2 vs. v3**
+
+| Scenario | v1 (US$) | v2 (US$) | v3 (US$) | Change v2→v3 (derived) |
+|---|---|---|---|---|
+| Base | -8,672.30 | -52.15 | 97.40 | +149.55 |
+| Bull | -8,777.92 | -52.18 | 221.53 | +273.70 |
+| Bear | -6,352.33 | -24.69 | -18.09 | +6.60 |
+
+*Source: Finagle result files v1 [D10], v2 [D12] and v3 [D14]; change (derived) [C57]. FCFE and DDM are equal in all three runs.*
+
+**What the D&A override did [D14].** Finagle's default capex is driven off D&A, so cutting year-0 D&A from $14.8M to $0.5M lowers capex across the horizon: base FY2035E capex falls from $1,624M in v2 to $395M, and bull from $3,168M to $844M [D12][D14]. In bear, the same default now produces negative capex in every forecast year (−$4.2M to −$23.1M), which Finagle flags [D14].
+
+**Fixed or improved vs. v2:** capex no longer exceeds EBITDA from FY2028E in base and bull [D14]. Base debt now holds the 1x target from FY2029E (FY2028E is 2.1x) instead of reaching 2.4x, and bull is exactly 1.0x from FY2028E [C58][D14].
+
+**Remaining or new [D14]:**
+
+- **New: negative stock comp.** Finagle's default stock-comp forecast turns negative from FY2028E in base (−$4.4M, falling to −$137.8M by FY2035E) and from FY2028E in bull (to −$298.6M), inflating both values.
+- **New: negative capex in bear** (terminal D&A $1.8M, capex −$23.1M), with Finagle's log warning.
+- **Remaining: negative cash** in all three cases (minimum −$278.3M base, −$240.9M bull, −$1,013.3M bear).
+- **Remaining:** the $478.7M royalty financing liability is still outside debt [S41].
+- **Remaining:** tax, NOL and terminal ROIC are Finagle defaults.
+
+**What only David can supply.** The open questions in Section 8 ask about stock comp, capex or ROIC, the royalty liability, tax and NOL, and funding of negative cash. We propose no values.
+
+
+## 1. Summary
+
+**FORECAST UPDATE**
+
+■ **We forecast FY2026E revenue of $24.9M, all Hemgenix royalties, and an EBITDA loss of $161M in every scenario [C3][C16].** No AMT-130 sales are possible before an approval, which cannot come before 2027 [S6]. The revenue figure is FY2026 consensus converted from euros, and it sits about 55% above FY2025A revenue of $16.1M [C3][A7][C49]. EBITDA (loss from operations plus D&A and stock comp, since uniQure reports no adjusted EBITDA) is H1 2026 actual plus twice the Q2 run-rate for H2 [C14][C16][C47].
+
+■ **The scenario split is one binary event: BEAR assumes AMT-130 is not approved; BASE and BULL assume approval in mid-2027 [S6][S31].** In base, AMT-130 sales reach $900M in FY2030E from 450 patients at a $2.0M net price, and total revenue reaches $944M [S10][C11]. Bull reaches $1,734M on 650 patients at $2.6M [S24][C29]. Bear stays a royalty company at $44.0M of revenue in FY2030E [C41].
+
+■ **EBITDA turns positive in FY2028E in base ($37.9M) and bull ($320M), and stays negative through FY2030E in bear (−$98.7M) [S13][S26][S35].** The FY2030E EBITDA margin is 55.8% in base and 67.9% in bull, driven by an assumed 85% product gross margin against cash opex of $280–300M [C25][C37][S11][S15][S28]. In bear, opex is cut to $140M after a restructuring, but royalties do not cover it [S35].
+
+■ **Finagle's v3 values per share are 97.40 (base), 221.53 (bull) and -18.09 (bear) vs. a $24.97 price, and none of them is a meaningful valuation [D14].** Finagle itself says base and bull are inflated by its default stock-comp forecast, which holds the year-0 ratio of stock comp to (negative) EBITDA, so stock comp turns negative once EBITDA is positive and adds to cash flow [D14]. That is a Finagle default, not an economic view, and the positive base and bull values must not be read as a valuation. Bear stays negative and carries a Finagle warning about negative capex [D14].
+
+**Figure 1 – Financial summary, base case**
+
+| US$M | FY24A | FY25A | FY26E | FY27E | FY28E | FY29E | FY30E |
+|---|---|---|---|---|---|---|---|
+| Revenue | 27.1 [A6] | 16.1 [A7] | 24.9 [C3] | 114 [C8] | 335 [C9] | 640 [C10] | 944 [C11] |
+| Revenue growth (derived) [C49] | – | -40.6% | 54.8% | 356.1% | 194.8% | 91.0% | 47.5% |
+| Gross margin | – | 89.5% [C17] | 93.9% [C18] | 87.4% [C19] | 85.9% [C20] | 85.6% [C21] | 85.4% [C22] |
+| EBITDA | -149 [C12] | -153 [C13] | -161 [C16] | -131 [S12] | 37.9 [S13] | 283 [S14] | 526 [S15] |
+| EBITDA growth (derived) [C49] | – | n.m. | n.m. | n.m. | n.m. | 645.9% | 86.3% |
+| EBITDA margin (derived) [C50] | -550.9% | -949.9% | -645.9% | -114.9% | 11.3% | 44.2% | 55.8% |
+
+*Source: forecast.json totals [A6][A7][C2][C3][C8]–[C22]; growth and margins (derived) [C49][C50]. Growth on a negative base is shown as n.m.*
+
+## 2. Business Description and Reporting Lines
+
+uniQure is a gene-therapy company. Its revenue today comes almost entirely from royalties on Hemgenix, the haemophilia B gene therapy it licensed to CSL Behring [A2][A8]. Its lead asset, AMT-130 for Huntington's disease, is an investigational gene therapy with a Biologics License Application submitted to the FDA [A14][G2]. uniQure reports three revenue types:
+
+- **License revenue (Hemgenix royalties).** CSL Behring sells Hemgenix and pays uniQure royalties; this was $15.9M in FY2025A, 99% of revenue [A2][A7][C1].
+- **Collaboration revenue.** Services to CSL, $0.2M in FY2025A after winding down from $10.9M [A3][A4]; we forecast none [S5].
+- **Contract manufacturing revenue.** Ended with the July 2024 divestment of commercial manufacturing; nil in FY2025A [A13][G1].
+- **AMT-130 product revenue (forecast line).** Not yet approved; if approved, uniQure would sell it directly in the US. We do not model the UK separately [S6][S7].
+
+Figure 2 shows that revenue is now one royalty stream.
+
+**Figure 2 – Revenue by line, FY2025A**
+
+| Line | US$M | Share |
+|---|---|---|
+| License (Hemgenix royalties) | 15.9 [A2] | 99.0% [C52] |
+| Collaboration | 0.2 [A4] | 1.0% [C52] |
+| Contract manufacturing | 0.0 [A13] | 0.0% |
+| AMT-130 | 0.0 [A14] | 0.0% |
+| Total | 16.1 [A7] | 100% |
+
+*Source: uniQure 10-K FY2025 [D1][A2][A4][A7][A13]; shares (derived) [C52].*
+
+## 3. Management
+
+uniQure's CEO is Matt Kapusta, who we understand has led the company since 2017 after serving as its CFO [S38]. The forecast file does not source his background, ownership or tenure, so this paragraph is not verified. The record we can see in the filings is a strategic one: the 2024 divestment of commercial manufacturing (the "Lexington Transaction") turned uniQure into a royalty-plus-pipeline company, and the AMT-130 BLA was filed in September 2026 [G1][S5][G2]. We do not have sourced evidence on capital-allocation history or insider ownership, so the record is thin here.
+
+## 4. Key Developments
+
+The dated events in Figure 3 set up a binary 2027 for the company.
+
+**Figure 3 – Key developments**
+
+| Date | Event | Source |
+|---|---|---|
+| Jul 2024 | Commercial manufacturing divested; collaboration services to CSL wound down | [G1][S5] |
+| 2026-03-02 | FY2025 10-K filed: revenue $16.1M, EBITDA −$153M | [D1][A7][C13] |
+| 2026-07-29 | Q2 2026 results: H1 license revenue $9.4M, H1 EBITDA −$80.0M | [D2][D3][A8][C14] |
+| 2026-09-02 | AMT-130 BLA submitted to the FDA | [D4][G2] |
+| 2026-09 | UK filing for AMT-130 reported | [D9] |
+| 2026-09-29 | Four-year AMT-130 data: 48-month cUHDRS effect 44%, not statistically significant (p=0.144) | [D5][S39] |
+| 2026-11-04 | Q3 2026 results due (not yet out) | [S40] |
+| Early Nov 2026 | FDA filing-acceptance and priority-review decision expected | [S40] |
+
+*Source: uniQure filings and press releases [D1]–[D5]; BioSpace [D9]; dates for upcoming events not verified [S40].*
+
+What matters most is the FDA's filing decision and whether it grants priority review: only with priority review is a PDUFA date in late April or early May 2027 possible, which underpins our mid-2027 launch in base and bull [S6]. The non-significant four-year result is the main reason we keep base patient numbers below third-party capacity estimates [S7][S39].
+
+## 5. Business Drivers by Line
+
+**Hemgenix royalties (volume × royalty rate).** Royalties grew 57% in FY2025A as Hemgenix uptake continued [C1]. We assume growth slows from 20% to 10% a year as uptake matures, reaching $44.0M in FY2030E in all scenarios [S1]–[S4][S20]. We include no CSL milestones because we have no sourced probability for them [S1].
+
+**AMT-130 (patients × net price).** Base assumes 40, 150, 300 and 450 patients in FY2027E–FY2030E at $2.0M net, between Leerink's $1.7M US net estimate and Clinaptis's $2.6M [S7]–[S10][D7][D8]. Bull assumes 60, 250, 450 and 650 patients at $2.6M [S21]–[S24]. Both sit below Clinaptis's capacity ramp of 120–250 patients in year 1 and 300–500 in year 2 [D8]. Base FY2027E is scaled up by about 3% to match FY2027 consensus [C8][C48].
+
+**Costs.** We assume an 85% AMT-130 gross margin after COGS and licensor royalties (uniQure discloses none) and a 93.9% license gross margin from H1 2026 [S11][C6]. Cash opex is $230–280M in base and $240–300M in bull for launch and the confirmatory study, and falls to $140–170M in bear after a restructuring [S12]–[S15][S25]–[S28][S32]–[S35].
+
+## 6. Risks
+
+**Approval risk (company-specific).** AMT-130 approval is the whole difference between bear and base: base FY2030E revenue is $944M vs. $44.0M in bear [C11][C41]. A complete response letter would leave royalties as the only revenue.
+
+**Timing and label risk.** Without priority review, launch slips beyond mid-2027 and FY2027E product revenue ($82.7M base) moves out [S6][S7]. The FDA may also want the confirmatory study well under way at approval [S39].
+
+**Pricing and uptake risk.** Net price spans $1.7–2.6M across sources, and each $0.1M of net price on 450 patients is $45M of FY2030E revenue (derived) [C53][D7][D8]. Neurosurgical delivery capacity may limit uptake.
+
+**Funding risk.** EBITDA is negative through FY2027E in base and through FY2030E in bear, and year-0 cash was $80.2M, with no short-term investments found by Finagle's fetch [C16][D10]. Funding needs are not modelled in the forecast.
+
+**Royalty and financing risk.** Hemgenix royalties support a royalty financing liability that behaves like debt: Finagle reports $478.7M at FY2025 (our v1 note said about $495M) [D12][D14][S41]. Its terms are not modelled.
+
+## 7. Forecast
+
+### How the evidence becomes the numbers
+
+There is no company revenue or EBITDA guidance, so totals come from consensus where it exists and from the line build elsewhere [C3][C8]. FY2026E uses consensus in all three scenarios; FY2027E uses consensus only in base, because consensus blends approval and no-approval outcomes and fits neither bull nor bear [C8][C26][C38]. EBITDA has no consensus and is built from gross profit less cash opex [S12]. Figure 4 maps each piece of evidence to its effect.
+
+**Figure 4 – Evidence → assumption → forecast impact**
+
+| Evidence | Assumption | Impact |
+|---|---|---|
+| FY2026 consensus €21.1M [E2] | All FY2026E revenue is royalty, converted at 1.18 $/€ [C3][C46] | FY2026E revenue $24.9M in all scenarios [C3] |
+| FY2027 consensus €96.2M [E3] | Base lines scaled about 3% up to match [C48] | Base FY2027E revenue $114M [C8] |
+| BLA filed 2026-09-02 [G2] | Approval mid-2027 in base and bull, none in bear [S6][S31] | AMT-130 starts in FY2027E (base $82.7M, bull $156M) [S7][S21] |
+| 48-month cUHDRS non-significant [S39] | Base patients below capacity estimates [S7] | Base FY2030E AMT-130 $900M vs. bull $1,690M [S10][S24] |
+| Leerink $1.7M, Clinaptis $2.6M net price [D7][D8] | $2.0M base, $2.6M bull [S7][S21] | Sets revenue per patient |
+| Q2 2026 cash opex $47.8M [C47] | H2 2026 = 2× Q2; launch build-up after [C16][S12] | FY2026E EBITDA −$161M [C16] |
+| No pending deals [S19] | Organic = total [S18] | No acquisitions handed to Finagle |
+
+*Source: as tagged.*
+
+The line build and the totals agree in every year except base FY2027E, where the line build is scaled to consensus [C48].
+
+### Base case
+
+Figure 5 shows the base case by line: revenue grows from royalties alone to $944M by FY2030E, with EBITDA positive from FY2028E.
+
+**Figure 5 – Base case by line**
+
+| US$M | FY24A | FY25A | FY26E | FY27E | FY28E | FY29E | FY30E |
+|---|---|---|---|---|---|---|---|
+| License revenue (Hemgenix royalties from CSL Behring) | 10.1 [A1] | 15.9 [A2] | 24.9 [C3] | 31.0 [S1] | 35.0 [S2] | 40.0 [S3] | 44.0 [S4] |
+| Collaboration revenue (CSL services) | 10.9 [A3] | 0.2 [A4] | 0.0 [S5] | 0.0 [S5] | 0.0 [S5] | 0.0 [S5] | 0.0 [S5] |
+| Contract manufacturing revenue | 6.1 [A5] | 0.0 [A13] | 0.0 [G1] | 0.0 [G1] | 0.0 [G1] | 0.0 [G1] | 0.0 [G1] |
+| AMT-130 product revenue (US launch; UK not modelled separately) | 0.0 [A14] | 0.0 [A14] | 0.0 [S6] | 82.7 [S7] | 300 [S8] | 600 [S9] | 900 [S10] |
+| **Total revenue** | 27.1 [A6] | 16.1 [A7] | 24.9 [C3] | 114 [C8] | 335 [C9] | 640 [C10] | 944 [C11] |
+| Revenue growth (derived) [C49] | – | -40.6% | 54.8% | 356.1% | 194.8% | 91.0% | 47.5% |
+| Gross margin | – | 89.5% [C17] | 93.9% [C18] | 87.4% [C19] | 85.9% [C20] | 85.6% [C21] | 85.4% [C22] |
+| EBITDA | -149 [C12] | -153 [C13] | -161 [C16] | -131 [S12] | 37.9 [S13] | 283 [S14] | 526 [S15] |
+| EBITDA margin (derived) [C50] | -550.9% | -949.9% | -645.9% | -114.9% | 11.3% | 44.2% | 55.8% |
+
+*Source: forecast.json base lines and totals [A1]–[A14][C3][C8]–[C22][S1]–[S15]; derived rows [C49][C50]. May not sum due to rounding.*
+
+## 8. Valuation
+
+**Read this first: Finagle reports that none of the v3 values is a meaningful valuation, and that base and bull are inflated by its default stock-comp forecast.** The run produced values per share of **97.40 (base), 221.53 (bull) and -18.09 (bear)**, with FCFE and DDM equal, vs. a price of $24.97 on 2026-10-29 [D14]. There is no post-run adjustment (`post_finagle` is null) [D15]. The positive base and bull values come from a Finagle default and must not be read as a valuation.
+
+**Prompt inputs (David, 2026-10-29), applied as stated [D14][D15]:**
+
+- [P1] "rerun and keep debt constant until the year when EBITDA is positive. Then target 1x EBITDA from that year onward." Base and bull: debt target 1.0x from start year 3 (FY2028E), with debt flat before that. Bear: debt held constant (Finagle mode `hold`).
+- [P2] "take rd as 10%". Cost of debt 10% in all three cases.
+- [P3] "set the year 0 depreciation and amortization to 3% of revenue and rerun". Year-0 D&A $0.48294M in all three cases (3% × $16.098M), replacing the 10-K's $14.759M; Finagle confirms the case files carry it with source prompt, period end 2025-12-31.
+
+**Why the values are not meaningful, in Finagle's words [D14]:** "default forecast_sbc holds year-0 SBC/EBITDA (17.679/-152.911 = -11.6%): SBC turns NEGATIVE once EBITDA is positive (base FY28 -4.4 to FY35 -137.8; bull to -298.6), which adds to FCF and inflates value"; "bear: Finagle log WARNING negative capex in terminal year (capex negative every forecast year)"; "negative cash in all scenarios"; "year-0 debt 49.699 excludes Hemgenix royalty liability (478.7 at FY25)".
+
+- **Stock comp (base and bull).** Finagle's default holds stock comp at −11.6% of EBITDA (17.679 / −152.911). Once EBITDA is positive, stock comp is negative: base −$4.4M in FY2028E to −$137.8M in FY2035E, bull to −$298.6M. This adds to free cash flow and inflates value. Bear is not affected because its EBITDA is never positive.
+- **Capex (bear).** Finagle's log: "negative capex in terminal year, check depreciation, revenue, and growth assumptions". Bear capex is negative in every forecast year, reaching −$23.1M against terminal D&A of $1.8M.
+- **Capex (base and bull).** Terminal D&A and capex are $56.6M and $394.9M in base, and $107.1M and $844.1M in bull (replayed outside `run_case`).
+- **Cash.** Minimum cash is −$278.3M in base (negative FY2026E–FY2028E), −$240.9M in bull (FY2026E–FY2027E) and −$1,013.3M in bear (every year FY2026E–FY2035E).
+- **Debt.** Base debt is $49.7M through FY2027E, $80.1M in FY2028E (2.1x EBITDA) and exactly 1.0x from FY2029E, peaking at $1,192M; bull is exactly 1.0x from FY2028E, peaking at $2,582M; bear is flat at $49.7M [C58]. Interest falls from $62.0M in year 0 to $5.0M in years 1–3 (10% on $49.7M), and debt still excludes the $478.7M royalty liability [S41].
+
+**Run record.** Finagle commit `377f177b4013e713fe7c4603962e5f883a67e298`, run at 2026-10-29T22:39:57.329877-04:00 (Toronto time); all request hashes matched [D14]. Fetched inputs: price $24.97 (2026-10-29), 62.5M shares (10-K cover, 2026-02-26), 10-year yield 5.045%, cost of equity 10.545%, terminal growth 5.045%, year 0 = FY2025 [D14]. Validation: 0 errors and 0 missing fields in all three [D14]. One validation warning, on base only: "average EBITDA growth is 117.9% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero." [D14]. Bear log warning: "negative capex in terminal year, check depreciation, revenue, and growth assumptions" [D14]. Sanity flags in all three: "negative cash", "negative FCFE after year 1" [D14].
+
+**Defaults filled (Finagle's list, same in all three):** `baseline.noa`, `baseline.nol`, `distribution.mode`, `forecast.dwc.mode`, `rates.gt`, `rates.re`, `rates.roict`, `rates.t`, `year` [D14]. Debt policy, cost of debt and year-0 D&A come from David [P1][P2][P3]. Stock comp after year 0 is Finagle's default forecast (only year-0 stock comp of $17.679M is passed) [D14]. Our `me`, `mc` and `gsnext` replaced Finagle's margin defaults, applied with source "assumption" carrying our tags and left out of this list [D14].
+
+### Method
+
+Finagle discounts free cash flow to equity at the cost of equity. It takes our explicit revenue and EBITDA growth for FY2026E–FY2030E as given (5 explicit years) and extends them to its 10-year horizon (5 more years, to FY2035E) using the starting margin, incremental margin and next-period growth, fading to terminal growth, and then adds a terminal value [D14][D15]. Terminal growth is Finagle's default (the 10-year yield); we never set it [D14]. Debt follows David's policy [P1]; a cash shortfall beyond that policy shows up as negative cash rather than new funding [D14]. Capex and stock comp after year 0 are Finagle's default forecasts, driven off year-0 D&A and the year-0 stock-comp ratio [D14].
+
+### Valuation inputs
+
+Figure 7 shows that debt policy, cost of debt and year-0 D&A now come from David, the margin path from us, and the remaining rates from Finagle's defaults.
+
+**Figure 7 – Valuation inputs**
+
+| Input | Base | Bull | Bear | Type |
+|---|---|---|---|---|
+| Cost of equity | 10.5% | same | same | Finagle default (0.055 + 10-yr yield) [D14] |
+| Cost of debt | 10.0% | same | same | David [P2] |
+| Year-0 D&A (US$M) | 0.48294 | same | same | David [P3] (10-K was 14.759) |
+| Stock comp after year 0 | Finagle default (year-0 SBC/EBITDA held) | same | same | Finagle default [D14] |
+| Tax rate | 21.0% | same | same | Finagle default [D14] |
+| Terminal growth | 5.0% | same | same | Finagle default (= 10-yr yield; never set by us) [D14] |
+| Terminal ROIC | 15.0% | same | same | Finagle default [D14] |
+| Shares (M) | 62.5 | same | same | Finagle fetch, 10-K cover 2026-02-26 [D14] |
+| Price (US$) | 24.97 | same | same | Finagle fetch, 2026-10-29 [D14] |
+| Year-0 debt / cash (US$M) | 49.7 / 80.2 | same | same | Finagle fetch, 10-K [D14] |
+| Debt policy | flat to FY2027E, then 1.0x EBITDA from FY2028E | same as base | hold at year-0 debt | David [P1] |
+| Horizon (years) | 10 | same | same | Finagle default [D14] |
+| Starting margin (me) | 55.8% [C25] | 67.9% [C37] | -224.2% [C45] | Forecast-file calculation |
+| Incremental margin (mc) | 70.6% [S16] | 76.6% [S29] | 93.9% [S36] | Forecaster judgment |
+| Next-period growth (gsnext) | 21.6% [S17] | 22.7% [S30] | 8.0% [S37] | Forecaster judgment |
+| Terminal WACC | 10.3% | 10.3% | 10.6% | Finagle output [D14] |
+
+*Source: Finagle result file v3 [D14]; David [P1][P2][P3]; forecast.json [C25][C37][C45][S16][S17][S29][S30][S36][S37].*
+
+How we chose the judgment inputs (unchanged from v1): the starting margin is FY2030E EBITDA over revenue [C25][C37][C45]. For base and bull, the incremental margin is the average of the starting margin and the FY2030E gross margin [S16][S29]; for bear it is the license gross margin, because opex is fixed after a restructuring [S36]. Next-period growth is FY2031E revenue from 550 (base) or 800 (bull) patients plus royalties, and royalties alone in bear [S17][S30][S37].
+
+### Value bridge
+
+Figure 8 shows equity value turning positive in base and bull and staying negative in bear; the base and bull positives rest on the negative stock-comp default.
+
+**Figure 8 – Value bridge**
+
+| US$M unless stated | Base | Bull | Bear |
+|---|---|---|---|
+| PV of explicit cash flows | not in result file | not in result file | not in result file |
+| Terminal FCFE (fcfet, undiscounted) | 667 | 1,454 | -75.0 |
+| Firm value | 6,060 | 13,822 | -1,162 |
+| Less year-0 debt | 49.7 | 49.7 | 49.7 |
+| Equity value | 6,010 | 13,772 | -1,212 |
+| Value per share, FCFE (US$) | 97.40 | 221.53 | -18.09 |
+| Value per share, DDM (US$) | 97.40 | 221.53 | -18.09 |
+| Price (US$) | 24.97 | 24.97 | 24.97 |
+| vs. price (derived) [C51] | 290% | 787% | -172% |
+
+*Source: Finagle result file v3 [D14]; vs. price (derived) [C51]. The result file does not report the PV of explicit cash flows or the terminal value's share. The vs.-price row is arithmetic on non-meaningful values, not an upside estimate.*
+
+### Finagle valuation table
+
+Figure 9 shows Finagle's year-by-year output for base. The first rows are `run_case` output as printed. Rows marked "outside run_case" are Finagle's own replay of the notebook code (labelled "OUTSIDE run_case: replay of run_case notebook_code ... for information") or its approximate per-year extras, and we show them as such [D14].
+
+*Header: QURE, price $24.97, 62.5M shares, cost of equity 10.545%, cost of debt 10% [P2], tax 21%, terminal growth 5.045%, terminal WACC 10.3% [D14].*
+
+**Figure 9 – Finagle valuation table, base case (FY2025A–FY2030E)**
+
+| US$M | 2025A | 2026E | 2027E | 2028E | 2029E | 2030E |
+|---|---|---|---|---|---|---|
+| Revenue | 16.1 | 24.9 | 114 | 335 | 640 | 944 |
+| EBITDA | -153 | -161 | -131 | 37.9 | 283 | 526 |
+| Capex | 0.4 | 2.3 | 21.0 | 67.7 | 132 | 196 |
+| M&A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Debt change | 0.0 | 0.0 | 0.0 | 30.4 | 202 | 244 |
+| FCF | -239 | -187 | -172 | -30.4 | 175 | 256 |
+| FCFE | -239 | -187 | -172 | 0.0 | 378 | 500 |
+| FCFF | -190 | -183 | -168 | -26.5 | 182 | 279 |
+| Debt | 49.7 | 49.7 | 49.7 | 80.1 | 283 | 526 |
+| Cash | 80.2 | -107 | -278 | -278 | 99.5 | 600 |
+| Cash (balance sheet) | 80.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dividend / FCFE per share | -3.82 | -2.99 | -2.75 | -0.00 | 6.04 | 8.00 |
+| Firm value | 6,060 | 6,880 | 7,772 | 8,617 | 9,342 | 10,041 |
+| Equity | 6,010 | 6,831 | 7,723 | 8,537 | 9,060 | 9,515 |
+| Debt / EBITDA (derived) [C58] | n.m. | n.m. | n.m. | 2.1x | 1.0x | 1.0x |
+| D&A (outside run_case, replay) | 0.5 | 0.7 | 3.4 | 10.0 | 19.2 | 28.3 |
+| SBC (outside run_case, replay) | 17.7 | 18.6 | 15.1 | -4.4 | -32.7 | -60.9 |
+| Interest (outside run_case, replay) | 62.0 | 5.0 | 5.0 | 5.0 | 8.0 | 28.3 |
+| Cash taxes (outside run_case, replay) | 5.6 | 0.0 | 0.0 | 5.7 | 60.5 | 111 |
+| EV (outside run_case, replay) | 6,060 | 6,880 | 7,772 | 8,617 | 9,342 | 10,041 |
+| WACC (outside run_case, replay) | 10.5% | 10.5% | 10.5% | 10.5% | 10.5% | 10.4% |
+| Value per share, US$ (outside run_case, replay) | 97.40 | 109.24 | 123.51 | 136.53 | 144.88 | 152.16 |
+
+*Source: Finagle result file v3, base years and notebook replay [D14]; debt/EBITDA (derived) [C58].*
+
+**Figure 9 (continued) – Finagle valuation table, base case (FY2031E–FY2035E)**
+
+| US$M | 2031E | 2032E | 2033E | 2034E | 2035E |
+|---|---|---|---|---|---|
+| Revenue | 1,147 | 1,357 | 1,560 | 1,742 | 1,887 |
+| EBITDA | 670 | 818 | 961 | 1,089 | 1,192 |
+| Capex | 239 | 283 | 326 | 364 | 395 |
+| M&A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Debt change | 144 | 148 | 143 | 128 | 103 |
+| FCF | 317 | 393 | 466 | 531 | 581 |
+| FCFE | 461 | 541 | 610 | 659 | 684 |
+| FCFF | 359 | 446 | 531 | 607 | 668 |
+| Debt | 670 | 818 | 961 | 1,089 | 1,192 |
+| Cash | 1,061 | 1,602 | 2,211 | 2,870 | 3,554 |
+| Cash (balance sheet) | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dividend / FCFE per share | 7.37 | 8.65 | 9.75 | 10.54 | 10.94 |
+| Firm value | 10,727 | 11,394 | 12,043 | 12,681 | 13,322 |
+| Equity | 10,057 | 10,577 | 11,082 | 11,592 | 12,130 |
+| Debt / EBITDA (derived) [C58] | 1.0x | 1.0x | 1.0x | 1.0x | 1.0x |
+| D&A (outside run_case, replay) | 34.4 | 40.7 | 46.8 | 52.2 | 56.6 |
+| SBC (outside run_case, replay) | -77.5 | -94.6 | -111 | -126 | -138 |
+| Interest (outside run_case, replay) | 52.6 | 67.0 | 81.8 | 96.1 | 109 |
+| Cash taxes (outside run_case, replay) | 139 | 169 | 198 | 224 | 244 |
+| EV (outside run_case, replay) | 10,727 | 11,394 | 12,043 | 12,681 | 13,322 |
+| WACC (outside run_case, replay) | 10.4% | 10.4% | 10.3% | 10.3% | 10.3% |
+| Value per share, US$ (outside run_case, replay) | 160.84 | 169.15 | 177.23 | 185.38 | 193.99 |
+
+*Source: Finagle result file v3 [D14]; debt/EBITDA (derived) [C58]. Note: stock comp is negative from FY2028E; it is Finagle's default output, flagged rather than corrected.*
+
+Figure 10 shows bull carrying a larger negative stock-comp default, and bear with negative capex in every forecast year.
+
+**Figure 10 – Key rows, bull case**
+
+| US$M | 2025A | 2026E | 2027E | 2028E | 2029E | 2030E | 2031E | 2032E | 2033E | 2034E | 2035E |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Revenue | 16.1 | 24.9 | 186 | 685 | 1,210 | 1,734 | 2,127 | 2,535 | 2,932 | 3,286 | 3,568 |
+| EBITDA | -153 | -161 | -79.2 | 320 | 747 | 1,178 | 1,479 | 1,791 | 2,095 | 2,367 | 2,582 |
+| Capex | 0.4 | 2.5 | 40.8 | 159 | 284 | 408 | 502 | 599 | 693 | 777 | 844 |
+| FCFE | -239 | -187 | -134 | 454 | 783 | 1,012 | 1,023 | 1,191 | 1,334 | 1,436 | 1,483 |
+| Debt | 49.7 | 49.7 | 49.7 | 320 | 747 | 1,178 | 1,479 | 1,791 | 2,095 | 2,367 | 2,582 |
+| Cash | 80.2 | -107 | -241 | 213 | 996 | 2,009 | 3,032 | 4,223 | 5,557 | 6,993 | 8,476 |
+| Debt / EBITDA (derived) [C58] | n.m. | n.m. | n.m. | 1.0x | 1.0x | 1.0x | 1.0x | 1.0x | 1.0x | 1.0x | 1.0x |
+| D&A (outside run_case, replay) | 0.5 | 0.7 | 5.6 | 20.5 | 36.3 | 52.0 | 63.8 | 76.1 | 87.9 | 98.6 | 107 |
+| SBC (outside run_case, replay) | 17.7 | 18.6 | 9.2 | -37.0 | -86.4 | -136 | -171 | -207 | -242 | -274 | -299 |
+
+*Source: Finagle result file v3, bull years and notebook replay [D14]; debt/EBITDA (derived) [C58].*
+
+**Figure 10 (continued) – Key rows, bear case**
+
+| US$M | 2025A | 2026E | 2027E | 2028E | 2029E | 2030E | 2031E | 2032E | 2033E | 2034E | 2035E |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Revenue | 16.1 | 24.9 | 30.0 | 35.0 | 40.0 | 44.0 | 47.5 | 51.0 | 54.5 | 57.8 | 61.1 |
+| EBITDA | -153 | -161 | -142 | -117 | -102 | -98.7 | -95.4 | -92.1 | -88.8 | -85.7 | -82.6 |
+| Capex | 0.4 | -4.2 | -6.8 | -9.5 | -12.1 | -14.2 | -16.0 | -17.8 | -19.7 | -21.4 | -23.1 |
+| FCFE | -239 | -180 | -156 | -126 | -107 | -101 | -95.4 | -89.9 | -84.4 | -79.1 | -74.0 |
+| Debt | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 |
+| Cash | 80.2 | -100 | -256 | -383 | -490 | -591 | -686 | -776 | -860 | -939 | -1,013 |
+| D&A (outside run_case, replay) | 0.5 | 0.7 | 0.9 | 1.0 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 | 1.7 | 1.8 |
+| SBC (outside run_case, replay) | 17.7 | 18.6 | 16.4 | 13.5 | 11.8 | 11.4 | 11.0 | 10.6 | 10.3 | 9.9 | 9.5 |
+
+*Source: Finagle result file v3, bear years and notebook replay [D14].*
+
+No sensitivity figure is included: David did not ask for one.
+
+### Scenarios vs. price
+
+Figure 12 lists the three v3 values against the price for the record; the base and bull figures are inflated by the stock-comp default and are not a valuation.
+
+**Figure 12 – Scenarios vs. price**
+
+| Scenario | AMT-130 | Value per share (US$) | Price (US$) |
+|---|---|---|---|
+| Bull | Approved | 221.53 [D14] | 24.97 [D14] |
+| Base | Approved | 97.40 [D14] | 24.97 [D14] |
+| Bear | Not approved | -18.09 [D14] | 24.97 [D14] |
+
+*Source: Finagle result file v3 [D14]. Not meaningful: base and bull inflated by the negative stock-comp default; bear carries the negative-capex warning.*
+
+### Caveats
+
+- **Not a valuation.** Base and bull rest on negative stock comp from Finagle's default; bear rests on negative capex [D14].
+- **Funding is not modelled.** Negative cash stands in for raises that are not modelled [D14].
+- **The royalty financing liability ($478.7M) is outside debt** [D14][S41].
+- **Approval is not probability-weighted**: each scenario takes approval as 0 or 1 [S6][S31].
+- **Window**: five of Finagle's ten years are its own extension of our five-year window [D14].
+- **Bear**: negative EBITDA in every year; a cash-flow value says little about it [C41].
+
+No rating or price target is drawn, and nothing here is a recommendation.
+
+### Verified vs. assumed
+
+Verified: actuals tie to the FY2025 10-K and Q2 2026 10-Q text (page numbers unverified) [D1][D2]; consensus pulled 2026-10-29 [D6]; every valuation number is copied from Finagle's result files [D10][D12][D14]; David's statements are quoted as given, and the D&A input was checked in each v3 case file [P1][P2][P3][D14]. Assumed: approval and timing, patients, net price, margins, opex and the margin path [S]; the mapping of [P1] to start year 3 and to `hold` for bear is an interpretation of David's words [D13][D15]. Not verified: CEO profile, royalty liability size, upcoming-event dates [S38][S40][S41].
+
+### Open questions for David
+
+1. **Bear treatment.** Should bear be valued on cash or net assets rather than cash flow, given negative EBITDA in every year?
+2. **Debt policy and cost of debt — answered** on 2026-10-29 [P1][P2].
+3. **Year-0 D&A — answered** on 2026-10-29 [P3].
+4. **Stock comp (new).** Finagle's default makes stock comp negative once EBITDA is positive. Do you want to state a stock-comp policy?
+5. **Capex and ROIC.** Capex is Finagle's default (driven off D&A and a 15% terminal ROIC) and is negative in bear. Do you want to state a capex policy or a ROIC?
+6. **Royalty liability and starting debt.** Should the $478.7M Hemgenix royalty financing liability count as debt?
+7. **Tax and NOL.** Tax is Finagle's 21% default with no NOL. Do you want to state a tax rate or an NOL balance?
+8. **Funding.** How should negative cash be treated: as an equity raise, as more debt, or left as is?
+9. **Timing.** Should we wait for Q3 2026 results (2026-11-04) and the FDA's filing and priority-review decision (early November) before rerunning?
+
+Method suggestions for the forecaster repo are in `/workspace/out/QURE_run/suggestions.md`; none were applied to the repo.
+
+## Appendix A – Bull and Bear Cases
+
+Figure 6 shows the bull and bear cases from the forecast file. Bull differs from base only in AMT-130 volume and price and in opex; bear removes AMT-130 entirely and cuts opex.
+
+**Figure 6 – Bull case by line (AMT-130 approved)**
+
+| US$M | FY24A | FY25A | FY26E | FY27E | FY28E | FY29E | FY30E |
+|---|---|---|---|---|---|---|---|
+| License revenue (Hemgenix royalties from CSL Behring) | 10.1 [A1] | 15.9 [A2] | 24.9 [C3] | 30.0 [S20] | 35.0 [S2] | 40.0 [S3] | 44.0 [S4] |
+| Collaboration revenue (CSL services) | 10.9 [A3] | 0.2 [A4] | 0.0 [S5] | 0.0 [S5] | 0.0 [S5] | 0.0 [S5] | 0.0 [S5] |
+| Contract manufacturing revenue | 6.1 [A5] | 0.0 [A13] | 0.0 [G1] | 0.0 [G1] | 0.0 [G1] | 0.0 [G1] | 0.0 [G1] |
+| AMT-130 product revenue (US launch; UK not modelled separately) | 0.0 [A14] | 0.0 [A14] | 0.0 [S6] | 156 [S21] | 650 [S22] | 1,170 [S23] | 1,690 [S24] |
+| **Total revenue** | 27.1 [A6] | 16.1 [A7] | 24.9 [C3] | 186 [C26] | 685 [C27] | 1,210 [C28] | 1,734 [C29] |
+| Revenue growth (derived) [C49] | – | -40.6% | 54.8% | 646.5% | 268.3% | 76.6% | 43.3% |
+| Gross margin | – | 89.5% [C17] | 93.9% [C30] | 86.4% [C31] | 85.5% [C32] | 85.3% [C33] | 85.2% [C34] |
+| EBITDA | -149 [C12] | -153 [C13] | -161 [C16] | -79.2 [S25] | 320 [S26] | 747 [S27] | 1,178 [S28] |
+| EBITDA margin (derived) [C50] | -550.9% | -949.9% | -645.9% | -42.6% | 46.8% | 61.7% | 67.9% |
+
+*Source: forecast.json bull scenario [S20]–[S30][C26]–[C37]; derived [C49][C50].*
+
+**Figure 6 (continued) – Bear case by line (AMT-130 not approved)**
+
+| US$M | FY24A | FY25A | FY26E | FY27E | FY28E | FY29E | FY30E |
+|---|---|---|---|---|---|---|---|
+| License revenue (Hemgenix royalties from CSL Behring) | 10.1 [A1] | 15.9 [A2] | 24.9 [C3] | 30.0 [S20] | 35.0 [S2] | 40.0 [S3] | 44.0 [S4] |
+| Collaboration revenue (CSL services) | 10.9 [A3] | 0.2 [A4] | 0.0 [S5] | 0.0 [S5] | 0.0 [S5] | 0.0 [S5] | 0.0 [S5] |
+| Contract manufacturing revenue | 6.1 [A5] | 0.0 [A13] | 0.0 [G1] | 0.0 [G1] | 0.0 [G1] | 0.0 [G1] | 0.0 [G1] |
+| AMT-130 product revenue (US launch; UK not modelled separately) | 0.0 [A14] | 0.0 [A14] | 0.0 [S31] | 0.0 [S31] | 0.0 [S31] | 0.0 [S31] | 0.0 [S31] |
+| **Total revenue** | 27.1 [A6] | 16.1 [A7] | 24.9 [C3] | 30.0 [C38] | 35.0 [C39] | 40.0 [C40] | 44.0 [C41] |
+| Revenue growth (derived) [C49] | – | -40.6% | 54.8% | 20.4% | 16.7% | 14.3% | 10.0% |
+| Gross margin | – | 89.5% [C17] | 93.9% [C42] | 93.9% [C42] | 93.9% [C42] | 93.9% [C42] | 93.9% [C42] |
+| EBITDA | -149 [C12] | -153 [C13] | -161 [C16] | -142 [S32] | -117 [S33] | -102 [S34] | -98.7 [S35] |
+| EBITDA margin (derived) [C50] | -550.9% | -949.9% | -645.9% | -472.7% | -334.6% | -256.1% | -224.2% |
+
+*Source: forecast.json bear scenario [S31]–[S37][C38]–[C45]; derived [C49][C50].*
+
+In bull, faster uptake (60 to 650 patients) at a $2.6M net price drives FY2030E revenue to $1,734M [S21]–[S24][C29]. In bear, a complete response letter leads to a restructuring and opex of $140M by FY2029E, but royalties of $44.0M do not cover it [S32]–[S35][C41]. The scenario stories beyond these numbers (e.g. pipeline continuing after a CRL) are qualitative.
+
+## Appendix B – Numbered sources
+
+### Documents, Actuals, Guidance and Estimates
+
+- **D1**: uniQure Form 10-K FY2025 (filed 2026-03-02). https://www.sec.gov/Archives/edgar/data/1590560/000110465926021898/qure-20251231x10k.htm. HTML; no page numbers
+- **D2**: uniQure Form 10-Q Q2 2026 (filed 2026-07-29). https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm. HTML; no page numbers
+- **D3**: uniQure Q2 2026 results press release, 8-K Ex.99.1 (2026-07-29). https://www.sec.gov/Archives/edgar/data/1590560/000110465926087808/qure-20260729xex99d1.htm. HTML; no page numbers
+- **D4**: uniQure BLA submission press release, 8-K Ex.99.1 (2026-09-02). https://www.sec.gov/Archives/edgar/data/1590560/000110465926104463/qure-20260902xex99d1.htm. HTML; no page numbers
+- **D5**: uniQure four-year AMT-130 data press release, 8-K Ex.99.2 (2026-09-29). https://www.sec.gov/Archives/edgar/data/1590560/000110465926111654/tm2626514d1_ex99-2.htm. HTML; no page numbers
+- **D6**: Yahoo Finance / yfinance analyst revenue estimates for QURE, pulled 2026-10-29 (shown in EUR). https://finance.yahoo.com/quote/QURE/analysis/. HTML; no page numbers
+- **D7**: GEN StockWatch, Leerink net-price estimates and O'Keefe pricing/TAM comments (2025). https://www.genengnews.com/topics/translational-medicine/stockwatch-uniqure-shares-reach-five-year-high-on-game-changing-huntingtons-data/. HTML; no page numbers
+- **D8**: Clinaptis research, AMT-130 capacity ramp and net-price model. https://www.clinaptisresearch.com/research/amt-130-huntingtons-uniqure-bla. HTML; no page numbers
+- **D9**: BioSpace, uniQure files for FDA, UK approval (2026-09). https://www.biospace.com/fda/uniqure-files-for-fda-uk-approval-of-first-gene-therapy-for-huntingtons-disease. HTML; no page numbers
+- **A1**: "License revenues $ 15,934 $ 10,133 $ 2,758" (D1, page unverified)
+- **A2**: "License revenues $ 15,934 $ 10,133 $ 2,758" (D1, page unverified)
+- **A3**: "Collaboration revenues 164 10,872 2,250" (D1, page unverified)
+- **A4**: "Collaboration revenues 164 10,872 2,250" (D1, page unverified)
+- **A5**: "Contract manufacturing revenues — 6,114 10,835" (D1, page unverified)
+- **A6**: "Total revenues $ 16,098 $ 27,119 $ 15,843" (D1, page unverified)
+- **A7**: "Total revenues $ 16,098 $ 27,119 $ 15,843" (D1, page unverified)
+- **A8**: "License revenues $ 5,841 $ 5,262 $ 9,403 $ 6,829" (D2, page unverified)
+- **A9**: "Depreciation and amortization 14,759 12,641 ... Share-based compensation expense 17,679 22,258" (D1, page unverified)
+- **A10**: "Loss from operations ( 52,203 ) ( 43,865 ) ( 97,923 ) ... Depreciation and amortization 7,863 ... Share-based compensation expense 10,106" (D2, page unverified)
+- **A11**: "Segment reconciliation Q2 2026: Depreciation and amortization expense ( 4,907 ) Share-based compensation expense ( 5,016 )" (D2, page unverified)
+- **E1**: "0y yearAgoRevenue 13623740 EUR" (D6, page unverified)
+- **E2**: "0y avg 21086420 EUR, 12 analysts" (D6, page unverified)
+- **E3**: "+1y avg 96184000 EUR, low 12653000, high 299146000, 11 analysts" (D6, page unverified)
+- **A12**: "License revenues $ 5,841 $ 5,262 $ 9,403 $ 6,829 Total revenues 5,841 5,262 9,403 6,829" (D2, page unverified)
+- **A13**: "Contract manufacturing revenues — 6,114" (D1, page unverified)
+- **G1**: "divestment of our commercial manufacturing activities in July 2024" (D1, page unverified)
+- **A14**: "investigational gene therapy" (D1, page unverified)
+- **G2**: "today announced the submission of a Biologics License Application" (D4, page unverified)
+- **D10**: Finagle (Stock Valuation Bot), `valuation_result_v1.json` with `case_{base,bull,bear}_v1.json` and `QURE_{base,bull,bear}_v1.xlsx`, run 2026-10-29, commit 377f177: /workspace/out/QURE_run/valuation_result_v1.json (local file; no URL)
+- **D11**: Forecaster, `valuation_request_v1.json`, mode collaborative, empty `prompt_inputs`, `post_finagle` null, 2026-10-29: /workspace/out/QURE_run/valuation_request_v1.json (local file; no URL)
+- **D12**: Finagle (Stock Valuation Bot), `valuation_result_v2.json` with `case_{base,bull,bear}_v2.json` and `QURE_{base,bull,bear}_v2.xlsx`, run 2026-10-29, commit 377f177: /workspace/out/QURE_run/valuation_result_v2.json (local file; no URL)
+- **D13**: Forecaster, `valuation_request_v2.json`, mode collaborative, David's statements in `prompt_inputs`, `post_finagle` null, 2026-10-29: /workspace/out/QURE_run/valuation_request_v2.json (local file; no URL)
+- **D14**: Finagle (Stock Valuation Bot), `valuation_result_v3.json` with `case_{base,bull,bear}_v3.json` and `QURE_{base,bull,bear}_v3.xlsx` (sheet `per_year_replay_OUTSIDE_runcase`), run 2026-10-29, commit 377f177: /workspace/out/QURE_run/valuation_result_v3.json (local file; no URL)
+- **D15**: Forecaster, `valuation_request_v3.json` (parent v2), mode collaborative, David's statements in `prompt_inputs`, `post_finagle` null, 2026-10-29: /workspace/out/QURE_run/valuation_request_v3.json (local file; no URL)
+
+### User statements (prompt inputs)
+
+- **P1**: David May, 2026-10-29: "rerun and keep debt constant until the year when EBITDA is positive. Then target 1x EBITDA from that year onward." Mapped in D13 to debt mode target, leverage 1.0, start year 3 (FY2028E) for base and bull, and mode hold for bear. Carried unchanged into D15.
+- **P2**: David May, 2026-10-29: "take rd as 10%". Mapped in D13 to rates.rd 0.10 for all three scenarios. Carried unchanged into D15.
+- **P3**: David May, 2026-10-29: "set the year 0 depreciation and amortization to 3% of revenue and rerun". Mapped in D15 to baseline.da = 0.48294 ($M; 3% × FY2025 revenue 16.098) in all three scenarios, replacing the 10-K's 14.759; confirmed in each case file with source prompt, period_end 2025-12-31 [D14].
+
+### Assumptions
+
+- **S1**: Hemgenix royalty build: growth slows 20%->10% as Hemgenix uptake matures [S] x base scale to FY27 consensus (D2, page unverified)
+- **S2**: Hemgenix royalty build: growth slows 20%->10% as Hemgenix uptake matures [S] (D2, page unverified)
+- **S3**: Hemgenix royalty build: growth slows 20%->10% as Hemgenix uptake matures [S] (D2, page unverified)
+- **S4**: Hemgenix royalty build: growth slows 20%->10% as Hemgenix uptake matures [S] (D2, page unverified)
+- **S5**: Collaboration services to CSL wound down after the 2024 Lexington Transaction; none in H1 2026 [S] (D1, page unverified)
+- **S6**: No AMT-130 product revenue: no approval before 2027 (PDUFA late Apr/early May 2027 only if priority review). (D9, page unverified)
+- **S7**: base: 40 patients x $2.0M net price x scale to FY27 consensus [S] (D8, page unverified)
+- **S8**: base: 150 patients x $2.0M net price [S] (D8, page unverified)
+- **S9**: base: 300 patients x $2.0M net price [S] (D8, page unverified)
+- **S10**: base: 450 patients x $2.0M net price [S] (D8, page unverified)
+- **S11**: Gene-therapy product gross margin after COGS and licensor royalties; no uniQure disclosure [S] (D8, page unverified)
+- **S12**: base: license GP + AMT-130 GP - cash opex 230 [S: launch build + confirmatory study] (D3, page unverified)
+- **S13**: base: license GP + AMT-130 GP - cash opex 250 [S: launch build + confirmatory study] (D3, page unverified)
+- **S14**: base: license GP + AMT-130 GP - cash opex 265 [S: launch build + confirmatory study] (D3, page unverified)
+- **S15**: base: license GP + AMT-130 GP - cash opex 280 [S: launch build + confirmatory study] (D3, page unverified)
+- **S16**: Average of me and FY30 gross margin (Finagle's own default rule), no positive-EBITDA history to set it against [S] (D2, page unverified)
+- **S17**: FY31 growth: royalty 47.5 + 550 AMT-130 patients x $2.0M vs FY30 revenue [S] (D8, page unverified)
+- **S18**: No acquisitions in the window; organic = total (D2, page unverified)
+- **S19**: No pending deals disclosed in the Q2 2026 10-Q or later 8-Ks (D2, page unverified)
+- **S20**: Hemgenix royalty build: growth slows 20%->10% as Hemgenix uptake matures [S] (D2, page unverified)
+- **S21**: bull: 60 patients x $2.6M net price [S] (D8, page unverified)
+- **S22**: bull: 250 patients x $2.6M net price [S] (D8, page unverified)
+- **S23**: bull: 450 patients x $2.6M net price [S] (D8, page unverified)
+- **S24**: bull: 650 patients x $2.6M net price [S] (D8, page unverified)
+- **S25**: bull: license GP + AMT-130 GP - cash opex 240 [S: launch build + confirmatory study] (D3, page unverified)
+- **S26**: bull: license GP + AMT-130 GP - cash opex 265 [S: launch build + confirmatory study] (D3, page unverified)
+- **S27**: bull: license GP + AMT-130 GP - cash opex 285 [S: launch build + confirmatory study] (D3, page unverified)
+- **S28**: bull: license GP + AMT-130 GP - cash opex 300 [S: launch build + confirmatory study] (D3, page unverified)
+- **S29**: Average of me and FY30 gross margin (Finagle's own default rule), no positive-EBITDA history to set it against [S] (D2, page unverified)
+- **S30**: FY31 growth: royalty 47.5 + 800 AMT-130 patients x $2.6M vs FY30 revenue [S] (D8, page unverified)
+- **S31**: No AMT-130 product revenue: bear case, AMT-130 not approved. (D5, page unverified)
+- **S32**: bear: license GP + AMT-130 GP - cash opex 170 [S: restructuring after a CRL; pipeline continues] (D3, page unverified)
+- **S33**: bear: license GP + AMT-130 GP - cash opex 150 [S: restructuring after a CRL; pipeline continues] (D3, page unverified)
+- **S34**: bear: license GP + AMT-130 GP - cash opex 140 [S: restructuring after a CRL; pipeline continues] (D3, page unverified)
+- **S35**: bear: license GP + AMT-130 GP - cash opex 140 [S: restructuring after a CRL; pipeline continues] (D3, page unverified)
+- **S36**: Bear: opex is fixed after restructuring, so an incremental royalty dollar drops through at the license gross margin; the default (me+GM)/2 is negative and meaningless when me < 0 [S] (D2, page unverified)
+- **S37**: FY31 growth: Hemgenix royalty only, 44 -> 47.5 [S] (D8, page unverified)
+
+### Calculations
+
+- **C1**: FY25/FY24 - 1 license revenues = f(A1, A2) (D1)
+- **C2**: FY26E consensus - H1A = f(E2, E1, A8) (D6)
+- **C3**: FY26 consensus EUR x fx; all royalty/license, no AMT-130 sales before approval = f(E2, E1, A7) (D6)
+- **C4**: FY25/FY24 - 1 collaboration revenues = f(A3, A4) (D1)
+- **C5**: FY25/FY24 - 1 contract manufacturing = f(A5) (D1)
+- **C6**: 1 - cost of license revenues 569 / license revenues 9,403, H1 2026 = f(A10, A8) (D2)
+- **C7**: FY25/FY24 - 1 total revenue = f(A6, A7) (D1)
+- **C8**: FY27 mean consensus EUR 96.184M x fx; base lines scaled to it = f(E3, E1, A7) (D6)
+- **C9**: Sum of base lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C10**: Sum of base lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C11**: Sum of base lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C12**: EBITDA = loss from operations -184,294 + D&A 12,641 + SBC 22,258 (2024) = f(A9) (D1)
+- **C13**: EBITDA = loss from operations -185,349 + D&A 14,759 + SBC 17,679 (2025) = f(A9, A7) (D1)
+- **C14**: EBITDA = loss from operations -97,923 + D&A 7,863 + SBC 10,106 (H1 2026) = f(A10, A11) (D2)
+- **C15**: FY25/FY24 - 1 EBITDA (both negative: a larger loss) = f(A9, A7) (D1)
+- **C16**: H1A EBITDA + H2 revenue x license GM - 2 x Q2 cash opex net of other income/expense (47.771) [S run rate] = f(A10, A11) (D3)
+- **C17**: (revenue - cost of license revenues 1,686)/revenue 2025 = f(A9, A7) (D1)
+- **C18**: Revenue-weighted line gross margins base = f(A10, A11) (D2)
+- **C19**: Revenue-weighted line gross margins base = f(A10, A11) (D2)
+- **C20**: Revenue-weighted line gross margins base = f(A10, A11) (D2)
+- **C21**: Revenue-weighted line gross margins base = f(A10, A11) (D2)
+- **C22**: Revenue-weighted line gross margins base = f(A10, A11) (D2)
+- **C23**: Organic revenue growth FY26-FY30, base = f(A7, E2, E3) (D6)
+- **C24**: Organic EBITDA ratio E_t/E_t-1 - 1 FY26-FY30, base = f(A9, A7) (D3)
+- **C25**: FY30E EBITDA / FY30E revenue, base = f(A9, A7) (D3)
+- **C26**: Sum of bull lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C27**: Sum of bull lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C28**: Sum of bull lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C29**: Sum of bull lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C30**: Revenue-weighted line gross margins bull = f(A10, A11) (D2)
+- **C31**: Revenue-weighted line gross margins bull = f(A10, A11) (D2)
+- **C32**: Revenue-weighted line gross margins bull = f(A10, A11) (D2)
+- **C33**: Revenue-weighted line gross margins bull = f(A10, A11) (D2)
+- **C34**: Revenue-weighted line gross margins bull = f(A10, A11) (D2)
+- **C35**: Organic revenue growth FY26-FY30, bull = f(A7, E2, E3) (D6)
+- **C36**: Organic EBITDA ratio E_t/E_t-1 - 1 FY26-FY30, bull = f(A9, A7) (D3)
+- **C37**: FY30E EBITDA / FY30E revenue, bull = f(A9, A7) (D3)
+- **C38**: Sum of bear lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C39**: Sum of bear lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C40**: Sum of bear lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C41**: Sum of bear lines (no consensus beyond FY27 / not applicable to this scenario) = f(E3, E1) (D8)
+- **C42**: Revenue-weighted line gross margins bear = f(A10, A11) (D2)
+- **C43**: Organic revenue growth FY26-FY30, bear = f(A7, E2, E3) (D6)
+- **C44**: Organic EBITDA ratio E_t/E_t-1 - 1 FY26-FY30, bear = f(A9, A7) (D3)
+- **C45**: FY30E EBITDA / FY30E revenue, bear = f(A9, A7) (D3)
+- **C46**: USD per EUR implied: reported FY25 revenue 16.098 / Yahoo FY25 year-ago revenue EUR 13.624 = f(A7, E1) (D6)
+- **C47**: Q2 2026 gross profit (5.841-0.350) - Q2 EBITDA (-52.203+4.907+5.016) = f(A10, A11) (D3)
+- **C48**: FY27 consensus / unscaled base line build = f(E3, E1) (D6)
+- **C49**: Growth (derived) = value_t / value_t−1 − 1 from Figure 1/5/6 totals; n.m. when either value is negative.
+- **C50**: EBITDA margin (derived) = EBITDA / revenue, same tags as the totals.
+- **C51**: vs. price (derived) = Finagle value per share / $24.97 − 1 [D10][D12][D14].
+- **C52**: Revenue share (derived) = line / total FY2025A [A2][A4][A7].
+- **C53**: $0.1M × 450 base FY2030E patients = $45M (derived) [S10].
+- **C54**: FY2035E base capex 1,624 / EBITDA 1,192 (derived) [D10][D12].
+- **C55**: Debt / EBITDA (derived) = Finagle year-end debt / Finagle EBITDA, same year [D12].
+- **C56**: Change v1 → v2 value per share (derived) = v2 − v1 [D10][D12].
+- **C57**: Change v2 → v3 value per share (derived) = v3 − v2 [D12][D14].
+- **C58**: Debt / EBITDA in v3 (derived) = Finagle year-end debt / EBITDA, same year [D14].
+
+### Not verified
+
+- **S38**: CEO Matt Kapusta, CEO since 2017, previously CFO: general knowledge, link unverified, date unknown.
+- **S39**: 48-month cUHDRS 44%, p=0.144, and FDA wanting the confirmatory study under way: from the forecast's assumption notes citing D5; page unverified.
+- **S40**: Q3 2026 results 2026-11-04 and FDA filing decision in early November: from forecast.md open items; link unverified.
+- **S41**: Hemgenix royalty financing liability: about $495M in the Forecaster's v1 notes; $478.7M at FY2025 in Finagle's v2 flags [D12]. Neither figure is tied to a filing page in the forecast file; page unverified.
+- All A, E and S entries above: HTML filings, page unverified.
+
+## Appendix C – Method
+
+We built the forecast line by line from uniQure's reported revenue types plus a new AMT-130 line. With no company guidance, FY2026E totals use consensus in all scenarios and FY2027E uses consensus in base only; other years use the line build. AMT-130 revenue is patients times net price; royalties follow a slowing growth path; EBITDA is gross profit by line less cash opex. Each scenario is defined by whether AMT-130 is approved. The explicit window runs five years to FY2030E so that the hand-off to Finagle starts from a steady-state launch margin rather than a pre-launch loss. The forecast passed the repo's validator and request check with 0 errors.
