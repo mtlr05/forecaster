@@ -2,11 +2,11 @@
 
 ## Company Update: FY2026E–FY2033E Revenue and EBITDA Forecast and Finagle Valuation
 
-*30 October 2026. US$ millions unless a row states patients or a count. Includes a Finagle valuation (Section 8) but carries no rating or price target. Numbered sources are in Appendix B; the forecast and valuation files are listed there [D45][D46].*
+*2 November 2026. US$ millions unless a row states patients or a count. Includes a Finagle valuation (Section 8) but carries no rating or price target. Numbered sources are in Appendix B; the forecast and valuation files are listed there [D45][D46].*
 
 ## About this report
 
-**The company.** uniQure N.V. (QURE) is a Netherlands-based gene-therapy company listed on Nasdaq. Today almost all of its revenue is royalties on Hemgenix, a haemophilia B gene therapy licensed to CSL Behring [A21]. The single material driver of its value is AMT-130, a one-time gene therapy for Huntington's disease (HD), delivered by MRI-guided neurosurgery using ClearPoint Neuro's system. uniQure filed for US approval (a BLA) and UK approval (an MAA) in September 2026 [G12]. If AMT-130 is approved, it would dwarf the royalty business; if it is not, uniQure is a small royalty company with a large cost base.
+**The company.** uniQure N.V. (QURE) is a Netherlands-based gene-therapy company listed on Nasdaq. Today almost all of its revenue is royalties on Hemgenix, a haemophilia B gene therapy licensed to CSL Behring [A21]. The single material driver of its value is AMT-130, a one-time gene therapy for Huntington's disease (HD), delivered by MRI-guided neurosurgery using ClearPoint Neuro's system. uniQure filed for US approval (a BLA) and UK approval (an MAA) in September 2026 [G12]. On 2 November 2026 the FDA accepted the BLA under the Accelerated Approval pathway with Priority Review and a target action date (PDUFA) of 1 May 2027, and said it tentatively plans an advisory committee meeting [G701]. If AMT-130 is approved, it would dwarf the royalty business; if it is not, uniQure is a small royalty company with a large cost base.
 
 **What the report is.** It is a revenue and EBITDA forecast for FY2026E–FY2033E in three scenarios: **base** (approval on 1 July 2027, our central assumptions), **bull** (approval, faster capacity, higher price and larger demand) and **bear** (no approval). The forecast is then passed to Finagle, an external valuation model, which extends it to FY2035E and computes a value per share for each scenario. The report gives no rating or price target.
 
@@ -20,16 +20,17 @@
 6. **Costs and cash items.** Cost of goods, operating expenses, capex, D&A, stock-based compensation (SBC), debt, cash, tax losses (NOLs) and share count are set by rule or by analyst instruction (Section 8, Figure 7).
 7. **Valuation.** Finagle discounts free cash flow to equity (FCFE) at the cost of equity, with 2% terminal growth, to give a value per share.
 
-**How to read the source tags.** Every number carries a tag in square brackets that points to Appendix B. **A** is a reported actual; **G** is a company statement or guidance; **E** is an external estimate (analysts, papers); **D** is a document or data file; **S** is an assumption we made; **C** is a calculation from tagged inputs; **P** is an analyst instruction that sets a modelling choice. An entry marked "unverified" means the page or link was not reopened for this report. "Judgment" in the text marks the analyst's view rather than a sourced fact. In short: A, G, D and E are evidence; S and P are choices; C is arithmetic on the others.
+**How to read the source tags.** Every number carries a tag in square brackets that points to Appendix B. **A** is a reported actual; **G** is a company statement or guidance; **E** is an external estimate (analysts, papers); **D** is a document or data file; **S** is an assumption we made; **C** is a calculation from tagged inputs; **P** is an analyst instruction that sets a modelling choice. Section 10 (confirmatory-study cost) adds **B** for a published benchmark, **I** for our own inference with the arithmetic shown, and **K** for the output of a CEO-simulation bot, which is a simulation and not a company statement. An entry marked "unverified" means the page or link was not reopened for this report. "Judgment" in the text marks the analyst's view rather than a sourced fact. In short: A, G, D and E are evidence; S and P are choices; C is arithmetic on the others.
 
 **The assumptions that matter most.**
 
-- **Approval on 1 July 2027 (base and bull)** – judgment, based on the filing date and priority-review timing; not probability-weighted [G12].
+- **Approval on 1 July 2027 (base and bull)** – judgment. The FDA accepted the BLA with Priority Review and a PDUFA date of 1 May 2027 [G701]; launch two months later allows for the action date and launch preparation. Not probability-weighted [G12].
+- **Confirmatory-study cost of $129M over FY2027E–FY2031E ($30M / $45M / $32M / $17M / $5M on a separate line), the same in all three scenarios** – our inference; uniQure has not disclosed the cost. Section 10 sets out the evidence (uniQure's own trial spending, Aspen Neuroscience's IPO prospectus, the AskBio and BlueRock trials, published benchmarks and a labelled CEO-simulation view) and lower and upper bands [I1][P110].
 - **A launch pool of ~6,000 US patients** – evidence: a company management estimate of patients "addressable" at launch, not a treatment target [G5].
 - **Leave rate m = 0.62 a year** (an average stay in the eligible window of ~1.6 years) – judgment. It was chosen because it makes disease incidence consistent with the 6,000. The clinical evidence (duration studies and the trial's crossover data) points nearer 0.41 a year, a stay of ~2.4 years [A23][C510].
-- **72.9% of eligible patients treated** (90% referred × 90% willing × 90% covered) – assumption [S3].
+- **72.9% of eligible patients treated** (90% referred × 90% willing × 90% covered) – assumption [S2].
 - **Capacity of 330 / 2,500 / 3,000 a year** – a ClearPoint forecast, judgment informed by management comments, not a company figure [D32].
-- **Net price of $2.0M per patient** – assumption, below comparable list prices of $3.2M–$4.25M [A13][S10].
+- **Net price of $2.0M per patient** – assumption, below comparable list prices of $3.2M–$4.25M [A13][S9].
 - **Valuation rules** (2% terminal growth, 1x EBITDA debt, equity raises so cash never goes negative) – analyst instructions and judgment [P103][P105][P109].
 
 ## Glossary
@@ -67,13 +68,13 @@
 
 **FORECAST SUMMARY**
 
-■ **US AMT-130 volumes come from an eligible-pool model at a leave rate of 0.62 a year, starting from uniQure's ~6,000 launch pool, and are capped by a ClearPoint capacity ramp: 330 patients in FY2027E, 2,500 in FY2028E and 3,000 a year from FY2029E [P9][S6].** Treated patients stay at the 3,000 cap through FY2030E and ease to 2,840 by FY2032E, when demand from the pool, not capacity, becomes the limit [C98].
+■ **US AMT-130 volumes come from an eligible-pool model at a leave rate of 0.62 a year, starting from uniQure's ~6,000 launch pool, and are capped by a ClearPoint capacity ramp: 330 patients in FY2027E, 2,500 in FY2028E and 3,000 a year from FY2029E [P9][S5].** Treated patients stay at the 3,000 cap through FY2030E and ease to 2,840 by FY2032E, when demand from the pool, not capacity, becomes the limit [C98].
 
-■ **Base revenue is $5,035M in FY2028E and about $6.0B in FY2029E–FY2030E [C21][C23],** and stays above $5B through FY2033E. Net price is $2.0M per patient, 10% lower from FY2031E [S10]. This is far above the Street: FY2027E consensus is about one-sixth of our build (consensus divided by build is 0.165) [C236], and Goldman's reported peak is $2.5B [E6].
+■ **Base revenue is $5,035M in FY2028E and about $6.0B in FY2029E–FY2030E [C21][C23],** and stays above $5B through FY2033E. Net price is $2.0M per patient, 10% lower from FY2031E [S9]. This is far above the Street: FY2027E consensus is about one-sixth of our build (consensus divided by build is 0.165) [C236], and Goldman's reported peak is $2.5B [E6].
 
-■ **EBITDA turns positive in FY2027E at $240M and settles near $4.0B, a margin of about 77% [S24][C43].** Bull reaches $9.9B of revenue in FY2028E on 4,500 patients, then runs at a 3,500 cap. Bear assumes no approval: royalties continue and costs are cut.
+■ **EBITDA turns positive in FY2027E at $280M and settles near $4.0B, a margin of about 77% [S23][C43].** Bull reaches $9.9B of revenue in FY2028E on 4,500 patients, then runs at a 3,500 cap. Bear assumes no approval: royalties continue and costs are cut.
 
-■ **Finagle values the shares at $285.93 in base, $493.70 in bull and -$0.88 in bear, against a price of $25.30 on 2026-10-30 [D45].** The base value is about 11x the price [C509]. That gap reflects volumes far above consensus and an assumed approval; it should be read with the risks in Section 6 and the sensitivities in Section 9. The key open question is the leave rate: 0.62 a year is shorter-stay than the trial crossover data, which point to about 0.41 [A23].
+■ **Finagle values the shares at $335.65 in base, $560.67 in bull and -$0.78 in bear, against a price of $25.30 on 2026-10-30 [D45].** The base value is about 13x the price [C509]. That gap reflects volumes far above consensus and an assumed approval; it should be read with the risks in Section 6 and the sensitivities in Section 9. The key open question is the leave rate: 0.62 a year is shorter-stay than the trial crossover data, which point to about 0.41 [A23].
 
 **Figure 1 – Financial summary, base case**
 
@@ -83,8 +84,8 @@
 | Revenue (US$M) | 16.1 [A7] | 24.9 [C8] | 690 [C20] | 5,035 [C21] | 6,040 [C22] | 6,044 [C23] | 5,419 [C24] | 5,162 [C25] |
 | Revenue growth (%, derived) [C401] | – | 54.8% | 2,669.3% | 629.7% | 20.0% | 0.1% | -10.3% | -4.7% |
 | Gross margin (%) | 89.5% [C32] | 93.9% [C33] | 85.4% [C34] | 86.1% [C35] | 87.0% [C36] | 88.0% [C37] | 87.8% [C38] | 88.9% [C39] |
-| EBITDA (US$M) | -153 [C28] | -161 [C31] | 240 [S24] | 3,694 [S25] | 4,556 [S26] | 4,613 [S27] | 4,077 [S28] | 3,984 [S29] |
-| EBITDA margin (%, derived) [C401] | -949.9% | -645.9% | 34.8% | 73.4% | 75.4% | 76.3% | 75.2% | 77.2% |
+| EBITDA (US$M) | -153 [C28] | -161 [C31] | 280 [S23] | 3,719 [S24] | 4,594 [S25] | 4,666 [S26] | 4,142 [S27] | 3,984 [S28] |
+| EBITDA margin (%, derived) [C401] | -949.9% | -645.9% | 40.6% | 73.9% | 76.1% | 77.2% | 76.4% | 77.2% |
 
 *Source: forecast file, base case [D46]; growth and margins derived [C401]. FY2026E revenue is consensus.* **What this means:** revenue steps up by more than an order of magnitude in FY2027E–FY2028E as AMT-130 launches, and the EBITDA margin moves from losses to about three-quarters of revenue because a one-time therapy at $2.0M carries low per-patient costs.
 
@@ -124,6 +125,7 @@ CEO Matt Kapusta and Chief Customer & Strategy Officer Kylie O'Keefe set out the
 | 2026-08-10 | ClearPoint: 15 centers qualified for 1–2 procedures a week | [G1] |
 | 2026-09-02 | BLA submitted; UK MAA filed, priority review requested | [G12] |
 | 2026-10-28 | ClearPoint: approval possible mid to second half of 2027 | [G3] |
+| 2026-11-02 | FDA accepts the BLA (Accelerated Approval, Priority Review), PDUFA date 1 May 2027, advisory committee tentatively planned; confirmatory study of ~200 patients, US screening by end-2026 | [G701][E701] |
 | 2026-11-04 | Q3 2026 results due | [S402] |
 
 *Source: company filings and calls; ClearPoint statements.*
@@ -136,19 +138,19 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 
 **Why a pool model.** AMT-130 is given once, and only to patients in the early stage of HD. A patient who is treated, progresses past the eligible stage or dies does not come back. So the number who can be treated in any year depends on how many eligible patients are waiting, how many newly become eligible, and how fast untreated patients age out. A pool model tracks exactly that. **Why capacity limits the early years.** Each treatment is an MRI-guided neurosurgical procedure at a qualified centre. At launch there are far more eligible patients waiting (~6,000) than centres can treat, so through FY2030E the number treated is set by capacity; only later, once the waiting pool is worked down, does patient demand set the number. **Why m = 0.62 is a judgment call.** At 0.62 a year, incidence alone produces a pool of about 6,000, matching uniQure's estimate with no extra assumption. But the clinical evidence points to patients staying eligible longer, nearer 0.41 a year (Appendix D.6). A slower leave rate would mean a larger pool than 6,000 unless some other eligibility filter applies, and the choice changes long-run demand.
 
-**AMT-130 US: volume.** Treated patients each quarter are the lower of capacity and pool demand [S6]. The pool starts at 6,000 on 1 July 2027 [G5]. Each year about 3,788 new patients enter it from HD incidence, net of a referral share [C2]. Untreated patients leave at 0.62 a year (progression 0.60 plus death 0.02), an average stay of about 1.6 years [P9]. Of eligible patients, 72.9% are treated once demand, not capacity, sets volume: 90% referred, 90% willing and 90% covered, all our assumptions [S3]. Capacity follows the ClearPoint forecast ramp of 330 / 2,500 / 3,000 a year [D32][S6].
+**AMT-130 US: volume.** Treated patients each quarter are the lower of capacity and pool demand [S5]. The pool starts at 6,000 on 1 July 2027 [G5]. Each year about 3,788 new patients enter it from HD incidence, net of a referral share [C2]. Untreated patients leave at 0.62 a year (progression 0.60 plus death 0.02), an average stay of about 1.6 years [P9]. Of eligible patients, 72.9% are treated once demand, not capacity, sets volume: 90% referred, 90% willing and 90% covered, all our assumptions [S2]. Capacity follows the ClearPoint forecast ramp of 330 / 2,500 / 3,000 a year [D32][S5].
 
-**Price and recognition.** Base net price is $2.0M through FY2030E, then 10% lower once US sales pass $2B a year [S10]. Bull is $2.4M, stepping down from FY2028E [S11]. List prices for comparable gene therapies run $3.2M–$4.25M [A13]. We recognise revenue at treatment [S401].
+**Price and recognition.** Base net price is $2.0M through FY2030E, then 10% lower once US sales pass $2B a year [S9]. Bull is $2.4M, stepping down from FY2028E [S10]. List prices for comparable gene therapies run $3.2M–$4.25M [A13]. We recognise revenue at treatment [S401].
 
-**Costs.** COGS per patient is $0.30M at launch, falling to $0.20M; it is unverified [S12]. Opex is the Q2 2026 run rate [A22] plus US commercial fixed cost, $1.5M per center, a 5% variable cost and the $70M-a-year confirmatory study [S1]. Centers for that cost line are derived from capacity at two procedures a week (about 29 in base), not from a company count [S6].
+**Costs.** COGS per patient is $0.30M at launch, falling to $0.20M; it is unverified [S11]. Opex is the Q2 2026 run rate [A22] plus US commercial fixed cost, $1.5M per center, a 5% variable cost and a separate confirmatory-study line of $30M, $45M, $32M, $17M and $5M in FY2027E–FY2031E [I1]; how that cost was estimated, and its lower and upper bands, are set out in Section 10. The same line is carried in bull and bear [P110]. Centers for that cost line are derived from capacity at two procedures a week (about 29 in base), not from a company count [S5].
 
-**Hemgenix royalties.** These grow to $52.2M in FY2033E [S20]. The cash goes to HemB SPV under the royalty financing [A14]; by analyst instruction, the $473.2M royalty-financing liability is not treated as debt in the valuation [P105].
+**Hemgenix royalties.** These grow to $52.2M in FY2033E [S19]. The cash goes to HemB SPV under the royalty financing [A14]; by analyst instruction, the $473.2M royalty-financing liability is not treated as debt in the valuation [P105].
 
 ## 6. Risks
 
 *The main ways the forecast could be wrong, in rough order of importance. The valuation is about 11x the share price, so each of these matters.*
 
-**Approval.** Base and bull assume US approval and launch on 1 July 2027; bear assumes no approval. The valuation is not probability-weighted, so the base value is conditional on approval [G12]. The BLA has been submitted; FDA acceptance of the filing and the review outcome are both still open.
+**Approval.** Base and bull assume US approval and launch on 1 July 2027; bear assumes no approval. The valuation is not probability-weighted, so the base value is conditional on approval [G12]. The FDA accepted the BLA on 2 November 2026 with Priority Review and a PDUFA target action date of 1 May 2027 [G701]. Acceptance is not approval: the FDA tentatively plans an advisory committee, and the outcome is open. Accelerated approval would also depend on the confirmatory study, which bear still carries in cost though bear assumes no approval.
 
 **Pool turnover.** The leave rate of 0.62 is the main lever. At about 0.40 a year (a 2.5-year stay), the 6,000 would need an unexplained eligibility filter, and base treated patients would fall to about 1,850 a year in the long run (scratch run, not in the forecast file) [P9]. If new entrants are only 30% of incidence, base treated falls to 927 in FY2030E and revenue to $1,899M (Figure 4).
 
@@ -168,22 +170,22 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 |---|---|---|---|---|---|---|---|
 | base filed: US treated (patients/yr) | 330 | 2,500 | 3,000 | 3,000 | 2,984 | 2,840 | 2,832 |
 | base filed: revenue (US$M) | 690 | 5,035 | 6,040 | 6,044 | 5,419 | 5,162 | 5,149 |
-| base filed: EBITDA (US$M) | 240 | 3,694 | 4,556 | 4,613 | 4,077 | 3,984 | 3,967 |
+| base filed: EBITDA (US$M) | 280 | 3,719 | 4,594 | 4,666 | 4,142 | 3,984 | 3,967 |
 | base approval Q4 2027 (2027-10-01): US treated (patients/yr) | 165 | 2,040 | 2,875 | 3,000 | 3,000 | 2,875 | 2,833 |
 | base approval Q4 2027 (2027-10-01): revenue (US$M) | 360 | 4,115 | 5,790 | 6,044 | 5,448 | 5,226 | 5,151 |
-| base approval Q4 2027 (2027-10-01): EBITDA (US$M) | -24.2 | 2,949 | 4,351 | 4,613 | 4,100 | 4,037 | 3,968 |
+| base approval Q4 2027 (2027-10-01): EBITDA (US$M) | 15.8 | 2,974 | 4,389 | 4,666 | 4,165 | 4,037 | 3,968 |
 | base entrants = 30% of incidence: US treated (patients/yr) | 330 | 2,500 | 1,466 | 927 | 910 | 909 | 909 |
 | base entrants = 30% of incidence: revenue (US$M) | 690 | 5,035 | 2,973 | 1,899 | 1,685 | 1,686 | 1,689 |
-| base entrants = 30% of incidence: EBITDA (US$M) | 240 | 3,694 | 2,040 | 1,172 | 985 | 1,068 | 1,064 |
+| base entrants = 30% of incidence: EBITDA (US$M) | 280 | 3,719 | 2,078 | 1,225 | 1,050 | 1,068 | 1,064 |
 | bull filed: US treated (patients/yr) | 880 | 4,500 | 3,500 | 3,500 | 3,500 | 3,500 | 3,500 |
 | bull filed: revenue (US$M) | 2,142 | 9,930 | 8,594 | 8,774 | 8,778 | 8,397 | 8,016 |
-| bull filed: EBITDA (US$M) | 1,433 | 7,721 | 6,689 | 6,931 | 7,035 | 6,868 | 6,546 |
+| bull filed: EBITDA (US$M) | 1,473 | 7,746 | 6,727 | 6,984 | 7,100 | 6,868 | 6,546 |
 | bull approval Q4 2027 (2027-10-01): US treated (patients/yr) | 440 | 3,815 | 3,750 | 3,500 | 3,500 | 3,500 | 3,500 |
 | bull approval Q4 2027 (2027-10-01): revenue (US$M) | 1,086 | 9,366 | 9,134 | 8,774 | 8,778 | 8,397 | 8,016 |
-| bull approval Q4 2027 (2027-10-01): EBITDA (US$M) | 562 | 7,374 | 7,140 | 6,931 | 7,035 | 6,868 | 6,546 |
+| bull approval Q4 2027 (2027-10-01): EBITDA (US$M) | 602 | 7,399 | 7,178 | 6,984 | 7,100 | 6,868 | 6,546 |
 | bull entrants = 30% of incidence: US treated (patients/yr) | 880 | 4,037 | 1,365 | 1,392 | 1,392 | 1,392 | 1,392 |
 | bull entrants = 30% of incidence: revenue (US$M) | 2,142 | 8,931 | 3,983 | 4,221 | 4,224 | 3,844 | 3,463 |
-| bull entrants = 30% of incidence: EBITDA (US$M) | 1,433 | 6,899 | 2,842 | 3,080 | 3,131 | 2,922 | 2,599 |
+| bull entrants = 30% of incidence: EBITDA (US$M) | 1,473 | 6,924 | 2,880 | 3,133 | 3,196 | 2,922 | 2,599 |
 
 *Source: forecast file sensitivities [D46].* **What this means:** an approval delay mainly moves FY2027E–FY2028E, while lower entrants cut long-run volume and revenue, which is what carries the valuation.
 
@@ -202,10 +204,10 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 | ~6,000 initially treatable US patients at launch, management estimate [G5][G6] | Start pool 6,000 on 2027-07-01 | Launch stock worked down to ~2,000 by FY2030E |
 | Analyst choice of m = 0.62 as the most internally consistent leave rate [P9] | Leave rate 0.62/yr (stay ~1.6 yr) | Steady pool ~6,000 with no extra filter; long-run treated ~2,840/yr |
 | Crossover: 2 of 6 high-dose controls failed inclusion after ~12 months [A23] | Not used; points to ~0.41/yr | Flagged as the main downside to demand |
-| HD incidence [S5]; referral/willing/covered 90% each [S3] | Entrants ~3,800/yr; treated share 72.9% | Sets long-run demand |
+| HD incidence [S4]; referral/willing/covered 90% each [S2] | Entrants ~3,800/yr; treated share 72.9% | Sets long-run demand |
 | ClearPoint capacity ramp [D32] | 330 / 2,500 / 3,000 cap | Binds FY2027E–FY2030E |
-| Comparable list prices [A13] | $2.0M net, −10% from FY2031E [S10] | Revenue ~$6.0B FY2029E–FY2030E |
-| Q2 2026 opex run rate [A22]; confirmatory study [S1] | Opex build | EBITDA margin ~75–77% |
+| Comparable list prices [A13] | $2.0M net, −10% from FY2031E [S9] | Revenue ~$6.0B FY2029E–FY2030E |
+| Q2 2026 opex run rate [A22]; confirmatory study [I1] | Opex build | EBITDA margin ~75–77% |
 | FY2027E consensus [C236] | Not scaled | Build far above consensus |
 
 *Source: as tagged.*
@@ -224,32 +226,32 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 | US eligible pool at year end (patients) | – | – | 6,000 [C84] | 5,718 [C85] | 3,933 [C86] | 2,643 [C87] | 2,000 [C88] | 1,703 [C89] | 1,680 [C90] | 1,687 [C91] |
 | **US patients treated (patients/yr)** | – | – | 0 [C92] | 330 [C93] | 2,500 [C94] | 3,000 [C95] | 3,000 [C96] | 2,984 [C97] | 2,840 [C98] | 2,832 [C99] |
 | US cumulative treated (patients) | – | – | 0 [C100] | 330 [C101] | 2,830 [C102] | 5,830 [C103] | 8,830 [C104] | 11,814 [C105] | 14,654 [C106] | 17,486 [C107] |
-| License revenue, Hemgenix royalties (US$M) | 10.1 [A1] | 15.9 [A2] | 24.9 [C8] | 30.0 [S14] | 35.0 [S15] | 40.0 [S16] | 44.0 [S17] | 47.5 [S18] | 50.0 [S19] | 52.2 [S20] |
-| Collaboration revenue (US$M) | 10.9 [A3] | 0.2 [A4] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] |
+| License revenue, Hemgenix royalties (US$M) | 10.1 [A1] | 15.9 [A2] | 24.9 [C8] | 30.0 [S13] | 35.0 [S14] | 40.0 [S15] | 44.0 [S16] | 47.5 [S17] | 50.0 [S18] | 52.2 [S19] |
+| Collaboration revenue (US$M) | 10.9 [A3] | 0.2 [A4] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] |
 | Contract manufacturing revenue (US$M) | 6.1 [A5] | 0.0 [A25] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] |
-| AMT-130 revenue, US (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S22] | 660 [C11] | 5,000 [C12] | 6,000 [C13] | 6,000 [C13] | 5,372 [C14] | 5,112 [C15] | 5,097 [C16] |
-| AMT-130 revenue, UK (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S23] | 0.0 [S23] | 0.0 [S23] | 0.0 [S23] | 0.0 [S23] | 0.0 [S23] | 0.0 [S23] | 0.0 [S23] |
+| AMT-130 revenue, US (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S21] | 660 [C11] | 5,000 [C12] | 6,000 [C13] | 6,000 [C13] | 5,372 [C14] | 5,112 [C15] | 5,097 [C16] |
+| AMT-130 revenue, UK (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S22] | 0.0 [S22] | 0.0 [S22] | 0.0 [S22] | 0.0 [S22] | 0.0 [S22] | 0.0 [S22] | 0.0 [S22] |
 | **Total revenue (US$M)** | 27.1 [A6] | 16.1 [A7] | 24.9 [C8] | 690 [C20] | 5,035 [C21] | 6,040 [C22] | 6,044 [C23] | 5,419 [C24] | 5,162 [C25] | 5,149 [C26] |
 | Gross margin (%) | – | 89.5% [C32] | 93.9% [C33] | 85.4% [C34] | 86.1% [C35] | 87.0% [C36] | 88.0% [C37] | 87.8% [C38] | 88.9% [C39] | 88.9% [C40] |
-| **EBITDA (US$M)** | -149 [C27] | -153 [C28] | -161 [C31] | 240 [S24] | 3,694 [S25] | 4,556 [S26] | 4,613 [S27] | 4,077 [S28] | 3,984 [S29] | 3,967 [S30] |
-| EBITDA margin (%, derived from the two rows above) | -550.9% | -949.9% | -645.9% | 34.8% | 73.4% | 75.4% | 76.3% | 75.2% | 77.2% | 77.0% |
+| **EBITDA (US$M)** | -149 [C27] | -153 [C28] | -161 [C31] | 280 [S23] | 3,719 [S24] | 4,594 [S25] | 4,666 [S26] | 4,142 [S27] | 3,984 [S28] | 3,967 [S29] |
+| EBITDA margin (%, derived from the two rows above) | -550.9% | -949.9% | -645.9% | 40.6% | 73.9% | 76.1% | 77.2% | 76.4% | 77.2% | 77.0% |
 
-*Source: forecast file [D46]. me 77.0% [C43], mc 83.0% [S31], gsnext 0.03% [S32]. May not sum due to rounding.*
+*Source: forecast file [D46]. me 77.0% [C43], mc 83.0% [S30], gsnext 0.03% [S31]. May not sum due to rounding.*
 
 ## 8. Valuation – Finagle
 
 *This section turns the forecast into a value per share. Finagle is an external valuation model: it takes the revenue and EBITDA paths from Sections 1–7, the balance-sheet starting point and a set of rates and rules, and discounts free cash flow to equity (FCFE). All valuation numbers below are copied from Finagle's result file; none are recomputed here.*
 
-**Finagle values QURE at $285.93 a share in base, $493.70 in bull and -$0.88 in bear, vs. a price of $25.30 on 2026-10-30 [D45].** These are raw FCFE values; DDM gives the same figures, and no post-run adjustment was requested, so there is no adjusted value. No scenario is flagged not a valuation. We draw no rating or price target.
+**Finagle values QURE at $335.65 a share in base, $560.67 in bull and -$0.78 in bear, vs. a price of $25.30 on 2026-10-30 [D45].** These are raw FCFE values; DDM gives the same figures, and no post-run adjustment was requested, so there is no adjusted value. No scenario is flagged not a valuation. We draw no rating or price target.
 
-- **Validation warnings (Finagle's words):** base: "average EBITDA growth is 150.8% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero." [D45]. Base EBITDA growth is high because EBITDA turns from losses to about $4.6B over three years; there are no acquisitions in the forecast.
+- **Validation warnings (Finagle's words):** base: "average EBITDA growth is 121.2% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero." [D45]. Base EBITDA growth is high because EBITDA turns from losses to about $4.6B over three years; there are no acquisitions in the forecast.
 - **Sanity flags (Finagle's words):** bear: "negative FCFE after year 1" [D45]. Base and bull have none. Finagle's log is empty in all three scenarios.
-- **Analyst-instructed inputs:** rd 10% [P101] (2026-10-29); debt at 1x EBITDA once EBITDA is positive, held in bear [P103] (2026-10-29); NOL 539 and the SBC rule [P104] (2026-10-30); year-0 D&A 0.2195, HemB liability not debt, terminal growth 2%, Dutch tax rate 25.8%, and cash and shares raised so cash never goes negative [P105] (2026-10-30); base and bull capex [0.439, 3.5, 3.5] then method 1 [P106] (2026-10-30); bear capex equal to base [P107] (2026-10-30); bear raise sized so cash stays positive [P109] (2026-10-30); leave rate m = 0.62 and a valuation run on this forecast [P9][P8] (2026-10-30).
+- **Analyst-instructed inputs:** rd 10% [P101] (2026-10-29); debt at 1x EBITDA once EBITDA is positive, held in bear [P103] (2026-10-29); NOL 539 and the SBC rule [P104] (2026-10-30); year-0 D&A 0.2195, HemB liability not debt, terminal growth 2%, Dutch tax rate 25.8%, and cash and shares raised so cash never goes negative [P105] (2026-10-30); base and bull capex [0.439, 3.5, 3.5] then method 1 [P106] (2026-10-30); bear capex equal to base [P107] (2026-10-30); bear raise sized so cash stays positive [P109] (2026-10-30); year-0 cash = FY2025 cash plus short-term investments plus 2026 equity raises, with shares increased for those raises [P111] (2026-11-02); leave rate m = 0.62 and a valuation run on this forecast [P9][P8] (2026-10-30).
 - **Defaults filled (Finagle's words):** baseline.noa, distribution.mode, forecast.dwc.mode, rates.re, rates.roict, year [D45]. Finagle also prints "forecast.sales_growth NOT IN CATALOG"; the revenue path still applies.
-- **Fetched market inputs:** price $25.30 and risk-free rate 4.99%, both as of 2026-10-30; 10-K shares 62.5M and cash 80.2 [D45].
-- **Finagle commit** `377f177b`, run 2026-10-30 23:22 (Toronto time). All sidecar hashes match (file bytes, whole request, base/bull/bear blocks, instruction inputs, forecast.json bytes) [D45].
+- **Fetched market inputs:** price $25.30 and risk-free rate 4.99%, both as of 2026-10-30; 10-K cover shares 62.5M [D45]. Year-0 cash and shares were set by us, not fetched (Figure 11).
+- **Finagle commit** `377f177b`, run 2026-11-02 11:40 (Toronto time). All sidecar hashes match (file bytes, whole request, base/bull/bear blocks, instruction inputs, forecast.json bytes) [D45].
 
-**Method.** Finagle discounts free cash flow to equity at the cost of equity (10.49%, Finagle's default). It takes our revenue and EBITDA for FY2026E–FY2033E as given (eight explicit years after FY2025A) and extends them two more years to FY2035E using the starting margin, the incremental margin and next-period growth, fading to terminal growth of 2.00%, then adds a terminal value. Terminal growth of 2% is an analyst instruction, not Finagle's default [P105]. Negative cash flow is funded from the opening cash balance: we sized the year-0 equity raise in each case so cash never goes negative, and Finagle values the raise through the extra cash and shares [D45].
+**Method.** Finagle discounts free cash flow to equity at the cost of equity (10.49%, Finagle's default). It takes our revenue and EBITDA for FY2026E–FY2033E as given (eight explicit years after FY2025A) and extends them two more years to FY2035E using the starting margin, the incremental margin and next-period growth, fading to terminal growth of 2.00%, then adds a terminal value. Terminal growth of 2% is an analyst instruction, not Finagle's default [P105]. Negative cash flow is funded from the opening cash balance: year-0 cash is the 10-K cash and current investments plus the June 2026 offering, and we add an extra year-0 equity raise only where it is needed to keep cash from going negative, and Finagle values the raise through the extra cash and shares [D45].
 
 **Figure 7 – Valuation inputs**
 
@@ -260,12 +262,12 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 | Cost of equity | 10.49% | 10.49% | 10.49% | Finagle default (rf 4.99%, 2026-10-30) [D45] |
 | Cost of debt | 10.00% | same | same | analyst instruction, 2026-10-29 [P101] |
 | Tax rate | 25.80% | same | same | analyst instruction, Dutch statutory rate, 2026-10-30 [P105] |
-| Terminal growth | 2.00% | same | same | analyst instruction, 2026-10-30 [P105] (Finagle's own default would be 4.99%) |
+| Terminal growth | 2.00% | same | same | analyst instruction, 2026-10-30 [P105] (Finagle's own default would be 4.93%) |
 | Terminal ROIC | 15.00% | same | same | Finagle default [D45] |
-| Shares (M) | 78.3 | 76.4 | 256.2 | 10-K 62.5 + raise at price; judgment [S403][P105] |
+| Shares (M) | 68.2 | 68.2 | 236.2 | 10-K 62.5 + June 2026 offering 5.7 + any extra raise at price [D48][D50][P111][S403] |
 | Price (2026-10-30) | $25.30 | same | same | Finagle fetch [D45] |
 | Year-0 debt | 49.7 | same | same | 10-K; HemB liability not debt [P105] |
-| Year-0 cash | 480 | 430 | 4,980 | 10-K 80.2 + raise; judgment [S403][P105][P109] |
+| Year-0 cash | 865 | 865 | 5,115 | 10-K cash + current investments + June 2026 offering = 865, + any extra raise [D48][D50][P111][P109] |
 | Year-0 NOL | 539 | same | same | analyst instruction [P104] |
 | Starting margin (me) | 77.0% | 81.7% | -174.0% | forecast file [D46] |
 | Incremental margin (mc) | 83.0% | 86.6% | 93.9% | forecast file [D46] |
@@ -275,7 +277,7 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 | Debt policy | 1.0x EBITDA from FY2027E | same | hold | analyst instruction [P103]; start year follows the forecast |
 | SBC | flat 17.7 until EBITDA is positive, then 5% of sales | same | flat 17.7 | analyst rule [P104]; 5% is our judgment [S403] |
 
-*Source: Finagle result [D45]; valuation request [D46]; analyst instructions [P101]–[P109].* **Judgment inputs.** The equity raises are our judgment: base and bull use $400M and $350M, which are more than needed because EBITDA is positive from FY2027E; the bear raise is the amount that keeps bear cash positive with base-sized capex [S403]. SBC at 5% of sales applies the analyst's rule with a percentage we chose [S403].
+*Source: Finagle result [D45]; valuation request [D46]; analyst instructions [P101]–[P111].* **Judgment inputs.** Base and bull need no extra raise: with 865 of opening cash their lowest year-end cash is 678, so the extra raise is zero. The bear raise of 4,250 is the smallest $50M step that keeps bear cash from going negative with base-sized capex and the confirmatory-study cost; it exists only for that reason [P109][S403]. Employee option and ESPP proceeds of $6.985M in H1 2026 and the ~1.15M shares issued under employee plans are left out, because they are not equity raises [D50][S403]. SBC at 5% of sales applies the analyst's rule with a percentage we chose [S403].
 
 **Figure 8 – Value bridge**
 
@@ -286,29 +288,29 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 | PV of explicit-period cash flows | not returned | not returned | not returned |
 | Terminal value and share of total | not returned | not returned | not returned |
 | Terminal-year FCFE | 2,197 | 3,644 | -556 |
-| Firm value | 21,969 | 37,320 | -5,156 |
-| Equity value | 21,919 | 37,270 | -5,206 |
-| Year-0 debt / cash | 49.7 / 480 | 49.7 / 430 | 49.7 / 4,980 |
-| Shares (M) | 78.3 | 76.4 | 256.2 |
-| Value per share (US$) | $285.93 | $493.70 | -$0.88 |
-| vs. price $25.30 [C509] | +1,030% | +1,851% | -103% |
+| Firm value | 22,081 | 37,432 | -5,249 |
+| Equity value | 22,031 | 37,382 | -5,299 |
+| Year-0 debt / cash | 49.7 / 865 | 49.7 / 865 | 49.7 / 5,115 |
+| Shares (M) | 68.2 | 68.2 | 236.2 |
+| Value per share (US$) | $335.65 | $560.67 | -$0.78 |
+| vs. price $25.30 [C509] | +1,227% | +2,116% | -103% |
 
 *Source: Finagle result [D45]; upside derived [C509]. The result file does not split value into explicit-period and terminal PV, so those rows are left blank rather than recomputed.* **What this means:** the base and bull values rest on the cash flows from FY2028E onward, when AMT-130 volumes are at or near capacity, so they depend on approval and on the volume path holding (judgment).
 
 **Figure 9a – Finagle valuation table, base case.** *The year-by-year build behind the base value: revenue and EBITDA from the forecast, then the items Finagle derives (D&A, interest, tax, debt, cash) down to FCFE. Rows marked * come from Finagle's notebook replay in the result file.*
 
-*Ticker QURE; price $25.30; shares 78.3M; cost of equity 10.49%; cost of debt 10.00%; tax 25.80%; terminal growth 2.00%.*
+*Ticker QURE; price $25.30; shares 68.2M; cost of equity 10.49%; cost of debt 10.00%; tax 25.80%; terminal growth 2.00%.*
 
 | Row (US$M unless stated) | FY2025A | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E | FY2033E | FY2034E | FY2035E |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Revenue | 16.1 | 24.9 | 690 | 5,035 | 6,040 | 6,044 | 5,419 | 5,162 | 5,149 | 5,151 | 5,203 |
-| EBITDA | -153 | -161 | 240 | 3,694 | 4,556 | 4,613 | 4,077 | 3,984 | 3,967 | 3,968 | 4,011 |
+| EBITDA | -153 | -161 | 280 | 3,719 | 4,594 | 4,666 | 4,142 | 3,984 | 3,967 | 3,968 | 4,011 |
 | SBC* | 17.7 | 17.7 | 34.5 | 252 | 302 | 302 | 271 | 258 | 257 | 258 | 260 |
 | D&A (derived)* | 0.2 | 0.3 | 9.4 | 68.7 | 82.4 | 82.4 | 73.9 | 70.4 | 70.2 | 70.2 | 70.9 |
 | Capex | 0.4 | 3.5 | 3.5 | 419 | 515 | 515 | 456 | 431 | 430 | 430 | 435 |
-| Interest* | 62.0 | 5.0 | 5.0 | 24.0 | 369 | 456 | 461 | 408 | 398 | 397 | 397 |
-| Pre-tax income* | -233 | -184 | 191 | 3,350 | 3,802 | 3,773 | 3,270 | 3,248 | 3,241 | 3,243 | 3,283 |
-| NOL balance* | 539 | 723 | 532 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Interest* | 62.0 | 5.0 | 5.0 | 28.0 | 372 | 459 | 467 | 414 | 398 | 397 | 397 |
+| Pre-tax income* | -233 | -184 | 231 | 3,371 | 3,837 | 3,822 | 3,330 | 3,241 | 3,241 | 3,243 | 3,283 |
+| NOL balance* | 539 | 723 | 492 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
 *Source: Finagle result [D45].*
 
@@ -316,16 +318,33 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 
 | Row (US$M unless stated) | FY2025A | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E | FY2033E | FY2034E | FY2035E |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| NOL used* | 0.0 | -184 | 191 | 532 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Tax expense* | 5.6 | -0.0 | 49.3 | 864 | 981 | 973 | 844 | 838 | 836 | 837 | 847 |
-| Cash taxes* | 5.6 | 0.0 | -0.0 | 727 | 981 | 973 | 844 | 838 | 836 | 837 | 847 |
-| Debt | 49.7 | 49.7 | 240 | 3,694 | 4,556 | 4,613 | 4,077 | 3,984 | 3,967 | 3,968 | 4,011 |
-| Cash | 480 | 293 | 680 | 6,407 | 9,657 | 12,080 | 13,589 | 15,545 | 17,573 | 19,621 | 21,736 |
-| FCFE | -239 | -187 | 387 | 5,727 | 3,250 | 2,424 | 1,508 | 1,956 | 2,028 | 2,048 | 2,116 |
-| WACC* | 10.48% | 10.48% | 10.46% | 10.07% | 9.98% | 9.97% | 10.04% | 10.06% | 10.07% | 10.07% | 10.08% |
-| Value per share (US$)* | $285.93 | $311.53 | $339.27 | $301.75 | $291.92 | $291.60 | $302.93 | $309.74 | $316.34 | $323.38 | $330.29 |
+| NOL used* | 0.0 | -184 | 231 | 492 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Tax expense* | 5.6 | -0.0 | 59.6 | 870 | 990 | 986 | 859 | 836 | 836 | 837 | 847 |
+| Cash taxes* | 5.6 | 0.0 | -0.0 | 743 | 990 | 986 | 859 | 836 | 836 | 837 | 847 |
+| Debt | 49.7 | 49.7 | 280 | 3,719 | 4,594 | 4,666 | 4,142 | 3,984 | 3,967 | 3,968 | 4,011 |
+| Cash | 865 | 678 | 1,145 | 6,862 | 10,151 | 12,627 | 14,191 | 16,078 | 18,105 | 20,153 | 22,269 |
+| FCFE | -239 | -187 | 467 | 5,717 | 3,289 | 2,475 | 1,565 | 1,887 | 2,028 | 2,048 | 2,116 |
+| WACC* | 10.48% | 10.48% | 10.46% | 10.07% | 9.98% | 9.97% | 10.03% | 10.06% | 10.07% | 10.07% | 10.08% |
+| Value per share (US$)* | $335.65 | $359.58 | $390.45 | $347.60 | $335.85 | $334.78 | $346.96 | $355.70 | $363.29 | $371.37 | $379.31 |
 
 *Source: Finagle result [D45]. M&A and working-capital change are zero in every year (no acquisitions; Finagle's default working-capital mode). Debt is exactly 1.0x EBITDA from FY2027E.*
+
+**Figure 9c – Free cash flow, base case, FY2026E–FY2029E**
+
+| Row (US$M) | FY2026E | FY2027E | FY2028E | FY2029E |
+|---|---|---|---|---|
+| EBITDA | -160.9 | 279.8 | 3,719.1 | 4,593.5 |
+| of which confirmatory study [I1] | 0.0 | -30.0 | -45.0 | -32.0 |
+| Capex | -3.5 | -3.5 | -419.0 | -515.1 |
+| SBC, counted as cash* | -17.7 | -34.5 | -251.7 | -302.0 |
+| Interest* | -5.0 | -5.0 | -28.0 | -371.9 |
+| Cash tax* | 0.0 | 0.0 | -742.7 | -990.0 |
+| **FCF** | -187.1 | +236.9 | +2,277.7 | +2,414.5 |
+| Debt drawn (FCFE - FCF) [C703] | +0.0 | +230.1 | +3,439.3 | +874.4 |
+| **FCFE** | -187.1 | +467.0 | +5,717.0 | +3,288.9 |
+| Year-end cash | 678.2 | 1,145.2 | 6,862.2 | 10,151.1 |
+
+*Source: Finagle result [D45]; debt drawn and the tax check derived [C703]. FCF is EBITDA less capex, SBC (treated as a cash cost), interest and cash tax; FCFE adds the debt drawn under the 1x EBITDA rule. Rows marked * come from Finagle's notebook replay.* **What this means:** the only cash-burning year in base is FY2026E, which is pre-launch. FY2028E is where capex steps up and the tax-loss carryforward is used up. The confirmatory study (Section 10) is already inside EBITDA: $30M in FY2027E, $45M in FY2028E and $32M in FY2029E. In FY2027E the tax-loss carryforward shelters profit, so the cost lowers FCF dollar for dollar; from FY2028E, when cash tax is paid, part of it comes back as lower tax.
 
 **Figure 10a – Key rows, bull**
 
@@ -334,14 +353,14 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 | Row (US$M unless stated) | FY2025A | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E | FY2033E | FY2034E | FY2035E |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Revenue | 16.1 | 24.9 | 2,142 | 9,930 | 8,594 | 8,774 | 8,777 | 8,397 | 8,016 | 8,017 | 8,098 |
-| EBITDA | -153 | -161 | 1,433 | 7,721 | 6,689 | 6,931 | 7,035 | 6,868 | 6,546 | 6,547 | 6,617 |
+| EBITDA | -153 | -161 | 1,473 | 7,746 | 6,727 | 6,984 | 7,100 | 6,868 | 6,546 | 6,547 | 6,617 |
 | D&A (derived)* | 0.2 | 0.3 | 29.2 | 135 | 117 | 120 | 120 | 114 | 109 | 109 | 110 |
 | Capex | 0.4 | 3.5 | 3.5 | 933 | 773 | 795 | 795 | 750 | 704 | 704 | 714 |
 | NOL balance* | 539 | 723 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Cash taxes* | 5.6 | 0.0 | 147 | 1,792 | 1,386 | 1,472 | 1,492 | 1,453 | 1,380 | 1,389 | 1,405 |
-| Debt | 49.7 | 49.7 | 1,433 | 7,721 | 6,689 | 6,931 | 7,035 | 6,868 | 6,546 | 6,547 | 6,617 |
-| Cash | 430 | 243 | 2,798 | 13,442 | 15,739 | 19,538 | 23,258 | 26,634 | 29,685 | 33,085 | 36,593 |
-| FCFE | -239 | -187 | 2,555 | 10,645 | 2,297 | 3,799 | 3,720 | 3,376 | 3,051 | 3,400 | 3,508 |
+| Cash taxes* | 5.6 | 0.0 | 157 | 1,797 | 1,395 | 1,484 | 1,508 | 1,451 | 1,380 | 1,389 | 1,405 |
+| Debt | 49.7 | 49.7 | 1,473 | 7,746 | 6,727 | 6,984 | 7,100 | 6,868 | 6,546 | 6,547 | 6,617 |
+| Cash | 865 | 678 | 3,303 | 13,948 | 16,284 | 20,135 | 23,911 | 27,217 | 30,268 | 33,667 | 37,175 |
+| FCFE | -239 | -187 | 2,624 | 10,645 | 2,336 | 3,851 | 3,776 | 3,306 | 3,051 | 3,400 | 3,508 |
 
 *Source: Finagle result [D45].*
 
@@ -350,30 +369,39 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 | Row (US$M unless stated) | FY2025A | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E | FY2033E | FY2034E | FY2035E |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Revenue | 16.1 | 24.9 | 30.0 | 35.0 | 40.0 | 44.0 | 47.5 | 50.0 | 52.2 | 53.8 | 55.2 |
-| EBITDA | -153 | -161 | -142 | -117 | -102 | -98.7 | -95.4 | -93.0 | -90.9 | -89.4 | -88.2 |
+| EBITDA | -153 | -161 | -172 | -162 | -134 | -116 | -100 | -93.0 | -90.9 | -89.4 | -88.2 |
 | D&A (derived)* | 0.2 | 112 | 176 | 239 | 303 | 353 | 397 | 429 | 458 | 477 | 494 |
 | Capex | 0.4 | 3.5 | 3.5 | 419 | 515 | 515 | 456 | 431 | 430 | 430 | 435 |
-| NOL balance* | 539 | 835 | 1,175 | 1,554 | 1,982 | 2,456 | 2,972 | 3,517 | 4,088 | 4,677 | 5,283 |
+| NOL balance* | 539 | 835 | 1,205 | 1,629 | 2,089 | 2,580 | 3,101 | 3,646 | 4,217 | 4,806 | 5,412 |
 | Cash taxes* | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | Debt | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 | 49.7 |
-| Cash | 4,980 | 4,793 | 4,625 | 4,066 | 3,426 | 2,790 | 2,216 | 1,669 | 1,126 | 583 | 37.6 |
-| FCFE | -239 | -187 | -168 | -559 | -640 | -637 | -574 | -547 | -543 | -542 | -546 |
+| Cash | 5,115 | 4,928 | 4,730 | 4,126 | 3,454 | 2,801 | 2,222 | 1,675 | 1,132 | 589 | 43.6 |
+| FCFE | -239 | -187 | -198 | -604 | -672 | -654 | -579 | -547 | -543 | -542 | -546 |
 
 *Source: Finagle result [D45].*
 
-**Cash, debt and tax.** Cash never goes negative. Minimum year-end cash is base 293 (FY2026E), bull 243 (FY2026E) and bear 37.6, reached at the end in FY2035E [D45]. No payout is modelled, so base cash builds to 21,736 and bull to 36,593 by FY2035E. Base and bull debt sit at exactly 1.0x EBITDA from FY2027E. Base debt peaks at 4,613 and bull at 7,721; bear is held at 49.7 [D45]. The opening NOL offsets 100% of pre-tax income with no Dutch cap, which is generous: base pays no cash tax through FY2027E, bull uses its NOL in FY2027E, and bear's NOL grows to 5,283 [D45].
+**Cash, debt and tax.** Cash never goes negative. Minimum year-end cash is base 678 (FY2026E), bull 678 (FY2026E) and bear 43.6, reached at the end in FY2035E [D45]. No payout is modelled, so base cash builds to 22,269 and bull to 37,175 by FY2035E. Base and bull debt sit at exactly 1.0x EBITDA from FY2027E. Base debt peaks at 4,666 and bull at 7,746; bear is held at 49.7 [D45]. The opening NOL offsets 100% of pre-tax income with no Dutch cap, which is generous: base pays no cash tax through FY2027E, bull uses its NOL in FY2027E, and bear's NOL grows to 5,412 [D45].
 
-**Figure 11 – Year-0 equity raise (sizes are our judgment)**
+**Figure 11 – Year-0 cash and shares: reconciliation and extra raise**
 
-*Finagle funds negative cash flow from opening cash, so each scenario carries an assumed equity raise at the start, priced at the current share price. This table shows the raise, the shares it creates and the lowest cash balance that results.*
+*Finagle funds negative cash flow from opening cash. Year-0 cash starts from the 31 December 2025 balance sheet (cash plus current investment securities) and adds the June 2026 offering; shares add the offering shares. A dry run with that opening cash shows the lowest year-end cash; where it is negative, an extra raise is added at the current price in $50M steps until cash never goes negative. The extra raise has no other purpose.*
 
-| Scenario | Equity raise [S403] | Price (US$) | New shares (M) [C504] | Total shares (M) | Year-0 cash | Minimum cash |
-|---|---|---|---|---|---|---|
-| base | 400 | 25.30 | 15.8 | 78.3 | 480 | 293 |
-| bull | 350 | 25.30 | 13.8 | 76.4 | 430 | 243 |
-| bear | 4,900 | 25.30 | 193.7 | 256.2 | 4,980 | 37.6 |
+| US$M unless stated | Base | Bull | Bear | Source |
+|---|---|---|---|---|
+| Cash and cash equivalents, 31 Dec 2025 | 80.240 | same | same | 10-K balance sheet [D48] |
+| Current investment securities, 31 Dec 2025 | 542.301 | same | same | 10-K balance sheet [D48] |
+| June 2026 follow-on offering, net proceeds | 242.681 | same | same | 10-Q [D50]; 8-K [D49] |
+| Year-0 cash before any extra raise | 865.222 | same | same | sum [C511] |
+| Lowest year-end cash with no extra raise (dry run) | 678.15 | 678.15 | -4,206.41 | scratch Finagle compile [D46] |
+| Extra year-0 raise at US$25.30 | 0 | 0 | 4,250 | rule [P109][S403] |
+| Year-0 cash used | 865.222 | 865.222 | 5,115.222 | valuation request [D45] |
+| Lowest year-end cash in the valuation | 678.15 | 678.15 | 43.59 | Finagle result [D45] |
+| Shares on 10-K cover (M) | 62.529408 | same | same | 10-K cover [D45] |
+| June 2026 offering shares (M) | 5.686813 | same | same | 10-Q [D50] |
+| Extra-raise shares (M) | 0.000000 | 0.000000 | 167.984190 | raise / 25.30 [C504] |
+| Shares used (M) | 68.216221 | 68.216221 | 236.200411 | valuation request [D45] |
 
-*Source: Finagle result [D45]. New shares issued at the fetched price with no discount or fees [S403]. The bear raise is about 3.1x the current market cap of 1,582 [C508].*
+*Source: Finagle result [D45]. Extra-raise shares issued at the fetched price with no discount or fees [S403]. The bear raise is about 2.5x the market cap of 1,726 on 68.2M shares [C508]. Hercules debt stays at 49.7 with no new borrowing; the HemB royalty financing liability (about $479M) is treated as not debt, per the analyst instruction [P105].*
 
 **Figure 12 – Scenarios vs. price**
 
@@ -381,26 +409,26 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 
 | Item (US$M unless stated) | Base | Bull | Bear |
 |---|---|---|---|
-| Value per share, FCFE (US$) | $285.93 | $493.70 | -$0.88 |
-| Value per share, DDM (US$) | $285.93 | $493.70 | -$0.88 |
-| Equity value | 21,919 | 37,270 | -5,206 |
-| Firm value | 21,969 | 37,320 | -5,156 |
+| Value per share, FCFE (US$) | $335.65 | $560.67 | -$0.78 |
+| Value per share, DDM (US$) | $335.65 | $560.67 | -$0.78 |
+| Equity value | 22,031 | 37,382 | -5,299 |
+| Firm value | 22,081 | 37,432 | -5,249 |
 | Terminal-year FCFE | 2,197 | 3,644 | -556 |
 | Terminal WACC | 10.08% | 10.08% | 10.51% |
-| Shares (M) | 78.34 | 76.36 | 256.21 |
-| Year-0 cash | 480 | 430 | 4,980 |
-| Minimum cash | 293 | 243 | 37.61 |
-| Debt peak | 4,613 | 7,721 | 49.70 |
+| Shares (M) | 68.22 | 68.22 | 236.20 |
+| Year-0 cash | 865 | 865 | 5,115 |
+| Minimum cash | 678 | 678 | 43.59 |
+| Debt peak | 4,666 | 7,746 | 49.70 |
 | Max debt / EBITDA (x) | 1.0x | 1.0x | n/a |
 | Flagged not a valuation | no | no | no |
-| Value per share vs. price $25.30 [C509] | +1,030% | +1,851% | -103% |
+| Value per share vs. price $25.30 [C509] | +1,227% | +2,116% | -103% |
 
 *Source: Finagle result [D45]; upside derived [C509].* The spread between scenarios is driven by approval (bear assumes none) and, between base and bull, by price and capacity.
 
 **Caveats.**
 
-- **Bear.** EBITDA is negative in every year, so FCFE is negative after year 1 and equity value is -5,206. The -$0.88 rests on perpetual losses and on our assumed 4,900 raise. Bear D&A exceeds capex from FY2033E and reaches 494 vs capex 435 and revenue 55.2 in FY2035E, because base-sized capex sits on bear's small revenue. It is positive, so Finagle does not flag it, but it inflates bear's NOL build-up. Read bear as roughly zero.
-- **Funding.** The base and bull raises are larger than needed; the bear raise implies heavy dilution (194M new shares on 62.5M). Fees, discount and timing are not modelled.
+- **Bear.** EBITDA is negative in every year, so FCFE is negative after year 1 and equity value is -5,299. The -$0.78 rests on perpetual losses and on the assumed 4,250 extra raise. Bear D&A exceeds capex from FY2033E and reaches 494 vs capex 435 and revenue 55.2 in FY2035E, because base-sized capex sits on bear's small revenue. It is positive, so Finagle does not flag it, but it inflates bear's NOL build-up. Read bear as roughly zero.
+- **Funding.** Base and bull are funded by existing cash, investments and the June 2026 offering, with no extra raise; the bear raise implies heavy dilution (168M new shares on 68.2M). Fees, discount and timing are not modelled. Employee-plan cash and shares and any pre-funded warrants are left out [S403].
 - **Cash accumulation.** With no distribution, cash piles up from FY2028E; Finagle values it through FCFE, but the report makes no assumption about its use.
 - **Terminal growth vs. gsnext.** Terminal growth is set at 2% by analyst instruction [P105]; the forecast's next-period growth is 0.03% base, 0.02% bull and 3.00% bear. The two have not been reconciled.
 - **Approval** is not probability-weighted; base and bull assume approval on 1 July 2027.
@@ -415,15 +443,16 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 
 | Assumption | Value used | Evidence or judgment | Effect if wrong |
 |---|---|---|---|
-| Approval and launch | 1 July 2027 (base, bull) | Judgment from filing and review timing [G12] | Q4 2027 approval: base FY2027E revenue $360M (Figure 4); no approval is the bear case at -$0.88 [D45] |
+| Approval and launch | 1 July 2027 (base, bull) | Judgment from filing and review timing [G12] | Q4 2027 approval: base FY2027E revenue $360M (Figure 4); no approval is the bear case at -$0.78 [D45] |
 | Launch pool | ~6,000 | Company management estimate [G5] | Criteria behind it undisclosed |
 | Leave rate m | 0.62/yr (stay ~1.6 yr) | Judgment; evidence points nearer 0.41 [A23][C510] | At ~0.40 with a filter on all entrants, long-run treated ~1,850/yr [P9] |
-| New entrants | ~3,800/yr | Incidence [S5] and 90% early-manifest share (assumption) | At 30% of incidence, base FY2030E treated 927 (Figure 4) |
-| Treated share P | 0.729 | Assumption [S3] | Scales long-run volume one-for-one |
+| New entrants | ~3,800/yr | Incidence [S4] and 90% early-manifest share (assumption) | At 30% of incidence, base FY2030E treated 927 (Figure 4) |
+| Treated share P | 0.729 | Assumption [S2] | Scales long-run volume one-for-one |
 | Capacity | 330 / 2,500 / 3,000 | ClearPoint forecast, judgment [D32] | Binds through FY2030E; bull's faster ramp front-loads volume |
-| Net price | $2.0M, −10% from FY2031E | Assumption below comparable list prices [A13][S10] | Revenue moves one-for-one |
+| Net price | $2.0M, −10% from FY2031E | Assumption below comparable list prices [A13][S9] | Revenue moves one-for-one |
 | Terminal growth | 2% | Analyst instruction [P105] | Not reconciled with the forecast's next-period growth |
-| Equity raises | $400M / $350M / $4,900M | Judgment [S403] | Bear raise is about 3.1x market cap [C508] |
+| Confirmatory-study cost | Separate line $129M over FY2027E–FY2031E, all scenarios | Inference from benchmarks; cost undisclosed [I1] | Bands $63M–$222M: base value per share $336.18 to $334.90; bear raise $4,150M to $4,300M [D45][D47] (Figure 17) |
+| Extra year-0 raises | $0 / $0 / $4,250M | Rule: only to keep cash from going negative [P109][S403] | Bear raise is about 2.5x market cap [C508] |
 
 *Source: as tagged.* **What this means:** the base value is conditional on approval, and after approval the leave rate and treated share decide how many patients are treated once capacity stops binding. Those two are assumptions, not company figures.
 
@@ -431,28 +460,216 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 
 - **m = 0.62 is a choice.** It was picked as the most internally consistent option, because at that leave rate incidence alone gives a steady pool of about 6,000 [P9]. It implies a 1.6-year stay, shorter than the duration evidence. In the trial, 2 of the 6 high-dose controls no longer met inclusion criteria after about 12 months [A23], which implies a leave rate of about 0.41 a year (derived; six patients, so the range is wide) [C510].
 - **6,000 is not a treatment target.** uniQure calls it "Initial Treatable Patients at Launch", a management estimate of patients addressable at launch, about 30% of ~20,000 diagnosed patients [G5][G6]. The criteria behind the 30% are not disclosed.
-- **0.729 is an assumption.** The treated share is 90% referred × 90% willing × 90% covered; none is a company figure [S3].
+- **0.729 is an assumption.** The treated share is 90% referred × 90% willing × 90% covered; none is a company figure [S2].
 
 **Valuation mechanics to note.**
 
 - **Debt** is set at 1x EBITDA from FY2027E, the first year EBITDA is positive [P103][D46].
 - **SBC** is 5% of sales once EBITDA is positive [P104][S403].
 - **Bear capex** equals base capex in dollars, which is large against bear's small revenue [P107].
-- **Bear raise** is $4,900M, about 3.1x the ~$1.58B market cap, to keep bear cash positive [P109][C508].
+- **Bear raise** is $4,250M, about 2.5x the ~$1.73B market cap, to keep bear cash positive [P109][C508].
 
 **Open flags.**
 
 - FY2027E is not scaled to consensus (consensus / build 0.165, outside our 10% rule) [C236].
-- Base and bull raises ($400M / $350M) are larger than needed because EBITDA is positive from FY2027E [S403].
+- Year-0 cash excludes $6.985M of employee option and ESPP proceeds and the related ~1.15M shares [D50][S403].
 - Cash accumulates with no distribution modelled [D45].
 - Terminal growth of 2% is not reconciled with the forecast's next-period growth (0.03% base) [P105][D46].
-- Centers are derived from capacity at two procedures a week, only for the opex line [S6].
+- Centers are derived from capacity at two procedures a week, only for the opex line [S5].
+
+## 10. Confirmatory Study Cost: Analysis and Cost Bands
+
+### Purpose and scope
+
+uniQure has asked the FDA for accelerated approval of AMT-130 (ifezuntirgene inilparvovec) in Huntington's disease. Accelerated approval is granted on early evidence and must be followed by a confirmatory study that verifies clinical benefit. On 2 November 2026 the company said this study will enrol about 200 patients [G701]. They will be randomised two-to-one between AMT-130 and standard of care, which means usual medical management with no surgery. The primary endpoint is Total Functional Capacity (TFC, a standard rating of everyday function in Huntington's disease) at 36 months, and US screening is to begin by the end of 2026. uniQure has not disclosed a budget for the study. This section estimates what the study will cost, sets a lower and an upper band around a central estimate, and states the exact amount to carry on the forecast's separate confirmatory-study line. The same profile applies in the bear, base and bull cases. The bear case assumes the drug is not approved, but the study is assumed to be committed and paid for regardless, so the cost does not change between cases.
+
+Every figure carries a tag. This section uses the report's D, S and G tags plus three of its own:
+
+- **D** is disclosed in a filing, release or official registry, and **G** is a uniQure company statement.
+- **B** is a published benchmark.
+- **I** is our own inference, with the arithmetic shown.
+- **S** is an assumption.
+- **K** is the output of a CEO-simulation bot (the Matt Kapusta bot, a simulation of uniQure's chief executive). The bot reasons from public filings in the manner of uniQure's chief executive. It is not a company statement.
+
+In the rest of the report C marks our arithmetic; in this section that arithmetic is tagged I so that each inference can be traced step by step. Sources are numbered and listed in Appendix B with the report's other sources.
+
+### What the study involves
+
+About 133 patients will receive AMT-130 and about 67 will act as controls. A treated patient undergoes MRI-guided neurosurgery. During the operation, catheters deliver a one-time dose of the AAV vector (adeno-associated virus, the harmless virus used to carry the gene) into the striatum, the brain region Huntington's disease damages first. The surgery uses ClearPoint Neuro's navigation system and SmartFlow cannula, and it needs MRI-suite time, a neurosurgical team and a hospital stay. Every patient in both arms is then followed for at least 36 months with clinic visits, rating scales, MRI scans and safety monitoring. Gene therapy rules also require long-term safety follow-up of treated patients after the primary endpoint. Around these per-patient activities sit fixed costs:
+
+- a contract research organisation (CRO) that runs the trial;
+- site start-up and contracting at perhaps 15 to 25 centres;
+- an independent data safety monitoring board (DSMB);
+- central MRI reading, biostatistics, regulatory reporting, and ex-US sites if they are used.
+
+### Evidence 1: uniQure's own spending
+
+uniQure reports external program spending on AMT-130 every year. This "direct" research and development cost excludes staff, facilities and, until 2024, vector made in its own Lexington plant. The figures in US$ millions are [D901]–[D904]:
+
+| 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | H1 2026 |
+|---|---|---|---|---|---|---|---|---|---|
+| 3.9 [D901] | 5.9 [D901] | 4.1 [D901] | 6.9 [D901] | 10.5 [D901] | 19.8 [D903] | 13.0 [D902] | 18.0 [D902] | 42.5 [D902] | 14.3 [D904] |
+
+The total is $138.9 million [I901]. Of that, 2025 includes $19.4 million to prepare the licence application and validate manufacturing [D902], and 2017–2018 was mostly pre-clinical and IND work (IND is the FDA filing needed to start human trials). That work will not recur.
+
+The Phase I/II studies treated about 57 patients: 26 in the US, 13 in Europe, 12 in a third cohort and 6 in a fourth [D902][D903]. While patients were being dosed, the studies cost roughly $10–20 million a year. Excluding licence preparation and pre-IND work leaves about $110 million. That is close to $2 million per treated patient on a simple division [I902], but the figure overstates what a new patient costs. The trials have accumulated about 205 patient-years of follow-up. They ran for seven years across two countries and four cohorts, and the early US cohorts included imitation surgery. Allowing about $30 million for fixed overhead and $150,000 per patient-year of follow-up leaves roughly $0.85 million per dosing event, excluding vector [I903]. We treat that as the ceiling for the non-vector cost of treating one patient in a larger and more routine study.
+
+uniQure also gives a funding statement. As of 30 June 2026 it held $811.9 million, which it expects to fund operations "into 2030, including costs associated with the commercial launches and confirmatory study of AMT-130" [D904]. We ran a simple cash walk from mid-2026 to the end of 2029 with these inputs [I904]:
+
+- the Q2 2026 quarterly cost base (R&D $34.0 million, selling and administration $17.4 million) [D904];
+- an allowance for launch spending;
+- no AMT-130 sales.
+
+With no sales, a study of about $150 million or less leaves cash roughly at zero by the end of 2029 once the $100 million Hercules loan tranche is drawn. A $250 million study leaves a shortfall of about $70 million. Any launch revenue from late 2027 closes that gap, so the statement leans slightly towards the lower half of our range but cannot rule out the upper half.
+
+### Evidence 2: Aspen Neuroscience's planned Phase 3
+
+Aspen Neuroscience priced its initial public offering in October 2026 at $15.00 a share, for about $125.8 million of net proceeds [D905]. Its prospectus allocates "approximately $110.0 million to initiate and fund a Phase 3 trial" of sasineprocel, its cell therapy for Parkinson's disease (p.85) [D905]. Two further statements matter.
+
+- **Runway:** the proceeds and existing cash will fund operations only "into the second half of 2028".
+- **Completion:** they "will not be sufficient to complete... the Phase 3 trial" (p.85) [D905].
+
+The trial will be "a single Phase 3 registrational study that includes a sham-controlled trial design and an 18-month primary endpoint" (p.131) [D906]. Aspen expects to start collecting patient biopsies by the end of 2026 and to dose patients in the second half of 2027 (p.4, p.113) [D906]. The prospectus does not give the number of patients. We assume about 100 [S901], in line with two comparable Parkinson's surgical trials described below. The $110 million therefore covers roughly the first two years of a trial that reads out around 2030. If it is half to two-thirds of the total, the full trial costs about $165–220 million, or $1.6–2.2 million per randomised patient [I905].
+
+Scaling this to AMT-130 needs three adjustments.
+
+- **Product.** Sasineprocel is made separately for each patient from their own skin cells (an autologous induced pluripotent stem cell product). That makes it far more expensive per patient than an off-the-shelf AAV vector. Aspen spent $14.5 million on "cell-therapy development and production" in 2025 [D907].
+- **Control arm.** Aspen's controls receive sham surgery. AMT-130's controls have no surgery.
+- **Size and length.** AMT-130's study is about twice the size and twice the length (36 versus 18 months).
+
+We remove $0.5–1.0 million of manufacturing per treated patient and the sham-surgery cost, and add a longer follow-up and a vector cost. That gives $1.0–1.35 million per treated AMT-130 patient and $0.25–0.40 million per control. On 133 treated and 67 control patients, plus $30–40 million of fixed costs, the anchor implies roughly **$180–260 million** for AMT-130 [I906].
+
+### Evidence 3: the closest comparable trials
+
+Bayer runs two Parkinson's surgical trials of similar size. Neither has a disclosed cost.
+
+- **AskBio REGENERATE-PD:** a Phase 2 trial of AB-1005, an AAV gene therapy injected into the putamen. It is sham-surgery controlled, measures a motor diary at 18 months and runs at 46 sites. ClinicalTrials.gov lists 127 estimated participants, against 87 in AskBio's own release (NCT06285643) [D908].
+- **BlueRock exPDite-2:** a Phase 3 trial of bemdaneprocel, a stem-cell-derived therapy. It has 102 estimated participants, a sham comparator, a 78-week endpoint and 43 sites, with primary completion expected in October 2028 (NCT06944522) [D909].
+
+Bayer reports only portfolio-level figures. These are more than €3.5 billion invested in cell and gene therapy since 2020 and a $250 million Berkeley plant built partly to supply late-stage bemdaneprocel trials [D910]. These trials confirm that a sham-controlled neurosurgical study of about 100 patients needs 40–50 sites. They give no cost data. An AMT-130 study of 200 patients will therefore probably need 20 or more sites in more than one country.
+
+### Evidence 4: published benchmarks
+
+- **Moore and colleagues (2018)** estimated the cost of pivotal trials for drugs the FDA approved in 2015–2016 [B901]. The median was $19.0 million, or $41,117 per patient. Trials with a placebo or active control averaged $35.1 million. These estimates exclude the cost of making the drug.
+- **Sertkaya and colleagues (2016)**, for the US Department of Health and Human Services, found that Phase 3 studies average $11.5–52.9 million across therapeutic areas, with central nervous system studies among the cheapest [B902].
+- **Health Advances** divided reported program costs by enrolment for orphan enzyme and gene therapies [B903]. It found "large costs per patient (~$2MM–~$5.7MM)", and a median for the largest trial of "~$100MM (range $42MM–$175MM)", for trials of 12–33 patients.
+
+Conventional benchmarks therefore point to per-patient costs in the tens of thousands of dollars, and gene-therapy benchmarks point to millions. AMT-130's study sits between the two: an expensive one-off procedure followed by conventional follow-up.
+
+The two largest procedure-specific inputs have partial sources.
+
+- **ClearPoint hardware:** ClearPoint's chief executive said on 29 October 2026 that he expects "somewhere between $13,000 and $20,000 per procedure", with $15,000 a reasonable modelling assumption [D911].
+- **Vector:** published estimates put AAV cost of goods at $0.5–1.0 million per dose generally [B904] and Hemgenix vector at $1–2 million per dose [B905]. Hemgenix is a high, whole-body dose. AMT-130 is a small local dose to the brain, so we use $50,000–300,000 per treated patient [I907].
+
+Hospital, surgeon and imaging costs for the operation have no public source. We infer $0.2–0.85 million per treated patient, including site fees; the top of that range is the Phase I/II calibration above [I903].
+
+### Evidence 5: the CEO-simulation view
+
+The simulation bot estimates the study at $190 million (low), $250 million (base) and $320 million (high) [K901]. Its base case phases spending as $50, 75, 62, 38 and 25 million over FY27–FY31. It scales from Phase I/II direct spend of about $2 million per patient to $1.2–1.8 million per treated patient. It puts controls at $0.3–0.5 million each and start-up at $15–30 million. We checked its historical spending figures against the filings and they are correct. As explained above, its per-patient rate does not remove the non-recurring Phase I/II overhead, so we regard its base case as nearer our upper band than our centre.
+
+### Cost bands
+
+We combined the evidence in four steps.
+
+- **Bottom-up build.** Per-patient costs for treated and control patients, plus fixed costs, give $84–275 million with $150 million in the middle [I908].
+- **Aspen anchor.** This gives $180–260 million [I906].
+- **CEO simulation.** This gives $190–320 million [K901].
+- **Health Advances.** The largest-trial median of about $100 million (up to $175 million) is for much smaller trials [B903].
+
+The runway statement leans slightly lower [I904]. We set the central estimate at **$190 million**, the point where the upper half of the bottom-up build meets the lower half of the Aspen anchor.
+
+The **lower band of $120 million** assumes routine surgery at high-volume centres, a vector cost near $50,000, and lean follow-up. It sits above the Health Advances median, because AMT-130's study has six to fifteen times as many patients.
+
+The **upper band of $290 million** assumes Phase I/II-level surgical cost, a vector cost near $300,000, many ex-US sites and slow enrolment. It approaches the simulation's high case.
+
+Spending is phased by the trial's activity. Start-up begins in late 2026. Enrolment and surgery run through 2027–2028. Follow-up runs to 2030–2031. A long-term safety tail follows.
+
+**Figure 14 – Gross confirmatory-study cost by band and year (US$M)**
+
+| US$ million | FY26 | FY27 | FY28 | FY29 | FY30 | FY31 | FY32 | Total | FY27–31 |
+|---|---|---|---|---|---|---|---|---|---|
+| Lower [I908] | 3 | 25 | 35 | 26 | 17 | 9 | 5 | 120 | 112 |
+| **Central** [I908] | 4 | 40 | 55 | 42 | 27 | 15 | 7 | 190 | 179 |
+| Upper [I908] | 6 | 60 | 85 | 65 | 40 | 22 | 12 | 290 | 272 |
+
+### What goes on the forecast's confirmatory line
+
+The forecast builds operating cost as the Q2 2026 run rate grown at 3% a year, with a separate line for the confirmatory study. The Q2 2026 run rate already contains $6.3 million a quarter, about $25 million a year, of AMT-130 external spending [D904]. That covers Phase I/II follow-up and licence-application work. As that work ends, we assume about $10 million a year of it is in effect redeployed to the confirmatory study, while the rest continues to fund long-term follow-up of Phase I/II patients [S902]. The separate line should therefore carry the gross cost less $10 million a year:
+
+**Figure 15 – Gross study cost, run-rate offset and separate confirmatory line (US$M)**
+
+| US$M | FY27E | FY28E | FY29E | FY30E | FY31E | Total FY27E–FY31E |
+|---|---|---|---|---|---|---|
+| Lower: gross study cost [I908] | 25 | 35 | 26 | 17 | 9 | 112 |
+| Lower: less run-rate offset [S902] | −10 | −10 | −10 | −10 | −9 | −49 |
+| **Lower: separate confirmatory line** [I908][S902] | **15** | **25** | **16** | **7** | **0** | **63** |
+| Central: gross study cost [I908] | 40 | 55 | 42 | 27 | 15 | 179 |
+| Central: less run-rate offset [S902] | −10 | −10 | −10 | −10 | −10 | −50 |
+| **Central: separate confirmatory line** [I908][S902] | **30** | **45** | **32** | **17** | **5** | **129** |
+| Upper: gross study cost [I908] | 60 | 85 | 65 | 40 | 22 | 272 |
+| Upper: less run-rate offset [S902] | −10 | −10 | −10 | −10 | −10 | −50 |
+| **Upper: separate confirmatory line** [I908][S902] | **50** | **75** | **55** | **30** | **12** | **222** |
+
+*Source: gross cost from the cost bands above [I908]; offset is our assumption [S902].*
+
+The roughly $4 million of FY26 start-up spend and the roughly $7 million FY32 tail are smaller than the $10 million a year offset, so they are treated as absorbed in the run rate and carry no separate line. Over FY27–FY31 the separate line totals $129 million, against $179 million of gross study cost in those years.
+
+### How the cost enters the forecast and the valuation
+
+The central separate-line profile is carried unchanged in all three scenarios. In base and bull it is added to an opex build that starts from the Q2 2026 run rate; in bear it is added on top of the restructured opex (Figure A3). Bear still assumes AMT-130 is not approved, but the study starts screening before the FDA's decision and is assumed to be committed, so bear pays for it as well. Each scenario's EBITDA is therefore lower by exactly the amount on the line in each year from FY2027E to FY2031E, and is unaffected before and after (Figure 16).
+
+**Figure 16 – Separate confirmatory-study line and EBITDA with and without it (US$M)**
+
+| US$M | FY27E | FY28E | FY29E | FY30E | FY31E |
+|---|---|---|---|---|---|
+| Confirmatory line, all scenarios [I1] | 30 | 45 | 32 | 17 | 5 |
+| Base EBITDA excluding the study [C702] | 309.8 | 3,764.1 | 4,625.5 | 4,683.0 | 4,146.5 |
+| Base EBITDA as forecast [D46] | 279.8 | 3,719.1 | 4,593.5 | 4,666.0 | 4,141.5 |
+| Bull EBITDA excluding the study [C702] | 1,503.4 | 7,791.3 | 6,759.3 | 7,001.3 | 7,105.1 |
+| Bull EBITDA as forecast [D46] | 1,473.4 | 7,746.3 | 6,727.3 | 6,984.3 | 7,100.1 |
+| Bear EBITDA excluding the study [C702] | -141.8 | -117.1 | -102.4 | -98.7 | -95.4 |
+| Bear EBITDA as forecast [D46] | -171.8 | -162.1 | -134.4 | -115.7 | -100.4 |
+
+*Source: forecast file [D46]; "excluding" adds the line back [C702].*
+
+The cost bands were run through the same forecast and valuation pipeline, changing nothing but the confirmatory line, and resizing the bear year-0 equity raise in each run so that bear cash never goes negative [P109]. Figure 17 shows the result. Because approval is assumed in base and bull, a cost of this size barely moves their values: between the lower and upper bands, base value per share moves by about $1.28 (from $336.18 to $334.90), well under 1% of the central value. In bear, where there is no revenue to absorb it, the cost goes straight into the cash the company must raise: the raise is $4,150M on the lower band, $4,250M at the centre and $4,300M on the upper band. Bear value per share is close to zero in every band (-$1.02, -$0.78 and -$0.84). The ordering is not monotonic because the raise is sized in $50M steps, so the cash left over at the end differs between runs; in bear a higher study cost shows up mainly as a larger raise and more dilution rather than as a lower value per share.
+
+**Figure 17 – Value per share and bear raise by confirmatory-cost band**
+
+| Cost profile (separate line, FY27E–FY31E total) | Base value per share | Bull value per share | Bear value per share | Bear year-0 raise [P109] | Bear minimum cash |
+|---|---|---|---|---|---|
+| Lower ($63M) | $336.18 [D47] | $561.20 [D47] | -$1.02 [D47] | $4,150M [D47] | 9.59 [D47] |
+| Central ($129M) | $335.65 [D45] | $560.67 [D45] | -$0.78 [D45] | $4,250M [D45] | 43.59 [D45] |
+| Upper ($222M) | $334.90 [D47] | $559.93 [D47] | -$0.84 [D47] | $4,300M [D47] | 0.59 [D47] |
+
+*Source: central run [D45]; lower and upper band runs [D47]. Each run uses the same market data, capex, demand model and 2% terminal growth; only the confirmatory line and the bear raise differ.*
+
+
+### Verified versus assumed
+
+- **Verified in primary documents:**
+    - uniQure's yearly AMT-130 spending, its cash and runway statements, and the confirmatory design;
+    - Aspen's use of proceeds, runway, Phase 3 design and timing, and R&D history;
+    - the AskBio and BlueRock trial designs on ClinicalTrials.gov;
+    - ClearPoint's per-procedure revenue.
+- **Benchmarks:** the Moore, Sertkaya and Health Advances figures come from the publications or their abstracts. The Sertkaya central nervous system figure is from a summary, not the full table.
+- **Not disclosed anywhere we could find:**
+    - the size of Aspen's Phase 3 [S901];
+    - a cost for any of the comparator trials;
+    - AMT-130's cost of goods or Genezen pricing;
+    - hospital and surgeon fees for the procedure;
+    - a ClinicalTrials.gov listing for the confirmatory study, which was not posted as of 2 November 2026.
+- **Inferences:** per-patient costs, the Aspen scaling, the phasing and the run-rate offset are our own [I901]–[I908], [S901][S902]. Confidence is low to moderate.
+- **Largest single uncertainty:** the non-vector cost of each operation, which alone moves the total by about ±$60 million.
+- **Next disclosure:** uniQure's Q3 2026 results on 4 November 2026 may narrow the range.
+
+
 
 ## Appendix A – Bull and Bear Cases
 
 *The assumptions and line-by-line forecasts for the two alternative scenarios.*
 
-**Bull.** Incidence of 1.59 per 100,000, a 95% referral share and an 85.7% treated share; the same 6,000 start pool with unfiltered entrants (a steady pool of ~8,200) [C3]. Capacity is 880 / 4,500 / 3,500 and binds every year [S7]. Price is $2.4M, $2.16M from FY2028E [S11]. The UK launches from Q3 2028 at $1.5M [S9].
+**Bull.** Incidence of 1.59 per 100,000, a 95% referral share and an 85.7% treated share; the same 6,000 start pool with unfiltered entrants (a steady pool of ~8,200) [C3]. Capacity is 880 / 4,500 / 3,500 and binds every year [S6]. Price is $2.4M, $2.16M from FY2028E [S10]. The UK launches from Q3 2028 at $1.5M [S8].
 
 **Figure A1 – Bull case by line**
 
@@ -469,35 +686,46 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 | UK capacity (patients/yr) | – | – | 0 [C199] | 0 [C200] | 117 [C201] | 663 [C202] | 780 [C203] | 780 [C204] | 524 [C205] | 269 [C206] |
 | **UK patients treated (patients/yr)** | – | – | 0 [C207] | 0 [C208] | 117 [C209] | 663 [C210] | 780 [C211] | 780 [C212] | 524 [C213] | 269 [C214] |
 | UK eligible backlog at year end (patients) | – | – | 0 [C215] | 0 [C216] | 2,155 [C217] | 1,574 [C218] | 943 [C219] | 372 [C220] | 0 [C221] | 0 [C222] |
-| License revenue, Hemgenix royalties (US$M) | 10.1 [A1] | 15.9 [A2] | 24.9 [C8] | 30.0 [S14] | 35.0 [S15] | 40.0 [S16] | 44.0 [S17] | 47.5 [S18] | 50.0 [S19] | 52.2 [S20] |
-| Collaboration revenue (US$M) | 10.9 [A3] | 0.2 [A4] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] |
+| License revenue, Hemgenix royalties (US$M) | 10.1 [A1] | 15.9 [A2] | 24.9 [C8] | 30.0 [S13] | 35.0 [S14] | 40.0 [S15] | 44.0 [S16] | 47.5 [S17] | 50.0 [S18] | 52.2 [S19] |
+| Collaboration revenue (US$M) | 10.9 [A3] | 0.2 [A4] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] |
 | Contract manufacturing revenue (US$M) | 6.1 [A5] | 0.0 [A25] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] |
-| AMT-130 revenue, US (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S22] | 2,112 [C108] | 9,720 [C109] | 7,560 [C110] | 7,560 [C110] | 7,560 [C110] | 7,560 [C110] | 7,560 [C110] |
-| AMT-130 revenue, UK (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S35] | 0.0 [S35] | 176 [C111] | 994 [C112] | 1,170 [C113] | 1,170 [C113] | 787 [C114] | 404 [C115] |
+| AMT-130 revenue, US (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S21] | 2,112 [C108] | 9,720 [C109] | 7,560 [C110] | 7,560 [C110] | 7,560 [C110] | 7,560 [C110] | 7,560 [C110] |
+| AMT-130 revenue, UK (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S34] | 0.0 [S34] | 176 [C111] | 994 [C112] | 1,170 [C113] | 1,170 [C113] | 787 [C114] | 404 [C115] |
 | **Total revenue (US$M)** | 27.1 [A6] | 16.1 [A7] | 24.9 [C8] | 2,142 [C117] | 9,930 [C118] | 8,594 [C119] | 8,774 [C120] | 8,778 [C121] | 8,397 [C122] | 8,016 [C123] |
 | Gross margin (%) | – | 89.5% [C32] | 93.9% [C124] | 87.6% [C125] | 87.2% [C126] | 87.9% [C127] | 89.0% [C128] | 90.2% [C129] | 91.3% [C130] | 91.5% [C131] |
-| **EBITDA (US$M)** | -149 [C27] | -153 [C28] | -161 [C31] | 1,433 [S36] | 7,721 [S37] | 6,689 [S38] | 6,931 [S39] | 7,035 [S40] | 6,868 [S41] | 6,546 [S42] |
-| EBITDA margin (%, derived from the two rows above) | -550.9% | -949.9% | -645.9% | 66.9% | 77.8% | 77.8% | 79.0% | 80.1% | 81.8% | 81.7% |
+| **EBITDA (US$M)** | -149 [C27] | -153 [C28] | -161 [C31] | 1,473 [S35] | 7,746 [S36] | 6,727 [S37] | 6,984 [S38] | 7,100 [S39] | 6,868 [S40] | 6,546 [S41] |
+| EBITDA margin (%, derived from the two rows above) | -550.9% | -949.9% | -645.9% | 68.8% | 78.0% | 78.3% | 79.6% | 80.9% | 81.8% | 81.7% |
 
-*Source: forecast file [D46]. me 81.7% [C134], mc 86.6% [S43], gsnext 0.02% [S44].*
+*Source: forecast file [D46]. me 81.7% [C134], mc 86.6% [S42], gsnext 0.02% [S43].*
 
-**Bear.** AMT-130 is not approved. Royalties continue and opex is cut to $140M.
+**Bear.** AMT-130 is not approved. Royalties continue and restructured opex falls from $170M in FY2027E to $140M from FY2029E. Bear also carries the same confirmatory-study line as base and bull, $30M, $45M, $32M, $17M and $5M in FY2027E–FY2031E [I1], shown as its own line in Figure A3 (Section 10 explains the estimate).
 
 **Figure A2 – Bear case by line**
 
 | Row (units) | FY24A | FY25A | FY26E | FY27E | FY28E | FY29E | FY30E | FY31E | FY32E | FY33E |
 |---|---|---|---|---|---|---|---|---|---|---|
-| License revenue, Hemgenix royalties (US$M) | 10.1 [A1] | 15.9 [A2] | 24.9 [C8] | 30.0 [S14] | 35.0 [S15] | 40.0 [S16] | 44.0 [S17] | 47.5 [S18] | 50.0 [S19] | 52.2 [S20] |
-| Collaboration revenue (US$M) | 10.9 [A3] | 0.2 [A4] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] | 0.0 [S21] |
+| License revenue, Hemgenix royalties (US$M) | 10.1 [A1] | 15.9 [A2] | 24.9 [C8] | 30.0 [S13] | 35.0 [S14] | 40.0 [S15] | 44.0 [S16] | 47.5 [S17] | 50.0 [S18] | 52.2 [S19] |
+| Collaboration revenue (US$M) | 10.9 [A3] | 0.2 [A4] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] | 0.0 [S20] |
 | Contract manufacturing revenue (US$M) | 6.1 [A5] | 0.0 [A25] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] | 0.0 [G14] |
-| AMT-130 revenue, US (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] |
-| AMT-130 revenue, UK (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S46] | 0.0 [S46] | 0.0 [S46] | 0.0 [S46] | 0.0 [S46] | 0.0 [S46] | 0.0 [S46] | 0.0 [S46] |
+| AMT-130 revenue, US (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S44] | 0.0 [S44] | 0.0 [S44] | 0.0 [S44] | 0.0 [S44] | 0.0 [S44] | 0.0 [S44] | 0.0 [S44] |
+| AMT-130 revenue, UK (US$M) | 0.0 [A26] | 0.0 [A26] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] | 0.0 [S45] |
 | **Total revenue (US$M)** | 27.1 [A6] | 16.1 [A7] | 24.9 [C8] | 30.0 [C223] | 35.0 [C224] | 40.0 [C225] | 44.0 [C226] | 47.5 [C227] | 50.0 [C228] | 52.2 [C229] |
 | Gross margin (%) | – | 89.5% [C32] | 93.9% [C230] | 93.9% [C230] | 93.9% [C230] | 93.9% [C230] | 93.9% [C230] | 93.9% [C230] | 93.9% [C230] | 93.9% [C230] |
-| **EBITDA (US$M)** | -149 [C27] | -153 [C28] | -161 [C31] | -142 [S48] | -117 [S49] | -102 [S50] | -98.7 [S51] | -95.4 [S52] | -93.0 [S53] | -90.9 [S54] |
-| EBITDA margin (%, derived from the two rows above) | -550.9% | -949.9% | -645.9% | -472.7% | -334.6% | -256.1% | -224.2% | -200.8% | -186.1% | -174.0% |
+| **EBITDA (US$M)** | -149 [C27] | -153 [C28] | -161 [C31] | -172 [S47] | -162 [S48] | -134 [S49] | -116 [S50] | -100 [S51] | -93.0 [S52] | -90.9 [S53] |
+| EBITDA margin (%, derived from the two rows above) | -550.9% | -949.9% | -645.9% | -572.7% | -463.2% | -336.1% | -262.9% | -211.3% | -186.1% | -174.0% |
 
-*Source: forecast file [D46]. me -174.0% [C233], mc 93.9% [S55], gsnext 3.00% [S56].*
+*Source: forecast file [D46]. me -174.0% [C233], mc 93.9% [S54], gsnext 3.00% [S55].*
+
+**Figure A3 – Bear cash opex build (US$M)**
+
+| Row (US$M) | FY27E | FY28E | FY29E | FY30E | FY31E | FY32E | FY33E |
+|---|---|---|---|---|---|---|---|
+| Restructured opex [S403] | 170 | 150 | 140 | 140 | 140 | 140 | 140 |
+| Confirmatory study [I1] | 30 | 45 | 32 | 17 | 5 | 0 | 0 |
+| **Bear cash opex** | 200 | 195 | 172 | 157 | 145 | 140 | 140 |
+| Bear EBITDA | -172 [S47] | -162 [S48] | -134 [S49] | -116 [S50] | -100 [S51] | -93.0 [S52] | -90.9 [S53] |
+
+*Source: forecast file [D46]; restructured opex is our assumption [S403]; confirmatory study [I1]; EBITDA from Figure A2.*
 
 ## Appendix B – Numbered sources
 
@@ -527,8 +755,12 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 - **D31** Analyst instructions, dated 2026-10-30 (pool model; leave rate m = 0.62; valuation run). Written instruction; no page numbers: 
 - **D32** Forecaster CLPT case, forecasts/CLPT/forecast.md (AMT-130 capacity ramp 330 / 2,500 / 3,000 base, 880 / 4,500 / 3,500 bull) [S], uncommitted local case. n/a: local forecaster case file /workspace/forecaster-work/forecaster-main/forecasts/CLPT/forecast.md. HTML; no page numbers: 
 - **D33** uniQure, update on Phase I/II AMT-130 trials: 4 of 6 high-dose controls crossed over, 2 failed inclusion criteria (link unverified, search result). https://uniqure.gcs-web.com/news-releases/news-release-details/uniqure-announces-update-phase-iii-clinical-trials-amt-130-gene. HTML; no page numbers: 
-- **D45** Finagle valuation result: /workspace/out/QURE_run_v11/valuation_result_v11.json, case_{base,bull,bear}_v11.json, QURE_{base,bull,bear}_v11.xlsx (Finagle commit 377f177b, run 2026-10-30T23:22:04.265505-04:00)
-- **D46** Forecast file /workspace/out/QURE_run_v11/forecast.json and valuation request /workspace/out/QURE_run_v11/valuation_request_v11.json (file sha256 e6992a14...60e6; whole request f88d2805...cf93)
+- **D45** Finagle valuation result: /workspace/out/QURE_run_v14/valuation_result_v14.json, case_{base,bull,bear}_v14.json, QURE_{base,bull,bear}_v14.xlsx (Finagle commit 377f177b, run 2026-11-02T11:40:44.828755-05:00)
+- **D46** Forecast file /workspace/out/QURE_run_v14/forecast.json and valuation request /workspace/out/QURE_run_v14/valuation_request_v14.json (file sha256 5c64a274...8425; whole request 5089ab65...8299)
+- **D47** Band runs of the same pipeline: /workspace/out/QURE_run_v14_band_lower/valuation_result_v14.json and /workspace/out/QURE_run_v14_band_upper/valuation_result_v14.json (Finagle commit 377f177b)
+- **D48** uniQure 10-K FY2025, consolidated balance sheets (page number not captured): "Cash and cash equivalents $ 80,240 … Current investment securities 542,301" (US$ thousands, 31 December 2025). https://www.sec.gov/Archives/edgar/data/1590560/000110465926021898/qure-20251231x10k.htm
+- **D49** uniQure 8-K dated 24 June 2026, Item 1.01: "On June 24, 2026, the Underwriters exercised the Option in full. The Company estimates that the net proceeds from the Offering will be approximately $242.7 million after deducting underwriting discounts and commissions and estimated offering expenses." https://www.sec.gov/Archives/edgar/data/1590560/000110465926077339/tm2618105d1_8k.htm
+- **D50** uniQure 10-Q Q2 2026, condensed consolidated statements of shareholders' equity (page number not captured): "Follow-on public offering 5,686,813 … 242,681" (shares; US$ thousands). Employee option exercises and ESPP added $6.985M in H1 2026. https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm
 - **D601** GEN StockWatch, 28 Sept 2025. Paraphrase: "About 6,000 patients, representing the initially treatable ~30% of the total ~20,000." https://www.genengnews.com/topics/translational-medicine/stockwatch-uniqure-shares-reach-five-year-high-on-game-changing-huntingtons-data/
 - **D602** ClinicalTrials.gov NCT04120493: early manifest HD, TFC 9 to 13, ages 25 to 65, CAG 40 or more, minimum putamen and caudate volumes. https://clinicaltrials.gov/study/NCT04120493
 - **D603** Medscape, 2026: the two other controls "no longer met eligibility criteria." https://www.medscape.com/viewarticle/huntington-therapy-faces-regulatory-roller-coaster-2026a1000k0l (search-result snippet)
@@ -537,6 +769,17 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 - **D606** ClearPoint Neuro CEO capacity comments, Q2 2026 call, as used in the CLPT forecast
 - **D607** Secondary review of uniQure filings and call transcripts (simulated-management research tool built on public sources; not an official uniQure statement): no treat-target language found; criteria behind the ~30% undisclosed
 - **D608** Wexler NS et al., Incidence of adult Huntington's disease in the UK: a UK-based primary care study and a systematic review, BMJ Open 2016;6:e009070: "overall rate of 7.2 (95% CI 6.5 to 7.9) per million person-years"; 393 incident cases, CPRD, adults 21+, 1990-2010. https://pmc.ncbi.nlm.nih.gov/articles/PMC4769413/ (abstract and methods only)
+- **D901** uniQure 10-K FY2019, MD&A R&D table: "Huntington's disease (AMT-130) 4,126 5,862 3,922" (2019/2018/2017, $000). https://www.sec.gov/Archives/edgar/data/1590560/000155837020001883/qure-20191231x10k5849ab.htm ; 10-K FY2021: "Huntington's disease (AMT-130) 10,529 6,905 4,126". https://www.sec.gov/Archives/edgar/data/1590560/000155837022002050/qure-20211231x10k.htm
+- **D902** uniQure 10-K FY2025, MD&A (p.~99–100): "$42.5 million, $18.0 million and $13.0 million… includes $19.4 million of costs incurred in relation to the preparation of the BLA submission". https://www.sec.gov/Archives/edgar/data/1590560/000110465926021898/qure-20251231x10k.htm
+- **D903** uniQure 10-K FY2023 (p.~92): "We enrolled 26 patients into our U.S. clinical trial… and enrolled 13 patients into our European clinical trial". https://www.sec.gov/Archives/edgar/data/1590560/000155837024001915/qure-20231231x10k.htm The FY2022 AMT-130 direct R&D of $19.8M is read from the same 10-K MD&A R&D table; the exact cell quote was not captured (partly unverified).
+- **D904** uniQure 10-Q Q2 2026 (p.25, 29 and liquidity section): AMT-130 "$6.3 million" (Q2), "$14.3 million" (H1); "sufficient to fund our projected operating expenses into 2030, including costs associated with the commercial launches and confirmatory study of AMT-130". https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm
+- **D905** Aspen Neuroscience 424B4, Use of Proceeds (p.85): "net proceeds to us from this offering will be approximately $125.8 million (or approximately $145.4 million if the underwriters exercise their option to purchase additional shares in full)"; "approximately $110.0 million to initiate and fund a Phase 3 trial evaluating sasineprocel"; "sufficient to fund our operations into the second half of 2028"; "will not be sufficient to complete the Phase 1/2a ASPIRO trial, the Phase 3 trial". https://www.sec.gov/Archives/edgar/data/2124080/000119312526441782/elevation_424b4.htm (S-1: https://www.sec.gov/Archives/edgar/data/2124080/000119312526419104/na-20261009.htm)
+- **D906** Aspen Neuroscience 424B4 (same link as D905), p.131: "a single Phase 3 registrational study that includes a sham-controlled trial design and an 18-month primary endpoint"; p.4 and p.113: "We anticipate initiating biopsy collection for the Phase 3 trial by the end of 2026… dosing patients in the Phase 3 trial in the second half of 2027."
+- **D907** Aspen Neuroscience 424B4 (same link as D905), MD&A (p.93–95): R&D "$41.8 million… 2025, compared to $35.6 million… 2024"; "Cell-therapy development and production costs $14,497"; H1 2026 R&D $28.5 million. Series C (p.92): "gross proceeds of approximately $115.6 million".
+- **D908** ClinicalTrials.gov NCT06285643 (API v2): Phase 2, enrolment 127 (estimated), arms AAV2-GDNF vs "Control Surgery: SHAM_COMPARATOR", primary endpoint PD Motor Diary at 18 months, 46 locations. AskBio release: "an estimated 87 participants". https://clinicaltrials.gov/study/NCT06285643 ; https://www.askbio.com/first-european-participants-randomized-in-askbio-phase-2-gene-therapy-trial-of-ab-1005-for-parkinsons-disease/ (web page; no page numbers)
+- **D909** ClinicalTrials.gov NCT06944522 (API v2): Phase 3, enrolment 102 (estimated), sham comparator, primary endpoint at Week 78, 43 locations, primary completion October 2028. https://clinicaltrials.gov/study/NCT06944522 (web page; no page numbers)
+- **D910** Bayer, 10 Oct 2023: "$250 million… facility will supply the material required for late-stage clinical trials and potential commercial launch of… bemdaneprocel". https://www.bayer.com/media/en-us/bayer-invests-250-million-usd-in-new-cell-therapy-manufacturing-facility-in-the-us/ ; >€3.5 billion since 2020 (reported by VCBeat). https://www.vcbeathealth.com/article/16476 (web page; no page numbers)
+- **D911** ClearPoint Neuro Q3 2026 earnings call, 29 Oct 2026: "somewhere between $13,000 and $20,000 per procedure… $15,000 would be a non-noisy assumption." https://www.fool.com/earnings/call-transcripts/2026/10/29/clearpoint-neuro-clpt-q3-2026-earnings-call-transcript/ (web page; no page numbers)
 **Actuals**
 
 - **A1** License revenues $ 15,934 $ 10,133 $ 2,758 (D1, unverified)
@@ -569,6 +812,7 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 - **G602** uniQure 424B5 prospectus, 24 Sept 2025: "We estimate there will be 6,000 initial treatable patients addressable by AMT-130 in the U.S. at commercial launch, assuming approval." https://www.sec.gov/Archives/edgar/data/1590560/000110465925092995/tm2526258-1_424b5.htm (not reopened, unverified)
 - **G603** uniQure Q2 2026 call, 29 Jul 2026, K. O'Keefe: capacity "depends on the number of neurosurgeons ... intraoperative OR suites"; more detail "in the coming months."
 - **G604** uniQure release on the Phase III update: "Four of the six control patients in the high-dose cohort were crossed over to treatment and the remaining two patients failed to meet the study's inclusion criteria." https://uniqure.gcs-web.com/news-releases/news-release-details/uniqure-announces-update-phase-iii-clinical-trials-amt-130-gene (search-result snippet)
+- **G701** uniQure press release, 2 Nov 2026, "uniQure Announces FDA Acceptance and Priority Review of the Biologics License Application for ifezuntirgene inilparvovec for the Treatment of Huntington's Disease" (opening paragraphs and confirmatory-study paragraph): "the U.S. Food and Drug Administration (FDA) has accepted for review the Biologics License Application (BLA) for ifezuntirgene inilparvovec ... submitted under the Accelerated Approval pathway. The application has been granted Priority Review with a Prescription Drug User Fee Act (PDUFA) target action date of May 1, 2027." "the FDA stated that they are tentatively planning to discuss this application at an Advisory Committee meeting." "The study is designed as a randomized, standard-of-care trial enrolling approximately 200 patients in a 2:1 ratio ... with Total Functional Capacity (TFC) as the primary endpoint at 36 months. The Company plans to initiate patient screening in the U.S. by the end of 2026." "the Phase I/II clinical studies have dosed 51 patients". The BLA is supported by 36-month Phase I/II data vs a propensity score-matched Enroll-HD external control. https://www.globenewswire.com/news-release/2026/11/02/3393020/0/en/uniqure-announces-fda-acceptance-and-priority-review-of-the-biologics-license-application-for-ifezuntirgene-inilparvovec-for-the-treatment-of-huntington-s-disease.html (opened 2026-11-02; also https://uniqure.gcs-web.com/news-releases/news-release-details/uniqure-announces-fda-acceptance-and-priority-review-biologics, not opened)
 **Estimates**
 
 - **E6** Goldman Sachs modeling potential peak global sales of $2.5 billion with a 90% probability of success, assuming approximately 25% cumulative penetration into the estimated 20,000 diagnosed, symptomatic patients in the US. (D22, unverified)
@@ -577,6 +821,7 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 - **E603** E070 dataset: 29-month mean, censored (not reopened, unverified)
 - **E604** Marder et al., Neurology 2000: about 0.97 TFC points a year. https://pubmed.ncbi.nlm.nih.gov/10668713/ (snippet only, unverified)
 - **E605** HDSA HD Roadmap: Stage I about 0 to 8 years. https://hdsa.org/wp-content/uploads/2015/07/HD-Roadmap2.pdf (snippet only, unverified)
+- **E701** Reuters via WHBL, 2 Nov 2026, "FDA to review uniQure's Huntington's gene therapy, decision due on May 2027": 51 patients treated across studies. https://whbl.com/2026/11/02/fda-to-review-uniqures-huntingtons-gene-therapy-decision-due-on-may-2027/ (not opened, unverified)
 **Analyst instructions**
 
 - **P8** Analyst instruction, dated 2026-10-30: run the Finagle valuation on this forecast (D31, unverified)
@@ -588,57 +833,58 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 - **P106** Analyst instruction, dated 2026-10-30: "use method=1 for capex. Capex can start in year 0 per [management] guidance but use the method after that."
 - **P107** Analyst instruction, dated 2026-10-30: "Take the exact same capex as the base case for the bear case."
 - **P109** Analyst instruction, dated 2026-10-30: "Raise the bear year-0 equity so cash never goes negative"
+- **P110** Analyst instruction, dated 2026-11-02: "Check the Aspen s-1 for more data. They will run a trial similar in size to AskBio and BlueRock. So this gives another data point. Bull, Base and Bear can use the same cost but include a detailed section in the report explaining analysis and upper and lower cost bands. Make it self contained and use prose to explain."
+- **P111** Analyst instruction, dated 2026-11-02: "Year-0 should be 2025 cash+short term. And then adjust for any equity raises during the 2026 year. Then increase sharecount from 2025 to account for the equity raises."
 **Assumptions**
 
-- **S1** Confirmatory-study R&D $70M/yr FY27E-FY31E on top of the Q2 2026 R&D run rate (midpoint of $60-80M; cost undisclosed) [S] (D12, unverified)
-- **S3** base treated share of the eligible pool P = referral 90% x willing 90% x covered 90% = 0.729 [S under P3] (D17, unverified)
-- **S5** US HD incidence per 100k/yr used in the pool model: base 1.22, bull 1.59 (AMT130 pool model inputs; North America 1.04, 95% CI 0.28-1.80, in Medina 2022) [S] (D11, unverified)
-- **S6** base US capacity = CLPT AMT-130 ramp 330 (FY27, from 2027-07-01) / 2500 (FY28) / 3000 per year cap from FY29, spread evenly by quarter; treated = min(capacity, demand). Centers shown = capacity / (2 procedures/week x 52), used only for the $1.5M/center opex item [S] (D32, unverified)
-- **S7** bull US capacity = CLPT AMT-130 ramp 880 (FY27, from 2027-07-01) / 4500 (FY28) / 3500 per year cap from FY29, spread evenly by quarter; treated = min(capacity, demand). Centers shown = capacity / (2 procedures/week x 52), used only for the $1.5M/center opex item [S] (D32, unverified)
-- **S9** Bull UK: MHRA approval and NHS access from Q3 2028; initial backlog 30% x 7,500 = 2250; refill 0.48/100k x 69M x bull haircut, 10%/yr attrition; centers [3, 6, 9, 12, 15]; 1 procedure/center/week (4.33/month); net price $1.5M [S] (D13, unverified)
-- **S10** Base US net price $2.0M FY27E-FY30E, then -10%% to $1.8M from the year after annual US sales first pass $2B (payer budget pressure); Kebilidi $3.95M, Elevidys $3.2M, Hemgenix $3.5M list are gross [S] (D7, unverified)
-- **S11** Bull US net price $2.4M, then -10%% to $2.16M from the year after annual US sales first pass $2B [S] (D8, unverified)
-- **S12** base AMT-130 COGS (Genezen manufacturing, release, cold-chain; no licensor royalty, none disclosed for AMT-130): $0.30M/patient in FY27, falling $0.020M/yr to $0.20M; UNVERIFIED, no uniQure disclosure [S] (D1, unverified)
+- **S2** base treated share of the eligible pool P = referral 90% x willing 90% x covered 90% = 0.729 [S under P3] (D17, unverified)
+- **S4** US HD incidence per 100k/yr used in the pool model: base 1.22, bull 1.59 (AMT130 pool model inputs; North America 1.04, 95% CI 0.28-1.80, in Medina 2022) [S] (D11, unverified)
+- **S5** base US capacity = CLPT AMT-130 ramp 330 (FY27, from 2027-07-01) / 2500 (FY28) / 3000 per year cap from FY29, spread evenly by quarter; treated = min(capacity, demand). Centers shown = capacity / (2 procedures/week x 52), used only for the $1.5M/center opex item [S] (D32, unverified)
+- **S6** bull US capacity = CLPT AMT-130 ramp 880 (FY27, from 2027-07-01) / 4500 (FY28) / 3500 per year cap from FY29, spread evenly by quarter; treated = min(capacity, demand). Centers shown = capacity / (2 procedures/week x 52), used only for the $1.5M/center opex item [S] (D32, unverified)
+- **S8** Bull UK: MHRA approval and NHS access from Q3 2028; initial backlog 30% x 7,500 = 2250; refill 0.48/100k x 69M x bull haircut, 10%/yr attrition; centers [3, 6, 9, 12, 15]; 1 procedure/center/week (4.33/month); net price $1.5M [S] (D13, unverified)
+- **S9** Bull UK: MHRA approval and NHS access from Q3 2028; initial backlog 30% x 7,500 = 2250; refill 0.48/100k x 69M x bull haircut, 10%/yr attrition; centers [3, 6, 9, 12, 15]; 1 procedure/center/week (4.33/month); net price $1.5M [S] (D7, unverified)
+- **S10** Bull US net price $2.4M, then -10%% to $2.16M from the year after annual US sales first pass $2B [S] (D8, unverified)
+- **S11** base AMT-130 COGS (Genezen manufacturing, release, cold-chain; no licensor royalty, none disclosed for AMT-130): $0.30M/patient in FY27, falling $0.020M/yr to $0.20M; UNVERIFIED, no uniQure disclosure [S] (D1, unverified)
+- **S13** Hemgenix royalty build (US$M, GAAP license revenue): growth slows as Hemgenix matures; FY32+ +2.5/yr fading 5%/yr. Cash goes to HemB SPV until the royalty-financing cap is met (liability $473.2M = debt) [S] (D2, unverified)
 - **S14** Hemgenix royalty build (US$M, GAAP license revenue): growth slows as Hemgenix matures; FY32+ +2.5/yr fading 5%/yr. Cash goes to HemB SPV until the royalty-financing cap is met (liability $473.2M = debt) [S] (D2, unverified)
 - **S15** Hemgenix royalty build (US$M, GAAP license revenue): growth slows as Hemgenix matures; FY32+ +2.5/yr fading 5%/yr. Cash goes to HemB SPV until the royalty-financing cap is met (liability $473.2M = debt) [S] (D2, unverified)
 - **S16** Hemgenix royalty build (US$M, GAAP license revenue): growth slows as Hemgenix matures; FY32+ +2.5/yr fading 5%/yr. Cash goes to HemB SPV until the royalty-financing cap is met (liability $473.2M = debt) [S] (D2, unverified)
 - **S17** Hemgenix royalty build (US$M, GAAP license revenue): growth slows as Hemgenix matures; FY32+ +2.5/yr fading 5%/yr. Cash goes to HemB SPV until the royalty-financing cap is met (liability $473.2M = debt) [S] (D2, unverified)
 - **S18** Hemgenix royalty build (US$M, GAAP license revenue): growth slows as Hemgenix matures; FY32+ +2.5/yr fading 5%/yr. Cash goes to HemB SPV until the royalty-financing cap is met (liability $473.2M = debt) [S] (D2, unverified)
 - **S19** Hemgenix royalty build (US$M, GAAP license revenue): growth slows as Hemgenix matures; FY32+ +2.5/yr fading 5%/yr. Cash goes to HemB SPV until the royalty-financing cap is met (liability $473.2M = debt) [S] (D2, unverified)
-- **S20** Hemgenix royalty build (US$M, GAAP license revenue): growth slows as Hemgenix matures; FY32+ +2.5/yr fading 5%/yr. Cash goes to HemB SPV until the royalty-financing cap is met (liability $473.2M = debt) [S] (D2, unverified)
-- **S21** Collaboration services to CSL wound down after the 2024 Lexington Transaction; none in H1 2026 [S] (D1, unverified)
-- **S22** No AMT-130 US revenue: no approval before 2027. (D9, unverified)
-- **S23** No AMT-130 UK revenue in base (D4, unverified)
-- **S24** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 99.0 - cash opex 349.3 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
-- **S25** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 700.0 - cash opex 638.8 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
-- **S26** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 780.0 - cash opex 702.1 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
-- **S27** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 720.0 - cash opex 708.3 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
-- **S28** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 656.6 - cash opex 683.4 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
-- **S29** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 568.0 - cash opex 607.0 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
-- **S30** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 566.3 - cash opex 613.1 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
-- **S31** Average of me and FY33 gross margin (Finagle default rule); no positive-EBITDA history to set it against [S] (D2, unverified)
-- **S32** FY39 growth: royalty 53.8 (+3%) + AMT-130 at the FY33 steady-state flow and price, vs FY33 revenue [S] (D8, unverified)
-- **S35** No AMT-130 UK revenue in bull (UK launch from Q3 2028 in bull only) (D4, unverified)
-- **S36** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 264.0 - cash opex 442.8 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
-- **S37** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 1269.7 - cash opex 937.4 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
-- **S38** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 1040.8 - cash opex 862.0 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
-- **S39** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 963.0 - cash opex 877.0 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
-- **S40** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 856.0 - cash opex 883.5 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
-- **S41** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 724.4 - cash opex 801.0 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
-- **S42** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 678.4 - cash opex 788.7 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
-- **S43** Average of me and FY33 gross margin (Finagle default rule); no positive-EBITDA history to set it against [S] (D2, unverified)
-- **S44** FY39 growth: royalty 53.8 (+3%) + AMT-130 at the FY33 steady-state flow and price, vs FY33 revenue [S] (D8, unverified)
-- **S45** No AMT-130 US revenue: bear case, AMT-130 not approved. (D5, unverified)
-- **S46** No AMT-130 UK revenue in bear (D4, unverified)
-- **S48** bear: license gross profit - fixed cash opex 170 after a restructuring (US$M) [S] (D3, unverified)
-- **S49** bear: license gross profit - fixed cash opex 150 after a restructuring (US$M) [S] (D3, unverified)
-- **S50** bear: license gross profit - fixed cash opex 140 after a restructuring (US$M) [S] (D3, unverified)
-- **S51** bear: license gross profit - fixed cash opex 140 after a restructuring (US$M) [S] (D3, unverified)
-- **S52** bear: license gross profit - fixed cash opex 140 after a restructuring (US$M) [S] (D3, unverified)
-- **S53** bear: license gross profit - fixed cash opex 140 after a restructuring (US$M) [S] (D3, unverified)
-- **S54** bear: license gross profit - fixed cash opex 140 after a restructuring (US$M) [S] (D3, unverified)
-- **S55** Bear: opex fixed after restructuring; an incremental royalty dollar drops through at the license gross margin [S] (D2, unverified)
-- **S56** FY39 growth: Hemgenix royalty only, +3% [S] (D8, unverified)
+- **S20** Collaboration services to CSL wound down after the 2024 Lexington Transaction; none in H1 2026 [S] (D1, unverified)
+- **S21** No AMT-130 US revenue: no approval before 2027. (D9, unverified)
+- **S22** No AMT-130 UK revenue in base (D4, unverified)
+- **S23** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 99.0 - cash opex 309.3 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
+- **S24** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 700.0 - cash opex 613.8 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
+- **S25** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 780.0 - cash opex 664.1 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
+- **S26** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 720.0 - cash opex 655.3 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
+- **S27** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 656.6 - cash opex 618.4 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
+- **S28** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 568.0 - cash opex 607.0 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
+- **S29** base EBITDA (US$M) = license GP + AMT-130 revenue - COGS 566.3 - cash opex 613.1 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $80M, $1.5M per active center, 5% variable) [S] (D2, unverified)
+- **S30** Average of me and FY33 gross margin (Finagle default rule); no positive-EBITDA history to set it against [S] (D2, unverified)
+- **S31** FY39 growth: royalty 53.8 (+3%) + AMT-130 at the FY33 steady-state flow and price, vs FY33 revenue [S] (D8, unverified)
+- **S34** No AMT-130 UK revenue in bull (UK launch from Q3 2028 in bull only) (D4, unverified)
+- **S35** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 264.0 - cash opex 402.8 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
+- **S36** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 1269.7 - cash opex 912.4 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
+- **S37** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 1040.8 - cash opex 824.0 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
+- **S38** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 963.0 - cash opex 824.0 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
+- **S39** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 856.0 - cash opex 818.5 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
+- **S40** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 724.4 - cash opex 801.0 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
+- **S41** bull EBITDA (US$M) = license GP + AMT-130 revenue - COGS 678.4 - cash opex 788.7 (core Q2 2026 run rate x4 +3%/yr, US commercial fixed $90M, $1.5M per active center, 5% variable, UK $15M from FY28) [S] (D2, unverified)
+- **S42** Average of me and FY33 gross margin (Finagle default rule); no positive-EBITDA history to set it against [S] (D2, unverified)
+- **S43** FY39 growth: royalty 53.8 (+3%) + AMT-130 at the FY33 steady-state flow and price, vs FY33 revenue [S] (D8, unverified)
+- **S44** No AMT-130 US revenue: bear case, AMT-130 not approved. (D5, unverified)
+- **S45** No AMT-130 UK revenue in bear (D4, unverified)
+- **S47** bear: license gross profit - cash opex 200 (restructured opex 170 + confirmatory study 30) (US$M) [S] (D3, unverified)
+- **S48** bear: license gross profit - cash opex 195 (restructured opex 150 + confirmatory study 45) (US$M) [S] (D3, unverified)
+- **S49** bear: license gross profit - cash opex 172 (restructured opex 140 + confirmatory study 32) (US$M) [S] (D3, unverified)
+- **S50** bear: license gross profit - cash opex 157 (restructured opex 140 + confirmatory study 17) (US$M) [S] (D3, unverified)
+- **S51** bear: license gross profit - cash opex 145 (restructured opex 140 + confirmatory study 5) (US$M) [S] (D3, unverified)
+- **S52** bear: license gross profit - cash opex 140 (restructured opex 140 + confirmatory study 0) (US$M) [S] (D3, unverified)
+- **S53** bear: license gross profit - cash opex 140 (restructured opex 140 + confirmatory study 0) (US$M) [S] (D3, unverified)
+- **S54** Bear: opex fixed after restructuring; an incremental royalty dollar drops through at the license gross margin [S] (D2, unverified)
+- **S55** FY39 growth: Hemgenix royalty only, +3% [S] (D8, unverified)
 - **S401** Revenue recognised at treatment (point in time), usual practice for one-time gene therapies; not a uniQure policy disclosure [S]
 - **S402** Q3 2026 results date 2026-11-04 (not reopened this revision) [S]
 - **S403** Judgment (untagged in the forecast file): raise sizes and SBC percentage
@@ -647,6 +893,8 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 - **S603** Referral, willingness and coverage at 90% each, so P = 0.729
 - **S604** CLPT AMT-130 capacity ramp 330 / 2,500 / 3,000 cap; centre arithmetic is analyst judgment
 - **S605** Net price $2.0M per patient
+- **S901** Aspen Phase 3 size assumed at about 100 patients, in line with the AskBio and BlueRock trials (D908, D909); the 424B4 does not state the number of patients [S]
+- **S902** About $10M a year of the Q2 2026 AMT-130 external run rate (~$25M a year, D904) is redeployed to the confirmatory study, so the separate line = gross cost − $10M a year, floored at zero [S]
 **Calculations**
 
 - **C2** base US entrants to the early-manifest pool 2027 = 1.22/100k x 340M x share 0.90 x filter 1.0045 x 1.005 = 3769/yr (+0.5%/yr); filter holds the steady pool at the 6,000 start pool (reference run case A) (D11, unverified)
@@ -866,9 +1114,10 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 - **C236** FY27 consensus / base line build: NOT applied (P5 capacity instruction overrides consensus); far from 1, flagged (D6, unverified)
 - **C401** Growth = revenue / prior revenue - 1; EBITDA margin = EBITDA / revenue; line share = line / total; from the forecast file
 - **C504** new shares = raise / fetched price US$25.30, from D45
-- **C508** bear raise / (fetched price x 10-K shares 62.53M) = 4,900 / 1,582, from D45
+- **C508** bear raise / (fetched price x 68.216221M shares after the June 2026 offering) = 4,250 / 1,726, from D45
 - **C509** value per share / price - 1, from D45
 - **C510** leave rate = -ln(1 - 2/6) over ~1 year = ~0.41/yr, from A23
+- **C511** 80.240 + 542.301 + 242.681 = 865.222; shares 62.529408 + 5.686813 = 68.216221
 - **C601** 1.22e-5 x 340M x 0.9 = ~3,733 in 2026, ~3,750 to 3,770 in 2027 with growth; 3,733 / 0.625 = ~5,973
 - **C602** Quarterly simulation, /workspace/out/AMT130_demand/scratch_m62/run16.py (filter factor 1.0045)
 - **C603** Pool identity E - mS - T = gS with T = uS = PE gives u = P(m + g)/(1 - P), exact in any year; model ceiling u_d = 0.729 x (0.62 + 0.005)/(1 - 0.729) = 1.68 a year
@@ -878,20 +1127,43 @@ What matters most is the size and turnover of the treatable pool. uniQure's 6,00
 - **C607** 1.6 years x ~1 point a year = ~1.6 points; a 4-year window gives m = ~0.27 and a pool of 3,750 / 0.27 = ~13,800
 - **C608** scratch_m62/run25.py: unfiltered steady pool 9,218 at m = 0.40, filter factor 0.65
 - **C609** -ln(1 - 1/3) = ~0.41 a year, so a stay of ~1 / 0.41 = ~2.4 years
-- **C610** Annual terms from a copy of scratch_m62/run16.py case A (/workspace/out/QURE_run_v11/amt130_annual_terms.py; results amt130_annual_terms.json): sums of quarterly entrants, leavers and treated; P = T/E, u = T/S, g = end/S - 1, m_eff = L/S
+- **C610** Annual terms from a copy of scratch_m62/run16.py case A (/workspace/out/QURE_run_v14/amt130_annual_terms.py; results amt130_annual_terms.json): sums of quarterly entrants, leavers and treated; P = T/E, u = T/S, g = end/S - 1, m_eff = L/S
 - **C611** Identity check from amt130_annual_terms.json: |E - L - T - (end - S)| < 1e-9 and P(m_eff + g)/(1 - P) = u in every year FY2027 to FY2035
 - **C612** UK entrants = 0.72e-5 x 69M x 1.005^2 x 0.9 = ~452 a year at launch; start pool = entrants / (0.62 + 0.005) = 723; long-run demand = 0.729 x entrants = 329; capacity year 1 = max(2 x 52, 329/3) = 110, year 2 = 219, year 3+ = 329; centres = capacity / 52
 - **C613** UK quarterly simulation, /workspace/out/AMT130_demand/uk_dry_run/uk_pool.py (results uk_pool_results.json, run inc0.72_A_1pw); identity residual below 1e-12 in every year
 - **C614** uk_pool_results.json runs inc0.72_B_1pw (start pool 2,250), inc0.48_A_1pw and inc0.72_A_2pw
 - **C615** UK revenue = treated x $1.5M, e.g. 329 x 1.5 = 494
+- **C702** EBITDA excluding the study = forecast EBITDA + 70 in FY2027E-FY2031E; base FY2028E EBITDA at cost c = forecast FY2028E EBITDA + 70 - c; from the forecast file
+- **C703** Debt drawn = FCFE - FCF; check EBITDA - capex - SBC - interest - cash tax = FCF within 0.05 in every year shown, from D45
+**Benchmarks (confirmatory-study cost)**
+
+- **B901** Moore TJ et al., JAMA Intern Med 2018;178(11):1451–57: "median estimated cost of $19.0 million… $41 117… per patient". https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2702287
+- **B902** Sertkaya A et al., Clinical Trials 2016 / HHS ASPE: "a Phase 3 study cost ranged from US$11.5 million (dermatology) to US$52.9 (pain and anesthesia)". https://aspe.hhs.gov/reports/examination-clinical-trial-costs-barriers-drug-development-0 (web page; no page numbers)
+- **B903** Health Advances, "Orphan drug development: what are the real costs": "large costs per patient (~$2MM-~$5.7MM)… median cost for the largest trial… ~$100MM (range $42MM-$175MM)". https://www.healthadvances.com/insights/blog/orphan-drug-development-what-are-the-real-costs (web page; no page numbers)
+- **B904** GEN: "cost of goods for rAAV products ranging from roughly $500,000 to $1 million per dose". https://www.genengnews.com/topics/bioprocessing/regeneron-eliminates-endonuclease-in-aav-processing/ (web page; no page numbers)
+- **B905** Roland Berger: Hemgenix "vector manufacturing cost alone of one dose could be in the range of USD1-2 million". https://www.rolandberger.com/en/Insights/Publications/Cutting-the-cost-of-gene-therapy-manufacturing.html (web page; no page numbers)
+**Inferences (confirmatory-study cost)**
+
+- **I1** Confirmatory-study cost, separate opex line FY27E-FY31E (central profile, US$M): 30/45/32/17/5; = gross study cost 40/55/42/27/15 less ~$10M/yr already in the Q2 2026 R&D run rate (floored at 0); same in bear, base and bull. Built from uniQure AMT-130 direct R&D history, Aspen Neuroscience 424B4 use of proceeds, AskBio/BlueRock trial sizes and published benchmarks; cost undisclosed by uniQure [I] (D12, unverified)
+- **I901** AMT-130 direct R&D 2017–H1 2026: 3.9 + 5.9 + 4.1 + 6.9 + 10.5 + 19.8 + 13.0 + 18.0 + 42.5 + 14.3 = $138.9M, from D901–D904
+- **I902** Phase I/II cost per treated patient: $138.9M less $19.4M BLA preparation and ~$10M pre-IND work = ~$110M; $110M / 57 patients = ~$1.9M, from D902–D904
+- **I903** Per dosing event excluding vector: ($110M − ~$30M fixed overhead − 205 patient-years × $0.15M = ~$31M) / 57 = ~$0.85M
+- **I904** Cash walk mid-2026 to end-2029: $811.9M cash + $100M Hercules tranche − 14 quarters × ($34.0M R&D + $17.4M SG&A) − launch allowance, no AMT-130 sales; leaves ~0 with a ~$150M study and ~−$70M with a ~$250M study
+- **I905** Aspen total Phase 3 cost: $110M / (0.50 to 0.67) = ~$165–220M; / ~100 patients = $1.6–2.2M per randomised patient
+- **I906** Aspen scaled to AMT-130: 133 treated × $1.0–1.35M + 67 controls × $0.25–0.40M + $30–40M fixed = ~$180–260M
+- **I907** Vector cost per AMT-130 patient $0.05–0.30M: a local brain dose scaled down from $0.5–1.0M generic AAV [B904] and $1–2M Hemgenix [B905]; dose ratio unverified
+- **I908** Bottom-up build: treated patients × (surgery and site $0.2–0.85M + vector $0.05–0.30M + follow-up) + controls × follow-up + $30–40M fixed = $84–275M, middle $150M; combined with I906 and K901 into gross bands $120M / $190M / $290M (FY26–FY32), phased by trial activity
+**CEO-simulation output (labelled simulation)**
+
+- **K901** Matt Kapusta bot: a CEO-simulation bot that reasons from public filings in the manner of uniQure's chief executive; a simulation, not a company statement. Output: gross study cost $190M / $250M / $320M (low / base / high); base phasing FY27–FY31 $50M / $75M / $62M / $38M / $25M; $1.2–1.8M per treated patient, $0.3–0.5M per control, $15–30M start-up. No page or link (simulation output).
 
 **Not verified**
 
-- D33, A1, A2, A3, A4, A5, A6, A7, A13, A14, A16, A21, A22, A23, A25, A26, G1, G3, G4, G5, G6, G9, G12, G13, G14, E6, P8, P9, S1, S3, S5, S6, S7, S9, S10, S11, S12, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S35, S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S46, S48, S49, S50, S51, S52, S53, S54, S55, S56, C2, C3, C8, C11, C12, C13, C14, C15, C16, C20, C21, C22, C23, C24, C25, C26, C27, C28, C31, C32, C33, C34, C35, C36, C37, C38, C39, C40, C43, C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C54, C55, C56, C57, C58, C59, C60, C61, C62, C63, C64, C65, C66, C67, C68, C69, C70, C71, C72, C73, C74, C75, C76, C77, C78, C79, C80, C81, C82, C83, C84, C85, C86, C87, C88, C89, C90, C91, C92, C93, C94, C95, C96, C97, C98, C99, C100, C101, C102, C103, C104, C105, C106, C107, C108, C109, C110, C111, C112, C113, C114, C115, C117, C118, C119, C120, C121, C122, C123, C124, C125, C126, C127, C128, C129, C130, C131, C134, C135, C136, C137, C138, C139, C140, C141, C142, C143, C144, C145, C146, C147, C148, C149, C150, C151, C152, C153, C154, C155, C156, C157, C158, C159, C160, C161, C162, C163, C164, C165, C166, C167, C168, C169, C170, C171, C172, C173, C174, C175, C176, C177, C178, C179, C180, C181, C182, C183, C184, C185, C186, C187, C188, C189, C190, C191, C192, C193, C194, C195, C196, C197, C198, C199, C200, C201, C202, C203, C204, C205, C206, C207, C208, C209, C210, C211, C212, C213, C214, C215, C216, C217, C218, C219, C220, C221, C222, C223, C224, C225, C226, C227, C228, C229, C230, C233, C236: page or link unverified as marked in the forecast file. The crossover quote (A23, D33) is from a search result; the full release was not reopened. The ClearPoint ramp (D32) is our own uncommitted forecast case.
+- D33, A1, A2, A3, A4, A5, A6, A7, A13, A14, A16, A21, A22, A23, A25, A26, G1, G3, G4, G5, G6, G9, G12, G13, G14, E6, P8, P9, S2, S4, S5, S6, S8, S9, S10, S11, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S25, S26, S27, S28, S29, S30, S31, S34, S35, S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S47, S48, S49, S50, S51, S52, S53, S54, S55, C2, C3, C8, C11, C12, C13, C14, C15, C16, C20, C21, C22, C23, C24, C25, C26, C27, C28, C31, C32, C33, C34, C35, C36, C37, C38, C39, C40, C43, C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C54, C55, C56, C57, C58, C59, C60, C61, C62, C63, C64, C65, C66, C67, C68, C69, C70, C71, C72, C73, C74, C75, C76, C77, C78, C79, C80, C81, C82, C83, C84, C85, C86, C87, C88, C89, C90, C91, C92, C93, C94, C95, C96, C97, C98, C99, C100, C101, C102, C103, C104, C105, C106, C107, C108, C109, C110, C111, C112, C113, C114, C115, C117, C118, C119, C120, C121, C122, C123, C124, C125, C126, C127, C128, C129, C130, C131, C134, C135, C136, C137, C138, C139, C140, C141, C142, C143, C144, C145, C146, C147, C148, C149, C150, C151, C152, C153, C154, C155, C156, C157, C158, C159, C160, C161, C162, C163, C164, C165, C166, C167, C168, C169, C170, C171, C172, C173, C174, C175, C176, C177, C178, C179, C180, C181, C182, C183, C184, C185, C186, C187, C188, C189, C190, C191, C192, C193, C194, C195, C196, C197, C198, C199, C200, C201, C202, C203, C204, C205, C206, C207, C208, C209, C210, C211, C212, C213, C214, C215, C216, C217, C218, C219, C220, C221, C222, C223, C224, C225, C226, C227, C228, C229, C230, C233, C236, I1: page or link unverified as marked in the forecast file. The crossover quote (A23, D33) is from a search result; the full release was not reopened. The ClearPoint ramp (D32) is our own uncommitted forecast case.
 
 ## Appendix C – Method
 
-We follow the forecaster method. Reported periods stay as reported. FY2026E is consensus, because there is no guidance. Later years are a quarterly line build: a pool of eligible patients is refilled by incidence and drained by treatment and by patients leaving the treatable window; treatment is capped by a capacity ramp; patients × net price set AMT-130 revenue. FY2027E is not scaled to consensus. Analyst instructions are tagged P and override the default method. Valuation numbers come only from Finagle's result file. Tags: A actual, G company statement, E external estimate, C calculation, S assumption, P analyst instruction, D document.
+We follow the forecaster method. Reported periods stay as reported. FY2026E is consensus, because there is no guidance. Later years are a quarterly line build: a pool of eligible patients is refilled by incidence and drained by treatment and by patients leaving the treatable window; treatment is capped by a capacity ramp; patients × net price set AMT-130 revenue. FY2027E is not scaled to consensus. Analyst instructions are tagged P and override the default method. Valuation numbers come only from Finagle's result file. Tags: A actual, G company statement, E external estimate, C calculation, S assumption, P analyst instruction, D document; Section 10 also uses B benchmark, I inference and K CEO-simulation output.
 
 ## Appendix D – AMT-130 US patient demand model
 

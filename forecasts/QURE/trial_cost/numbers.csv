@@ -1,0 +1,68 @@
+item,period,value_usd_m,tag,source
+Total R&D,FY2021,143.5,D,10-K FY2023 MD&A
+Total R&D,FY2022,197.6,D,10-K FY2023 MD&A
+Total R&D,FY2023,214.9,D,10-K FY2025 MD&A
+Total R&D,FY2024,143.8,D,10-K FY2025 MD&A
+Total R&D,FY2025,140.7,D,10-K FY2025 MD&A
+Total R&D,Q2 2026,34.0,D,10-Q Q2 2026
+Total R&D,H1 2026,63.1,D,10-Q Q2 2026
+AMT-130 direct (external) R&D,FY2021,10.5,D,10-K FY2023
+AMT-130 direct (external) R&D,FY2022,19.8,D,10-K FY2023
+AMT-130 direct (external) R&D,FY2023,13.0,D,10-K FY2025
+AMT-130 direct (external) R&D,FY2024,18.0,D,10-K FY2025
+AMT-130 direct (external) R&D,FY2025,42.5,D,10-K FY2025 (incl 19.4 BLA prep/PPQ)
+AMT-130 direct (external) R&D,Q2 2026,6.3,D,10-Q Q2 2026
+AMT-130 direct (external) R&D,H1 2026,14.3,D,10-Q Q2 2026 (clinical trials 9.0)
+AMT-130 direct FY21-25 cumulative,FY21-25,103.8,I,sum of above
+AMT-130 direct FY21-25 ex BLA prep,FY21-25,84.4,I,103.8-19.4
+Ph I/II patients treated (US26+EU13+C3 12+C4 6),to 2025,57,D,10-Ks (count of patients not $)
+Ph I/II external cost per treated pt,FY21-25,1.48,I,84.4/57 (excludes in-house mfg & staff; excludes pre-2021)
+Moore 2018 pivotal per-patient median,2015-16,0.041,B,JAMA Intern Med 2018;178:1451 (IQR 0.032-0.082)
+Confirmatory total LOW,FY26-32,59,I,bottom-up
+Confirmatory total BASE,FY26-32,106.5,I,bottom-up
+Confirmatory total HIGH,FY26-32,172.8,I,bottom-up
+Phasing LOW,FY26/27/28/29/30/31/32,2/12/17/12/8/6/2,I,
+Phasing BASE,FY26/27/28/29/30/31/32,3/22/30/22/15/10/4.5,I,
+Phasing HIGH,FY26/27/28/29/30/31/32,5/35/48/36/25/16/7.8,I,
+Model current assumption,FY27-31,350 (70/yr),S,unsourced
+AMT-130 direct (external) R&D,FY2017,3.9,D,10-K FY2019 MD&A table (3922)
+AMT-130 direct (external) R&D,FY2018,5.9,D,10-K FY2019 (5862)
+AMT-130 direct (external) R&D,FY2019,4.1,D,10-K FY2019/FY2021 (4126)
+AMT-130 direct (external) R&D,FY2020,6.9,D,10-K FY2021 (6905)
+AMT-130 direct (external) R&D,Q1 2026,8.0,I,14.3-6.3
+AMT-130 direct cumulative FY17-H1'26,FY17-H1 26,138.9,I,sum (matches Kapusta)
+ClearPoint revenue per AMT-130 procedure,2026,0.013-0.025,D,CLPT Q2'26 call $15-25k; Q3'26 call $13-20k ($15k modelling)
+Sertkaya Ph3 avg per-study CNS,2004-12 data,19.2,B,ASPE / Clin Trials 2016
+Health Advances orphan GT/ERT per-patient,,2.0-5.7,B,healthadvances.com (n=12-33 trials; incl. small-batch mfg)
+Health Advances largest-trial median orphan GT/ERT,,100 (42-175),B,healthadvances.com
+PhRMA/Battelle Ph3 per patient avg,2015,0.042,B,via Health Advances
+AAV COGS per dose (generic),,0.5-1.0,B,GEN (Regeneron article)
+Hemgenix vector mfg per dose,,1-2,B,Roland Berger (2-3 pts per 500L batch; $3-7M/batch)
+AAV 200L batch at US CDMO,,2.0 per batch,B,Parexel blog
+Vector per AMT-130 dose (revised),,0.05/0.15/0.30,I,low local CNS dose vs systemic; unverified dose ratio
+REVISED confirmatory gross LOW/BASE/HIGH,FY26-32,84/150/275,I,research.md s.6
+REVISED phasing BASE,FY26..FY32,3/35/45/32/20/10/5,I,
+REVISED phasing LOW,FY26..FY32,2/20/25/17/11/6/3,I,
+REVISED phasing HIGH,FY26..FY32,5/60/80/60/40/20/10,I,
+Kapusta bot gross LOW/BASE/HIGH,,190/250/320,C,ceochat simulation (via parent)
+Kapusta bot base phasing,FY27..FY31,50/75/62/38/25,C,
+Recommended incremental over Q2'26 run rate BASE,FY27..FY31,25/35/22/10/0 (=92),I,gross minus ~10/yr already in run rate
+Aspen IPO net proceeds,Oct 2026,125.8 (145.4 w/ option),D,424B4 Use of Proceeds p.85 ($15.00/sh)
+Aspen proceeds for Phase 3 sasineprocel,,110.0,D,424B4 p.85 ("initiate and fund")
+Aspen proceeds ASPIRO / microglia,,8.0 / 4.0,D,424B4 p.85
+Aspen runway,,into H2 2028,D,424B4 p.85; proceeds "will not be sufficient to complete ... the Phase 3 trial"
+Aspen Phase 3 timing,,biopsy by end-2026; dosing H2 2027,D,424B4 p.4 & p.113
+Aspen Phase 3 design,,single sham-controlled; 18-month primary endpoint; size NOT disclosed,D,424B4 p.131
+Aspen R&D,FY2024/FY2025/H1 2026,35.6/41.8/28.5,D,424B4 MD&A p.93-95
+Aspen cell-therapy development & production costs,FY2024/FY2025,11.5/14.5,D,424B4 p.94
+Aspen Series C gross,Oct-Nov 2025,115.6,D,424B4 p.92
+Aspen implied total Phase 3 cost,,165-220,I,110 funds ~H2'26-H2'28 (~50-67% of trial to ~2030 readout)
+AskBio REGENERATE-PD NCT06285643,,127 est (87 in AskBio PR); sham surgery; 18-mo motor diary; 46 sites; Ph2,D,ClinicalTrials.gov API v2; askbio.com
+BlueRock exPDite-2 NCT06944522,,102 est; sham comparator; Week 78; 43 sites; Ph3; PCD 2028-10,D,ClinicalTrials.gov API v2 (NCT06944041 given in brief is wrong)
+Bayer program-level cost AskBio/BlueRock,,not disclosed,D,Bayer: >EUR3.5bn CGT since 2020; $250M Berkeley plant
+FINAL gross LOWER,FY26..FY32,3/25/35/26/17/9/5 (=120; FY27-31 112),I,report_section.md
+FINAL gross CENTRAL,FY26..FY32,4/40/55/42/27/15/7 (=190; FY27-31 179),I,report_section.md
+FINAL gross UPPER,FY26..FY32,6/60/85/65/40/22/12 (=290; FY27-31 272),I,report_section.md
+FINAL separate model line CENTRAL (gross-10 run-rate offset),FY27..FY31,30/45/32/17/5 (=129),I,report_section.md
+FINAL separate model line LOWER,FY27..FY31,15/25/16/7/0 (=63),I,
+FINAL separate model line UPPER,FY27..FY31,50/75/55/30/12 (=222),I,

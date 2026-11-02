@@ -1,0 +1,519 @@
+{
+ "mode": "collaborative",
+ "ticker": "QURE",
+ "version": "v14",
+ "parent_version": "v13",
+ "forecast_commit": "uncommitted (v13 forecast at /workspace/out/QURE_run_v14/forecast.json)",
+ "scenarios": [
+  "base",
+  "bull",
+  "bear"
+ ],
+ "forecaster": {
+  "base": {
+   "forecast.sales_growth": {
+    "value": [
+     0.54777,
+     26.693042,
+     6.297101,
+     0.199603,
+     0.000662,
+     -0.103348,
+     -0.047499,
+     -0.002466
+    ],
+    "tag": "C",
+    "cite_id": "C41",
+    "evidence": "Revenue growth FY26-FY38, base (https://finance.yahoo.com/quote/QURE/analysis/)"
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     0.052388,
+     -2.739037,
+     12.289685,
+     0.235112,
+     0.015782,
+     -0.112399,
+     -0.038066,
+     -0.004342
+    ],
+    "tag": "C",
+    "cite_id": "C42",
+    "evidence": "EBITDA ratio E_t/E_t-1 - 1 FY26-FY38, base (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087808/qure-20260729xex99d1.htm)"
+   },
+   "forecast.margin_path.me": {
+    "value": 0.770331,
+    "tag": "C",
+    "cite_id": "C43",
+    "evidence": "FY33E EBITDA / FY33E revenue (steady state: treated = pool demand, base; bull at capacity cap), base (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087808/qure-20260729xex99d1.htm)"
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.829867,
+    "tag": "S",
+    "cite_id": "S30",
+    "evidence": "Average of me and FY33 gross margin (Finagle default rule); no positive-EBITDA history to set it against [S] (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm)"
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.000304,
+    "tag": "S",
+    "cite_id": "S31",
+    "evidence": "FY39 growth: royalty 53.8 (+3%) + AMT-130 at the FY33 steady-state flow and price, vs FY33 revenue [S] (https://www.clinaptisresearch.com/research/amt-130-huntingtons-uniqure-bla)"
+   },
+   "forecast.ebitda_basis": {
+    "value": "organic",
+    "tag": "S",
+    "cite_id": "S32",
+    "evidence": "No acquisitions in the window; organic = total (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm)"
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "S",
+    "cite_id": "S33",
+    "evidence": "No pending deals disclosed in the Q2 2026 10-Q or later 8-Ks (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm)"
+   }
+  },
+  "bull": {
+   "forecast.sales_growth": {
+    "value": [
+     0.54777,
+     84.968834,
+     3.636088,
+     -0.134535,
+     0.020885,
+     0.000399,
+     -0.043376,
+     -0.045373
+    ],
+    "tag": "C",
+    "cite_id": "C132",
+    "evidence": "Revenue growth FY26-FY38, bull (https://finance.yahoo.com/quote/QURE/analysis/)"
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     0.052388,
+     -10.155902,
+     4.257496,
+     -0.131545,
+     0.038198,
+     0.016585,
+     -0.032645,
+     -0.047001
+    ],
+    "tag": "C",
+    "cite_id": "C133",
+    "evidence": "EBITDA ratio E_t/E_t-1 - 1 FY26-FY38, bull (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087808/qure-20260729xex99d1.htm)"
+   },
+   "forecast.margin_path.me": {
+    "value": 0.81658,
+    "tag": "C",
+    "cite_id": "C134",
+    "evidence": "FY33E EBITDA / FY33E revenue (steady state: treated = pool demand, base; bull at capacity cap), bull (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087808/qure-20260729xex99d1.htm)"
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.865775,
+    "tag": "S",
+    "cite_id": "S42",
+    "evidence": "Average of me and FY33 gross margin (Finagle default rule); no positive-EBITDA history to set it against [S] (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm)"
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.000196,
+    "tag": "S",
+    "cite_id": "S43",
+    "evidence": "FY39 growth: royalty 53.8 (+3%) + AMT-130 at the FY33 steady-state flow and price, vs FY33 revenue [S] (https://www.clinaptisresearch.com/research/amt-130-huntingtons-uniqure-bla)"
+   },
+   "forecast.ebitda_basis": {
+    "value": "organic",
+    "tag": "S",
+    "cite_id": "S32",
+    "evidence": "No acquisitions in the window; organic = total (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm)"
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "S",
+    "cite_id": "S33",
+    "evidence": "No pending deals disclosed in the Q2 2026 10-Q or later 8-Ks (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm)"
+   }
+  },
+  "bear": {
+   "forecast.sales_growth": {
+    "value": [
+     0.54777,
+     0.204045,
+     0.166667,
+     0.142857,
+     0.1,
+     0.079545,
+     0.052632,
+     0.045
+    ],
+    "tag": "C",
+    "cite_id": "C231",
+    "evidence": "Revenue growth FY26-FY38, bear (https://finance.yahoo.com/quote/QURE/analysis/)"
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     0.052388,
+     0.067695,
+     -0.056441,
+     -0.170847,
+     -0.139547,
+     -0.132179,
+     -0.073213,
+     -0.022723
+    ],
+    "tag": "C",
+    "cite_id": "C232",
+    "evidence": "EBITDA ratio E_t/E_t-1 - 1 FY26-FY38, bear (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087808/qure-20260729xex99d1.htm)"
+   },
+   "forecast.margin_path.me": {
+    "value": -1.739938,
+    "tag": "C",
+    "cite_id": "C233",
+    "evidence": "FY33E EBITDA / FY33E revenue (steady state: treated = pool demand, base; bull at capacity cap), bear (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087808/qure-20260729xex99d1.htm)"
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.939487,
+    "tag": "S",
+    "cite_id": "S54",
+    "evidence": "Bear: opex fixed after restructuring; an incremental royalty dollar drops through at the license gross margin [S] (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm)"
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.03,
+    "tag": "S",
+    "cite_id": "S55",
+    "evidence": "FY39 growth: Hemgenix royalty only, +3% [S] (https://www.clinaptisresearch.com/research/amt-130-huntingtons-uniqure-bla)"
+   },
+   "forecast.ebitda_basis": {
+    "value": "organic",
+    "tag": "S",
+    "cite_id": "S32",
+    "evidence": "No acquisitions in the window; organic = total (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm)"
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "S",
+    "cite_id": "S33",
+    "evidence": "No pending deals disclosed in the Q2 2026 10-Q or later 8-Ks (https://www.sec.gov/Archives/edgar/data/1590560/000110465926087815/qure-20260630x10q.htm)"
+   }
+  }
+ },
+ "prompt_inputs": [
+  {
+   "path": "debt.mode",
+   "value": "target",
+   "applies_to": [
+    "base",
+    "bull"
+   ],
+   "source": "prompt",
+   "quote": "rerun and keep debt constant until the year when EBITDA is positive. Then target 1x EBITDA from that year onward.",
+   "date": "2026-10-29",
+   "note": "v11 mapping (follows the forecast, not a new instruction): first year v11 EBITDA is positive = index 2 (FY2027E: base 239.8, bull 1433.4). v10 used 3. Previous note:  Mapping (v6, rev3): start_year 3 = FY2028E, the first year this scenario's rev3 forecast EBITDA is positive (index 0 = FY2025A, 1 = FY2026E EBITDA -160.9, 2 = FY2027E: base -237.1, bull -187.3, 3 = FY2028E: base +723.2, bull +1,645.0). In v4/v5 (rev2b) this was 2; the change follows the forecast, not a new instruction."
+  },
+  {
+   "path": "debt.leverage",
+   "value": 1.0,
+   "applies_to": [
+    "base",
+    "bull"
+   ],
+   "source": "prompt",
+   "quote": "rerun and keep debt constant until the year when EBITDA is positive. Then target 1x EBITDA from that year onward.",
+   "date": "2026-10-29",
+   "note": "1x EBITDA = Debt/EBITDA 1.0."
+  },
+  {
+   "path": "debt.start_year",
+   "value": 2,
+   "applies_to": [
+    "base",
+    "bull"
+   ],
+   "source": "prompt",
+   "quote": "rerun and keep debt constant until the year when EBITDA is positive. Then target 1x EBITDA from that year onward.",
+   "date": "2026-10-29",
+   "note": "v11 mapping (follows the forecast, not a new instruction): first year v11 EBITDA is positive = index 2 (FY2027E: base 239.8, bull 1433.4). v10 used 3. Previous note:  Mapping (v6, rev3): start_year 3 = FY2028E, the first year this scenario's rev3 forecast EBITDA is positive (index 0 = FY2025A, 1 = FY2026E EBITDA -160.9, 2 = FY2027E: base -237.1, bull -187.3, 3 = FY2028E: base +723.2, bull +1,645.0). In v4/v5 (rev2b) this was 2; the change follows the forecast, not a new instruction."
+  },
+  {
+   "path": "debt.mode",
+   "value": "hold",
+   "applies_to": [
+    "bear"
+   ],
+   "source": "prompt",
+   "quote": "rerun and keep debt constant until the year when EBITDA is positive. Then target 1x EBITDA from that year onward.",
+   "date": "2026-10-29",
+   "note": " Mapping: bear EBITDA is negative in every explicit year and in Finagle's extended margin path, so debt is constant throughout (mode hold). rev3 bear = rev2b bear: FY2026E-FY2033E EBITDA -160.9 to -90.9."
+  },
+  {
+   "path": "rates.rd",
+   "value": 0.1,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "source": "prompt",
+   "quote": "take rd as 10%",
+   "date": "2026-10-29"
+  },
+  {
+   "path": "forecast.sbc",
+   "value": [
+    17.679,
+    17.679,
+    34.499994,
+    251.749939,
+    301.999982,
+    302.199906,
+    270.96815,
+    258.097434,
+    257.460966,
+    257.539234,
+    260.153772
+   ],
+   "applies_to": [
+    "base"
+   ],
+   "source": "prompt",
+   "quote": "Stock comp is held constant until EBITDA is positive and then is a fixed % of sales.",
+   "date": "2026-10-30",
+   "note": "v11: list recomputed on the v11 (pool model m = 0.62, CLPT ramp) revenue path with v10's rule unchanged: SBC $17.679M until the first EBITDA-positive Finagle year, then 5.0% [S] x revenue. First positive year is now index 2 (FY2027E). Revenue in Finagle years from a scratch dry compile of the read-only Finagle copy (gt 2%, not a valuation): [16.1, 24.9, 690.0, 5035.0, 6040.0, 6044.0, 5419.4, 5161.9, 5149.2, 5150.8, 5203.1]. Previous v10 note: David's rule (P): SBC held at the year-0 level $17.679M (10-K FY2025) until the first EBITDA-positive year, then a fixed % of sales. rev3: base/bull EBITDA turns positive in FY2028E (index 3), so SBC = 5.0% x revenue from FY2028E; FY2026E-FY2027E stay $17.679M. The 5.0% is [S], not David's: chosen from launched rare-disease/gene-therapy peers at scale (10-K XBRL ShareBasedCompensation / revenue: Sarepta FY2025 $123.4M / $2,198.2M = 5.6%, FY2024 9.7%; PTC FY2025 $74.5M / $1,730.7M = 4.3%, FY2024 9.2%; Krystal FY2025 $54.5M / $389.1M = 14.0%, smaller scale); uniQure FY2025 SBC $17.7M on $16.1M revenue is not meaningful. FLAG: David to override the %. Revenue = rev3 path in Finagle years (FY26E-FY33E forecast totals; FY34E-FY35E per Finagle's margin-path formula with default gt, replicated without running Finagle). Full list with source prompt is kept by Finagle (normalize_assumed_paths keeps stated sources), so forecast_sbc is not called and sbc_rate_terminal is not used. Finagle years 0-10 = FY2025A-FY2035E (10-year horizon as in v4)."
+  },
+  {
+   "path": "forecast.capex",
+   "value": [
+    0.439,
+    3.5,
+    3.5
+   ],
+   "applies_to": [
+    "base",
+    "bull"
+   ],
+   "source": "prompt",
+   "quote": "Check that you are using method=1 for capex. Capex can start in year 0 per Matt’s guidance but use the method after that.",
+   "date": "2026-10-30",
+   "note": "SUPERSEDES the v7 full 11-value capex list (rule FY2028E on = max($5M, 1.5% x revenue)). Short list of stated years only: year 0 FY2025A purchases of PP&E $0.439M (10-K FY2025 p.125); FY2026E and FY2027E $3.5M/yr = midpoint of Matt's $2-5M guidance (CEO-simulation bot, [S]; H1 2026 actual $0.612M, 10-Q). No values after FY2027E, so Finagle run_case calls forecast_capex; compile._capex_method returns 1 because forecast_ebitda runs with margin_path me, mc, gsnext set and year-0 revenue non-zero: terminal D&A keeps the last supplied D&A-to-revenue ratio, terminal capex is solved from the ROIC identity, open years bridge with revenue. The request has no explicit method field; the method is chosen by compile._capex_method. Bear uses the same short list (David: bear capex same as base). USD millions."
+  },
+  {
+   "path": "forecast.sbc",
+   "value": [
+    17.679,
+    17.679,
+    107.09998,
+    496.524931,
+    429.724949,
+    438.699755,
+    438.874796,
+    419.838163,
+    400.788846,
+    400.8674,
+    404.915359
+   ],
+   "applies_to": [
+    "bull"
+   ],
+   "source": "prompt",
+   "quote": "Stock comp is held constant until EBITDA is positive and then is a fixed % of sales.",
+   "date": "2026-10-30",
+   "note": "v11: list recomputed on the v11 (pool model m = 0.62, CLPT ramp) revenue path with v10's rule unchanged: SBC $17.679M until the first EBITDA-positive Finagle year, then 5.0% [S] x revenue. First positive year is now index 2 (FY2027E). Revenue in Finagle years from a scratch dry compile of the read-only Finagle copy (gt 2%, not a valuation): [16.1, 24.9, 2142.0, 9930.5, 8594.5, 8774.0, 8777.5, 8396.8, 8015.8, 8017.3, 8098.3]. Previous v10 note: David's rule (P): SBC held at the year-0 level $17.679M (10-K FY2025) until the first EBITDA-positive year, then a fixed % of sales. rev3: base/bull EBITDA turns positive in FY2028E (index 3), so SBC = 5.0% x revenue from FY2028E; FY2026E-FY2027E stay $17.679M. The 5.0% is [S], not David's: chosen from launched rare-disease/gene-therapy peers at scale (10-K XBRL ShareBasedCompensation / revenue: Sarepta FY2025 $123.4M / $2,198.2M = 5.6%, FY2024 9.7%; PTC FY2025 $74.5M / $1,730.7M = 4.3%, FY2024 9.2%; Krystal FY2025 $54.5M / $389.1M = 14.0%, smaller scale); uniQure FY2025 SBC $17.7M on $16.1M revenue is not meaningful. FLAG: David to override the %. Revenue = rev3 path in Finagle years (FY26E-FY33E forecast totals; FY34E-FY35E per Finagle's margin-path formula with default gt, replicated without running Finagle). Full list with source prompt is kept by Finagle (normalize_assumed_paths keeps stated sources), so forecast_sbc is not called and sbc_rate_terminal is not used. Finagle years 0-10 = FY2025A-FY2035E (10-year horizon as in v4)."
+  },
+  {
+   "path": "forecast.sbc",
+   "value": [
+    17.679,
+    17.679,
+    17.679,
+    17.679,
+    17.679,
+    17.679,
+    17.679,
+    17.679,
+    17.679,
+    17.679,
+    17.679
+   ],
+   "applies_to": [
+    "bear"
+   ],
+   "source": "prompt",
+   "quote": "Stock comp is held constant until EBITDA is positive and then is a fixed % of sales.",
+   "date": "2026-10-30",
+   "note": "David's rule (P): SBC held at the year-0 level $17.679M (10-K FY2025) until the first EBITDA-positive year, then a fixed % of sales. Bear EBITDA is never positive, so SBC stays $17.679M every year. The 5.0% is [S], not David's: chosen from launched rare-disease/gene-therapy peers at scale (10-K XBRL ShareBasedCompensation / revenue: Sarepta FY2025 $123.4M / $2,198.2M = 5.6%, FY2024 9.7%; PTC FY2025 $74.5M / $1,730.7M = 4.3%, FY2024 9.2%; Krystal FY2025 $54.5M / $389.1M = 14.0%, smaller scale); uniQure FY2025 SBC $17.7M on $16.1M revenue is not meaningful. FLAG: David to override the %. Revenue = rev3 path in Finagle years (FY26E-FY33E forecast totals; FY34E-FY35E per Finagle's margin-path formula with default gt, replicated without running Finagle). Full list with source prompt is kept by Finagle (normalize_assumed_paths keeps stated sources), so forecast_sbc is not called and sbc_rate_terminal is not used. Finagle years 0-10 = FY2025A-FY2035E (10-year horizon as in v4)."
+  },
+  {
+   "path": "baseline.nol",
+   "value": 539.2,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "source": "prompt",
+   "quote": "Figure out the NOL's from Matt.",
+   "date": "2026-10-30",
+   "note": "Value [D]: 10-K FY2025 Note (income taxes), p.160: 'As of December 31, 2025, the total amount of net operating losses carried forward under the Dutch tax regime was EUR 458.9 million ($ 539.2 million)' ... 'Net operating loss carryforwards subject to a limit of offsetting taxable profit in excess of EUR 1.0 million to 50% of the taxable profit can be carried forward indefinitely.' US federal NOLs ~$20.1M (expire 2036-37; US ops already taxable) are not added. Q2 2026 10-Q discloses no updated NOL balance. Finagle mechanics (company.py _calc_fcf_from_ebitda): NOL offsets 100% of pre-tax income with no cap and no EUR 1M threshold. Adjustment [S]: none. In base/bull FY2027E-FY2028E pre-tax income is large enough that a 50% cap only defers part of the shield by about one year; in bear the NOL is never used. Units: US$ millions."
+  },
+  {
+   "path": "baseline.da",
+   "value": 0.2195,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "source": "prompt",
+   "quote": "Take depreciation as half of capex in year 0. Liability isn't debt. Yes to 1xebitda rule. Add shares and cash in year 0 so cash doesn't go negative anywhere.2% terminal growth. Dutch tax rate.",
+   "date": "2026-10-30",
+   "note": "SUPERSEDES v2-v6 baseline.da 0.48294 (3% of FY2025 revenue, David 2026-10-29). 0.5 x year-0 capex 0.439 (FY2025 purchases of PP&E, 10-K p.125) = 0.2195, USD millions, period_end 2025-12-31."
+  },
+  {
+   "path": "rates.gt",
+   "value": 0.02,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "source": "prompt",
+   "quote": "Take depreciation as half of capex in year 0. Liability isn't debt. Yes to 1xebitda rule. Add shares and cash in year 0 so cash doesn't go negative anywhere.2% terminal growth. Dutch tax rate.",
+   "date": "2026-10-30",
+   "note": "User input (David). Replaces Finagle default gt = risk-free 4.989% used in v4-v6. CONFLICT FLAG: forecaster gsnext leaves are left unchanged (base 0.08%, bull 0.02%, bear 3.00%); Finagle interpolates gs years 8-10 as [gsnext, (gsnext+gt)/2, gt], so FY34E-FY35E growth now heads to 2%."
+  },
+  {
+   "path": "rates.t",
+   "value": 0.258,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "source": "prompt",
+   "quote": "Take depreciation as half of capex in year 0. Liability isn't debt. Yes to 1xebitda rule. Add shares and cash in year 0 so cash doesn't go negative anywhere.2% terminal growth. Dutch tax rate.",
+   "date": "2026-10-30",
+   "note": "Dutch statutory corporate income tax rate 25.8% (10-K FY2025, income-tax note p.160). Replaces Finagle default 0.21. NOL 539.2 still offsets 100% of pre-tax income in Finagle."
+  },
+  {
+   "path": "baseline.cash",
+   "value": 865.222,
+   "applies_to": [
+    "base"
+   ],
+   "source": "prompt",
+   "quote": "Year-0 should be 2025 cash+short term. And then adjust for any equity raises during the 2026 year. Then increase sharecount from 2025 to account for the equity raises.",
+   "date": "2026-11-02",
+   "note": "Year-0 cash = 10-K FY2025 cash and cash equivalents $80.240M + current investment securities $542.301M = $622.541M [A] + June 2026 follow-on offering net proceeds $242.681M (5,686,813 shares at $45.50 incl. full option; 10-Q Q2 2026 cash flow) = $865.222M (David t129u 2026-11-02). Shares = 10-K cover 62.529408M + 5.686813M offering shares = 68.216221M. Employee option/ESPP proceeds ($6.985M) and ~1.15M plan shares excluded (only equity raises) [S]. Minimum year-end cash with no extra raise = 678.15, so no extra raise is needed (extra raise $0)."
+  },
+  {
+   "path": "market.shares",
+   "value": 68.216221,
+   "applies_to": [
+    "base"
+   ],
+   "source": "prompt",
+   "quote": "Year-0 should be 2025 cash+short term. And then adjust for any equity raises during the 2026 year. Then increase sharecount from 2025 to account for the equity raises.",
+   "date": "2026-11-02",
+   "note": "Year-0 cash = 10-K FY2025 cash and cash equivalents $80.240M + current investment securities $542.301M = $622.541M [A] + June 2026 follow-on offering net proceeds $242.681M (5,686,813 shares at $45.50 incl. full option; 10-Q Q2 2026 cash flow) = $865.222M (David t129u 2026-11-02). Shares = 10-K cover 62.529408M + 5.686813M offering shares = 68.216221M. Employee option/ESPP proceeds ($6.985M) and ~1.15M plan shares excluded (only equity raises) [S]. Minimum year-end cash with no extra raise = 678.15, so no extra raise is needed (extra raise $0)."
+  },
+  {
+   "path": "baseline.cash",
+   "value": 865.222,
+   "applies_to": [
+    "bull"
+   ],
+   "source": "prompt",
+   "quote": "Year-0 should be 2025 cash+short term. And then adjust for any equity raises during the 2026 year. Then increase sharecount from 2025 to account for the equity raises.",
+   "date": "2026-11-02",
+   "note": "Year-0 cash = 10-K FY2025 cash and cash equivalents $80.240M + current investment securities $542.301M = $622.541M [A] + June 2026 follow-on offering net proceeds $242.681M (5,686,813 shares at $45.50 incl. full option; 10-Q Q2 2026 cash flow) = $865.222M (David t129u 2026-11-02). Shares = 10-K cover 62.529408M + 5.686813M offering shares = 68.216221M. Employee option/ESPP proceeds ($6.985M) and ~1.15M plan shares excluded (only equity raises) [S]. Minimum year-end cash with no extra raise = 678.15, so no extra raise is needed (extra raise $0)."
+  },
+  {
+   "path": "market.shares",
+   "value": 68.216221,
+   "applies_to": [
+    "bull"
+   ],
+   "source": "prompt",
+   "quote": "Year-0 should be 2025 cash+short term. And then adjust for any equity raises during the 2026 year. Then increase sharecount from 2025 to account for the equity raises.",
+   "date": "2026-11-02",
+   "note": "Year-0 cash = 10-K FY2025 cash and cash equivalents $80.240M + current investment securities $542.301M = $622.541M [A] + June 2026 follow-on offering net proceeds $242.681M (5,686,813 shares at $45.50 incl. full option; 10-Q Q2 2026 cash flow) = $865.222M (David t129u 2026-11-02). Shares = 10-K cover 62.529408M + 5.686813M offering shares = 68.216221M. Employee option/ESPP proceeds ($6.985M) and ~1.15M plan shares excluded (only equity raises) [S]. Minimum year-end cash with no extra raise = 678.15, so no extra raise is needed (extra raise $0)."
+  },
+  {
+   "path": "baseline.cash",
+   "value": 5115.222,
+   "applies_to": [
+    "bear"
+   ],
+   "source": "prompt",
+   "quote": "Year-0 should be 2025 cash+short term. And then adjust for any equity raises during the 2026 year. Then increase sharecount from 2025 to account for the equity raises.",
+   "date": "2026-11-02",
+   "note": "Year-0 cash = 10-K FY2025 cash and cash equivalents $80.240M + current investment securities $542.301M = $622.541M [A] + June 2026 follow-on offering net proceeds $242.681M (5,686,813 shares at $45.50 incl. full option; 10-Q Q2 2026 cash flow) = $865.222M (David t129u 2026-11-02). Shares = 10-K cover 62.529408M + 5.686813M offering shares = 68.216221M. Employee option/ESPP proceeds ($6.985M) and ~1.15M plan shares excluded (only equity raises) [S]. Minimum year-end cash with no extra raise = -4206.41; extra year-0 raise $4250M [S] (smallest $50M multiple keeping cash >= 0 in every year, David t64u/t68u), issued at $25.30, no discount or fees, 167.984190M shares."
+  },
+  {
+   "path": "market.shares",
+   "value": 236.200411,
+   "applies_to": [
+    "bear"
+   ],
+   "source": "prompt",
+   "quote": "Year-0 should be 2025 cash+short term. And then adjust for any equity raises during the 2026 year. Then increase sharecount from 2025 to account for the equity raises.",
+   "date": "2026-11-02",
+   "note": "Year-0 cash = 10-K FY2025 cash and cash equivalents $80.240M + current investment securities $542.301M = $622.541M [A] + June 2026 follow-on offering net proceeds $242.681M (5,686,813 shares at $45.50 incl. full option; 10-Q Q2 2026 cash flow) = $865.222M (David t129u 2026-11-02). Shares = 10-K cover 62.529408M + 5.686813M offering shares = 68.216221M. Employee option/ESPP proceeds ($6.985M) and ~1.15M plan shares excluded (only equity raises) [S]. Minimum year-end cash with no extra raise = -4206.41; extra year-0 raise $4250M [S] (smallest $50M multiple keeping cash >= 0 in every year, David t64u/t68u), issued at $25.30, no discount or fees, 167.984190M shares."
+  },
+  {
+   "path": "forecast.capex",
+   "value": [
+    0.439,
+    3.5,
+    3.5,
+    418.967838,
+    515.065799,
+    515.448133,
+    455.720661,
+    431.10676,
+    429.889581,
+    430.03926,
+    435.039292
+   ],
+   "applies_to": [
+    "bear"
+   ],
+   "source": "prompt",
+   "quote": "Take the exact same capex as the base case for the bear case.",
+   "date": "2026-10-30",
+   "note": "v11: bear capex = base's dollar capex per year (v10 rule), re-derived from the v11 base path by Finagle method 1 in a scratch dry compile (not a valuation). Previous note: SUPERSEDES the v8 bear short list [0.439, 3.5, 3.5] (method 1). Bear uses base's dollar capex per year, not the rule: full 11-value list FY2025A-FY2035E = base capex path produced by Finagle forecast_capex method 1 on the base case (scratch dry check, full precision). Full-length list is kept as given by compile (forecast_capex not called). USD millions."
+  }
+ ],
+ "post_finagle": null,
+ "note": "v14 = v13 + David t129u (2026-11-02) year-0 cash = FY2025 cash + current investments + June 2026 offering net; shares + offering shares; extra raises base 0 / bull 0 / bear 4250. Scratch dry check (not a valuation): min cash base 678.15, bull 678.15, bear 43.59.",
+ "undecided_by_david": [
+  {
+   "item": "debt rule after the backlog clears (FY2030E on)",
+   "risk": "1x EBITDA target confirmed by David (t64u), but v4/v6 showed debt is not cut back as EBITDA falls after the backlog, leaving leverage well above 1x. David has not said whether to delever."
+  },
+  {
+   "item": "terminal growth vs forecaster gsnext",
+   "risk": "gt 2% is David's; forecaster gsnext stays 0.08% base / 0.02% bull / 3.00% bear. FY34E-FY35E revenue now moves toward 2%; bear now steps down from 3% to 2%."
+  },
+  {
+   "item": "SBC % of sales (5.0%) is [S]",
+   "risk": "David set the SBC rule shape; the 5% is judgment from peers and the CEO-simulation bot. SBC list unchanged from v7 (FY34E-FY35E derived at gt 4.989%). Capex list item resolved by David t66u (method 1 after FY2027E)."
+  },
+  {
+   "item": "raise size, price and cash build-up",
+   "risk": "Raise amounts and issue at $25.30 with no discount/fees are [S]. Dry run: cash then accumulates (base ~13.9B, bull ~36.4B by FY35E) because no distribution is modelled."
+  },
+  {
+   "item": "bear year-0 raise size vs market cap",
+   "risk": "Bear raise $3250M is about 2.1x the current market cap ($25.30 x 62.529408M shares = ~$1582M). Bear EBITDA is negative every year and bear capex equals base dollars, so the bear valuation will be dominated by the assumed raise (cash and dilution), not by bear operations."
+  },
+  {
+   "item": "v11 volume-path consistency flags",
+   "risk": "Base/bull year-0 raises ($400M/$350M) were sized for the old path; with EBITDA positive from FY2027E minimum year-end cash is now base 293.2 / bull 243.2 (dry), so the raises are larger than needed but kept (David's v10 values). Bear raise $4900M (~3.1x market cap) driven by bear capex = base dollars (base capex now larger). Centers implied by CLPT capacity at 2/week: ~29 base, ~34-43 bull (opex $1.5M/center). Bull starts from the same 6,000 pool with unfiltered entrants (steady pool ~8,200), base entrants filtered x1.0045 to hold 6,000. m = 0.62 (stay ~1.6y) is shorter than the duration evidence (crossover 2 of 6 lost eligibility in ~1 year implies ~0.41/yr)."
+  },
+  {
+   "item": "v14 year-0 funding",
+   "risk": "Employee-plan cash/shares and pre-funded warrants excluded; extra raises base 0, bull 0, bear 4250 [S]."
+  }
+ ]
+}

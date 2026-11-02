@@ -1,6 +1,6 @@
-"""v11 (rev4, 2026-10-30): build forecast.json (USD millions) under /workspace/out/QURE_run_v11/ from model.py (m = 0.62 pool model, CLPT ramp). Copy of the repo rev3 build_forecast.py; v10/rev3 files untouched."""
+"""v11 (rev4, 2026-10-30): build forecast.json (USD millions) under /workspace/out/QURE_run_v12/ from model.py (m = 0.62 pool model, CLPT ramp). Copy of the repo rev3 build_forecast.py; v10/rev3 files untouched."""
 import json, pathlib
-OUT = pathlib.Path("/workspace/out/QURE_run_v11/forecast.json")
+OUT = pathlib.Path("/workspace/out/QURE_run_v12/forecast.json")
 H = "HTML; no page numbers"
 DOCS = {
  "D1": ("uniQure Form 10-K FY2025 (filed 2026-03-02)", "https://www.sec.gov/Archives/edgar/data/1590560/000110465926021898/qure-20251231x10k.htm"),
@@ -199,7 +199,8 @@ PRID = {"base": sid(F([2.0, 1.8], "S", "Base US net price $2.0M FY27E-FY30E, the
 COGS = {"base": (0.30, 0.02, 0.20), "bull": (0.30, 0.025, 0.18)}   # $M/patient at launch, fall per year, floor [S]
 COGSID = {n: sid(F(list(COGS[n]), "S", "%s AMT-130 COGS (Genezen manufacturing, release, cold-chain; no licensor royalty, none disclosed for AMT-130): $%.2fM/patient in FY27, falling $%.3fM/yr to $%.2fM; UNVERIFIED, no uniQure disclosure [S]" % ((n,) + COGS[n]), "D1", )) for n in ("base", "bull")}
 OPEX = {"base": dict(core=1.03, com_fixed=80.0, per_center=1.5, var=0.05, uk=0.0, conf=70.0), "bull": dict(core=1.03, com_fixed=90.0, per_center=1.5, var=0.05, uk=15.0, conf=70.0)}
-BEAR_OPEX = [None, 170, 150, 140] + [140] * (len(YEARS) - 4)
+BEAR_OPEX = [None, 170, 150, 140] + [140] * (len(YEARS) - 4)   # restructured opex excluding the confirmatory study
+BEAR_CONF = 70.0   # v12 (David t120u 2026-11-02): same confirmatory-study cost as base/bull, FY27E-FY31E [S] CONFR
 
 def build(name, **kw):
     h2rev = cons26 - A["h1"]
@@ -226,7 +227,7 @@ def build(name, **kw):
     e = {"FY26E": ebitdah1 + h2rev * gm_lic - 2 * opexq2}
     for i, y in enumerate(YEARS[1:], 1):
         if name == "bear":
-            opex[y] = BEAR_OPEX[i]
+            opex[y] = BEAR_OPEX[i] + (BEAR_CONF if 2027 <= YN[y] <= 2031 else 0.0)
         else:
             o = OPEX[name]; half = 0.5 if y == "FY27E" else 1.0
             avg_c = pt["centers"][y]
@@ -292,7 +293,7 @@ def facts(name, b):
         if y == "FY26E":
             ebt[y] = F(r(e[y]), "C", "H1A EBITDA + H2 revenue x license GM - 2 x Q2 cash opex net of other items (%.3f) [S run rate]" % opexq2, "D3", [ID["opsh1"], ID["opsq2"]])
         elif name == "bear":
-            ebt[y] = F(r(e[y]), "S", "bear: license gross profit - fixed cash opex %d after a restructuring (US$M) [S]" % b["opex"][y], "D3")
+            ebt[y] = F(r(e[y]), "S", "bear: license gross profit - cash opex %.0f (restructured opex %d + confirmatory study %.0f) (US$M) [S]" % (b["opex"][y], BEAR_OPEX[YEARS.index(y)], b["opex"][y] - BEAR_OPEX[YEARS.index(y)]), "D3", [CONFR] if b["opex"][y] > BEAR_OPEX[YEARS.index(y)] else None)
         else:
             ebt[y] = F(r(e[y]), "S", "%s EBITDA (US$M) = license GP + AMT-130 revenue - COGS %.1f - cash opex %.1f (core Q2 2026 run rate x4 +3%%/yr, US commercial fixed $%.0fM, $1.5M per active center, 5%% variable%s) [S]" % (name, b["cogs"][y], b["opex"][y], OPEX[name]["com_fixed"], ", UK $15M from FY28" if name == "bull" else ""), "D2", )
     gmt = {"FY25A": F(r((A["rev25"] - A["cogs25"]) / A["rev25"]), "C", "(revenue - cost of license revenues 1,686)/revenue 2025", "D1", [ID["ops25"], ID["rev25"]])}
@@ -352,7 +353,7 @@ DIAG["sens"] = SENS
 fxf = F(r(fx), "C", "USD per EUR implied: reported FY25 revenue 16.098 / Yahoo FY25 year-ago revenue EUR 13.624", "D6", [ID["rev25"], ID["yago"]])
 for k in (P8, P9, XOVER, INC2, P7, P6, CLP2, CLP3, HDSA, PRAN, CONF, CONFR, REGX, P1, P4, G6Kb, G75K, GNAB, ANLG, ELIMP, PRICE_E, GS, GENZ, OPX, APPR, HGP): pass   # cited in report / sources
 payload = {"ticker": "QURE", "company": "uniQure N.V. (NASDAQ: QURE)", "units": "USD millions (patient rows in patients, as labelled)", "currency_note": "Reports in USD; Yahoo consensus is in EUR and converted at the implied rate (bridge.fx).",
-  "baseline_period": "FY25A", "explicit_periods": YEARS, "as_of": "2026-10-30", "revision": "rev4 / v11 (David May t97u-t98u, 2026-10-30: AMT-130 US treated from the pool model at m = 0.62, start pool 6,000, CLPT capacity ramp; supersedes rev3 year-1 ~190 path and center engine)",
+  "baseline_period": "FY25A", "explicit_periods": YEARS, "as_of": "2026-11-02", "revision": "rev5 / v12 (David May t120u, 2026-11-02: bear opex carries the same $70M/yr confirmatory-study cost FY27E-FY31E as base/bull; BLA accepted 2026-11-02, PDUFA 2027-05-01). Built on rev4 / v11 (David May t97u-t98u, 2026-10-30: AMT-130 US treated from the pool model at m = 0.62, start pool 6,000, CLPT capacity ramp; supersedes rev3 year-1 ~190 path and center engine)",
   **blocks["base"], "bridge": {"fx_usd_per_eur": fxf,
      "q2_cash_opex": F(r(opexq2), "C", "Q2 2026 gross profit (5.841-0.350) - Q2 EBITDA (-52.203+4.907+5.016)", "D3", [ID["opsh1"], ID["opsq2"]]),
      "base_fy27_consensus_vs_build": F(r(DIAG["base"]["scale27"]), "C", "FY27 consensus / base line build: NOT applied (P5 capacity instruction overrides consensus); far from 1, flagged", "D6", [ID["c27eur"], ID["yago"], P5])},
