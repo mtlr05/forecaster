@@ -248,3 +248,82 @@ P-tag items: [P7] David May t97u "Write is up with m=0.62 its the most internall
 | AMT-130 (bear) | FY31E | 0.0 | 0.0 | +0.0 | unchanged |
 | Revenue (bear) | FY31E | 47.5 | 47.5 | +0.0 | unchanged |
 | EBITDA (bear) | FY31E | -95.4 | -95.4 | +0.0 | unchanged |
+
+## rev5 / v12, 2026-11-02
+
+P-tag item: David May t120u, 2026-11-02: "Does 2027 and beyond include the cost of the confirmatory trial? If not include it and rerun. Same cost in each bear/bull and base case. Today the company announced acceptance of the BLA. Bear case can still assume no approval." Finding: base and bull already included $70M/yr FY27E-FY31E (S1, [S], cost undisclosed); bear did not. Change: bear opex + $70M/yr FY27E-FY31E as an explicit line. Base and bull operating numbers and Finagle values unchanged (regression: base 285.9267, bull 493.7011 reproduce v11 exactly). Bear me/mc/gsnext recomputed by build_forecast.py (unchanged: FY33E outside the trial years). Bear capex = base dollars (unchanged). New filing: uniQure release 2026-11-02, BLA accepted (Accelerated Approval, Priority Review, PDUFA 2027-05-01, AdCom tentatively planned; confirmatory ~200 pts 2:1 vs SOC, TFC 36 months, US screening by end-2026; 51 patients dosed in Phase I/II) [G]; launch date 2027-07-01 unchanged. Market data pinned to the v11 fetch (price 25.30, rf 4.989%, 2026-10-30); live 2026-11-02 fetch 24.83 / 4.929% not used. Report adds: confirmatory-study cost section (Section 9), bear opex build (Figure A3), base FCF FY26E-FY29E (Figure 9c). Q3 2026 results (due 2026-11-04) not yet out.
+
+| Line | Period | Old (v11) | New (v12) | Change | Why |
+|---|---|---|---|---|---|
+| EBITDA (bear) | FY27E | -141.8 | -211.8 | -70.0 | confirmatory study $70M/yr added to bear opex [P t120u][S1] |
+| EBITDA (bear) | FY28E | -117.1 | -187.1 | -70.0 | confirmatory study $70M/yr added to bear opex [P t120u][S1] |
+| EBITDA (bear) | FY29E | -102.4 | -172.4 | -70.0 | confirmatory study $70M/yr added to bear opex [P t120u][S1] |
+| EBITDA (bear) | FY30E | -98.7 | -168.7 | -70.0 | confirmatory study $70M/yr added to bear opex [P t120u][S1] |
+| EBITDA (bear) | FY31E | -95.4 | -165.4 | -70.0 | confirmatory study $70M/yr added to bear opex [P t120u][S1] |
+| Cash opex (bear) | FY27E | 170.0 | 240.0 | +70.0 | same |
+| Cash opex (bear) | FY28E | 150.0 | 220.0 | +70.0 | same |
+| Cash opex (bear) | FY29E | 140.0 | 210.0 | +70.0 | same |
+| Cash opex (bear) | FY30E | 140.0 | 210.0 | +70.0 | same |
+| Cash opex (bear) | FY31E | 140.0 | 210.0 | +70.0 | same |
+| Bear year-0 equity raise [S] | FY25A | 4,900 | 5,250 | +350 | David t64u/t68u rule: cash never negative; shortfall rounded up to next $50M at $25.30 |
+| Bear shares (M) | FY25A | 256.205297 | 270.039289 | +13.833992 | raise / 25.30 |
+| Bear minimum year-end cash | FY35E | 37.61 | 37.61 | +0.00 | Finagle |
+| Value per share (base, US$) | - | 285.9267 | 285.9267 | +0.0000 | Finagle FCFE (= DDM) |
+| Value per share (bull, US$) | - | 493.7011 | 493.7011 | +0.0000 | Finagle FCFE (= DDM) |
+| Value per share (bear, US$) | - | -0.8813 | -0.4184 | +0.4629 | Finagle FCFE (= DDM) |
+
+## rev6 / v13, 2026-11-02
+
+P-tag item: David May t124u, 2026-11-02: "Check the Aspen s-1 for more data. They will run a trial similar in size to AskBio and BlueRock. So this gives another data point. Bull, Base and Bear can use the same cost but include a detailed section in the report explaining analysis and upper and lower cost bands. Make it self contained and use prose to explain." Change: confirmatory-study cost (was $70M/yr FY27E-FY31E, [S], unsourced, all cases) replaced by one profile in all cases, separate line 30/45/32/17/5 FY27E-FY31E [I] (gross 40/55/42/27/15 less ~$10M/yr in run rate [S]); evidence: uniQure AMT-130 direct R&D history, Aspen Neuroscience 424B4 (use of proceeds $110.0M for Phase 3, net proceeds $125.8M, runway into 2H 2028; Phase 3 size not disclosed, ~100 assumed), AskBio NCT06285643 and BlueRock NCT06944522 sizes, Moore/Sertkaya/Health Advances benchmarks, Matt Kapusta CEO-simulation bot (labelled simulation). Bands lower 15/25/16/7/0, upper 50/75/55/30/12 run through the same pipeline (QURE_run_v13_band_lower/_upper). Bear raise re-sized from zero by the cash-never-negative rule. Base/bull: revenue, capex, SBC unchanged; EBITDA moves only by the cost change; FCF also moves via cash tax (NOL timing) and interest (1x EBITDA debt). Market data unchanged (30 Oct pin). Report: new Section 10 (confirmatory study cost analysis and bands), Figure 9c adds the confirmatory row, Figure A3 and text updated.
+
+| Line | Period | Old (v12) | New (v13) | Change | Why |
+|---|---|---|---|---|---|
+| EBITDA (base) | FY27E | 239.8 | 279.8 | +40.0 | confirmatory line 30 replaces 70 [P t124u][I1] |
+| EBITDA (base) | FY28E | 3,694.1 | 3,719.1 | +25.0 | confirmatory line 45 replaces 70 [P t124u][I1] |
+| EBITDA (base) | FY29E | 4,555.5 | 4,593.5 | +38.0 | confirmatory line 32 replaces 70 [P t124u][I1] |
+| EBITDA (base) | FY30E | 4,613.0 | 4,666.0 | +53.0 | confirmatory line 17 replaces 70 [P t124u][I1] |
+| EBITDA (base) | FY31E | 4,076.5 | 4,141.5 | +65.0 | confirmatory line 5 replaces 70 [P t124u][I1] |
+| EBITDA (bull) | FY27E | 1,433.4 | 1,473.4 | +40.0 | confirmatory line 30 replaces 70 [P t124u][I1] |
+| EBITDA (bull) | FY28E | 7,721.3 | 7,746.3 | +25.0 | confirmatory line 45 replaces 70 [P t124u][I1] |
+| EBITDA (bull) | FY29E | 6,689.3 | 6,727.3 | +38.0 | confirmatory line 32 replaces 70 [P t124u][I1] |
+| EBITDA (bull) | FY30E | 6,931.3 | 6,984.3 | +53.0 | confirmatory line 17 replaces 70 [P t124u][I1] |
+| EBITDA (bull) | FY31E | 7,035.1 | 7,100.1 | +65.0 | confirmatory line 5 replaces 70 [P t124u][I1] |
+| EBITDA (bear) | FY27E | -211.8 | -171.8 | +40.0 | confirmatory line 30 replaces 70 [P t124u][I1] |
+| EBITDA (bear) | FY28E | -187.1 | -162.1 | +25.0 | confirmatory line 45 replaces 70 [P t124u][I1] |
+| EBITDA (bear) | FY29E | -172.4 | -134.4 | +38.0 | confirmatory line 32 replaces 70 [P t124u][I1] |
+| EBITDA (bear) | FY30E | -168.7 | -115.7 | +53.0 | confirmatory line 17 replaces 70 [P t124u][I1] |
+| EBITDA (bear) | FY31E | -165.4 | -100.4 | +65.0 | confirmatory line 5 replaces 70 [P t124u][I1] |
+| FCF (base, Finagle) | FY2027E | 196.9 | 236.9 | +40.0 | EBITDA change less cash tax and interest (1x EBITDA debt) effects |
+| FCF (base, Finagle) | FY2028E | 2,272.5 | 2,277.7 | +5.3 | EBITDA change less cash tax and interest (1x EBITDA debt) effects |
+| FCF (base, Finagle) | FY2029E | 2,388.2 | 2,414.5 | +26.3 | EBITDA change less cash tax and interest (1x EBITDA debt) effects |
+| Bear year-0 equity raise [S] | FY25A | 5,250 | 5,000 | -250 | David t64u/t68u rule: smallest $50M multiple keeping cash >= 0, at $25.30 |
+| Bear shares (M) | FY25A | 270.039289 | 260.157866 | -9.881423 | raise / 25.30 |
+| Bear minimum year-end cash | FY35E | 37.61 | 8.61 | -29.00 | Finagle |
+| Value per share (base, US$) | - | 285.9267 | 287.3587 | +1.4320 | Finagle FCFE (= DDM) |
+| Value per share (bull, US$) | - | 493.7011 | 495.1596 | +1.4585 | Finagle FCFE (= DDM) |
+| Value per share (bear, US$) | - | -0.4184 | -0.8390 | -0.4206 | Finagle FCFE (= DDM) |
+
+## rev7 / v14, 2026-11-02
+
+P-tag item: David May t129u, 2026-11-02: "Year-0 should be 2025 cash+short term. And then adjust for any equity raises during the 2026 year. Then increase sharecount from 2025 to account for the equity raises." Forecast (revenue, EBITDA, confirmatory line) unchanged; only year-0 cash, shares and the extra raises changed.
+
+| Line | Period | Old (v13) | New (v14) | Change | Why |
+|---|---|---|---|---|---|
+| Year-0 cash (base) | FY25A | 480.240 | 865.222 | +384.982 | 10-K cash + current investments + June 2026 offering net 865.222, + extra raise 0 [P t129u] |
+| Shares (base, M) | FY25A | 78.339685 | 68.216221 | -10.123464 | 62.529408 + 5.686813 offering + extra raise / 25.30 |
+| Extra year-0 raise (base) [S] | FY25A | 400 | 0 | -400 | only to keep cash >= 0 |
+| Minimum year-end cash (base) | - | 293.17 | 678.15 | +384.98 | Finagle |
+| Year-0 cash (bull) | FY25A | 430.240 | 865.222 | +434.982 | 10-K cash + current investments + June 2026 offering net 865.222, + extra raise 0 [P t129u] |
+| Shares (bull, M) | FY25A | 76.363400 | 68.216221 | -8.147179 | 62.529408 + 5.686813 offering + extra raise / 25.30 |
+| Extra year-0 raise (bull) [S] | FY25A | 350 | 0 | -350 | only to keep cash >= 0 |
+| Minimum year-end cash (bull) | - | 243.17 | 678.15 | +434.98 | Finagle |
+| Year-0 cash (bear) | FY25A | 5,080.240 | 5,115.222 | +34.982 | 10-K cash + current investments + June 2026 offering net 865.222, + extra raise 4,250 [P t129u] |
+| Shares (bear, M) | FY25A | 260.157866 | 236.200411 | -23.957455 | 62.529408 + 5.686813 offering + extra raise / 25.30 |
+| Extra year-0 raise (bear) [S] | FY25A | 5,000 | 4,250 | -750 | only to keep cash >= 0 |
+| Minimum year-end cash (bear) | - | 8.61 | 43.59 | +34.98 | Finagle |
+| FCF (base, Finagle) | FY2026E | -187.1 | -187.1 | +0.0 | Finagle |
+| FCF (base, Finagle) | FY2027E | 236.9 | 236.9 | +0.0 | Finagle |
+| FCF (base, Finagle) | FY2028E | 2,277.7 | 2,277.7 | +0.0 | Finagle |
+| Value per share (base, US$) | - | 287.3587 | 335.6470 | +48.2883 | Finagle FCFE (= DDM) |
+| Value per share (bull, US$) | - | 495.1596 | 560.6738 | +65.5143 | Finagle FCFE (= DDM) |
+| Value per share (bear, US$) | - | -0.8390 | -0.7760 | +0.0630 | Finagle FCFE (= DDM) |

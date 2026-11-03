@@ -1,0 +1,12 @@
+{
+ "rule": "sha256 of json.dumps(obj, sort_keys=True, separators=(',',':'), ensure_ascii=False, allow_nan=False); sidecar only",
+ "blocks": {
+  "base": "92f38730dd5c9b46f57287b481156a6e43abe2f05f107c31021235e76c84dd2e",
+  "bull": "9eef054aea2873add32961616bcbf4b6ad7e45cde2ce9272942d08bb0041b0f9",
+  "bear": "bf982b5c5fca790b23ab7c5d5c58ae72d343eeeb0b954ce5abeafacad7ebd47a"
+ },
+ "prompt_inputs": "806b92b964970c5f3a26b0a1891b7e1778ca78cbf7a90ecc8b982c857b1b6835",
+ "whole_request": "5089ab652064b48acd22b85fcb046ca429b91daecaf29fc11c59dd8ee96f8299",
+ "file_bytes": "5c64a274084a0e146c095489592545941247004eef43890788f588649a128425",
+ "forecast_json_bytes": "7f028df40bcaf16ffc954aad2088e0264fbde2dec0b12e51303dcc1277a9b571"
+}

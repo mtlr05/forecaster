@@ -1,6 +1,6 @@
-"""v11 (rev4, 2026-10-30): build forecast.json (USD millions) under /workspace/out/QURE_run_v11/ from model.py (m = 0.62 pool model, CLPT ramp). Copy of the repo rev3 build_forecast.py; v10/rev3 files untouched."""
+"""v11 (rev4, 2026-10-30): build forecast.json (USD millions) under /workspace/out/QURE_run_v14/ from model.py (m = 0.62 pool model, CLPT ramp). Copy of the repo rev3 build_forecast.py; v10/rev3 files untouched."""
 import json, pathlib
-OUT = pathlib.Path("/workspace/out/QURE_run_v11/forecast.json")
+OUT = pathlib.Path("/workspace/out/QURE_run_v14/forecast.json")
 H = "HTML; no page numbers"
 DOCS = {
  "D1": ("uniQure Form 10-K FY2025 (filed 2026-03-02)", "https://www.sec.gov/Archives/edgar/data/1590560/000110465926021898/qure-20251231x10k.htm"),
@@ -132,7 +132,12 @@ RFIN = sid(F(473.199, "A", "Hemgenix royalties sold to HemB SPV, L.P. (May 2023)
            quote="The Purchaser will receive 1.85 times the upfront payment (or $ 693.8 million) until June 30, 2032 (\u201cFirst Hard Cap Date\u201d) if such thresholds are met or, if such cap is not met by June 30, 2032, up to 2.25 times of the upfront payment through December 31, 2038 ... Liability from royalty financing agreement 473,199"))
 REGX = sid(F("Regenxbio AAV9 licence = AMT-260", "A", "10-K: the royalty-bearing Regenxbio AAV9 licence covers AMT-260 (epilepsy), not AMT-130; no AMT-130 licensor royalty is disclosed, so none is modelled", "D1",
            quote="Temporal Lobe Epilepsy (AMT-260) Regenxbio In June 2020, uniQure France entered into an agreement ... with Regenxbio for an exclusive (in the field of using AAV9 to expression of the GRIK2 gene in humans"))
-CONFR = sid(F(70.0, "S", "Confirmatory-study R&D $70M/yr FY27E-FY31E on top of the Q2 2026 R&D run rate (midpoint of $60-80M; cost undisclosed) [S]", "D12"))
+import os as _os
+BAND = _os.environ.get("CONF_BAND", "central")
+CONF_PROFILES = {"central": [30.0, 45.0, 32.0, 17.0, 5.0], "lower": [15.0, 25.0, 16.0, 7.0, 0.0], "upper": [50.0, 75.0, 55.0, 30.0, 12.0]}
+CONF_GROSS = {"central": [40, 55, 42, 27, 15], "lower": [25, 35, 26, 17, 9], "upper": [60, 85, 65, 40, 22]}
+CONF_Y = dict(zip(["FY27E", "FY28E", "FY29E", "FY30E", "FY31E"], CONF_PROFILES[BAND]))
+CONFR = sid(F(CONF_PROFILES[BAND], "I", "Confirmatory-study cost, separate opex line FY27E-FY31E (%s profile, US$M): %s; = gross study cost %s less ~$10M/yr already in the Q2 2026 R&D run rate (floored at 0); same in bear, base and bull. Built from uniQure AMT-130 direct R&D history, Aspen Neuroscience 424B4 use of proceeds, AskBio/BlueRock trial sizes and published benchmarks; cost undisclosed by uniQure [I]" % (BAND, "/".join("%g" % x for x in CONF_PROFILES[BAND]), "/".join(str(x) for x in CONF_GRUSS[BAND]) if False else "/".join(str(x) for x in CONF_GROSS[BAND])), "D12"))
 G6K = sid(F(6000, "G", "uniQure: ~6,000 initial treatable US patients at launch (management estimate)", "D10",
             quote="~6,000 patients* Initial Treatable Patients at Launch ... ~20,000 patients Diagnosed HD ~40,000 patients Symptomatic HD ~100,000 patients Genetically Identifiable HD ... *Management Estimate. (slide 25)"))
 G6Kb = sid(F(6000, "G", "O'Keefe: about 6,000 patients, the initially treatable ~30% of ~20,000 diagnosed symptomatic US patients", "D7",
@@ -198,8 +203,9 @@ PRID = {"base": sid(F([2.0, 1.8], "S", "Base US net price $2.0M FY27E-FY30E, the
         "bull": sid(F([2.4, 2.16], "S", "Bull US net price $2.4M, then -10%% to $2.16M from the year after annual US sales first pass $2B [S]", "D8"))}
 COGS = {"base": (0.30, 0.02, 0.20), "bull": (0.30, 0.025, 0.18)}   # $M/patient at launch, fall per year, floor [S]
 COGSID = {n: sid(F(list(COGS[n]), "S", "%s AMT-130 COGS (Genezen manufacturing, release, cold-chain; no licensor royalty, none disclosed for AMT-130): $%.2fM/patient in FY27, falling $%.3fM/yr to $%.2fM; UNVERIFIED, no uniQure disclosure [S]" % ((n,) + COGS[n]), "D1", )) for n in ("base", "bull")}
-OPEX = {"base": dict(core=1.03, com_fixed=80.0, per_center=1.5, var=0.05, uk=0.0, conf=70.0), "bull": dict(core=1.03, com_fixed=90.0, per_center=1.5, var=0.05, uk=15.0, conf=70.0)}
-BEAR_OPEX = [None, 170, 150, 140] + [140] * (len(YEARS) - 4)
+OPEX = {"base": dict(core=1.03, com_fixed=80.0, per_center=1.5, var=0.05, uk=0.0), "bull": dict(core=1.03, com_fixed=90.0, per_center=1.5, var=0.05, uk=15.0)}
+BEAR_OPEX = [None, 170, 150, 140] + [140] * (len(YEARS) - 4)   # restructured opex excluding the confirmatory study
+# confirmatory-study cost CONF_Y: one profile in bear, base and bull (David t124u 2026-11-02)
 
 def build(name, **kw):
     h2rev = cons26 - A["h1"]
@@ -226,11 +232,11 @@ def build(name, **kw):
     e = {"FY26E": ebitdah1 + h2rev * gm_lic - 2 * opexq2}
     for i, y in enumerate(YEARS[1:], 1):
         if name == "bear":
-            opex[y] = BEAR_OPEX[i]
+            opex[y] = BEAR_OPEX[i] + CONF_Y.get(y, 0.0)
         else:
             o = OPEX[name]; half = 0.5 if y == "FY27E" else 1.0
             avg_c = pt["centers"][y]
-            opex[y] = core0 * o["core"] ** i + o["com_fixed"] * half + o["per_center"] * avg_c + o["var"] * amt[y] + (o["uk"] if YN[y] >= 2028 else 0.0) + (o["conf"] if 2027 <= YN[y] <= 2031 else 0.0)
+            opex[y] = core0 * o["core"] ** i + o["com_fixed"] * half + o["per_center"] * avg_c + o["var"] * amt[y] + (o["uk"] if YN[y] >= 2028 else 0.0) + CONF_Y.get(y, 0.0)
         e[y] = lic[y] * gm_lic + amt[y] - cogs[y] - opex[y]
     gm_tot = {y: (lic[y] * gm_lic + amt[y] - cogs[y]) / rev[y] for y in YEARS}
     gm_tot["FY26E"] = (A["h1"] - A["cogs_h1"] + h2rev * gm_lic) / rev["FY26E"]
@@ -292,7 +298,7 @@ def facts(name, b):
         if y == "FY26E":
             ebt[y] = F(r(e[y]), "C", "H1A EBITDA + H2 revenue x license GM - 2 x Q2 cash opex net of other items (%.3f) [S run rate]" % opexq2, "D3", [ID["opsh1"], ID["opsq2"]])
         elif name == "bear":
-            ebt[y] = F(r(e[y]), "S", "bear: license gross profit - fixed cash opex %d after a restructuring (US$M) [S]" % b["opex"][y], "D3")
+            ebt[y] = F(r(e[y]), "S", "bear: license gross profit - cash opex %.0f (restructured opex %d + confirmatory study %.0f) (US$M) [S]" % (b["opex"][y], BEAR_OPEX[YEARS.index(y)], b["opex"][y] - BEAR_OPEX[YEARS.index(y)]), "D3", [CONFR] if b["opex"][y] > BEAR_OPEX[YEARS.index(y)] else None)
         else:
             ebt[y] = F(r(e[y]), "S", "%s EBITDA (US$M) = license GP + AMT-130 revenue - COGS %.1f - cash opex %.1f (core Q2 2026 run rate x4 +3%%/yr, US commercial fixed $%.0fM, $1.5M per active center, 5%% variable%s) [S]" % (name, b["cogs"][y], b["opex"][y], OPEX[name]["com_fixed"], ", UK $15M from FY28" if name == "bull" else ""), "D2", )
     gmt = {"FY25A": F(r((A["rev25"] - A["cogs25"]) / A["rev25"]), "C", "(revenue - cost of license revenues 1,686)/revenue 2025", "D1", [ID["ops25"], ID["rev25"]])}
@@ -352,7 +358,7 @@ DIAG["sens"] = SENS
 fxf = F(r(fx), "C", "USD per EUR implied: reported FY25 revenue 16.098 / Yahoo FY25 year-ago revenue EUR 13.624", "D6", [ID["rev25"], ID["yago"]])
 for k in (P8, P9, XOVER, INC2, P7, P6, CLP2, CLP3, HDSA, PRAN, CONF, CONFR, REGX, P1, P4, G6Kb, G75K, GNAB, ANLG, ELIMP, PRICE_E, GS, GENZ, OPX, APPR, HGP): pass   # cited in report / sources
 payload = {"ticker": "QURE", "company": "uniQure N.V. (NASDAQ: QURE)", "units": "USD millions (patient rows in patients, as labelled)", "currency_note": "Reports in USD; Yahoo consensus is in EUR and converted at the implied rate (bridge.fx).",
-  "baseline_period": "FY25A", "explicit_periods": YEARS, "as_of": "2026-10-30", "revision": "rev4 / v11 (David May t97u-t98u, 2026-10-30: AMT-130 US treated from the pool model at m = 0.62, start pool 6,000, CLPT capacity ramp; supersedes rev3 year-1 ~190 path and center engine)",
+  "baseline_period": "FY25A", "explicit_periods": YEARS, "as_of": "2026-11-02", "revision": "rev6 / v13 (David May t124u, 2026-11-02: one confirmatory-study cost profile in bear, base and bull, separate line US$M FY27E-FY31E 30/45/32/17/5 central, bands 15/25/16/7/0 and 50/75/55/30/12; Aspen 424B4 added as benchmark). Built on rev5 / v12 (bear carried $70M/yr; BLA accepted 2026-11-02, PDUFA 2027-05-01) and rev4 / v11 (David May t97u-t98u, 2026-10-30: AMT-130 US treated from the pool model at m = 0.62, start pool 6,000, CLPT capacity ramp; supersedes rev3 year-1 ~190 path and center engine)",
   **blocks["base"], "bridge": {"fx_usd_per_eur": fxf,
      "q2_cash_opex": F(r(opexq2), "C", "Q2 2026 gross profit (5.841-0.350) - Q2 EBITDA (-52.203+4.907+5.016)", "D3", [ID["opsh1"], ID["opsq2"]]),
      "base_fy27_consensus_vs_build": F(r(DIAG["base"]["scale27"]), "C", "FY27 consensus / base line build: NOT applied (P5 capacity instruction overrides consensus); far from 1, flagged", "D6", [ID["c27eur"], ID["yago"], P5])},
