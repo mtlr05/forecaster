@@ -1,16 +1,19 @@
 ## Status and open items
 
-**Current:** v11, as of 2026-10-26. Finagle `run_case` value per share (cost of equity 10.453% = 10-year 4.953% + 5.5% ERP; gt default 4.953%): base $65.20, bull $88.36, bear $14.56; after David's ×0.90 dilution estimate $58.68 / $79.52 / $13.10. Valuation inputs are David's (2026-10-26): +$50M Oberland draw in 2026, debt 2.0× EBITDA from the first positive-EBITDA year, SBC $8M until then and linear in dollars to 5% of FY2040E EBITDA, explicit EBITDA to FY2031E, gsnext 15% fading to terminal by FY2040E (year 15), roict 25%, rd 9.2%. Scripts and outputs are in `valuation_v11/`. The sections below this block still carry their earlier version label; `report.md` and the `partners/pd_simple4_*` and `partners/partners_v4_*` files are current.
+**Current:** v12, as of 2026-10-31. Operating forecast unchanged from v11 (forecast.json unchanged). Finagle `run_case` value per share (same re 10.453%, gt default 4.953%, rd 9.2%, roict 25%, 15-year horizon, gsnext 15%): base $62.70, bull $84.74, bear $14.47 (FCFE = DDM). Valuation inputs changed per David (2026-10-31, P4): shares 32.05M (32,054,268 at Oct 21, 2026, after 1,530,000 ATM shares for $22.0M net in Q3 2026); FY2025A opening cash +$22.0M to $67.923M; FY2026E debt $74.077M (the optional $25M note sale instead of $50M), then 2.0× EBITDA; the ×0.90 dilution allowance dropped. Scripts and outputs are in `valuation_v12/`; bridge in `valuation_v12/bridge_v12.json`; AMT-130 and generic pool model in `pool_model/` (report Appendices D and E). v11 description follows for history: v11, as of 2026-10-26. Finagle `run_case` value per share (cost of equity 10.453% = 10-year 4.953% + 5.5% ERP; gt default 4.953%): base $65.20, bull $88.36, bear $14.56; after David's ×0.90 dilution estimate $58.68 / $79.52 / $13.10. Valuation inputs are David's (2026-10-26): +$50M Oberland draw in 2026, debt 2.0× EBITDA from the first positive-EBITDA year, SBC $8M until then and linear in dollars to 5% of FY2040E EBITDA, explicit EBITDA to FY2031E, gsnext 15% fading to terminal by FY2040E (year 15), roict 25%, rd 9.2%. Scripts and outputs are in `valuation_v11/`. The sections below this block still carry their earlier version label; `report.md` and the `partners/pd_simple4_*` and `partners/partners_v4_*` files are current.
 
 **Presentation window (2026-10-26, David):** the report's explicit forecast ends at FY2031E (base revenue $410.4M, EBITDA $170.8M; bull $502.1M / $225.0M; bear $180.2M / $25.8M). forecast.json still runs to FY2032E (unchanged; model outputs unchanged), but FY2032E is not presented; the valuation fades growth with Finagle from FY2032E (15.0% → ~6.1% by FY2040E). Exception (David, 2026-10-26, later): Parkinson's demand and patient-pool tables, chart (pd_pool_chart, FY2026E–FY2040E) and discussion continue past FY2031E as demand context only (not a revenue forecast; Finagle does not use them). Notes below for v8–v10 that mention FY2032E+ are history.
 
 **Closed in v11:** bull at 8% treated share confirmed by David; cost of equity set to 10-year + ERP (no beta; David: med-tech beta is low); SBC fade artifact fixed (explicit dollar path replaces the ratio fade that produced negative SBC); $50M 2026 draw and 2× leverage modelled; rd 9.2% (no double count of the 11.3% effective rate).
 
 **Open items**
-1. Dilution is a flat ×0.90 outside Finagle; the borrowing an equity raise would replace stays in the model.
-2. Bear cash reaches −$98M (FY2030E–32E) with no funding modelled.
-3. Oberland revenue participation and prepayment premiums are approximated through the 9.2% rate; model starts from 10-K debt $49.077M vs. $50.2M at Q2 2026.
-4. About 86% of base value comes after FY2031E and 54% from terminal value.
+1. (v12) ATM issuance is modelled (P4); further ATM use ($27.5M unsold at Sep 30, 2026) is not.
+2. Bear cash reaches −$91.8M (FY2030E–31E) with no funding modelled.
+3. Oberland revenue participation and prepayment premiums are approximated through the 9.2% rate; model starts from 10-K debt $49.077M vs. $50.8M carried at Sep 30, 2026.
+4. About 85% of base value comes after FY2031E and 53% from terminal value.
+10. (v12) Q3 2026 results not yet reflected in the operating forecast: guidance now $48–50M (Q4 implied ~$13.9M); FY2026E sits at $49.0M consensus.
+11. (v12) AMT-130 pool model gives 3,000 (not 3,170) in FY2029E and ~2,840 from FY2032E; bull FY2029E–31E is 700–1,030 above what the pool supports; not applied.
+12. (v12) PD pool removes unserved ramp demand; carrying it forward would add ~650 procedures in FY2031E; not applied.
 5. The Parkinson's capacity decomposition ($39.25) and the per-$20M add-on ($2.69/share) in the report are from Oct 25 runs and were not rerun on v11 inputs.
 6. `partners/partners_v4.md` has no PDF or Word version.
 7. Epilepsy, FTD and glioblastoma funnels not rebuilt on the pool method.
@@ -106,7 +109,7 @@ gsnext reflects how much ramp is left after FY30: bear still ramping, bull alrea
 Run order: `build_baseline('CLPT')` → forecaster leaves → filled inputs → `validate_case` (missing [], errors []) → `run_case`. `gt` was **not set** (Finagle default 4.95% = 10-year yield). Defaults kept: re 10.45% and roict 15%.
 
 Filled inputs (same as v1):
-- shares 30.503M (10-Q, Jun 30, 2026)
+- shares 30.503M (10-Q, Jun 30, 2026); v12: 32.05M (10-Q, Oct 21, 2026)
 - horizon 10 years
 - rd 8.25% (notes' minimum coupon, 10-Q; effective rate 11.3%)
 - tax 21%
