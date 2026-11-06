@@ -139,13 +139,15 @@ An acquired line is not scaled to Consensus, because Consensus coverage of the d
 
 Start from the latest reported quarter. Search the whole history window, not only the latest print, for items the company flags as one-time. Remove a one-time item only when the company flags it. Say which quarters were adjusted. Before a beat or a miss touches the run rate, classify the driver as one-time or recurring, and say why.
 
+M&A-related costs are the exception. Treat them as one-time unless the company says they continue. Integration costs tied to the deal may stay in the short-term run rate while the integration work is unfinished, and come out once that work is done. Say which quarters hold the integration costs and when they come out. Tag the end date `[S]` when the company does not give one.
+
 *Example (insurance-auction businesses):* catastrophe or hurricane volume, such as CPRT's FY25 Helene/Milton volume, is one-time.
 
 ### 2e. Costs
 
 Gross margin stays at the trailing level unless a source moves it. State the gross margin basis (GAAP or cash), and keep management's margin language on the same basis.
 
-Define the cost base first. Cash opex = GAAP operating expenses − stock comp − depreciation (− company-flagged one-time items). Reconcile it to reported adjusted EBITDA: gross profit + amortization in COGS − cash opex = adjusted EBITDA (HROW Q2'26: 50.363 + 5.527 − 57.122 = −1.232). State where amortization and stock comp sit. Gross profit minus adjusted EBITDA is not the cost base: it nets amortization into opex and understates EBITDA.
+Define the cost base first. Cash opex = GAAP operating expenses − stock comp − depreciation (− company-flagged one-time items − M&A costs treated as one-time under 2d). Integration costs stay in that base only while the integration work is unfinished. Reconcile it to reported adjusted EBITDA: gross profit + amortization in COGS − cash opex = adjusted EBITDA (HROW Q2'26: 50.363 + 5.527 − 57.122 = −1.232). State where amortization and stock comp sit. Gross profit minus adjusted EBITDA is not the cost base: it nets amortization into opex and understates EBITDA.
 
 When management describes how it gets to its EBITDA guide (HROW: "substantially higher revenue, increasing gross margins into the high 70s, and a base operating expense structure that remains approximately flat"), the cost step follows that description first. Only when there isn't one, cash operating cost is the latest-quarter run rate plus step changes the company has actually announced, grown for inflation.
 

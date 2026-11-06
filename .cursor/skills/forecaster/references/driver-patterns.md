@@ -37,7 +37,7 @@ A product still awaiting approval, a trial readout, or another stated event uses
 
 ## Acquisition-driven
 
-Show organic revenue and the deal separately. Record the deal spend, the year, and what the organic path excludes. Do not hide the deal inside a growth rate and also list it under `acquisitions`.
+Show organic revenue and the deal separately. Record the deal spend, the year, and what the organic path excludes. Do not hide the deal inside a growth rate and also list it under `acquisitions`. M&A-related costs are one-time unless the company says they continue. Integration costs stay in the short-term cost base only while the integration work is unfinished, and come out once it is done. Section 2d of the skill is the rule.
 
 ## Recurring
 
