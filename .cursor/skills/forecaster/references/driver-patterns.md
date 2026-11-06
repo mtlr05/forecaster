@@ -6,9 +6,9 @@ Pick the pattern management actually discusses. Then take the simplest one that 
 
 ## Ramping
 
-A line that is still being built: a recently launched product, a coverage win that is not yet in a full year, a region that just opened.
+A line that is still being built: a recently launched product, a product that is approved but not yet launched, a coverage win that is not yet in a full year, a region that just opened.
 
-Use volume times price when you have both. Otherwise grow off the latest quarter and assume a slowdown, tagged `[S]`, because a new line rarely keeps its first-year growth. Watch a price change and a channel-inventory swing before you annualize a quarter. Inventory rebuild is not demand.
+Phase a product that has not launched from the stated launch date. Do not hold the first-year growth as a run rate. Use volume times price when you have both. Otherwise grow off the latest quarter and assume a slowdown, tagged `[S]`, because a new line rarely keeps its first-year growth. Watch a price change and a channel-inventory swing before you annualize a quarter. Inventory rebuild is not demand. If those dollars already sit in the line, in guidance, or in Consensus, they are an allocation inside that total, not a second amount. Section 2f of the skill says whether the product extends the explicit years.
 
 ## New or acquired
 
@@ -33,7 +33,7 @@ Flat at the latest-quarter run rate, or the recent trend, plus only the structur
 
 ## Milestone-dependent
 
-Revenue equals the event amount times a probability. The probability is `[S]` unless a source states it. Do not put the full amount in the base because the event would be nice.
+A product still awaiting approval, a trial readout, or another stated event uses this pattern. Revenue equals the event amount times a probability. The probability is `[S]` unless a source states it. Do not put the full amount in the base because the event would be nice. If those dollars already sit in the line, in guidance, or in Consensus, they are an allocation inside that total, not a second amount. Section 2f of the skill says whether the product extends the explicit years.
 
 ## Acquisition-driven
 
@@ -42,3 +42,11 @@ Show organic revenue and the deal separately. Record the deal spend, the year, a
 ## Recurring
 
 Starting base times retention, plus new bookings. Retention and the booking ramp are `[S]` or `[G]`, and they say whether the driver is customers kept or customers added.
+
+## Contingent consideration
+
+Royalties, license revenue, earn-outs, and similar payments stay inside the reported line that already includes them. The item is its own line only when management already reports it that way.
+
+A running royalty or license uses `recurring`. An earn-out or milestone uses `milestone-dependent`. The probability is `[S]` unless a source states it. Do not put the full undiscounted contingent amount in the base. Build the operating piece and the contingent piece, then one line total.
+
+If the dollars already sit in the reported line, in guidance, or in Consensus, they stay in that total. When the base is top-down, calibrated top-down, or Consensus, the contingent piece is an allocation inside the line. When the dollars cannot be split out, keep the single line, say the piece is not separable, and state how the build treats it: in the run rate, probability-weighted, or already inside the total.

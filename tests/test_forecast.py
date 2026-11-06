@@ -232,7 +232,10 @@ def test_line_pattern_is_validated():
 
 def _with_ids():
     """The minimal case with numbered citations and a sources list."""
-    payload = _minimal()
+    return _stamp_ids(_minimal())
+
+
+def _stamp_ids(payload):
     counters = {}
     for _, fact in _iter_facts(payload):
         tag = fact["tag"]
@@ -248,6 +251,55 @@ def _with_ids():
             entry["inputs"] = ["D1"]
         sources.append(entry)
     payload["sources"] = sources
+    return payload
+
+
+def _add_views(payload):
+    """Consensus base, with calibrated top-down absent and the other views filled."""
+    def ratio(numerator, denominator):
+        return _fact(numerator / float(denominator), "C")
+
+    def year_views(bottom_up, low, high, consensus):
+        return {
+            "bottom_up": _fact(bottom_up, "C"),
+            "top_down": {"low": _fact(low, "G"), "high": _fact(high, "G")},
+            "calibrated_top_down": {"absent": "C < 0 and Consensus exists"},
+            "consensus": _fact(consensus, "E"),
+        }
+
+    def year_ratios(bottom_up, low, high, consensus):
+        midpoint = (low + high) / 2.0
+        absent = {"absent": "no calibrated top-down"}
+        return {
+            "bottom_up_over_base": ratio(bottom_up, consensus),
+            "top_down_over_base": ratio(midpoint, consensus),
+            "calibrated_top_down_over_base": absent,
+            "consensus_over_base": ratio(consensus, consensus),
+            "bottom_up_over_calibrated_top_down": absent,
+            "bottom_up_over_consensus": ratio(bottom_up, consensus),
+        }
+
+    payload["views"] = {
+        "used": "consensus",
+        "revenue": {
+            "FY26E": year_views(110, 100, 140, 120),
+            "FY27E": year_views(130, 120, 160, 140),
+        },
+        "ebitda": {
+            "FY26E": year_views(20, 20, 28, 24),
+            "FY27E": year_views(28, 26, 34, 30),
+        },
+        "ratios": {
+            "FY26E": {
+                "revenue": year_ratios(110, 100, 140, 120),
+                "ebitda": year_ratios(20, 20, 28, 24),
+            },
+            "FY27E": {
+                "revenue": year_ratios(130, 120, 160, 140),
+                "ebitda": year_ratios(28, 26, 34, 30),
+            },
+        },
+    }
     return payload
 
 
@@ -342,7 +394,11 @@ def test_missing_sources_is_a_warning_not_an_error():
     report = validate_payload(_minimal())
     assert report["ok"], report["errors"]
     assert any("sources" in warning for warning in report["warnings"])
-    assert not validate_payload(_with_ids())["warnings"]
+    assert any("views" in warning for warning in report["warnings"])
+    sourced = validate_payload(_with_ids())
+    assert sourced["ok"], sourced["errors"]
+    assert not any("sources" in warning for warning in sourced["warnings"])
+    assert any("views" in warning for warning in sourced["warnings"])
 
 
 def test_age_source_entries_need_quote_text():
@@ -352,3 +408,34 @@ def test_age_source_entries_need_quote_text():
     report = validate_payload(payload)
     assert not report["ok"]
     assert any("quoted source text" in error for error in report["errors"])
+
+
+def test_views_block_with_an_absent_view_passes():
+    payload = _add_views(_minimal())
+    report = validate_payload(payload)
+    assert report["ok"], report["errors"]
+    assert not any("views" in warning for warning in report["warnings"])
+    assert payload["views"]["revenue"]["FY26E"]["calibrated_top_down"]["absent"]
+
+
+def test_views_and_sources_clear_the_warnings():
+    payload = _stamp_ids(_add_views(_minimal()))
+    report = validate_payload(payload)
+    assert report["ok"], report["errors"]
+    assert report["warnings"] == []
+
+
+def test_views_used_value_must_match_totals():
+    payload = _add_views(_minimal())
+    payload["views"]["revenue"]["FY26E"]["consensus"] = _fact(121, "E")
+    report = validate_payload(payload)
+    assert not report["ok"]
+    assert any("consensus" in error and "does not match" in error for error in report["errors"])
+
+
+def test_absent_view_rejects_a_ratio_fact():
+    payload = _add_views(_minimal())
+    payload["views"]["ratios"]["FY26E"]["revenue"]["calibrated_top_down_over_base"] = _fact(1, "C")
+    report = validate_payload(payload)
+    assert not report["ok"]
+    assert any("numerator or denominator is missing" in error for error in report["errors"])

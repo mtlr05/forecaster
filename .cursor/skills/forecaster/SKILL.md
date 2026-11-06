@@ -24,6 +24,8 @@ Read, in this order. Do not write outside this repo.
 1. The prompt.
 2. The filing (EDGAR for a US issuer, SEDAR+ for a Canadian one) and the company's own IR release or transcript.
 
+Read at least nine reported quarters of revenue, and of EBITDA or margin where the company reports them, plus the earnings transcript for each of those quarters, where the documents exist. Name the window (for example Q2 FY24 through Q2 FY26). A shorter history (a new issuer, restated segments, a missing transcript) is used as-is and flagged. That window is what 2d uses to classify one-time items, and what 2f uses to set `mc`, `gsnext`, and any other input past the explicit years.
+
 A number you cannot open stays out, or goes in with the citation text `link unverified`. Do not invent a URL or a figure.
 
 ## What you produce
@@ -36,6 +38,8 @@ For `forecasts/<TICKER>/`:
 - `revision_log.md`, one row per line for this year and next year, on every update
 
 `forecast.json` has to pass `pytest`. Periods are named `FYyyA`/`FYyyE` for fiscal years and `H1A`, `H2E`, `9MA`, `Q4E` and the like for part years; `baseline_period` and `explicit_periods` set which years the checks run on. Growth keys are `YoY` or `YoY_*`. A lone reference quarter such as `Q4FY26A` (the latest quarter) is summed across lines but not to a year. Part years sum to the first explicit year unless `stub_of` maps them (e.g. `{"H1E": "FY27E", "H2E": "FY27E"}`). A line's `pattern`, when given, is one of the [driver patterns](references/driver-patterns.md) in lower case, optionally followed by a note in parentheses. Every number is a fact: a value, a tag, and a citation. See [tagging](references/tagging.md).
+
+New cases also carry a `views` block: bottom-up, top-down, calibrated top-down, and Consensus, for revenue and for EBITDA, for each explicit year, plus which view is the base and the ratios between them. The shape is in section 2. A case without `views` passes with a warning.
 
 ## Status and open items
 
@@ -52,6 +56,8 @@ Reported periods stay put. Forecast only periods the company has not reported.
 
 A business line is a unit the company already reports revenue for, and margin if it reports that too: a segment, a product, an operating business, a geography, a channel. Do not split finer than the disclosure. A single-segment filer's lines are the revenue breakdown it reports: geography, revenue type (e.g. service vs. vehicle sales), or both crossed if both are reported. Say which one you used.
 
+Royalties, license revenue, earn-outs, and similar contingent payments stay inside the reported line that already includes them. A contingent item is its own line only when management already reports it as its own line. Build the operating piece and the contingent piece, then one line total. See [driver patterns](references/driver-patterns.md). If those dollars already sit in the reported line, in guidance, or in Consensus, leave them there: they are an allocation inside the line when the base is top-down, calibrated top-down, or Consensus, and they are not added again on top of that total. When the dollars cannot be split out, keep the single line, say the piece is not separable, and state how the build treats it: in the run rate, probability-weighted, or already inside the total.
+
 The baseline year shows year-over-year growth for the total and for each line.
 
 Lines add up to the total. If they do not, fix the lines before scaling anything.
@@ -59,6 +65,25 @@ Lines add up to the total. If they do not, fix the lines before scaling anything
 Bear, base, and bull differ in two or three levers, named up front. They do not each invent a new story.
 
 ## 2. Set the totals, then the lines
+
+Four views are recorded for revenue and for EBITDA, for each explicit year, including the one chosen as the base. A view that does not exist is recorded as absent, with the reason.
+
+- **Bottom-up.** Revenue is the sum of the unscaled lines. EBITDA is the cost build in 2e, unless the filing reports line profits that already sum to it.
+- **Top-down.** Management's guidance range for that year: low and high. A single point (`more than $X`, `about $X`) is recorded as a point, and calibrated top-down is absent because there is no `C`.
+- **Calibrated top-down.** `Low + C * (High - Low)` on the like-for-like range. Absent, with the reason, when there is no range, when `C` is not applied, or when this step says to leave guidance. `C` is not applied when `C < 0` and a Consensus exists, when guidance has been revised, or when there is no completed original range. When `C < 0` and no Consensus exists, apply `C` anyway: calibrated top-down is then the base, and it is flagged.
+- **Consensus.** Analyst estimates, the latest pull, with its as-of date, tagged `[E]`. Absent when none exists.
+
+The base case is one view. Calibrated top-down while still on guidance. Consensus when leaving guidance and an estimate exists. Bottom-up when neither exists, or when a single-point guide is enforced on the line build. Top-down is the base only when the base is an explicit point inside the range, named in the citation. Bottom-up stays a recorded view beside that base. The dollars on `lines` are the scaled base-case dollars.
+
+Do this separately for revenue and for EBITDA. A later explicit year with no guidance range has top-down and calibrated top-down absent.
+
+`forecast.md` shows the four views, which one is the base, and the ratios beside the `[C]` block. `forecast.json` records them under `views`:
+
+- `views.used` is `bottom_up`, `top_down`, `calibrated_top_down`, or `consensus`.
+- `views.revenue.<FYyyE>` and `views.ebitda.<FYyyE>` each hold `bottom_up`, `top_down`, `calibrated_top_down`, and `consensus`. A point view is a fact. Top-down is `low` and `high`, or `point` when guidance is a single point. When top-down is the base, `point` is that base and the citation names it. A missing view is `{"absent": "<reason>"}`.
+- `views.ratios.<FYyyE>.revenue` and `.ebitda` hold `bottom_up_over_base`, `top_down_over_base`, `calibrated_top_down_over_base`, `consensus_over_base`, `bottom_up_over_calibrated_top_down`, and `bottom_up_over_consensus`. Each is a fact or an absent reason. The top-down ratio uses the midpoint of low and high, tagged `[C]`. A missing numerator or denominator is absent.
+
+Every dollar and every ratio is a fact. A case without `views` passes with a warning; new cases carry the block.
 
 ### 2a. Guidance-position coefficient
 
@@ -80,15 +105,15 @@ of next year's range.
 
 Like for like. An original-range `C` is applied to an original range. A `C` from a revised range is applied only to a range that was revised at a similar point in the year.
 
-Leave guidance when `C < 0` (the low end was missed) or when this year's guidance has been revised. Use the analyst consensus if one exists. Consensus used to score a print is the consensus dated **before** that release. Consensus used as the forward total is the latest pull, with its as-of date, tagged `[E]`.
+Leave guidance when `C < 0` (the low end was missed) or when this year's guidance has been revised. The base is then Consensus if one exists. Consensus used to score a print is the Consensus dated **before** that release. Consensus used as the forward total is the latest pull, with its as-of date, tagged `[E]`.
 
-If `C < 0` and no estimate exists, apply `C` anyway and flag it.
+If `C < 0` and no Consensus exists, the base is calibrated top-down anyway, and flag it.
 
-Single-point guidance (`more than $X`, `about $X`) does not have a `C`. Build the total from the lines (2b–2d) and enforce the words: `more than $X` means the total stays at or above `X`; `about $X` means it stays inside a stated band. If the build violates the words, flag it and adjust.
+Single-point guidance (`more than $X`, `about $X`) does not have a `C`. Top-down is that point. Calibrated top-down is absent. The base is bottom-up, and the words are enforced: `more than $X` means the total stays at or above `X`; `about $X` means it stays inside a stated band. If the build violates the words, flag it and adjust.
 
-No guidance at all: use estimates if they exist, otherwise the bottom-up total, and flag it. There is no `C` to calculate. Say so in the `[C]` block, name the branch taken (consensus, or the line build when there is no consensus), and flag it in the assumptions list.
+No guidance at all: top-down and calibrated top-down are absent. There is no `C`. The base is Consensus if one exists, otherwise bottom-up. Say so in the `[C]` block, name the view used, and flag it in the assumptions list.
 
-Show `C`, the low, the high, the actual, and which branch you took. Tag that block `[C]`.
+Show `C`, the low, the high, the actual, and which view is the base. Tag that block `[C]`. The same block records the four views and the ratios.
 
 ### 2b. Turn words into numbers
 
@@ -100,19 +125,19 @@ Where a line splits price and volume, tag the phrase as a price effect (price, m
 
 ### 2c. Scale the lines to the total
 
-Build the lines, then scale the unreported periods so they hit the 2a total. Actuals do not scale.
+Build the lines, then scale the unreported periods so they hit the base-case total from 2a. Actuals do not scale.
 
-When consensus or guidance sets the total, say that the lines are scaled to it. The unscaled build is a diagnostic only, never an alternative forecast.
+When Consensus, top-down, or calibrated top-down sets the total, say that the lines are scaled to it. Bottom-up is recorded under `views`. It stays beside the base case.
 
-If the factor is more than 10% away from 1, the line commentary and the top-level target disagree. Flag it. The lines are then allocating a total they did not earn on their own.
+If the factor is more than 10% away from 1, the line commentary and the base-case total disagree. Flag it. The lines are then allocating a total they did not earn on their own.
 
 Above about 1.25×, scaling revenue with costs held fixed inflates margins mechanically. Scale the variable costs too, or show the unscaled case beside the scaled one as a sensitivity.
 
-An acquired line is not scaled to consensus, because consensus coverage of the deal is uncertain. See [driver-patterns.md](references/driver-patterns.md).
+An acquired line is not scaled to Consensus, because Consensus coverage of the deal is uncertain. See [driver-patterns.md](references/driver-patterns.md).
 
 ### 2d. Run rate
 
-Start from the latest reported quarter. Remove a one-time item only when the company flags it. Before a beat or a miss touches the run rate, classify the driver as one-time or recurring, and say why.
+Start from the latest reported quarter. Search the whole history window, not only the latest print, for items the company flags as one-time. Remove a one-time item only when the company flags it. Say which quarters were adjusted. Before a beat or a miss touches the run rate, classify the driver as one-time or recurring, and say why.
 
 *Example (insurance-auction businesses):* catastrophe or hurricane volume, such as CPRT's FY25 Helene/Milton volume, is one-time.
 
@@ -126,19 +151,27 @@ When management describes how it gets to its EBITDA guide (HROW: "substantially 
 
 When the company doesn't report adjusted EBITDA, state the definition as a calculation, e.g. operating income + D&A + stock comp, tagged `[C]`. Keep it consistent with any acquired company's own definition, and show the effect of including or excluding stock comp.
 
-When a revenue consensus exists but no EBITDA estimate does, build EBITDA from costs as above, and flag it.
+When a revenue Consensus exists but no EBITDA Consensus does, bottom-up EBITDA is the cost build above, and that build is the base. Flag it. Consensus EBITDA is absent.
 
-If you have a 2a EBITDA total, and the operating cost it implies differs from this cost build by more than 10%, keep the guidance-based EBITDA, flag the gap, and show the cost-based EBITDA beside it.
+If you have a calibrated top-down or Consensus EBITDA total, and the operating cost it implies differs from the bottom-up cost build by more than 10%, keep that total as the base, flag the gap, and record the cost-based figure as bottom-up.
 
 ### 2f. Where the explicit years stop
 
 Stop when the specific evidence stops. That is usually two years.
 
-Write the growth of those dollars on `forecast.json` under `finagle`. That is the block the tests check. `sales_growth` and `ebitda_growth` are one rate per explicit year, and they compound back to the revenue and EBITDA you just wrote. `me` is the last explicit year's EBITDA divided by revenue. `mc` is the contribution margin, set against the history. `gsnext` is sales growth in the year after the explicit window. Tag them. `me` and `mc` are not zero.
+Products still in development can move that stop. From the history window and the latest pipeline disclosure, list each one management names: what it is, the stated timing, and whether a dollar figure or a peak-sales figure was given. If none is named, say so in one line.
+
+Leave the explicit years as they are when the base already covers the launch. Do not add pipeline revenue on top of top-down, calibrated top-down, or Consensus. Add explicit-year dollars only when the base is bottom-up, or when management says the guide or the estimates exclude the product, and a launch date falls inside the window. Those dollars sit inside the reported line that will hold them. A new line is used only when management already reports the product on its own. An unapproved product uses a probability, tagged `[S]` unless a source states it. An approved product that has not launched is phased from the stated launch date. Do not put peak sales or the full undiscounted amount in the base.
+
+Extend the explicit window when the product's impact is well enough understood to write year by year: a timing, a basis for the dollars (a company figure, a stated ramp, or a probability times a stated amount), and the line that holds them. Say why the window moved. The same rule applies to the added years: do not add the product on top of a total that already includes it. Each added year still records the four views. Top-down and Consensus are absent when nobody published them, and the base for that year is bottom-up. `gsnext` then starts the year after the longer window.
+
+When the impact is not that clear, leave the window at the usual stop. `gsnext` and `mc` take the pipeline in, together with the history window. `mc` moves when the new product's margin differs from the current mix. Tag `[S]`, name the product, cite the stated timing, and do not invent a dollar figure or a trend the company did not give. A product with no amount and no timing leaves `gsnext` and `mc` unchanged and is recorded as considered. Finagle fades `gsnext` toward terminal growth after that next year, so a launch curve is not built product by product past `gsnext` unless the explicit window was extended.
+
+Write the growth of those dollars on `forecast.json` under `finagle`. That is the block the tests check. `sales_growth` and `ebitda_growth` are one rate per explicit year, and they compound back to the revenue and EBITDA you just wrote. `me` is the last explicit year's EBITDA divided by revenue. `mc` is the contribution margin. `gsnext` is sales growth in the year after the explicit window. Set `mc`, `gsnext`, and any other input past the explicit years against the history window, the transcript language, and any unlaunched product recorded above. Tag them `[S]`, cite the quarters, and do not invent a trend the series does not show. `me` and `mc` are not zero.
 
 ## 3. Pick a driver pattern
 
-Use [driver-patterns.md](references/driver-patterns.md). One pattern per line, or a new line when the disclosure adds one. The pattern builds the unscaled line; 2c still scales it to the total.
+Use [driver-patterns.md](references/driver-patterns.md). One pattern per line, or a new line when the disclosure adds one. The pattern builds the bottom-up line; 2c still scales it to the base-case total. A royalty, license, or earn-out uses the pattern inside the reported line that already holds it. A product still in development uses ramping or milestone-dependent the same way, inside the line that will hold it. Section 2f says whether that product extends the explicit years.
 
 Choose from what management discusses, then the simplest pattern that fits the history.
 

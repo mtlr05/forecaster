@@ -15,6 +15,12 @@ When the case has a ``sources`` list, every citation also carries an ``id``
 "unverified"``). Each ID names one fact, resolves in ``sources``, and C
 entries list ``inputs`` that are existing IDs. A/G/E entries carry their
 quoted ``text``. Without a ``sources`` list the case passes with a warning.
+
+When the case has a ``views`` block, each explicit year records bottom-up,
+top-down, calibrated top-down, and Consensus for revenue and EBITDA, and the
+ratios of those views. The view named by ``views.used`` matches ``totals``.
+A missing view or a missing ratio is ``{"absent": "<reason>"}``. Without a
+``views`` block the case passes with a warning.
 """
 
 from __future__ import annotations
@@ -43,6 +49,17 @@ PATTERNS = {
     "acquisition-driven",
     "recurring",
 }
+VIEW_NAMES = ("bottom_up", "top_down", "calibrated_top_down", "consensus")
+POINT_VIEWS = ("bottom_up", "calibrated_top_down", "consensus")
+RATIO_SPECS = (
+    ("bottom_up_over_base", "bottom_up", "base"),
+    ("top_down_over_base", "top_down", "base"),
+    ("calibrated_top_down_over_base", "calibrated_top_down", "base"),
+    ("consensus_over_base", "consensus", "base"),
+    ("bottom_up_over_calibrated_top_down", "bottom_up", "calibrated_top_down"),
+    ("bottom_up_over_consensus", "bottom_up", "consensus"),
+)
+RATIO_TOLERANCE = 0.0005
 
 
 def _is_dollar_period(key):
@@ -82,6 +99,12 @@ def validate_payload(payload):
         _check_ids(payload, errors)
     else:
         warnings.append("no sources block: numbered citation IDs and a sources list are expected for new cases")
+    if "views" in payload:
+        _check_views(payload, explicit, errors)
+    else:
+        warnings.append(
+            "no views block: bottom-up, top-down, calibrated top-down, and Consensus are expected for new cases"
+        )
     _check_block(payload, ctx, errors, prefix="")
     for name, scenario in (payload.get("scenarios") or {}).items():
         if isinstance(scenario, dict):
@@ -297,6 +320,181 @@ def _check_fact(obj, errors, path):
         return
     if not url:
         errors.append("%s citation needs a url" % path)
+
+
+def _is_absent(obj):
+    return isinstance(obj, dict) and set(obj.keys()) == {"absent"}
+
+
+def _absent_reason(obj):
+    return str(obj.get("absent") or "").strip()
+
+
+def _fact_value(obj):
+    if not isinstance(obj, dict) or "tag" not in obj:
+        return None
+    value = obj.get("value")
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return None
+    return value
+
+
+def _read_point(obj, path, errors):
+    if _is_absent(obj):
+        if not _absent_reason(obj):
+            errors.append("%s absent needs a reason" % path)
+        return None
+    if isinstance(obj, dict) and "absent" in obj:
+        errors.append("%s cannot be both a fact and absent" % path)
+        return None
+    value = _fact_value(obj)
+    if value is None:
+        errors.append('%s must be a fact or {"absent": "..."}' % path)
+        return None
+    return value
+
+
+def _read_top_down(obj, path, errors):
+    """Return the ratio numerator (midpoint, else point) and the base point."""
+    if _is_absent(obj):
+        if not _absent_reason(obj):
+            errors.append("%s absent needs a reason" % path)
+        return None, None
+    if not isinstance(obj, dict) or "absent" in obj:
+        errors.append("%s must be a range, a point, or absent" % path)
+        return None, None
+    extra = set(obj) - {"low", "high", "point"}
+    if extra:
+        errors.append("%s has unexpected keys %s" % (path, ", ".join(sorted(extra))))
+    has_low = "low" in obj
+    has_high = "high" in obj
+    has_point = "point" in obj
+    low = _fact_value(obj.get("low")) if has_low else None
+    high = _fact_value(obj.get("high")) if has_high else None
+    point = _fact_value(obj.get("point")) if has_point else None
+    if has_low or has_high:
+        if not has_low or not has_high or low is None or high is None:
+            errors.append("%s range needs numeric low and high" % path)
+            midpoint = None
+        else:
+            midpoint = (low + high) / 2.0
+    else:
+        midpoint = None
+    if has_point and point is None:
+        errors.append("%s point must be a fact" % path)
+    if midpoint is None and point is None:
+        if not (has_low or has_high or has_point):
+            errors.append("%s must be a range, a point, or absent" % path)
+        return None, None
+    return (midpoint if midpoint is not None else point), point
+
+
+def _expect_ratio(obj, numerator, denominator, path, errors):
+    can_divide = (
+        isinstance(numerator, (int, float))
+        and not isinstance(numerator, bool)
+        and isinstance(denominator, (int, float))
+        and not isinstance(denominator, bool)
+        and denominator != 0
+    )
+    if _is_absent(obj):
+        if not _absent_reason(obj):
+            errors.append("%s absent needs a reason" % path)
+        if can_divide:
+            errors.append("%s is absent but both inputs exist" % path)
+        return
+    value = _fact_value(obj)
+    if value is None:
+        errors.append('%s must be a fact or {"absent": "..."}' % path)
+        return
+    if not can_divide:
+        errors.append("%s is a fact but a numerator or denominator is missing" % path)
+        return
+    expected = numerator / float(denominator)
+    if abs(value - expected) > RATIO_TOLERANCE:
+        errors.append("%s %.4f != %.4f" % (path, value, expected))
+
+
+def _check_views(payload, explicit, errors):
+    views = payload.get("views")
+    if not isinstance(views, dict):
+        errors.append("views must be an object")
+        return
+    used = views.get("used")
+    if used not in VIEW_NAMES:
+        errors.append("views.used must be one of %s" % ", ".join(VIEW_NAMES))
+        used = None
+    ratios_root = views.get("ratios")
+    if not isinstance(ratios_root, dict):
+        errors.append("views.ratios must be an object")
+        ratios_root = {}
+    years = [period for period in explicit if isinstance(period, str) and FISCAL_YEAR.match(period)]
+    totals = payload.get("totals") or {}
+    announced_ratio_years = set()
+    for metric in ("revenue", "ebitda"):
+        series = views.get(metric)
+        if not isinstance(series, dict):
+            errors.append("views.%s must be an object of explicit years" % metric)
+            series = {}
+        for year in years:
+            path = "views.%s.%s" % (metric, year)
+            slot = series.get(year)
+            if not isinstance(slot, dict):
+                errors.append("%s must hold the four views" % path)
+                continue
+            points = {}
+            for name in POINT_VIEWS:
+                if name not in slot:
+                    errors.append("%s.%s is required" % (path, name))
+                    continue
+                points[name] = _read_point(slot[name], "%s.%s" % (path, name), errors)
+            if "top_down" not in slot:
+                errors.append("%s.top_down is required" % path)
+                top_numerator, top_point = None, None
+            else:
+                top_numerator, top_point = _read_top_down(slot["top_down"], "%s.top_down" % path, errors)
+            points["top_down"] = top_numerator
+            total = ((totals.get(metric) or {}).get(year) or {})
+            total_value = total.get("value") if isinstance(total, dict) else None
+            if isinstance(total_value, bool):
+                total_value = None
+            used_value = None
+            if used == "top_down":
+                used_value = top_point
+                if used_value is None and _is_absent(slot.get("top_down")):
+                    errors.append("%s top_down is the base but is absent" % path)
+                elif used_value is None and "top_down" in slot and not _is_absent(slot.get("top_down")):
+                    errors.append("%s top_down is the base but no point is recorded" % path)
+            elif used in points or (used in POINT_VIEWS and used in slot):
+                used_value = points.get(used)
+                if used_value is None and _is_absent(slot.get(used)):
+                    errors.append("%s %s is the base but is absent" % (path, used))
+            if isinstance(used_value, (int, float)) and isinstance(total_value, (int, float)):
+                if abs(used_value - total_value) > SUM_TOLERANCE:
+                    errors.append(
+                        "%s %s %.4f does not match totals.%s %.4f"
+                        % (path, used, used_value, metric, total_value)
+                    )
+            elif isinstance(used_value, (int, float)):
+                errors.append("%s %s has no totals.%s to match" % (path, used, metric))
+            year_ratios = ratios_root.get(year)
+            ratio_path = "views.ratios.%s.%s" % (year, metric)
+            if not isinstance(year_ratios, dict):
+                if year not in announced_ratio_years:
+                    errors.append("views.ratios.%s must hold revenue and ebitda" % year)
+                    announced_ratio_years.add(year)
+                continue
+            block = year_ratios.get(metric)
+            if not isinstance(block, dict):
+                errors.append("%s must hold the six ratios" % ratio_path)
+                continue
+            for key, numerator_name, denominator_name in RATIO_SPECS:
+                if key not in block:
+                    errors.append("%s.%s is required" % (ratio_path, key))
+                    continue
+                numerator = points.get(numerator_name)
+                denominator = total_value if denominator_name == "base" else points.get(denominator_name)
+                _expect_ratio(block[key], numerator, denominator, "%s.%s" % (ratio_path, key), errors)
 
 
 def _check_ids(payload, errors):
