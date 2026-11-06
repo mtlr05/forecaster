@@ -1,0 +1,12 @@
+{
+ "rule": "sha256 of json.dumps(obj, sort_keys=True, separators=(',',':'), ensure_ascii=False, allow_nan=False); sidecar only (repo defines no in-file hash)",
+ "blocks": {
+  "base": "80f919d744d272f99add6a7ccb4283718f370b86943bdd9e12c181636ac2041b",
+  "bull": "c68047e7203c8b3088cc9981e99a73e4cc4ea201c5da45c778d0428b7b4d403a",
+  "bear": "f290c42d1cfef8e2baf392106f460392fd06d20dee7464a6808bf3db5b238f63"
+ },
+ "prompt_inputs": "70d4bc282bc4d8b1ffd6b9baad53f45e36084008001020c169d9ec6e600e9909",
+ "whole_request": "f88d2805a310e77cc40ceb5c616a11017bc600882b4e140e2ba87f38bd85cf93",
+ "file_bytes": "e6992a1446a88317e2f15066d84c41b38f1b3ac527f3237b16b8eaad3e2660e6",
+ "forecast_json_bytes": "a076924e7d75bda4ff0d93f8e1cb44fc69294934030ed9e784842a0af0ca30d5"
+}

@@ -2,7 +2,7 @@
 
 ## Company Update: FY2026E–FY2031E Revenue and EBITDA Forecast
 
-*October 26, 2026. US$ millions unless stated. Scenario forecast: it assumes uniQure's AMT-130 and Bayer/BlueRock's bemdaneprocel are approved, counts every one-time Parkinson's cell/gene therapy procedure as one class delivered on ClearPoint's platform, and prices every procedure at $20k, as requested. AMT-130 volume follows ClearPoint's stated capacity; Parkinson's volume ramps over three years to modelled class demand. The explicit forecast ends at FY2031E; after that only Finagle's valuation fade is shown (Section 7). It includes a Finagle discounted-cash-flow valuation but carries no rating. Every tag resolves in Appendix B. Appendix C sets out the Parkinson's eligible-pool model behind the Parkinson's class line, and Appendix D lists ClearPoint's partner programs; outside the Parkinson's class and AMT-130 they are not in the forecast.*
+*October 31, 2026. US$ millions unless stated. Scenario forecast: it assumes uniQure's AMT-130 and Bayer/BlueRock's bemdaneprocel are approved, counts every one-time Parkinson's cell/gene therapy procedure as one class delivered on ClearPoint's platform, and prices every procedure at $20k, as requested. AMT-130 volume follows ClearPoint's stated capacity; Parkinson's volume ramps over three years to modelled class demand. The explicit forecast ends at FY2031E; after that only Finagle's valuation fade is shown (Section 7). It includes a Finagle discounted-cash-flow valuation but carries no rating. The valuation reflects ClearPoint's Q3 2026 at-the-market (ATM) share sales through the share count (32.05M), opening cash (+$22M) and FY2026E debt ($74.1M). Every tag resolves in Appendix B. Appendix C sets out the Parkinson's eligible-pool model behind the Parkinson's class line. Appendix D sets out the treatable-pool accounting that the Parkinson's, AMT-130 and partner demand models share. Appendix E applies it to AMT-130 patient demand. Appendix F lists ClearPoint's partner programs; outside the Parkinson's class and AMT-130 they are not in the forecast. Appendix G describes the method.*
 
 ---
 
@@ -16,7 +16,7 @@
 
 ■ **One-time Parkinson's cell/gene therapy procedures (the class, all on ClearPoint's platform) ramp over three years from the FY2029E launch to class demand: about 3,900 in FY2029E, 7,600 in FY2030E and 11,100 in FY2031E [S31][S62][S63][S64][C40] ★.** We size demand for the whole class of one-time Parkinson's cell and gene therapies from published prevalence, label-style eligibility (levodopa-responsive, at least four years since diagnosis, motor complications, no dementia, fit for surgery) and a stock-and-flow pool (Appendix C) [A30][C42]. About 180,000 US patients are medically eligible in FY2026E, 16% of PD [C42]. DBS and one-time therapy are not treated as mutually exclusive: trials exclude patients who have had DBS, but that is an entry rule and we found no biological or safety reason for it, so these patients stay in the pool [S44][A41]–[A43] ★. About 3,990 eligible patients receive DBS each year, 2.2% of the pool [A10][C49]. We assume 6% of the pool a year would receive a one-time, potentially disease-modifying therapy from FY2029E, about 2.7 times the DBS rate. DBS continues alongside and is not deducted [S45] ★. Class demand is about 11,800 in the launch year, eases to about 10,800 in FY2033E–35E as the backlog is drawn down, then rises with the pool to 11,500 in FY2040E [C40]; the post-FY2031E path is demand context only, as the valuation fades revenue growth from FY2032E [P3]. Volume reaches demand in FY2031E. The three-year ramp is David's judgment that it also gives time for other Parkinson's therapies to be approved [S64] ★. Running 11,100 Parkinson's procedures a year needs about 74 centres at 3 cases a week, far beyond the 20–30 centres management talks about, an aggressive judgment [S43][G7] ★. We treat all one-time PD cell/gene procedures as one class on ClearPoint's platform (100% share, David's view) [S62][S63] ★. The bull treats 8% of the pool a year on the same ramp, giving 14,300 procedures in FY2031E [S59][C46] ★; bull revenue by line is in Figure 5b. The bear excludes patients who have had DBS, as trials do (pool about 138,000), and is limited by a capacity ramp after a 2030 approval, reaching 2,500 procedures in FY2031E [S22][S43][C55]. AMT-130 is unchanged at 3,000 a year from FY2030E [S30].
 
-■ **Finagle values the shares at $65.20 in the base case vs. a $9.25 price (derived) [C56][C59].** The bull case gives $88.36 and the bear $14.56 [C57][C58]. After David's rough ×0.90 allowance for dilution from a $25M equity raise, the values are $58.68, $79.52 and $13.10 [C62]. The valuation uses David's balance-sheet assumptions: a further $50M note draw in FY2026E, debt at 2× EBITDA from the first profitable year, 9.2% interest, stock-based compensation of $8M a year until EBITDA turns positive, and a cost of equity of 10.45% (10-year yield plus a 5.5% premium) [P3]. Explicit growth ends at FY2031E; Finagle then fades revenue growth from 15% to 4.95% by FY2040E [P3][C65]. About 86% of base value comes from cash flows after FY2031E and 54% from terminal value (derived) [C60]. These are scenario values, not a target.
+■ **Finagle values the shares at $62.70 in the base case vs. a $9.25 price (derived) [C56][C59].** The bull case gives $84.74 and the bear $14.47 [C57][C58]. The values are on 32.05M shares and already include ClearPoint's Q3 2026 ATM sales of 1,530,000 shares for $22.0M net [A44]. The model carries the issuance through the share count, $22M more opening cash and FY2026E debt of $74.1M, $25M lower than before, so no separate dilution allowance is applied [P4][C67]. The base value is $4.02 above the previous update's $58.68, which had a ×0.90 dilution allowance (Figure 12b) [C66]. The other balance-sheet assumptions are David's and unchanged: debt at 2× EBITDA from the first profitable year, 9.2% interest, stock-based compensation of $8M a year until EBITDA turns positive, and a cost of equity of 10.45% (10-year yield plus a 5.5% premium) [P3]. Explicit growth ends at FY2031E; Finagle then fades revenue growth from 15% to 4.95% by FY2040E [P3][C65]. About 85% of base value comes from cash flows after FY2031E and 53% from terminal value (derived) [C60]. These are scenario values, not a target.
 
 Figure 1 shows the procedure line turning losses into profits from FY2028E.
 
@@ -58,7 +58,7 @@ Figure 2 shows that biologics and drug delivery is still the largest line, but n
 
 Joe Burnett has been President and CEO since November 7, 2017. He joined when the company was still called MRI Interventions and became a director at the same time [D13]. He came from Royal Philips, where he was VP and GM of Neuro Diagnostics and Therapy from March 2016. Before that he was SVP of Image Guided Therapy Devices and GM of Volcano (a Philips company) in 2015–16 [D13]. He spent November 2004–February 2015 at Volcano, ending as EVP/GM of its Coronary & Systems unit. Earlier he was an R&D engineer and product manager at Guidant (1999–2004) [D13]. He holds a BSE in biomedical engineering and an MBA from Duke (Fuqua) [D13].
 
-**Track record.** Revenue grew from $7.38M in 2017 to $37.0M in FY2025A, roughly a fivefold increase over eight years [A6][A1]. Burnett repositioned the company from a neurosurgery tool vendor into a drug-delivery partner for biopharma. That is the strategy this forecast depends on. His capital allocation has relied on equity and structured debt. He closed the IRRAS acquisition in November 2025 for $5.0M in cash plus 1,325,000 shares and an earnout [D1]. He also raised Oberland/TPC notes ($50.2M carried at June 30, 2026), which carry a revenue participation from 2027 [D2]. Execution is mixed. FY2025A revenue landed in the bottom fifth of its original range [C13]. The 2026 range was cut by $4M in August [G2]. On the Q2 call, Burnett said BDD fell about 15% against a one-time order in the prior year, and he announced a commercial reorganization [D3]. In his own framing, he sets out priorities in pillars and gives concrete per-procedure economics [G4][G5]. **Ownership:** we did not verify Burnett's shareholding (no proxy opened), so the record on alignment is thin.
+**Track record.** Revenue grew from $7.38M in 2017 to $37.0M in FY2025A, roughly a fivefold increase over eight years [A6][A1]. Burnett repositioned the company from a neurosurgery tool vendor into a drug-delivery partner for biopharma. That is the strategy this forecast depends on. His capital allocation has relied on equity and structured debt. He closed the IRRAS acquisition in November 2025 for $5.0M in cash plus 1,325,000 shares and an earnout [D1]. He also raised Oberland/TPC notes ($50.8M carried at September 30, 2026), which carry a revenue participation from 2027 [D2][A44]. In Q3 2026 he sold 1,530,000 shares through the ATM program for $22.0M net [A44]. Execution is mixed. FY2025A revenue landed in the bottom fifth of its original range [C13]. The 2026 range was cut by $4M in August [G2]. On the Q2 call, Burnett said BDD fell about 15% against a one-time order in the prior year, and he announced a commercial reorganization [D3]. In his own framing, he sets out priorities in pillars and gives concrete per-procedure economics [G4][G5]. **Ownership:** we did not verify Burnett's shareholding (no proxy opened), so the record on alignment is thin.
 
 ### 4. Key Developments
 
@@ -75,16 +75,17 @@ Figure 3 lists the events that set our assumptions.
 | Mar 17, 2026 | FY2025A revenue $37.0M; 2026 guidance $52.0–56.0M | [A1][D4] |
 | Aug 3, 2026 | Q2 2026A revenue $10.9M; guidance cut to $48.0–52.0M; Burnett gives procedure capacity | [A4][G2][G7] |
 | Sep 2, 2026 | uniQure submits AMT-130 BLA; with priority review, action date late Apr/early May 2027 | [D9][S8] |
+| Oct 28, 2026 | Q3 2026A revenue $12.1M (+36%); 2026 guidance narrowed to $48.0–50.0M; 1,530,000 ATM shares sold in Q3 for $22.0M net; 32,054,268 shares at Oct 21 | [A44][G13] |
 
-The guidance cut shows slower core growth. The AMT-130 BLA gives a dated path to the procedure line, while bemdaneprocel's later readout pushes it to FY2029E.
+The guidance cut shows slower core growth. The Q3 report narrows the range around our $49.0M FY2026E; the operating forecast is unchanged [G13][E1]. The AMT-130 BLA gives a dated path to the procedure line, while bemdaneprocel's later readout pushes it to FY2029E.
 
 ### 5. Business Drivers by Line
 
 - **Biologics and drug delivery, neurosurgery, capital equipment.** Trial enrolment (10–15 trials, about 10 readouts in 18 months) and IRRAflow drive FY2026E–FY2027E, with growth of 15% a year from FY2028E (low end of Burnett's 15–20% [G12]) [G2][S1]–[S7][S26].
 - **CAL preclinical services (uplift inside biologics and drug delivery).** The CAL is ClearPoint's own preclinical contract-research lab, not a manufacturing plant [D1][D2]. The lease was signed in June 2025, and the last of three phases was handed over on July 13, 2026 [D2]. ClearPoint signed its first GLP (Good Laboratory Practice) statement of work there, worth "multi-million" dollars, and expects to complete it in H1 2027 [G10]. Burnett says the old subleased lab peaked at about $8M a year of preclinical work, and the CAL "could surpass $60 million or so" [G9]. He says one large GLP study could be worth $15–20M [G11]. The Q2 2026 miss was blamed on a slow CAL ramp, and 2026 guidance includes none of the large studies, which should start in H2 2027 [G9][G10]. Management also names CAL as one of the levers that could take 2027 above "high teens" growth [G9]. We model CAL as an uplift on top of the 15% core growth: nothing in FY2027E in the base (consensus already reflects the first contract), then $7M, $14M, $22M and $29M in FY2028E–31E, on a path to 60% of capacity [S37] ★. 60% is a central reading of management's "could surpass $60 million" [G9]. The bull adds $3M in FY2027E and reaches $36M in FY2031E. The bear reaches only $8M [S37]. Revenue is booked as each study stage completes, so actual results will be lumpier than this smooth path [G10].
-- **Commercial drug delivery (scenario).** This line is volume-driven, with price fixed at $20k [P2]. Volume is set by centre activation and cases per centre per week, using Burnett's capacity comments [G7]. AMT-130 first works through uniQure's 6,000 treatable pool [G8], then runs at a steady state of 3,000 a year, set as a share of HD incidence [S30]. The Parkinson's volume is the class of one-time Parkinson's cell/gene therapy procedures, not a single product: every such procedure is assumed to use ClearPoint's platform [S62][S63] ★. The first launch is bemdaneprocel (H2 2029E) [S20]. From launch, class volume ramps over three years to class demand: one third of demand in FY2029E, two thirds in FY2030E and all of it from FY2031E; class demand then governs [S31][S64][C40]. Figure 4a shows the ramp.
+- **Commercial drug delivery (scenario).** This line is volume-driven, with price fixed at $20k [P2]. Volume is set by centre activation and cases per centre per week, using Burnett's capacity comments [G7]. AMT-130 follows the capacity ramp, 330 in the FY2027E launch half-year and 2,500 in FY2028E [S20]. FY2029E is set at 3,170, the part of uniQure's 6,000 launch pool not treated in FY2027E–28E [G8][C22]. From FY2030E it runs at a steady state of 3,000 a year, set as a share of HD incidence [S30]. Appendix E checks these volumes against a treatable-pool model that adds new entrants and patients who progress out of eligibility. That model gives the same 330 and 2,500, then 3,000 rather than 3,170 in FY2029E, and about 2,840 a year once demand rather than capacity is the limit from FY2032E [C71] ★. The Parkinson's volume is the class of one-time Parkinson's cell/gene therapy procedures, not a single product: every such procedure is assumed to use ClearPoint's platform [S62][S63] ★. The first launch is bemdaneprocel (H2 2029E) [S20]. From launch, class volume ramps over three years to class demand: one third of demand in FY2029E, two thirds in FY2030E and all of it from FY2031E; class demand then governs [S31][S64][C40]. Figure 4a shows the ramp.
 
-**Steady-state rationale ★.** *Huntington's:* US incidence is about 4,087 new cases a year (1.22/100k × 335M) [A7][C23]. Adding the UK (0.67/100k × 68M) brings it to about 4,543 [A8][C24]. 3,000 a year is 73% of the US figure, or 66% of US + UK [C25]. That is well above uniQure's 30% treatable share of *prevalent* patients [C21]. We accept it because newly diagnosed patients are, by definition, at the early-manifest stage AMT-130 was studied in, and there is no competing disease-modifying therapy. It is still aggressive, and it would be unreachable if access stays US-only and narrow. *Parkinson's:* see the eligible-pool summary below and Appendix C.
+**Steady-state rationale ★.** *Huntington's:* US incidence is about 4,087 new cases a year (1.22/100k × 335M) [A7][C23]. Adding the UK (0.67/100k × 68M) brings it to about 4,543 [A8][C24]. 3,000 a year is 73% of the US figure, or 66% of US + UK [C25]. That is well above uniQure's 30% treatable share of *prevalent* patients [C21]. We accept it because newly diagnosed patients are, by definition, at the early-manifest stage AMT-130 was studied in, and there is no competing disease-modifying therapy. It is still aggressive, and it would be unreachable if access stays US-only and narrow. The treatable-pool model in Appendix E reaches a similar level from a different direction: with about 3,900 US patients a year entering the early-manifest window and 72.9% of them treated, demand settles at about 2,840 a year [C69][C71][S67] ★. *Parkinson's:* see the eligible-pool summary below and Appendix C.
 
 **Parkinson's demand: eligible-pool model ★.** We size demand for the class of one-time Parkinson's cell and gene therapies, not for bemdaneprocel alone, using label-style criteria modelled on DBS rather than trial entry criteria. The model starts from published US prevalence of about 1.10 million in FY2026E [A30][C41] and keeps patients who have had PD for at least four years and do not have dementia (45%) [A31][A32], have motor complications (50%, a judgment anchored to cohort data) [A33][A34][S46], have levodopa-responsive idiopathic PD (81%) [A35] and are fit for surgery (90%) [S47]. That leaves about 180,000 medically eligible patients (179,813), 16% of PD, close to the roughly 15% in two published references [C42][A36][A12]. Patients who have already had DBS stay in the pool. Every Parkinson's cell/gene trial we checked excludes them, but that is a trial-entry rule: no registry entry gives a biological or safety reason, DBS has been added after grafts in small case series, and grafts have been placed in three patients who already had DBS [A41]–[A43][S44] ★. Each year new patients enter, others leave through death or dementia, and from FY2029E 6% of the pool receives a one-time therapy [A31][A39][S45] ★. Nobody receives a one-time therapy before launch, and entrants of (m + g) × the starting pool keep the pool growing at the 2.9% prevalence rate to FY2028E [C45]. The 6% is anchored on today's DBS rate: 3,990 DBS procedures a year are 2.2% of the 180,000 pool [A10][C49]. We assume about 2.7 times as many patients a year would choose a one-time, potentially disease-modifying therapy as choose DBS, which is symptomatic hardware surgery. That multiple is our judgment; no published willingness study supports it [S45]. DBS continues alongside: it is not deducted from one-time demand, and patients who have had DBS remain eligible [S44]. Appendix C gives the full method, sources and weak points.
 
@@ -103,7 +104,7 @@ Figure 4b shows class demand and the three-year ramp to it in the base.
 
 *Source: A10, A30–A35, A39, S31, S43–S45, S62–S64, C40, C42, C45; Appendix C. FY2032E–FY2040E columns are demand and pool context only: the revenue forecast ends at FY2031E, and Finagle extends revenue after FY2031E by its growth fade (Section 7), not by this path. Pool rounded to the nearest thousand. Centres derived.*
 
-*What this implies.* In the base, demand, not capacity, sets volume from FY2031E. Class demand peaks in the launch year, because 6% is applied to a pool that has grown untouched to FY2028E. It then eases by about 8% to FY2034E as that backlog is drawn down, and grows again with prevalence, about 0.8% a year over FY2033E–40E (derived; demand context) [C40]. Under the three-year ramp the launch-year peak is never reached in volume: FY2029E–30E volume is below demand, and from FY2031E volume equals demand. David's reason for three years is that this also gives time for other Parkinson's therapies to be approved [S64] ★. That rationale is a judgment, not a timeline match: bemdaneprocel launches in FY2029E, but the other quantified Parkinson's therapies are not expected until after FY2031E, in 2033–34 (Appendix D), after the ramp has ended. For FY2031E the model therefore has the first product, or the platform generally, meeting all class demand. Because the line is the whole class, no product split is needed (Appendix D shows an illustrative split). *Bull and bear.* The bull keeps the base pool and the three-year ramp and raises the share treated to 8% a year [S59] ★ (Figure 4c). The bear applies the trial-style exclusion: patients who have had DBS (about 42,000, i.e. 3,990 a year ÷ the 0.095 leave rate) are removed, leaving about 138,000, and 6% of that gives class demand of about 8,500 in FY2031E and about 8,400 in FY2032E (demand context) [C55]. Approval slips to 2030, and a capacity ramp gives 330 procedures in FY2030E and 2,500 in FY2031E, below demand in both years [S22][S43].
+*What this implies.* In the base, demand, not capacity, sets volume from FY2031E. Class demand peaks in the launch year, because 6% is applied to a pool that has grown untouched to FY2028E. It then eases by about 8% to FY2034E as that backlog is drawn down, and grows again with prevalence, about 0.8% a year over FY2033E–40E (derived; demand context) [C40]. Under the three-year ramp the launch-year peak is never reached in volume: FY2029E–30E volume is below demand, and from FY2031E volume equals demand. David's reason for three years is that this also gives time for other Parkinson's therapies to be approved [S64] ★. That rationale is a judgment, not a timeline match: bemdaneprocel launches in FY2029E, but the other quantified Parkinson's therapies are not expected until after FY2031E, in 2033–34 (Appendix F), after the ramp has ended. For FY2031E the model therefore has the first product, or the platform generally, meeting all class demand. Because the line is the whole class, no product split is needed (Appendix F shows an illustrative split). *Bull and bear.* The bull keeps the base pool and the three-year ramp and raises the share treated to 8% a year [S59] ★ (Figure 4c). The bear applies the trial-style exclusion: patients who have had DBS (about 42,000, i.e. 3,990 a year ÷ the 0.095 leave rate) are removed, leaving about 138,000, and 6% of that gives class demand of about 8,500 in FY2031E and about 8,400 in FY2032E (demand context) [C55]. Approval slips to 2030, and a capacity ramp gives 330 procedures in FY2030E and 2,500 in FY2031E, below demand in both years [S22][S43].
 
 **Figure 4c – Bull case: class demand with a higher treated share (8%)**
 
@@ -138,10 +139,10 @@ With 8% treated, the pool settles at a steady 39% of each year's entrants treate
 
 **Company-specific.**
 
-- **Capacity vs. demand.** Our volumes assume ClearPoint's stated capacity is fully used. Gene-therapy launches have often been slow: Hemgenix treated 12 patients in its first year [D22], and Roctavian 3 in 2023 [D23]. Our bear case models this slower path: 270 AMT-130 procedures in FY2028E [S22]. FY2028E revenue is then $54.2M below the base (derived). The bear, which also delays bemdaneprocel and slows core growth, is valued at $14.56 a share [C58].
+- **Capacity vs. demand.** Our volumes assume ClearPoint's stated capacity is fully used. Gene-therapy launches have often been slow: Hemgenix treated 12 patients in its first year [D22], and Roctavian 3 in 2023 [D23]. Our bear case models this slower path: 270 AMT-130 procedures in FY2028E [S22]. FY2028E revenue is then $54.2M below the base (derived). The bear, which also delays bemdaneprocel and slows core growth, is valued at $14.47 a share [C58].
 - **Shared centres.** AMT-130 and the Parkinson's class would compete for the same neurosurgeons and MRI suites; base FY2031E volume of about 14,100 procedures needs about 94 centres at 3 cases a week (derived) [S43]. Base class demand stays about the same after FY2031E (about 10,800–11,500 a year to FY2040E, Figure 4b), so the centre need does not fall (demand context) [C40].
-- **Funding and dilution.** Cash was $29.4M at June 30, 2026 vs. $50.2M of notes [D2]. The valuation assumes a further $50M note draw and borrowing at 2× EBITDA from the first profitable year [P3]; the bear's cash still falls to −$98M with no funding modelled [C58]. David's ×0.90 dilution estimate is applied outside the model [C62].
-- **Steady-state share of incidence.** The 3,000-a-year AMT-130 figure needs about two-thirds of US + UK new HD diagnoses treated every year [C25] ★. Each 500 fewer procedures takes $10M off revenue (derived).
+- **Funding and dilution.** Cash was $46.2M at September 30, 2026, after $22.0M of net ATM proceeds in Q3, against notes carried at $50.8M [A44]. The valuation assumes FY2026E debt of $74.1M, a $25M note draw, and borrowing at 2× EBITDA from the first profitable year [P4][P3]. The bear's cash still falls to −$91.8M with no funding modelled [C58]. $27.5M remains under the ATM program [A44]; further sales would dilute holders and are not modelled.
+- **Steady-state share of incidence.** The 3,000-a-year AMT-130 figure needs about two-thirds of US + UK new HD diagnoses treated every year [C25] ★. The treatable-pool model gives about 2,840 a year in the long run, and on the bull's faster launch it falls to about 2,800 a year from FY2030E against the bull's 3,500 [C71]. Each 500 fewer procedures takes $10M off revenue (derived).
 - **Parkinson's pool and uptake.** Class demand rests on two judgments, the 50% motor-complication share and 90% fitness; on a 6% annual treatment rate, about 2.7 times today's 2.2% DBS rate, which no published willingness study supports; and on keeping patients who have had DBS in the pool [S44]–[S47][C49] ★. Every trial we checked excludes prior DBS; if labels did the same, the pool would be about 138,000 and base class demand about 8,400 a year, as in the bear [A41][C55]. Volume equals class demand from FY2031E, so any shortfall in the pool or in uptake cuts volume directly. Each 1,000 fewer procedures a year takes $20M off revenue (derived) [P2].
 - **Centre build.** The base needs about 74 centres for Parkinson's alone from FY2031E, against management's 20–30 [G7][S43] ★. If ClearPoint and its partners cannot staff that many, capacity rather than demand becomes the limit, as in the bear.
 - **Platform share (100%).** We assume every one-time Parkinson's cell/gene procedure uses ClearPoint's platform. This is David's judgment [S63] ★. His reasoning: a sponsor with a multi-billion-dollar therapy will not risk its label or approval to save a few thousand dollars on a cannula that was not used in the pivotal trial. The delivery device used in the trial becomes part of the approved procedure, so once a therapy is approved with ClearPoint's system, ClearPoint's share of that therapy stays near 100%.
@@ -171,7 +172,7 @@ Totals for FY2026E and the FY2027E core come from consensus, because guidance wa
 | Guidance excludes commercial drug delivery [G3] | Procedure line added on top [S19] | Double-count risk |
 | 15 centres at 1–2/wk; 20–30 centres at 50–100/wk [G7] | AMT-130 ramp 330 → 2,500 → 4,500 cap [S20] ★; PD class needs about 74 centres (base) [S43] ★ | Volumes |
 | David: all procedures $20k [P2]; range $15–25k [G4] | $20k | Price |
-| About 6,000 treatable at launch [G8]; HD incidence 1.22/100k US, 0.67/100k UK [A7][A8] | Pool used up in FY2029E; then 3,000 a year = 73% of US / 66% of US + UK incidence [S30][C25] ★ | AMT-130 3,170 → 3,000 |
+| About 6,000 treatable at launch [G8]; HD incidence 1.22/100k US, 0.67/100k UK [A7][A8] | FY2029E = launch pool not treated in FY2027E–28E (6,000 − 330 − 2,500 = 3,170) [C22]; then 3,000 a year = 73% of US / 66% of US + UK incidence [S30][C25] ★. A treatable-pool check gives 3,000 in FY2029E and about 2,840 a year from FY2032E (Appendix E) [C71] | AMT-130 3,170 → 3,000 |
 | PD prevalence ≥930,000 (2020) to 1,238,000 (2030) [A30]; mortality, dementia, motor complications, diagnostic accuracy [A31]–[A35]; DBS 3,990 a year [A10]; trials exclude prior DBS, no biological reason found [A41]–[A43] | Medically eligible pool about 180,000, DBS patients included [C42][S44] ★; DBS 2.2% of it a year [C49]; 6% a year one-time from FY2029E (about 2.7× DBS) ★, DBS not deducted → class demand 10,800–11,800 [C40][S45]; all on ClearPoint [S63] ★; three-year ramp to demand [S64] ★ | 3,919 / 7,594 / 11,126 FY2029E–31E (bull 8%: 5,225 → 14,272 [C46]; bear capacity ramp to 2,500 in FY2031E, class demand about 8,500 [C55]) |
 | CAL handed over Jul 2026; first GLP contract; capacity >$60M vs. ~$8M [D2][G9][G10] | CAL uplift $7M → $29M FY2028E–31E [S37]; 20% incremental opex [S38] ★ | +$29.0M revenue, +$12.4M EBITDA in FY2031E (derived) [C35] |
 | Explicit forecast ends FY2031E (David, Oct 26, 2026) [P3] | Valuation: Finagle's fade from FY2032E, growth (gsnext) 15% fading linearly to Finagle's default by FY2040E [P3][S29] ★ | Finagle revenue growth 15.0% in FY2032E to 6.1% in FY2040E [C65] |
@@ -225,14 +226,14 @@ Figure 5 shows the procedure line reaching 61% of revenue in FY2029E and 69% in 
 
 **Method.** Finagle values equity as free cash flow to equity (FCFE) discounted at the cost of equity [C56][S29]. FCFE is EBITDA less interest, tax, stock-based compensation, capex and working capital, plus net borrowing. It takes our FY2026E–FY2031E revenue and EBITDA as given (six explicit years), on David's instruction to end explicit EBITDA growth at FY2031E [P3]. From FY2032E Finagle sets revenue growth to 15% (gsnext), about half of the FY2031E base growth, and fades it in a straight line to its default terminal growth of 4.95% by FY2040E, year 15 of the horizon [P3][C65]. EBITDA after FY2031E grows at the incremental margin (mc) on each extra dollar of revenue. Terminal reinvestment is set by a 25% return on new invested capital (roict) [P3][C64]. Finagle's terminal value is the FY2040E FCFE grown once at 4.95% and capitalised at the cost of equity less that growth [C56].
 
-The balance-sheet assumptions are David's, set on Oct 26, 2026 [P3]:
+The balance-sheet assumptions are David's, set on Oct 26, 2026 and updated on Oct 31, 2026 for the Q3 2026 ATM issuance [P3][P4]:
 
-- **Debt.** A further $50M draw on the Oberland notes in FY2026E takes debt from $49.077M to $99.077M [P3][D1][D2]. From the first year of positive EBITDA (FY2028E base and bull, FY2031E bear), debt is set to 2.0× EBITDA. David's reference point is Medtronic, which he notes runs at about 2× [P3].
+- **Debt.** Debt is $49.077M at FY2025A (10-K) and $74.077M in FY2026E, a $25M note draw, $25M less than the $50M assumed before the ATM sales [P4][D1]. ClearPoint can sell $25M of further notes at its option, in up to two $12.5M increments, before December 31, 2026; no notes were drawn in the nine months to September 30, 2026, when the notes were carried at $50.8M [A44]. From the first year of positive EBITDA (FY2028E base and bull, FY2031E bear), debt is set to 2.0× EBITDA. David's reference point is Medtronic, which he notes runs at about 2× [P3].
 - **Interest.** 9.2% = 8.25% minimum coupon + about 0.7% for the 98% issue price and costs + about 0.25% for the revenue participation [C63][D2]. Using the 11.3% reported effective rate as well would count the discount and costs twice [P3].
 - **Stock-based compensation.** Held at $8.0M a year until the first positive-EBITDA year, then moved in a straight line, in dollars, to 5% of FY2040E EBITDA [P3][C56].
 - **Cost of equity.** 10.45% = 10-year Treasury yield 4.953% (Yahoo ^TNX, Oct 23, 2026) + Finagle's 5.5% default equity risk premium, with no beta adjustment. David's view is that med-tech betas are low [P3][C56].
 - **Distributions.** Finagle's "none" setting treats each year's FCFE as paid out (negative FCFE as a call on shareholders). No buybacks are modelled [P3][S29].
-- **Dilution.** David's rough estimate of 10% dilution from a $25M equity raise is applied after Finagle as ×0.90 to value per share [P3][C62].
+- **Equity issuance (ATM).** In Q3 2026 ClearPoint sold 1,530,000 shares under its ATM program for $22.0M, net of $0.5M of costs; $27.5M remained available at September 30, 2026 [A44]. The valuation carries this through 32.05M shares (32,054,268 at October 21, 2026), $22M more opening cash and the lower FY2026E debt [P4][C67]. No separate dilution allowance is applied, and no further ATM sales are modelled.
 
 **Figure 7 – Valuation inputs**
 
@@ -246,12 +247,12 @@ The balance-sheet assumptions are David's, set on Oct 26, 2026 [P3]:
 | Cost of equity (re = 10-year + 5.5% ERP) ★ | 10.45% | 10.45% | 10.45% | P3, C56 |
 | Return on new invested capital (roict) ★ | 25% | 25% | 25% | P3, C64 |
 | Cost of debt / tax rate ★ | 9.2% / 21% | 9.2% / 21% | 9.2% / 21% | C63, S29 |
-| Debt: FY2026E draw / leverage from | +$50M / FY2031E | +$50M / FY2028E | +$50M / FY2028E | P3 |
+| Debt FY2026E / leverage from | $74.1M / FY2031E | $74.1M / FY2028E | $74.1M / FY2028E | P4, P3 |
 | Debt-to-EBITDA target ★ | 2.0× | 2.0× | 2.0× | P3 |
 | Terminal WACC (Finagle output) | 9.9% | 9.9% | 9.9% | C56–C58 |
-| Debt / cash, FY2025A (US$M) | 49.1 / 45.9 | 49.1 / 45.9 | 49.1 / 45.9 | D1 |
+| Debt FY2025A / opening cash incl. $22M ATM (US$M) | 49.1 / 67.9 | 49.1 / 67.9 | 49.1 / 67.9 | D1, P4 |
 | Federal NOL (US$M) | 258.2 | 258.2 | 258.2 | D1 |
-| Shares (M) / price (US$) | 30.50 / 9.25 | 30.50 / 9.25 | 30.50 / 9.25 | D2, C59 |
+| Shares (M) / price (US$) | 32.05 / 9.25 | 32.05 / 9.25 | 32.05 / 9.25 | A44, P4, C59 |
 
 *Source: tags as shown. ★ = judgment call. me is FY2031E EBITDA ÷ revenue from our forecast [C65]. mc reflects procedure gross margin less specialist cost, blended with core [S17].*
 
@@ -271,13 +272,13 @@ The explicit forecast ends at FY2031E; Finagle's fade begins in FY2032E. All fig
 
 | | Bear | Base | Bull |
 |---|---|---|---|
-| PV of FCFE, FY2026E–FY2031E (explicit) | −3.34 | 7.74 | 12.12 |
-| PV of FCFE, FY2032E–FY2040E (fade) | 5.97 | 21.06 | 27.92 |
-| PV of terminal value (after FY2040E) | 10.42 | 34.89 | 46.81 |
-| Opening cash, FY2025A | 1.51 | 1.51 | 1.51 |
-| **Value per share** | **14.56** | **65.20** | **88.36** |
-| Share from after FY2031E (fade + terminal) | 112.6% | 85.8% | 84.6% |
-| Share from terminal value alone | 71.6% | 53.5% | 53.0% |
+| PV of FCFE, FY2026E–FY2031E (explicit) | −3.68 | 7.35 | 11.49 |
+| PV of FCFE, FY2032E–FY2040E (fade) | 6.12 | 20.02 | 26.57 |
+| PV of terminal value (after FY2040E) | 9.92 | 33.21 | 44.55 |
+| Opening cash, FY2025A plus $22M ATM proceeds | 2.12 | 2.12 | 2.12 |
+| **Value per share** | **14.47** | **62.70** | **84.74** |
+| Share from after FY2031E (fade + terminal) | 110.8% | 84.9% | 83.9% |
+| Share from terminal value alone | 68.5% | 53.0% | 52.6% |
 
 *Source: C60. Each year's FCFE per share is discounted at 10.45% to FY2025A; terminal value is the remainder after explicit, fade and opening cash, which matches Finagle's own terminal value discounted 15 years. The bear's explicit years are negative, so its post-FY2031E share is above 100%.*
 
@@ -289,24 +290,24 @@ The explicit forecast ends at FY2031E; Finagle's fade begins in FY2032E. All fig
 | Revenue growth (derived) | – | 32.5% | 28.9% | 93.2% | 88.9% | 38.7% | 28.3% |
 | EBITDA | −15.2 | −23.6 | −19.5 | 12.0 | 71.2 | 121 | 171 |
 | Stock-based compensation | 8.2 | 8.0 | 8.0 | 8.0 | 9.3 | 10.6 | 11.9 |
-| Interest | 2.4 | 4.5 | 9.1 | 9.1 | 10.3 | 13.1 | 22.2 |
-| Pre-tax Income | −26.6 | −37.1 | −38.0 | −7.8 | 46.5 | 89.9 | 128 |
-| Net Operating Loss (NOL) | 258 | 295 | 333 | 341 | 295 | 205 | 77.1 |
+| Interest | 2.4 | 4.5 | 6.8 | 6.8 | 7.8 | 13.1 | 22.2 |
+| Pre-tax Income | −26.6 | −37.1 | −35.7 | −5.5 | 49.0 | 89.9 | 128 |
+| Net Operating Loss (NOL) | 258 | 295 | 331 | 337 | 288 | 198 | 70.0 |
 | Cash Taxes | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | Capex | 0.5 | 1.6 | 2.9 | 8.2 | 18.1 | 26.2 | 34.4 |
 | MnA | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | dWC | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| dDebt | 0.0 | 50.0 | 0.0 | 13.4 | 30.0 | 98.8 | 100 |
-| FCF, 'Owners Earnings' | −26.3 | −37.7 | −39.5 | −13.4 | 33.5 | 70.8 | 102 |
-| FCFE | −26.3 | 12.3 | −39.5 | 0.0 | 63.5 | 170 | 203 |
-| FCFF | −24.4 | −34.1 | −32.3 | −6.2 | 41.7 | 81.1 | 120 |
-| Firm, Intrinsic Value | 1,992 | 2,233 | 2,495 | 2,759 | 3,002 | 3,231 | 3,441 |
-| Debt, Market Value | 49.1 | 99.1 | 99.1 | 112 | 142 | 241 | 342 |
-| Enterprise Value | 1,992 | 2,233 | 2,495 | 2,759 | 3,002 | 3,231 | 3,441 |
-| Equity, Intrinsic Value | 1,943 | 2,134 | 2,396 | 2,647 | 2,860 | 2,989 | 3,099 |
-| Cash | 45.9 | 58.2 | 18.7 | 18.7 | 82.2 | 252 | 454 |
-| Cost of Capital, WACC | 10.4% | 10.3% | 10.3% | 10.3% | 10.3% | 10.2% | 10.1% |
-| Intrinsic Value per Share (US$) | 65.20 | 69.95 | 78.56 | 86.77 | 93.76 | 98.00 | 101.60 |
+| dDebt | 0.0 | 25.0 | 0.0 | 11.1 | 57.3 | 98.8 | 100 |
+| FCF, 'Owners Earnings' | −26.3 | −37.7 | −37.2 | −11.1 | 36.0 | 70.8 | 102 |
+| FCFE | −26.3 | −12.7 | −37.2 | 0.0 | 93.3 | 170 | 203 |
+| FCFF | −24.4 | −34.1 | −31.9 | −5.7 | 42.2 | 81.1 | 120 |
+| Firm, Intrinsic Value | 1,991 | 2,231 | 2,494 | 2,758 | 3,001 | 3,229 | 3,439 |
+| Debt, Market Value | 49.1 | 74.1 | 74.1 | 85.1 | 142 | 241 | 342 |
+| Enterprise Value | 1,991 | 2,231 | 2,494 | 2,758 | 3,001 | 3,229 | 3,439 |
+| Equity, Intrinsic Value | 1,941 | 2,157 | 2,420 | 2,673 | 2,859 | 2,988 | 3,098 |
+| Cash | 67.9 | 55.2 | 18.0 | 18.0 | 111 | 281 | 484 |
+| Cost of Capital, WACC | 10.4% | 10.3% | 10.4% | 10.4% | 10.3% | 10.2% | 10.1% |
+| Intrinsic Value per Share (US$) | 62.70 | 67.30 | 75.50 | 83.39 | 89.20 | 93.23 | 96.65 |
 
 *Source: C30, C56. Finagle output in its standard company template. dDebt = new borrowing; FCFE = FCF + dDebt. Under "none" distributions, FCFE is paid out each year, so Finagle's cash line is a running total that Finagle does not count again in value.*
 
@@ -321,21 +322,21 @@ The explicit forecast ends at FY2031E; Finagle's fade begins in FY2032E. All fig
 | Interest | 31.4 | 37.1 | 43.1 | 49.4 | 55.9 | 62.5 | 69.0 | 75.2 | 81.1 |
 | Pre-tax Income | 147 | 171 | 196 | 223 | 249 | 275 | 299 | 322 | 343 |
 | Net Operating Loss (NOL) | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Cash Taxes | 14.6 | 35.9 | 41.3 | 46.7 | 52.3 | 57.7 | 62.9 | 67.7 | 72.0 |
+| Cash Taxes | 16.1 | 35.9 | 41.3 | 46.7 | 52.3 | 57.7 | 62.9 | 67.7 | 72.0 |
 | Capex | 40.0 | 45.9 | 52.1 | 58.5 | 65.0 | 71.4 | 77.5 | 83.3 | 88.5 |
 | MnA | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | dWC | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | dDebt | 61.6 | 65.5 | 68.6 | 70.6 | 71.3 | 70.5 | 68.0 | 63.7 | 57.7 |
-| FCF, 'Owners Earnings' | 102 | 101 | 116 | 132 | 148 | 164 | 179 | 192 | 204 |
-| FCFE | 164 | 167 | 185 | 203 | 219 | 234 | 246 | 256 | 262 |
-| FCFF | 127 | 130 | 150 | 171 | 192 | 213 | 233 | 252 | 268 |
+| FCF, 'Owners Earnings' | 101 | 101 | 116 | 132 | 148 | 164 | 179 | 192 | 204 |
+| FCFE | 163 | 167 | 185 | 203 | 219 | 234 | 246 | 256 | 262 |
+| FCFF | 126 | 130 | 150 | 171 | 192 | 213 | 233 | 252 | 268 |
 | Firm, Intrinsic Value | 3,662 | 3,902 | 4,144 | 4,389 | 4,636 | 4,886 | 5,140 | 5,399 | 5,667 |
 | Debt, Market Value | 403 | 469 | 537 | 608 | 679 | 750 | 818 | 881 | 939 |
 | Enterprise Value | 3,662 | 3,902 | 4,144 | 4,389 | 4,636 | 4,886 | 5,140 | 5,399 | 5,667 |
 | Equity, Intrinsic Value | 3,259 | 3,433 | 3,607 | 3,781 | 3,957 | 4,136 | 4,322 | 4,518 | 4,728 |
-| Cash | 618 | 785 | 970 | 1,173 | 1,392 | 1,627 | 1,873 | 2,129 | 2,391 |
+| Cash | 646 | 813 | 998 | 1,201 | 1,420 | 1,654 | 1,901 | 2,157 | 2,419 |
 | Cost of Capital, WACC | 10.1% | 10.1% | 10.0% | 10.0% | 10.0% | 10.0% | 9.9% | 9.9% | 9.9% |
-| Intrinsic Value per Share (US$) | 106.84 | 112.55 | 118.25 | 123.96 | 129.72 | 135.61 | 141.70 | 148.12 | 155.01 |
+| Intrinsic Value per Share (US$) | 101.68 | 107.12 | 112.54 | 117.98 | 123.46 | 129.06 | 134.86 | 140.97 | 147.53 |
 
 *Source: C30, C56.*
 
@@ -347,14 +348,14 @@ The explicit forecast ends at FY2031E; Finagle's fade begins in FY2032E. All fig
 | Revenue growth (derived) | – | 35.2% | 55.4% | 115.4% | 69.9% | 36.8% | 29.0% |
 | EBITDA | −15.2 | −22.9 | −11.3 | 38.8 | 103 | 162 | 225 |
 | Stock-based compensation | 8.2 | 8.0 | 8.0 | 8.0 | 9.9 | 11.9 | 13.8 |
-| Interest | 2.4 | 4.5 | 9.1 | 9.1 | 8.3 | 18.9 | 29.7 |
-| Cash Taxes | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 13.4 |
+| Interest | 2.4 | 4.5 | 6.8 | 6.8 | 7.1 | 18.9 | 29.7 |
+| Cash Taxes | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 14.7 |
 | Capex | 0.5 | 1.8 | 4.5 | 13.1 | 24.4 | 34.6 | 45.5 |
-| Debt, Market Value | 49.1 | 99.1 | 99.1 | 90.6 | 206 | 323 | 450 |
-| FCFE | −26.3 | 12.8 | −32.9 | 0.0 | 176 | 213 | 249 |
-| Equity, Intrinsic Value | 2,649 | 2,913 | 3,251 | 3,591 | 3,790 | 3,973 | 4,139 |
-| Cash | 45.9 | 58.7 | 25.8 | 25.8 | 201 | 415 | 664 |
-| Intrinsic Value per Share (US$) | 88.36 | 95.51 | 106.57 | 117.71 | 124.26 | 130.25 | 135.69 |
+| Debt, Market Value | 49.1 | 74.1 | 74.1 | 77.5 | 206 | 323 | 450 |
+| FCFE | −26.3 | −12.2 | −30.6 | 14.2 | 190 | 213 | 248 |
+| Equity, Intrinsic Value | 2,648 | 2,937 | 3,274 | 3,603 | 3,789 | 3,972 | 4,139 |
+| Cash | 67.9 | 55.7 | 25.1 | 39.4 | 229 | 443 | 691 |
+| Intrinsic Value per Share (US$) | 84.74 | 91.64 | 102.17 | 112.40 | 118.23 | 123.93 | 129.15 |
 
 | US$M | FY2032E | FY2033E | FY2034E | FY2035E | FY2036E | FY2037E | FY2038E | FY2039E | FY2040E |
 |---|---|---|---|---|---|---|---|---|---|
@@ -368,8 +369,8 @@ The explicit forecast ends at FY2031E; Finagle's fade begins in FY2032E. All fig
 | Debt, Market Value | 533 | 621 | 713 | 808 | 904 | 999 | 1,091 | 1,176 | 1,254 |
 | FCFE | 198 | 223 | 248 | 272 | 295 | 314 | 331 | 344 | 352 |
 | Equity, Intrinsic Value | 4,374 | 4,608 | 4,841 | 5,075 | 5,311 | 5,551 | 5,800 | 6,063 | 6,344 |
-| Cash | 862 | 1,085 | 1,334 | 1,606 | 1,901 | 2,215 | 2,546 | 2,890 | 3,242 |
-| Intrinsic Value per Share (US$) | 143.39 | 151.05 | 158.71 | 166.37 | 174.10 | 181.99 | 190.15 | 198.76 | 207.98 |
+| Cash | 889 | 1,112 | 1,360 | 1,633 | 1,927 | 2,242 | 2,573 | 2,917 | 3,269 |
+| Intrinsic Value per Share (US$) | 136.47 | 143.76 | 151.05 | 158.34 | 165.70 | 173.20 | 180.98 | 189.16 | 197.95 |
 
 *Source: C30, C57.*
 
@@ -381,14 +382,14 @@ The explicit forecast ends at FY2031E; Finagle's fade begins in FY2032E. All fig
 | Revenue growth (derived) | – | 29.8% | 16.7% | 21.2% | 31.6% | 33.4% | 51.2% |
 | EBITDA | −15.2 | −24.7 | −25.2 | −24.5 | −16.4 | −5.5 | 25.8 |
 | Stock-based compensation | 8.2 | 8.0 | 8.0 | 8.0 | 8.0 | 8.0 | 8.0 |
-| Interest | 2.4 | 4.5 | 9.1 | 9.1 | 9.1 | 9.1 | 9.1 |
+| Interest | 2.4 | 4.5 | 6.8 | 6.8 | 6.8 | 6.8 | 6.8 |
 | Cash Taxes | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | Capex | 0.5 | 1.3 | 1.9 | 2.7 | 4.3 | 6.4 | 10.8 |
-| Debt, Market Value | 49.1 | 99.1 | 99.1 | 99.1 | 99.1 | 99.1 | 101 |
-| FCFE | −26.3 | 11.4 | −44.2 | −44.4 | −37.8 | −29.0 | 0.0 |
-| Equity, Intrinsic Value | 398 | 428 | 517 | 616 | 718 | 822 | 908 |
-| Cash | 45.9 | 57.4 | 13.2 | −31.2 | −69.0 | −98.0 | −98.0 |
-| Intrinsic Value per Share (US$) | 14.56 | 14.04 | 16.96 | 20.19 | 23.53 | 26.94 | 29.76 |
+| Debt, Market Value | 49.1 | 74.1 | 74.1 | 74.1 | 74.1 | 74.1 | 73.9 |
+| FCFE | −26.3 | −13.6 | −41.9 | −42.1 | −35.5 | −26.7 | 0.0 |
+| Equity, Intrinsic Value | 396 | 451 | 540 | 638 | 741 | 845 | 933 |
+| Cash | 67.9 | 54.4 | 12.5 | −29.6 | −65.1 | −91.8 | −91.8 |
+| Intrinsic Value per Share (US$) | 14.47 | 14.07 | 16.85 | 19.92 | 23.11 | 26.36 | 29.12 |
 
 | US$M | FY2032E | FY2033E | FY2034E | FY2035E | FY2036E | FY2037E | FY2038E | FY2039E | FY2040E |
 |---|---|---|---|---|---|---|---|---|---|
@@ -396,14 +397,14 @@ The explicit forecast ends at FY2031E; Finagle's fade begins in FY2032E. All fig
 | Revenue growth (derived) | 15.0% | 13.9% | 12.8% | 11.7% | 10.5% | 9.4% | 8.3% | 7.2% | 6.1% |
 | EBITDA | 37.9 | 50.9 | 64.4 | 78.4 | 92.5 | 106 | 120 | 132 | 144 |
 | Stock-based compensation | 7.9 | 7.8 | 7.7 | 7.6 | 7.5 | 7.5 | 7.4 | 7.3 | 7.2 |
-| Interest | 9.3 | 8.6 | 9.4 | 11.9 | 14.4 | 17.0 | 19.6 | 22.0 | 24.4 |
-| Cash Taxes | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 3.2 | 21.5 |
+| Interest | 6.8 | 7.0 | 9.4 | 11.9 | 14.4 | 17.0 | 19.6 | 22.0 | 24.4 |
+| Cash Taxes | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 6.5 | 21.5 |
 | Capex | 12.7 | 14.8 | 17.0 | 19.2 | 21.4 | 23.6 | 25.8 | 27.8 | 29.6 |
-| Debt, Market Value | 93.3 | 102 | 129 | 157 | 185 | 213 | 240 | 265 | 288 |
-| FCFE | 0.0 | 28.1 | 57.5 | 67.6 | 77.2 | 86.1 | 93.9 | 97.2 | 83.9 |
-| Equity, Intrinsic Value | 1,003 | 1,079 | 1,135 | 1,186 | 1,232 | 1,275 | 1,314 | 1,355 | 1,412 |
-| Cash | −98.0 | −69.9 | −12.4 | 55.3 | 132 | 219 | 313 | 410 | 494 |
-| Intrinsic Value per Share (US$) | 32.87 | 35.39 | 37.20 | 38.87 | 40.40 | 41.80 | 43.09 | 44.41 | 46.30 |
+| Debt, Market Value | 75.8 | 102 | 129 | 157 | 185 | 213 | 240 | 265 | 288 |
+| FCFE | 12.4 | 47.2 | 57.5 | 67.6 | 77.2 | 86.1 | 93.9 | 93.9 | 83.9 |
+| Equity, Intrinsic Value | 1,018 | 1,078 | 1,133 | 1,184 | 1,230 | 1,272 | 1,312 | 1,355 | 1,412 |
+| Cash | −79.4 | −32.2 | 25.3 | 92.9 | 170 | 256 | 350 | 444 | 528 |
+| Intrinsic Value per Share (US$) | 31.77 | 33.62 | 35.34 | 36.93 | 38.38 | 39.70 | 40.92 | 42.27 | 44.07 |
 
 *Source: C30, C58. The bear's SBC falls slightly after FY2031E because 5% of its FY2040E EBITDA ($7.2M) is below $8.0M.*
 
@@ -411,15 +412,15 @@ The explicit forecast ends at FY2031E; Finagle's fade begins in FY2032E. All fig
 
 | Change (Finagle rerun) | Bear | Base | Bull |
 |---|---|---|---|
-| As modelled | 14.56 | 65.20 | 88.36 |
-| Cost of equity −1 pt (9.45%) | 19.30 | 81.76 | 110.60 |
-| Cost of equity +1 pt (11.45%) | 11.35 | 53.78 | 73.01 |
-| Incremental margin (mc) −10 pts | 13.43 | 58.12 | 79.70 |
-| Incremental margin (mc) +10 pts | 17.75 | 72.29 | 97.01 |
-| gsnext −5 pts (10%) | 11.76 | 52.95 | 71.81 |
-| gsnext +5 pts (20%) | 20.39 | 79.86 | 108.16 |
-| roict 20% | 13.44 | 61.37 | 83.19 |
-| roict 30% | 15.30 | 67.75 | 91.80 |
+| As modelled | 14.47 | 62.70 | 84.74 |
+| Cost of equity −1 pt (9.45%) | 19.01 | 78.47 | 105.92 |
+| Cost of equity +1 pt (11.45%) | 11.39 | 51.81 | 70.12 |
+| Incremental margin (mc) −10 pts | 12.95 | 55.95 | 76.50 |
+| Incremental margin (mc) +10 pts | 17.52 | 69.44 | 92.98 |
+| gsnext −5 pts (10%) | 11.84 | 51.03 | 68.99 |
+| gsnext +5 pts (20%) | 20.03 | 76.65 | 103.58 |
+| roict 20% | 13.41 | 59.05 | 79.82 |
+| roict 30% | 15.19 | 65.12 | 88.01 |
 
 *Source: C61. Terminal growth unchanged in every run.*
 
@@ -427,27 +428,42 @@ The explicit forecast ends at FY2031E; Finagle's fade begins in FY2032E. All fig
 
 | | Bear | Base | Bull |
 |---|---|---|---|
-| Value per share, Finagle (US$) | 14.56 | 65.20 | 88.36 |
-| After ×0.90 dilution estimate (US$) | 13.10 | 58.68 | 79.52 |
-| Equity value / enterprise value (US$M) | 398.1 / 447.2 | 1,942.9 / 1,992.0 | 2,649.2 / 2,698.3 |
+| Value per share, Finagle (US$) | 14.47 | 62.70 | 84.74 |
+| Equity value / enterprise value (US$M) | 396.0 / 445.1 | 1,941.5 / 1,990.5 | 2,647.9 / 2,697.0 |
 | Price, Oct 23, 2026 (US$) | 9.25 | 9.25 | 9.25 |
-| Finagle value vs. price | +57.4% | +604.9% | +855.2% |
-| Dilution-adjusted vs. price | +41.6% | +534.4% | +759.7% |
+| Finagle value vs. price | +56.4% | +577.8% | +816.1% |
 
-*Source: C56–C59, C62. Analysts' average target is $23.50 (2 analysts) [E2], shown for context only.*
+*Source: C56–C59. Values are on 32.05M shares with the Q3 2026 ATM issuance in the model, so no dilution allowance is applied [P4]. Analysts' average target is $23.50 (2 analysts) [E2], shown for context only.*
+
+Figure 12b shows how the values moved from the previous update (Oct 26, 2026). Each step is a Finagle rerun that changes one input from the previous run.
+
+**Figure 12b – Change in value per share from the previous update (US$)**
+
+| | Bear | Base | Bull |
+|---|---|---|---|
+| Previous update, after ×0.90 dilution allowance | 13.10 | 58.68 | 79.52 |
+| Remove the ×0.90 allowance | +1.46 | +6.52 | +8.84 |
+| = Previous Finagle value | 14.56 | 65.20 | 88.36 |
+| Shares 30.50M → 32.05M | −0.70 | −3.15 | −4.26 |
+| Opening cash +$22M | +0.72 | +0.72 | +0.72 |
+| FY2026E debt $99.1M → $74.1M | −0.07 | −0.05 | −0.04 |
+| Interaction of the three | −0.03 | −0.03 | −0.03 |
+| **This update** | **14.47** | **62.70** | **84.74** |
+
+*Source: C66. May not sum due to rounding. Extra opening cash adds its face value per share; issuing 5% more shares at about $14.7 each (gross) dilutes a value of about $65 a share, so the ATM lowers value per share on these inputs.*
 
 The spread mainly reflects core growth, CAL utilisation, approval timing and Parkinson's volume. On these inputs the $9.25 price is below the bear value, but every case assumes both approvals [P1].
 
 **Reader notes.**
 
-- **Terminal and fade weight.** About 86% of base value (85% bull) comes from cash flows after FY2031E, and about 54% from beyond FY2040E (Figure 8) [C60]. The six explicit years contribute $7.74 of the $65.20 base value.
+- **Terminal and fade weight.** About 85% of base value (84% bull) comes from cash flows after FY2031E, and about 53% from beyond FY2040E (Figure 8) [C60]. The six explicit years contribute $7.35 of the $62.70 base value.
 - **Borrowing in FCFE.** FCFE counts borrowing proceeds, and "none" distributions treat all FCFE as paid out. At 2× EBITDA, base debt rises to $939.0M by FY2040E ($1,253.9M bull, $287.6M bear), and new borrowing is part of each year's FCFE (base FY2040E: $57.7M of $262M) [C56]–[C58]. This is the standard FCFE calculation, not an error; the value depends on lenders funding 2× EBITDA throughout. David notes Medtronic runs at about 2× [P3].
-- **Dilution.** The ×0.90 is a flat haircut outside Finagle. The borrowing that an equity raise might replace stays in the model [C62].
-- **Bear funding.** The bear's cash reaches −$98.0M in FY2030E–FY2032E with no funding modelled; Finagle treats the shortfall as negative dividends [C58].
+- **ATM timing.** The $22M of ATM proceeds is added to FY2025A opening cash, although it was received in Q3 2026. Discounting it by one year instead would lower value by about $0.07 a share (derived) [P4][C67].
+- **Bear funding.** The bear's cash reaches −$91.8M in FY2030E–FY2031E and stays negative from FY2028E to FY2033E with no funding modelled; Finagle treats the shortfall as negative dividends [C58].
 - **Oberland terms.** The revenue participation and the prepayment premiums (117.5%–125% early, then a 9.5%–10.5% IRR) are approximated through the 9.2% rate, not modelled separately [C63][D2].
-- **Opening debt.** Finagle starts from FY2025A debt of $49.077M (10-K); carrying value at June 30, 2026 was $50.2M [D1][D2].
+- **Opening debt.** Finagle starts from FY2025A debt of $49.077M (10-K); carrying value at September 30, 2026 was $50.8M (principal $52.5M including paid-in-kind interest) [D1][A44].
 - **Parkinson's pool.** Value rests on the PD class assumptions: 100% platform share, 50% motor complications and 90% fitness [S63][S44]–[S47] ★.
-- **Model warnings.** Finagle's validation warnings and flags are listed verbatim in Appendix E.
+- **Model warnings.** Finagle's validation warnings and flags are listed verbatim in Appendix G.
 
 ---
 
@@ -484,11 +500,11 @@ Figure 6 shows the three cases. Price is fixed at $20k throughout [P2]. The case
 | EBITDA FY2029E | −16.4 | 71.2 | 103.0 |
 | EBITDA FY2030E | −5.5 | 120.6 | 161.5 |
 | EBITDA FY2031E | 25.8 | 170.8 | 225.0 |
-| Finagle value per share (US$) | 14.56 | 65.20 | 88.36 |
+| Finagle value per share (US$) | 14.47 | 62.70 | 84.74 |
 
 *Source: E1, P2, S7, S14–S26, S30–S32, S37, S38, S43–S45, S59, S62–S64, C40, C46, C55–C58.*
 
-In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the pool in FY2029E. It then settles at 3,500 a year (86% of US incidence). The Parkinson's class launches in FY2029E and follows the base's three-year ramp, but 8% of the pool is treated each year, so volume is 5,225 / 9,917 / 14,272 in FY2029E–31E [S21][S59][C46] ★. That needs about 95 centres at 3 cases a week by FY2031E, an aggressive build. Core grows 18% and CAL reaches 75% of capacity. The **bear** case is a slow launch in line with gene-therapy precedents [D22][D23]: no AMT-130 revenue in FY2027E, then 270, 1,000, 1,800 and 2,300 procedures in FY2028E–31E. The first Parkinson's class approval slips to 2030, a year after the base, and class volume follows a capacity ramp (330 / 2,500 in FY2030E–31E) toward the bear capacity of 4,500 [S22][S43]. The bear also applies the trial-style exclusion of patients who have had DBS, so the pool is about 138,000 and class demand about 8,500 in FY2031E and about 8,300–8,400 a year in FY2032E–33E (demand context); capacity, not demand, binds in every year to FY2031E [C55]. CAL reaches only $10M, and core costs grow faster. Bear EBITDA turns positive in FY2031E [S22][S37].
+In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the pool in FY2029E. It then settles at 3,500 a year (86% of US incidence); the treatable-pool model supports about 2,800–3,100 a year after the bull launch (Appendix E) [C71]. The Parkinson's class launches in FY2029E and follows the base's three-year ramp, but 8% of the pool is treated each year, so volume is 5,225 / 9,917 / 14,272 in FY2029E–31E [S21][S59][C46] ★. That needs about 95 centres at 3 cases a week by FY2031E, an aggressive build. Core grows 18% and CAL reaches 75% of capacity. The **bear** case is a slow launch in line with gene-therapy precedents [D22][D23]: no AMT-130 revenue in FY2027E, then 270, 1,000, 1,800 and 2,300 procedures in FY2028E–31E. The first Parkinson's class approval slips to 2030, a year after the base, and class volume follows a capacity ramp (330 / 2,500 in FY2030E–31E) toward the bear capacity of 4,500 [S22][S43]. The bear also applies the trial-style exclusion of patients who have had DBS, so the pool is about 138,000 and class demand about 8,500 in FY2031E and about 8,300–8,400 a year in FY2032E–33E (demand context); capacity, not demand, binds in every year to FY2031E [C55]. CAL reaches only $10M, and core costs grow faster. Bear EBITDA turns positive in FY2031E [S22][S37].
 
 ### Appendix B – Numbered sources
 
@@ -568,7 +584,19 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **D74** Freed group, npj Parkinson's Dis 2021, pallidal stimulation in graft recipients (abstract): https://www.nature.com/articles/s41531-021-00183-w
 - **D75** MDS abstract, cell-based therapy in patients with an existing DBS system: https://www.mdsabstracts.org/abstract/unilateral-delivery-of-cell-based-therapy-to-the-putamen-and-substantia-nigra-in-patients-with-parkinsons-disease-who-have-an-existing-dbs-system/
 - **D76** Mov Disord 2015, "Combining cell transplants or gene therapy with DBS" (abstract): https://doi.org/10.1002/mds.26083
-- **D77** Finagle discounted-cash-flow valuation runs of the base, bull and bear cases and one-at-a-time sensitivity reruns on P3 inputs, Oct 26, 2026 (model output, not published): run_finagle_v11.py, sensitivity_v11.py
+- **D77** Finagle discounted-cash-flow valuation runs of the base, bull and bear cases and one-at-a-time sensitivity reruns on P3 inputs, Oct 26, 2026 (model output, not published): run_finagle_v11.py, sensitivity_v11.py. Superseded for the published values by D80.
+- **D78** ClearPoint Neuro, Form 10-Q for the quarter ended September 30, 2026, filed Oct 28, 2026: https://www.sec.gov/Archives/edgar/data/1285550/000119312526436412/clpt-20260930.htm (HTML)
+- **D79** ClearPoint Neuro, "ClearPoint Neuro Reports Third Quarter 2026 Results", Form 8-K Exhibit 99.1, Oct 28, 2026: https://www.sec.gov/Archives/edgar/data/1285550/000119312526436125/clpt-ex99_1.htm (HTML)
+- **D80** Finagle discounted-cash-flow valuation runs of the base, bull and bear cases, one-at-a-time sensitivity reruns and single-change bridge runs on P3 and P4 inputs, Oct 31, 2026 (model output, not published; Finagle commit 377f177): valuation_v12/run_finagle_v12.py, sensitivity_v12.py, bridge_runs/, bridge_v12.json
+- **D81** uniQure, Form 424B5 prospectus supplement, Sept 24, 2025: https://www.sec.gov/Archives/edgar/data/1590560/000110465925092995/tm2526258-1_424b5.htm (HTML; not reopened for this report)
+- **D82** GEN StockWatch, "uniQure shares reach five-year high on game-changing Huntington's data", Sept 28, 2025: https://www.genengnews.com/topics/translational-medicine/stockwatch-uniqure-shares-reach-five-year-high-on-game-changing-huntingtons-data/ (HTML); paraphrase of the prospectus: about 6,000 patients, "the initially treatable ~30%" of about 20,000 diagnosed
+- **D83** ClinicalTrials.gov NCT04120493, AMT-130 Phase I/II (US): https://clinicaltrials.gov/study/NCT04120493 (HTML)
+- **D84** Medscape, "Huntington therapy faces regulatory roller coaster", 2026: https://www.medscape.com/viewarticle/huntington-therapy-faces-regulatory-roller-coaster-2026a1000k0l (search-result snippet only)
+- **D85** EHDN, Platform Meeting report on uniQure topline results, Nov 2025: https://ehdn.org/wp-content/uploads/2025/12/EHDN-Platform-Meeting-uniQure-Topline-Results-Report_Final_2-04-Dec-2025.pdf (PDF; search-result snippet only)
+- **D86** uniQure, "uniQure announces update on Phase III clinical trials of AMT-130": https://uniqure.gcs-web.com/news-releases/news-release-details/uniqure-announces-update-phase-iii-clinical-trials-amt-130-gene (search-result snippet only)
+- **D87** Marder et al., "Rate of functional decline in Huntington's disease", Neurology, 2000: https://pubmed.ncbi.nlm.nih.gov/10668713/ (abstract snippet only)
+- **D88** HDSA, "Huntington's Disease Roadmap": https://hdsa.org/wp-content/uploads/2015/07/HD-Roadmap2.pdf (PDF; snippet only)
+- **D89** AMT-130 treatable-pool model (model output, not published): pool_model/amt130_pool_annual_terms.py (.json), amt130_pool_cases.py (.json), amt130_launch_cohort.py (.json), amt130_pool_chart.py; Parkinson's carry-forward illustration pool_model/pd_carry_forward_check.py (.json)
 
 **Actuals**
 
@@ -608,6 +636,13 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **A41** Every PD cell/gene therapy trial checked excludes prior DBS at entry (bemdaneprocel exPDite-2, AB-1005 REGENERATE-PD and Japan, AAV2-GDNF Ph1 and Ph1b, ANPD001 ASPIRO, RNDP-001, VY-AADC01/02, CERE-120); none states a biological or safety reason; RESTORE-1 cites prior surgery that "could complicate the study procedure or negatively impact study evaluations". D71.
 - **A42** DBS has been added after cell grafts in small series: 2 patients (D72), 1 patient 11 years after a graft (D73), 3 of 34 graft recipients (D74). Abstracts.
 - **A43** Grafts were placed in 3 patients with an existing DBS lead, with adverse events "comparable to standard DBS surgery" (D75); combining cell or gene therapy with DBS is proposed in an expert review (D76). Abstracts.
+- **A44** Q3 2026 10-Q: "During the three and nine months ended September 30, 2026, 1,530,000 shares were sold under the ATM equity offering program for net proceeds of $22.0 million, after deducting issuance costs of $0.5 million. As of September 30, 2026, $27.5 million remained unsold and available for sale"; "As of October 21, 2026, there were 32,054,268 shares of common stock outstanding" (32,051,494 at September 30); cash and cash equivalents $46.2M (December 31, 2025: $45.9M); long-term notes payable, net $50.840M (December 31, 2025: $49.077M), scheduled principal $52.517M; "at the option of the Company, the Company may sell an additional $25.0 million in principal amount of Notes, in up to two increments of $12.5 million each, at any time prior to December 31, 2026". Revenue Q3 2026A $12.075M; nine months $35.083M. D78; revenue also D79.
+- **A45** Bruzelius et al.: "Using an insurance database of over 67 million enrollees, we retrospectively identified a cohort of 3,707 individuals diagnosed with Huntington's disease between 2003–2016"; "the crude cumulative rate was 1.59 per 100,000 person-years (95% CI: 1.53, 1.65). After age-standardization, the cumulative incidence was 1.22 per 100,000 person-years (95% CI: 1.06, 1.15)" (age adjusted to the 2000 US population; the printed interval does not contain 1.22, apparently a typo in the paper); "the cohort as a whole is not representative of the overall U.S. population, and is limited to persons with private insurance"; "cases may have been missed or misclassified, and it is difficult to determine the direction of this potential bias". D18.
+- **A46** Published estimates of time in the early-manifest HD window: a 2CARE analysis implies about 2.3–2.9 years; a 2024 *Movement Disorders* paper 2–3 years; an E070 dataset a mean of 29 months, biased by censoring. Secondary research; papers not opened, no links.
+- **A47** Marder et al.: loss of about 0.97 Total Functional Capacity (TFC) points a year between TFC 7 and 13, about five years from TFC 13 to below 9. D87 (snippet).
+- **A48** HDSA roadmap: Stage I lasts roughly 0–8 years after motor diagnosis. D88 (snippet).
+- **A49** AMT-130 Phase I/II entry criteria: early manifest HD, TFC 9–13, age 25–65, CAG repeat 40 or more, minimum putamen and caudate volumes. D83.
+- **A50** Crossover: the two high-dose controls not crossed over "no longer met eligibility criteria" (D84); "four were eligible and accepted the offer" (D85). Snippets.
 
 **Guidance and management statements**
 
@@ -623,6 +658,9 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **G10** First GLP statement of work "in the multi-million dollar range", expected to be fully recognised by end of H1 2027; 2026 guidance "does not include the execution of any of these large studies"; larger studies expected to start "in the second half of next year". D6; D3.
 - **G11** "a single study could be in that $15,000,000 to $20,000,000 range" once GLP capability is in place. D7.
 - **G12** Burnett: "if we generally can grow in that 15% to 20%, maybe even north of 20% range for the foreseeable future" (D7); 2027 "high teens, I would say if not 20% growth" with CAL as an accelerator (D6).
+- **G13** "The Company now estimates revenue in 2026 to be between $48.0 million and $50.0 million." Q3 2026 revenue "$12.1 million, representing 36% overall growth"; "First formal BLA was submitted by one partner for the treatment of Huntington's Disease". D79.
+- **G14** uniQure prospectus: "We estimate there will be 6,000 initial treatable patients addressable by AMT-130 in the U.S. at commercial launch, assuming approval." D81 (quoted from secondary research; not reopened).
+- **G15** uniQure: "Four of the six control patients in the high-dose cohort were crossed over to treatment and the remaining two patients failed to meet the study's inclusion criteria." D86 (snippet).
 
 **Estimates**
 
@@ -633,7 +671,8 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 
 - **P1** Prompt: AMT-130 and bemdaneprocel approved.
 - **P2** David (2026-10-23): all procedures $20k, both therapies, all cases; volumes = full use of ClearPoint capacity, ramping, from G7.
-- **P3** David (2026-10-26), valuation assumptions: +$50M Oberland draw in 2026 (debt $49.077M → $99.077M); debt 2.0× EBITDA from the first positive-EBITDA year; SBC $8M a year until the first positive-EBITDA year, then linear in dollars to 5% of FY2040E EBITDA; explicit EBITDA growth to FY2031E, gsnext 15% (about half the prior year's sales growth) fading to terminal by FY2040E (year 15); roict 25% (scale lowers capex per dollar of revenue); cost of debt 9.2%; cost of equity = 10-year yield + ERP, no beta (med-tech beta is low); bull treated share 8%; distributions "none", no buybacks; dilution ≈10% for a ~$25M raise, applied as ×0.90.
+- **P3** David (2026-10-26), valuation assumptions (the 2026 draw and the dilution allowance are superseded by P4): +$50M Oberland draw in 2026 (debt $49.077M → $99.077M); debt 2.0× EBITDA from the first positive-EBITDA year; SBC $8M a year until the first positive-EBITDA year, then linear in dollars to 5% of FY2040E EBITDA; explicit EBITDA growth to FY2031E, gsnext 15% (about half the prior year's sales growth) fading to terminal by FY2040E (year 15); roict 25% (scale lowers capex per dollar of revenue); cost of debt 9.2%; cost of equity = 10-year yield + ERP, no beta (med-tech beta is low); bull treated share 8%; distributions "none", no buybacks; dilution ≈10% for a ~$25M raise, applied as ×0.90.
+- **P4** David (2026-10-31): "Let's update for post-Q3, they issued shares using their ATM facility, to account for this increase the sharecount to 32.05, increase the year-0 cash balance by $22M. Then, reduce debt in 2026 by $25M, to $74.1." Applied as: shares 32.05M; FY2025A (year-0) cash $45.923M + $22.0M = $67.923M; FY2026E debt $74.077M (the P3 $99.077M less $25M), held until the 2.0× EBITDA target applies; the ×0.90 dilution allowance is dropped because the issuance is now in the model.
 - **S1–S3** H2 2026E drivers: BDD = H2 2025A × 1.05; NNT = 2 × Q2 2026A × 1.03; CES = H1 run rate. All scaled to consensus.
 - **S4–S6** FY2027E growth 12% / 12% / 5%, scaled to consensus.
 - **S7** FY2028E core growth 15% (bear 8%, bull 18%): the low end of management's 15–20% (G12) and FY2027E consensus growth (15.4%, E1).
@@ -644,7 +683,7 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **S16** Core cash opex +5% a year FY2028E–30E (bear +7%).
 - **S17** Finagle mc 0.50 (bear 0.45, bull 0.55).
 - **S19** Consensus excludes procedure revenue.
-- **S20** Base ramp per therapy: launch half-year 10 centres × 1.5/wk × 22 wks ≈ 330; first full year 20 × 2.5 × 50 ≈ 2,500; second full year 30 × 3 × 50 ≈ 4,500; then hold. AMT-130 capped by the pool (G8, C22). First PD class approval (bemdaneprocel) H2 2029.
+- **S20** Base ramp per therapy: launch half-year 10 centres × 1.5/wk × 22 wks ≈ 330; first full year 20 × 2.5 × 50 ≈ 2,500; second full year 30 × 3 × 50 ≈ 4,500; then hold. AMT-130 FY2029E set to the part of the 6,000 launch pool not yet treated, 3,170 (G8, C22); the treatable-pool model, which adds entrants and leavers, gives 3,000 (C71, Appendix E). First PD class approval (bemdaneprocel) H2 2029.
 - **S21** Bull: AMT-130 launch half 20 × 2/wk × 22 ≈ 880, then 4,500 cap; PD class: the base three-year ramp to class demand (S64) on bull class demand (C46): 5,225 / 9,917 / 14,272 FY2029E–31E.
 - **S22** Bear: AMT-130 0 / 270 / 1,000 / 1,800 / 2,300 FY2027E–31E; first PD class approval 2030, the S20 capacity ramp one year later: 330 / 2,500 FY2030E–31E toward the 4,500 bear capacity (S43); bear class demand (C55) is above volume in every year. Judgment.
 - **S23** Procedure gross margin 70% (10-K: disposables "high margin", no percentage given).
@@ -652,7 +691,7 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **S25** $2.0M a year of fixed field support per launched therapy.
 - **S26** Core growth FY2029E–31E 15% (bear 8%, bull 18%); see S7.
 - **S28** US population about 335M (approximation, not sourced).
-- **S29** Finagle filled inputs: 15-year horizon (FY2040E; Finagle fades gsnext linearly to its default gt at year 15); cost of debt 9.2% (C63); tax 21%; non-operating assets 0; working-capital change 0; distributions "none" (each year's FCFE treated as paid out), no buybacks; debt in target mode at 2.0× EBITDA after the P3 draw. Terminal growth left at the Finagle default.
+- **S29** Finagle filled inputs: 15-year horizon (FY2040E; Finagle fades gsnext linearly to its default gt at year 15); cost of debt 9.2% (C63); tax 21%; non-operating assets 0; working-capital change 0; distributions "none" (each year's FCFE treated as paid out), no buybacks; debt held at $74.077M in FY2026E (P4), then in target mode at 2.0× EBITDA from the first positive-EBITDA year (P3). Terminal growth left at the Finagle default.
 - **S30** AMT-130 steady state 3,000 a year from FY2030E (David, Oct 23, 2026), as a share of HD incidence (bull 3,500).
 - **S31** PD class volume: base and bull, three-year ramp from the FY2029E launch (S64): 1/3, 2/3, then 100% of class demand (C40, C46), class demand from FY2031E; bear, capacity ramp toward 4,500 (S22, S43).
 - **S32** Explicit window to FY2031E (David, Oct 26, 2026; earlier FY2032E, Oct 23, 2026). Core growth as S26; core opex growth as S16. PD class volume: base and bull see S31 and S64; bear see S22.
@@ -664,13 +703,17 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **S46** Half of patients with PD for at least four years and no dementia have motor complications. Judgment anchored to A33 and A34.
 - **S47** 90% of otherwise eligible patients are fit for neurosurgery. Judgment; no population figure found.
 - **S48** Superseded (value add-on for earlier runs; not used).
-- **S52** Non-BlueRock PD demand split AB-1005 52% / ANPD001 24% / RNDP-001 24% (Appendix D). Judgment.
-- **S53–S57** Funnel rates for NRTX-1001, AVB-101, KEBILIDI, RGX-121 and SRN-101 in Figure D2. Judgment.
-- **S58** Approval years and ramps for partner programs in Figures D1 and D3: large indications ≈300 → ~1,200 → ~2,200 → steady; one-year ramp for ultra-rare. Judgment.
+- **S52** Non-BlueRock PD demand split AB-1005 52% / ANPD001 24% / RNDP-001 24% (Appendix F). Judgment.
+- **S53–S57** Funnel rates for NRTX-1001, AVB-101, KEBILIDI, RGX-121 and SRN-101 in Figure F2. Judgment.
+- **S58** Approval years and ramps for partner programs in Figures F1 and F3: large indications ≈300 → ~1,200 → ~2,200 → steady; one-year ramp for ultra-rare. Judgment.
 - **S59** Bull: 8% of the opening eligible pool treated each year from FY2029E (base 6%, S45), on the base three-year ramp; the smallest round change that keeps bull volume above the base in every year. David, Oct 25, 2026, on an earlier bull: "Bull case should show growing to 10k." This bull exceeds 10,000 from FY2030E, to be confirmed by David. Judgment.
 - **S62** Class lumping: the PD procedure line is all one-time Parkinson's cell/gene therapy procedures (the class), not one product; volume follows class demand (C40, C46) through the three-year ramp (S64). David, Oct 25, 2026: "And class lumping for the valuation too." Judgment.
 - **S63** ClearPoint delivers 100% of one-time Parkinson's cell/gene therapy procedures. David's judgment, Oct 25, 2026: "nobody will risk a multi-billion dollar therapy to save a few thousand on a cannula that wasn't used in the trial". The device used in the pivotal trial becomes part of the approved procedure, so the share stays near 100% for each therapy approved with ClearPoint. Consistent evidence: D12, D68. Devices for other programs not confirmed (D10). Competitor findings: D63–D67, D69, D70. Sizing: about $2.69 a share per 1,000 procedures a year from FY2030E (C43).
-- **S64** Three-year ramp to class demand: one-time PD class volume = 1/3 of class demand in FY2029E, 2/3 in FY2030E and 100% from FY2031E (base and bull). David, Oct 25, 2026: "ramp the patient over 3 years up to the demand" and "since that also gives time for other therapies to get approved." The other quantified PD therapies are expected after FY2031E (2033–34, Appendix D), after the ramp ends, so the rationale is a judgment, not a timeline match. Judgment.
+- **S64** Three-year ramp to class demand: one-time PD class volume = 1/3 of class demand in FY2029E, 2/3 in FY2030E and 100% from FY2031E (base and bull). David, Oct 25, 2026: "ramp the patient over 3 years up to the demand" and "since that also gives time for other therapies to get approved." The other quantified PD therapies are expected after FY2031E (2033–34, Appendix F), after the ramp ends, so the rationale is a judgment, not a timeline match. Judgment.
+- **S65** AMT-130 pool leave rate m = 0.62 a year (progression out of eligibility 0.60 + death 0.02), an average stay of about 1.6 years in the treatable window. Chosen because it reconciles HD incidence with uniQure's 6,000 launch pool without an extra filter (C69); shorter than the published duration evidence (A46–A48) and the crossover evidence (C72). Judgment.
+- **S66** AMT-130 pool entrants: HD incidence 1.22 per 100,000 (A7) × US population 340M × 90% of new diagnoses entering at the early-manifest stage, growing 0.5% a year with population. The 340M differs from the 335M approximation used for the incidence ratios (S28); both are unsourced. Assumption.
+- **S67** AMT-130 treated share P_t = referral 90% × willingness 90% × coverage 90% = 0.729 of eligible patients. Assumption, not a company figure.
+- **S68** AMT-130 pool-model capacity: launch July 1, 2027; 330 in the FY2027E half-year, 2,500 in FY2028E, then 3,000 a year (the S30 steady state used as a cap, in place of the S20 4,500 ceiling); spread evenly across quarters. Bull check capacity 880 / 4,500, then 3,500 a year (S21); bear check capacity = the bear AMT-130 volumes through FY2031E (S22), then 3,000. The pool model is a check on the forecast volumes, not an input to them.
 
 **Calculations**
 
@@ -693,6 +736,7 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **C17** Superseded; see C59.
 - **C18** Line share = line / A1 total.
 - **C21** Treatable / diagnosed = 6,000 / 20,000 = 30% (G8).
+- **C22** AMT-130 FY2029E forecast volume = 6,000 launch pool (G8) − 330 (FY2027E) − 2,500 (FY2028E) = 3,170; this treats the pool as a fixed stock with no entrants or leavers.
 - **C23** US HD incidence = 335M (S28) × 1.22/100k (A7) = 4,087 a year.
 - **C24** US + UK = 4,087 + 68M (S28) × 0.67/100k (A8) = 4,543.
 - **C25** 3,000 / 4,087 = 73%; 3,000 / 4,543 = 66% (bull 3,500: 86% / 77%).
@@ -712,25 +756,35 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - **C46** Bull class demand = pool model (C45 inputs) re-run with 8% treated from FY2029E (S59): 15,674 / 14,875 / 14,272 / 13,833 (FY2029E–32E); 13,530 (FY2033E); 13,250 (FY2035E); 13,792 (FY2040E). Steady-state treated share of entrants 0.08 / (0.095 + 0.08 + 0.029) = 39%.
 - **C48** Superseded (Oct 25, 2026 value decomposition on earlier inputs; not used).
 - **C49** DBS rate = 3,990 DBS a year (A10) ÷ eligible pool: 179,813 at start FY2026E = 2.2%; 190,401 at start FY2028E = 2.1%. 6% ÷ 2.2% = 2.7. Against a pool excluding prior-DBS patients (137,813) the same 3,990 is 2.9%. Pool model.
-- **C50** Partner steady states = Figure D2 funnel results, rounded (PD to 100s; AVB-101 to 5s). **C52** NRTX-1001 = 10,500 × 0.85 × 0.5 × 0.5 × 0.8 × 0.7 = 1,249 + 167,000 (A21 mid) × 11.9% ÷ 10 = 1,987 → 3,200. **C53** FTD-GRN incidence = ~83M US aged 45–64 (unsourced) × 3.4/100k ≈ 2,800 × 5% = 140.
+- **C50** Partner steady states = Figure F2 funnel results, rounded (PD to 100s; AVB-101 to 5s). **C52** NRTX-1001 = 10,500 × 0.85 × 0.5 × 0.5 × 0.8 × 0.7 = 1,249 + 167,000 (A21 mid) × 11.9% ÷ 10 = 1,987 → 3,200. **C53** FTD-GRN incidence = ~83M US aged 45–64 (unsourced) × 3.4/100k ≈ 2,800 × 5% = 140.
 - **C54** Illustrative non-BlueRock PD rows = min(launch ramp, S52 share of class demand C40 less BRT-DA01) each year; all zero to FY2031E because their launches are after FY2031E. Not used in the valuation, which uses the class (S62).
 - **C55** Bear class demand = pool model with patients who have had DBS excluded (3,990 ÷ 0.095 ≈ 42,000; pool 137,813, trial-style, A41), 6% treated: 9,010 / 8,731 / 8,527 / 8,389 (FY2029E–32E); 8,306 (FY2033E). Above bear volume through FY2031E (S43); FY2032E–33E are demand context.
-- **C56** Finagle base (D77): value per share $65.20 (65.2013, FCFE and DDM equal); equity $1,942.9M; enterprise value $1,992.0M; terminal FCFE $260.1M; terminal value (FY2040E) $4,728.3M; re 10.453% = 4.953% (^TNX, Oct 23, 2026) + 5.5%; gt 4.953%; rd 9.2%; roict 25%; debt peak $939.0M (FY2040E); min cash $18.7M; flags "negative FCFE after year 1".
-- **C57** Finagle bull (D77): $88.36 (88.355); equity $2,649.2M; enterprise value $2,698.3M; terminal FCFE $348.9M; debt peak $1,253.9M (FY2040E); flags "negative FCFE after year 1".
-- **C58** Finagle bear (D77): $14.56 (14.5577); equity $398.1M; enterprise value $447.2M; terminal FCFE $77.7M; debt peak $287.6M (FY2040E); min cash −$98.0M (FY2030E–32E); flags "negative cash", "negative FCFE after year 1".
-- **C59** 65.20 / 9.25 − 1 = 604.9%; 88.36 / 9.25 − 1 = 855.2%; 14.56 / 9.25 − 1 = 57.4%. Price from Finagle's baseline data (Yahoo previous close, Oct 23, 2026).
-- **C60** PV split (D77, sensitivity_v11.py): per-share FCFE each year discounted at re to FY2025A; explicit FY2026E–31E = base $7.74 / bull $12.12 / bear −$3.34; fade FY2032E–40E = $21.06 / $27.92 / $5.97; opening cash $45.9M ÷ 30.503M = $1.51; terminal = value − explicit − fade − cash = $34.89 / $46.81 / $10.42 (base check: $4,728.3M ÷ 1.10453^15 ÷ 30.503M ≈ $34.9). Shares: terminal 34.89 / 65.20 = 53.5%, 46.81 / 88.36 = 53.0%, 10.42 / 14.56 = 71.6%; after FY2031E (21.06 + 34.89) / 65.20 = 85.8%, (27.92 + 46.81) / 88.36 = 84.6%, (5.97 + 10.42) / 14.56 = 112.6%.
-- **C61** Sensitivities: Finagle reruns of each case (D77) with re ±1 pt, mc ±0.10, gsnext ±5 pts and roict 20% / 30%, one at a time; SBC path rebuilt from each rerun's EBITDA; terminal growth unchanged.
-- **C62** Dilution estimate (P3): 65.20 × 0.90 = 58.68; 88.36 × 0.90 = 79.52; 14.56 × 0.90 = 13.10; vs. $9.25: +534.4%, +759.7%, +41.6%.
+- **C56** Finagle base (D80): value per share $62.70 (62.6952, FCFE and DDM equal); equity $1,941.5M; enterprise value $1,990.5M; terminal FCFE $260.1M; terminal value (FY2040E) $4,728.3M; re 10.453% = 4.953% (^TNX, Oct 23, 2026) + 5.5%; gt 4.953%; rd 9.2%; roict 25%; shares 32.05M; opening cash $67.9M; FY2026E debt $74.077M (P4); debt peak $939.0M (FY2040E); min cash $18.0M (FY2027E–28E); flags "negative FCFE after year 1".
+- **C57** Finagle bull (D80): $84.74 (84.7375, FCFE and DDM equal); equity $2,647.9M; enterprise value $2,697.0M; terminal FCFE $348.9M; debt peak $1,253.9M (FY2040E); min cash $25.1M (FY2027E); flags "negative FCFE after year 1".
+- **C58** Finagle bear (D80): $14.47 (14.4745, FCFE and DDM equal); equity $396.0M; enterprise value $445.1M; terminal FCFE $77.7M; debt peak $287.6M (FY2040E); min cash −$91.8M (FY2030E–31E; negative FY2028E–33E); flags "negative cash", "negative FCFE after year 1".
+- **C59** 62.70 / 9.25 − 1 = 577.8%; 84.74 / 9.25 − 1 = 816.1%; 14.47 / 9.25 − 1 = 56.4%. Price from Finagle's baseline data (Yahoo previous close, Oct 23, 2026).
+- **C60** PV split (D80, sensitivity_v12.py): per-share FCFE each year discounted at re to FY2025A; explicit FY2026E–31E = base $7.35 / bull $11.49 / bear −$3.68; fade FY2032E–40E = $20.02 / $26.57 / $6.12; opening cash $67.9M ÷ 32.05M = $2.12; terminal = value − explicit − fade − cash = $33.21 / $44.55 / $9.92 (base check: $4,728.3M ÷ 1.10453^15 ÷ 32.05M ≈ $33.2). Shares: terminal 33.21 / 62.70 = 53.0%, 44.55 / 84.74 = 52.6%, 9.92 / 14.47 = 68.5%; after FY2031E (20.02 + 33.21) / 62.70 = 84.9%, (26.57 + 44.55) / 84.74 = 83.9%, (6.12 + 9.92) / 14.47 = 110.8%.
+- **C61** Sensitivities: Finagle reruns of each case (D80) with re ±1 pt, mc ±0.10, gsnext ±5 pts and roict 20% / 30%, one at a time; SBC path rebuilt from each rerun's EBITDA; terminal growth unchanged.
+- **C62** Superseded: the ×0.90 dilution allowance of P3 (65.20 × 0.90 = 58.68; 88.36 × 0.90 = 79.52; 14.56 × 0.90 = 13.10) is replaced by modelling the ATM issuance directly (P4); see C66.
 - **C63** Cost of debt: 8.25% minimum coupon + ≈0.7% (2% issue discount and costs spread over the term) + ≈0.25% (revenue participation 0.375% + 0.15% of net revenue up to $50M from 2027) ≈ 9.2% (D2; P3). Reported effective rate 11.3% at June 30, 2026 (D2) not used, to avoid double counting.
 - **C64** Return evidence (roic_evidence.md): EBITDA negative in every year FY2015A–25A, so historical returns are undefined; capex 0.1%–3% of revenue; revenue added per $ of capex 12.5–34. Forecast capex is about 10% of revenue. David's 25% (P3) is within the 20%–50%+ range this supports on physical capital.
-- **C65** Growth path = consecutive Finagle revenue (D77); me = FY2031E EBITDA ÷ revenue: base 170.8 / 410.4 = 41.6%, bull 44.8%, bear 14.3%.
+- **C65** Growth path = consecutive Finagle revenue (D80; unchanged from D77); me = FY2031E EBITDA ÷ revenue: base 170.8 / 410.4 = 41.6%, bull 44.8%, bear 14.3%.
+- **C66** Bridge from the previous update (D77, D80; bridge_v12.json): previous published values after ×0.90 = 58.68 / 79.52 / 13.10 (base / bull / bear); removing ×0.90 gives the Finagle values 65.2013 / 88.3550 / 14.5577. Single-change Finagle reruns from those inputs: shares 32.05M −3.1469 / −4.2644 / −0.7026; opening cash +$22M +0.7212 each (= 22 ÷ 30.503); FY2026E debt $74.077M −0.0480 / −0.0416 / −0.0704; interaction (all three together less the sum) −0.0325 / −0.0328 / −0.0314; result 62.6952 / 84.7375 / 14.4745. Change vs. previous published: +4.02 / +5.22 / +1.37; vs. previous Finagle: −2.51 / −3.62 / −0.08. The debt-only base rerun also flags "negative cash".
+- **C67** ATM checks (A44): 32,054,268 shares at October 21, 2026 ≈ 32.05M (P4); 1,530,000 shares = 5.0% of the 30.503M used before; gross proceeds $22.0M + $0.5M = $22.5M, about $14.71 a share (net $14.38); the $22M added to cash equals the reported net proceeds, against the ~$25M raise assumed in P3. The ATM sales were made in Q3 2026, after the FY2025A valuation date: discounting $22M by one year at 10.453% is about $2.1M, or $0.07 a share. FY2026E debt $74.077M = $49.077M + $25M, consistent with the optional $25M of notes available before December 31, 2026; no draw had been made by September 30, 2026.
+- **C68** Pool identity: with S the pool at the start of a year, E entrants, leave rate m, T treated, g the pool's growth over the year, P = T/E and u = T/S: E − mS − T = gS, so E = (m + g + u)S and uS = PE = P(m + g + u)S, giving u = P(m + g) / (1 − P) and, equivalently, P = u / (m + g + u). Exact in every year; no steady state assumed (Appendix D).
+- **C69** AMT-130 entrants: 1.22 / 100,000 × 340M × 0.90 = 3,733 in 2026; a pool of 3,733 / (0.62 + 0.005) = 5,973 matches uniQure's ~6,000 (G8); filter factor 6,000 × 0.625 / 3,733 = 1.0045 applied to entrants so the launch pool is exactly 6,000; demand ceiling u_d = 0.729 × 0.625 / 0.271 = 1.68 a year (S65–S67).
+- **C70** AMT-130 annual terms (D89, amt130_pool_annual_terms.json): quarterly simulation from a 6,000 pool at July 1, 2027; each quarter entrants E/4, leavers (m/4) × pool, treated = min(capacity, (u_d/4) × pool, pool); annual S = start-of-year pool, E, L, T = sums of quarterly flows; P = T/E, u = T/S, g = end/S − 1, m_eff = L/S. Identity check: |E − L − T − (end − S)| < 1e-9 and P(m_eff + g)/(1 − P) = u in every year FY2027E–FY2035E.
+- **C71** AMT-130 pool model vs. forecast volumes (D89, amt130_pool_cases.json), FY2027E–31E: base model 330 / 2,500 / 3,000 / 3,000 / 2,984 vs. forecast 330 / 2,500 / 3,170 / 3,000 / 3,000; model FY2032E–35E 2,840 / 2,832 / 2,845 / 2,859. Bull model (capacity 880 / 4,500 / 3,500) 880 / 4,500 / 3,090 / 2,799 / 2,803 vs. forecast 880 / 4,500 / 4,120 / 3,500 / 3,500. Bear model (capacity = bear volumes) 0 / 270 / 1,000 / 1,800 / 2,300, the same as the forecast. At $20k (P2), base −$3.4M in FY2029E and −$0.3M in FY2031E; bull −$20.6M / −$14.0M / −$13.9M in FY2029E–31E. Not applied to the forecast.
+- **C72** Duration arithmetic: 1.6 years × about 1 TFC point a year (A47) ≈ a 1.6-point band within the trial's TFC 9–13 window (A49); the full 4-point window implies a stay of about 4 years, m ≈ 0.27 and an unfiltered pool of 3,733 / 0.27 ≈ 13,800. Crossover: 2 of 6 controls lost in about a year (G15) gives m = −ln(1 − 2/6) ≈ 0.41 a year, a stay of about 2.4 years.
+- **C73** Launch-pool cohort and m = 0.40 sensitivity (D89, amt130_launch_cohort.json): with treatments drawn evenly from launch patients and later entrants, 2,232 of the 6,000 launch pool are treated before they leave. At m = 0.40 the unfiltered pool would be 9,218, so a filter of 0.65 is needed to hold it at 6,000: filter on stock and entrants, treated 330 / 2,500 / 2,886 / 2,074 / 1,858 (FY2027E–31E), then about 1,830–1,850; filter on the launch stock only, 3,000 through FY2031E, then 2,990 / 2,872 / 2,841 / 2,848 (FY2032E–35E).
+- **C74** Parkinson's carry-forward illustration (D89, pd_carry_forward_check.json): the Appendix C pool re-run with treated = min(forecast class volume, 6% of pool), so demand not served in the FY2029E–30E ramp stays in the pool: class demand 11,756 / 11,862 / 11,779 / 11,497 (FY2029E–32E) against 11,756 / 11,391 / 11,126 / 10,945 in the base (C40); FY2031E +653 procedures, about +$13M at $20k. Not applied to the forecast.
 
 **Not verified**
 
 - D7: Q4 2025 call transcript read via a transcript copy; link unverified.
 - D14: 2017 revenue taken from a secondary extract of the filing; document not opened, page unverified.
 - Burnett's shareholding: not sourced.
+- AMT-130 pool model (Appendix E): the uniQure prospectus wording (G14) and the GEN paraphrase of ~30% (D82) were not reopened; the crossover sources (G15, D84, D85) and the duration evidence (A46–A48) were read as search-result snippets; the 340M population, 90% early-manifest share, m = 0.62 and P_t = 0.729 are assumptions (S65–S67).
 - Consensus treatment of approval revenue (S19): unverified.
 - No BlueRock–ClearPoint or uniQure–ClearPoint commercial supply agreement was found.
 - D19 (Bayer readout 2028–29): Reuters article paywalled; read via search snippet only.
@@ -743,7 +797,7 @@ In the **bull** case, AMT-130 hits the capacity cap in FY2028E and clears the po
 - G9–G11 quotes read from a transcript copy copies of D6/D7 (Seeking Alpha, paywalled).
 - Parkinson's pool (Appendix C): motor-complication share (S46), fitness (S47), the 6% treatment rate (S45, about 2.7 times the DBS rate; the multiple is unsupported by any published study), keeping patients who have had DBS in the pool (S44; trials exclude them, A41; the combination evidence is small case series read as abstracts, A42, A43), the three-year ramp (S64) and the 100% platform share (S63; partly supported: no Brainlab CED cannula found, but Renishaw has an investigational MRI-compatible CED system, D63–D67) are judgments or approximations. Inputs A30–A40 are carried from the pool model's sources and were not re-opened for this report; several (D34, D35, D38, D51–D53) are cited from abstracts.
 - C44: the 0.73 share diagnosed four or more years is a model calculation; no source gives it directly.
-- Partner programs (Appendix D): designations are not printed on slide 23 (D40) and come from partner releases. Siren SRN-101: no FDA designation found. KEBILIDI: RMAT/Fast Track not confirmed (Priority Review, Orphan and rare pediatric disease voucher confirmed). Three undisclosed programs (two PD, one Friedreich's ataxia) are not quantified. US population aged 45–64 (~83M) in C53 is not sourced. A21 and A22 were read from abstracts or search snippets; the ASPIRE-FTD age range is from Practical Neurology, not the registry. KEBILIDI procedure volumes are not disclosed.
+- Partner programs (Appendix F): designations are not printed on slide 23 (D40) and come from partner releases. Siren SRN-101: no FDA designation found. KEBILIDI: RMAT/Fast Track not confirmed (Priority Review, Orphan and rare pediatric disease voucher confirmed). Three undisclosed programs (two PD, one Friedreich's ataxia) are not quantified. US population aged 45–64 (~83M) in C53 is not sourced. A21 and A22 were read from abstracts or search snippets; the ASPIRE-FTD age range is from Practical Neurology, not the registry. KEBILIDI procedure volumes are not disclosed.
 
 ### Appendix C – Parkinson's eligible-pool model
 
@@ -805,15 +859,184 @@ Figure C2 shows that one-time treatment jumps at launch as the pre-launch backlo
 
 **Reading the results.** One-time treatment starts at about 11,800 in the launch year; the high first year comes from the backlog built up before launch [C40]. The pool then shrinks by about 8% over five years and grows again with entrants. Class demand settles at a constant share of entrants, 0.06 / (0.095 + 0.06 + 0.029) ≈ 33% (derived) [C45]. That is a different quantity from the share of any single group of entrants who are eventually treated, 0.06 / (0.095 + 0.06) ≈ 39% (derived), because each year's entrants outnumber the previous year's. There is no second wave. As a plausibility check, a judgment funnel of referral (55%) × willingness (60%) × coverage (90%) gives about 30% treated [S45]; willingness is anchored to published consent and implant rates [A14][A40]. A 6% treatment rate therefore implies somewhat more uptake than that funnel. At $20,000 a patient, FY2031E class demand is worth about $223M (derived) [C40][P2]; FY2040E demand (about 11,500) is context only, not a revenue forecast.
 
-**Weak points.** (1) The motor-complication share and medical fitness are judgments, and together they move the pool more than any published input [S46][S47]. (2) The diagnosis factor is a proxy for levodopa response [A35]. (3) The dementia midpoint, and the assumption that dementia sits almost entirely in patients diagnosed four or more years ago, are simplifications [A32]. (4) The 5% death rate comes from all PD patients; patients without dementia probably die less often, which would lengthen time in the pool [A31]. (5) The pool includes patients who have had DBS, on the assumption that they are eligible for one-time therapy [S44]; every trial so far excludes them [A41], and if labels did too the pool would be about 138,000, as in the bear [C55]. (6) The 3,990 counts inpatient procedures only [A10]. (7) Prevalence is a published minimum, so the pool is more likely too low than too high [A30]. (8) The 6% treatment rate and the FY2029E launch are assumptions [S45]. The 6% rests on the judgment that a one-time therapy would draw about 2.7 times DBS's take-up, which no published willingness study supports [C49]. The often-quoted 2.9% DBS rate is measured against a pool that excludes prior-DBS patients (138,000), not the 180,000 used here [C49]. The bull uses 8% (Figure 4c) [S59]. The model treats the whole class as launching in FY2029E, while other one-time therapies are likely to launch from FY2033E (Appendix D). (9) DBS and one-time therapy are modelled independently; a patient who has both (for example DBS after a graft for residual symptoms) is not counted as an extra ClearPoint procedure, which is on the low side [A42].
+**Weak points.** (1) The motor-complication share and medical fitness are judgments, and together they move the pool more than any published input [S46][S47]. (2) The diagnosis factor is a proxy for levodopa response [A35]. (3) The dementia midpoint, and the assumption that dementia sits almost entirely in patients diagnosed four or more years ago, are simplifications [A32]. (4) The 5% death rate comes from all PD patients; patients without dementia probably die less often, which would lengthen time in the pool [A31]. (5) The pool includes patients who have had DBS, on the assumption that they are eligible for one-time therapy [S44]; every trial so far excludes them [A41], and if labels did too the pool would be about 138,000, as in the bear [C55]. (6) The 3,990 counts inpatient procedures only [A10]. (7) Prevalence is a published minimum, so the pool is more likely too low than too high [A30]. (8) The 6% treatment rate and the FY2029E launch are assumptions [S45]. The 6% rests on the judgment that a one-time therapy would draw about 2.7 times DBS's take-up, which no published willingness study supports [C49]. The often-quoted 2.9% DBS rate is measured against a pool that excludes prior-DBS patients (138,000), not the 180,000 used here [C49]. The bull uses 8% (Figure 4c) [S59]. The model treats the whole class as launching in FY2029E, while other one-time therapies are likely to launch from FY2033E (Appendix F). (9) DBS and one-time therapy are modelled independently; a patient who has both (for example DBS after a graft for residual symptoms) is not counted as an extra ClearPoint procedure, which is on the low side [A42].
 
-### Appendix D – Partner programs
+### Appendix D – Treatable-pool model: common structure
+
+The forecast sizes patient demand for one-time therapies with one piece of accounting: a pool of patients who could be treated, which gains new patients, loses patients who stop being eligible, and loses patients who are treated. Appendix C applies it to the class of one-time Parkinson's therapies and Appendix E to AMT-130 in Huntington's disease. The partner-program funnels in Appendix F use the same quantities in steady-state form. This appendix sets out the shared structure. It then shows which parts each model uses and which parameters belong to one program only.
+
+**Pool accounting.** Take any year. Let S be the pool at the start of the year, E the patients who enter it during the year, m the leave rate (the share of the pool that dies or progresses out of eligibility in a year), T the number treated, and g the growth of the pool over the year. Leavers are L = mS. Every patient who is not treated or lost stays in the pool, so
+
+pool at end = S + E − mS − T, or equivalently E − mS − T = gS [C68].
+
+**Treated share of the pool and of entrants.** Write u = T/S for the share of the pool treated in the year and P = T/E for the number treated as a share of that year's entrants. Substituting T = uS into the identity gives E = (m + g + u)S. Since T = PE, uS = P(m + g + u)S, so u = P(m + g + u). Solving for u:
+
+u = P(m + g) / (1 − P), or equivalently P = u / (m + g + u) [C68].
+
+Nothing here assumes a steady state. The identity holds exactly in every year for whatever P and g that year produces; a year with a different P has a different g. The formula links three quantities that are easy to confuse. u is a rate on the stock of waiting patients, P is a ratio to the flow of new patients, and g is how fast the stock is growing or shrinking. A u above 1 a year is possible when the pool is small relative to entrants: the pool is drained and refilled within the year.
+
+**Treated = min(capacity, demand).** A model needs one more rule to decide T. The general form is treated = min(capacity, demand), where demand is a ceiling u_d × S on the pool and capacity is what treating centres can deliver. Two regimes follow.
+
+- *Capacity-limited.* Capacity sets T. P = T/E is then an output, and g is whatever the accounting produces; it is negative while a backlog is drawn down.
+- *Demand-limited.* T = u_d × S. If u_d is set from a target P_t and the entrants' growth rate g_t, as u_d = P_t(m + g_t)/(1 − P_t), the realised P tends to P_t and the pool's growth tends to g_t as the backlog clears.
+
+Patients who are not treated in a capacity-limited year stay in the pool until they leave, so a short leave rate turns unmet demand into lost patients rather than a later queue.
+
+**Time step.** The identity can be applied to annual or quarterly flows. With quarterly flows, leavers each quarter are (m/4) × the pool at the start of the quarter. The annual figures are sums of quarterly flows, and the effective annual leave rate m_eff = L/S is below m whenever the pool falls during the year.
+
+Figure D1 shows how the three demand models use the structure.
+
+**Figure D1 – One structure, three applications**
+
+| Element | Parkinson's class (Appendix C) | AMT-130, Huntington's (Appendix E) | Other partner programs (Appendix F) |
+|---|---|---|---|
+| Time step | Annual | Quarterly | Steady-state funnel, no running pool |
+| Starting pool | 179,813 medically eligible in FY2026E, from a prevalence funnel [C42] | 6,000 at launch, uniQure's management estimate [G8] | Annual incidence funnel; for NRTX-1001 and AVB-101 a prevalent backlog spread over 10 and 5 years [C52][C53] |
+| Entrants E | (m + g) × pool in FY2026E, then +2.9% a year [C45] | 1.22/100k × 340M × 90% early-manifest, +0.5% a year [C69][S66] | Incidence × screening rates [S53]–[S57] |
+| Leave rate m | 0.095 a year: death 5% + new dementia 4.45% [C45] | 0.62 a year: progression 0.60 + death 0.02 [S65] | Not modelled |
+| Growth of entrants g_t | 2.9% (prevalence growth) [C41] | 0.5% (population growth) [S66] | Not modelled |
+| Demand rule | u = 6% of the opening pool a year from launch; P is an output [S45] | u_d = P_t(m + g_t)/(1 − P_t) = 1.68 a year with P_t = 0.729 [C69][S67] | Funnel share of incidence (willingness × access × share) [S53]–[S57] |
+| Capacity | Outside the pool: volume is a three-year ramp to demand [S64] | Inside the pool: treated = min(capacity, demand), capacity 330 / 2,500 / 3,000 [S68] | Launch ramp, capped at the funnel result [S58] |
+| Unserved demand | Leaves the pool as if treated (see below) | Stays in the pool until it leaves | Not modelled |
+| Program-specific inputs | Prevalence, eligibility funnel, m, u, launch year | Launch pool, incidence, early-manifest share, m, P_t, capacity | Incidence and every funnel rate |
+
+*Source: tags as shown.*
+
+**Parkinson's class: same identity, different treated rule.** The Parkinson's model in Appendix C keeps the same accounting, so its realised P and g satisfy the identity in every year. It differs in the rule for T. It sets u directly at 6% of the pool rather than deriving it from a target P_t, so P is an output: it settles at 0.06 / (0.095 + 0.06 + 0.029) ≈ 33% of entrants, the steady-state form of P = u/(m + g + u) [C45]. It also runs annually, and capacity is not inside the pool. The pool removes the full 6% of demand from launch, while ClearPoint volume ramps to one third and two thirds of that demand in FY2029E–30E [S64]. Under treated = min(capacity, demand), the unserved part would stay in the pool and raise later demand: on that rule class demand would be about 11,800 rather than 11,100 in FY2031E, about 650 procedures or $13M more (illustration only, not in the forecast) [C74]. An annual-terms table in the form of Figure E2 can be produced for the Parkinson's model on either rule; it is not shown because the forecast uses the Appendix C rule.
+
+**AMT-130: the full form.** The AMT-130 model in Appendix E uses every element: a quarterly pool, a demand ceiling built from P_t and g_t, and treated = min(capacity, demand). Its annual terms are shown in Figure E2.
+
+**Partner programs.** The non-Parkinson's partner programs in Appendix F are sized by funnels that give a steady-state number of patients a year, plus a backlog spread over a fixed number of years. That is the long-run, demand-limited end of the same structure, with T ≈ P × E, but without a running pool, a leave rate or a capacity limit. Applying the full model to any of them would need a program-specific launch pool, leave rate and treated share.
+
+### Appendix E – AMT-130 patient demand
+
+This appendix explains where the forecast's AMT-130 patient numbers come from and tests them with the treatable-pool model of Appendix D. The forecast sets AMT-130 volume by treating-centre capacity: 330 in the FY2027E launch half-year, 2,500 in FY2028E, then 3,000 a year (bull 880 / 4,500 / 3,500) [S20][S21][S30]. The question here is whether there are enough eligible patients to fill that capacity.
+
+**The 6,000 launch pool.** uniQure's commercial slides give "~6,000 patients Initial Treatable Patients at Launch", footnoted as a management estimate, against "~20,000 patients Diagnosed HD" [G8]. The prospectus is reported to say "We estimate there will be 6,000 initial treatable patients addressable by AMT-130 in the U.S. at commercial launch, assuming approval" [G14], and press coverage described this as "the initially treatable ~30%" of those diagnosed [D82]. uniQure does not publish how it built the figure. The trial gives the likely definition of "treatable": early manifest HD with Total Functional Capacity (TFC) of 9–13, age 25–65 and a CAG repeat of at least 40 [A49]. The 6,000 is therefore a stock of patients in an early window, not a yearly number.
+
+**New patients each year.** The forecast's HD incidence is 1.22 per 100,000 a year, from Bruzelius et al. [A7][A45]. The study counted 3,707 people diagnosed with HD in a database of over 67 million privately insured enrollees in 2003–2016. Three caveats apply.
+
+- *Age adjustment.* The crude rate was 1.59 per 100,000 person-years; 1.22 is the rate after age-standardizing to the 2000 US population [A45]. The paper's printed interval for 1.22 (1.06–1.15) does not contain it, which looks like a typo [A45].
+- *Coverage.* The authors note that the cohort "is not representative of the overall U.S. population, and is limited to persons with private insurance" [A45].
+- *Case finding.* Cases "may have been missed or misclassified" in claims data, in a direction that is hard to determine [A45].
+
+The US rate is higher than the UK's 0.67 per 100,000 and the pooled European 0.38 [A8]. Applied to a US population of 340M, 1.22 per 100,000 gives about 4,150 new diagnoses a year. The model assumes 90% of them enter at the early-manifest stage, inside the treatable window, so about 3,730 patients enter the pool each year, growing 0.5% a year with population [S66][C69]. The 90% is an assumption: most patients are diagnosed when motor signs first appear, but no measured share was found. The 340M differs from the 335M approximation used for the incidence ratios elsewhere in the report [S28]; neither is sourced.
+
+**How long patients stay eligible.** The leave rate m sets the size of the pool for a given inflow. A steady-state pool with no treatment would be E/(m + g). With E = 3,733 and m = 0.62 a year (progression out of the window 0.60, death 0.02), the pool is 3,733 / 0.625 = 5,973, within 0.5% of uniQure's 6,000; a filter factor of 1.0045 on entrants makes the launch pool exactly 6,000 [S65][C69]. So m = 0.62 is the rate that reconciles incidence with the company's estimate without a further filter. It implies an average stay of about 1.6 years in the treatable window.
+
+Published evidence points to a longer stay.
+
+- *Duration studies.* Estimates of time in the early-manifest stage include about 2.3–2.9 years (2CARE), 2–3 years (*Movement Disorders*, 2024) and a mean of 29 months (E070, biased by censoring) [A46]. These papers were found in secondary research and not opened.
+- *Rate of decline.* Patients lose about 1 TFC point a year between TFC 13 and 7 [A47]. A 1.6-year stay is a band of about 1.6 points, while the trial's TFC 9–13 window is 4 points wide. A 4-point window would imply a stay of about 4 years and m ≈ 0.27 [C72]. HDSA describes Stage I as lasting up to about 8 years after motor diagnosis [A48].
+- *Trial crossover.* Of six high-dose control patients, four crossed over to treatment and two "failed to meet the study's inclusion criteria" about a year later [G15][A50]. Losing 2 of 6 in about a year implies m ≈ 0.41, a stay of about 2.4 years [C72]. Six patients is a very small sample.
+
+A longer stay with the same inflow gives a larger pool than 6,000: about 9,200 at m = 0.40 and about 13,800 at m = 0.27 [C72][C73]. Holding m at 0.62 is therefore consistent with uniQure's figure, which is likely to apply further screens (for example the trial's imaging criteria and age limits) that are not modelled separately. The sensitivity below shows what a longer stay with a filter would mean.
+
+**Who gets treated.** Demand is capped at a treated share of entrants of P_t = 0.729: referral 90% × willingness 90% × coverage 90% [S67]. With m = 0.62 and g_t = 0.005 this gives a demand ceiling of u_d = 0.729 × 0.625 / 0.271 = 1.68 times the pool a year, high because the pool is small relative to inflow [C69]. Treated each quarter is the lower of capacity and demand, and capacity follows the forecast: launch July 1, 2027, 330 in the FY2027E half-year, 2,500 in FY2028E and 3,000 a year after [S68].
+
+**Figure E1 – AMT-130 pool-model inputs**
+
+| Input | Value | Basis | Source |
+|---|---|---|---|
+| Launch pool, July 1, 2027 | 6,000 | uniQure management estimate | G8, G14 |
+| HD incidence | 1.22 per 100,000 a year | Age-standardized, US privately insured, 2003–2016 | A7, A45 |
+| US population | 340M | Approximation | S66 |
+| Share entering at early-manifest stage | 90% | Assumption | S66 |
+| Entrants, 2026 | 3,733, +0.5% a year | Derived (× 1.0045 filter) | C69 |
+| Leave rate m | 0.62 a year (stay ~1.6 years) | Reconciles incidence with 6,000 | S65, C69 |
+| Treated share of entrants P_t | 0.729 | 90% × 90% × 90% | S67 |
+| Demand ceiling u_d | 1.68 × pool a year | P_t(m + g_t)/(1 − P_t) | C69 |
+| Capacity | 330 / 2,500 / 3,000 a year | Forecast centre ramp | S20, S68 |
+| Time step | Quarterly | — | C70 |
+
+*Source: tags as shown.*
+
+**Annual terms.** Figure E2 sums the quarterly flows into years. Each row satisfies the Appendix D identity exactly: entrants − leavers − treated equals the change in the pool, and u = P(m_eff + g)/(1 − P) [C70].
+
+**Figure E2 – AMT-130 pool model, annual terms (base)**
+
+| FY | Pool at start S | Entrants E | Leavers L | Treated T | Pool at end | m_eff = L/S | P = T/E | u = T/S | g |
+|---|---|---|---|---|---|---|---|---|---|
+| 2027E (from Jul 1) | 6,000 | 1,884 | 1,836 | 330 | 5,718 | 0.31 | 0.18 | 0.06 | −4.7% |
+| 2028E | 5,718 | 3,788 | 3,072 | 2,500 | 3,933 | 0.54 | 0.66 | 0.44 | −31.2% |
+| 2029E | 3,933 | 3,807 | 2,097 | 3,000 | 2,643 | 0.53 | 0.79 | 0.76 | −32.8% |
+| 2030E | 2,643 | 3,826 | 1,468 | 3,000 | 2,000 | 0.56 | 0.78 | 1.14 | −24.3% |
+| 2031E | 2,000 | 3,845 | 1,157 | 2,984 | 1,703 | 0.58 | 0.78 | 1.49 | −14.8% |
+| 2032E | 1,703 | 3,864 | 1,047 | 2,840 | 1,680 | 0.61 | 0.73 | 1.67 | −1.4% |
+| 2033E | 1,680 | 3,883 | 1,044 | 2,832 | 1,687 | 0.62 | 0.73 | 1.69 | 0.4% |
+| 2034E | 1,687 | 3,903 | 1,049 | 2,845 | 1,696 | 0.62 | 0.73 | 1.69 | 0.5% |
+| 2035E | 1,696 | 3,922 | 1,054 | 2,859 | 1,704 | 0.62 | 0.73 | 1.69 | 0.5% |
+
+*Source: C70. FY2027E covers July–December 2027 only. m_eff is below 0.62 because the pool falls within each year while leavers are charged on the quarter's opening pool.*
+
+![Figure E3 – AMT-130 treatable pool and patients treated, base, FY2027E–FY2035E](amt130_pool_chart.png)
+
+*Source: C70, C71.*
+
+**Reading the results.** Capacity binds from launch to the third quarter of FY2031E; demand binds from the fourth quarter [C70]. While capacity binds, the pool is drawn down from 6,000 to about 1,700, P rises from 0.18 toward 0.79 and g is strongly negative; the leavers in those years (about 9,600 over FY2027E–31E) are patients who leave the window without being treated because centres are full. Once the backlog is gone, the model settles at P ≈ 0.73 and g ≈ 0.5%, the targets built into u_d, with about 2,840–2,860 treated a year [C70][C71]. Of the 6,000 in the launch pool, about 2,230 are treated before they leave; the rest of the treated are later entrants [C73].
+
+**Model vs. forecast volumes.** The forecast's AMT-130 volumes were set separately and are not changed here. Figure E4 compares them with the model.
+
+**Figure E4 – AMT-130 procedures: forecast vs. pool model**
+
+| | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E–35E (model) |
+|---|---|---|---|---|---|---|
+| Base forecast | 330 | 2,500 | 3,170 | 3,000 | 3,000 | — |
+| Base pool model | 330 | 2,500 | 3,000 | 3,000 | 2,984 | 2,832–2,859 |
+| Bull forecast | 880 | 4,500 | 4,120 | 3,500 | 3,500 | — |
+| Bull pool model | 880 | 4,500 | 3,090 | 2,799 | 2,803 | 2,817–2,859 |
+| Bear forecast | 0 | 270 | 1,000 | 1,800 | 2,300 | — |
+| Bear pool model | 0 | 270 | 1,000 | 1,800 | 2,300 | 2,873–3,000 |
+
+*Source: C71, C22. Bull model capacity is 880 / 4,500, then 3,500; bear model capacity is the bear forecast volumes, then 3,000 [S68].*
+
+- *Base.* The model matches the forecast except in FY2029E (3,000 vs. 3,170) and FY2031E (2,984 vs. 3,000). The forecast's FY2029E figure is the 6,000 less the 2,830 treated in FY2027E–28E [C22], which treats the 6,000 as a fixed stock with no new patients and no leavers. In the model, new patients roughly replace those who leave, but capacity of 3,000 caps FY2029E. At $20k a procedure [P2] the differences are $3.4M in FY2029E and $0.3M in FY2031E [C71]. From FY2032E the model's demand-limited level is about 2,840, about 5% below the forecast's 3,000 steady state [S30].
+- *Bull.* The bull forecast is above what the pool supports from FY2029E: the FY2027E–28E launch draws the pool down to about 2,100 by the end of FY2028E, after which entrants limit treatment to about 2,800–3,100 a year, against 4,120 and 3,500 in the forecast. The gap is 1,030 / 701 / 697 procedures in FY2029E–31E, about $14M–$21M a year [C71].
+- *Bear.* Bear capacity is below demand throughout FY2027E–31E, so the model reproduces the forecast; the backlog is used later, with 3,000 treated in FY2032E–33E [C71].
+
+**Sensitivity: a longer stay.** If the stay is about 2.5 years (m = 0.40, closer to the crossover evidence) the unfiltered pool would be about 9,200, and a filter of 0.65 is needed to hold the launch pool at 6,000 [C73]. The result depends on where the filter applies.
+
+- *Filter on both the launch pool and new entrants.* Inflow falls to about 2,430 a year. Treated is 2,886 in FY2029E, about 2,070 in FY2030E and about 1,850 a year from FY2031E, well below the forecast [C73].
+- *Filter on the launch pool only.* uniQure's 6,000 might reflect a definition narrower than the one that applies to later patients, for example because the treated window widens after approval. Inflow then stays at about 3,730 and the longer stay supports 3,000 a year through FY2031E and about 2,850 after [C73].
+
+The forecast is therefore within the range the evidence supports only if the treatable definition at launch is no narrower than for patients diagnosed later.
+
+**Limitations.**
+
+- The 6,000 is a management estimate with no published method [G8].
+- Incidence comes from one privately insured US database with known coverage and case-finding limits; the uninsured and Medicaid populations may differ [A45].
+- The 90% early-manifest share, the 340M population, m = 0.62 and P_t = 0.729 are assumptions [S65]–[S67].
+- The duration and crossover evidence was read from snippets or secondary research, and the crossover sample is six patients [A46]–[A48][A50].
+- The model holds capacity at 3,000 after FY2028E and does not model competition, label restrictions, re-treatment or patients outside the TFC window being treated.
+- Entrants are spread evenly through the year and treatments are drawn evenly from the pool.
+
+**Figure E5 – What is verified and what is assumed**
+
+| Item | Status | Source |
+|---|---|---|
+| ~6,000 initial treatable patients at launch | Verified (company slide); method not disclosed | G8 |
+| Prospectus wording of the 6,000 | Quoted from secondary research; not reopened | G14, D81 |
+| ~20,000 diagnosed HD in the US | Verified (company slide) | G8 |
+| HD incidence 1.22 per 100,000 | Verified (paper); interval typo noted | A7, A45 |
+| Trial eligibility (TFC 9–13, age 25–65, CAG ≥ 40) | Verified (registry) | A49 |
+| Crossover: 4 of 6 controls treated, 2 no longer eligible | Snippets only | G15, A50 |
+| TFC decline of about 1 point a year | Abstract snippet | A47 |
+| Early-manifest duration 2–3 years | Secondary research; papers not opened | A46 |
+| 90% entering at early-manifest stage | Assumption | S66 |
+| US population 340M | Assumption | S66 |
+| Leave rate 0.62 a year | Assumption, set to match 6,000 | S65, C69 |
+| Treated share of entrants 0.729 | Assumption | S67 |
+| Capacity 330 / 2,500 / 3,000 | Forecast assumption | S20, S68 |
+
+*Source: tags as shown.*
+
+### Appendix F – Partner programs
 
 ClearPoint lists more than ten partner programs under FDA expedited review [D40]. **Two lines are in our forecast and valuation: the class of one-time Parkinson's cell/gene therapy procedures (Section 5), of which BRT-DA01 (bemdaneprocel) is the first to launch, and AMT-130 (Huntington's).** Because the valuation counts the whole Parkinson's class, the split of that class among the four Parkinson's therapies below (BRT-DA01, AB-1005, ANPD001, RNDP-001) is illustrative only and adds nothing to it. The non-Parkinson's programs other than AMT-130 are not in the forecast or valuation. We show them to size the optionality, on the same FY2031E horizon as the forecast. All volumes are US, at $20k per procedure [P2], and base cases are central estimates.
 
-Figure D1 shows that the quantified programs would reach about 8,700 procedures and $175M of revenue in FY2031E if all were approved. Of these, AMT-130 (3,000) is in the forecast, and the Parkinson's class is in the forecast at class demand (11,126 in FY2031E) rather than as the BRT-DA01 row alone (4,500); the other Parkinson's programs launch after FY2031E.
+Figure F1 shows that the quantified programs would reach about 8,700 procedures and $175M of revenue in FY2031E if all were approved. Of these, AMT-130 (3,000) is in the forecast, and the Parkinson's class is in the forecast at class demand (11,126 in FY2031E) rather than as the BRT-DA01 row alone (4,500); the other Parkinson's programs launch after FY2031E.
 
-**Figure D1 – Partners, incidence, steady-state patients and revenue**
+**Figure F1 – Partners, incidence, steady-state patients and revenue**
 
 | Partner | Therapy | Indication | FDA designation(s) | US incidence / yr | Patients FY2031E (base) | Revenue FY2031E at $20k (US$M) | Plausible approval |
 |---|---|---|---|---|---|---|---|
@@ -832,11 +1055,11 @@ Figure D1 shows that the quantified programs would reach about 8,700 procedures 
 | REGENXBIO | RGX-121 (clemidsogene lanparvovec) | Hunter syndrome (MPS II, neuronopathic) | Fast Track (2018); RMAT (2023); Orphan; RPD [D50] | ~11 (derived) [A27][A26] | 2 [C50] | <0.1 (0.04) | 2029 ★ (CRL Feb 2026; clinical hold Aug 2026 [D50]) |
 | **Total (quantified)** | | | | | **8,726** | **174.5** | |
 
-*Source: slide 23 [D40]; tags as shown. Designations are not on the slide (its title says "10+ Programs Are Already Under FDA Expedited Review"); they come from partner releases. PD therapies share one patient pool (Figure D2a), so their rows are not independent. Values are FY2031E, the last explicit year, from Figure D3; steady-state funnel sizes for each program are in Figures D2a–D2f. Programs launching after FY2031E show zero.*
+*Source: slide 23 [D40]; tags as shown. Designations are not on the slide (its title says "10+ Programs Are Already Under FDA Expedited Review"); they come from partner releases. PD therapies share one patient pool (Figure F2a), so their rows are not independent. Values are FY2031E, the last explicit year, from Figure F3; steady-state funnel sizes for each program are in Figures F2a–F2f. Programs launching after FY2031E show zero.*
 
 The four Parkinson's therapies share one patient pool, so we allocate one-time class demand (Appendix C) among them rather than size each separately. Each year, one-time class demand = 6% of the eligible pool (DBS not deducted). In this illustration BRT-DA01 keeps a single-product launch ramp to 5,000 (330 → 2,500 → 4,500 → 5,000) [S20], capped at class demand; the cap never binds, as class demand is 11,100–11,800 a year in FY2029E–31E. The remainder (class − bemdaneprocel) is split AB-1005 52% / ANPD001 24% / RNDP-001 24% [S52] ★. Each row is the smaller of its launch ramp (AB-1005 300 → 1,200 → 2,200; ANPD001 and RNDP-001 200 → 600 → 1,000) and its share of demand; their launches fall after FY2031E, so they are zero in every explicit year. Demand not taken up before a product launches is not carried forward ★. FY2031E: 4,500 / 0 / 0 / 0. In the forecast and valuation, class volume follows the three-year ramp to class demand and is not split (S62, S64).
 
-**Figure D2a – Funnel: PD class (shared) – eligible-pool model**
+**Figure F2a – Funnel: PD class (shared) – eligible-pool model**
 
 | Step | Rate / input | Result | Source |
 |---|---|---|---|
@@ -852,7 +1075,7 @@ The four Parkinson's therapies share one patient pool, so we allocate one-time c
 
 *Source: tags as shown. ★ = judgment call.*
 
-**Figure D2b – Funnel: NRTX-1001**
+**Figure F2b – Funnel: NRTX-1001**
 
 | Step | Rate / input | Result | Source |
 |---|---|---|---|
@@ -866,7 +1089,7 @@ The four Parkinson's therapies share one patient pool, so we allocate one-time c
 
 *Source: tags as shown. ★ = judgment call.*
 
-**Figure D2c – Funnel: AVB-101**
+**Figure F2c – Funnel: AVB-101**
 
 | Step | Rate / input | Result | Source |
 |---|---|---|---|
@@ -881,7 +1104,7 @@ The four Parkinson's therapies share one patient pool, so we allocate one-time c
 
 *Source: tags as shown. ★ = judgment call.*
 
-**Figure D2d – Funnel: KEBILIDI**
+**Figure F2d – Funnel: KEBILIDI**
 
 | Step | Rate / input | Result | Source |
 |---|---|---|---|
@@ -894,7 +1117,7 @@ The four Parkinson's therapies share one patient pool, so we allocate one-time c
 
 *Source: tags as shown. ★ = judgment call.*
 
-**Figure D2e – Funnel: RGX-121**
+**Figure F2e – Funnel: RGX-121**
 
 | Step | Rate / input | Result | Source |
 |---|---|---|---|
@@ -907,7 +1130,7 @@ The four Parkinson's therapies share one patient pool, so we allocate one-time c
 
 *Source: tags as shown. ★ = judgment call.*
 
-**Figure D2f – Funnel: SRN-101**
+**Figure F2f – Funnel: SRN-101**
 
 | Step | Rate / input | Result | Source |
 |---|---|---|---|
@@ -920,9 +1143,9 @@ The four Parkinson's therapies share one patient pool, so we allocate one-time c
 
 *Source: tags as shown. ★ = judgment call.*
 
-Figure D3 shows the ramps, assuming every program is approved.
+Figure F3 shows the ramps, assuming every program is approved.
 
-**Figure D3 – Ramp, procedures by year (100% approval)**
+**Figure F3 – Ramp, procedures by year (100% approval)**
 
 | Therapy | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E |
 |---|---|---|---|---|---|
@@ -939,9 +1162,9 @@ Figure D3 shows the ramps, assuming every program is approved.
 
 *Source: S20, S30, S52, S58, C40, C50, C54. In the forecast: AMT-130 and the four PD rows as one class (S62); the PD split is illustrative.*
 
-Figure D4 shows total partner procedure revenue at different average probabilities of approval.
+Figure F4 shows total partner procedure revenue at different average probabilities of approval.
 
-**Figure D4 – Total partner procedure revenue (US$M) by average probability of approval**
+**Figure F4 – Total partner procedure revenue (US$M) by average probability of approval**
 
 | Probability | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E |
 |---|---|---|---|---|---|
@@ -950,17 +1173,17 @@ Figure D4 shows total partner procedure revenue at different average probabiliti
 | 50% | 3.5 | 25.3 | 35.3 | 58.3 | 87.4 |
 | 30% | 2.2 | 15.3 | 21.3 | 35.1 | 52.6 |
 
-*Source: Figure D3 × $20k [P2] × probability. KEBILIDI is already approved and held at 100% in every row. Approval probabilities are applied to each therapy independently, although the four Parkinson's therapies share one pool; if one fails, the others could take more of its demand, so the lower rows probably understate PD revenue.*
+*Source: Figure F3 × $20k [P2] × probability. KEBILIDI is already approved and held at 100% in every row. Approval probabilities are applied to each therapy independently, although the four Parkinson's therapies share one pool; if one fails, the others could take more of its demand, so the lower rows probably understate PD revenue.*
 
-![Figure D5 – Partner procedure revenue by probability of approval](partners/partners_v4_revenue_chart_to2031.png)
+![Figure F5 – Partner procedure revenue by probability of approval](partners/partners_v4_revenue_chart_to2031.png)
 
-*Figure D5 – Partner procedure revenue by probability of approval, FY2027E–FY2031E. Source: Figure D4.*
+*Figure F5 – Partner procedure revenue by probability of approval, FY2027E–FY2031E. Source: Figure F4.*
 
 **Limitations.** Demand that arises before a later Parkinson's product launches is not carried forward, which is simple and on the low side. The 52 / 24 / 24 split of non-BlueRock PD demand is a judgment [S52]. Funnel rates for the other indications are judgments [S53]–[S57]. Three undisclosed programs (two Parkinson's, one Friedreich's ataxia) are not quantified.
 
-### Appendix E – Method
+### Appendix G – Method
 
-We started from FY2025A reported lines and H1 2026A. Because 2026 guidance was revised, totals for FY2026E and the FY2027E core business are set to analyst consensus. Line forecasts come from simple drivers, scaled proportionally to those totals. The core business then grows at assumed rates through FY2030E. A separate procedure line multiplies volume by $20k: AMT-130 follows a centre-capacity ramp built from management's capacity comments, and Parkinson's volume follows the class-demand rule below. AMT-130 is capped by uniQure's treatable-patient estimate, then held at a steady state set as a share of HD incidence (S30). The explicit years run to FY2031E (David, Oct 26, 2026), the first year base and bull Parkinson's volume equals class demand (S32). The underlying line model, forecast.json, still carries FY2032E; that year is not presented, and the valuation uses Finagle's fade from FY2032E. Parkinson's volume is the class of all one-time Parkinson's cell/gene therapy procedures, assumed to be 100% on ClearPoint's platform (S63): in the base and bull a three-year ramp from the FY2029E launch to class demand from the eligible-pool model in Appendix C, then class demand (S31, S44–S47, S62, S64, C40–C45); in the bear a capacity ramp toward 4,500, reaching 2,500 in FY2031E (S22, S43). A CAL preclinical uplift is added to the biologics and drug delivery line (S37, S38). Finagle runs a 20-year horizon so growth fades gradually to its default terminal rate (S29, C29). EBITDA is gross profit (core and procedure margins) less core and procedure operating costs. The forecast was handed to Finagle with the filled inputs listed under S29, for an equity value per share. A separate Finagle rerun values a flat revenue add-on (C43). Bull and bear cases change approval timing, ramp speed, capacity, utilisation, core totals and growth, and costs; the bull also raises the share of the Parkinson's pool treated (S59, C46), and the bear excludes patients who have had DBS from the pool (C55).
+We started from FY2025A reported lines and H1 2026A. Because 2026 guidance was revised, totals for FY2026E and the FY2027E core business are set to analyst consensus. Line forecasts come from simple drivers, scaled proportionally to those totals. The core business then grows at assumed rates through FY2030E. A separate procedure line multiplies volume by $20k: AMT-130 follows a centre-capacity ramp built from management's capacity comments, and Parkinson's volume follows the class-demand rule below. AMT-130 is capped by uniQure's treatable-patient estimate, then held at a steady state set as a share of HD incidence (S30); the treatable-pool model in Appendices D and E checks these volumes but does not set them (C71). The explicit years run to FY2031E (David, Oct 26, 2026), the first year base and bull Parkinson's volume equals class demand (S32). The underlying line model, forecast.json, still carries FY2032E; that year is not presented, and the valuation uses Finagle's fade from FY2032E. Parkinson's volume is the class of all one-time Parkinson's cell/gene therapy procedures, assumed to be 100% on ClearPoint's platform (S63): in the base and bull a three-year ramp from the FY2029E launch to class demand from the eligible-pool model in Appendix C, then class demand (S31, S44–S47, S62, S64, C40–C45); in the bear a capacity ramp toward 4,500, reaching 2,500 in FY2031E (S22, S43). A CAL preclinical uplift is added to the biologics and drug delivery line (S37, S38). Finagle runs a 15-year horizon to FY2040E so growth fades gradually to its default terminal rate (S29). EBITDA is gross profit (core and procedure margins) less core and procedure operating costs. The forecast was handed to Finagle with the filled inputs listed under S29, for an equity value per share. Shares, opening cash and FY2026E debt reflect the Q3 2026 ATM issuance and the optional $25M note sale (P4, A44); the operating forecast was not changed for the Q3 2026 results (G13). Values come from the Finagle runs in D80. Bull and bear cases change approval timing, ramp speed, capacity, utilisation, core totals and growth, and costs; the bull also raises the share of the Parkinson's pool treated (S59, C46), and the bear excludes patients who have had DBS from the pool (C55).
 
 #### Finagle validation warnings and flags (verbatim)
 
