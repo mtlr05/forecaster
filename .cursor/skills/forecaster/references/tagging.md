@@ -6,7 +6,7 @@ Every number in `forecast.md` and in `forecast.json` carries one tag and a citat
 |---|---|
 | `[A]` | A reported actual. |
 | `[G]` | Guidance or another management statement. Direct quote and the date. |
-| `[E]` | An analyst estimate. Name the source and the as-of date. Consensus used to judge a reported period is the consensus from before that release. |
+| `[E]` | An analyst estimate. Name the source, the analyst count, and the as-of date. A count of one, or a missing date, is flagged. Consensus used to judge a reported period is the consensus from before that release. |
 | `[P]` | The prompt supplied the figure or told you to override the method. The prompt wins. |
 | `[S]` | An assumption. The citation says why: volume, price, a coverage win, destocking, a launch ramp. It does not restate the number. |
 | `[C]` | Arithmetic from the method: a coefficient, a scale factor, a growth rate, a sum. Cite the inputs. |

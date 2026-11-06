@@ -18,9 +18,11 @@ quoted ``text``. Without a ``sources`` list the case passes with a warning.
 
 When the case has a ``views`` block, each explicit year records bottom-up,
 top-down, calibrated top-down, and Consensus for revenue and EBITDA, and the
-ratios of those views. The view named by ``views.used`` matches ``totals``.
-A missing view or a missing ratio is ``{"absent": "<reason>"}``. Without a
-``views`` block the case passes with a warning.
+ratios of those views. ``views.used`` names the base for each metric, or one
+name shared by both, and that view matches ``totals``. A missing view or a
+missing ratio is ``{"absent": "<reason>"}``. A Consensus fact with one analyst
+or no ``as_of`` date passes with a warning. Without a ``views`` block the case
+passes with a warning.
 """
 
 from __future__ import annotations
@@ -100,7 +102,7 @@ def validate_payload(payload):
     else:
         warnings.append("no sources block: numbered citation IDs and a sources list are expected for new cases")
     if "views" in payload:
-        _check_views(payload, explicit, errors)
+        _check_views(payload, explicit, errors, warnings)
     else:
         warnings.append(
             "no views block: bottom-up, top-down, calibrated top-down, and Consensus are expected for new cases"
@@ -415,15 +417,51 @@ def _expect_ratio(obj, numerator, denominator, path, errors):
         errors.append("%s %.4f != %.4f" % (path, value, expected))
 
 
-def _check_views(payload, explicit, errors):
+def _resolve_used(used, errors):
+    """Map each metric to its base view. A string applies to both."""
+    if isinstance(used, str):
+        if used not in VIEW_NAMES:
+            errors.append("views.used must be one of %s" % ", ".join(VIEW_NAMES))
+            return {"revenue": None, "ebitda": None}
+        return {"revenue": used, "ebitda": used}
+    if isinstance(used, dict):
+        extra = set(used) - {"revenue", "ebitda"}
+        if extra:
+            errors.append("views.used has unexpected keys %s" % ", ".join(sorted(extra)))
+        resolved = {}
+        for metric in ("revenue", "ebitda"):
+            name = used.get(metric)
+            if name not in VIEW_NAMES:
+                errors.append(
+                    "views.used.%s must be one of %s" % (metric, ", ".join(VIEW_NAMES))
+                )
+                resolved[metric] = None
+            else:
+                resolved[metric] = name
+        return resolved
+    errors.append('views.used must be a view name or {"revenue", "ebitda"}')
+    return {"revenue": None, "ebitda": None}
+
+
+def _flag_consensus(fact, path, warnings):
+    if not isinstance(fact, dict) or _is_absent(fact) or "value" not in fact:
+        return
+    analysts = fact.get("analysts")
+    if isinstance(analysts, bool) or not isinstance(analysts, int):
+        warnings.append("%s consensus analyst count is not recorded" % path)
+    elif analysts == 1:
+        warnings.append("%s consensus is a single analyst" % path)
+    as_of = fact.get("as_of")
+    if not isinstance(as_of, str) or not as_of.strip():
+        warnings.append("%s consensus is undated" % path)
+
+
+def _check_views(payload, explicit, errors, warnings):
     views = payload.get("views")
     if not isinstance(views, dict):
         errors.append("views must be an object")
         return
-    used = views.get("used")
-    if used not in VIEW_NAMES:
-        errors.append("views.used must be one of %s" % ", ".join(VIEW_NAMES))
-        used = None
+    used_by = _resolve_used(views.get("used"), errors)
     ratios_root = views.get("ratios")
     if not isinstance(ratios_root, dict):
         errors.append("views.ratios must be an object")
@@ -432,6 +470,7 @@ def _check_views(payload, explicit, errors):
     totals = payload.get("totals") or {}
     announced_ratio_years = set()
     for metric in ("revenue", "ebitda"):
+        used = used_by[metric]
         series = views.get(metric)
         if not isinstance(series, dict):
             errors.append("views.%s must be an object of explicit years" % metric)
@@ -448,6 +487,8 @@ def _check_views(payload, explicit, errors):
                     errors.append("%s.%s is required" % (path, name))
                     continue
                 points[name] = _read_point(slot[name], "%s.%s" % (path, name), errors)
+                if name == "consensus":
+                    _flag_consensus(slot[name], "%s.consensus" % path, warnings)
             if "top_down" not in slot:
                 errors.append("%s.top_down is required" % path)
                 top_numerator, top_point = None, None

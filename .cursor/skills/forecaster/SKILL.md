@@ -24,7 +24,7 @@ Read, in this order. Do not write outside this repo.
 1. The prompt.
 2. The filing (EDGAR for a US issuer, SEDAR+ for a Canadian one) and the company's own IR release or transcript.
 
-Read at least nine reported quarters of revenue, and of EBITDA or margin where the company reports them, plus the earnings transcript for each of those quarters, where the documents exist. Name the window (for example Q2 FY24 through Q2 FY26). A shorter history (a new issuer, restated segments, a missing transcript) is used as-is and flagged. That window is what 2d uses to classify one-time items, and what 2f uses to set `mc`, `gsnext`, and any other input past the explicit years.
+Read at least nine reported quarters of revenue, and of EBITDA or margin where the company reports them, plus the earnings transcript for each of those quarters, where the documents exist. When a quarter has no call, the earnings press release for that quarter is the call material. Use its words for one-time items (2d) and for `mc`, `gsnext`, and the other inputs past the explicit years (2f). Name the substitute and flag that there was no call. A missing call alone does not make the window short. Name the window (for example Q2 FY24 through Q2 FY26). A shorter history (a new issuer, restated segments, a quarter with neither a transcript nor a release) is used as-is and flagged.
 
 A number you cannot open stays out, or goes in with the citation text `link unverified`. Do not invent a URL or a figure.
 
@@ -39,7 +39,7 @@ For `forecasts/<TICKER>/`:
 
 `forecast.json` has to pass `pytest`. Periods are named `FYyyA`/`FYyyE` for fiscal years and `H1A`, `H2E`, `9MA`, `Q4E` and the like for part years; `baseline_period` and `explicit_periods` set which years the checks run on. Growth keys are `YoY` or `YoY_*`. A lone reference quarter such as `Q4FY26A` (the latest quarter) is summed across lines but not to a year. Part years sum to the first explicit year unless `stub_of` maps them (e.g. `{"H1E": "FY27E", "H2E": "FY27E"}`). A line's `pattern`, when given, is one of the [driver patterns](references/driver-patterns.md) in lower case, optionally followed by a note in parentheses. Every number is a fact: a value, a tag, and a citation. See [tagging](references/tagging.md).
 
-New cases also carry a `views` block: bottom-up, top-down, calibrated top-down, and Consensus, for revenue and for EBITDA, for each explicit year, plus which view is the base and the ratios between them. The shape is in section 2. A case without `views` passes with a warning.
+New cases also carry a `views` block: bottom-up, top-down, calibrated top-down, and Consensus, for revenue and for EBITDA, for each explicit year, plus which view is the base for each metric and the ratios between them. The shape is in section 2. A case without `views` passes with a warning.
 
 ## Status and open items
 
@@ -71,17 +71,17 @@ Four views are recorded for revenue and for EBITDA, for each explicit year, incl
 - **Bottom-up.** Revenue is the sum of the unscaled lines. EBITDA is the cost build in 2e, unless the filing reports line profits that already sum to it.
 - **Top-down.** Management's guidance range for that year: low and high. A single point (`more than $X`, `about $X`) is recorded as a point, and calibrated top-down is absent because there is no `C`.
 - **Calibrated top-down.** `Low + C * (High - Low)` on the like-for-like range. Absent, with the reason, when there is no range, when `C` is not applied, or when this step says to leave guidance. `C` is not applied when `C < 0` and a Consensus exists, when guidance has been revised, or when there is no completed original range. When `C < 0` and no Consensus exists, apply `C` anyway: calibrated top-down is then the base, and it is flagged.
-- **Consensus.** Analyst estimates, the latest pull, with its as-of date, tagged `[E]`. Absent when none exists.
+- **Consensus.** Analyst estimates, the latest pull, tagged `[E]`. Record `analysts` (the count on the pull) and `as_of` (the pull date) on the fact. If `analysts` is 1, or `as_of` is missing, flag it in the `[C]` block and on the assumptions list. The figure can still be the base. Absent when none exists.
 
-The base case is one view. Calibrated top-down while still on guidance. Consensus when leaving guidance and an estimate exists. Bottom-up when neither exists, or when a single-point guide is enforced on the line build. Top-down is the base only when the base is an explicit point inside the range, named in the citation. Bottom-up stays a recorded view beside that base. The dollars on `lines` are the scaled base-case dollars.
+The base is chosen separately for revenue and for EBITDA. For each metric: calibrated top-down while still on guidance. Consensus when leaving guidance and an estimate exists. Bottom-up when neither exists, or when a single-point guide is enforced on the line build. Top-down is the base only when the base is an explicit point inside the range, named in the citation. Bottom-up stays a recorded view beside that base. The dollars on `lines` are the scaled base-case dollars.
 
 Do this separately for revenue and for EBITDA. A later explicit year with no guidance range has top-down and calibrated top-down absent.
 
-`forecast.md` shows the four views, which one is the base, and the ratios beside the `[C]` block. `forecast.json` records them under `views`:
+`forecast.md` shows the four views, which one is the base for each metric, and the ratios beside the `[C]` block. `forecast.json` records them under `views`:
 
-- `views.used` is `bottom_up`, `top_down`, `calibrated_top_down`, or `consensus`.
+- `views.used` is `{"revenue": "...", "ebitda": "..."}`. Each value is `bottom_up`, `top_down`, `calibrated_top_down`, or `consensus`.
 - `views.revenue.<FYyyE>` and `views.ebitda.<FYyyE>` each hold `bottom_up`, `top_down`, `calibrated_top_down`, and `consensus`. A point view is a fact. Top-down is `low` and `high`, or `point` when guidance is a single point. When top-down is the base, `point` is that base and the citation names it. A missing view is `{"absent": "<reason>"}`.
-- `views.ratios.<FYyyE>.revenue` and `.ebitda` hold `bottom_up_over_base`, `top_down_over_base`, `calibrated_top_down_over_base`, `consensus_over_base`, `bottom_up_over_calibrated_top_down`, and `bottom_up_over_consensus`. Each is a fact or an absent reason. The top-down ratio uses the midpoint of low and high, tagged `[C]`. A missing numerator or denominator is absent.
+- `views.ratios.<FYyyE>.revenue` and `.ebitda` hold `bottom_up_over_base`, `top_down_over_base`, `calibrated_top_down_over_base`, `consensus_over_base`, `bottom_up_over_calibrated_top_down`, and `bottom_up_over_consensus`. Each is a fact or an absent reason. A ratio divides by that metric's base. The top-down ratio uses the midpoint of low and high, tagged `[C]`. A missing numerator or denominator is absent.
 
 Every dollar and every ratio is a fact. A case without `views` passes with a warning; new cases carry the block.
 
@@ -113,7 +113,7 @@ Single-point guidance (`more than $X`, `about $X`) does not have a `C`. Top-down
 
 No guidance at all: top-down and calibrated top-down are absent. There is no `C`. The base is Consensus if one exists, otherwise bottom-up. Say so in the `[C]` block, name the view used, and flag it in the assumptions list.
 
-Show `C`, the low, the high, the actual, and which view is the base. Tag that block `[C]`. The same block records the four views and the ratios.
+Show `C`, the low, the high, the actual, and which view is the base for revenue and for EBITDA. Tag that block `[C]`. The same block records the four views and the ratios.
 
 ### 2b. Turn words into numbers
 

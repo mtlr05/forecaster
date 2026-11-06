@@ -260,11 +260,14 @@ def _add_views(payload):
         return _fact(numerator / float(denominator), "C")
 
     def year_views(bottom_up, low, high, consensus):
+        consensus_fact = _fact(consensus, "E")
+        consensus_fact["analysts"] = 4
+        consensus_fact["as_of"] = "2026-10-22"
         return {
             "bottom_up": _fact(bottom_up, "C"),
             "top_down": {"low": _fact(low, "G"), "high": _fact(high, "G")},
             "calibrated_top_down": {"absent": "C < 0 and Consensus exists"},
-            "consensus": _fact(consensus, "E"),
+            "consensus": consensus_fact,
         }
 
     def year_ratios(bottom_up, low, high, consensus):
@@ -439,3 +442,39 @@ def test_absent_view_rejects_a_ratio_fact():
     report = validate_payload(payload)
     assert not report["ok"]
     assert any("numerator or denominator is missing" in error for error in report["errors"])
+
+
+def test_views_used_can_differ_by_metric():
+    payload = _add_views(_minimal())
+    payload["views"]["used"] = {"revenue": "consensus", "ebitda": "bottom_up"}
+    payload["views"]["ebitda"]["FY26E"]["bottom_up"] = _fact(24, "C")
+    payload["views"]["ebitda"]["FY27E"]["bottom_up"] = _fact(30, "C")
+    for year in ("FY26E", "FY27E"):
+        ratios = payload["views"]["ratios"][year]["ebitda"]
+        ratios["bottom_up_over_base"] = _fact(1, "C")
+        ratios["bottom_up_over_consensus"] = _fact(1, "C")
+    report = validate_payload(payload)
+    assert report["ok"], report["errors"]
+
+
+def test_views_ebitda_base_must_match_its_own_total():
+    payload = _add_views(_minimal())
+    payload["views"]["used"] = {"revenue": "consensus", "ebitda": "bottom_up"}
+    report = validate_payload(payload)
+    assert not report["ok"]
+    assert any("ebitda" in error and "does not match" in error for error in report["errors"])
+    assert not any(
+        error.startswith("views.revenue") and "does not match" in error
+        for error in report["errors"]
+    )
+
+
+def test_single_analyst_undated_consensus_warns():
+    payload = _add_views(_minimal())
+    fact = payload["views"]["revenue"]["FY26E"]["consensus"]
+    fact["analysts"] = 1
+    del fact["as_of"]
+    report = validate_payload(payload)
+    assert report["ok"], report["errors"]
+    assert any("single analyst" in warning for warning in report["warnings"])
+    assert any("undated" in warning for warning in report["warnings"])
