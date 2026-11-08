@@ -1,0 +1,4037 @@
+{
+  "ticker": "PDEX",
+  "company": "Pro-Dex, Inc. (Nasdaq: PDEX)",
+  "units": "USD millions",
+  "fiscal_year_end": "June 30",
+  "as_of": "2026-11-07",
+  "method_commit": "mtlr05/forecaster origin/main be46f4a (refreshed safe clone; method unchanged)",
+  "baseline_period": "FY26A",
+  "explicit_periods": [
+    "FY27E",
+    "FY28E"
+  ],
+  "history_window": "Q1 FY25 (Sept 2024) through Q1 FY27 (Sept 2026), nine reported quarters; Pro-Dex holds no earnings calls, so the nine earnings releases stand in for transcripts.",
+  "lines": [
+    {
+      "name": "Medical devices",
+      "pattern": "mature or declining (largest-customer next-gen handpiece at contract volumes; CMF recurring)",
+      "periods": {
+        "FY25A": {
+          "value": 47.747,
+          "tag": "A",
+          "citation": {
+            "id": "A1",
+            "text": "Net sales by product/service type, FY25A: Medical devices 47.747 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "FY26A": {
+          "value": 62.098,
+          "tag": "A",
+          "citation": {
+            "id": "A6",
+            "text": "Net sales by product/service type, FY26A: Medical devices 62.098 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "YoY": {
+          "value": 0.300563,
+          "tag": "C",
+          "citation": {
+            "id": "C29",
+            "text": "Medical devices FY26 YoY growth.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "Q1FY27A": {
+          "value": 17.393,
+          "tag": "A",
+          "citation": {
+            "id": "A11",
+            "text": "Net sales by product/service type, Q1FY27A: Medical devices 17.393 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page": "p.21"
+          }
+        },
+        "FY27E": {
+          "value": 69.782028,
+          "tag": "C",
+          "citation": {
+            "id": "C12",
+            "text": "Medical devices FY27E scaled to Consensus (APM line unscaled).",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          }
+        },
+        "FY28E": {
+          "value": 74.910834,
+          "tag": "C",
+          "citation": {
+            "id": "C18",
+            "text": "Medical devices FY28E scaled to Consensus (APM line unscaled).",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          }
+        }
+      }
+    },
+    {
+      "name": "Industrial and scientific",
+      "pattern": "new or acquired (APM, Feb 2026)",
+      "periods": {
+        "FY25A": {
+          "value": 0.861,
+          "tag": "A",
+          "citation": {
+            "id": "A2",
+            "text": "Net sales by product/service type, FY25A: Industrial and scientific 0.861 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "FY26A": {
+          "value": 1.513,
+          "tag": "A",
+          "citation": {
+            "id": "A7",
+            "text": "Net sales by product/service type, FY26A: Industrial and scientific 1.513 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "YoY": {
+          "value": 0.757259,
+          "tag": "C",
+          "citation": {
+            "id": "C30",
+            "text": "Industrial and scientific FY26 YoY growth.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "Q1FY27A": {
+          "value": 0.74,
+          "tag": "A",
+          "citation": {
+            "id": "A12",
+            "text": "Net sales by product/service type, Q1FY27A: Industrial and scientific 0.74 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page": "p.21"
+          }
+        },
+        "FY27E": {
+          "value": 2.96,
+          "tag": "C",
+          "citation": {
+            "id": "C13",
+            "text": "Industrial and scientific FY27E scaled to Consensus (APM line unscaled).",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          }
+        },
+        "FY28E": {
+          "value": 3.108,
+          "tag": "C",
+          "citation": {
+            "id": "C19",
+            "text": "Industrial and scientific FY28E scaled to Consensus (APM line unscaled).",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          }
+        }
+      }
+    },
+    {
+      "name": "NRE and prototype services",
+      "pattern": "milestone-dependent (NRE; Monogram validation units)",
+      "periods": {
+        "FY25A": {
+          "value": 0.698,
+          "tag": "A",
+          "citation": {
+            "id": "A3",
+            "text": "Net sales by product/service type, FY25A: NRE and prototype services 0.698 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "FY26A": {
+          "value": 1.65,
+          "tag": "A",
+          "citation": {
+            "id": "A8",
+            "text": "Net sales by product/service type, FY26A: NRE and prototype services 1.65 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "YoY": {
+          "value": 1.363897,
+          "tag": "C",
+          "citation": {
+            "id": "C31",
+            "text": "NRE and prototype services FY26 YoY growth.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "Q1FY27A": {
+          "value": 0.236,
+          "tag": "A",
+          "citation": {
+            "id": "A13",
+            "text": "Net sales by product/service type, Q1FY27A: NRE and prototype services 0.236 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page": "p.21"
+          }
+        },
+        "FY27E": {
+          "value": 1.203623,
+          "tag": "C",
+          "citation": {
+            "id": "C14",
+            "text": "NRE and prototype services FY27E scaled to Consensus (APM line unscaled).",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          }
+        },
+        "FY28E": {
+          "value": 1.254452,
+          "tag": "C",
+          "citation": {
+            "id": "C20",
+            "text": "NRE and prototype services FY28E scaled to Consensus (APM line unscaled).",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          }
+        }
+      }
+    },
+    {
+      "name": "Repairs",
+      "pattern": "mature or declining (legacy repairs)",
+      "periods": {
+        "FY25A": {
+          "value": 18.586,
+          "tag": "A",
+          "citation": {
+            "id": "A4",
+            "text": "Net sales by product/service type, FY25A: Repairs 18.586 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "FY26A": {
+          "value": 12.54,
+          "tag": "A",
+          "citation": {
+            "id": "A9",
+            "text": "Net sales by product/service type, FY26A: Repairs 12.54 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "YoY": {
+          "value": -0.325299,
+          "tag": "C",
+          "citation": {
+            "id": "C32",
+            "text": "Repairs FY26 YoY growth.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "Q1FY27A": {
+          "value": 2.132,
+          "tag": "A",
+          "citation": {
+            "id": "A14",
+            "text": "Net sales by product/service type, Q1FY27A: Repairs 2.132 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page": "p.21"
+          }
+        },
+        "FY27E": {
+          "value": 8.553745,
+          "tag": "C",
+          "citation": {
+            "id": "C15",
+            "text": "Repairs FY27E scaled to Consensus (APM line unscaled).",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          }
+        },
+        "FY28E": {
+          "value": 7.317639,
+          "tag": "C",
+          "citation": {
+            "id": "C21",
+            "text": "Repairs FY28E scaled to Consensus (APM line unscaled).",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          }
+        }
+      }
+    },
+    {
+      "name": "Discounts and other",
+      "pattern": "recurring (rebates removed)",
+      "periods": {
+        "FY25A": {
+          "value": -1.299,
+          "tag": "A",
+          "citation": {
+            "id": "A5",
+            "text": "Net sales by product/service type, FY25A: Discounts and other -1.299 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "FY26A": {
+          "value": -0.253,
+          "tag": "A",
+          "citation": {
+            "id": "A10",
+            "text": "Net sales by product/service type, FY26A: Discounts and other -0.253 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "YoY": {
+          "value": -0.805235,
+          "tag": "C",
+          "citation": {
+            "id": "C33",
+            "text": "Discounts and other FY26 YoY growth.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "Q1FY27A": {
+          "value": 0.059,
+          "tag": "A",
+          "citation": {
+            "id": "A15",
+            "text": "Net sales by product/service type, Q1FY27A: Discounts and other 0.059 (US$ thousands /1000).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page": "p.21"
+          }
+        },
+        "FY27E": {
+          "value": 0.200604,
+          "tag": "C",
+          "citation": {
+            "id": "C16",
+            "text": "Discounts and other FY27E scaled to Consensus (APM line unscaled).",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          }
+        },
+        "FY28E": {
+          "value": 0.209075,
+          "tag": "C",
+          "citation": {
+            "id": "C22",
+            "text": "Discounts and other FY28E scaled to Consensus (APM line unscaled).",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          }
+        }
+      }
+    }
+  ],
+  "totals": {
+    "revenue": {
+      "FY25A": {
+        "value": 66.593,
+        "tag": "A",
+        "citation": {
+          "id": "A16",
+          "text": "Net sales FY25A: $66.593 million (total of product/service table).",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page": "p.19"
+        }
+      },
+      "FY26A": {
+        "value": 77.548,
+        "tag": "A",
+        "citation": {
+          "id": "A17",
+          "text": "Net sales FY26A: $77.548 million (total of product/service table).",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page": "p.19"
+        }
+      },
+      "YoY": {
+        "value": 0.164507,
+        "tag": "C",
+        "citation": {
+          "id": "C34",
+          "text": "Total FY26 YoY growth.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page_status": "unverified"
+        }
+      },
+      "Q1FY27A": {
+        "value": 20.56,
+        "tag": "A",
+        "citation": {
+          "id": "A18",
+          "text": "Net sales Q1FY27A: $20.56 million (total of product/service table).",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+          "page": "p.21"
+        }
+      },
+      "FY27E": {
+        "value": 82.7,
+        "tag": "E",
+        "citation": {
+          "id": "E1",
+          "text": "Equibles compiled consensus, FY ending 2027-06-30 Revenue average 82.70M, 1 analyst, publication date not stated; provider capture October 30, 2026 at 12:17 EDT (America/Toronto); re-opened November 7; estimate publication date unknown.",
+          "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+          "page_status": "unverified"
+        },
+        "analysts": 1,
+        "as_of": "2026-10-06"
+      },
+      "FY28E": {
+        "value": 86.8,
+        "tag": "E",
+        "citation": {
+          "id": "E2",
+          "text": "Equibles compiled consensus, FY ending 2028-06-30 Revenue average 86.80M, 1 analyst, publication date not stated; provider capture October 30, 2026 at 12:17 EDT (America/Toronto); re-opened November 7; estimate publication date unknown.",
+          "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+          "page_status": "unverified"
+        },
+        "analysts": 1,
+        "as_of": "2026-10-06"
+      }
+    },
+    "ebitda": {
+      "FY25A": {
+        "value": 12.483,
+        "tag": "C",
+        "citation": {
+          "id": "C1",
+          "text": "EBITDA (defined) = operating income + D&A + stock comp, FY25A.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page_status": "unverified"
+        }
+      },
+      "FY26A": {
+        "value": 15.073,
+        "tag": "C",
+        "citation": {
+          "id": "C2",
+          "text": "EBITDA (defined) = operating income + D&A + stock comp, FY26A.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page_status": "unverified"
+        }
+      },
+      "YoY": {
+        "value": 0.207482,
+        "tag": "C",
+        "citation": {
+          "id": "C35",
+          "text": "EBITDA FY26 YoY growth.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page_status": "unverified"
+        }
+      },
+      "Q1FY27A": {
+        "value": 4.053,
+        "tag": "C",
+        "citation": {
+          "id": "C3",
+          "text": "EBITDA (defined) = operating income + D&A + stock comp, Q1FY27A.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page_status": "unverified"
+        }
+      },
+      "FY27E": {
+        "value": 15.621463,
+        "tag": "C",
+        "citation": {
+          "id": "C23",
+          "text": "EBITDA FY27E (base, cost build on Consensus revenue) = revenue x TTM gross margin - opex + D&A + SBC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+          "page_status": "unverified"
+        }
+      },
+      "FY28E": {
+        "value": 16.615498,
+        "tag": "C",
+        "citation": {
+          "id": "C24",
+          "text": "EBITDA FY28E (base, cost build on Consensus revenue) = revenue x TTM gross margin - opex + D&A + SBC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+          "page_status": "unverified"
+        }
+      }
+    },
+    "gross_margin": {
+      "FY25A": {
+        "value": 0.292974,
+        "tag": "C",
+        "citation": {
+          "id": "C27",
+          "text": "FY25 gross margin.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page_status": "unverified"
+        }
+      },
+      "FY26A": {
+        "value": 0.313806,
+        "tag": "C",
+        "citation": {
+          "id": "C28",
+          "text": "FY26 gross margin.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page_status": "unverified"
+        }
+      },
+      "FY27E": {
+        "value": 0.324516,
+        "tag": "C",
+        "citation": {
+          "id": "C4",
+          "text": "Trailing-four-quarter gross margin Q2 FY26-Q1 FY27: GP (5.743+6.133+7.091+6.857)/net sales (18.663+19.949+20.405+20.560); Q4 FY26 = FY26 less 9M.",
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000788920.json",
+          "page_status": "unverified"
+        }
+      },
+      "FY28E": {
+        "value": 0.324516,
+        "tag": "C",
+        "citation": {
+          "id": "C4",
+          "text": "Trailing-four-quarter gross margin Q2 FY26-Q1 FY27: GP (5.743+6.133+7.091+6.857)/net sales (18.663+19.949+20.405+20.560); Q4 FY26 = FY26 less 9M.",
+          "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000788920.json",
+          "page_status": "unverified"
+        }
+      }
+    },
+    "ebitda_margin": {
+      "FY27E": {
+        "value": 0.188893,
+        "tag": "C",
+        "citation": {
+          "id": "C36",
+          "text": "Base EBITDA margin FY27E.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page_status": "unverified"
+        }
+      },
+      "FY28E": {
+        "value": 0.191423,
+        "tag": "C",
+        "citation": {
+          "id": "C37",
+          "text": "Base EBITDA margin FY28E.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page_status": "unverified"
+        }
+      }
+    }
+  },
+  "organic": {
+    "revenue": {
+      "FY26A": {
+        "value": 77.548,
+        "tag": "A",
+        "citation": {
+          "id": "A17",
+          "text": "Net sales FY26A: $77.548 million (total of product/service table).",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page": "p.19"
+        }
+      },
+      "FY27E": {
+        "value": 82.7,
+        "tag": "E",
+        "citation": {
+          "id": "E1",
+          "text": "Equibles compiled consensus, FY ending 2027-06-30 Revenue average 82.70M, 1 analyst, publication date not stated; provider capture October 30, 2026 at 12:17 EDT (America/Toronto); re-opened November 7; estimate publication date unknown.",
+          "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+          "page_status": "unverified"
+        },
+        "analysts": 1,
+        "as_of": "2026-10-06"
+      },
+      "FY28E": {
+        "value": 86.8,
+        "tag": "E",
+        "citation": {
+          "id": "E2",
+          "text": "Equibles compiled consensus, FY ending 2028-06-30 Revenue average 86.80M, 1 analyst, publication date not stated; provider capture October 30, 2026 at 12:17 EDT (America/Toronto); re-opened November 7; estimate publication date unknown.",
+          "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+          "page_status": "unverified"
+        },
+        "analysts": 1,
+        "as_of": "2026-10-06"
+      }
+    },
+    "ebitda": {
+      "FY26A": {
+        "value": 15.073,
+        "tag": "C",
+        "citation": {
+          "id": "C2",
+          "text": "EBITDA (defined) = operating income + D&A + stock comp, FY26A.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+          "page_status": "unverified"
+        }
+      },
+      "FY27E": {
+        "value": 15.621463,
+        "tag": "C",
+        "citation": {
+          "id": "C23",
+          "text": "EBITDA FY27E (base, cost build on Consensus revenue) = revenue x TTM gross margin - opex + D&A + SBC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+          "page_status": "unverified"
+        }
+      },
+      "FY28E": {
+        "value": 16.615498,
+        "tag": "C",
+        "citation": {
+          "id": "C24",
+          "text": "EBITDA FY28E (base, cost build on Consensus revenue) = revenue x TTM gross margin - opex + D&A + SBC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+          "page_status": "unverified"
+        }
+      }
+    }
+  },
+  "finagle": {
+    "note": "Operating-path leaves only. Finagle has NOT been run; awaiting David's revisions.",
+    "sales_growth": {
+      "value": [
+        0.066436,
+        0.049577
+      ],
+      "tag": "C",
+      "citation": {
+        "id": "C38",
+        "text": "Base revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A).",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+        "page_status": "unverified"
+      }
+    },
+    "ebitda_growth": {
+      "value": [
+        0.036387,
+        0.063633
+      ],
+      "tag": "C",
+      "citation": {
+        "id": "C39",
+        "text": "Base EBITDA growth FY27, FY28.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+        "page_status": "unverified"
+      }
+    },
+    "me": {
+      "value": 0.191423,
+      "tag": "C",
+      "citation": {
+        "id": "C40",
+        "text": "Base FY28 EBITDA / FY28 revenue.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+        "page_status": "unverified"
+      }
+    },
+    "mc": {
+      "value": 0.25,
+      "tag": "S",
+      "citation": {
+        "id": "S13",
+        "text": "Contribution margin set against the history window: FY25->FY26 incremental EBITDA/revenue = 0.236; FY24->FY25 = 0.278. No unlaunched product with a stated margin (Helios CMF driver and Monogram program considered, no amount, validation units expected H2 FY27; no annual sales or margin dollars disclosed).",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+        "page_status": "unverified"
+      }
+    },
+    "gsnext": {
+      "value": 0.03,
+      "tag": "S",
+      "citation": {
+        "id": "S14",
+        "text": "FY29 sales growth: largest-customer contract runs 'through calendar 2028' (mid-FY29) with 'similar levels of revenue'; renewal not disclosed. Helios CMF and Monogram considered, no amounts, so not moved.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+        "page": "p.19"
+      }
+    },
+    "ebitda_basis": {
+      "value": "total",
+      "tag": "S",
+      "citation": {
+        "id": "S12",
+        "text": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+        "page_status": "unverified"
+      }
+    },
+    "acquisition_disclosure": {
+      "status": {
+        "value": "none",
+        "tag": "G",
+        "citation": {
+          "id": "G1",
+          "text": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001325/pdex_def14a.htm",
+          "page_status": "unverified"
+        }
+      }
+    }
+  },
+  "views": {
+    "used": {
+      "revenue": "consensus",
+      "ebitda": "bottom_up"
+    },
+    "note": "Revenue base remains one-analyst compiled consensus; rechecked November 7, 2026; provider capture October 30, 2026, analyst estimate publication date not stated. EBITDA base remains cost build. No evidence verifies analyst exclusion of Helios or Monogram.",
+    "revenue": {
+      "FY27E": {
+        "bottom_up": {
+          "value": 82.46,
+          "tag": "C",
+          "citation": {
+            "id": "C9",
+            "text": "Bottom-up revenue FY27E = sum of unscaled lines.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "top_down": {
+          "absent": "no guidance: Pro-Dex gives no numeric revenue or EBITDA guidance"
+        },
+        "calibrated_top_down": {
+          "absent": "no guidance range, so no C"
+        },
+        "consensus": {
+          "value": 82.7,
+          "tag": "E",
+          "citation": {
+            "id": "E1",
+            "text": "Equibles compiled consensus, FY ending 2027-06-30 Revenue average 82.70M, 1 analyst, publication date not stated; provider capture October 30, 2026 at 12:17 EDT (America/Toronto); re-opened November 7; analyst publication date unknown.",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          },
+          "analysts": 1,
+          "as_of": "2026-11-07",
+          "provider_capture_date": "2026-10-30",
+          "estimate_publication_date_status": "not stated"
+        }
+      },
+      "FY28E": {
+        "bottom_up": {
+          "value": 83.16716,
+          "tag": "C",
+          "citation": {
+            "id": "C10",
+            "text": "Bottom-up revenue FY28E = sum of unscaled lines.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "top_down": {
+          "absent": "no guidance: Pro-Dex gives no numeric revenue or EBITDA guidance"
+        },
+        "calibrated_top_down": {
+          "absent": "no guidance range, so no C"
+        },
+        "consensus": {
+          "value": 86.8,
+          "tag": "E",
+          "citation": {
+            "id": "E2",
+            "text": "Equibles compiled consensus, FY ending 2028-06-30 Revenue average 86.80M, 1 analyst, publication date not stated; provider capture October 30, 2026 at 12:17 EDT (America/Toronto); re-opened November 7; analyst publication date unknown.",
+            "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+            "page_status": "unverified"
+          },
+          "analysts": 1,
+          "as_of": "2026-11-07",
+          "provider_capture_date": "2026-10-30",
+          "estimate_publication_date_status": "not stated"
+        }
+      }
+    },
+    "ebitda": {
+      "FY27E": {
+        "bottom_up": {
+          "value": 15.621463,
+          "tag": "C",
+          "citation": {
+            "id": "C23",
+            "text": "EBITDA FY27E (base, cost build on Consensus revenue) = revenue x TTM gross margin - opex + D&A + SBC.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+            "page_status": "unverified"
+          }
+        },
+        "top_down": {
+          "absent": "no guidance: Pro-Dex gives no numeric revenue or EBITDA guidance"
+        },
+        "calibrated_top_down": {
+          "absent": "no guidance range, so no C"
+        },
+        "consensus": {
+          "absent": "no EBITDA Consensus: Equibles has revenue/EPS only; ChartMill FY27 EBITDA 14.586 predates the FY26 print and equals its own FY26E, so not used (D16)"
+        }
+      },
+      "FY28E": {
+        "bottom_up": {
+          "value": 16.615498,
+          "tag": "C",
+          "citation": {
+            "id": "C24",
+            "text": "EBITDA FY28E (base, cost build on Consensus revenue) = revenue x TTM gross margin - opex + D&A + SBC.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+            "page_status": "unverified"
+          }
+        },
+        "top_down": {
+          "absent": "no guidance: Pro-Dex gives no numeric revenue or EBITDA guidance"
+        },
+        "calibrated_top_down": {
+          "absent": "no guidance range, so no C"
+        },
+        "consensus": {
+          "absent": "no EBITDA Consensus: Equibles has revenue/EPS only; ChartMill FY27 EBITDA 14.586 predates the FY26 print and equals its own FY26E, so not used (D16)"
+        }
+      }
+    },
+    "ratios": {
+      "FY27E": {
+        "revenue": {
+          "bottom_up_over_base": {
+            "value": 0.997098,
+            "tag": "C",
+            "citation": {
+              "id": "C79",
+              "text": "Bottom-up / base revenue FY27E.",
+              "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+              "page_status": "unverified"
+            }
+          },
+          "top_down_over_base": {
+            "absent": "no top-down"
+          },
+          "calibrated_top_down_over_base": {
+            "absent": "no calibrated top-down"
+          },
+          "consensus_over_base": {
+            "value": 1.0,
+            "tag": "C",
+            "citation": {
+              "id": "C80",
+              "text": "Consensus / base revenue FY27E (base is Consensus).",
+              "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+              "page_status": "unverified"
+            }
+          },
+          "bottom_up_over_calibrated_top_down": {
+            "absent": "no calibrated top-down"
+          },
+          "bottom_up_over_consensus": {
+            "value": 0.997098,
+            "tag": "C",
+            "citation": {
+              "id": "C81",
+              "text": "Bottom-up / Consensus revenue FY27E.",
+              "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+              "page_status": "unverified"
+            }
+          }
+        },
+        "ebitda": {
+          "bottom_up_over_base": {
+            "value": 1.0,
+            "tag": "C",
+            "citation": {
+              "id": "C82",
+              "text": "Bottom-up / base EBITDA FY27E (base is bottom-up cost build).",
+              "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+              "page_status": "unverified"
+            }
+          },
+          "top_down_over_base": {
+            "absent": "no top-down"
+          },
+          "calibrated_top_down_over_base": {
+            "absent": "no calibrated top-down"
+          },
+          "consensus_over_base": {
+            "absent": "no EBITDA Consensus"
+          },
+          "bottom_up_over_calibrated_top_down": {
+            "absent": "no calibrated top-down"
+          },
+          "bottom_up_over_consensus": {
+            "absent": "no EBITDA Consensus"
+          }
+        }
+      },
+      "FY28E": {
+        "revenue": {
+          "bottom_up_over_base": {
+            "value": 0.958147,
+            "tag": "C",
+            "citation": {
+              "id": "C83",
+              "text": "Bottom-up / base revenue FY28E.",
+              "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+              "page_status": "unverified"
+            }
+          },
+          "top_down_over_base": {
+            "absent": "no top-down"
+          },
+          "calibrated_top_down_over_base": {
+            "absent": "no calibrated top-down"
+          },
+          "consensus_over_base": {
+            "value": 1.0,
+            "tag": "C",
+            "citation": {
+              "id": "C84",
+              "text": "Consensus / base revenue FY28E (base is Consensus).",
+              "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+              "page_status": "unverified"
+            }
+          },
+          "bottom_up_over_calibrated_top_down": {
+            "absent": "no calibrated top-down"
+          },
+          "bottom_up_over_consensus": {
+            "value": 0.958147,
+            "tag": "C",
+            "citation": {
+              "id": "C85",
+              "text": "Bottom-up / Consensus revenue FY28E.",
+              "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+              "page_status": "unverified"
+            }
+          }
+        },
+        "ebitda": {
+          "bottom_up_over_base": {
+            "value": 1.0,
+            "tag": "C",
+            "citation": {
+              "id": "C86",
+              "text": "Bottom-up / base EBITDA FY28E (base is bottom-up cost build).",
+              "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+              "page_status": "unverified"
+            }
+          },
+          "top_down_over_base": {
+            "absent": "no top-down"
+          },
+          "calibrated_top_down_over_base": {
+            "absent": "no calibrated top-down"
+          },
+          "consensus_over_base": {
+            "absent": "no EBITDA Consensus"
+          },
+          "bottom_up_over_calibrated_top_down": {
+            "absent": "no calibrated top-down"
+          },
+          "bottom_up_over_consensus": {
+            "absent": "no EBITDA Consensus"
+          }
+        }
+      }
+    },
+    "ebitda_bottom_up_on_unscaled_revenue": {
+      "FY27E": {
+        "value": 15.543579,
+        "tag": "C",
+        "citation": {
+          "id": "C25",
+          "text": "Bottom-up EBITDA FY27E = cost build on unscaled line revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+          "page_status": "unverified"
+        }
+      },
+      "FY28E": {
+        "value": 15.436584,
+        "tag": "C",
+        "citation": {
+          "id": "C26",
+          "text": "Bottom-up EBITDA FY28E = cost build on unscaled line revenue.",
+          "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+          "page_status": "unverified"
+        }
+      }
+    }
+  },
+  "one_time_items": {
+    "window": "Q1 FY25\u2013Q1 FY27",
+    "items": [
+      {
+        "amount": {
+          "value": 0.434,
+          "tag": "A",
+          "citation": {
+            "id": "A40",
+            "text": "FY26: approximately $434,000 in acquisition-related costs primarily included in SG&A (business-combination note).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.39"
+          }
+        },
+        "period": "FY26A",
+        "treatment": "strip from history as one-time",
+        "basis": "company 'acquisition-related costs' + David override [P1]",
+        "in_q1_fy27_run_rate": false
+      },
+      {
+        "amount": {
+          "value": 0.5,
+          "tag": "A",
+          "citation": {
+            "id": "A35",
+            "text": "FY26: $500,000 in non-recurring consulting fees paid to the former owner of APM (MD&A).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.21"
+          }
+        },
+        "period": "FY26A",
+        "treatment": "strip from history as one-time (company-labelled non-recurring)",
+        "basis": "company MD&A",
+        "in_q1_fy27_run_rate": false,
+        "note": "8-K 2026-02-12: Sean McCaig engaged as consultant through end of calendar 2026; Q1 FY27 release does not flag remaining consulting fees, so run rate unadjusted."
+      },
+      {
+        "amount": {
+          "value": 0.2,
+          "tag": "G",
+          "citation": {
+            "id": "G14",
+            "text": "Q3 FY26: approximately $200,000 in non-recurring legal and consulting fees related to the APM acquisition (earnings release).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326000581/0001079973-26-000581-index.htm",
+            "page_status": "unverified"
+          }
+        },
+        "period": "Q3 FY26A",
+        "treatment": "Memo only: approximately $0.2M Q3 detail likely included in the $0.434M annual acquisition cost; not an additional annual add-back.",
+        "basis": "company Q3 release",
+        "in_q1_fy27_run_rate": false
+      }
+    ],
+    "integration_costs": {
+      "separable": false,
+      "treatment": "Retain ongoing APM operations and permanent accounting/M&A/HR/IT positions. Remove only separately evidenced temporary integration spend when it ends; integration completion does not justify removing all APM overhead or new hires.",
+      "evidence": "Filings name vertical integration as the deal rationale and list integration risk factors, but give no separate 'integration cost' dollar. Q1 FY27 opex includes APM separate operations (~$0.466M in the quarter) and $0.195M higher personnel in accounting/M&A/HR/IT [G4]."
+    },
+    "forward_impact": "None on FY27E/FY28E revenue or EBITDA: identified one-time costs relate to FY26; Q1 FY27 contains no separately quantified company-identified acquisition/integration charge. Historical financial tables remain reported EBITDA, not adjusted; do not add $0.2M again.",
+    "prompt_override": {
+      "value": "acquisition-related costs are one-time; integration costs may continue short-term until integration is complete, then remove",
+      "tag": "P",
+      "citation": {
+        "id": "P1",
+        "text": "David May instruction (t160u, 2026-11-06 America/Toronto): acquisition related costs are one-time. Integration cost related to the acquisition maybe continue in the short term if the integration work isn't completed, but should be removed when they do.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+        "page_status": "unverified"
+      }
+    }
+  },
+  "bridge": {
+    "gm_ttm": {
+      "value": 0.324516,
+      "tag": "C",
+      "citation": {
+        "id": "C4",
+        "text": "Trailing-four-quarter gross margin Q2 FY26-Q1 FY27: GP (5.743+6.133+7.091+6.857)/net sales (18.663+19.949+20.405+20.560); Q4 FY26 = FY26 less 9M.",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000788920.json",
+        "page_status": "unverified"
+      }
+    },
+    "opex_fy27": {
+      "value": 13.368,
+      "tag": "C",
+      "citation": {
+        "id": "C5",
+        "text": "FY27 operating expense = Q1 FY27 run rate x4; Q1 has no remaining APM acquisition-related costs ($0.434M was FY26) and no company-flagged one-time; integration costs not separately disclosed so left in run rate [P1][A40][A35][G14].",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+        "page_status": "unverified"
+      }
+    },
+    "opex_fy28": {
+      "value": 13.76904,
+      "tag": "C",
+      "citation": {
+        "id": "C6",
+        "text": "FY28 opex = FY27 opex x (1 + inflation).",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+        "page_status": "unverified"
+      }
+    },
+    "dasbc_fy27": {
+      "value": 2.152,
+      "tag": "C",
+      "citation": {
+        "id": "C7",
+        "text": "D&A + SBC add-back FY27 = Q1 FY27 (0.403 + 0.135) x4.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+        "page_status": "unverified"
+      }
+    },
+    "dasbc_fy28": {
+      "value": 2.21656,
+      "tag": "C",
+      "citation": {
+        "id": "C8",
+        "text": "D&A + SBC add-back FY28 = FY27 x1.03.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+        "page_status": "unverified"
+      }
+    },
+    "scale_fy27": {
+      "value": 1.003019,
+      "tag": "C",
+      "citation": {
+        "id": "C11",
+        "text": "Scale factor FY27E = (Consensus - acquired APM line) / (bottom-up - APM line).",
+        "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+        "page_status": "unverified"
+      }
+    },
+    "scale_fy28": {
+      "value": 1.045377,
+      "tag": "C",
+      "citation": {
+        "id": "C17",
+        "text": "Scale factor FY28E = (Consensus - acquired APM line) / (bottom-up - APM line).",
+        "url": "https://equibles.com/stocks/pdex/analyst-estimates",
+        "page_status": "unverified"
+      }
+    },
+    "opex_inflation": {
+      "value": 0.03,
+      "tag": "S",
+      "citation": {
+        "id": "S1",
+        "text": "Opex inflation into FY28: personnel build (accounting, M&A, HR, IT) named in Q1 FY27 release and Irvine lease step-ups of 3.5% from Oct 2027 (8-K 2026-09-18). Judgment.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+        "page_status": "unverified"
+      }
+    }
+  },
+  "year0": {
+    "cash_and_st_investments": {
+      "value": 9.342,
+      "tag": "C",
+      "citation": {
+        "id": "C87",
+        "text": "Cash 8.192 + current investments 1.150 at June 30, 2026; no equity raise after FY-end (no S-3/S-1/424 filings; share count moved only by equity awards).",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+        "page_status": "unverified"
+      }
+    },
+    "cash": {
+      "value": 8.192,
+      "tag": "A",
+      "citation": {
+        "id": "A32",
+        "text": "Cash and cash equivalents June 30, 2026: $8,192K.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+        "page_status": "unverified"
+      }
+    },
+    "st_investments": {
+      "value": 1.15,
+      "tag": "A",
+      "citation": {
+        "id": "A33",
+        "text": "Investments (current) June 30, 2026: $1,150K.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+        "page_status": "unverified"
+      }
+    },
+    "debt": {
+      "value": 17.471,
+      "tag": "C",
+      "citation": {
+        "id": "C88",
+        "text": "Notes payable current 4.205 + non-current 13.266 at June 30, 2026 (excludes lease liabilities).",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+        "page_status": "unverified"
+      }
+    },
+    "shares": {
+      "value": 3.186135,
+      "tag": "A",
+      "citation": {
+        "id": "A34",
+        "text": "3,186,135 shares issued and outstanding at June 30, 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm",
+        "page_status": "unverified"
+      }
+    },
+    "capex_method": {
+      "value": 1,
+      "tag": "S",
+      "citation": {
+        "id": "S21",
+        "text": "No capex guidance; capex method 1 for all years (standing preference).",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+        "page_status": "unverified"
+      }
+    },
+    "note": "Historical June 30, 2026 snapshot retained; not the latest balance sheet. No valuation run. Terminal growth not set. Latest September balances separately described in report."
+  },
+  "scenarios": {
+    "bull": {
+      "lines": [
+        {
+          "name": "Medical devices",
+          "pattern": "mature or declining (largest-customer next-gen handpiece at contract volumes; CMF recurring)",
+          "periods": {
+            "FY25A": {
+              "value": 47.747,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "Net sales by product/service type, FY25A: Medical devices 47.747 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "FY26A": {
+              "value": 62.098,
+              "tag": "A",
+              "citation": {
+                "id": "A6",
+                "text": "Net sales by product/service type, FY26A: Medical devices 62.098 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "YoY": {
+              "value": 0.300563,
+              "tag": "C",
+              "citation": {
+                "id": "C29",
+                "text": "Medical devices FY26 YoY growth.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "Q1FY27A": {
+              "value": 17.393,
+              "tag": "A",
+              "citation": {
+                "id": "A11",
+                "text": "Net sales by product/service type, Q1FY27A: Medical devices 17.393 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page": "p.21"
+              }
+            },
+            "FY27E": {
+              "value": 70.782028,
+              "tag": "C",
+              "citation": {
+                "id": "C41",
+                "text": "bull Medical devices FY27E = base line + lever (see bull levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "FY28E": {
+              "value": 75.910834,
+              "tag": "C",
+              "citation": {
+                "id": "C46",
+                "text": "bull Medical devices FY28E = base line + lever (see bull levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        },
+        {
+          "name": "Industrial and scientific",
+          "pattern": "new or acquired (APM, Feb 2026)",
+          "periods": {
+            "FY25A": {
+              "value": 0.861,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "Net sales by product/service type, FY25A: Industrial and scientific 0.861 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "FY26A": {
+              "value": 1.513,
+              "tag": "A",
+              "citation": {
+                "id": "A7",
+                "text": "Net sales by product/service type, FY26A: Industrial and scientific 1.513 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "YoY": {
+              "value": 0.757259,
+              "tag": "C",
+              "citation": {
+                "id": "C30",
+                "text": "Industrial and scientific FY26 YoY growth.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "Q1FY27A": {
+              "value": 0.74,
+              "tag": "A",
+              "citation": {
+                "id": "A12",
+                "text": "Net sales by product/service type, Q1FY27A: Industrial and scientific 0.74 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page": "p.21"
+              }
+            },
+            "FY27E": {
+              "value": 2.96,
+              "tag": "C",
+              "citation": {
+                "id": "C42",
+                "text": "bull Industrial and scientific FY27E = base line + lever (see bull levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "FY28E": {
+              "value": 3.108,
+              "tag": "C",
+              "citation": {
+                "id": "C47",
+                "text": "bull Industrial and scientific FY28E = base line + lever (see bull levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        },
+        {
+          "name": "NRE and prototype services",
+          "pattern": "milestone-dependent (NRE; Monogram validation units)",
+          "periods": {
+            "FY25A": {
+              "value": 0.698,
+              "tag": "A",
+              "citation": {
+                "id": "A3",
+                "text": "Net sales by product/service type, FY25A: NRE and prototype services 0.698 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "FY26A": {
+              "value": 1.65,
+              "tag": "A",
+              "citation": {
+                "id": "A8",
+                "text": "Net sales by product/service type, FY26A: NRE and prototype services 1.65 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "YoY": {
+              "value": 1.363897,
+              "tag": "C",
+              "citation": {
+                "id": "C31",
+                "text": "NRE and prototype services FY26 YoY growth.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "Q1FY27A": {
+              "value": 0.236,
+              "tag": "A",
+              "citation": {
+                "id": "A13",
+                "text": "Net sales by product/service type, Q1FY27A: NRE and prototype services 0.236 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page": "p.21"
+              }
+            },
+            "FY27E": {
+              "value": 1.703623,
+              "tag": "C",
+              "citation": {
+                "id": "C43",
+                "text": "bull NRE and prototype services FY27E = base line + lever (see bull levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "FY28E": {
+              "value": 2.254452,
+              "tag": "C",
+              "citation": {
+                "id": "C48",
+                "text": "bull NRE and prototype services FY28E = base line + lever (see bull levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        },
+        {
+          "name": "Repairs",
+          "pattern": "mature or declining (legacy repairs)",
+          "periods": {
+            "FY25A": {
+              "value": 18.586,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Net sales by product/service type, FY25A: Repairs 18.586 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "FY26A": {
+              "value": 12.54,
+              "tag": "A",
+              "citation": {
+                "id": "A9",
+                "text": "Net sales by product/service type, FY26A: Repairs 12.54 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "YoY": {
+              "value": -0.325299,
+              "tag": "C",
+              "citation": {
+                "id": "C32",
+                "text": "Repairs FY26 YoY growth.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "Q1FY27A": {
+              "value": 2.132,
+              "tag": "A",
+              "citation": {
+                "id": "A14",
+                "text": "Net sales by product/service type, Q1FY27A: Repairs 2.132 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page": "p.21"
+              }
+            },
+            "FY27E": {
+              "value": 9.053745,
+              "tag": "C",
+              "citation": {
+                "id": "C44",
+                "text": "bull Repairs FY27E = base line + lever (see bull levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "FY28E": {
+              "value": 7.817639,
+              "tag": "C",
+              "citation": {
+                "id": "C49",
+                "text": "bull Repairs FY28E = base line + lever (see bull levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        },
+        {
+          "name": "Discounts and other",
+          "pattern": "recurring (rebates removed)",
+          "periods": {
+            "FY25A": {
+              "value": -1.299,
+              "tag": "A",
+              "citation": {
+                "id": "A5",
+                "text": "Net sales by product/service type, FY25A: Discounts and other -1.299 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "FY26A": {
+              "value": -0.253,
+              "tag": "A",
+              "citation": {
+                "id": "A10",
+                "text": "Net sales by product/service type, FY26A: Discounts and other -0.253 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "YoY": {
+              "value": -0.805235,
+              "tag": "C",
+              "citation": {
+                "id": "C33",
+                "text": "Discounts and other FY26 YoY growth.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "Q1FY27A": {
+              "value": 0.059,
+              "tag": "A",
+              "citation": {
+                "id": "A15",
+                "text": "Net sales by product/service type, Q1FY27A: Discounts and other 0.059 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page": "p.21"
+              }
+            },
+            "FY27E": {
+              "value": 0.200604,
+              "tag": "C",
+              "citation": {
+                "id": "C45",
+                "text": "bull Discounts and other FY27E = base line + lever (see bull levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "FY28E": {
+              "value": 0.209075,
+              "tag": "C",
+              "citation": {
+                "id": "C50",
+                "text": "bull Discounts and other FY28E = base line + lever (see bull levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        }
+      ],
+      "totals": {
+        "revenue": {
+          "FY25A": {
+            "value": 66.593,
+            "tag": "A",
+            "citation": {
+              "id": "A16",
+              "text": "Net sales FY25A: $66.593 million (total of product/service table).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page": "p.19"
+            }
+          },
+          "FY26A": {
+            "value": 77.548,
+            "tag": "A",
+            "citation": {
+              "id": "A17",
+              "text": "Net sales FY26A: $77.548 million (total of product/service table).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page": "p.19"
+            }
+          },
+          "YoY": {
+            "value": 0.164507,
+            "tag": "C",
+            "citation": {
+              "id": "C34",
+              "text": "Total FY26 YoY growth.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "Q1FY27A": {
+            "value": 20.56,
+            "tag": "A",
+            "citation": {
+              "id": "A18",
+              "text": "Net sales Q1FY27A: $20.56 million (total of product/service table).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+              "page": "p.21"
+            }
+          },
+          "FY27E": {
+            "value": 84.7,
+            "tag": "C",
+            "citation": {
+              "id": "C51",
+              "text": "bull revenue FY27E = sum of lines.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 89.3,
+            "tag": "C",
+            "citation": {
+              "id": "C52",
+              "text": "bull revenue FY28E = sum of lines.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": 12.483,
+            "tag": "C",
+            "citation": {
+              "id": "C1",
+              "text": "EBITDA (defined) = operating income + D&A + stock comp, FY25A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY26A": {
+            "value": 15.073,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "EBITDA (defined) = operating income + D&A + stock comp, FY26A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "YoY": {
+            "value": 0.207482,
+            "tag": "C",
+            "citation": {
+              "id": "C35",
+              "text": "EBITDA FY26 YoY growth.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "Q1FY27A": {
+            "value": 4.053,
+            "tag": "C",
+            "citation": {
+              "id": "C3",
+              "text": "EBITDA (defined) = operating income + D&A + stock comp, Q1FY27A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY27E": {
+            "value": 17.1585,
+            "tag": "C",
+            "citation": {
+              "id": "C53",
+              "text": "bull EBITDA FY27E = revenue x GM - opex + D&A + SBC (opex as base).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 18.36302,
+            "tag": "C",
+            "citation": {
+              "id": "C54",
+              "text": "bull EBITDA FY28E = revenue x GM - opex + D&A + SBC (opex as base).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          }
+        },
+        "gross_margin": {
+          "FY25A": {
+            "value": 0.292974,
+            "tag": "C",
+            "citation": {
+              "id": "C27",
+              "text": "FY25 gross margin.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY26A": {
+            "value": 0.313806,
+            "tag": "C",
+            "citation": {
+              "id": "C28",
+              "text": "FY26 gross margin.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY27E": {
+            "value": 0.335,
+            "tag": "S",
+            "citation": {
+              "id": "S17",
+              "text": "bull gross margin lever: see bull levers",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 0.335,
+            "tag": "S",
+            "citation": {
+              "id": "S17",
+              "text": "bull gross margin lever: see bull levers",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+              "page_status": "unverified"
+            }
+          }
+        },
+        "ebitda_margin": {
+          "FY27E": {
+            "value": 0.20258,
+            "tag": "C",
+            "citation": {
+              "id": "C55",
+              "text": "Bull EBITDA margin FY27E.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 0.205633,
+            "tag": "C",
+            "citation": {
+              "id": "C56",
+              "text": "Bull EBITDA margin FY28E.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          }
+        }
+      },
+      "organic": {
+        "revenue": {
+          "FY26A": {
+            "value": 77.548,
+            "tag": "A",
+            "citation": {
+              "id": "A17",
+              "text": "Net sales FY26A: $77.548 million (total of product/service table).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page": "p.19"
+            }
+          },
+          "FY27E": {
+            "value": 84.7,
+            "tag": "C",
+            "citation": {
+              "id": "C51",
+              "text": "bull revenue FY27E = sum of lines.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 89.3,
+            "tag": "C",
+            "citation": {
+              "id": "C52",
+              "text": "bull revenue FY28E = sum of lines.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          }
+        },
+        "ebitda": {
+          "FY26A": {
+            "value": 15.073,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "EBITDA (defined) = operating income + D&A + stock comp, FY26A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY27E": {
+            "value": 17.1585,
+            "tag": "C",
+            "citation": {
+              "id": "C53",
+              "text": "bull EBITDA FY27E = revenue x GM - opex + D&A + SBC (opex as base).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 18.36302,
+            "tag": "C",
+            "citation": {
+              "id": "C54",
+              "text": "bull EBITDA FY28E = revenue x GM - opex + D&A + SBC (opex as base).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          }
+        }
+      },
+      "finagle": {
+        "note": "Operating-path leaves only. Finagle has NOT been run; awaiting David's revisions.",
+        "sales_growth": {
+          "value": [
+            0.092227,
+            0.054309
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C57",
+            "text": "Bull revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "ebitda_growth": {
+          "value": [
+            0.13836,
+            0.0702
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C58",
+            "text": "Bull EBITDA growth FY27, FY28.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "me": {
+          "value": 0.205633,
+          "tag": "C",
+          "citation": {
+            "id": "C59",
+            "text": "Bull FY28 EBITDA / FY28 revenue.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "mc": {
+          "value": 0.25,
+          "tag": "S",
+          "citation": {
+            "id": "S13",
+            "text": "Contribution margin set against the history window: FY25->FY26 incremental EBITDA/revenue = 0.236; FY24->FY25 = 0.278. No unlaunched product with a stated margin (Helios CMF driver and Monogram program considered, no amount, validation units expected H2 FY27; no annual sales or margin dollars disclosed).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "gsnext": {
+          "value": 0.08,
+          "tag": "S",
+          "citation": {
+            "id": "S18",
+            "text": "bull FY29 growth: contract renewed with higher volume plus Helios CMF customers and Monogram program shipments.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "ebitda_basis": {
+          "value": "total",
+          "tag": "S",
+          "citation": {
+            "id": "S12",
+            "text": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "acquisition_disclosure": {
+          "status": {
+            "value": "none",
+            "tag": "G",
+            "citation": {
+              "id": "G1",
+              "text": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001325/pdex_def14a.htm",
+              "page_status": "unverified"
+            }
+          }
+        }
+      }
+    },
+    "bear": {
+      "lines": [
+        {
+          "name": "Medical devices",
+          "pattern": "mature or declining (largest-customer next-gen handpiece at contract volumes; CMF recurring)",
+          "periods": {
+            "FY25A": {
+              "value": 47.747,
+              "tag": "A",
+              "citation": {
+                "id": "A1",
+                "text": "Net sales by product/service type, FY25A: Medical devices 47.747 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "FY26A": {
+              "value": 62.098,
+              "tag": "A",
+              "citation": {
+                "id": "A6",
+                "text": "Net sales by product/service type, FY26A: Medical devices 62.098 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "YoY": {
+              "value": 0.300563,
+              "tag": "C",
+              "citation": {
+                "id": "C29",
+                "text": "Medical devices FY26 YoY growth.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "Q1FY27A": {
+              "value": 17.393,
+              "tag": "A",
+              "citation": {
+                "id": "A11",
+                "text": "Net sales by product/service type, Q1FY27A: Medical devices 17.393 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page": "p.21"
+              }
+            },
+            "FY27E": {
+              "value": 66.782028,
+              "tag": "C",
+              "citation": {
+                "id": "C60",
+                "text": "bear Medical devices FY27E = base line + lever (see bear levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "FY28E": {
+              "value": 66.910834,
+              "tag": "C",
+              "citation": {
+                "id": "C65",
+                "text": "bear Medical devices FY28E = base line + lever (see bear levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        },
+        {
+          "name": "Industrial and scientific",
+          "pattern": "new or acquired (APM, Feb 2026)",
+          "periods": {
+            "FY25A": {
+              "value": 0.861,
+              "tag": "A",
+              "citation": {
+                "id": "A2",
+                "text": "Net sales by product/service type, FY25A: Industrial and scientific 0.861 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "FY26A": {
+              "value": 1.513,
+              "tag": "A",
+              "citation": {
+                "id": "A7",
+                "text": "Net sales by product/service type, FY26A: Industrial and scientific 1.513 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "YoY": {
+              "value": 0.757259,
+              "tag": "C",
+              "citation": {
+                "id": "C30",
+                "text": "Industrial and scientific FY26 YoY growth.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "Q1FY27A": {
+              "value": 0.74,
+              "tag": "A",
+              "citation": {
+                "id": "A12",
+                "text": "Net sales by product/service type, Q1FY27A: Industrial and scientific 0.74 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page": "p.21"
+              }
+            },
+            "FY27E": {
+              "value": 2.96,
+              "tag": "C",
+              "citation": {
+                "id": "C61",
+                "text": "bear Industrial and scientific FY27E = base line + lever (see bear levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "FY28E": {
+              "value": 3.108,
+              "tag": "C",
+              "citation": {
+                "id": "C66",
+                "text": "bear Industrial and scientific FY28E = base line + lever (see bear levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        },
+        {
+          "name": "NRE and prototype services",
+          "pattern": "milestone-dependent (NRE; Monogram validation units)",
+          "periods": {
+            "FY25A": {
+              "value": 0.698,
+              "tag": "A",
+              "citation": {
+                "id": "A3",
+                "text": "Net sales by product/service type, FY25A: NRE and prototype services 0.698 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "FY26A": {
+              "value": 1.65,
+              "tag": "A",
+              "citation": {
+                "id": "A8",
+                "text": "Net sales by product/service type, FY26A: NRE and prototype services 1.65 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "YoY": {
+              "value": 1.363897,
+              "tag": "C",
+              "citation": {
+                "id": "C31",
+                "text": "NRE and prototype services FY26 YoY growth.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "Q1FY27A": {
+              "value": 0.236,
+              "tag": "A",
+              "citation": {
+                "id": "A13",
+                "text": "Net sales by product/service type, Q1FY27A: NRE and prototype services 0.236 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page": "p.21"
+              }
+            },
+            "FY27E": {
+              "value": 1.203623,
+              "tag": "C",
+              "citation": {
+                "id": "C62",
+                "text": "bear NRE and prototype services FY27E = base line + lever (see bear levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "FY28E": {
+              "value": 1.254452,
+              "tag": "C",
+              "citation": {
+                "id": "C67",
+                "text": "bear NRE and prototype services FY28E = base line + lever (see bear levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        },
+        {
+          "name": "Repairs",
+          "pattern": "mature or declining (legacy repairs)",
+          "periods": {
+            "FY25A": {
+              "value": 18.586,
+              "tag": "A",
+              "citation": {
+                "id": "A4",
+                "text": "Net sales by product/service type, FY25A: Repairs 18.586 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "FY26A": {
+              "value": 12.54,
+              "tag": "A",
+              "citation": {
+                "id": "A9",
+                "text": "Net sales by product/service type, FY26A: Repairs 12.54 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "YoY": {
+              "value": -0.325299,
+              "tag": "C",
+              "citation": {
+                "id": "C32",
+                "text": "Repairs FY26 YoY growth.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "Q1FY27A": {
+              "value": 2.132,
+              "tag": "A",
+              "citation": {
+                "id": "A14",
+                "text": "Net sales by product/service type, Q1FY27A: Repairs 2.132 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page": "p.21"
+              }
+            },
+            "FY27E": {
+              "value": 7.553745,
+              "tag": "C",
+              "citation": {
+                "id": "C63",
+                "text": "bear Repairs FY27E = base line + lever (see bear levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "FY28E": {
+              "value": 5.817639,
+              "tag": "C",
+              "citation": {
+                "id": "C68",
+                "text": "bear Repairs FY28E = base line + lever (see bear levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        },
+        {
+          "name": "Discounts and other",
+          "pattern": "recurring (rebates removed)",
+          "periods": {
+            "FY25A": {
+              "value": -1.299,
+              "tag": "A",
+              "citation": {
+                "id": "A5",
+                "text": "Net sales by product/service type, FY25A: Discounts and other -1.299 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "FY26A": {
+              "value": -0.253,
+              "tag": "A",
+              "citation": {
+                "id": "A10",
+                "text": "Net sales by product/service type, FY26A: Discounts and other -0.253 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page": "p.19"
+              }
+            },
+            "YoY": {
+              "value": -0.805235,
+              "tag": "C",
+              "citation": {
+                "id": "C33",
+                "text": "Discounts and other FY26 YoY growth.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "Q1FY27A": {
+              "value": 0.059,
+              "tag": "A",
+              "citation": {
+                "id": "A15",
+                "text": "Net sales by product/service type, Q1FY27A: Discounts and other 0.059 (US$ thousands /1000).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page": "p.21"
+              }
+            },
+            "FY27E": {
+              "value": 0.200604,
+              "tag": "C",
+              "citation": {
+                "id": "C64",
+                "text": "bear Discounts and other FY27E = base line + lever (see bear levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "FY28E": {
+              "value": 0.209075,
+              "tag": "C",
+              "citation": {
+                "id": "C69",
+                "text": "bear Discounts and other FY28E = base line + lever (see bear levers).",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        }
+      ],
+      "totals": {
+        "revenue": {
+          "FY25A": {
+            "value": 66.593,
+            "tag": "A",
+            "citation": {
+              "id": "A16",
+              "text": "Net sales FY25A: $66.593 million (total of product/service table).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page": "p.19"
+            }
+          },
+          "FY26A": {
+            "value": 77.548,
+            "tag": "A",
+            "citation": {
+              "id": "A17",
+              "text": "Net sales FY26A: $77.548 million (total of product/service table).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page": "p.19"
+            }
+          },
+          "YoY": {
+            "value": 0.164507,
+            "tag": "C",
+            "citation": {
+              "id": "C34",
+              "text": "Total FY26 YoY growth.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "Q1FY27A": {
+            "value": 20.56,
+            "tag": "A",
+            "citation": {
+              "id": "A18",
+              "text": "Net sales Q1FY27A: $20.56 million (total of product/service table).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+              "page": "p.21"
+            }
+          },
+          "FY27E": {
+            "value": 78.7,
+            "tag": "C",
+            "citation": {
+              "id": "C70",
+              "text": "bear revenue FY27E = sum of lines.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 77.3,
+            "tag": "C",
+            "citation": {
+              "id": "C71",
+              "text": "bear revenue FY28E = sum of lines.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          }
+        },
+        "ebitda": {
+          "FY25A": {
+            "value": 12.483,
+            "tag": "C",
+            "citation": {
+              "id": "C1",
+              "text": "EBITDA (defined) = operating income + D&A + stock comp, FY25A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY26A": {
+            "value": 15.073,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "EBITDA (defined) = operating income + D&A + stock comp, FY26A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "YoY": {
+            "value": 0.207482,
+            "tag": "C",
+            "citation": {
+              "id": "C35",
+              "text": "EBITDA FY26 YoY growth.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "Q1FY27A": {
+            "value": 4.053,
+            "tag": "C",
+            "citation": {
+              "id": "C3",
+              "text": "EBITDA (defined) = operating income + D&A + stock comp, Q1FY27A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY27E": {
+            "value": 13.181,
+            "tag": "C",
+            "citation": {
+              "id": "C72",
+              "text": "bear EBITDA FY27E = revenue x GM - opex + D&A + SBC (opex as base).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 12.41052,
+            "tag": "C",
+            "citation": {
+              "id": "C73",
+              "text": "bear EBITDA FY28E = revenue x GM - opex + D&A + SBC (opex as base).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          }
+        },
+        "gross_margin": {
+          "FY25A": {
+            "value": 0.292974,
+            "tag": "C",
+            "citation": {
+              "id": "C27",
+              "text": "FY25 gross margin.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY26A": {
+            "value": 0.313806,
+            "tag": "C",
+            "citation": {
+              "id": "C28",
+              "text": "FY26 gross margin.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY27E": {
+            "value": 0.31,
+            "tag": "S",
+            "citation": {
+              "id": "S19",
+              "text": "bear gross margin lever: see bear levers",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 0.31,
+            "tag": "S",
+            "citation": {
+              "id": "S19",
+              "text": "bear gross margin lever: see bear levers",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+              "page_status": "unverified"
+            }
+          }
+        },
+        "ebitda_margin": {
+          "FY27E": {
+            "value": 0.167484,
+            "tag": "C",
+            "citation": {
+              "id": "C74",
+              "text": "Bear EBITDA margin FY27E.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 0.16055,
+            "tag": "C",
+            "citation": {
+              "id": "C75",
+              "text": "Bear EBITDA margin FY28E.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          }
+        }
+      },
+      "organic": {
+        "revenue": {
+          "FY26A": {
+            "value": 77.548,
+            "tag": "A",
+            "citation": {
+              "id": "A17",
+              "text": "Net sales FY26A: $77.548 million (total of product/service table).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page": "p.19"
+            }
+          },
+          "FY27E": {
+            "value": 78.7,
+            "tag": "C",
+            "citation": {
+              "id": "C70",
+              "text": "bear revenue FY27E = sum of lines.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 77.3,
+            "tag": "C",
+            "citation": {
+              "id": "C71",
+              "text": "bear revenue FY28E = sum of lines.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          }
+        },
+        "ebitda": {
+          "FY26A": {
+            "value": 15.073,
+            "tag": "C",
+            "citation": {
+              "id": "C2",
+              "text": "EBITDA (defined) = operating income + D&A + stock comp, FY26A.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY27E": {
+            "value": 13.181,
+            "tag": "C",
+            "citation": {
+              "id": "C72",
+              "text": "bear EBITDA FY27E = revenue x GM - opex + D&A + SBC (opex as base).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          },
+          "FY28E": {
+            "value": 12.41052,
+            "tag": "C",
+            "citation": {
+              "id": "C73",
+              "text": "bear EBITDA FY28E = revenue x GM - opex + D&A + SBC (opex as base).",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+              "page_status": "unverified"
+            }
+          }
+        }
+      },
+      "finagle": {
+        "note": "Operating-path leaves only. Finagle has NOT been run; awaiting David's revisions.",
+        "sales_growth": {
+          "value": [
+            0.014855,
+            -0.017789
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C76",
+            "text": "Bear revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "ebitda_growth": {
+          "value": [
+            -0.125522,
+            -0.058454
+          ],
+          "tag": "C",
+          "citation": {
+            "id": "C77",
+            "text": "Bear EBITDA growth FY27, FY28.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "me": {
+          "value": 0.16055,
+          "tag": "C",
+          "citation": {
+            "id": "C78",
+            "text": "Bear FY28 EBITDA / FY28 revenue.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "mc": {
+          "value": 0.25,
+          "tag": "S",
+          "citation": {
+            "id": "S13",
+            "text": "Contribution margin set against the history window: FY25->FY26 incremental EBITDA/revenue = 0.236; FY24->FY25 = 0.278. No unlaunched product with a stated margin (Helios CMF driver and Monogram program considered, no amount, validation units expected H2 FY27; no annual sales or margin dollars disclosed).",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "gsnext": {
+          "value": -0.1,
+          "tag": "S",
+          "citation": {
+            "id": "S20",
+            "text": "bear FY29 growth: largest customer (78% of FY26 sales) not renewed at similar terms after calendar 2028.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page": "p.19"
+          }
+        },
+        "ebitda_basis": {
+          "value": "total",
+          "tag": "S",
+          "citation": {
+            "id": "S12",
+            "text": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "acquisition_disclosure": {
+          "status": {
+            "value": "none",
+            "tag": "G",
+            "citation": {
+              "id": "G1",
+              "text": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named.",
+              "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001325/pdex_def14a.htm",
+              "page_status": "unverified"
+            }
+          }
+        }
+      }
+    }
+  },
+  "lever_notes": {
+    "bull": {
+      "value": "lever",
+      "tag": "S",
+      "citation": {
+        "id": "S15",
+        "text": "Bull levers: ortho +1.0/+1.0 (faster next-gen pull-through, finish supplier back on schedule); repairs +0.5/+0.5 (billable next-gen repairs ramp); NRE/new products +0.5/+1.0 (Monogram validation units, Helios CMF); gross margin at Q1 FY27 level 33.5%.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+        "page": "p.21"
+      }
+    },
+    "bear": {
+      "value": "lever",
+      "tag": "S",
+      "citation": {
+        "id": "S16",
+        "text": "Bear levers: ortho -3.0 FY27 (10-Q: exclusive finish supplier delays, 'risk that we may fall behind in our shipments') and -8.0 FY28 (customer reduces orders ahead of contract end / dual sourcing); repairs -1.0/-1.5 (legacy repair decline faster); gross margin 31.0% (FY26 level 31.4% with tariff/indirect cost pressure as in Q4 FY25).",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+        "page": "p.21"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "D1",
+      "text": "Pro-Dex, Form 10-K for fiscal year ended June 30, 2026 (filed 2026-09-03): https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm"
+    },
+    {
+      "id": "D2",
+      "text": "Pro-Dex, Form 10-Q for quarter ended Sept 30, 2026 (filed 2026-10-29): https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm"
+    },
+    {
+      "id": "D3",
+      "text": "Pro-Dex, Q1 FY27 earnings release, 8-K Ex.99.1 (2026-10-29): https://www.sec.gov/Archives/edgar/data/788920/000107997326001411/ex99x1.htm"
+    },
+    {
+      "id": "D4",
+      "text": "Pro-Dex, Q4/FY26 earnings release, 8-K (2026-09-03): https://www.sec.gov/Archives/edgar/data/788920/000107997326001216/0001079973-26-001216-index.htm"
+    },
+    {
+      "id": "D5",
+      "text": "Pro-Dex, Q3 FY26 earnings release, 8-K (2026-04-30): https://www.sec.gov/Archives/edgar/data/788920/000107997326000581/0001079973-26-000581-index.htm"
+    },
+    {
+      "id": "D6",
+      "text": "Pro-Dex, Q2 FY26 earnings release, 8-K (2026-01-29): https://www.sec.gov/Archives/edgar/data/788920/000107997326000141/0001079973-26-000141-index.htm"
+    },
+    {
+      "id": "D7",
+      "text": "Pro-Dex, Q1 FY26 earnings release, 8-K (2025-10-30): https://www.sec.gov/Archives/edgar/data/788920/000107997325001656/0001079973-25-001656-index.htm"
+    },
+    {
+      "id": "D8",
+      "text": "Pro-Dex, Q4/FY25 earnings release, 8-K (2025-09-04): https://www.sec.gov/Archives/edgar/data/788920/000107997325001427/0001079973-25-001427-index.htm"
+    },
+    {
+      "id": "D9",
+      "text": "Pro-Dex, Q3 FY25 earnings release, 8-K (2025-05-01): https://www.sec.gov/Archives/edgar/data/788920/000107997325000730/0001079973-25-000730-index.htm"
+    },
+    {
+      "id": "D10",
+      "text": "Pro-Dex, Q2 FY25 earnings release, 8-K Ex.99.1 (2025-01-30): https://www.sec.gov/Archives/edgar/data/788920/000107997325000165/ex99x1.htm"
+    },
+    {
+      "id": "D11",
+      "text": "Pro-Dex, Q1 FY25 earnings release, 8-K Ex.99.1 (2024-10-31): https://www.sec.gov/Archives/edgar/data/788920/000107997324001463/ex99x1.htm"
+    },
+    {
+      "id": "D12",
+      "text": "SEC XBRL companyfacts for CIK 788920 (quarterly and year-to-date tags used to derive Q2-Q4 D&A and SBC): https://data.sec.gov/api/xbrl/companyfacts/CIK0000788920.json"
+    },
+    {
+      "id": "D13",
+      "text": "Equibles, PDEX compiled analyst estimates; re-opened November 7, 2026; provider capture October 30, 2026 at 12:17 EDT (America/Toronto); analyst publication dates not stated: https://equibles.com/stocks/pdex/analyst-estimates"
+    },
+    {
+      "id": "D14",
+      "text": "Pro-Dex, DEF 14A proxy (2026-10-06), CEO shareholder letter: https://www.sec.gov/Archives/edgar/data/788920/000107997326001325/pdex_def14a.htm"
+    },
+    {
+      "id": "D15",
+      "text": "Pro-Dex, DEF 14A proxy (2025-10-07), CEO shareholder letter: https://www.sec.gov/Archives/edgar/data/788920/000107997325001567/pdex_def14a.htm"
+    },
+    {
+      "id": "D16",
+      "text": "ChartMill, PDEX analyst estimates page (pre-FY26 print; EBITDA estimate considered, not used): https://www.chartmill.com/stock/quote/PDEX/analyst-ratings"
+    },
+    {
+      "id": "A1",
+      "document": "D1",
+      "text": "Net sales by product/service type, FY25A: Medical devices 47.747 (US$ thousands /1000).",
+      "page": "p.19"
+    },
+    {
+      "id": "A2",
+      "document": "D1",
+      "text": "Net sales by product/service type, FY25A: Industrial and scientific 0.861 (US$ thousands /1000).",
+      "page": "p.19"
+    },
+    {
+      "id": "A3",
+      "document": "D1",
+      "text": "Net sales by product/service type, FY25A: NRE and prototype services 0.698 (US$ thousands /1000).",
+      "page": "p.19"
+    },
+    {
+      "id": "A4",
+      "document": "D1",
+      "text": "Net sales by product/service type, FY25A: Repairs 18.586 (US$ thousands /1000).",
+      "page": "p.19"
+    },
+    {
+      "id": "A5",
+      "document": "D1",
+      "text": "Net sales by product/service type, FY25A: Discounts and other -1.299 (US$ thousands /1000).",
+      "page": "p.19"
+    },
+    {
+      "id": "A6",
+      "document": "D1",
+      "text": "Net sales by product/service type, FY26A: Medical devices 62.098 (US$ thousands /1000).",
+      "page": "p.19"
+    },
+    {
+      "id": "A7",
+      "document": "D1",
+      "text": "Net sales by product/service type, FY26A: Industrial and scientific 1.513 (US$ thousands /1000).",
+      "page": "p.19"
+    },
+    {
+      "id": "A8",
+      "document": "D1",
+      "text": "Net sales by product/service type, FY26A: NRE and prototype services 1.65 (US$ thousands /1000).",
+      "page": "p.19"
+    },
+    {
+      "id": "A9",
+      "document": "D1",
+      "text": "Net sales by product/service type, FY26A: Repairs 12.54 (US$ thousands /1000).",
+      "page": "p.19"
+    },
+    {
+      "id": "A10",
+      "document": "D1",
+      "text": "Net sales by product/service type, FY26A: Discounts and other -0.253 (US$ thousands /1000).",
+      "page": "p.19"
+    },
+    {
+      "id": "A11",
+      "document": "D2",
+      "text": "Net sales by product/service type, Q1FY27A: Medical devices 17.393 (US$ thousands /1000).",
+      "page": "p.21"
+    },
+    {
+      "id": "A12",
+      "document": "D2",
+      "text": "Net sales by product/service type, Q1FY27A: Industrial and scientific 0.74 (US$ thousands /1000).",
+      "page": "p.21"
+    },
+    {
+      "id": "A13",
+      "document": "D2",
+      "text": "Net sales by product/service type, Q1FY27A: NRE and prototype services 0.236 (US$ thousands /1000).",
+      "page": "p.21"
+    },
+    {
+      "id": "A14",
+      "document": "D2",
+      "text": "Net sales by product/service type, Q1FY27A: Repairs 2.132 (US$ thousands /1000).",
+      "page": "p.21"
+    },
+    {
+      "id": "A15",
+      "document": "D2",
+      "text": "Net sales by product/service type, Q1FY27A: Discounts and other 0.059 (US$ thousands /1000).",
+      "page": "p.21"
+    },
+    {
+      "id": "A16",
+      "document": "D1",
+      "text": "Net sales FY25A: $66.593 million (total of product/service table).",
+      "page": "p.19"
+    },
+    {
+      "id": "A17",
+      "document": "D1",
+      "text": "Net sales FY26A: $77.548 million (total of product/service table).",
+      "page": "p.19"
+    },
+    {
+      "id": "A18",
+      "document": "D2",
+      "text": "Net sales Q1FY27A: $20.56 million (total of product/service table).",
+      "page": "p.21"
+    },
+    {
+      "id": "A19",
+      "document": "D1",
+      "text": "Operating income FY25A."
+    },
+    {
+      "id": "A20",
+      "document": "D1",
+      "text": "Operating income FY26A."
+    },
+    {
+      "id": "A21",
+      "document": "D3",
+      "text": "Operating income Q1FY27A."
+    },
+    {
+      "id": "A22",
+      "document": "D1",
+      "text": "Depreciation and amortization (cash flow statement) FY25A."
+    },
+    {
+      "id": "A23",
+      "document": "D1",
+      "text": "Depreciation and amortization (cash flow statement) FY26A."
+    },
+    {
+      "id": "A24",
+      "document": "D2",
+      "text": "Depreciation and amortization (cash flow statement) Q1FY27A."
+    },
+    {
+      "id": "A25",
+      "document": "D1",
+      "text": "Share-based compensation (cash flow statement) FY25A."
+    },
+    {
+      "id": "A26",
+      "document": "D1",
+      "text": "Share-based compensation (cash flow statement) FY26A."
+    },
+    {
+      "id": "A27",
+      "document": "D2",
+      "text": "Share-based compensation (cash flow statement) Q1FY27A."
+    },
+    {
+      "id": "A28",
+      "document": "D1",
+      "text": "Gross profit FY25A."
+    },
+    {
+      "id": "A29",
+      "document": "D1",
+      "text": "Gross profit FY26A."
+    },
+    {
+      "id": "A30",
+      "document": "D3",
+      "text": "Gross profit Q1FY27A."
+    },
+    {
+      "id": "C1",
+      "document": "D1",
+      "text": "EBITDA (defined) = operating income + D&A + stock comp, FY25A.",
+      "inputs": [
+        "A19",
+        "A22",
+        "A25"
+      ]
+    },
+    {
+      "id": "C2",
+      "document": "D1",
+      "text": "EBITDA (defined) = operating income + D&A + stock comp, FY26A.",
+      "inputs": [
+        "A20",
+        "A23",
+        "A26"
+      ]
+    },
+    {
+      "id": "C3",
+      "document": "D1",
+      "text": "EBITDA (defined) = operating income + D&A + stock comp, Q1FY27A.",
+      "inputs": [
+        "A21",
+        "A24",
+        "A27"
+      ]
+    },
+    {
+      "id": "C4",
+      "document": "D12",
+      "text": "Trailing-four-quarter gross margin Q2 FY26-Q1 FY27: GP (5.743+6.133+7.091+6.857)/net sales (18.663+19.949+20.405+20.560); Q4 FY26 = FY26 less 9M.",
+      "inputs": [
+        "D12",
+        "D3"
+      ]
+    },
+    {
+      "id": "A31",
+      "document": "D3",
+      "text": "Total operating expenses, three months ended Sept 30, 2026: 3,342 (US$ thousands)."
+    },
+    {
+      "id": "C5",
+      "document": "D3",
+      "text": "FY27 operating expense = Q1 FY27 run rate x4; Q1 has no remaining APM acquisition-related costs ($0.434M was FY26) and no company-flagged one-time; integration costs not separately disclosed so left in run rate [P1][A40][A35][G14].",
+      "inputs": [
+        "A31"
+      ]
+    },
+    {
+      "id": "S1",
+      "document": "D3",
+      "text": "Opex inflation into FY28: personnel build (accounting, M&A, HR, IT) named in Q1 FY27 release and Irvine lease step-ups of 3.5% from Oct 2027 (8-K 2026-09-18). Judgment."
+    },
+    {
+      "id": "C6",
+      "document": "D3",
+      "text": "FY28 opex = FY27 opex x (1 + inflation).",
+      "inputs": [
+        "C5",
+        "S1"
+      ]
+    },
+    {
+      "id": "C7",
+      "document": "D2",
+      "text": "D&A + SBC add-back FY27 = Q1 FY27 (0.403 + 0.135) x4.",
+      "inputs": [
+        "A24",
+        "A27"
+      ]
+    },
+    {
+      "id": "C8",
+      "document": "D2",
+      "text": "D&A + SBC add-back FY28 = FY27 x1.03.",
+      "inputs": [
+        "C7",
+        "S1"
+      ]
+    },
+    {
+      "id": "S2",
+      "document": "D2",
+      "text": "Medical devices FY27: Q1 FY27 x4. 10-Q: 'We expect to see similar sales volumes of our largest customer's next generation and legacy handpiece for the remainder of this fiscal year.' Backlog $42.4M due in rest of FY27.",
+      "page": "p.21"
+    },
+    {
+      "id": "S3",
+      "document": "D1",
+      "text": "Medical devices FY28: FY27 +3%. 10-K: 'we expect to see similar levels of revenue reported in orthopedic sales through 2028'; growth from CMF distributors (+39% in Q1 FY27) only.",
+      "page": "p.19"
+    },
+    {
+      "id": "S4",
+      "document": "D2",
+      "text": "Industrial and scientific FY27: Q1 FY27 x4 (APM third-party sales; acquired Feb 2026).",
+      "page": "p.21"
+    },
+    {
+      "id": "S5",
+      "document": "D2",
+      "text": "Industrial and scientific FY28: +5%, APM defence/aerospace machining; no company guide.",
+      "page": "p.21"
+    },
+    {
+      "id": "S6",
+      "document": "D2",
+      "text": "NRE FY27: between Q1 FY27 run rate (0.236 x4) and FY26 1.65; 10-Q: NRE 'can vary significantly from quarter to quarter'; Monogram validation units expected in H2 FY27 (January\u2013June 2027), not separately sized; billable engineering and hardware sales must not be conflated.",
+      "page": "p.21"
+    },
+    {
+      "id": "S7",
+      "document": "D2",
+      "text": "NRE FY28 held at FY27; no stated program amounts.",
+      "page": "p.21"
+    },
+    {
+      "id": "S8",
+      "document": "D2",
+      "text": "Repairs FY27: Q1 FY27 x4; legacy repair decline ('we may continue to see declines') offset by start of billable next-gen repairs (10-K: 'we do not know yet at what volumes').",
+      "page": "p.21"
+    },
+    {
+      "id": "S9",
+      "document": "D1",
+      "text": "Repairs FY28: legacy repairs keep falling as customer replaces legacy handpieces; next-gen repairs partly offset.",
+      "page": "p.19"
+    },
+    {
+      "id": "S10",
+      "document": "D2",
+      "text": "Discounts and other FY27: volume rebates removed by contract extension (10-Q: 'no longer includes volume rebates'); Q1 +0.059.",
+      "page": "p.22"
+    },
+    {
+      "id": "S11",
+      "document": "D2",
+      "text": "Discounts and other FY28 held at FY27.",
+      "page": "p.22"
+    },
+    {
+      "id": "C9",
+      "document": "D2",
+      "text": "Bottom-up revenue FY27E = sum of unscaled lines.",
+      "inputs": [
+        "S2",
+        "S4",
+        "S6",
+        "S8",
+        "S10"
+      ]
+    },
+    {
+      "id": "C10",
+      "document": "D2",
+      "text": "Bottom-up revenue FY28E = sum of unscaled lines.",
+      "inputs": [
+        "S3",
+        "S5",
+        "S7",
+        "S9",
+        "S11"
+      ]
+    },
+    {
+      "id": "E1",
+      "document": "D13",
+      "text": "Equibles compiled consensus, FY ending 2027-06-30 Revenue average 82.70M, 1 analyst, publication date not stated; provider capture October 30, 2026 at 12:17 EDT (America/Toronto); re-opened November 7; analyst publication date unknown."
+    },
+    {
+      "id": "E2",
+      "document": "D13",
+      "text": "Equibles compiled consensus, FY ending 2028-06-30 Revenue average 86.80M, 1 analyst, publication date not stated; provider capture October 30, 2026 at 12:17 EDT (America/Toronto); re-opened November 7; analyst publication date unknown."
+    },
+    {
+      "id": "C11",
+      "document": "D13",
+      "text": "Scale factor FY27E = (Consensus - acquired APM line) / (bottom-up - APM line).",
+      "inputs": [
+        "E1",
+        "S4",
+        "C9"
+      ]
+    },
+    {
+      "id": "C12",
+      "document": "D13",
+      "text": "Medical devices FY27E scaled to Consensus (APM line unscaled).",
+      "inputs": [
+        "S2",
+        "C11"
+      ]
+    },
+    {
+      "id": "C13",
+      "document": "D13",
+      "text": "Industrial and scientific FY27E scaled to Consensus (APM line unscaled).",
+      "inputs": [
+        "S4",
+        "C11"
+      ]
+    },
+    {
+      "id": "C14",
+      "document": "D13",
+      "text": "NRE and prototype services FY27E scaled to Consensus (APM line unscaled).",
+      "inputs": [
+        "S6",
+        "C11"
+      ]
+    },
+    {
+      "id": "C15",
+      "document": "D13",
+      "text": "Repairs FY27E scaled to Consensus (APM line unscaled).",
+      "inputs": [
+        "S8",
+        "C11"
+      ]
+    },
+    {
+      "id": "C16",
+      "document": "D13",
+      "text": "Discounts and other FY27E scaled to Consensus (APM line unscaled).",
+      "inputs": [
+        "S10",
+        "C11"
+      ]
+    },
+    {
+      "id": "C17",
+      "document": "D13",
+      "text": "Scale factor FY28E = (Consensus - acquired APM line) / (bottom-up - APM line).",
+      "inputs": [
+        "E2",
+        "S5",
+        "C10"
+      ]
+    },
+    {
+      "id": "C18",
+      "document": "D13",
+      "text": "Medical devices FY28E scaled to Consensus (APM line unscaled).",
+      "inputs": [
+        "S3",
+        "C17"
+      ]
+    },
+    {
+      "id": "C19",
+      "document": "D13",
+      "text": "Industrial and scientific FY28E scaled to Consensus (APM line unscaled).",
+      "inputs": [
+        "S5",
+        "C17"
+      ]
+    },
+    {
+      "id": "C20",
+      "document": "D13",
+      "text": "NRE and prototype services FY28E scaled to Consensus (APM line unscaled).",
+      "inputs": [
+        "S7",
+        "C17"
+      ]
+    },
+    {
+      "id": "C21",
+      "document": "D13",
+      "text": "Repairs FY28E scaled to Consensus (APM line unscaled).",
+      "inputs": [
+        "S9",
+        "C17"
+      ]
+    },
+    {
+      "id": "C22",
+      "document": "D13",
+      "text": "Discounts and other FY28E scaled to Consensus (APM line unscaled).",
+      "inputs": [
+        "S11",
+        "C17"
+      ]
+    },
+    {
+      "id": "C23",
+      "document": "D3",
+      "text": "EBITDA FY27E (base, cost build on Consensus revenue) = revenue x TTM gross margin - opex + D&A + SBC.",
+      "inputs": [
+        "E1",
+        "C4",
+        "C5",
+        "C7"
+      ]
+    },
+    {
+      "id": "C24",
+      "document": "D3",
+      "text": "EBITDA FY28E (base, cost build on Consensus revenue) = revenue x TTM gross margin - opex + D&A + SBC.",
+      "inputs": [
+        "E2",
+        "C4",
+        "C6",
+        "C8"
+      ]
+    },
+    {
+      "id": "C25",
+      "document": "D3",
+      "text": "Bottom-up EBITDA FY27E = cost build on unscaled line revenue.",
+      "inputs": [
+        "C9",
+        "C4"
+      ]
+    },
+    {
+      "id": "C26",
+      "document": "D3",
+      "text": "Bottom-up EBITDA FY28E = cost build on unscaled line revenue.",
+      "inputs": [
+        "C10",
+        "C4"
+      ]
+    },
+    {
+      "id": "C27",
+      "document": "D1",
+      "text": "FY25 gross margin.",
+      "inputs": [
+        "A28",
+        "A16"
+      ]
+    },
+    {
+      "id": "C28",
+      "document": "D1",
+      "text": "FY26 gross margin.",
+      "inputs": [
+        "A29",
+        "A17"
+      ]
+    },
+    {
+      "id": "C29",
+      "document": "D1",
+      "text": "Medical devices FY26 YoY growth.",
+      "inputs": [
+        "A1",
+        "A6"
+      ]
+    },
+    {
+      "id": "C30",
+      "document": "D1",
+      "text": "Industrial and scientific FY26 YoY growth.",
+      "inputs": [
+        "A2",
+        "A7"
+      ]
+    },
+    {
+      "id": "C31",
+      "document": "D1",
+      "text": "NRE and prototype services FY26 YoY growth.",
+      "inputs": [
+        "A3",
+        "A8"
+      ]
+    },
+    {
+      "id": "C32",
+      "document": "D1",
+      "text": "Repairs FY26 YoY growth.",
+      "inputs": [
+        "A4",
+        "A9"
+      ]
+    },
+    {
+      "id": "C33",
+      "document": "D1",
+      "text": "Discounts and other FY26 YoY growth.",
+      "inputs": [
+        "A5",
+        "A10"
+      ]
+    },
+    {
+      "id": "C34",
+      "document": "D1",
+      "text": "Total FY26 YoY growth.",
+      "inputs": [
+        "A16",
+        "A17"
+      ]
+    },
+    {
+      "id": "C35",
+      "document": "D1",
+      "text": "EBITDA FY26 YoY growth.",
+      "inputs": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "id": "C36",
+      "document": "D1",
+      "text": "Base EBITDA margin FY27E.",
+      "inputs": [
+        "C23",
+        "E1"
+      ]
+    },
+    {
+      "id": "C37",
+      "document": "D1",
+      "text": "Base EBITDA margin FY28E.",
+      "inputs": [
+        "C24",
+        "E2"
+      ]
+    },
+    {
+      "id": "C38",
+      "document": "D1",
+      "text": "Base revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A).",
+      "inputs": [
+        "A17",
+        "E1",
+        "E2"
+      ]
+    },
+    {
+      "id": "C39",
+      "document": "D1",
+      "text": "Base EBITDA growth FY27, FY28.",
+      "inputs": [
+        "C2",
+        "C23",
+        "C24"
+      ]
+    },
+    {
+      "id": "C40",
+      "document": "D1",
+      "text": "Base FY28 EBITDA / FY28 revenue.",
+      "inputs": [
+        "C24",
+        "E2"
+      ]
+    },
+    {
+      "id": "S12",
+      "document": "D1",
+      "text": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total."
+    },
+    {
+      "id": "G1",
+      "document": "D14",
+      "text": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named."
+    },
+    {
+      "id": "S13",
+      "document": "D1",
+      "text": "Contribution margin set against the history window: FY25->FY26 incremental EBITDA/revenue = 0.236; FY24->FY25 = 0.278. No unlaunched product with a stated margin (Helios CMF driver and Monogram program considered, no amount, validation units expected H2 FY27; no annual sales or margin dollars disclosed)."
+    },
+    {
+      "id": "S14",
+      "document": "D1",
+      "text": "FY29 sales growth: largest-customer contract runs 'through calendar 2028' (mid-FY29) with 'similar levels of revenue'; renewal not disclosed. Helios CMF and Monogram considered, no amounts, so not moved.",
+      "page": "p.19"
+    },
+    {
+      "id": "S15",
+      "document": "D2",
+      "text": "Bull levers: ortho +1.0/+1.0 (faster next-gen pull-through, finish supplier back on schedule); repairs +0.5/+0.5 (billable next-gen repairs ramp); NRE/new products +0.5/+1.0 (Monogram validation units, Helios CMF); gross margin at Q1 FY27 level 33.5%.",
+      "page": "p.21"
+    },
+    {
+      "id": "S16",
+      "document": "D2",
+      "text": "Bear levers: ortho -3.0 FY27 (10-Q: exclusive finish supplier delays, 'risk that we may fall behind in our shipments') and -8.0 FY28 (customer reduces orders ahead of contract end / dual sourcing); repairs -1.0/-1.5 (legacy repair decline faster); gross margin 31.0% (FY26 level 31.4% with tariff/indirect cost pressure as in Q4 FY25).",
+      "page": "p.21"
+    },
+    {
+      "id": "C41",
+      "document": "D1",
+      "text": "bull Medical devices FY27E = base line + lever (see bull levers).",
+      "inputs": [
+        "C12",
+        "S15"
+      ]
+    },
+    {
+      "id": "C42",
+      "document": "D1",
+      "text": "bull Industrial and scientific FY27E = base line + lever (see bull levers).",
+      "inputs": [
+        "C13",
+        "S15"
+      ]
+    },
+    {
+      "id": "C43",
+      "document": "D1",
+      "text": "bull NRE and prototype services FY27E = base line + lever (see bull levers).",
+      "inputs": [
+        "C14",
+        "S15"
+      ]
+    },
+    {
+      "id": "C44",
+      "document": "D1",
+      "text": "bull Repairs FY27E = base line + lever (see bull levers).",
+      "inputs": [
+        "C15",
+        "S15"
+      ]
+    },
+    {
+      "id": "C45",
+      "document": "D1",
+      "text": "bull Discounts and other FY27E = base line + lever (see bull levers).",
+      "inputs": [
+        "C16",
+        "S15"
+      ]
+    },
+    {
+      "id": "C46",
+      "document": "D1",
+      "text": "bull Medical devices FY28E = base line + lever (see bull levers).",
+      "inputs": [
+        "C18",
+        "S15"
+      ]
+    },
+    {
+      "id": "C47",
+      "document": "D1",
+      "text": "bull Industrial and scientific FY28E = base line + lever (see bull levers).",
+      "inputs": [
+        "C19",
+        "S15"
+      ]
+    },
+    {
+      "id": "C48",
+      "document": "D1",
+      "text": "bull NRE and prototype services FY28E = base line + lever (see bull levers).",
+      "inputs": [
+        "C20",
+        "S15"
+      ]
+    },
+    {
+      "id": "C49",
+      "document": "D1",
+      "text": "bull Repairs FY28E = base line + lever (see bull levers).",
+      "inputs": [
+        "C21",
+        "S15"
+      ]
+    },
+    {
+      "id": "C50",
+      "document": "D1",
+      "text": "bull Discounts and other FY28E = base line + lever (see bull levers).",
+      "inputs": [
+        "C22",
+        "S15"
+      ]
+    },
+    {
+      "id": "C51",
+      "document": "D1",
+      "text": "bull revenue FY27E = sum of lines.",
+      "inputs": [
+        "C41",
+        "C42",
+        "C43",
+        "C44",
+        "C45"
+      ]
+    },
+    {
+      "id": "C52",
+      "document": "D1",
+      "text": "bull revenue FY28E = sum of lines.",
+      "inputs": [
+        "C46",
+        "C47",
+        "C48",
+        "C49",
+        "C50"
+      ]
+    },
+    {
+      "id": "S17",
+      "document": "D2",
+      "text": "bull gross margin lever: see bull levers"
+    },
+    {
+      "id": "C53",
+      "document": "D1",
+      "text": "bull EBITDA FY27E = revenue x GM - opex + D&A + SBC (opex as base).",
+      "inputs": [
+        "C51",
+        "S17",
+        "C5",
+        "C7"
+      ]
+    },
+    {
+      "id": "C54",
+      "document": "D1",
+      "text": "bull EBITDA FY28E = revenue x GM - opex + D&A + SBC (opex as base).",
+      "inputs": [
+        "C52",
+        "S17",
+        "C5",
+        "C7"
+      ]
+    },
+    {
+      "id": "C55",
+      "document": "D1",
+      "text": "Bull EBITDA margin FY27E.",
+      "inputs": [
+        "C53",
+        "C51"
+      ]
+    },
+    {
+      "id": "C56",
+      "document": "D1",
+      "text": "Bull EBITDA margin FY28E.",
+      "inputs": [
+        "C54",
+        "C52"
+      ]
+    },
+    {
+      "id": "C57",
+      "document": "D1",
+      "text": "Bull revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A).",
+      "inputs": [
+        "A17",
+        "C51",
+        "C52"
+      ]
+    },
+    {
+      "id": "C58",
+      "document": "D1",
+      "text": "Bull EBITDA growth FY27, FY28.",
+      "inputs": [
+        "C2",
+        "C53",
+        "C54"
+      ]
+    },
+    {
+      "id": "C59",
+      "document": "D1",
+      "text": "Bull FY28 EBITDA / FY28 revenue.",
+      "inputs": [
+        "C54",
+        "C52"
+      ]
+    },
+    {
+      "id": "S18",
+      "document": "D1",
+      "text": "bull FY29 growth: contract renewed with higher volume plus Helios CMF customers and Monogram program shipments.",
+      "page": "p.19"
+    },
+    {
+      "id": "C60",
+      "document": "D1",
+      "text": "bear Medical devices FY27E = base line + lever (see bear levers).",
+      "inputs": [
+        "C12",
+        "S16"
+      ]
+    },
+    {
+      "id": "C61",
+      "document": "D1",
+      "text": "bear Industrial and scientific FY27E = base line + lever (see bear levers).",
+      "inputs": [
+        "C13",
+        "S16"
+      ]
+    },
+    {
+      "id": "C62",
+      "document": "D1",
+      "text": "bear NRE and prototype services FY27E = base line + lever (see bear levers).",
+      "inputs": [
+        "C14",
+        "S16"
+      ]
+    },
+    {
+      "id": "C63",
+      "document": "D1",
+      "text": "bear Repairs FY27E = base line + lever (see bear levers).",
+      "inputs": [
+        "C15",
+        "S16"
+      ]
+    },
+    {
+      "id": "C64",
+      "document": "D1",
+      "text": "bear Discounts and other FY27E = base line + lever (see bear levers).",
+      "inputs": [
+        "C16",
+        "S16"
+      ]
+    },
+    {
+      "id": "C65",
+      "document": "D1",
+      "text": "bear Medical devices FY28E = base line + lever (see bear levers).",
+      "inputs": [
+        "C18",
+        "S16"
+      ]
+    },
+    {
+      "id": "C66",
+      "document": "D1",
+      "text": "bear Industrial and scientific FY28E = base line + lever (see bear levers).",
+      "inputs": [
+        "C19",
+        "S16"
+      ]
+    },
+    {
+      "id": "C67",
+      "document": "D1",
+      "text": "bear NRE and prototype services FY28E = base line + lever (see bear levers).",
+      "inputs": [
+        "C20",
+        "S16"
+      ]
+    },
+    {
+      "id": "C68",
+      "document": "D1",
+      "text": "bear Repairs FY28E = base line + lever (see bear levers).",
+      "inputs": [
+        "C21",
+        "S16"
+      ]
+    },
+    {
+      "id": "C69",
+      "document": "D1",
+      "text": "bear Discounts and other FY28E = base line + lever (see bear levers).",
+      "inputs": [
+        "C22",
+        "S16"
+      ]
+    },
+    {
+      "id": "C70",
+      "document": "D1",
+      "text": "bear revenue FY27E = sum of lines.",
+      "inputs": [
+        "C60",
+        "C61",
+        "C62",
+        "C63",
+        "C64"
+      ]
+    },
+    {
+      "id": "C71",
+      "document": "D1",
+      "text": "bear revenue FY28E = sum of lines.",
+      "inputs": [
+        "C65",
+        "C66",
+        "C67",
+        "C68",
+        "C69"
+      ]
+    },
+    {
+      "id": "S19",
+      "document": "D2",
+      "text": "bear gross margin lever: see bear levers"
+    },
+    {
+      "id": "C72",
+      "document": "D1",
+      "text": "bear EBITDA FY27E = revenue x GM - opex + D&A + SBC (opex as base).",
+      "inputs": [
+        "C70",
+        "S19",
+        "C5",
+        "C7"
+      ]
+    },
+    {
+      "id": "C73",
+      "document": "D1",
+      "text": "bear EBITDA FY28E = revenue x GM - opex + D&A + SBC (opex as base).",
+      "inputs": [
+        "C71",
+        "S19",
+        "C5",
+        "C7"
+      ]
+    },
+    {
+      "id": "C74",
+      "document": "D1",
+      "text": "Bear EBITDA margin FY27E.",
+      "inputs": [
+        "C72",
+        "C70"
+      ]
+    },
+    {
+      "id": "C75",
+      "document": "D1",
+      "text": "Bear EBITDA margin FY28E.",
+      "inputs": [
+        "C73",
+        "C71"
+      ]
+    },
+    {
+      "id": "C76",
+      "document": "D1",
+      "text": "Bear revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A).",
+      "inputs": [
+        "A17",
+        "C70",
+        "C71"
+      ]
+    },
+    {
+      "id": "C77",
+      "document": "D1",
+      "text": "Bear EBITDA growth FY27, FY28.",
+      "inputs": [
+        "C2",
+        "C72",
+        "C73"
+      ]
+    },
+    {
+      "id": "C78",
+      "document": "D1",
+      "text": "Bear FY28 EBITDA / FY28 revenue.",
+      "inputs": [
+        "C73",
+        "C71"
+      ]
+    },
+    {
+      "id": "S20",
+      "document": "D1",
+      "text": "bear FY29 growth: largest customer (78% of FY26 sales) not renewed at similar terms after calendar 2028.",
+      "page": "p.19"
+    },
+    {
+      "id": "C79",
+      "document": "D13",
+      "text": "Bottom-up / base revenue FY27E.",
+      "inputs": [
+        "C9",
+        "E1"
+      ]
+    },
+    {
+      "id": "C80",
+      "document": "D13",
+      "text": "Consensus / base revenue FY27E (base is Consensus).",
+      "inputs": [
+        "E1"
+      ]
+    },
+    {
+      "id": "C81",
+      "document": "D13",
+      "text": "Bottom-up / Consensus revenue FY27E.",
+      "inputs": [
+        "C9",
+        "E1"
+      ]
+    },
+    {
+      "id": "C82",
+      "document": "D13",
+      "text": "Bottom-up / base EBITDA FY27E (base is bottom-up cost build).",
+      "inputs": [
+        "C23"
+      ]
+    },
+    {
+      "id": "C83",
+      "document": "D13",
+      "text": "Bottom-up / base revenue FY28E.",
+      "inputs": [
+        "C10",
+        "E2"
+      ]
+    },
+    {
+      "id": "C84",
+      "document": "D13",
+      "text": "Consensus / base revenue FY28E (base is Consensus).",
+      "inputs": [
+        "E2"
+      ]
+    },
+    {
+      "id": "C85",
+      "document": "D13",
+      "text": "Bottom-up / Consensus revenue FY28E.",
+      "inputs": [
+        "C10",
+        "E2"
+      ]
+    },
+    {
+      "id": "C86",
+      "document": "D13",
+      "text": "Bottom-up / base EBITDA FY28E (base is bottom-up cost build).",
+      "inputs": [
+        "C24"
+      ]
+    },
+    {
+      "id": "C87",
+      "document": "D3",
+      "text": "Cash 8.192 + current investments 1.150 at June 30, 2026; no equity raise after FY-end (no S-3/S-1/424 filings; share count moved only by equity awards).",
+      "inputs": [
+        "D3"
+      ]
+    },
+    {
+      "id": "A32",
+      "document": "D3",
+      "text": "Cash and cash equivalents June 30, 2026: $8,192K."
+    },
+    {
+      "id": "A33",
+      "document": "D3",
+      "text": "Investments (current) June 30, 2026: $1,150K."
+    },
+    {
+      "id": "C88",
+      "document": "D3",
+      "text": "Notes payable current 4.205 + non-current 13.266 at June 30, 2026 (excludes lease liabilities).",
+      "inputs": [
+        "D3"
+      ]
+    },
+    {
+      "id": "A34",
+      "document": "D3",
+      "text": "3,186,135 shares issued and outstanding at June 30, 2026."
+    },
+    {
+      "id": "S21",
+      "document": "D1",
+      "text": "No capex guidance; capex method 1 for all years (standing preference)."
+    },
+    {
+      "id": "A35",
+      "document": "D1",
+      "text": "FY26: $500,000 in non-recurring consulting fees paid to the former owner of APM (MD&A).",
+      "page": "p.21"
+    },
+    {
+      "id": "G14",
+      "document": "D5",
+      "text": "Q3 FY26: approximately $200,000 in non-recurring legal and consulting fees related to the APM acquisition (earnings release)."
+    },
+    {
+      "id": "A40",
+      "document": "D1",
+      "text": "FY26: approximately $434,000 in acquisition-related costs primarily included in SG&A (business-combination note).",
+      "page": "p.39"
+    },
+    {
+      "id": "P1",
+      "document": "D1",
+      "text": "David May instruction (t160u, 2026-11-06 America/Toronto): acquisition related costs are one-time. Integration cost related to the acquisition maybe continue in the short term if the integration work isn't completed, but should be removed when they do."
+    },
+    {
+      "id": "G2",
+      "document": "D2",
+      "page": "p.21",
+      "text": "At September 30, 2026, we had a backlog of approximately $43.1 million, of which $42.4 million is scheduled for delivery during the remainder of fiscal 2027."
+    },
+    {
+      "id": "G3",
+      "document": "D1",
+      "page": "p.19",
+      "text": "we expect to see similar levels of revenue reported in orthopedic sales through 2028."
+    },
+    {
+      "id": "G4",
+      "document": "D3",
+      "page": "page unverified",
+      "text": "$195,000 of higher personnel costs specifically related to accounting, mergers and acquisitions, human resources, and information technology."
+    },
+    {
+      "id": "G5",
+      "document": "D2",
+      "page": "p.21",
+      "text": "the exclusive supplier used to provide the proprietary medical grade finish of many parts of the next generation handpiece is experiencing delays ... shipments will resume on a timely basis by mid-November, there is a risk that we may fall behind in our shipments to our largest customer."
+    },
+    {
+      "id": "G6",
+      "document": "D2",
+      "page": "p.22",
+      "text": "the contract extension we executed with our largest customer during the second quarter of the prior fiscal year no longer includes volume rebates."
+    },
+    {
+      "id": "G7",
+      "document": "D2",
+      "page": "p.21",
+      "text": "Recurring revenue from distributors of CMF drivers increased $1.1 million, or 39% ... Our NRE and proto-type revenue is typically a small percentage of our total revenue and can vary significantly from quarter to quarter."
+    },
+    {
+      "id": "G8",
+      "document": "D2/D1",
+      "page": "p.21 / p.19",
+      "text": "Repair revenue decreased by $1.7 million, or 44% (10-Q); beginning in fiscal 2027 we expect to commence billable repairs of our customer's next generation handpiece but we do not know yet at what volumes (10-K)."
+    },
+    {
+      "id": "G9",
+      "document": "D2",
+      "page": "page unverified",
+      "text": "the Helios driver for CMF applications ... has been released for production. Although this product has been released, and we have had interest in this product, there is no guarantee that our existing customers or new customers will purchase this new driver."
+    },
+    {
+      "id": "G10",
+      "document": "D2",
+      "page": "MD&A; page unverified",
+      "text": "We expect to ship validation units in the second half of this fiscal year. (Q1 FY27 10-Q filed October 29, 2026; January\u2013June 2027.)"
+    },
+    {
+      "id": "G11",
+      "document": "D21",
+      "page": "HTML; no page numbers",
+      "text": "Early this year, we have made a conscious decision as a company and board to actively pursue safe and sane mergers or acquisitions. (June 17, 2026 CEO presentation.)"
+    },
+    {
+      "id": "G12",
+      "document": "D2",
+      "page": "p.21",
+      "text": "We expect to see similar sales volumes of our largest customer's next generation and legacy handpiece for the remainder of this fiscal year."
+    },
+    {
+      "id": "G13",
+      "document": "D8",
+      "page": "page unverified",
+      "text": "Gross margin decreased from 27% ... to 20% ... due to unfavorable product mix, and higher indirect manufacturing costs including the initial wave of tariff costs ... [customer] released their product hold."
+    },
+    {
+      "id": "A36",
+      "document": "D1",
+      "page": "page unverified",
+      "text": "[largest customer] accounted for 78% of sales with our next largest customer accounting for 8% of sales."
+    },
+    {
+      "id": "A37",
+      "document": "D1",
+      "page": "page unverified",
+      "text": "On October 7, 2025, Zimmer Biomet ... completed its acquisition of Monogram and ... we received $4.04 per share in cash for each of the 2,212,378 common shares ... total proceeds of $8.9 million ... realized gain in the amount of $6.8 million."
+    },
+    {
+      "id": "A38",
+      "document": "D1",
+      "page": "page unverified",
+      "text": "during the third quarter ended March 31, 2026, Monogram successfully completed the first of five milestones such that we earned and recorded an additional gain in the amount of $2.3 million."
+    },
+    {
+      "id": "A39",
+      "document": "D12",
+      "page": "n/a",
+      "text": "PaymentsForRepurchaseOfCommonStock FY26 = 3,408 (US$ thousands)."
+    },
+    {
+      "id": "S22",
+      "document": "D18/D25/D2",
+      "page": "n/a",
+      "text": "Validation units are not established commercial revenue. Operative contract verifies end-effectors, gearing and sourced-product fees; prices, percentage rates, annual volume and margins remain unquantified. Bull allocation is a scenario assumption, not a customer order."
+    },
+    {
+      "id": "C89",
+      "document": "D12",
+      "page": "n/a",
+      "text": "Quarterly revenue and EBITDA: XBRL quarterly values; Q4 = FY less 9M; Q2/Q3 D&A and SBC = YTD differences. Inputs D3-D12.",
+      "inputs": [
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12"
+      ]
+    },
+    {
+      "id": "D17",
+      "text": "Guillaume Meignin, article reviewed in full, published June 29, 2026; mostly financial data through March 31, 2026; read November 7, 2026: https://guillaumemeignin.substack.com/p/pro-dex-pdex-pay-for-the-core-get"
+    },
+    {
+      "id": "D18",
+      "text": "Monogram and Pro-Dex, executed supply agreement dated October 3, 2023, filed October 6, 2023; Sections 2.1, 2.5, 6.1, 15 and Schedule 1: https://www.sec.gov/Archives/edgar/data/1769759/000110465923107518/tm2328000d1_ex10-1.htm"
+    },
+    {
+      "id": "D19",
+      "text": "NIH AccessGUDID, Zimmer Atlas Pro Driver device record, published June 9, 2023, version dated September 19, 2024: https://accessgudid.nlm.nih.gov/devices/00856482008436 . Prior research record; re-fetch timed out November 7. Current company IFU independently verifies Zimmer products: https://www.pro-dex.com/ifu-zimmerbiomet"
+    },
+    {
+      "id": "D20",
+      "text": "Pro-Dex, June 2026 investor presentation, furnished June 17, 2026; original slides are images (6ix text and article exhibits corroborate): https://www.sec.gov/Archives/edgar/data/788920/000107997326000854/ex99x1.htm"
+    },
+    {
+      "id": "D21",
+      "text": "Rick Van Kirk, June 17, 2026 Planet MicroCap presentation and Q&A, public transcript hosted by StockAnalysis (transcription not issuer-verified): https://stockanalysis.com/stocks/pdex/transcripts/688447-planet-microcap-las-vegas-2026/"
+    },
+    {
+      "id": "D22",
+      "text": "Zimmer Biomet CEO, November 4, 2026 Q3 earnings call, transcript hosted by Benzinga (transcription not issuer-verified): https://www.benzinga.com/news/26/11/62867457/zimmer-biomet-holdings-q3-2026-earnings-call-transcript"
+    },
+    {
+      "id": "D23",
+      "text": "Zimmer Biomet, acquisition completion release, October 7, 2025: https://investor.zimmerbiomet.com/news-and-events/news/2025/10-07-2025-140729614 . Issuer-hosted URL returned 403; issuer-distributed release opened at https://www.prnewswire.com/news-releases/zimmer-biomet-completes-acquisition-of-monogram-technologies-302577035.html"
+    },
+    {
+      "id": "D24",
+      "text": "Pro-Dex, largest-customer contract extension press release, December 19, 2025: https://www.sec.gov/Archives/edgar/data/788920/000107997325001880/ex99x1.htm"
+    },
+    {
+      "id": "D25",
+      "text": "LawInsider public mirror of October 3, 2023 executed agreement; Schedule 1 read here because SEC WebFetch output truncates before schedule; pricing percentages remain redacted: https://www.lawinsider.com/contracts/5M0GZ8QKPLt"
+    },
+    {
+      "id": "G15",
+      "document": "D18/D25",
+      "page": "Section 2.5 and Schedule 1",
+      "text": "Buyer shall pay Seller a fee equal to [***]% ... of the gross purchase price paid by Buyer per unit ... multiplied by the number of units ... purchased. Sourced Products include burrs, sagittal saw blades and custom patient-specific implants; not the robotic arm, navigation cameras or drapes. Percentages and hardware target gross margins are redacted."
+    },
+    {
+      "id": "G16",
+      "document": "D18/D25",
+      "page": "Schedule 1",
+      "text": "Seller Supplied Products include autoclavable electromechanical end effectors ... mounted to robotic arms ... for use in milling bone cavities and End Effector gearing accessories. Hardware prices reset to a redacted target gross margin; engineering services are billed time and materials under Section 15."
+    },
+    {
+      "id": "G17",
+      "document": "D21",
+      "page": "HTML; no page numbers",
+      "text": "I think within a couple of years, they could definitely be customer number two. ... not able to tell you how good. (Monogram; June 17, 2026 CEO statement, not a quantified order.)"
+    },
+    {
+      "id": "G18",
+      "document": "D22",
+      "page": "HTML; no page numbers",
+      "text": "We now anticipate that we can launch a surgeon-guided fully autonomous version of Monogram in the first half of 2027 ... filing a 510(k) does not mean an approval. (November 4, 2026 CEO statement.)"
+    },
+    {
+      "id": "G19",
+      "document": "D2",
+      "page": "MD&A; page unverified",
+      "text": "Repair margins are significantly lower than in the previous fiscal-year quarter because of more expensive component replacement and the assembled workforce normally repairing higher volume."
+    },
+    {
+      "id": "A41",
+      "document": "D1",
+      "page": "p.39",
+      "text": "The consolidated income statement for the year ended June 30, 2026, includes $719,000 of revenue and $84,000 of income before income taxes ... generated from APM. Not standalone annual EBITDA; APM was acquired February 9, 2026."
+    },
+    {
+      "id": "A42",
+      "document": "D2",
+      "page": "balance sheet and cover; page unverified",
+      "text": "September 30, 2026 cash $11.759M, current investments $1.230M, notes payable carrying value $16.441M, shares 3,203,334; October 28 cover count 3,200,001."
+    },
+    {
+      "id": "G20",
+      "document": "D24",
+      "page": "HTML; no page numbers",
+      "text": "The contract ... has now been extended through December 31, 2028 ... minimum purchase volumes for each of the 2026 and 2027 calendar years."
+    },
+    {
+      "id": "C90",
+      "document": "D1",
+      "page": "derived",
+      "text": "FY26 largest-customer scale = $77.548M \u00d7 78% = $60.48744M. Revenue concentration does not identify an OEM.",
+      "inputs": [
+        "A17",
+        "A36"
+      ]
+    },
+    {
+      "id": "C91",
+      "document": "D18/D25",
+      "page": "conditional arithmetic, not a forecast",
+      "text": "If the user elects a hypothetical $50 effective fee per eligible procedure and 30,000\u201360,000 procedures, annual revenue would be $1.5M\u2013$3.0M. Neither fee, procedures, eligibility nor incremental EBITDA margin is verified; purchase-based contractual fees need not equal a flat fee per surgery.",
+      "inputs": [
+        "D17",
+        "G15"
+      ]
+    },
+    {
+      "id": "C92",
+      "document": "D2",
+      "page": "derived",
+      "text": "September 30, 2026 cash plus current investments = 11.759 + 1.230 = $12.989M; distinct from June 30 year-0 $9.342M.",
+      "inputs": [
+        "A42"
+      ]
+    },
+    {
+      "id": "D26",
+      "text": "Pro-Dex Zimmer Biomet instructions-for-use index, undated, opened November 7, 2026: https://www.pro-dex.com/ifu-zimmerbiomet"
+    }
+  ],
+  "article_review": {
+    "article": "D17",
+    "review_date": "2026-11-07 America/Toronto",
+    "conclusion": "Report and citation corrections only. All existing forecast numeric values and scenarios retained; no author economics adopted. Fee structure verified but purchase-based, rate redacted; author flat-per-case examples are hypothetical. See claim_review.md.",
+    "pending_assumptions": [
+      "Monogram effective fee, eligible purchase basket and procedure/ramp volumes; no 100% EBITDA assumption",
+      "Helios revenue timing and 50\u201365% gross margin; no verified analyst exclusion",
+      "APM standalone $5\u20136M revenue/$1.8M EBITDA and savings after intercompany eliminations; not adopted"
+    ]
+  }
+}
