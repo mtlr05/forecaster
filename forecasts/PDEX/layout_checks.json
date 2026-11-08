@@ -1,0 +1,85 @@
+{
+  "pages": 35,
+  "figures": 22,
+  "tables_single_page": true,
+  "table_pages": {
+    "figure-check-0": [
+      1
+    ],
+    "figure-check-1": [
+      2
+    ],
+    "figure-check-2": [
+      2
+    ],
+    "figure-check-3": [
+      4
+    ],
+    "figure-check-4": [
+      5
+    ],
+    "figure-check-5": [
+      6
+    ],
+    "figure-check-6": [
+      8
+    ],
+    "figure-check-7": [
+      8
+    ],
+    "figure-check-8": [
+      9
+    ],
+    "figure-check-9": [
+      10
+    ],
+    "figure-check-10": [
+      10
+    ],
+    "figure-check-11": [
+      11
+    ],
+    "figure-check-12": [
+      11
+    ],
+    "figure-check-13": [
+      12
+    ],
+    "figure-check-14": [
+      12
+    ],
+    "figure-check-15": [
+      12
+    ],
+    "figure-check-16": [
+      13
+    ],
+    "figure-check-17": [
+      13
+    ],
+    "figure-check-18": [
+      14
+    ],
+    "figure-check-19": [
+      14
+    ],
+    "figure-check-20": [
+      15
+    ],
+    "figure-check-21": [
+      35
+    ]
+  },
+  "superscript_clusters": 253,
+  "superscript_examples": [
+    "C79, C83",
+    "C23, C24, C25, C26",
+    "E1, E2",
+    "D13",
+    "D13, D16",
+    "E1, E2, S28",
+    "E1, E2, C23, C24",
+    "C9, C10"
+  ],
+  "style_authority": "a7b0f2a8a70316a0b129dc1e70f4e86dd6b595bd .cursor/skills/forecast-report/SKILL.md"
+}

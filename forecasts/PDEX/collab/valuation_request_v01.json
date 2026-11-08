@@ -1,0 +1,166 @@
+{
+  "mode": "collaborative",
+  "ticker": "PDEX",
+  "version": "v01",
+  "parent_version": null,
+  "forecast_commit": "uncommitted",
+  "scenarios": [
+    "base",
+    "bear",
+    "bull"
+  ],
+  "forecaster": {
+    "base": {
+      "forecast.sales_growth": {
+        "value": [
+          0.06643627172847788,
+          0.049576783555018045
+        ],
+        "tag": "C",
+        "cite_id": "C38",
+        "evidence": "Base revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.027871732037417773,
+          0.06028015884526372
+        ],
+        "tag": "C",
+        "cite_id": "C39",
+        "evidence": "Base EBITDA growth FY27, FY28."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.189251587,
+        "tag": "C",
+        "cite_id": "C40",
+        "evidence": "Base FY28 EBITDA / FY28 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.25,
+        "tag": "S",
+        "cite_id": "S13",
+        "evidence": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.03,
+        "tag": "S",
+        "cite_id": "S14",
+        "evidence": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth."
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "S",
+        "cite_id": "S12",
+        "evidence": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G1",
+        "evidence": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named."
+      }
+    },
+    "bear": {
+      "forecast.sales_growth": {
+        "value": [
+          0.009604760935162604,
+          -0.045647219559624475
+        ],
+        "tag": "C",
+        "cite_id": "C76",
+        "evidence": "Bear revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          -0.142906037285212,
+          -0.11724840634250511
+        ],
+        "tag": "C",
+        "cite_id": "C77",
+        "evidence": "Bear EBITDA growth FY27, FY28."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.152628526,
+        "tag": "C",
+        "cite_id": "C78",
+        "evidence": "Bear FY28 EBITDA / FY28 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.25,
+        "tag": "S",
+        "cite_id": "S13",
+        "evidence": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": -0.1,
+        "tag": "S",
+        "cite_id": "S20",
+        "evidence": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth."
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "S",
+        "cite_id": "S12",
+        "evidence": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G1",
+        "evidence": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named."
+      }
+    },
+    "bull": {
+      "forecast.sales_growth": {
+        "value": [
+          0.09670242947593732,
+          0.09823264947957977
+        ],
+        "tag": "C",
+        "cite_id": "C57",
+        "evidence": "Bull revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.13596567040403373,
+          0.16820422227289722
+        ],
+        "tag": "C",
+        "cite_id": "C58",
+        "evidence": "Bull EBITDA growth FY27, FY28."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.214155839,
+        "tag": "C",
+        "cite_id": "C59",
+        "evidence": "Bull FY28 EBITDA / FY28 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.25,
+        "tag": "S",
+        "cite_id": "S13",
+        "evidence": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.08,
+        "tag": "S",
+        "cite_id": "S18",
+        "evidence": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth."
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "S",
+        "cite_id": "S12",
+        "evidence": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G1",
+        "evidence": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named."
+      }
+    }
+  },
+  "prompt_inputs": [],
+  "post_finagle": null
+}
