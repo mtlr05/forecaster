@@ -1,0 +1,166 @@
+{
+  "mode": "collaborative",
+  "ticker": "PDEX",
+  "version": "v02",
+  "parent_version": "v01",
+  "forecast_commit": "uncommitted",
+  "scenarios": [
+    "base",
+    "bear",
+    "bull"
+  ],
+  "forecaster": {
+    "base": {
+      "forecast.sales_growth": {
+        "value": [
+          0.06643627172847788,
+          0.049576783555018045
+        ],
+        "tag": "C",
+        "cite_id": "C38",
+        "evidence": "Base revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.027871732037417773,
+          0.0658828169005643
+        ],
+        "tag": "C",
+        "cite_id": "C39",
+        "evidence": "Base EBITDA growth FY27, FY28."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.190251617,
+        "tag": "C",
+        "cite_id": "C40",
+        "evidence": "Base FY28 EBITDA / FY28 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.25,
+        "tag": "S",
+        "cite_id": "S13",
+        "evidence": "mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.009177097,
+        "tag": "S",
+        "cite_id": "S14",
+        "evidence": "base gsnext = (FY28 revenue 86.8 - FY28 Monogram 6.211606 + one more FY28 cohort 7.008177999999999) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate."
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "S",
+        "cite_id": "S12",
+        "evidence": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G1",
+        "evidence": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named."
+      }
+    },
+    "bear": {
+      "forecast.sales_growth": {
+        "value": [
+          0.009604760935162604,
+          -0.09668108817759324
+        ],
+        "tag": "C",
+        "cite_id": "C76",
+        "evidence": "Bear revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          -0.142906037285212,
+          -0.21312531913807142
+        ],
+        "tag": "C",
+        "cite_id": "C77",
+        "evidence": "Bear EBITDA growth FY27, FY28."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.143737674,
+        "tag": "C",
+        "cite_id": "C78",
+        "evidence": "Bear FY28 EBITDA / FY28 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.25,
+        "tag": "S",
+        "cite_id": "S13",
+        "evidence": "mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": -0.1,
+        "tag": "S",
+        "cite_id": "S20",
+        "evidence": "Bear gsnext stays -10%. That is the customer-1 renewal after calendar 2028, and it does not set the base."
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "S",
+        "cite_id": "S12",
+        "evidence": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G1",
+        "evidence": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named."
+      }
+    },
+    "bull": {
+      "forecast.sales_growth": {
+        "value": [
+          0.09670242947593732,
+          0.08313153136964702
+        ],
+        "tag": "C",
+        "cite_id": "C57",
+        "evidence": "Bull revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.13596567040403373,
+          0.15541786200191288
+        ],
+        "tag": "C",
+        "cite_id": "C58",
+        "evidence": "Bull EBITDA growth FY27, FY28."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.214764936,
+        "tag": "C",
+        "cite_id": "C59",
+        "evidence": "Bull FY28 EBITDA / FY28 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.25,
+        "tag": "S",
+        "cite_id": "S13",
+        "evidence": "mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.030711537,
+        "tag": "S",
+        "cite_id": "S18",
+        "evidence": "bull gsnext = (FY28 revenue 92.117174 - FY28 Monogram 9.97878 + one more FY28 cohort 12.80784) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate."
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "S",
+        "cite_id": "S12",
+        "evidence": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G1",
+        "evidence": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named."
+      }
+    }
+  },
+  "prompt_inputs": [],
+  "post_finagle": null
+}

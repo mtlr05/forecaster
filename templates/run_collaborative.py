@@ -93,6 +93,7 @@ def main(argv=None):
         case_name = "case_%s_%s.json" % (name, request.get("version") or "v")
         (out / case_name).write_text(json.dumps(ran, indent=2, default=str))
 
+    write_notebooks(out, result)
     _write_result(out, request, result)
     failed = any(not (item or {}).get("ok") for item in result["scenarios"].values())
     return 1 if failed else 0
@@ -133,6 +134,24 @@ def _fetched(case):
         "shares": shares.get("value"),
         "shares_source": shares.get("source"),
     }
+
+
+def write_notebooks(out, result):
+    """Write Finagle's notebook script for each scenario. Does not run it."""
+    version = (result or {}).get("version") or "v"
+    scenarios = (result or {}).get("scenarios") or {}
+    written = []
+    for name, scenario in scenarios.items():
+        if not isinstance(scenario, dict):
+            continue
+        code = scenario.get("notebook_code")
+        if not code:
+            continue
+        path = Path(out) / ("notebook_%s_%s.py" % (name, version))
+        text = code if str(code).endswith("\n") else str(code) + "\n"
+        path.write_text(text, encoding="utf-8")
+        written.append(path)
+    return written
 
 
 def _write_result(out, request, result):

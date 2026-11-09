@@ -67,7 +67,7 @@
           }
         },
         "FY28E": {
-          "value": 75.03843842,
+          "value": 75.290353592,
           "tag": "C",
           "citation": {
             "id": "C18",
@@ -199,7 +199,7 @@
           }
         },
         "FY28E": {
-          "value": 1.220985029,
+          "value": 1.16570656,
           "tag": "C",
           "citation": {
             "id": "C20",
@@ -265,7 +265,7 @@
           }
         },
         "FY28E": {
-          "value": 7.133541091,
+          "value": 6.781769019,
           "tag": "C",
           "citation": {
             "id": "C21",
@@ -331,7 +331,7 @@
           }
         },
         "FY28E": {
-          "value": 0.29903546,
+          "value": 0.454170829,
           "tag": "C",
           "citation": {
             "id": "C22",
@@ -466,7 +466,7 @@
         }
       },
       "FY28E": {
-        "value": 16.427037786,
+        "value": 16.513840387,
         "tag": "C",
         "citation": {
           "id": "C24",
@@ -508,7 +508,7 @@
         }
       },
       "FY28E": {
-        "value": 0.323606449,
+        "value": 0.324796786,
         "tag": "C",
         "citation": {
           "id": "C275",
@@ -530,7 +530,7 @@
         }
       },
       "FY28E": {
-        "value": 0.189251587,
+        "value": 0.190251617,
         "tag": "C",
         "citation": {
           "id": "C37",
@@ -552,7 +552,7 @@
         }
       },
       "FY28E": {
-        "value": 15.870837786,
+        "value": 15.957640387,
         "tag": "C",
         "citation": {
           "id": "C281",
@@ -626,7 +626,7 @@
         }
       },
       "FY28E": {
-        "value": 16.427037786,
+        "value": 16.513840387,
         "tag": "C",
         "citation": {
           "id": "C24",
@@ -638,7 +638,7 @@
     }
   },
   "finagle": {
-    "note": "Operating leaves only; no Finagle or terminal growth. v4 reassessed pipeline; FY28 stop retained per S29.",
+    "note": "Operating leaves only; no Finagle or terminal growth. FY28 Monogram meets the second-customer band; gsnext continues that cohort for one year.",
     "sales_growth": {
       "value": [
         0.06643627172847788,
@@ -655,7 +655,7 @@
     "ebitda_growth": {
       "value": [
         0.027871732037417773,
-        0.06028015884526372
+        0.0658828169005643
       ],
       "tag": "C",
       "citation": {
@@ -666,7 +666,7 @@
       }
     },
     "me": {
-      "value": 0.189251587,
+      "value": 0.190251617,
       "tag": "C",
       "citation": {
         "id": "C40",
@@ -680,17 +680,17 @@
       "tag": "S",
       "citation": {
         "id": "S13",
-        "text": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.",
+        "text": "mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29.",
         "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
         "page_status": "unverified"
       }
     },
     "gsnext": {
-      "value": 0.03,
+      "value": 0.009177097,
       "tag": "S",
       "citation": {
         "id": "S14",
-        "text": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.",
+        "text": "base gsnext = (FY28 revenue 86.8 - FY28 Monogram 6.211606 + one more FY28 cohort 7.008177999999999) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate.",
         "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
         "page": "p.19"
       }
@@ -759,7 +759,7 @@
       },
       "FY28E": {
         "bottom_up": {
-          "value": 85.28318,
+          "value": 89.278766,
           "tag": "C",
           "citation": {
             "id": "C10",
@@ -814,7 +814,7 @@
       },
       "FY28E": {
         "bottom_up": {
-          "value": 16.427037786,
+          "value": 16.513840387,
           "tag": "C",
           "citation": {
             "id": "C24",
@@ -908,7 +908,7 @@
       "FY28E": {
         "revenue": {
           "bottom_up_over_base": {
-            "value": 0.982525115,
+            "value": 1.028557212,
             "tag": "C",
             "citation": {
               "id": "C83",
@@ -937,7 +937,7 @@
             "absent": "no calibrated top-down"
           },
           "bottom_up_over_consensus": {
-            "value": 0.982525115,
+            "value": 1.028557212,
             "tag": "C",
             "citation": {
               "id": "C85",
@@ -988,7 +988,7 @@
         }
       },
       "FY28E": {
-        "value": 15.934805427,
+        "value": 17.318239614,
         "tag": "C",
         "citation": {
           "id": "C26",
@@ -1131,7 +1131,7 @@
       }
     },
     "scale_fy28": {
-      "value": 1.019077299,
+      "value": 0.968824146,
       "tag": "C",
       "citation": {
         "id": "C17",
@@ -1312,7 +1312,7 @@
               }
             },
             "FY28E": {
-              "value": 80.10513842,
+              "value": 78.896653592,
               "tag": "C",
               "citation": {
                 "id": "C46",
@@ -1444,7 +1444,7 @@
               }
             },
             "FY28E": {
-              "value": 1.270985029,
+              "value": 1.21570656,
               "tag": "C",
               "citation": {
                 "id": "C48",
@@ -1510,7 +1510,7 @@
               }
             },
             "FY28E": {
-              "value": 7.633541091,
+              "value": 7.281769019,
               "tag": "C",
               "citation": {
                 "id": "C49",
@@ -1576,7 +1576,7 @@
               }
             },
             "FY28E": {
-              "value": 1.28381546,
+              "value": 1.615044829,
               "tag": "C",
               "citation": {
                 "id": "C50",
@@ -1641,7 +1641,7 @@
             }
           },
           "FY28E": {
-            "value": 93.40148,
+            "value": 92.117174,
             "tag": "C",
             "citation": {
               "id": "C52",
@@ -1703,7 +1703,7 @@
             }
           },
           "FY28E": {
-            "value": 20.0024723,
+            "value": 19.78353899,
             "tag": "C",
             "citation": {
               "id": "C54",
@@ -1745,7 +1745,7 @@
             }
           },
           "FY28E": {
-            "value": 0.341675017,
+            "value": 0.344432483,
             "tag": "C",
             "citation": {
               "id": "C276",
@@ -1767,7 +1767,7 @@
             }
           },
           "FY28E": {
-            "value": 0.214155839,
+            "value": 0.214764936,
             "tag": "C",
             "citation": {
               "id": "C56",
@@ -1789,7 +1789,7 @@
             }
           },
           "FY28E": {
-            "value": 19.4462723,
+            "value": 19.22733899,
             "tag": "C",
             "citation": {
               "id": "C283",
@@ -1823,7 +1823,7 @@
             }
           },
           "FY28E": {
-            "value": 93.40148,
+            "value": 92.117174,
             "tag": "C",
             "citation": {
               "id": "C52",
@@ -1855,7 +1855,7 @@
             }
           },
           "FY28E": {
-            "value": 20.0024723,
+            "value": 19.78353899,
             "tag": "C",
             "citation": {
               "id": "C54",
@@ -1867,11 +1867,11 @@
         }
       },
       "finagle": {
-        "note": "Operating leaves only; no Finagle or terminal growth. v4 reassessed pipeline; FY28 stop retained per S29.",
+        "note": "Operating leaves only; no Finagle or terminal growth. FY28 Monogram meets the second-customer band; gsnext continues that cohort for one year.",
         "sales_growth": {
           "value": [
             0.09670242947593732,
-            0.09823264947957977
+            0.08313153136964702
           ],
           "tag": "C",
           "citation": {
@@ -1884,7 +1884,7 @@
         "ebitda_growth": {
           "value": [
             0.13596567040403373,
-            0.16820422227289722
+            0.15541786200191288
           ],
           "tag": "C",
           "citation": {
@@ -1895,7 +1895,7 @@
           }
         },
         "me": {
-          "value": 0.214155839,
+          "value": 0.214764936,
           "tag": "C",
           "citation": {
             "id": "C59",
@@ -1909,17 +1909,17 @@
           "tag": "S",
           "citation": {
             "id": "S13",
-            "text": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.",
+            "text": "mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29.",
             "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
             "page_status": "unverified"
           }
         },
         "gsnext": {
-          "value": 0.08,
+          "value": 0.030711537,
           "tag": "S",
           "citation": {
             "id": "S18",
-            "text": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.",
+            "text": "bull gsnext = (FY28 revenue 92.117174 - FY28 Monogram 9.97878 + one more FY28 cohort 12.80784) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate.",
             "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
             "page": "p.19"
           }
@@ -2005,7 +2005,7 @@
               }
             },
             "FY28E": {
-              "value": 64.60263842,
+              "value": 61.024153592,
               "tag": "C",
               "citation": {
                 "id": "C65",
@@ -2137,7 +2137,7 @@
               }
             },
             "FY28E": {
-              "value": 1.170985029,
+              "value": 1.11570656,
               "tag": "C",
               "citation": {
                 "id": "C67",
@@ -2203,7 +2203,7 @@
               }
             },
             "FY28E": {
-              "value": 5.633541091,
+              "value": 5.281769019,
               "tag": "C",
               "citation": {
                 "id": "C68",
@@ -2269,7 +2269,7 @@
               }
             },
             "FY28E": {
-              "value": 0.20381546,
+              "value": 0.193764829,
               "tag": "C",
               "citation": {
                 "id": "C69",
@@ -2334,7 +2334,7 @@
             }
           },
           "FY28E": {
-            "value": 74.71898,
+            "value": 70.723394,
             "tag": "C",
             "citation": {
               "id": "C71",
@@ -2396,7 +2396,7 @@
             }
           },
           "FY28E": {
-            "value": 11.4042478,
+            "value": 10.16561614,
             "tag": "C",
             "citation": {
               "id": "C73",
@@ -2438,7 +2438,7 @@
             }
           },
           "FY28E": {
-            "value": 0.308043924,
+            "value": 0.307933414,
             "tag": "C",
             "citation": {
               "id": "C277",
@@ -2460,7 +2460,7 @@
             }
           },
           "FY28E": {
-            "value": 0.152628526,
+            "value": 0.143737674,
             "tag": "C",
             "citation": {
               "id": "C75",
@@ -2482,7 +2482,7 @@
             }
           },
           "FY28E": {
-            "value": 10.8480478,
+            "value": 9.60941614,
             "tag": "C",
             "citation": {
               "id": "C285",
@@ -2516,7 +2516,7 @@
             }
           },
           "FY28E": {
-            "value": 74.71898,
+            "value": 70.723394,
             "tag": "C",
             "citation": {
               "id": "C71",
@@ -2548,7 +2548,7 @@
             }
           },
           "FY28E": {
-            "value": 11.4042478,
+            "value": 10.16561614,
             "tag": "C",
             "citation": {
               "id": "C73",
@@ -2560,11 +2560,11 @@
         }
       },
       "finagle": {
-        "note": "Operating leaves only; no Finagle or terminal growth. v4 reassessed pipeline; FY28 stop retained per S29.",
+        "note": "Operating leaves only; no Finagle or terminal growth. FY28 Monogram meets the second-customer band; gsnext continues that cohort for one year.",
         "sales_growth": {
           "value": [
             0.009604760935162604,
-            -0.045647219559624475
+            -0.09668108817759324
           ],
           "tag": "C",
           "citation": {
@@ -2577,7 +2577,7 @@
         "ebitda_growth": {
           "value": [
             -0.142906037285212,
-            -0.11724840634250511
+            -0.21312531913807142
           ],
           "tag": "C",
           "citation": {
@@ -2588,7 +2588,7 @@
           }
         },
         "me": {
-          "value": 0.152628526,
+          "value": 0.143737674,
           "tag": "C",
           "citation": {
             "id": "C78",
@@ -2602,7 +2602,7 @@
           "tag": "S",
           "citation": {
             "id": "S13",
-            "text": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.",
+            "text": "mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29.",
             "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
             "page_status": "unverified"
           }
@@ -2612,7 +2612,7 @@
           "tag": "S",
           "citation": {
             "id": "S20",
-            "text": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.",
+            "text": "Bear gsnext stays -10%. That is the customer-1 renewal after calendar 2028, and it does not set the base.",
             "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
             "page": "p.19"
           }
@@ -3432,13 +3432,18 @@
     {
       "id": "S13",
       "document": "D1",
-      "text": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth."
+      "text": "mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29."
     },
     {
       "id": "S14",
       "document": "D1",
-      "text": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.",
-      "page": "p.19"
+      "text": "base gsnext = (FY28 revenue 86.8 - FY28 Monogram 6.211606 + one more FY28 cohort 7.008177999999999) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate.",
+      "page": "p.19",
+      "inputs": [
+        "G17",
+        "A43",
+        "S23"
+      ]
     },
     {
       "id": "S15",
@@ -3661,8 +3666,13 @@
     {
       "id": "S18",
       "document": "D1",
-      "text": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.",
-      "page": "p.19"
+      "text": "bull gsnext = (FY28 revenue 92.117174 - FY28 Monogram 9.97878 + one more FY28 cohort 12.80784) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate.",
+      "page": "p.19",
+      "inputs": [
+        "G17",
+        "A44",
+        "S23"
+      ]
     },
     {
       "id": "C60",
@@ -3873,8 +3883,11 @@
     {
       "id": "S20",
       "document": "D1",
-      "text": "v4: Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.",
-      "page": "p.19"
+      "text": "Bear gsnext stays -10%. That is the customer-1 renewal after calendar 2028, and it does not set the base.",
+      "page": "p.19",
+      "inputs": [
+        "G3"
+      ]
     },
     {
       "id": "C79",
@@ -4277,7 +4290,7 @@
     },
     {
       "id": "S23",
-      "text": "Monogram timing/volume analyst assumptions: validation 0/10/10 units FY27 low/central/high; 10/0/0 FY28. Conditional new commercial systems FY27 0/10/25; FY28 0/120/200. Central on-time shipment realization 40%/70%; low0%, high100%; p weights commercial shipments only, not engineering/validation. FY27 active system-years = expected new systems /8 (Q4 rollout); FY28 = prior expected systems + half current additions. Central 120 cases per active system-year; high180. MAKO2012 ~79 annualized is a restraint, not a like-for-like forecast; established Zimmer channel supports faster launch but no ROSA conversions assumed.",
+      "text": "Monogram timing/volume. FY27 validation 0/10/10 and conditional commercial systems 0/10/25 stay the validation year. FY28 conditional systems are solved so Monogram revenue reaches the second-customer band: base 348 at 70% realization, target 77.548*8%; bull 279 at 100%, target 2.487*4. The old 120/200 plans were not a company cap. Realization 40%/70% base and 100% bull; low commercial systems remain 0. FY27 active system-years = expected new systems /8; FY28 = prior expected systems + half current additions. Central 120 cases per active system-year; high 180.",
       "document": "D22",
       "page": "page unverified"
     },
@@ -4313,7 +4326,7 @@
     },
     {
       "id": "S29",
-      "text": "Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.",
+      "text": "FY28 explicit stop retained. Base and bull FY28 Monogram are the second-customer band, not a cross-check. gsnext is one more year of the FY28 system cohort with the FY28 core held. Bear gsnext is the customer-1 renewal. mc stays 25% because the added dollars are mostly hardware at an ordinary margin.",
       "document": "D22",
       "page": "page unverified"
     },
@@ -5039,7 +5052,7 @@
     },
     {
       "id": "S78",
-      "text": "base FY28E: conditional_new_systems = 120. Analyst judgment, not disclosed contract terms; rationale and bounds in S23.",
+      "text": "base FY28E: conditional_new_systems = 348. Analyst judgment, not disclosed contract terms; rationale and bounds in S23.",
       "document": "D22",
       "page": "page unverified"
     },
@@ -5519,7 +5532,7 @@
     },
     {
       "id": "S110",
-      "text": "bull FY28E: conditional_new_systems = 200. Analyst judgment, not disclosed contract terms; rationale and bounds in S23.",
+      "text": "bull FY28E: conditional_new_systems = 279. Analyst judgment, not disclosed contract terms; rationale and bounds in S23.",
       "document": "D22",
       "page": "page unverified"
     },
@@ -6860,11 +6873,11 @@
       },
       "FY28E": {
         "conditional_new_systems": {
-          "value": 120,
+          "value": 348,
           "tag": "S",
           "citation": {
             "id": "S78",
-            "text": "base FY28E: conditional_new_systems = 120. Analyst judgment, not disclosed contract terms; rationale and bounds in S23.",
+            "text": "base FY28E: conditional_new_systems = 348. Analyst judgment, not disclosed contract terms; rationale and bounds in S23.",
             "url": "https://www.benzinga.com/news/26/11/62867457/zimmer-biomet-holdings-q3-2026-earnings-call-transcript",
             "page_status": "unverified"
           }
@@ -6880,7 +6893,7 @@
           }
         },
         "expected_new_systems": {
-          "value": 84.0,
+          "value": 243.6,
           "tag": "C",
           "citation": {
             "id": "C182",
@@ -6930,7 +6943,7 @@
           }
         },
         "total_kit_units": {
-          "value": 336.8,
+          "value": 975.2,
           "tag": "C",
           "citation": {
             "id": "C187",
@@ -6960,7 +6973,7 @@
           }
         },
         "active_system_years": {
-          "value": 46.0,
+          "value": 125.8,
           "tag": "C",
           "citation": {
             "id": "C190",
@@ -6980,7 +6993,7 @@
           }
         },
         "procedure_equivalents": {
-          "value": 5520.0,
+          "value": 15096.0,
           "tag": "C",
           "citation": {
             "id": "C192",
@@ -7020,7 +7033,7 @@
           }
         },
         "eligible_purchases_M": {
-          "value": 1.9044,
+          "value": 5.20812,
           "tag": "C",
           "citation": {
             "id": "C196",
@@ -7050,7 +7063,7 @@
           }
         },
         "hardware_revenue_M": {
-          "value": 2.0208,
+          "value": 5.8512,
           "tag": "C",
           "citation": {
             "id": "C199",
@@ -7060,7 +7073,7 @@
           }
         },
         "fee_revenue_M": {
-          "value": 0.09522,
+          "value": 0.260406,
           "tag": "C",
           "citation": {
             "id": "C200",
@@ -7090,7 +7103,7 @@
           }
         },
         "total_monogram_revenue_M": {
-          "value": 2.21602,
+          "value": 6.211606,
           "tag": "C",
           "citation": {
             "id": "C203",
@@ -7100,7 +7113,7 @@
           }
         },
         "gross_profit_M": {
-          "value": 0.781240933,
+          "value": 2.181193719,
           "tag": "C",
           "citation": {
             "id": "C204",
@@ -7110,7 +7123,7 @@
           }
         },
         "fee_admin_M": {
-          "value": 0.009522,
+          "value": 0.0260406,
           "tag": "C",
           "citation": {
             "id": "C205",
@@ -7130,7 +7143,7 @@
           }
         },
         "incremental_ebitda_M": {
-          "value": 0.671718933,
+          "value": 2.055153119,
           "tag": "C",
           "citation": {
             "id": "C207",
@@ -7446,11 +7459,11 @@
       },
       "FY28E": {
         "conditional_new_systems": {
-          "value": 200,
+          "value": 279,
           "tag": "S",
           "citation": {
             "id": "S110",
-            "text": "bull FY28E: conditional_new_systems = 200. Analyst judgment, not disclosed contract terms; rationale and bounds in S23.",
+            "text": "bull FY28E: conditional_new_systems = 279. Analyst judgment, not disclosed contract terms; rationale and bounds in S23.",
             "url": "https://www.benzinga.com/news/26/11/62867457/zimmer-biomet-holdings-q3-2026-earnings-call-transcript",
             "page_status": "unverified"
           }
@@ -7466,7 +7479,7 @@
           }
         },
         "expected_new_systems": {
-          "value": 200,
+          "value": 279,
           "tag": "C",
           "citation": {
             "id": "C240",
@@ -7516,7 +7529,7 @@
           }
         },
         "total_kit_units": {
-          "value": 805.0,
+          "value": 1121.0,
           "tag": "C",
           "citation": {
             "id": "C245",
@@ -7546,7 +7559,7 @@
           }
         },
         "active_system_years": {
-          "value": 125.0,
+          "value": 164.5,
           "tag": "C",
           "citation": {
             "id": "C248",
@@ -7566,7 +7579,7 @@
           }
         },
         "procedure_equivalents": {
-          "value": 22500.0,
+          "value": 29610.0,
           "tag": "C",
           "citation": {
             "id": "C250",
@@ -7606,7 +7619,7 @@
           }
         },
         "eligible_purchases_M": {
-          "value": 13.5,
+          "value": 17.766,
           "tag": "C",
           "citation": {
             "id": "C254",
@@ -7636,7 +7649,7 @@
           }
         },
         "hardware_revenue_M": {
-          "value": 6.0375,
+          "value": 8.4075,
           "tag": "C",
           "citation": {
             "id": "C257",
@@ -7646,7 +7659,7 @@
           }
         },
         "fee_revenue_M": {
-          "value": 1.08,
+          "value": 1.42128,
           "tag": "C",
           "citation": {
             "id": "C258",
@@ -7676,7 +7689,7 @@
           }
         },
         "total_monogram_revenue_M": {
-          "value": 7.2675,
+          "value": 9.97878,
           "tag": "C",
           "citation": {
             "id": "C261",
@@ -7686,7 +7699,7 @@
           }
         },
         "gross_profit_M": {
-          "value": 3.199125,
+          "value": 4.352841,
           "tag": "C",
           "citation": {
             "id": "C262",
@@ -7696,7 +7709,7 @@
           }
         },
         "fee_admin_M": {
-          "value": 0.108,
+          "value": 0.142128,
           "tag": "C",
           "citation": {
             "id": "C263",
@@ -7716,7 +7729,7 @@
           }
         },
         "incremental_ebitda_M": {
-          "value": 2.841125,
+          "value": 3.960713,
           "tag": "C",
           "citation": {
             "id": "C265",

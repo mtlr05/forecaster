@@ -1,5 +1,6 @@
 """Offline checks for a collaborative valuation request."""
 
+import importlib.util
 import json
 from pathlib import Path
 
@@ -168,6 +169,31 @@ def test_post_finagle_factor_is_applied_only_from_the_request():
     assert "13.1019" in section
     assert "[P] 2026-10-26" in section
     assert "rates.re" in section
+
+
+def test_write_notebooks_saves_each_scenario_script(tmp_path):
+    script = ROOT / "templates" / "run_collaborative.py"
+    spec = importlib.util.spec_from_file_location("run_collaborative", script)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    result = {
+        "version": "v02",
+        "scenarios": {
+            "base": {"notebook_code": "import finagle as cmp\nco.value()\n"},
+            "bear": {"ok": False},
+            "bull": {"notebook_code": "co.display_fin()"},
+        },
+    }
+    written = module.write_notebooks(tmp_path, result)
+    names = sorted(path.name for path in written)
+    assert names == ["notebook_base_v02.py", "notebook_bull_v02.py"]
+    assert (tmp_path / "notebook_base_v02.py").read_text(encoding="utf-8") == (
+        "import finagle as cmp\nco.value()\n"
+    )
+    assert (tmp_path / "notebook_bull_v02.py").read_text(encoding="utf-8") == (
+        "co.display_fin()\n"
+    )
+    assert not (tmp_path / "notebook_bear_v02.py").exists()
 
 
 def test_existing_forecasts_still_validate():

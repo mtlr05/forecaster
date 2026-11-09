@@ -63,7 +63,7 @@ A prompt list, including a stock-comp list, uses Finagle source `prompt`. A full
 
 ## Result
 
-`valuation_result_vNN.json` carries `ticker`, `version`, `finagle_commit`, `run_at`, and `fetched` (price, price date, risk-free rate, rate date, shares, shares source). Each scenario keeps `run_case`'s own keys and adds `defaults_filled`, the leaves whose source is `assumption`.
+`valuation_result_vNN.json` carries `ticker`, `version`, `finagle_commit`, `run_at`, and `fetched` (price, price date, risk-free rate, rate date, shares, shares source). Each scenario keeps `run_case`'s own keys and adds `defaults_filled`, the leaves whose source is `assumption`. The runner also writes `notebook_<scenario>_vNN.py` into the run folder. That file is Finagle's notebook script for rerunning the case. The runner does not execute it.
 
 The valuation section of the report lists:
 

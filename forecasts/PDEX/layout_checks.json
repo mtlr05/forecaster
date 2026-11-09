@@ -1,5 +1,5 @@
 {
-  "pages": 35,
+  "pages": 36,
   "figures": 22,
   "tables_single_page": true,
   "table_pages": {
@@ -25,52 +25,52 @@
       8
     ],
     "figure-check-7": [
-      8
-    ],
-    "figure-check-8": [
       9
     ],
-    "figure-check-9": [
+    "figure-check-8": [
       10
+    ],
+    "figure-check-9": [
+      11
     ],
     "figure-check-10": [
-      10
+      11
     ],
     "figure-check-11": [
-      11
+      12
     ],
     "figure-check-12": [
-      11
+      12
     ],
     "figure-check-13": [
-      12
+      13
     ],
     "figure-check-14": [
-      12
+      13
     ],
     "figure-check-15": [
-      12
+      14
     ],
     "figure-check-16": [
-      13
+      14
     ],
     "figure-check-17": [
-      13
+      14
     ],
     "figure-check-18": [
-      14
-    ],
-    "figure-check-19": [
-      14
-    ],
-    "figure-check-20": [
       15
     ],
+    "figure-check-19": [
+      15
+    ],
+    "figure-check-20": [
+      16
+    ],
     "figure-check-21": [
-      35
+      36
     ]
   },
-  "superscript_clusters": 253,
+  "superscript_clusters": 262,
   "superscript_examples": [
     "C79, C83",
     "C23, C24, C25, C26",

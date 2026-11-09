@@ -23,14 +23,29 @@ src('G20','"The average monthly utilization per system was 6.6 procedures during
 src('A43','"next largest customer accounting for 8% of sales" FY26; "75% and 12%, respectively" FY25. Rounded percentages, not exact customer dollars.','D1','p.2')
 src('A44','Customer 2: 2,487 thousand (12%) in quarter ended September30,2026; 1,091 thousand in prior-year quarter.','D2','Note10')
 src('G21','"The base rent from November 1, 2026 through February 29, 2028 is $11,600 per month", then "$12,064" from March1,2028.','D28','Item1.01')
-src('S23','Monogram timing/volume analyst assumptions: validation 0/10/10 units FY27 low/central/high; 10/0/0 FY28. Conditional new commercial systems FY27 0/10/25; FY28 0/120/200. Central on-time shipment realization 40%/70%; low0%, high100%; p weights commercial shipments only, not engineering/validation. FY27 active system-years = expected new systems /8 (Q4 rollout); FY28 = prior expected systems + half current additions. Central 120 cases per active system-year; high180. MAKO2012 ~79 annualized is a restraint, not a like-for-like forecast; established Zimmer channel supports faster launch but no ROSA conversions assumed.','D22')
+def stream_total(begin,n,prob,val,price,eng,rate,basket,util,stock,i):
+ added=n*prob;spares=begin*4*.05;units=val+added*4+spares;hw=units*price/1e6
+ active=added/8 if i==0 else begin+added/2;purchase=active*util*stock*basket/1e6
+ return added,eng+hw+purchase*rate
+def solve_n(begin,prob,price,eng,rate,basket,util,stock,target):
+ lo,hi=1,64
+ while stream_total(begin,hi,prob,0,price,eng,rate,basket,util,stock,1)[1]<target:hi*=2
+ while lo<hi:
+  mid=(lo+hi)//2
+  if stream_total(begin,mid,prob,0,price,eng,rate,basket,util,stock,1)[1]>=target:hi=mid
+  else:lo=mid+1
+ return lo
+base_target=77.548*.08;bull_target=2.487*4
+base_n28=solve_n(10*.4,.7,6000,.10,.05,300,120,1.15,base_target)
+bull_n28=solve_n(25,1,7500,.15,.08,500,180,1.2,bull_target)
+src('S23',f'Monogram timing/volume. FY27 validation 0/10/10 and conditional commercial systems 0/10/25 stay the validation year. FY28 conditional systems are solved so Monogram revenue reaches the second-customer band: base {base_n28} at 70% realization, target 77.548*8%; bull {bull_n28} at 100%, target 2.487*4. The old 120/200 plans were not a company cap. Realization 40%/70% base and 100% bull; low commercial systems remain 0. FY27 active system-years = expected new systems /8; FY28 = prior expected systems + half current additions. Central 120 cases per active system-year; high 180.','D22')
 src('S24','Hardware cost/price judgments: low materials1600 +8h*60 +overhead545 =2625 cost, price3500, GM25%; central materials2500 +10h*70 +overhead850 ~4050, rounded price6000 and TTM32.4516% GM; high materials3000 +12h*75 +overhead975 =4875, price7500, GM35%. Each priced kit includes one end effector plus gearing; 4 per new robot (one in use, backup/sterilization rotation), not a disclosed specification. Spares 5% of beginning installed fleet kits, no replacements of current-year kits, no repair revenue inside window. All prices and staffing are analyst estimates, not recovered redactions.','D25')
 src('S25','Fee judgments: central eligible burr/blade purchases300 dollars per case-equivalent, rate5%; high500 and8%; low no commercial launch. Purchases/use inventory factor1.30FY27,1.15FY28 central /1.20FY28 high. Exclude standard Persona implants (not patient-specific custom implants), robotic arms, navigation cameras, drapes, taxes, freight, packaging. Fee GP95%, incremental EBITDA85% before shared launch support: allow5% direct processing and10% admin expense. Rates and basket costs unobservable; range is scenario judgment, not a statistical interval.','D25')
 src('S26','Engineering revenue included within original NRE budget, not added twice: low0.05/0.05, central0.15/0.10, high0.20/0.15 US$M FY27/FY28; central FY27 about1000billable hours at150 dollars/hour, FY28 roughlytwo-thirds that workload as setup ends. GM25%/35%/40% low/central/high. Incremental shared launch support beyond current run rate0.04/0.06 low,0.04/0.10 central,0.10/0.25 high US$M. Covers QA/customer support/engineering contingency; permanent existing staff retained. No additional D&A assumed within existing capacity; risk if tooling/capex expands.','D18')
 src('S27','Helios separated: central0.15/0.45 US$M already allocated within CMF line run-rate/growth (illustratively50/150 drivers at3000 each); high0.25/0.50; low0/0. No author50–65% GM adopted; apply respective case core margins. Label/software engineering remains in existing NRE, no second setup-fee uplift. Product released, no disclosed orders: sizing is modest channel trial judgment.','D21')
 src('S28','Retain consensus base82.7/86.8, unknown product coverage; Monogram/Helios are explicit allocations inside total. Replace old bull0.5/1.0 combined allowance, do not stack. Bull/bear differences = unchanged core volume/repair shocks plus pipeline HIGH/LOW minus CENTRAL already in base. Acquired industrial line unscaled. Scale residual non-APM core only to preserve modeled pipeline amounts.','D13')
-src('S29','Retain FY28 explicit stop, FY29growth base3%, bull8%, bear-10% and mc25% in all cases. Launch timing now has a modeled range but no validated order/ramp beyond FY28; customer1 renewal after calendar2028 dominates. Hardware majority has ordinary margins; tiny high-margin fees insufficient to reprice company-wide contribution margin. Do not extrapolate bull launch increment into perpetual growth.','D22')
-for id in ['S13','S14','S18','S20']:sources[id]['text']='v4: '+sources['S29']['text']
+src('S29','FY28 explicit stop retained. Base and bull FY28 Monogram are the second-customer band, not a cross-check. gsnext is one more year of the FY28 system cohort with the FY28 core held. Bear gsnext is the customer-1 renewal. mc stays 25% because the added dollars are mostly hardware at an ordinary margin.','D22')
+sources['S13']['text']='mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29.'
 sources['S15']['text']='Bull: core medical devices +1/+1 and repairs +0.5/+0.5 US$M vs base; core GM33.5%; replace embedded central Monogram/Helios with explicit high path, not old combined NRE allowance. See S23-S28.'
 sources['S16']['text']='Bear: core medical devices -3/-8 and repairs -1/-1.5 US$M vs base; core GM31%; replace embedded central Monogram/Helios with low/delayed path. See S23-S28.'
 sources['S6']['text']='Original unscaled NRE1.2 retained; contains central Monogram engineering0.15 FY27 and0.10 FY28 as an allocation. Validation hardware is in medical devices. See S26.'
@@ -48,8 +63,8 @@ model={};raw={};csvrows=[]
 for case in ['bear','base','bull']:
  begin=0;rows={}
  for i,y in enumerate(years):
-  if case=='base': n=[10,120][i];prob=[.4,.7][i];val=[10,0][i];price=6000;cg=.324516;eng=[.15,.10][i];eg=.35;rate=.05;basket=300;util=120;stock=[1.3,1.15][i];support=[.04,.1][i];helios=[.15,.45][i]
-  elif case=='bull':n=[25,200][i];prob=1;val=[10,0][i];price=7500;cg=.35;eng=[.2,.15][i];eg=.4;rate=.08;basket=500;util=180;stock=[1.3,1.2][i];support=[.1,.25][i];helios=[.25,.5][i]
+  if case=='base': n=[10,base_n28][i];prob=[.4,.7][i];val=[10,0][i];price=6000;cg=.324516;eng=[.15,.10][i];eg=.35;rate=.05;basket=300;util=120;stock=[1.3,1.15][i];support=[.04,.1][i];helios=[.15,.45][i]
+  elif case=='bull':n=[25,bull_n28][i];prob=1;val=[10,0][i];price=7500;cg=.35;eng=[.2,.15][i];eg=.4;rate=.08;basket=500;util=180;stock=[1.3,1.2][i];support=[.1,.25][i];helios=[.25,.5][i]
   else:n=0;prob=0;val=[0,10][i];price=3500;cg=.25;eng=.05;eg=.25;rate=.02;basket=150;util=60;stock=1.3;support=[.04,.06][i];helios=0
   added=n*prob;spares=begin*4*.05;units=val+added*4+spares;hw=units*price/1e6;active=added/8 if i==0 else begin+added/2;cases=active*util;purchase=cases*stock*basket/1e6;fee=purchase*rate;gp=hw*cg+eng*eg+fee*.95;eb=gp-fee*.10-support
   r=dict(conditional_new_systems=n,shipment_realization=prob,expected_new_systems=added,begin_systems=begin,validation_units=val,units_per_new_system=4,spare_units=spares,total_kit_units=units,kit_price_USD=price,hardware_gross_margin=cg,active_system_years=active,procedures_per_system_year=util,procedure_equivalents=cases,purchase_inventory_factor=stock,eligible_basket_USD=basket,fee_rate=rate,eligible_purchases_M=purchase,engineering_revenue_M=eng,engineering_gross_margin=eg,hardware_revenue_M=hw,fee_revenue_M=fee,fee_gross_margin=.95,fee_ebitda_margin=.85,total_monogram_revenue_M=eng+hw+fee,gross_profit_M=gp,fee_admin_M=fee*.1,shared_launch_support_M=support,incremental_ebitda_M=eb,helios_revenue_M=helios)
@@ -107,7 +122,16 @@ for case,obj in [('base',p),('bull',p['scenarios']['bull']),('bear',p['scenarios
   for y in years:v=obj['totals'][metric][y]['value'];growth.append(v/prior-1);prior=v
   obj['finagle']['sales_growth' if metric=='revenue' else 'ebitda_growth']['value']=growth
  setval(obj['finagle']['me'],obj['totals']['ebitda']['FY28E']['value']/obj['totals']['revenue']['FY28E']['value'])
- obj['finagle']['note']='Operating leaves only; no Finagle or terminal growth. v4 reassessed pipeline; FY28 stop retained per S29.'
+ obj['finagle']['note']='Operating leaves only; no Finagle or terminal growth. FY28 Monogram meets the second-customer band; gsnext continues that cohort for one year.'
+def next_monogram(r):
+ begin=r['begin_systems']+r['expected_new_systems'];added=r['expected_new_systems'];spares=begin*4*.05
+ hw=(added*4+spares)*r['kit_price_USD']/1e6;active=begin+added/2
+ fee=active*r['procedures_per_system_year']*r['purchase_inventory_factor']*r['eligible_basket_USD']/1e6*r['fee_rate']
+ return r['engineering_revenue_M']+hw+fee
+for case,obj,evidence in [('base',p,['G17','A43','S23']),('bull',p['scenarios']['bull'],['G17','A44','S23'])]:
+ r=raw[case]['FY28E'];m29=next_monogram(r);rev=result[case]['FY28E']['revenue'];core=rev-r['total_monogram_revenue_M'];g=(core+m29)/rev-1
+ setval(obj['finagle']['gsnext'],g,f'{case} gsnext = (FY28 revenue {rev} - FY28 Monogram {r["total_monogram_revenue_M"]} + one more FY28 cohort {m29}) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate.',evidence)
+setval(p['scenarios']['bear']['finagle']['gsnext'],-0.1,'Bear gsnext stays -10%. That is the customer-1 renewal after calendar 2028, and it does not set the base.',['G3'])
 # Show the effect of inherited SBC addback explicitly, without changing EBITDA definition.
 p['bridge']['sbc_fy27']=fact(.135*4,'Forecast SBC = Q1FY27 0.135M *4; D2 cash flow statement.',('D2',))
 p['bridge']['sbc_fy28']=fact(.135*4*1.03,'Forecast SBC = FY27 SBC *1.03 inflation.',('D2','S1'))
