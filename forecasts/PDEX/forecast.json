@@ -638,7 +638,7 @@
     }
   },
   "finagle": {
-    "note": "Operating leaves only; no Finagle or terminal growth. FY28 Monogram meets the second-customer band; gsnext continues that cohort for one year.",
+    "note": "Operating leaves only; no Finagle or terminal growth. The medium-term organic growth forecast keeps each line on its trajectory and adds one more FY28 Monogram cohort.",
     "sales_growth": {
       "value": [
         0.06643627172847788,
@@ -686,11 +686,11 @@
       }
     },
     "gsnext": {
-      "value": 0.009177097,
+      "value": 0.018829526,
       "tag": "S",
       "citation": {
         "id": "S14",
-        "text": "base gsnext = (FY28 revenue 86.8 - FY28 Monogram 6.211606 + one more FY28 cohort 7.008177999999999) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate.",
+        "text": "base medium-term organic growth = FY29 88.43440286873361 / FY28 revenue - 1. Lines keep their trajectory and the Monogram cohort is one more year: Medical devices ex hardware 69.439154 to 71.522328; Industrial and scientific 3.108000 to 3.263400; NRE ex engineering 1.065707 to 1.065707; Repairs 6.781769 to 5.387470; Discounts ex fee 0.193765 to 0.187320; Monogram cohort 6.211606 to 7.008178. Not a round rate.",
         "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
         "page": "p.19"
       }
@@ -1867,7 +1867,7 @@
         }
       },
       "finagle": {
-        "note": "Operating leaves only; no Finagle or terminal growth. FY28 Monogram meets the second-customer band; gsnext continues that cohort for one year.",
+        "note": "Operating leaves only; no Finagle or terminal growth. The medium-term organic growth forecast keeps each line on its trajectory and adds one more FY28 Monogram cohort.",
         "sales_growth": {
           "value": [
             0.09670242947593732,
@@ -1915,11 +1915,11 @@
           }
         },
         "gsnext": {
-          "value": 0.030711537,
+          "value": 0.039932027,
           "tag": "S",
           "citation": {
             "id": "S18",
-            "text": "bull gsnext = (FY28 revenue 92.117174 - FY28 Monogram 9.97878 + one more FY28 cohort 12.80784) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate.",
+            "text": "bull medium-term organic growth = FY29 95.79559952145739 / FY28 revenue - 1. Lines keep their trajectory and the Monogram cohort is one more year: Medical devices ex hardware 70.489154 to 72.603828; Industrial and scientific 3.108000 to 3.263400; NRE ex engineering 1.065707 to 1.065707; Repairs 7.281769 to 5.867504; Discounts ex fee 0.193765 to 0.187320; Monogram cohort 9.978780 to 12.807840. Not a round rate.",
             "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001215/pdex_10k-063026.htm",
             "page": "p.19"
           }
@@ -1944,6 +1944,168 @@
               "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001325/pdex_def14a.htm",
               "page_status": "unverified"
             }
+          }
+        }
+      },
+      "gsnext_bridge": {
+        "rows": [
+          {
+            "name": "Medical devices ex hardware",
+            "fy28": {
+              "value": 70.489153592,
+              "tag": "C",
+              "citation": {
+                "id": "C300",
+                "text": "bull FY28 Medical devices ex hardware, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "fy29": {
+              "value": 72.6038282,
+              "tag": "C",
+              "citation": {
+                "id": "C301",
+                "text": "bull FY29 Medical devices ex hardware, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            }
+          },
+          {
+            "name": "Industrial and scientific",
+            "fy28": {
+              "value": 3.108,
+              "tag": "C",
+              "citation": {
+                "id": "C302",
+                "text": "bull FY28 Industrial and scientific, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "fy29": {
+              "value": 3.2634,
+              "tag": "C",
+              "citation": {
+                "id": "C303",
+                "text": "bull FY29 Industrial and scientific, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            }
+          },
+          {
+            "name": "NRE ex engineering",
+            "fy28": {
+              "value": 1.06570656,
+              "tag": "C",
+              "citation": {
+                "id": "C304",
+                "text": "bull FY28 NRE ex engineering, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "fy29": {
+              "value": 1.06570656,
+              "tag": "C",
+              "citation": {
+                "id": "C305",
+                "text": "bull FY29 NRE ex engineering, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            }
+          },
+          {
+            "name": "Repairs",
+            "fy28": {
+              "value": 7.281769019,
+              "tag": "C",
+              "citation": {
+                "id": "C306",
+                "text": "bull FY28 Repairs, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "fy29": {
+              "value": 5.867504271,
+              "tag": "C",
+              "citation": {
+                "id": "C307",
+                "text": "bull FY29 Repairs, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            }
+          },
+          {
+            "name": "Discounts ex fee",
+            "fy28": {
+              "value": 0.193764829,
+              "tag": "C",
+              "citation": {
+                "id": "C308",
+                "text": "bull FY28 Discounts ex fee, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "fy29": {
+              "value": 0.187320491,
+              "tag": "C",
+              "citation": {
+                "id": "C309",
+                "text": "bull FY29 Discounts ex fee, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            }
+          },
+          {
+            "name": "Monogram cohort",
+            "fy28": {
+              "value": 9.97878,
+              "tag": "C",
+              "citation": {
+                "id": "C310",
+                "text": "bull FY28 Monogram cohort, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            },
+            "fy29": {
+              "value": 12.80784,
+              "tag": "C",
+              "citation": {
+                "id": "C311",
+                "text": "bull FY29 Monogram cohort, medium-term organic growth bridge.",
+                "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+                "page_status": "unverified"
+              }
+            }
+          }
+        ],
+        "fy29_revenue": {
+          "value": 95.795599521,
+          "tag": "C",
+          "citation": {
+            "id": "C312",
+            "text": "bull FY29 revenue = sum of the medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "growth": {
+          "value": 0.039932027,
+          "tag": "C",
+          "citation": {
+            "id": "C313",
+            "text": "bull medium-term organic growth = FY29 bridge revenue / FY28 revenue - 1.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
           }
         }
       }
@@ -2560,7 +2722,7 @@
         }
       },
       "finagle": {
-        "note": "Operating leaves only; no Finagle or terminal growth. FY28 Monogram meets the second-customer band; gsnext continues that cohort for one year.",
+        "note": "Operating leaves only; no Finagle or terminal growth. The medium-term organic growth forecast keeps each line on its trajectory and adds one more FY28 Monogram cohort.",
         "sales_growth": {
           "value": [
             0.009604760935162604,
@@ -3437,12 +3599,15 @@
     {
       "id": "S14",
       "document": "D1",
-      "text": "base gsnext = (FY28 revenue 86.8 - FY28 Monogram 6.211606 + one more FY28 cohort 7.008177999999999) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate.",
+      "text": "base medium-term organic growth = FY29 88.43440286873361 / FY28 revenue - 1. Lines keep their trajectory and the Monogram cohort is one more year: Medical devices ex hardware 69.439154 to 71.522328; Industrial and scientific 3.108000 to 3.263400; NRE ex engineering 1.065707 to 1.065707; Repairs 6.781769 to 5.387470; Discounts ex fee 0.193765 to 0.187320; Monogram cohort 6.211606 to 7.008178. Not a round rate.",
       "page": "p.19",
       "inputs": [
-        "G17",
-        "A43",
-        "S23"
+        "S3",
+        "S5",
+        "S7",
+        "S9",
+        "S23",
+        "G3"
       ]
     },
     {
@@ -3666,11 +3831,14 @@
     {
       "id": "S18",
       "document": "D1",
-      "text": "bull gsnext = (FY28 revenue 92.117174 - FY28 Monogram 9.97878 + one more FY28 cohort 12.80784) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate.",
+      "text": "bull medium-term organic growth = FY29 95.79559952145739 / FY28 revenue - 1. Lines keep their trajectory and the Monogram cohort is one more year: Medical devices ex hardware 70.489154 to 72.603828; Industrial and scientific 3.108000 to 3.263400; NRE ex engineering 1.065707 to 1.065707; Repairs 7.281769 to 5.867504; Discounts ex fee 0.193765 to 0.187320; Monogram cohort 9.978780 to 12.807840. Not a round rate.",
       "page": "p.19",
       "inputs": [
-        "G17",
-        "A44",
+        "S3",
+        "S5",
+        "S7",
+        "S9",
+        "S15",
         "S23"
       ]
     },
@@ -4326,7 +4494,7 @@
     },
     {
       "id": "S29",
-      "text": "FY28 explicit stop retained. Base and bull FY28 Monogram are the second-customer band, not a cross-check. gsnext is one more year of the FY28 system cohort with the FY28 core held. Bear gsnext is the customer-1 renewal. mc stays 25% because the added dollars are mostly hardware at an ordinary margin.",
+      "text": "FY28 explicit stop retained. Base and bull FY28 Monogram are the second-customer band, not a cross-check. The medium-term organic growth forecast keeps each other line on its own trajectory and adds one more year of the FY28 system cohort. Bear gsnext is the customer-1 renewal. mc stays 25% because the cohort is mostly hardware and the continuing lines are ordinary core business.",
       "document": "D22",
       "page": "page unverified"
     },
@@ -5977,6 +6145,270 @@
       "inputs": [
         "C73",
         "C279"
+      ]
+    },
+    {
+      "id": "C286",
+      "text": "base FY28 Medical devices ex hardware, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S3",
+        "G3"
+      ]
+    },
+    {
+      "id": "C287",
+      "text": "base FY29 Medical devices ex hardware, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S3",
+        "G3"
+      ]
+    },
+    {
+      "id": "C288",
+      "text": "base FY28 Industrial and scientific, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S5"
+      ]
+    },
+    {
+      "id": "C289",
+      "text": "base FY29 Industrial and scientific, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S5"
+      ]
+    },
+    {
+      "id": "C290",
+      "text": "base FY28 NRE ex engineering, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S7"
+      ]
+    },
+    {
+      "id": "C291",
+      "text": "base FY29 NRE ex engineering, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S7"
+      ]
+    },
+    {
+      "id": "C292",
+      "text": "base FY28 Repairs, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "id": "C293",
+      "text": "base FY29 Repairs, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "id": "C294",
+      "text": "base FY28 Discounts ex fee, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S10"
+      ]
+    },
+    {
+      "id": "C295",
+      "text": "base FY29 Discounts ex fee, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S10"
+      ]
+    },
+    {
+      "id": "C296",
+      "text": "base FY28 Monogram cohort, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S23",
+        "G17"
+      ]
+    },
+    {
+      "id": "C297",
+      "text": "base FY29 Monogram cohort, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S23",
+        "G17"
+      ]
+    },
+    {
+      "id": "C298",
+      "text": "base FY29 revenue = sum of the medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S14"
+      ]
+    },
+    {
+      "id": "C299",
+      "text": "base medium-term organic growth = FY29 bridge revenue / FY28 revenue - 1.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S14"
+      ]
+    },
+    {
+      "id": "C300",
+      "text": "bull FY28 Medical devices ex hardware, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S3",
+        "G3"
+      ]
+    },
+    {
+      "id": "C301",
+      "text": "bull FY29 Medical devices ex hardware, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S3",
+        "G3"
+      ]
+    },
+    {
+      "id": "C302",
+      "text": "bull FY28 Industrial and scientific, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S5"
+      ]
+    },
+    {
+      "id": "C303",
+      "text": "bull FY29 Industrial and scientific, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S5"
+      ]
+    },
+    {
+      "id": "C304",
+      "text": "bull FY28 NRE ex engineering, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S7"
+      ]
+    },
+    {
+      "id": "C305",
+      "text": "bull FY29 NRE ex engineering, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S7"
+      ]
+    },
+    {
+      "id": "C306",
+      "text": "bull FY28 Repairs, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "id": "C307",
+      "text": "bull FY29 Repairs, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "id": "C308",
+      "text": "bull FY28 Discounts ex fee, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S10"
+      ]
+    },
+    {
+      "id": "C309",
+      "text": "bull FY29 Discounts ex fee, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S10"
+      ]
+    },
+    {
+      "id": "C310",
+      "text": "bull FY28 Monogram cohort, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S23",
+        "G17"
+      ]
+    },
+    {
+      "id": "C311",
+      "text": "bull FY29 Monogram cohort, medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S23",
+        "G17"
+      ]
+    },
+    {
+      "id": "C312",
+      "text": "bull FY29 revenue = sum of the medium-term organic growth bridge.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S18"
+      ]
+    },
+    {
+      "id": "C313",
+      "text": "bull medium-term organic growth = FY29 bridge revenue / FY28 revenue - 1.",
+      "document": "D2",
+      "page": "page unverified",
+      "inputs": [
+        "S18"
       ]
     }
   ],
@@ -7778,6 +8210,168 @@
       "citation": {
         "id": "C269",
         "text": "MAKO Q42012 monthly utilization6.6 *12 =79.2 annualized; old-platform analog only.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+        "page_status": "unverified"
+      }
+    }
+  },
+  "gsnext_bridge": {
+    "rows": [
+      {
+        "name": "Medical devices ex hardware",
+        "fy28": {
+          "value": 69.439153592,
+          "tag": "C",
+          "citation": {
+            "id": "C286",
+            "text": "base FY28 Medical devices ex hardware, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "fy29": {
+          "value": 71.5223282,
+          "tag": "C",
+          "citation": {
+            "id": "C287",
+            "text": "base FY29 Medical devices ex hardware, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        }
+      },
+      {
+        "name": "Industrial and scientific",
+        "fy28": {
+          "value": 3.108,
+          "tag": "C",
+          "citation": {
+            "id": "C288",
+            "text": "base FY28 Industrial and scientific, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "fy29": {
+          "value": 3.2634,
+          "tag": "C",
+          "citation": {
+            "id": "C289",
+            "text": "base FY29 Industrial and scientific, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        }
+      },
+      {
+        "name": "NRE ex engineering",
+        "fy28": {
+          "value": 1.06570656,
+          "tag": "C",
+          "citation": {
+            "id": "C290",
+            "text": "base FY28 NRE ex engineering, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "fy29": {
+          "value": 1.06570656,
+          "tag": "C",
+          "citation": {
+            "id": "C291",
+            "text": "base FY29 NRE ex engineering, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        }
+      },
+      {
+        "name": "Repairs",
+        "fy28": {
+          "value": 6.781769019,
+          "tag": "C",
+          "citation": {
+            "id": "C292",
+            "text": "base FY28 Repairs, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "fy29": {
+          "value": 5.387469618,
+          "tag": "C",
+          "citation": {
+            "id": "C293",
+            "text": "base FY29 Repairs, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        }
+      },
+      {
+        "name": "Discounts ex fee",
+        "fy28": {
+          "value": 0.193764829,
+          "tag": "C",
+          "citation": {
+            "id": "C294",
+            "text": "base FY28 Discounts ex fee, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "fy29": {
+          "value": 0.187320491,
+          "tag": "C",
+          "citation": {
+            "id": "C295",
+            "text": "base FY29 Discounts ex fee, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        }
+      },
+      {
+        "name": "Monogram cohort",
+        "fy28": {
+          "value": 6.211606,
+          "tag": "C",
+          "citation": {
+            "id": "C296",
+            "text": "base FY28 Monogram cohort, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        },
+        "fy29": {
+          "value": 7.008178,
+          "tag": "C",
+          "citation": {
+            "id": "C297",
+            "text": "base FY29 Monogram cohort, medium-term organic growth bridge.",
+            "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+            "page_status": "unverified"
+          }
+        }
+      }
+    ],
+    "fy29_revenue": {
+      "value": 88.434402869,
+      "tag": "C",
+      "citation": {
+        "id": "C298",
+        "text": "base FY29 revenue = sum of the medium-term organic growth bridge.",
+        "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
+        "page_status": "unverified"
+      }
+    },
+    "growth": {
+      "value": 0.018829526,
+      "tag": "C",
+      "citation": {
+        "id": "C299",
+        "text": "base medium-term organic growth = FY29 bridge revenue / FY28 revenue - 1.",
         "url": "https://www.sec.gov/Archives/edgar/data/788920/000107997326001410/pdex_10q-093026.htm",
         "page_status": "unverified"
       }

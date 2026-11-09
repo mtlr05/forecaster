@@ -1,0 +1,166 @@
+{
+  "mode": "collaborative",
+  "ticker": "PDEX",
+  "version": "v03",
+  "parent_version": "v02",
+  "forecast_commit": "uncommitted",
+  "scenarios": [
+    "base",
+    "bear",
+    "bull"
+  ],
+  "forecaster": {
+    "base": {
+      "forecast.sales_growth": {
+        "value": [
+          0.06643627172847788,
+          0.049576783555018045
+        ],
+        "tag": "C",
+        "cite_id": "C38",
+        "evidence": "Base revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.027871732037417773,
+          0.0658828169005643
+        ],
+        "tag": "C",
+        "cite_id": "C39",
+        "evidence": "Base EBITDA growth FY27, FY28."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.190251617,
+        "tag": "C",
+        "cite_id": "C40",
+        "evidence": "Base FY28 EBITDA / FY28 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.25,
+        "tag": "S",
+        "cite_id": "S13",
+        "evidence": "mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.018829526,
+        "tag": "S",
+        "cite_id": "S14",
+        "evidence": "base medium-term organic growth = FY29 88.43440286873361 / FY28 revenue - 1. Lines keep their trajectory and the Monogram cohort is one more year: Medical devices ex hardware 69.439154 to 71.522328; Industrial and scientific 3.108000 to 3.263400; NRE ex engineering 1.065707 to 1.065707; Repairs 6.781769 to 5.387470; Discounts ex fee 0.193765 to 0.187320; Monogram cohort 6.211606 to 7.008178. Not a round rate."
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "S",
+        "cite_id": "S12",
+        "evidence": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G1",
+        "evidence": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named."
+      }
+    },
+    "bear": {
+      "forecast.sales_growth": {
+        "value": [
+          0.009604760935162604,
+          -0.09668108817759324
+        ],
+        "tag": "C",
+        "cite_id": "C76",
+        "evidence": "Bear revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          -0.142906037285212,
+          -0.21312531913807142
+        ],
+        "tag": "C",
+        "cite_id": "C77",
+        "evidence": "Bear EBITDA growth FY27, FY28."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.143737674,
+        "tag": "C",
+        "cite_id": "C78",
+        "evidence": "Bear FY28 EBITDA / FY28 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.25,
+        "tag": "S",
+        "cite_id": "S13",
+        "evidence": "mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": -0.1,
+        "tag": "S",
+        "cite_id": "S20",
+        "evidence": "Bear gsnext stays -10%. That is the customer-1 renewal after calendar 2028, and it does not set the base."
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "S",
+        "cite_id": "S12",
+        "evidence": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G1",
+        "evidence": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named."
+      }
+    },
+    "bull": {
+      "forecast.sales_growth": {
+        "value": [
+          0.09670242947593732,
+          0.08313153136964702
+        ],
+        "tag": "C",
+        "cite_id": "C57",
+        "evidence": "Bull revenue growth FY27, FY28 (total basis; APM consolidated since Feb 2026 and in FY26A)."
+      },
+      "forecast.ebitda_growth": {
+        "value": [
+          0.13596567040403373,
+          0.15541786200191288
+        ],
+        "tag": "C",
+        "cite_id": "C58",
+        "evidence": "Bull EBITDA growth FY27, FY28."
+      },
+      "forecast.margin_path.me": {
+        "value": 0.214764936,
+        "tag": "C",
+        "cite_id": "C59",
+        "evidence": "Bull FY28 EBITDA / FY28 revenue."
+      },
+      "forecast.margin_path.mc": {
+        "value": 0.25,
+        "tag": "S",
+        "cite_id": "S13",
+        "evidence": "mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29."
+      },
+      "forecast.margin_path.gsnext": {
+        "value": 0.039932027,
+        "tag": "S",
+        "cite_id": "S18",
+        "evidence": "bull medium-term organic growth = FY29 95.79559952145739 / FY28 revenue - 1. Lines keep their trajectory and the Monogram cohort is one more year: Medical devices ex hardware 70.489154 to 72.603828; Industrial and scientific 3.108000 to 3.263400; NRE ex engineering 1.065707 to 1.065707; Repairs 7.281769 to 5.867504; Discounts ex fee 0.193765 to 0.187320; Monogram cohort 9.978780 to 12.807840. Not a round rate."
+      },
+      "forecast.ebitda_basis": {
+        "value": "total",
+        "tag": "S",
+        "cite_id": "S12",
+        "evidence": "APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total."
+      },
+      "forecast.acquisition_disclosure.status": {
+        "value": "none",
+        "tag": "G",
+        "cite_id": "G1",
+        "evidence": "No pending acquisition disclosed; FY26 CEO letter says management is evaluating acquisitions, none named."
+      }
+    }
+  },
+  "prompt_inputs": [],
+  "post_finagle": null
+}

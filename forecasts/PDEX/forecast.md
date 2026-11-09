@@ -15,7 +15,7 @@
 
 Base revenue remains consensus; Monogram is now 0.307M/6.212M inside it, sized to the second-customer band. Own build 82.617170/89.278766M. High Monogram 1.054250/9.978780M, low 0.050000/0.085000M; Helios separate. Base EBITDA is the cost build, with the larger FY28 Monogram allocation inside consensus. No whole-robot or sourced-disposable gross bill counted as PDEX sales; no CVR operating revenue.
 
-History, year zero, and capex method 1 are retained. Next-year growth is the FY29 continuation of the FY28 cohort. Finagle v02 is in `collab/valuation_result_v02.json`. See the report for the evidence, `robotics_model.csv` for the arithmetic, and `revision_log.md` for the earlier line changes.
+History, year zero, and capex method 1 are retained. The medium-term organic growth forecast keeps each line on its trajectory and adds one more Monogram cohort. Finagle v03 is in `collab/valuation_result_v03.json`. See the report for the evidence, `robotics_model.csv` for the arithmetic, and `revision_log.md` for the earlier line changes.
 
 The self-contained narrative and sources are report.md/report.pdf. Forecast.json is authoritative. David authorized reasoned robotics estimation; unverified pricing/volumes are explicit analyst assumptions, not optional unintegrated sensitivities. Validation results saved separately.
 
@@ -23,14 +23,14 @@ The self-contained narrative and sources are report.md/report.pdf. Forecast.json
 
 Version 4, rank rebuild 8 November 2026. Base case: FY27E revenue 82.700 and EBITDA 15.493111; FY28E revenue 86.800 and EBITDA 16.513840. Revenue base is consensus; EBITDA base is the cost build. Bull FY28E revenue 92.117174 and EBITDA 19.783539; bear FY28E revenue 70.723394 and EBITDA 10.165616. Full precision is in `forecast.json`. The reader document is `report.md` and `report.pdf`. Line changes are in `revision_log.md`.
 
-Finagle v02 is in `collab/valuation_result_v02.json`. Next-year sales growth is the FY29 continuation of the FY28 system cohort: about 0.9% base and 3.1% bull. Bear next-year growth stays −10% for the customer renewal. Incremental margin stays 25%. Unknown contract prices and customer identity remain risks.
+Finagle v03 is in `collab/valuation_result_v03.json`. The medium-term organic growth forecast keeps each line on its trajectory and adds one more Monogram cohort: 1.9% base and 4.0% bull. Bear next-year growth stays −10% for the customer renewal. Incremental margin stays 25%. Unknown contract prices and customer identity remain risks.
 
 Resume: `build_v4.py` applies the v4 robotics deltas to the retained `baseline_v3.json` beside it. It is not a from-scratch model. It writes `forecast.json`, `robotics_model.csv` and `model_results.json` in this directory. `render_report.py` renders the existing `report.md` to `report.pdf` and does not recompute forecast figures. `write_documents.py` and `check_v4.py` are not in this tree. Preserve `baseline_v3.json` unless the delta is being rerun on purpose. Numbered sources are in `report.md` Appendix B.
 
 # Pro-Dex, Inc. (Nasdaq: PDEX)
 ## Company Update: FY27E–FY28E Revenue and EBITDA Forecast
 
-*8 November 2026, America/Toronto (v4, rank rebuild). US$ millions except unit prices and operating volumes; fiscal year ends 30 June. Forecast only: no rating or price target. Finagle v02 is in `collab/valuation_result_v02.json`. Audit record: `forecast.json`; operating arithmetic: `robotics_model.csv` and `build_v4.py`. Numbered sources are in `report.md` Appendix B.*
+*9 November 2026, America/Toronto (v4, rank rebuild). US$ millions except unit prices and operating volumes; fiscal year ends 30 June. Forecast only: no rating or price target. Finagle v03 is in `collab/valuation_result_v03.json`. Audit record: `forecast.json`; operating arithmetic: `robotics_model.csv` and `build_v4.py`. Numbered sources are in `report.md` Appendix B.*
 
 ## 1. Summary
 
@@ -215,7 +215,7 @@ Figure 4 maps primary facts to the actual revisions; dollars are recomputed from
 | No published annual guide; one-analyst consensus [E1][E2] | Allocate central pipeline within total; scale residual core only [S28] | Base revenue unchanged 82.7/86.8; own build 82.617/89.279M |
 | New APM space rent from November 2026 [G21] | Manufacturing occupancy cash-rent proxy, not integration [G21] | EBITDA deduction 0.0928/0.141056M in every case |
 | More sustaining engineering and launch work [D2] | Explicit extra support, fee admin and distinct stream margins [S26] | Base EBITDA 15.493/16.514M |
-| CEO rank: customer number two within a couple of years [G17] | FY28 base and bull meet the second-customer band; gsnext continues that cohort one year [S23][S14][S18] | Base Monogram 6.21M; bull 9.98M; gsnext 0.9% / 3.1% |
+| CEO rank: customer number two within a couple of years [G17] | FY28 base and bull meet the second-customer band; the medium-term rate keeps the other lines and adds one more cohort [S23][S14][S18] | Base Monogram 6.21M; bull 9.98M; growth 1.9% / 4.0% |
 
 *Source: forecast.json and robotics_model.csv; estimates are analyst judgments, not new company guidance. May not sum due to rounding.*
 </div>
@@ -274,7 +274,7 @@ Figure 5b shows the nine-quarter history window used for one-time items and the 
 *Source: D3–D12; Q4 = fiscal year less nine months; EBITDA = operating income + D&A + stock comp.*
 </div>
 
-**Beyond FY28.** Base and bull gsnext are one more year of the FY28 system cohort with the FY28 core held, about 0.9% and 3.1% [S14][S18]. Bear gsnext stays −10% for the customer renewal and does not set the base [S20]. Incremental margin stays 25% because the added dollars are mostly hardware [S13]. The explicit window stays at FY28. Finagle v02 fades those rates toward its own terminal growth.
+**Beyond FY28.** The medium-term organic growth forecast is 1.9% base and 4.0% bull. Each other line keeps its trajectory, and the Monogram cohort is one more year [S14][S18]. Bear gsnext stays −10% for the customer renewal and does not set the base [S20]. Incremental margin stays 25% because the cohort is mostly hardware and the continuing lines are ordinary core business [S13]. The explicit window stays at FY28. Finagle v03 fades those rates toward its own terminal growth.
 
 ## Appendix A – Bull and Bear Cases
 
@@ -300,7 +300,7 @@ Figure 6 shows integrated scenarios, not full robotics contributions added to co
 
 ## Appendix C – Method
 
-We refreshed origin/main and used forecaster method be46f4a in an isolated clone; no repository method/code was changed. Base annual revenue follows published consensus, with residual-core line reconciliation and acquired industrial revenue unscaled. EBITDA uses a cost build; robotics receives separate hardware, engineering and fee economics, support and administration, plus the newly disclosed manufacturing rent. Public facts, management aspirations and analyst judgments remain separately tagged; the supporting CSV is an audit trail, not a claim of disclosed robot prices. No customer identity is inferred from supplier status. All historical/year-zero inputs remain unchanged; all impacted scenario leaves and comparison views are recomputed. The explicit forecast ends at FY28. Finagle v02 values the leaves and fades next-year growth toward its own terminal growth [S28][S29].
+We refreshed origin/main and used forecaster method be46f4a in an isolated clone; no repository method/code was changed. Base annual revenue follows published consensus, with residual-core line reconciliation and acquired industrial revenue unscaled. EBITDA uses a cost build; robotics receives separate hardware, engineering and fee economics, support and administration, plus the newly disclosed manufacturing rent. Public facts, management aspirations and analyst judgments remain separately tagged; the supporting CSV is an audit trail, not a claim of disclosed robot prices. No customer identity is inferred from supplier status. All historical/year-zero inputs remain unchanged; all impacted scenario leaves and comparison views are recomputed. The explicit forecast ends at FY28. Finagle v03 values the leaves and fades the medium-term organic growth forecast toward its own terminal growth [S28][S29].
 
 ## Four views and ratios [C]
 
@@ -330,11 +330,11 @@ The consequential moves are launch timing/systems, kits/price, eligible purchase
 - [S11] Discounts and other FY28 held at FY27. Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
 - [S12] APM (acquired Feb 2026) is inside FY26A actuals and too small to split; path is total. Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
 - [S13] mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29.
-- [S14] base gsnext = (FY28 revenue 86.8 − FY28 Monogram 6.211606 + one more FY28 cohort 7.008178) / FY28 revenue − 1 = 0.9177%. The cohort is the same expected new systems again, with the FY28 core held.
+- [S14] Base medium-term organic growth = FY29 88.43440286873361 / FY28 revenue − 1. Lines keep their trajectory and the Monogram cohort is one more year: medical devices excluding hardware 69.439154 to 71.522328; industrial 3.108000 to 3.263400; NRE excluding engineering 1.065707 to 1.065707; repairs 6.781769 to 5.387470; discounts excluding the fee 0.193765 to 0.187320; Monogram cohort 6.211606 to 7.008178. Not a round rate.
 - [S15] Bull: core medical devices +1/+1 and repairs +0.5/+0.5 US$M vs base; core GM33.5%; replace embedded central Monogram/Helios with explicit high path, not old combined NRE allowance. See S23-S28. Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
 - [S16] Bear: core medical devices -3/-8 and repairs -1/-1.5 US$M vs base; core GM31%; replace embedded central Monogram/Helios with low/delayed path. See S23-S28. Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
 - [S17] bull gross margin lever: see bull levers Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
-- [S18] bull gsnext = (FY28 revenue 92.117174 − FY28 Monogram 9.97878 + one more FY28 cohort 12.80784) / FY28 revenue − 1 = 3.0712%. The cohort is the same expected new systems again, with the FY28 core held.
+- [S18] Bull medium-term organic growth = FY29 95.79559952145739 / FY28 revenue − 1. Lines keep their trajectory and the Monogram cohort is one more year: medical devices excluding hardware 70.489154 to 72.603828; industrial 3.108000 to 3.263400; NRE excluding engineering 1.065707 to 1.065707; repairs 7.281769 to 5.867504; discounts excluding the fee 0.193765 to 0.187320; Monogram cohort 9.978780 to 12.807840. Not a round rate.
 - [S19] bear gross margin lever: see bear levers Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
 - [S20] Bear gsnext stays −10%. That is the customer-1 renewal after calendar 2028, and it does not set the base.
 - [S21] No capex guidance; capex method 1 for all years (standing preference). Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
@@ -345,7 +345,7 @@ The consequential moves are launch timing/systems, kits/price, eligible purchase
 - [S26] Engineering revenue included within original NRE budget, not added twice: low0.05/0.05, central0.15/0.10, high0.20/0.15 US$M FY27/FY28; central FY27 about1000billable hours at150 dollars/hour, FY28 roughlytwo-thirds that workload as setup ends. GM25%/35%/40% low/central/high. Incremental shared launch support beyond current run rate0.04/0.06 low,0.04/0.10 central,0.10/0.25 high US$M. Covers QA/customer support/engineering contingency; permanent existing staff retained. No additional D&A assumed within existing capacity; risk if tooling/capex expands. Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
 - [S27] Helios separated: central0.15/0.45 US$M already allocated within CMF line run-rate/growth (illustratively50/150 drivers at3000 each); high0.25/0.50; low0/0. No author50–65% GM adopted; apply respective case core margins. Label/software engineering remains in existing NRE, no second setup-fee uplift. Product released, no disclosed orders: sizing is modest channel trial judgment. Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
 - [S28] Retain consensus base82.7/86.8, unknown product coverage; Monogram/Helios are explicit allocations inside total. Replace old bull0.5/1.0 combined allowance, do not stack. Bull/bear differences = unchanged core volume/repair shocks plus pipeline HIGH/LOW minus CENTRAL already in base. Acquired industrial line unscaled. Scale residual non-APM core only to preserve modeled pipeline amounts. Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
-- [S29] FY28 explicit stop retained. Base and bull FY28 Monogram are the second-customer band, not a cross-check. gsnext is one more year of the FY28 system cohort with the FY28 core held. Bear gsnext is the customer-1 renewal. mc stays 25% because the added dollars are mostly hardware at an ordinary margin.
+- [S29] FY28 explicit stop retained. Base and bull FY28 Monogram are the second-customer band, not a cross-check. The medium-term organic growth forecast keeps each other line on its own trajectory and adds one more year of the FY28 system cohort. Bear gsnext is the customer-1 renewal. mc stays 25% because the cohort is mostly hardware and the continuing lines are ordinary core business.
 - [S30] bear FY27E: conditional_new_systems = 0. Analyst judgment, not disclosed contract terms; rationale and bounds in S23. Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
 - [S31] bear FY27E: shipment_realization = 0. Analyst judgment, not disclosed contract terms; rationale and bounds in S23. Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.
 - [S32] bear FY27E: validation_units = 0. Analyst judgment, not disclosed contract terms; rationale and bounds in S23. Revise against disclosed orders, pricing, utilization, audited costs or guidance; keep pipeline allocated inside consensus unless exclusions are verified.

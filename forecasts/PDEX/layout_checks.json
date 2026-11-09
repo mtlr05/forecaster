@@ -1,6 +1,6 @@
 {
-  "pages": 36,
-  "figures": 22,
+  "pages": 38,
+  "figures": 24,
   "tables_single_page": true,
   "table_pages": {
     "figure-check-0": [
@@ -31,7 +31,7 @@
       10
     ],
     "figure-check-9": [
-      11
+      10
     ],
     "figure-check-10": [
       11
@@ -67,10 +67,16 @@
       16
     ],
     "figure-check-21": [
-      36
+      16
+    ],
+    "figure-check-22": [
+      16
+    ],
+    "figure-check-23": [
+      38
     ]
   },
-  "superscript_clusters": 262,
+  "superscript_clusters": 270,
   "superscript_examples": [
     "C79, C83",
     "C23, C24, C25, C26",

@@ -1,7 +1,7 @@
 # Pro-Dex, Inc. (Nasdaq: PDEX)
 ## Company Update: FY27E–FY28E Revenue and EBITDA Forecast
 
-*Rewritten 8 November 2026, America/Toronto. Forecast and research as of 7 November 2026; valuation run 8 November 2026. Latest reported quarter ended 30 September 2026. US$ millions unless stated otherwise; fiscal year ends 30 June. Includes a Finagle valuation (Section 9). No rating and no price target. Forecast figures and assumptions are unchanged from v4 in `forecast.json`. Valuation result: `forecasts/PDEX/collab/valuation_result_v02.json`. Numbered sources appear in Appendix B.*
+*Rewritten 8 November 2026, America/Toronto. Forecast and research as of 7 November 2026; valuation run 9 November 2026. Latest reported quarter ended 30 September 2026. US$ millions unless stated otherwise; fiscal year ends 30 June. Includes a Finagle valuation (Section 9). No rating and no price target. Forecast figures and assumptions are unchanged from v4 in `forecast.json`. Valuation result: `forecasts/PDEX/collab/valuation_result_v03.json`. Numbered sources appear in Appendix B.*
 
 ## 1. Estimate comparison
 
@@ -208,7 +208,7 @@ Figure 4b separates the revenue streams from their contribution. Monetary rows u
 
 *Source: unchanged v4 robotics_model.csv and forecast.json [S24][S25][S26][S27]. May not sum due to rounding.*
 </div>
-The June 2026 comment that Monogram could become customer number two within a couple of years sets the FY28 band [G17]. Said in June 2026, that horizon is the end of FY28. The FY26 second customer is about $6.20M, and the latest quarter annualizes to about $9.95M (derived) [C267][C268]. The base meets the $6.20M figure. The bull meets the $9.95M figure. Appendix A has the bull and bear builds. The comment does not identify the customer that accounts for 78% of sales [G17][A36].
+The June 2026 comment that Monogram could become customer number two within a couple of years sets the FY28 band [G17]. Said in June 2026, that horizon is the end of FY28. The FY26 second customer is about $6.20M, and the latest quarter annualizes to about $9.95M (derived) [C267][C268]. The base meets the $6.20M figure. The bull meets the $9.95M figure. The medium-term organic growth forecast is the other lines' trajectory plus one more year of that path [S14][S18]. Appendix A has the bull and bear builds. The comment does not identify the customer that accounts for 78% of sales [G17][A36].
 
 ### Industrial machining, occupancy and working capital
 
@@ -260,7 +260,7 @@ The Q1 FY27 cost run rate has no separately quantified remaining acquisition cha
 
 For the base cost build, non-Monogram revenue earns the retained core gross margin [C4][C23][C24]. Monogram gross profit is added stream by stream [S24][S25][S26]. New manufacturing rent, ordinary operating expenses, fee administration and incremental launch support are deducted [G21][C5][C6][S25][S26]. Existing depreciation, amortization and stock compensation are then added back under the inherited EBITDA definition [C7][C8][C23][C24].
 
-The pipeline has been considered but does not extend the explicit forecast beyond FY28 [S29]. Base next-year growth is 0.9%, the company growth from shipping the FY28 system cohort once more with the FY28 core held [S14]. Bull next-year growth is 3.1% on the same rule [S18]. Incremental margin stays 25% because the added dollars are mostly hardware [S13]. The core-customer renewal is the bear, where next-year growth is −10% [S20][G3]. It does not replace the base path. Terminal growth is Finagle's default, and Finagle fades the next-year rate toward that default. Section 9 reports the valuation.
+The pipeline has been considered but does not extend the explicit forecast beyond FY28 [S29]. The medium-term organic growth forecast is 1.9%. Each other line keeps its own trajectory, and the Monogram cohort is one more year of the FY28 systems [S14]. The bull is 4.0% on the same rule [S18]. The contribution margin stays 25% because the continuing lines are ordinary core business and the cohort is mostly hardware [S13]. The core-customer renewal is the bear, at −10% [S20][G3]. It does not replace the base path. Terminal growth is Finagle's default, and Finagle fades the medium-term rate toward that default. Section 9 reports the valuation.
 
 ### Base case
 
@@ -288,13 +288,13 @@ SBC convention. Headline EBITDA adds back stock compensation. Keeping SBC as an 
 
 ## 9. Valuation
 
-Finagle values the shares at $38.01 in the base case, against a $61.20 price on 8 November 2026, 37.9% below that price (derived) [D31][C289]. The present value of the terminal cash flow is 54% of that equity value (derived) [C289]. The bear case is $6.25 and the bull case is $50.74 [D31]. Appendix A has the three-case inputs and the bull and bear key rows.
+Finagle values the shares at $39.92 in the base case, against a $61.20 price on 9 November 2026, 34.8% below that price (derived) [D32][C314]. The present value of the terminal cash flow is 54.7% of that equity value (derived) [C314]. The bear case is $6.24 and the bull case is $52.81 [D32]. Appendix A has the three-case inputs, the bull growth bridge, and the bull and bear key rows.
 
-The dividend-discount value equals the free-cash-flow value in each case, $38.01, $6.25 and $50.74 [D31]. No prompt input was stated, and there is no post-run adjustment [D31].
+The dividend-discount value equals the free-cash-flow value in each case, $39.92, $6.24 and $52.81 [D32]. No prompt input was stated, and there is no post-run adjustment [D32].
 
-Finagle discounts free cash flow to equity at the cost of equity. It takes the explicit revenue and EBITDA as given for two years, FY2027E and FY2028E, then extends that path for eight further years, through FY2036E, using the starting margin, the incremental margin and the next-period growth, fading toward terminal growth [D31]. The terminal value uses the free cash flow of the year after FY2036E [D31]. Terminal growth is Finagle's default, equal to the 10-year yield. We did not set it. Free cash flow to equity stays positive in every year of the base and bull cases [D31]. The bear result flags negative free cash flow to equity after year 1 [D31]. The only negative print is year 5, and it is numerical dust around zero. We do not correct it.
+Finagle discounts free cash flow to equity at the cost of equity. It takes the explicit revenue and EBITDA as given for two years, FY2027E and FY2028E, then extends that path for eight further years, through FY2036E, using the starting margin, the incremental margin and the medium-term organic growth forecast, fading toward terminal growth [D32]. The terminal value uses the free cash flow of the year after FY2036E [D32]. Terminal growth is Finagle's default, equal to the 10-year yield. We did not set it. Free cash flow to equity stays positive in every year of the base and the bull [D32]. The bear has no sanity flag [D32].
 
-Figure 13 is the base-case inputs behind the $38.01. The market rates are the same in the bear and the bull. Those two cases are in Figure 16.
+Figure 13 is the base-case inputs behind the $39.92. The market rates are the same in the bear and the bull. Those two cases are in Figure 16.
 
 <div class="fig" markdown="1">
 
@@ -302,30 +302,51 @@ Figure 13 is the base-case inputs behind the $38.01. The market rates are the sa
 
 | Input | Base | Where it came from |
 |---|---:|---|
-| Cost of equity | 10.3% | Finagle default: 5.5 points over the 10-year yield [D31] |
-| Cost of debt | 4.3% | Finagle assumption: year-0 interest divided by year-0 debt [D31] |
-| Tax rate | 21% | Finagle assumption: US federal statutory rate [D31] |
-| Terminal growth | 4.8% | Finagle default: the 10-year yield [D31] |
-| Shares (millions) | 3.20 | Yahoo, fetched [D31] |
-| Price (US$) | 61.20 | Yahoo previous close [D31] |
-| Year-0 debt | 18.9 | Yahoo [D31] |
-| Year-0 cash | 9.3 | Yahoo [D31] |
+| Cost of equity | 10.4% | Finagle default: 5.5 points over the 10-year yield [D32] |
+| Cost of debt | 4.3% | Finagle assumption: year-0 interest divided by year-0 debt [D32] |
+| Tax rate | 21% | Finagle assumption: US federal statutory rate [D32] |
+| Terminal growth | 4.9% | Finagle default: the 10-year yield [D32] |
+| Shares (millions) | 3.20 | Yahoo, fetched [D32] |
+| Price (US$) | 61.20 | Yahoo previous close [D32] |
+| Year-0 debt | 18.9 | Yahoo [D32] |
+| Year-0 cash | 9.3 | Yahoo [D32] |
 | Starting margin | 19.0% | Forecast file [C40] |
 | Incremental margin | 25.0% | Forecast judgment [S13] |
-| Next-period growth | 0.9% | One more FY28 system cohort, core held [S14] |
-| Terminal WACC | 9.3% | Finagle output [D31] |
+| Medium-term organic growth | 1.9% | Line trajectories plus one more Monogram cohort [S14][C299] |
+| Terminal WACC | 9.4% | Finagle output [D32] |
 
-*Source: `valuation_result_v02.json` [D31]; forecast leaves [C40][S13][S14]. Full precision is in Appendix B.*
+*Source: `valuation_result_v03.json` [D32]; forecast leaves [C40][S13][S14][C299]. Full precision is in Appendix B.*
 
 </div>
 
-The starting margin is FY2028E EBITDA divided by FY2028E revenue [C40]. The incremental margin stays at 25% because the rank path is mostly hardware at an ordinary gross margin [S13]. The next-period growth is 0.9% in the base and 3.1% in the bull, each the company growth from shipping the FY28 system cohort once more with the FY28 core held [S14][S18]. The core-customer renewal is the bear, at −10%, and it does not set the base [S20][G3]. Cost of equity, terminal growth and the 15% terminal return on capital are Finagle defaults [D31]. Because no debt policy was stated, Finagle sets debt to year-0 debt over year-0 EBITDA, about 1.3x, from FY2027E [D31]. The cost of debt is year-0 interest divided by year-0 debt [D31]. The tax rate is the 21% federal statutory rate, because no marginal rate was stated [D31].
+The starting margin, 19.0%, is FY2028E EBITDA divided by FY2028E revenue [C40]. The contribution margin stays at 25%. The continuing lines are ordinary core business, and the Monogram cohort is still mostly hardware, so the mix does not move it [S13][S29]. The medium-term organic growth forecast is 1.9% [S14][C299]. Figure 21 is that build. Medical devices excluding Monogram hardware keep the 3% already used for FY28. The orthopedic phrase stops at 2028, so it does not freeze that line and it does not add a new rate [S3][G3]. Industrial keeps 5% [S5]. NRE excluding Monogram engineering stays flat [S7]. Repairs keep the decline already taken from FY27 to FY28 [S8][S9]. Discounts excluding the fee stay on their last explicit step [S10]. The Monogram row is one more year of the FY28 systems [S23]. The bull uses the same rule and is 4.0%. Appendix A has that bridge [S18]. The bear stays the customer renewal, at −10%, and it does not set the base. Appendix A has that case [S20][G3]. Cost of equity, terminal growth and the 15% terminal return on capital are Finagle defaults [D32]. Because no debt policy was stated, Finagle sets debt to year-0 debt over year-0 EBITDA, about 1.3x, from FY2027E [D32]. The cost of debt is year-0 interest divided by year-0 debt [D32]. The tax rate is the 21% federal statutory rate, because no marginal rate was stated [D32].
 
-No prompt input was stated [D31]. Finagle filled, as its own assumptions, the tax-loss balance, non-operating assets, the cost of equity, terminal growth, the terminal return on capital, the tax rate, the cost of debt, the working-capital change, the debt policy, the target leverage, the year that target starts, and the distribution [D31]. The base and bull cases have no sanity flags [D31]. The bear case flags, in the result's own words, "negative FCFE after year 1" [D31]. The base-case validation warning, in the result's own words: "forecast evidence mentions acquisitions but the case has none, so MnA stays zero" [D31]. The bear case carries the same warning [D31]. The bull case repeats it and adds, in the result's own words: "average EBITDA growth is 14.6% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero." [D31]. The forecast records that management is evaluating acquisitions and that none is pending, and the closed APM deal is already inside the reported history [G1]. This case books no future purchase, so the acquisition line stays zero [D31].
+Figure 21 takes the last explicit year, grows each line on its own trajectory, and adds one more Monogram cohort. The dollar changes divided by FY28 revenue are the 1.9% [C299].
 
-Fetched market inputs, all from Yahoo on 8 November 2026: a price of $61.20, a risk-free rate of 4.837%, and 3.20 million shares [D31]. Year-0 revenue, EBITDA, capex, debt and cash are Yahoo's as well [D31]. Finagle commit `377f177b4013e713fe7c4603962e5f883a67e298`. The run was at 5:27 p.m. Toronto time on 8 November 2026 [D31].
+<div class="fig" markdown="1">
 
-Figure 14 splits base equity value into the explicit horizon and the terminal value. The split is our arithmetic on Finagle's terminal cash flow and is marked derived [C289]. The value per share is Finagle's [D31].
+**Figure 21 – Medium-term organic growth, base case**
+
+| US$M | FY2028E | FY2029E | Change |
+|---|---:|---:|---:|
+| Medical devices ex hardware | 69.4 [C286] | 71.5 [C287] | 2.1 |
+| Industrial and scientific | 3.1 [C288] | 3.3 [C289] | 0.2 |
+| NRE ex engineering | 1.1 [C290] | 1.1 [C291] | 0.0 |
+| Repairs | 6.8 [C292] | 5.4 [C293] | −1.4 |
+| Discounts ex fee | 0.2 [C294] | 0.2 [C295] | 0.0 |
+| Monogram cohort | 6.2 [C296] | 7.0 [C297] | 0.8 |
+| Total | 86.8 [E2] | 88.4 [C298] | 1.6 |
+| Medium-term organic growth | | | 1.9% [C299] |
+
+*Source: forecast.json `gsnext_bridge` [C286][C287][C288][C289][C290][C291][C292][C293][C294][C295][C296][C297][C298][C299][S3][S5][S7][S8][S9][S10][S23][E2]. May not sum due to rounding.*
+
+</div>
+
+No prompt input was stated [D32]. Finagle filled, as its own assumptions, the tax-loss balance, non-operating assets, the cost of equity, terminal growth, the terminal return on capital, the tax rate, the cost of debt, the working-capital change, the debt policy, the target leverage, the year that target starts, and the distribution [D32]. None of the three cases has a sanity flag [D32]. The base-case validation warning, in the result's own words: "forecast evidence mentions acquisitions but the case has none, so MnA stays zero" [D32]. The bear case carries the same warning [D32]. The bull case repeats it and adds, in the result's own words: "average EBITDA growth is 14.6% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero." [D32]. The forecast records that management is evaluating acquisitions and that none is pending, and the closed APM deal is already inside the reported history [G1]. This case books no future purchase, so the acquisition line stays zero [D32].
+
+Fetched market inputs, all from Yahoo on 9 November 2026: a price of $61.20, a risk-free rate of 4.859%, and 3.20 million shares [D32]. Year-0 revenue, EBITDA, capex, debt and cash are Yahoo's as well [D32]. Finagle commit `377f177b4013e713fe7c4603962e5f883a67e298`. The run was at 9:00 a.m. Toronto time on 9 November 2026 [D32].
+
+Figure 14 splits base equity value into the explicit horizon and the terminal value. The split is our arithmetic on Finagle's terminal cash flow and is marked derived [C314]. The value per share is Finagle's [D32].
 
 <div class="fig" markdown="1">
 
@@ -333,47 +354,47 @@ Figure 14 splits base equity value into the explicit horizon and the terminal va
 
 | US$M, except per share and the percentage | Base |
 |---|---:|
-| PV of explicit-period free cash flow to equity (derived) | 51.4 |
-| PV of terminal value (derived) | 60.9 |
-| Terminal share of equity (derived) | 54% |
-| Equity value | 112 |
-| Firm value | 131 |
+| PV of explicit-period free cash flow to equity (derived) | 53.7 |
+| PV of terminal value (derived) | 64.8 |
+| Terminal share of equity (derived) | 54.7% |
+| Equity value | 118 |
+| Firm value | 137 |
 | Less: year-0 debt | 18.9 |
 | Plus: year-0 cash | 9.3 |
-| Value per share (US$) | 38.01 |
+| Value per share (US$) | 39.92 |
 | Price (US$) | 61.20 |
-| Vs. price (derived) | −37.9% |
+| Vs. price (derived) | −34.8% |
 
-*Source: `valuation_result_v02.json` [D31]; bridge split [C289]. May not sum due to rounding. Firm value minus debt plus cash is not equal to equity value; the two are discounted on different rates [D31]. Equity value divided by the share count is $35.10, which is not the $38.01 value per share (derived) [C290][D31].*
+*Source: `valuation_result_v03.json` [D32]; bridge split [C314]. May not sum due to rounding. Firm value minus debt plus cash is not equal to equity value; the two are discounted on different rates [D32]. Equity value divided by the share count is $37.00, which is not the $39.92 value per share (derived) [C315][D32].*
 
 </div>
 
-Figure 18 is Finagle's base-case statement through FY2031E. Figure 19 continues it through FY2036E. The value per share, $38.01, is the result for the case. It is not a row in the statement, and equity value divided by the share count is $35.10 (derived) [C290][D31]. The statement has no stock compensation, interest, pre-tax income, tax-loss, cash-tax, working-capital, WACC, or value-per-share row [D31]. The dividend field is free cash flow to equity per share (derived) [C288]. Balance-sheet cash is zero from FY27E while the cash row keeps rising [D31]. The result dates year 2 as 29 June 2028, and some later years fall a day or two off 30 June. The columns use the fiscal year in that date [D31].
+Figure 18 is Finagle's base-case statement through FY2031E. Figure 19 continues it through FY2036E. The value per share, $39.92, is the result for the case. It is not a row in the statement, and equity value divided by the share count is $37.00 (derived) [C315][D32]. The statement has no stock compensation, interest, pre-tax income, tax-loss, cash-tax, working-capital, WACC, or value-per-share row [D32]. The dividend field is free cash flow to equity per share (derived) [C316]. Balance-sheet cash is zero from FY27E while the cash row keeps rising [D32]. The result dates year 2 as 29 June 2028, and some later years fall a day or two off 30 June. The columns use the fiscal year in that date [D32].
 
 <div class="fig" markdown="1">
 
 **Figure 18 – Finagle valuation table, base case, FY2026A–FY2031E**
 
-PDEX. Price US$61.20. Shares 3.20 million. Cost of equity 10.3%. Cost of debt 4.3%. Tax rate 21%. Terminal growth 4.8% [D31].
+PDEX. Price US$61.20. Shares 3.20 million. Cost of equity 10.4%. Cost of debt 4.3%. Tax rate 21%. Terminal growth 4.9% [D32].
 
 | US$M | FY2026A | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E |
 |---|---:|---:|---:|---:|---:|---:|
-| Revenue | 77.5 | 82.7 | 86.8 | 87.6 | 88.8 | 90.5 |
-| EBITDA | 15.1 | 15.5 | 16.5 | 16.7 | 17.0 | 17.4 |
-| Capex | 0.5 | 1.6 | 2.4 | 2.6 | 2.9 | 3.2 |
+| Revenue | 77.5 | 82.7 | 86.8 | 88.4 | 90.4 | 92.8 |
+| EBITDA | 15.1 | 15.5 | 16.5 | 16.9 | 17.4 | 18.0 |
+| Capex | 0.5 | 1.5 | 2.3 | 2.6 | 3.0 | 3.4 |
 | M&A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Debt change | 0.0 | 0.5 | 1.3 | 0.3 | 0.4 | 0.5 |
-| FCF | 8.7 | 8.0 | 7.9 | 7.8 | 7.8 | 7.8 |
-| FCFE | 8.7 | 8.5 | 9.2 | 8.1 | 8.2 | 8.3 |
-| FCFF | 9.4 | 8.6 | 8.5 | 8.5 | 8.5 | 8.5 |
-| Firm value | 131 | 135 | 139 | 143 | 148 | 153 |
-| Debt | 18.9 | 19.5 | 20.8 | 21.0 | 21.4 | 21.9 |
-| Equity value | 112 | 115 | 118 | 122 | 127 | 132 |
-| Cash | 9.3 | 17.9 | 27.0 | 35.1 | 43.3 | 51.6 |
+| Debt change | 0.0 | 0.5 | 1.3 | 0.5 | 0.6 | 0.7 |
+| FCF | 8.7 | 8.1 | 8.1 | 8.0 | 8.0 | 8.0 |
+| FCFE | 8.7 | 8.6 | 9.3 | 8.5 | 8.6 | 8.7 |
+| FCFF | 9.4 | 8.7 | 8.7 | 8.7 | 8.7 | 8.7 |
+| Firm value | 137 | 142 | 146 | 151 | 157 | 163 |
+| Debt | 18.9 | 19.5 | 20.8 | 21.3 | 21.9 | 22.6 |
+| Equity value | 118 | 122 | 125 | 130 | 135 | 140 |
+| Cash | 9.3 | 17.9 | 27.3 | 35.8 | 44.4 | 53.1 |
 | Balance-sheet cash | 9.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| FCFE per share (US$) | 2.73 | 2.66 | 2.87 | 2.52 | 2.56 | 2.59 |
+| FCFE per share (US$) | 2.73 | 2.69 | 2.92 | 2.66 | 2.69 | 2.72 |
 
-*Source: Finagle base-case statement in `valuation_result_v02.json` [D31]. May not sum due to rounding.*
+*Source: Finagle base-case statement in `valuation_result_v03.json` [D32]. May not sum due to rounding.*
 
 </div>
 
@@ -383,26 +404,26 @@ PDEX. Price US$61.20. Shares 3.20 million. Cost of equity 10.3%. Cost of debt 4.
 
 | US$M | FY2032E | FY2033E | FY2034E | FY2035E | FY2036E |
 |---|---:|---:|---:|---:|---:|
-| Revenue | 92.7 | 95.3 | 98.6 | 102 | 107 |
-| EBITDA | 18.0 | 18.6 | 19.5 | 20.4 | 21.5 |
-| Capex | 3.7 | 4.2 | 4.9 | 5.7 | 6.7 |
+| Revenue | 95.6 | 98.8 | 103 | 107 | 112 |
+| EBITDA | 18.7 | 19.5 | 20.4 | 21.5 | 22.7 |
+| Capex | 4.0 | 4.6 | 5.3 | 6.1 | 7.0 |
 | M&A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Debt change | 0.7 | 0.8 | 1.0 | 1.2 | 1.4 |
-| FCF | 7.7 | 7.6 | 7.5 | 7.4 | 7.3 |
-| FCFE | 8.4 | 8.5 | 8.5 | 8.6 | 8.7 |
-| FCFF | 8.4 | 8.4 | 8.3 | 8.3 | 8.2 |
-| Firm value | 159 | 166 | 173 | 181 | 190 |
-| Debt | 22.6 | 23.4 | 24.4 | 25.6 | 27.0 |
-| Equity value | 137 | 142 | 149 | 155 | 163 |
-| Cash | 59.9 | 68.4 | 76.9 | 85.6 | 94.2 |
+| Debt change | 0.9 | 1.0 | 1.2 | 1.3 | 1.5 |
+| FCF | 7.9 | 7.9 | 7.9 | 7.8 | 7.8 |
+| FCFE | 8.8 | 8.9 | 9.0 | 9.2 | 9.3 |
+| FCFF | 8.7 | 8.7 | 8.7 | 8.7 | 8.7 |
+| Firm value | 169 | 176 | 184 | 193 | 202 |
+| Debt | 23.5 | 24.5 | 25.7 | 27.0 | 28.5 |
+| Equity value | 146 | 152 | 158 | 166 | 174 |
+| Cash | 62.0 | 70.9 | 79.9 | 89.1 | 98.4 |
 | Balance-sheet cash | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| FCFE per share (US$) | 2.62 | 2.64 | 2.67 | 2.69 | 2.72 |
+| FCFE per share (US$) | 2.76 | 2.79 | 2.82 | 2.86 | 2.90 |
 
-*Source: Finagle base-case statement in `valuation_result_v02.json` [D31]. May not sum due to rounding.*
+*Source: Finagle base-case statement in `valuation_result_v03.json` [D32]. May not sum due to rounding.*
 
 </div>
 
-Figure 15 sets the three values against the same price. The spread is the path after FY2028E. Next-period growth is 0.9% in the base, 3.1% in the bull and −10% in the bear, on the explicit paths already in the forecast, with the same 25% incremental margin [S14][S18][S20][S13].
+Figure 15 sets the three values against the same price. The spread is the path after FY2028E. The medium-term organic growth forecast is 1.9% in the base and 4.0% in the bull, and the bear is −10%, with the same 25% contribution margin [S14][S18][S20][S13].
 
 <div class="fig" markdown="1">
 
@@ -410,17 +431,17 @@ Figure 15 sets the three values against the same price. The spread is the path a
 
 | | Bear | Base | Bull |
 |---|---:|---:|---:|
-| Value per share (US$) | 6.25 | 38.01 | 50.74 |
+| Value per share (US$) | 6.24 | 39.92 | 52.81 |
 | Price (US$) | 61.20 | 61.20 | 61.20 |
-| Vs. price (derived) | −89.8% | −37.9% | −17.1% |
+| Vs. price (derived) | −89.8% | −34.8% | −13.7% |
 
-*Source: `valuation_result_v02.json` [D31][C289].*
+*Source: `valuation_result_v03.json` [D32][C314].*
 
 </div>
 
 No sensitivity run was requested.
 
-The $38.01 is a model value, not a rating and not a price target. About 54% of base equity value is the terminal value [C289]. The share count stays at 3.20 million, so the result includes no dilution [D31]. Year-0 financials and the market inputs are Yahoo's on 8 November 2026, not a fresh reading of the Form 10-K [D31]. The tax rate and the empty tax-loss balance are Finagle defaults [D31]. Debt follows the filled target of about 1.3x year-0 EBITDA from FY2027E, because no debt policy was stated [D31]. Balance-sheet cash goes to zero after FY2026A while the cash row accumulates, and the dividend row is free cash flow to equity per share [D31][C288]. The bull warning remains: average EBITDA growth of 14.6% is paired with an acquisition line of zero [D31]. The bear flag for negative free cash flow to equity is the numerical dust in year 5 [D31].
+The $39.92 is a model value, not a rating and not a price target. About 54.7% of base equity value is the terminal value [C314]. The share count stays at 3.20 million, so the result includes no dilution [D32]. Year-0 financials and the market inputs are Yahoo's on 9 November 2026, not a fresh reading of the Form 10-K [D32]. The tax rate and the empty tax-loss balance are Finagle defaults [D32]. Debt follows the filled target of about 1.3x year-0 EBITDA from FY2027E, because no debt policy was stated [D32]. Balance-sheet cash goes to zero after FY2026A while the cash row accumulates, and the dividend row is free cash flow to equity per share [D32][C316]. The bull warning remains: average EBITDA growth of 14.6% is paired with an acquisition line of zero [D32].
 
 ## Appendix A – Bull and Bear Cases
 
@@ -442,7 +463,7 @@ Figure 7 gives the headline spread. Unlike the body, the following appendix tabl
 *Source: forecast.json; explicit stream economics plus case core margins. May not sum due to rounding.*
 </div>
 
-The same cases are worth $6.25, $38.01 and $50.74 a share [D31]. Figure 15 compares those values with the price.
+The same cases are worth $6.24, $39.92 and $52.81 a share [D32]. Figure 15 compares those values with the price.
 
 The bull assumes timely validation, clearance and commercialization [S23]. Core medical-device sales are $1.00M above base in each year and repairs are $0.500M above base [S15]. Explicit high Monogram and Helios allocations replace—not supplement—the central contributions already within consensus [S28]. The previous combined Monogram/Helios allowance is removed [S15][S28].
 
@@ -530,25 +551,25 @@ Figure 16 puts the three cases' valuation inputs next to each other. The market 
 
 | Input | Base | Bear | Bull | Where it came from |
 |---|---:|---:|---:|---|
-| Cost of equity | 10.3% | 10.3% | 10.3% | Finagle default: 5.5 points over the 10-year yield [D31] |
-| Cost of debt | 4.3% | 4.3% | 4.3% | Finagle assumption: year-0 interest divided by year-0 debt [D31] |
-| Tax rate | 21% | 21% | 21% | Finagle assumption: US federal statutory rate [D31] |
-| Terminal growth | 4.8% | 4.8% | 4.8% | Finagle default: the 10-year yield [D31] |
-| Shares (millions) | 3.20 | 3.20 | 3.20 | Yahoo, fetched [D31] |
-| Price (US$) | 61.20 | 61.20 | 61.20 | Yahoo previous close [D31] |
-| Year-0 debt | 18.9 | 18.9 | 18.9 | Yahoo [D31] |
-| Year-0 cash | 9.3 | 9.3 | 9.3 | Yahoo [D31] |
+| Cost of equity | 10.4% | 10.4% | 10.4% | Finagle default: 5.5 points over the 10-year yield [D32] |
+| Cost of debt | 4.3% | 4.3% | 4.3% | Finagle assumption: year-0 interest divided by year-0 debt [D32] |
+| Tax rate | 21% | 21% | 21% | Finagle assumption: US federal statutory rate [D32] |
+| Terminal growth | 4.9% | 4.9% | 4.9% | Finagle default: the 10-year yield [D32] |
+| Shares (millions) | 3.20 | 3.20 | 3.20 | Yahoo, fetched [D32] |
+| Price (US$) | 61.20 | 61.20 | 61.20 | Yahoo previous close [D32] |
+| Year-0 debt | 18.9 | 18.9 | 18.9 | Yahoo [D32] |
+| Year-0 cash | 9.3 | 9.3 | 9.3 | Yahoo [D32] |
 | Starting margin | 19.0% | 14.4% | 21.5% | Forecast file [C40][C78][C59] |
 | Incremental margin | 25.0% | 25.0% | 25.0% | Forecast judgment [S13] |
-| Next-period growth | 0.9% | −10.0% | 3.1% | Forecast path [S14][S20][S18] |
-| Terminal WACC | 9.3% | 7.7% | 9.4% | Finagle output [D31] |
-| Value per share (US$) | 38.01 | 6.25 | 50.74 | Finagle output [D31] |
+| Medium-term organic growth | 1.9% | −10.0% | 4.0% | Forecast path [S14][S20][S18] |
+| Terminal WACC | 9.4% | 7.8% | 9.4% | Finagle output [D32] |
+| Value per share (US$) | 39.92 | 6.24 | 52.81 | Finagle output [D32] |
 
-*Source: `valuation_result_v02.json` [D31]; forecast leaves [C40][C78][C59][S13][S14][S20][S18]. Full precision is in Appendix B.*
+*Source: `valuation_result_v03.json` [D32]; forecast leaves [C40][C78][C59][S13][S14][S20][S18]. Full precision is in Appendix B.*
 
 </div>
 
-Figure 17 is the same bridge as Figure 14, for all three cases. The split is our arithmetic [C289]. The value per share is Finagle's [D31].
+Figure 17 is the same bridge as Figure 14, for all three cases. The split is our arithmetic [C314]. The value per share is Finagle's [D32].
 
 <div class="fig" markdown="1">
 
@@ -556,22 +577,43 @@ Figure 17 is the same bridge as Figure 14, for all three cases. The split is our
 
 | US$M, except per share and percentages | Bear | Base | Bull |
 |---|---:|---:|---:|
-| PV of explicit-period free cash flow to equity (derived) | 5.6 | 51.4 | 69.4 |
-| PV of terminal value (derived) | 5.0 | 60.9 | 83.7 |
-| Terminal share of equity (derived) | 47% | 54% | 55% |
-| Equity value | 10.6 | 112 | 153 |
-| Firm value | 29.6 | 131 | 172 |
+| PV of explicit-period free cash flow to equity (derived) | 5.6 | 53.7 | 71.8 |
+| PV of terminal value (derived) | 5.0 | 64.8 | 87.9 |
+| Terminal share of equity (derived) | 47.2% | 54.7% | 55.0% |
+| Equity value | 10.6 | 118 | 160 |
+| Firm value | 29.6 | 137 | 179 |
 | Year-0 debt | 18.9 | 18.9 | 18.9 |
 | Year-0 cash | 9.3 | 9.3 | 9.3 |
-| Value per share (US$) | 6.25 | 38.01 | 50.74 |
+| Value per share (US$) | 6.24 | 39.92 | 52.81 |
 | Price (US$) | 61.20 | 61.20 | 61.20 |
-| Vs. price (derived) | −89.8% | −37.9% | −17.1% |
+| Vs. price (derived) | −89.8% | −34.8% | −13.7% |
 
-*Source: `valuation_result_v02.json` [D31]; bridge split [C289]. May not sum due to rounding. Firm value minus debt plus cash is not equal to equity value; the two are discounted on different rates [D31].*
+*Source: `valuation_result_v03.json` [D32]; bridge split [C314]. May not sum due to rounding. Firm value minus debt plus cash is not equal to equity value; the two are discounted on different rates [D32].*
 
 </div>
 
-Figure 20 keeps the key rows of the bull and bear statements. The bear result flags negative free cash flow to equity after year 1 [D31]. That print is numerical dust in FY2031E, and the later years are about zero. The path is printed as Finagle left it.
+Figure 22 is the bull medium-term organic growth forecast, built the same way as Figure 21 [S18].
+
+<div class="fig" markdown="1">
+
+**Figure 22 – Medium-term organic growth, bull case**
+
+| US$M | FY2028E | FY2029E | Change |
+|---|---:|---:|---:|
+| Medical devices ex hardware | 70.5 [C300] | 72.6 [C301] | 2.1 |
+| Industrial and scientific | 3.1 [C302] | 3.3 [C303] | 0.2 |
+| NRE ex engineering | 1.1 [C304] | 1.1 [C305] | 0.0 |
+| Repairs | 7.3 [C306] | 5.9 [C307] | −1.4 |
+| Discounts ex fee | 0.2 [C308] | 0.2 [C309] | 0.0 |
+| Monogram cohort | 10.0 [C310] | 12.8 [C311] | 2.8 |
+| Total | 92.1 [C52] | 95.8 [C312] | 3.7 |
+| Medium-term organic growth | | | 4.0% [C313] |
+
+*Source: forecast.json bull `gsnext_bridge` [C300][C301][C302][C303][C304][C305][C306][C307][C308][C309][C310][C311][C312][C313][S18]. May not sum due to rounding.*
+
+</div>
+
+Figure 20 keeps the key rows of the bull and bear statements. The bear has no sanity flag. Its later free cash flow to equity prints at about zero [D32]. The path is printed as Finagle left it.
 
 <div class="fig" markdown="1">
 
@@ -579,13 +621,13 @@ Figure 20 keeps the key rows of the bull and bear statements. The bear result fl
 
 | US$M | Bear FY2026A | Bear FY2028E | Bear FY2036E | Bull FY2026A | Bull FY2028E | Bull FY2036E |
 |---|---:|---:|---:|---:|---:|---:|
-| Revenue | 77.5 | 70.7 | 52.7 | 77.5 | 92.1 | 125 |
-| EBITDA | 15.1 | 10.2 | 5.7 | 15.1 | 19.8 | 27.9 |
-| FCFE | 8.7 | 1.2 | 0.0 | 8.7 | 13.1 | 11.9 |
-| Equity value | 10.6 | 6.8 | 13.4 | 153 | 160 | 224 |
-| Value per share (US$) | 6.25 | — | — | 50.74 | — | — |
+| Revenue | 77.5 | 70.7 | 52.8 | 77.5 | 92.1 | 130 |
+| EBITDA | 15.1 | 10.2 | 5.7 | 15.1 | 19.8 | 29.2 |
+| FCFE | 8.7 | 1.2 | 0.0 | 8.7 | 13.3 | 12.5 |
+| Equity value | 10.6 | 6.8 | 13.4 | 160 | 168 | 235 |
+| Value per share (US$) | 6.24 | — | — | 52.81 | — | — |
 
-*Source: Finagle bear and bull statements in `valuation_result_v02.json` [D31]. The value per share is the result for the case, not a figure that changes by year. May not sum due to rounding.*
+*Source: Finagle bear and bull statements in `valuation_result_v03.json` [D32]. The value per share is the result for the case, not a figure that changes by year. May not sum due to rounding.*
 
 </div>
 
@@ -656,6 +698,8 @@ Evidence descriptions are analyst summaries; only passages specifically quoted w
 **D30** Finagle valuation result for PDEX, version v01, run 8 November 2026 at 17:56 UTC (12:56 p.m. America/Toronto) by `templates/run_collaborative.py` against Finagle commit `377f177b4013e713fe7c4603962e5f883a67e298`. Request: `forecasts/PDEX/collab/valuation_request_v01.json`. Result: `forecasts/PDEX/collab/valuation_result_v01.json`. Local files; no URL. Base value per share 42.14597048342263. Bear 8.496761933842112. Bull 63.816862014698046. The dividend-discount values match. Terminal free cash flow to equity 10.214694336840843, 1.2397761043512094 and 16.2723932982601. Equity value 125.52514769292289, 17.847646685056695 and 194.87202226389576. Firm value 144.46714769292285, 36.78964668505671 and 213.8140222638956. Price 61.2. Shares 3.200001. Risk-free rate 0.048369999999999996. Cost of equity 0.10336999999999999. Terminal growth 0.048369999999999996. Cost of debt 0.04286770140428677. Tax rate 0.21. Terminal WACC 0.0936678698045906, 0.08456567865985934 and 0.09423515768386771. Year-0 revenue 77.548, EBITDA 15.073, capex 0.483, debt 18.942, cash 9.342, all from Yahoo on 2026-11-08.
 
 **D31** Finagle valuation result for PDEX, version v02, run 8 November 2026 at 22:27 UTC (5:27 p.m. America/Toronto) by templates/run_collaborative.py against Finagle commit 377f177b4013e713fe7c4603962e5f883a67e298. Request: forecasts/PDEX/collab/valuation_request_v02.json. Result: forecasts/PDEX/collab/valuation_result_v02.json. Local files; no URL. Base value per share 38.01485693523655. Bear 6.247385729840383. Bull 50.74046945163188. The dividend-discount values match. Terminal free cash flow to equity 8.9543868929604, 0.7373125268187422 and 12.306524216794205. Equity value 112.30558020761391, 10.649640582874957 and 153.02755298569147. Firm value 131.24758020761396, 29.591640582874955 and 171.96955298569142. Bear sanity flag: negative FCFE after year 1. Price 61.2. Shares 3.200001. Risk-free rate 0.048369999999999996. Cost of equity 0.10336999999999999. Terminal growth 0.048369999999999996. Cost of debt 0.04286770140428677. Tax rate 0.21. Terminal WACC 0.09347126384172841, 0.07739875656373006 and 0.09395679066724341.
+
+**D32** Finagle valuation result for PDEX, version v03, run 9 November 2026 at 14:00 UTC (9:00 a.m. America/Toronto) by templates/run_collaborative.py against Finagle commit 377f177b4013e713fe7c4603962e5f883a67e298. Request: forecasts/PDEX/collab/valuation_request_v03.json. Result: forecasts/PDEX/collab/valuation_result_v03.json. Local files; no URL. Base value per share 39.92036753153248. Bear 6.244656667802499. Bull 52.80932620156342. The dividend-discount values match. Terminal free cash flow to equity 9.543346814028402, 0.7394408278869821 and 12.949705511012338. Equity value 118.40321602127143, 10.640907581624662 and 159.64789665432914. Firm value 137.34521602127148, 29.582907581624667 and 178.5898966543292. No sanity flags. Price 61.2. Shares 3.200001. Risk-free rate 0.04859. Cost of equity 0.10359. Terminal growth 0.04859. Cost of debt 0.04286770140428677. Tax rate 0.21. Terminal WACC 0.09374822771545262, 0.07750085839905158 and 0.0941930250995323. Year-0 revenue 77.548, EBITDA 15.073, capex 0.483, debt 18.942, cash 9.342, all from Yahoo on 2026-11-09.
 
 ### Actuals
 
@@ -825,7 +869,7 @@ Evidence descriptions are analyst summaries; only passages specifically quoted w
 
 **S13** mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29. (D1, page unverified)
 
-**S14** base gsnext = (FY28 revenue 86.8 − FY28 Monogram 6.211606 + one more FY28 cohort 7.008178) / FY28 revenue − 1 = 0.9177%. The cohort is the same expected new systems again, with the FY28 core held. (D1, p.19)
+**S14** Base medium-term organic growth = FY29 88.43440286873361 / FY28 revenue − 1. Lines keep their trajectory and the Monogram cohort is one more year: medical devices excluding hardware 69.439154 to 71.522328; industrial 3.108000 to 3.263400; NRE excluding engineering 1.065707 to 1.065707; repairs 6.781769 to 5.387470; discounts excluding the fee 0.193765 to 0.187320; Monogram cohort 6.211606 to 7.008178. Not a round rate. (D1, p.19)
 
 **S15** Bull: core medical devices +1/+1 and repairs +0.5/+0.5 US$M vs base; core GM33.5%; replace embedded central Monogram/Helios with explicit high path, not old combined NRE allowance. See S23-S28. (D2, p.21)
 
@@ -833,7 +877,7 @@ Evidence descriptions are analyst summaries; only passages specifically quoted w
 
 **S17** bull gross margin lever: see bull levers (D2, page unverified)
 
-**S18** bull gsnext = (FY28 revenue 92.117174 − FY28 Monogram 9.97878 + one more FY28 cohort 12.80784) / FY28 revenue − 1 = 3.0712%. The cohort is the same expected new systems again, with the FY28 core held. (D1, p.19)
+**S18** Bull medium-term organic growth = FY29 95.79559952145739 / FY28 revenue − 1. Lines keep their trajectory and the Monogram cohort is one more year: medical devices excluding hardware 70.489154 to 72.603828; industrial 3.108000 to 3.263400; NRE excluding engineering 1.065707 to 1.065707; repairs 7.281769 to 5.867504; discounts excluding the fee 0.193765 to 0.187320; Monogram cohort 9.978780 to 12.807840. Not a round rate. (D1, p.19)
 
 **S19** bear gross margin lever: see bear levers (D2, page unverified)
 
@@ -855,7 +899,7 @@ Evidence descriptions are analyst summaries; only passages specifically quoted w
 
 **S28** Retain consensus base82.7/86.8, unknown product coverage; Monogram/Helios are explicit allocations inside total. Replace old bull0.5/1.0 combined allowance, do not stack. Bull/bear differences = unchanged core volume/repair shocks plus pipeline HIGH/LOW minus CENTRAL already in base. Acquired industrial line unscaled. Scale residual non-APM core only to preserve modeled pipeline amounts. (D13, page unverified)
 
-**S29** FY28 explicit stop retained. Base and bull FY28 Monogram are the second-customer band, not a cross-check. gsnext is one more year of the FY28 system cohort with the FY28 core held. Bear gsnext is the customer-1 renewal. mc stays 25% because the added dollars are mostly hardware at an ordinary margin. (D22, page unverified)
+**S29** FY28 explicit stop retained. Base and bull FY28 Monogram are the second-customer band, not a cross-check. The medium-term organic growth forecast keeps each other line on its own trajectory and adds one more year of the FY28 system cohort. Bear gsnext is the customer-1 renewal. mc stays 25% because the cohort is mostly hardware and the continuing lines are ordinary core business. (D22, page unverified)
 
 **S30** bear FY27E: conditional_new_systems = 0. Analyst judgment, not disclosed contract terms; rationale and bounds in S23. (D22, page unverified)
 
@@ -1433,25 +1477,77 @@ Evidence descriptions are analyst summaries; only passages specifically quoted w
 
 **C285** EBITDA without stock-comp addback = headline EBITDA less forecast SBC. Inputs: C73, C279.
 
-**C286** Present value of the terminal free cash flow = terminal FCFE / (cost of equity − terminal growth) / (1 + cost of equity)^10 (derived) [D30]. Base 10.214694336840843 / (0.10336999999999999 − 0.048369999999999996) / (1.10336999999999999)^10 = 69.44659713257714. Explicit-period present value = equity − that amount = 56.07855056034575. Terminal share = 69.44659713257714 / 125.52514769292289 = 55.32484797585507%. Bear terminal present value 8.42886030793384 (47.22673222229951%); explicit-period present value 9.418786377122855. Bull terminal present value 110.63104822347705 (56.7711295537645%); explicit-period present value 84.2409740404187. Vs. price = value per share / 61.2 − 1. Base −31.13403515780616%, bear −86.11640206888544%, bull +4.275918324670003%.
+**C286** Base FY28 medical devices excluding Monogram hardware, medium-term organic growth bridge: 69.439153592. Inputs: S3, G3.
 
-**C287** Equity value / shares = 125.52514769292289 / 3.200001 = 39.2265963957 (derived) [D30]. This is not the value per share.
+**C287** Base FY29 medical devices excluding Monogram hardware, medium-term organic growth bridge: 71.522328200. Inputs: S3, G3.
 
-**C288** Year-0 free cash flow to equity / shares = 8.737 / 3.200001 = 2.7303116467776105, equal to the dividend field (derived) [D30].
+**C288** Base FY28 industrial and scientific, medium-term organic growth bridge: 3.108000000. Inputs: S5.
 
-**C289** Present value of the terminal free cash flow = terminal FCFE / (cost of equity − terminal growth) / (1 + cost of equity)^10 (derived) [D31]. Base 8.9543868929604 / (0.10336999999999999 − 0.048369999999999996) / (1.10336999999999999)^10 = 60.87815049754819. Explicit-period present value = equity − that amount = 51.427429710065724. Terminal share = 60.87815049754819 / 112.30558020761391 = 54.20759180888935%. Bear terminal present value 5.012763409484436 (47.069789543368795%); explicit-period present value 5.636877173390521. Bull terminal present value 83.6683116697482 (54.67532482700775%); explicit-period present value 69.35924131594327. Vs. price = value per share / 61.2 − 1. Base −37.884220694057924%, bear −89.79185338261375%, bull −17.090736190143985%.
+**C289** Base FY29 industrial and scientific, medium-term organic growth bridge: 3.263400000. Inputs: S5.
 
-**C290** Equity value / shares = 112.30558020761391 / 3.200001 = 35.09548284754096 (derived) [D31]. This is not the value per share.
+**C290** Base FY28 NRE excluding Monogram engineering, medium-term organic growth bridge: 1.065706560. Inputs: S7.
+
+**C291** Base FY29 NRE excluding Monogram engineering, medium-term organic growth bridge: 1.065706560. Inputs: S7.
+
+**C292** Base FY28 repairs, medium-term organic growth bridge: 6.781769019. Inputs: S8, S9.
+
+**C293** Base FY29 repairs, medium-term organic growth bridge: 5.387469618. Inputs: S8, S9.
+
+**C294** Base FY28 discounts excluding the fee, medium-term organic growth bridge: 0.193764829. Inputs: S10.
+
+**C295** Base FY29 discounts excluding the fee, medium-term organic growth bridge: 0.187320491. Inputs: S10.
+
+**C296** Base FY28 Monogram cohort, medium-term organic growth bridge: 6.211606000. Inputs: S23, G17.
+
+**C297** Base FY29 Monogram cohort, medium-term organic growth bridge: 7.008178000. Inputs: S23, G17.
+
+**C298** Base FY29 bridge revenue: 88.43440286873361. Inputs: S14.
+
+**C299** Base medium-term organic growth = 88.43440286873361 / 86.8 − 1 = 0.018829526 (derived) [S14].
+
+**C300** Bull FY28 medical devices excluding Monogram hardware, medium-term organic growth bridge: 70.489153592. Inputs: S3, G3.
+
+**C301** Bull FY29 medical devices excluding Monogram hardware, medium-term organic growth bridge: 72.603828200. Inputs: S3, G3.
+
+**C302** Bull FY28 industrial and scientific, medium-term organic growth bridge: 3.108000000. Inputs: S5.
+
+**C303** Bull FY29 industrial and scientific, medium-term organic growth bridge: 3.263400000. Inputs: S5.
+
+**C304** Bull FY28 NRE excluding Monogram engineering, medium-term organic growth bridge: 1.065706560. Inputs: S7.
+
+**C305** Bull FY29 NRE excluding Monogram engineering, medium-term organic growth bridge: 1.065706560. Inputs: S7.
+
+**C306** Bull FY28 repairs, medium-term organic growth bridge: 7.281769019. Inputs: S8, S9.
+
+**C307** Bull FY29 repairs, medium-term organic growth bridge: 5.867504271. Inputs: S8, S9.
+
+**C308** Bull FY28 discounts excluding the fee, medium-term organic growth bridge: 0.193764829. Inputs: S10.
+
+**C309** Bull FY29 discounts excluding the fee, medium-term organic growth bridge: 0.187320491. Inputs: S10.
+
+**C310** Bull FY28 Monogram cohort, medium-term organic growth bridge: 9.978780000. Inputs: S23, G17.
+
+**C311** Bull FY29 Monogram cohort, medium-term organic growth bridge: 12.807840000. Inputs: S23, G17.
+
+**C312** Bull FY29 bridge revenue: 95.79559952145739. Inputs: S18.
+
+**C313** Bull medium-term organic growth = 95.79559952145739 / 92.117174 − 1 = 0.039932027 (derived) [S18].
+
+**C314** Present value of the terminal free cash flow = terminal FCFE / (cost of equity − terminal growth) / (1 + cost of equity)^10 (derived) [D32]. Base 9.543346814028402 / (0.10359 − 0.04859) / (1.10359)^10 = 64.75308317893838. Explicit-period present value = equity − that amount = 53.65013284233305. Terminal share = 64.75308317893838 / 118.40321602127143 = 54.68861856531442%. Bear terminal present value 5.017220307207658 (47.150304320579633%); explicit-period present value 5.623687274417003. Bull terminal present value 87.86575343408064 (55.03721331470358%); explicit-period present value 71.7821432202485. Vs. price = value per share / 61.2 − 1. Base −34.77064128834563%, bear −89.79631263430964%, bull −13.710251304634935%.
+
+**C315** Equity value / shares = 118.40321602127143 / 3.200001 = 37.000993443836876 (derived) [D32]. This is not the value per share. Bear 10.640907581624662 / 3.200001 = 3.325282580106901. Bull 159.64789665432914 / 3.200001 = 49.88995211386782.
+
+**C316** Year-0 free cash flow to equity / shares = 8.737 / 3.200001 = 2.7303116467776105, equal to the dividend field (derived) [D32].
 
 ### Not verified
 
-Page unverified: A19, A20, A21, A22, A23, A24, A25, A26, A27, A28, A29, A30, C1, C2, C3, C4, A31, C5, S1, C6, C7, C8, C9, C10, E1, E2, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28, C29, C30, C31, C32, C33, C34, C35, C36, C37, C38, C39, C40, S12, G1, S13, C41, C42, C43, C44, C45, C46, C47, C48, C49, C50, C51, C52, S17, C53, C54, C55, C56, C57, C58, C59, C60, C61, C62, C63, C64, C65, C66, C67, C68, C69, C70, C71, S19, C72, C73, C74, C75, C76, C77, C78, C79, C80, C81, C82, C83, C84, C85, C86, C87, A32, A33, C88, A34, S21, G14, P1, G4, G9, G13, A36, A37, A38, S23, S24, S25, S26, S27, S28, S29, S30, S31, C95, C96, S32, S33, C99, C100, S34, S35, C103, S36, C105, S37, S38, S39, C109, S40, S41, C112, C113, S42, S43, C116, C117, C118, S44, C120, S45, S46, S47, C124, C125, S48, S49, C128, C129, S50, S51, C132, S52, C134, S53, S54, S55, C138, S56, S57, C141, C142, S58, S59, C145, C146, C147, S60, C149, S61, S62, S63, C153, C154, S64, S65, C157, C158, S66, S67, C161, S68, C163, S69, S70, S71, C167, S72, S73, C170, C171, S74, S75, C174, C175, C176, S76, C178, S77, S78, S79, C182, C183, S80, S81, C186, C187, S82, S83, C190, S84, C192, S85, S86, S87, C196, S88, S89, C199, C200, S90, S91, C203, C204, C205, S92, C207, S93, S94, S95, C211, C212, S96, S97, C215, C216, S98, S99, C219, S100, C221, S101, S102, S103, C225, S104, S105, C228, C229, S106, S107, C232, C233, C234, S108, C236, S109, S110, S111, C240, C241, S112, S113, C244, C245, S114, S115, C248, S116, C250, S117, S118, S119, C254, S120, S121, C257, C258, S122, S123, C261, C262, C263, S124, C265, S125, C267, C268, C269, C270, C271, C272, C273, C274, C275, C276, C277, C278, C279, C280, C281, C282, C283, C284, C285. D13 consensus: one analyst, estimate publication date not stated; provider capture October 30, 2026 at 12:17 EDT (America/Toronto), re-opened November 7. D14/D15 proxy-letter review is inherited; not re-opened for v4. D21/D22 are verbatim-management transcripts hosted by third parties and not audio-verified; they corroborate statements, not outcomes. D18 schedule was read in the public D25 mirror; public pricing percentages remain redacted. D4–D9 cite the 8-K filing index; exhibit text was read from saved copies. D30, C286, C287 and C288 are the local Finagle result and arithmetic on it; D30 has no URL. D31, C289 and C290 are the v02 Finagle result and the bridge on it; D31 has no URL.
+Page unverified: A19, A20, A21, A22, A23, A24, A25, A26, A27, A28, A29, A30, C1, C2, C3, C4, A31, C5, S1, C6, C7, C8, C9, C10, E1, E2, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28, C29, C30, C31, C32, C33, C34, C35, C36, C37, C38, C39, C40, S12, G1, S13, C41, C42, C43, C44, C45, C46, C47, C48, C49, C50, C51, C52, S17, C53, C54, C55, C56, C57, C58, C59, C60, C61, C62, C63, C64, C65, C66, C67, C68, C69, C70, C71, S19, C72, C73, C74, C75, C76, C77, C78, C79, C80, C81, C82, C83, C84, C85, C86, C87, A32, A33, C88, A34, S21, G14, P1, G4, G9, G13, A36, A37, A38, S23, S24, S25, S26, S27, S28, S29, S30, S31, C95, C96, S32, S33, C99, C100, S34, S35, C103, S36, C105, S37, S38, S39, C109, S40, S41, C112, C113, S42, S43, C116, C117, C118, S44, C120, S45, S46, S47, C124, C125, S48, S49, C128, C129, S50, S51, C132, S52, C134, S53, S54, S55, C138, S56, S57, C141, C142, S58, S59, C145, C146, C147, S60, C149, S61, S62, S63, C153, C154, S64, S65, C157, C158, S66, S67, C161, S68, C163, S69, S70, S71, C167, S72, S73, C170, C171, S74, S75, C174, C175, C176, S76, C178, S77, S78, S79, C182, C183, S80, S81, C186, C187, S82, S83, C190, S84, C192, S85, S86, S87, C196, S88, S89, C199, C200, S90, S91, C203, C204, C205, S92, C207, S93, S94, S95, C211, C212, S96, S97, C215, C216, S98, S99, C219, S100, C221, S101, S102, S103, C225, S104, S105, C228, C229, S106, S107, C232, C233, C234, S108, C236, S109, S110, S111, C240, C241, S112, S113, C244, C245, S114, S115, C248, S116, C250, S117, S118, S119, C254, S120, S121, C257, C258, S122, S123, C261, C262, C263, S124, C265, S125, C267, C268, C269, C270, C271, C272, C273, C274, C275, C276, C277, C278, C279, C280, C281, C282, C283, C284, C285, C286, C287, C288, C289, C290, C291, C292, C293, C294, C295, C296, C297, C298, C299, C300, C301, C302, C303, C304, C305, C306, C307, C308, C309, C310, C311, C312, C313, C314, C315, C316. D13 consensus: one analyst, estimate publication date not stated; provider capture October 30, 2026 at 12:17 EDT (America/Toronto), re-opened November 7. D14/D15 proxy-letter review is inherited; not re-opened for v4. D21/D22 are verbatim-management transcripts hosted by third parties and not audio-verified; they corroborate statements, not outcomes. D18 schedule was read in the public D25 mirror; public pricing percentages remain redacted. D4–D9 cite the 8-K filing index; exhibit text was read from saved copies. D30 is the v01 Finagle result; D30 has no URL. D31 is the v02 Finagle result; D31 has no URL. D32, C314, C315 and C316 are the v03 Finagle result and the bridge on it; D32 has no URL. C286 through C313 are the medium-term organic growth bridge.
 
 ## Appendix C – Method
 
 This report rewrites the presentation only. The model and operating CSV are byte-for-byte copies of delivered v4; the original forecast used method revision be46f4a, while this report follows the repository report skill at a7b0f2a. Bottom-up, top-down, calibrated top-down and consensus views are recorded separately. Revenue and EBITDA each have their own base; consensus sets revenue and the cost build sets EBITDA [E1][E2][C23][C24].
 
-The valuation in Section 9 is a Finagle run on those same leaves. It does not change the operating forecast. Finagle supplies the price, the share count, the risk-free rate, the cost of equity, terminal growth, and the unstated tax rate, cost of debt, tax losses, working capital and debt target. The value per share comes only from that result [D31].
+The valuation in Section 9 is a Finagle run on those same leaves. It does not change the operating forecast. Finagle supplies the price, the share count, the risk-free rate, the cost of equity, terminal growth, and the unstated tax rate, cost of debt, tax losses, working capital and debt target. The value per share comes only from that result [D32].
 
 The inherited history window covers Q1 FY25 through Q1 FY27, nine reported quarters [C89]. Earnings releases substitute for unavailable quarterly calls; the June 2026 public CEO presentation supplements them, rather than replacing the full window [D3][D4][D5][D6][D7][D8][D9][D10][D11][D12][D21]. That history supports the one-time cost review and the assumptions after the explicit years [A40][A35][S29].
 

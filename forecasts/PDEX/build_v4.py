@@ -44,7 +44,7 @@ src('S25','Fee judgments: central eligible burr/blade purchases300 dollars per c
 src('S26','Engineering revenue included within original NRE budget, not added twice: low0.05/0.05, central0.15/0.10, high0.20/0.15 US$M FY27/FY28; central FY27 about1000billable hours at150 dollars/hour, FY28 roughlytwo-thirds that workload as setup ends. GM25%/35%/40% low/central/high. Incremental shared launch support beyond current run rate0.04/0.06 low,0.04/0.10 central,0.10/0.25 high US$M. Covers QA/customer support/engineering contingency; permanent existing staff retained. No additional D&A assumed within existing capacity; risk if tooling/capex expands.','D18')
 src('S27','Helios separated: central0.15/0.45 US$M already allocated within CMF line run-rate/growth (illustratively50/150 drivers at3000 each); high0.25/0.50; low0/0. No author50–65% GM adopted; apply respective case core margins. Label/software engineering remains in existing NRE, no second setup-fee uplift. Product released, no disclosed orders: sizing is modest channel trial judgment.','D21')
 src('S28','Retain consensus base82.7/86.8, unknown product coverage; Monogram/Helios are explicit allocations inside total. Replace old bull0.5/1.0 combined allowance, do not stack. Bull/bear differences = unchanged core volume/repair shocks plus pipeline HIGH/LOW minus CENTRAL already in base. Acquired industrial line unscaled. Scale residual non-APM core only to preserve modeled pipeline amounts.','D13')
-src('S29','FY28 explicit stop retained. Base and bull FY28 Monogram are the second-customer band, not a cross-check. gsnext is one more year of the FY28 system cohort with the FY28 core held. Bear gsnext is the customer-1 renewal. mc stays 25% because the added dollars are mostly hardware at an ordinary margin.','D22')
+src('S29','FY28 explicit stop retained. Base and bull FY28 Monogram are the second-customer band, not a cross-check. The medium-term organic growth forecast keeps each other line on its own trajectory and adds one more year of the FY28 system cohort. Bear gsnext is the customer-1 renewal. mc stays 25% because the cohort is mostly hardware and the continuing lines are ordinary core business.','D22')
 sources['S13']['text']='mc stays 25% in every case. The rank path is mostly hardware at an ordinary gross margin, so the fee stream does not reprice the company-wide contribution margin. See S29.'
 sources['S15']['text']='Bull: core medical devices +1/+1 and repairs +0.5/+0.5 US$M vs base; core GM33.5%; replace embedded central Monogram/Helios with explicit high path, not old combined NRE allowance. See S23-S28.'
 sources['S16']['text']='Bear: core medical devices -3/-8 and repairs -1/-1.5 US$M vs base; core GM31%; replace embedded central Monogram/Helios with low/delayed path. See S23-S28.'
@@ -122,21 +122,53 @@ for case,obj in [('base',p),('bull',p['scenarios']['bull']),('bear',p['scenarios
   for y in years:v=obj['totals'][metric][y]['value'];growth.append(v/prior-1);prior=v
   obj['finagle']['sales_growth' if metric=='revenue' else 'ebitda_growth']['value']=growth
  setval(obj['finagle']['me'],obj['totals']['ebitda']['FY28E']['value']/obj['totals']['revenue']['FY28E']['value'])
- obj['finagle']['note']='Operating leaves only; no Finagle or terminal growth. FY28 Monogram meets the second-customer band; gsnext continues that cohort for one year.'
+ obj['finagle']['note']='Operating leaves only; no Finagle or terminal growth. The medium-term organic growth forecast keeps each line on its trajectory and adds one more FY28 Monogram cohort.'
 def next_monogram(r):
  begin=r['begin_systems']+r['expected_new_systems'];added=r['expected_new_systems'];spares=begin*4*.05
  hw=(added*4+spares)*r['kit_price_USD']/1e6;active=begin+added/2
  fee=active*r['procedures_per_system_year']*r['purchase_inventory_factor']*r['eligible_basket_USD']/1e6*r['fee_rate']
  return r['engineering_revenue_M']+hw+fee
-for case,obj,evidence in [('base',p,['G17','A43','S23']),('bull',p['scenarios']['bull'],['G17','A44','S23'])]:
- r=raw[case]['FY28E'];m29=next_monogram(r);rev=result[case]['FY28E']['revenue'];core=rev-r['total_monogram_revenue_M'];g=(core+m29)/rev-1
- setval(obj['finagle']['gsnext'],g,f'{case} gsnext = (FY28 revenue {rev} - FY28 Monogram {r["total_monogram_revenue_M"]} + one more FY28 cohort {m29}) / FY28 revenue - 1. Cohort means the same expected new systems again, core held. Not a round rate.',evidence)
+def trajectory(case,obj):
+ '''One more year of each line, with the FY28 Monogram path replaced by the next cohort.'''
+ r27,r28=raw[case]['FY27E'],raw[case]['FY28E']
+ def amt(y,name):
+  return next(l['periods'][y]['value'] for l in obj['lines'] if l['name']==name)
+ med28=amt('FY28E','Medical devices')-r28['hardware_revenue_M']
+ ind28=amt('FY28E','Industrial and scientific')
+ nre28=amt('FY28E','NRE and prototype services')-r28['engineering_revenue_M']
+ rep27,rep28=amt('FY27E','Repairs'),amt('FY28E','Repairs')
+ disc27=amt('FY27E','Discounts and other')-r27['fee_revenue_M']
+ disc28=amt('FY28E','Discounts and other')-r28['fee_revenue_M']
+ rows=[
+  ('Medical devices ex hardware',med28,med28*1.03),
+  ('Industrial and scientific',ind28,ind28*1.05),
+  ('NRE ex engineering',nre28,nre28),
+  ('Repairs',rep28,rep28*(rep28/rep27)),
+  ('Discounts ex fee',disc28,disc28+(disc28-disc27)),
+  ('Monogram cohort',r28['total_monogram_revenue_M'],next_monogram(r28)),
+ ]
+ fy29=sum(b for _,_,b in rows)
+ rev=result[case]['FY28E']['revenue']
+ return rows,fy29,fy29/rev-1
+bridges={}
+for case,obj,evidence in [('base',p,['S3','S5','S7','S9','S23','G3']),('bull',p['scenarios']['bull'],['S3','S5','S7','S9','S15','S23'])]:
+ rows,fy29,g=trajectory(case,obj);bridges[case]=(obj,rows,fy29,g)
+ parts='; '.join('%s %.6f to %.6f'%(n,a,b) for n,a,b in rows)
+ setval(obj['finagle']['gsnext'],g,f'{case} medium-term organic growth = FY29 {fy29} / FY28 revenue - 1. Lines keep their trajectory and the Monogram cohort is one more year: {parts}. Not a round rate.',evidence)
 setval(p['scenarios']['bear']['finagle']['gsnext'],-0.1,'Bear gsnext stays -10%. That is the customer-1 renewal after calendar 2028, and it does not set the base.',['G3'])
 # Show the effect of inherited SBC addback explicitly, without changing EBITDA definition.
 p['bridge']['sbc_fy27']=fact(.135*4,'Forecast SBC = Q1FY27 0.135M *4; D2 cash flow statement.',('D2',))
 p['bridge']['sbc_fy28']=fact(.135*4*1.03,'Forecast SBC = FY27 SBC *1.03 inflation.',('D2','S1'))
 for case,obj in [('base',p),('bull',p['scenarios']['bull']),('bear',p['scenarios']['bear'])]:
  obj['totals']['ebitda_including_sbc_expense']={y:fact(obj['totals']['ebitda'][y]['value']-p['bridge']['sbc_fy'+y[2:4]]['value'],'EBITDA without stock-comp addback = headline EBITDA less forecast SBC.',[obj['totals']['ebitda'][y]['citation']['id'],p['bridge']['sbc_fy'+y[2:4]]['citation']['id']])for y in years}
+row_inputs={'Medical devices ex hardware':['S3','G3'],'Industrial and scientific':['S5'],'NRE ex engineering':['S7'],'Repairs':['S8','S9'],'Discounts ex fee':['S10'],'Monogram cohort':['S23','G17']}
+for case,(obj,rows,fy29,g) in bridges.items():
+ recorded=[]
+ for name,a,b in rows:
+  ins=row_inputs[name]
+  recorded.append({'name':name,'fy28':fact(a,f'{case} FY28 {name}, medium-term organic growth bridge.',ins),'fy29':fact(b,f'{case} FY29 {name}, medium-term organic growth bridge.',ins)})
+ cite='S14' if case=='base' else 'S18'
+ obj['gsnext_bridge']={'rows':recorded,'fy29_revenue':fact(fy29,f'{case} FY29 revenue = sum of the medium-term organic growth bridge.',[cite]),'growth':fact(g,f'{case} medium-term organic growth = FY29 bridge revenue / FY28 revenue - 1.',[cite])}
 # Refresh all citation descriptions and as-of metadata; every reused calculation id means same current fact.
 def refresh(o):
  if isinstance(o,dict):
