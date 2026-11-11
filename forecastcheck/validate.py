@@ -23,11 +23,17 @@ name shared by both, and that view matches ``totals``. A missing view or a
 missing ratio is ``{"absent": "<reason>"}``. A Consensus fact with one analyst
 or no ``as_of`` date passes with a warning. Without a ``views`` block the case
 passes with a warning.
+
+When the case has a ``cash_share_adjustments`` block, ``base`` is a list of
+cash and equity items. Each item has a name, an ISO date, and a probability.
+A cash item has a signed amount. An equity item has shares, proceeds, or both,
+and an optional issue price. Without the block the case passes with a warning.
 """
 
 from __future__ import annotations
 
 import re
+from datetime import datetime
 
 TAGS = {"A", "G", "E", "P", "S", "C"}
 FINAGLE_LEAVES = ("ebitda_growth", "sales_growth", "me", "mc", "gsnext")
@@ -106,6 +112,12 @@ def validate_payload(payload):
     else:
         warnings.append(
             "no views block: bottom-up, top-down, calibrated top-down, and Consensus are expected for new cases"
+        )
+    if "cash_share_adjustments" in payload:
+        _check_cash_share_adjustments(payload.get("cash_share_adjustments"), errors)
+    else:
+        warnings.append(
+            "no cash_share_adjustments block: milestone payments, contingent cash, and equity offerings are expected for new cases"
         )
     _check_block(payload, ctx, errors, prefix="")
     for name, scenario in (payload.get("scenarios") or {}).items():
@@ -536,6 +548,81 @@ def _check_views(payload, explicit, errors, warnings):
                 numerator = points.get(numerator_name)
                 denominator = total_value if denominator_name == "base" else points.get(denominator_name)
                 _expect_ratio(block[key], numerator, denominator, "%s.%s" % (ratio_path, key), errors)
+
+
+def _check_cash_share_adjustments(block, errors):
+    if not isinstance(block, dict):
+        errors.append("cash_share_adjustments must be an object of scenarios")
+        return
+    if "base" not in block:
+        errors.append("cash_share_adjustments.base is required")
+    for name, items in block.items():
+        path = "cash_share_adjustments.%s" % name
+        if not isinstance(items, list):
+            errors.append("%s must be a list" % path)
+            continue
+        for index, item in enumerate(items):
+            _check_adjustment(item, "%s[%d]" % (path, index), errors)
+
+
+def _check_adjustment(item, path, errors):
+    if not isinstance(item, dict):
+        errors.append("%s must be an object" % path)
+        return
+    kind = item.get("kind")
+    if kind not in ("cash", "equity"):
+        errors.append("%s kind must be cash or equity" % path)
+    name = item.get("name")
+    if not isinstance(name, str) or not name.strip():
+        errors.append("%s needs a name" % path)
+    when = item.get("when")
+    when_value = when.get("value") if isinstance(when, dict) else None
+    if not _is_fact(when) or not _is_iso_date(when_value):
+        errors.append("%s when must be a fact with an ISO date" % path)
+    probability = _number_fact(item.get("probability"))
+    if probability is None or not 0 <= probability <= 1:
+        errors.append("%s probability must be a fact from 0 to 1" % path)
+    if kind == "cash":
+        extra = sorted(set(item) - {"kind", "name", "when", "probability", "amount"})
+        if extra:
+            errors.append("%s cash item has unexpected %s" % (path, ", ".join(extra)))
+        if _number_fact(item.get("amount")) is None:
+            errors.append("%s amount must be a signed fact in millions" % path)
+    elif kind == "equity":
+        extra = sorted(set(item) - {"kind", "name", "when", "probability", "shares", "proceeds", "price"})
+        if extra:
+            errors.append("%s equity item has unexpected %s" % (path, ", ".join(extra)))
+        shares = _number_fact(item.get("shares")) if "shares" in item else None
+        proceeds = _number_fact(item.get("proceeds")) if "proceeds" in item else None
+        if "shares" not in item and "proceeds" not in item:
+            errors.append("%s needs shares or proceeds" % path)
+        if "shares" in item and (shares is None or shares <= 0):
+            errors.append("%s shares must be a positive fact in millions" % path)
+        if "proceeds" in item and (proceeds is None or proceeds <= 0):
+            errors.append("%s proceeds must be a positive fact in millions" % path)
+        if "price" in item:
+            price = _number_fact(item.get("price"))
+            if price is None or price <= 0:
+                errors.append("%s price must be a positive fact" % path)
+
+
+def _is_iso_date(value):
+    if not isinstance(value, str):
+        return False
+    try:
+        datetime.strptime(value, "%Y-%m-%d")
+    except ValueError:
+        return False
+    return True
+
+
+def _number_fact(obj):
+    if not _is_fact(obj):
+        return None
+    value = obj.get("value")
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return None
+    return value
 
 
 def _check_ids(payload, errors):

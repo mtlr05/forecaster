@@ -423,6 +423,7 @@ def test_views_block_with_an_absent_view_passes():
 
 def test_views_and_sources_clear_the_warnings():
     payload = _stamp_ids(_add_views(_minimal()))
+    payload["cash_share_adjustments"] = {"base": []}
     report = validate_payload(payload)
     assert report["ok"], report["errors"]
     assert report["warnings"] == []
@@ -467,6 +468,79 @@ def test_views_ebitda_base_must_match_its_own_total():
         error.startswith("views.revenue") and "does not match" in error
         for error in report["errors"]
     )
+
+
+def test_missing_cash_share_adjustments_is_a_warning():
+    report = validate_payload(_minimal())
+    assert report["ok"], report["errors"]
+    assert any("cash_share_adjustments" in warning for warning in report["warnings"])
+
+
+def _cash_item(**overrides):
+    item = {
+        "kind": "cash",
+        "name": "milestone payable",
+        "when": _fact("2028-06-30", "G"),
+        "probability": _fact(0.5, "S"),
+        "amount": _fact(-25.0, "G"),
+    }
+    item.update(overrides)
+    return item
+
+
+def _equity_item(**overrides):
+    item = {
+        "kind": "equity",
+        "name": "follow-on",
+        "when": _fact("2027-03-01", "G"),
+        "probability": _fact(1, "G"),
+        "shares": _fact(2.0, "G"),
+    }
+    item.update(overrides)
+    return item
+
+
+def test_cash_share_schedule_accepts_cash_and_equity_items():
+    payload = _minimal()
+    payload["cash_share_adjustments"] = {"base": [_cash_item(), _equity_item()], "bull": []}
+    report = validate_payload(payload)
+    assert report["ok"], report["errors"]
+    assert not any("cash_share_adjustments" in warning for warning in report["warnings"])
+
+
+def test_cash_share_schedule_rejects_a_bad_item():
+    payload = _minimal()
+    payload["cash_share_adjustments"] = {"bull": []}
+    report = validate_payload(payload)
+    assert any("base is required" in error for error in report["errors"])
+
+    payload = _minimal()
+    payload["cash_share_adjustments"] = {"base": [_cash_item(kind="loan")]}
+    report = validate_payload(payload)
+    assert any("kind must be cash or equity" in error for error in report["errors"])
+
+    payload = _minimal()
+    payload["cash_share_adjustments"] = {"base": [_cash_item(probability=_fact(1.5, "S"))]}
+    report = validate_payload(payload)
+    assert any("probability" in error for error in report["errors"])
+
+    payload = _minimal()
+    payload["cash_share_adjustments"] = {"base": [_cash_item(when=_fact("2028-13-01", "G"))]}
+    report = validate_payload(payload)
+    assert any("ISO date" in error for error in report["errors"])
+
+    payload = _minimal()
+    payload["cash_share_adjustments"] = {"base": [_equity_item()]}
+    del payload["cash_share_adjustments"]["base"][0]["shares"]
+    report = validate_payload(payload)
+    assert any("shares or proceeds" in error for error in report["errors"])
+
+    payload = _minimal()
+    bad = _cash_item()
+    bad["shares"] = _fact(1.0, "G")
+    payload["cash_share_adjustments"] = {"base": [bad]}
+    report = validate_payload(payload)
+    assert any("unexpected" in error for error in report["errors"])
 
 
 def test_single_analyst_undated_consensus_warns():

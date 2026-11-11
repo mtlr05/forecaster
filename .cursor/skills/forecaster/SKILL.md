@@ -41,6 +41,8 @@ For `forecasts/<TICKER>/`:
 
 New cases also carry a `views` block: bottom-up, top-down, calibrated top-down, and Consensus, for revenue and for EBITDA, for each explicit year, plus which view is the base for each metric and the ratios between them. The shape is in section 2. A case without `views` passes with a warning.
 
+New cases also carry a `cash_share_adjustments` block: milestone payments the company owes other parties, similar contingent cash outside EBITDA, and equity offerings. An empty base list means none were found. The shape is in section 2g. A case without the block passes with a warning.
+
 ## Status and open items
 
 `forecast.md` can open with a short `## Status and open items` block. It replaces a separate status note.
@@ -56,7 +58,7 @@ Reported periods stay put. Forecast only periods the company has not reported.
 
 A business line is a unit the company already reports revenue for, and margin if it reports that too: a segment, a product, an operating business, a geography, a channel. Do not split finer than the disclosure. A single-segment filer's lines are the revenue breakdown it reports: geography, revenue type (e.g. service vs. vehicle sales), or both crossed if both are reported. Say which one you used.
 
-Royalties, license revenue, earn-outs, and similar contingent payments stay inside the reported line that already includes them. A contingent item is its own line only when management already reports it as its own line. Build the operating piece and the contingent piece, then one line total. See [driver patterns](references/driver-patterns.md). If those dollars already sit in the reported line, in guidance, or in Consensus, leave them there: they are an allocation inside the line when the base is top-down, calibrated top-down, or Consensus, and they are not added again on top of that total. When the dollars cannot be split out, keep the single line, say the piece is not separable, and state how the build treats it: in the run rate, probability-weighted, or already inside the total.
+Royalties, license revenue, earn-outs, and similar contingent payments stay inside the reported line that already includes them. A contingent item is its own line only when management already reports it as its own line. Build the operating piece and the contingent piece, then one line total. See [driver patterns](references/driver-patterns.md). If those dollars already sit in the reported line, in guidance, or in Consensus, leave them there: they are an allocation inside the line when the base is top-down, calibrated top-down, or Consensus, and they are not added again on top of that total. When the dollars cannot be split out, keep the single line, say the piece is not separable, and state how the build treats it: in the run rate, probability-weighted, or already inside the total. A payment the company owes another party, and an equity offering, are not revenue. Section 2g records them.
 
 The baseline year shows year-over-year growth for the total and for each line.
 
@@ -173,6 +175,32 @@ When the impact is not that clear, leave the window at the usual stop. `gsnext` 
 
 Write the growth of those dollars on `forecast.json` under `finagle`. That is the block the tests check. `sales_growth` and `ebitda_growth` are one rate per explicit year, and they compound back to the revenue and EBITDA you just wrote. `me` is the last explicit year's EBITDA divided by revenue. `mc` is the contribution margin. `gsnext` is sales growth in the year after the explicit window. Set `mc`, `gsnext`, and any other input past the explicit years against the history window, the transcript language, and any unlaunched product recorded above. Tag them `[S]`, cite the quarters, and do not invent a trend the series does not show. `me` and `mc` are not zero.
 
+### 2g. Cash and share adjustments
+
+Record milestone payments the company owes other parties, similar contingent cash that sits outside EBITDA, and equity offerings. Royalties, license revenue, and earn-outs that stay inside a reported line are not listed again. Cash already inside the year-0 balance is not listed. These items do not enter revenue, EBITDA, a later cash-flow year, or a later share path.
+
+`forecast.md` lists each item. `forecast.json` holds them under `cash_share_adjustments`. The block is an object of scenarios. `base` is a list. An empty list means none were found. Bull and bear have their own list when the probability or the amount differs. A missing scenario uses the base list.
+
+Each item is tagged facts, in millions of the reporting currency and millions of shares. `kind` is `cash` or `equity`. `name` says what it is. `when` is an ISO date. A source that gives only a year uses that fiscal year-end, tagged `[S]`. `probability` is `[S]` unless a source states it. A contracted item with no contingency is 1. Do not haircut the cash a second time. A cash item has a signed `amount`. A payment to another party is negative. An equity item has `shares`, or `proceeds`, or both. Omit `price` when the shares are issued at today's price. A filing price or a price the user states is a fact on the item.
+
+```json
+"cash_share_adjustments": {
+  "base": [
+    {
+      "kind": "cash",
+      "name": "milestone payable to Partner",
+      "when": {"value": "2028-06-30", "tag": "G", "citation": {"text": "...", "url": "..."}},
+      "probability": {"value": 0.5, "tag": "S", "citation": {"text": "...", "url": "..."}},
+      "amount": {"value": -25.0, "tag": "G", "citation": {"text": "...", "url": "..."}}
+    }
+  ]
+}
+```
+
+On a joint valuation the runner discounts each item at Finagle's cost of equity, the required return on equity, and adds the present value to year-0 cash. New shares, multiplied by the probability, are added to the current share count. The issue price is today's price unless the item states one. Proceeds equal shares times that price, or shares equal proceeds divided by that price. The forecast file stores the undiscounted schedule. The worked figures live in the valuation result.
+
+Put the probability, a year-end date the source did not give, and an issue price that is not today's price on the assumptions list.
+
 ## 3. Pick a driver pattern
 
 Use [driver-patterns.md](references/driver-patterns.md). One pattern per line, or a new line when the disclosure adds one. The pattern builds the bottom-up line; 2c still scales it to the base-case total. A royalty, license, or earn-out uses the pattern inside the reported line that already holds it. A product still in development uses ramping or milestone-dependent the same way, inside the line that will hold it. Section 2f says whether that product extends the explicit years.
@@ -185,6 +213,7 @@ End every case with an assumptions list:
 
 - the three to five moves that actually change the answer
 - every `[S]` and every other judgment tag
+- the probability, the date, and the issue price on each cash or share adjustment
 
 Each entry says what to revise. A driver explains why (volume, price, a coverage win, destocking), not the number over again.
 
@@ -196,7 +225,7 @@ On an update, first check EDGAR or SEDAR+ for filings since the last revision, a
 
 ## Collaborative run
 
-Only when the user asks for a joint valuation. Follow [collaborative-run.md](references/collaborative-run.md). Copy the user's `prompt_inputs` into the request unchanged. Add nothing the user did not state. The published value is the one in the result file. Write the valuation section of the report from that file. Apply a post-run factor only when the request has one, and show the raw and adjusted values side by side, tagged `[P]` with the user's date.
+Only when the user asks for a joint valuation. Follow [collaborative-run.md](references/collaborative-run.md). Copy the user's `prompt_inputs` into the request unchanged. Copy `cash_share_adjustments` from the forecast. Add nothing the user did not state. The published value is the one in the result file. Write the valuation section of the report from that file. Apply a post-run factor only when the request has one, and show the raw and adjusted values side by side, tagged `[P]` with the user's date.
 
 ## Sources and credit
 

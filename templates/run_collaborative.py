@@ -23,6 +23,7 @@ if str(ROOT) not in sys.path:
 
 from forecastcheck.collaborative import (  # noqa: E402
     check_request,
+    prepare_scenario,
     render_valuation_section,
     scenario_updates,
 )
@@ -80,6 +81,7 @@ def main(argv=None):
     result["fetched"] = _fetched(case0)
     for name in request["scenarios"]:
         updates = scenario_updates(request, name)
+        record = prepare_scenario(request, name, case0, updates)
         case = copy.deepcopy(case0)
         for key, value in updates["plain"].items():
             case[key] = value
@@ -89,6 +91,8 @@ def main(argv=None):
         run["defaults_filled"] = [
             path for path, node in iter_leaves(ran) if node.get("source") == "assumption"
         ]
+        if record is not None:
+            run["cash_share_adjustments"] = record
         result["scenarios"][name] = run
         case_name = "case_%s_%s.json" % (name, request.get("version") or "v")
         (out / case_name).write_text(json.dumps(ran, indent=2, default=str))

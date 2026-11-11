@@ -50,3 +50,5 @@ Royalties, license revenue, earn-outs, and similar payments stay inside the repo
 A running royalty or license uses `recurring`. An earn-out or milestone uses `milestone-dependent`. The probability is `[S]` unless a source states it. Do not put the full undiscounted contingent amount in the base. Build the operating piece and the contingent piece, then one line total.
 
 If the dollars already sit in the reported line, in guidance, or in Consensus, they stay in that total. When the base is top-down, calibrated top-down, or Consensus, the contingent piece is an allocation inside the line. When the dollars cannot be split out, keep the single line, say the piece is not separable, and state how the build treats it: in the run rate, probability-weighted, or already inside the total.
+
+A milestone the company pays another party, and similar contingent cash outside EBITDA, is not a revenue line. An equity offering is not a revenue line. Section 2g of the skill records those items. They are not built again here.
