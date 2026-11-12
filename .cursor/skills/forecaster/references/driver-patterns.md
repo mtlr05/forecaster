@@ -8,7 +8,7 @@ Pick the pattern management actually discusses. Then take the simplest one that 
 
 A line that is still being built: a recently launched product, a product that is approved but not yet launched, a coverage win that is not yet in a full year, a region that just opened.
 
-Phase a product that has not launched from the stated launch date. Do not hold the first-year growth as a run rate. Use volume times price when you have both. Otherwise grow off the latest quarter and assume a slowdown, tagged `[S]`, because a new line rarely keeps its first-year growth. Watch a price change and a channel-inventory swing before you annualize a quarter. Inventory rebuild is not demand. If those dollars already sit in the line, in guidance, or in Consensus, they are an allocation inside that total, not a second amount. Section 2f of the skill says whether the product extends the explicit years.
+Phase a product that has not launched from the stated launch date. Do not hold the first-year growth as a run rate. Use volume times price when you have both. Otherwise grow off the latest quarter and assume a slowdown, tagged `[S]`, because a new line rarely keeps its first-year growth. Watch a price change and a channel-inventory swing before you annualize a quarter. Inventory rebuild is not demand. If those dollars already sit in the line, in guidance, or in Consensus, they are an allocation inside that total, not a second amount. Section 2f of the skill places the product inside the explicit years when the launch falls there. The product does not lengthen the window.
 
 ## New or acquired
 
@@ -33,7 +33,7 @@ Flat at the latest-quarter run rate, or the recent trend, plus only the structur
 
 ## Milestone-dependent
 
-A product still awaiting approval, a trial readout, or another stated event uses this pattern. Revenue equals the event amount times a probability. The probability is `[S]` unless a source states it. Do not put the full amount in the base because the event would be nice. If those dollars already sit in the line, in guidance, or in Consensus, they are an allocation inside that total, not a second amount. Section 2f of the skill says whether the product extends the explicit years.
+A product still awaiting approval, a trial readout, or another stated event uses this pattern. Revenue equals the event amount times a probability. The probability is `[S]` unless a source states it. Do not put the full amount in the base because the event would be nice. If those dollars already sit in the line, in guidance, or in Consensus, they are an allocation inside that total, not a second amount. Section 2f of the skill places the product inside the explicit years when the launch falls there. The product does not lengthen the window.
 
 ## Acquisition-driven
 

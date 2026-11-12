@@ -1,6 +1,6 @@
 # Forecaster
 
-Evidence-based near-term forecasts for a public company: explicit years, usually two.
+Evidence-based revenue and EBITDA forecasts for a public company, and the inputs a Finagle valuation reads. The same skill updates an existing forecast for a company update or a modelling refinement. The explicit window is the longest of two years, the guidance horizon, and the Consensus horizon, unless the prompt states otherwise. On an update the window stays unless the prompt changes it.
 
 The method is a skill, not a closed rulebook. A figure in the prompt overrides a default.
 
@@ -9,7 +9,7 @@ The method is a skill, not a closed rulebook. A figure in the prompt overrides a
 
 ## Layout
 
-Cases live in `forecasts/<TICKER>/`. History comes from the filing (EDGAR or SEDAR+) and from the company's IR. See [AGENTS.md](AGENTS.md).
+Cases live in `forecasts/<TICKER>/`. Read the filings for at least the last nine reported quarters: the financial reports, the earnings press releases, the earnings call transcripts, and any shareholder letter. US issuers are on EDGAR, Canadian issuers on SEDAR+, and the company's own IR pages. See [AGENTS.md](AGENTS.md).
 
 ## Collaborative run
 

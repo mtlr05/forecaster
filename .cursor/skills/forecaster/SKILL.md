@@ -1,11 +1,15 @@
 ---
 name: forecaster
-description: Build an evidence-based near-term (explicit-year, usually two-year) revenue and EBITDA forecast for a public company. Use when forecasting a ticker or updating forecasts/<TICKER>/.
+description: Build an evidence-based revenue and EBITDA forecast for a public company, including the inputs a Finagle valuation reads. The explicit window is the longest of two years, the guidance horizon, and the Consensus horizon, unless the prompt states otherwise. On an update the window stays unless the prompt changes it. Use when forecasting a ticker, updating an existing forecast for a company update or a modelling refinement, or preparing a joint valuation.
 ---
 
 # Forecaster
 
-A way to build a near-term operating forecast. Judgment is the work. The steps below are the default method, not a rulebook: a figure or an instruction in the prompt overrides them, and that override is tagged `[P]`.
+A way to build a revenue and EBITDA forecast, and the inputs a Finagle valuation reads. The same skill updates an existing case in `forecasts/<TICKER>/`, to take in a company update or a modelling refinement. On an update, start from that case's `forecast.md`, including its Status block, and follow the revision rules in section 4.
+
+Finagle is the valuation model beside this repo. Every forecast writes the inputs it reads: the growth and margin leaves in section 2f, and the cash and share schedule in section 2g. A collaborative run sends them. Finagle runs only when the user asks for a joint valuation.
+
+The explicit window is the longest of two years, the years management guidance covers, and the years Consensus estimates cover, unless the prompt states otherwise. On an update, keep the window already in the case unless the prompt changes it. Section 2f is that rule. Judgment is the work. The steps below are the default method, not a rulebook: a figure or an instruction in the prompt overrides them, and that override is tagged `[P]`.
 
 Read the references when you reach that step. They hold the tables; this file holds the method.
 
@@ -17,14 +21,20 @@ After the forecast, write the report with the [forecast-report skill](../forecas
 
 Worked case: [forecasts/HROW](../../../forecasts/HROW/forecast.md). Layout: [AGENTS.md](../../../AGENTS.md).
 
-## Where the history comes from
+## How to build a forecast
 
 Read, in this order. Do not write outside this repo.
 
 1. The prompt.
-2. The filing (EDGAR for a US issuer, SEDAR+ for a Canadian one) and the company's own IR release or transcript.
+2. The company's filings for at least the last nine reported quarters. For a US issuer those are on EDGAR. For a Canadian issuer they are on SEDAR+. Also read the company's own IR pages.
 
-Read at least nine reported quarters of revenue, and of EBITDA or margin where the company reports them, plus the earnings transcript for each of those quarters, where the documents exist. When a quarter has no call, the earnings press release for that quarter is the call material. Use its words for one-time items (2d) and for `mc`, `gsnext`, and the other inputs past the explicit years (2f). Name the substitute and flag that there was no call. A missing call alone does not make the window short. Name the window (for example Q2 FY24 through Q2 FY26). A shorter history (a new issuer, restated segments, a quarter with neither a transcript nor a release) is used as-is and flagged.
+Those documents are the financial reports, the earnings press releases, the earnings call transcripts, and any shareholder letter. From them, take revenue, and EBITDA or margin where the company reports it, for each of those quarters. EBITDA is the company's adjusted EBITDA when it reports one. Section 2e is the definition. That series is the baseline and the year-over-year growth.
+
+Name the window (for example Q2 FY24 through Q2 FY26). The baseline year, year 0, is always the last fiscal year. Year-over-year growth is year 0 relative to year -1, the fiscal year before it. When a quarter has no call, say so. A missing call does not shorten the window. A shorter history (a new issuer, restated segments, or a quarter with none of those documents) is used as-is and flagged.
+
+Consensus, when estimates exist, is a separate pull. It is not in the filings. Section 2 records it.
+
+Reported results frame section 1: the baseline figures, the year-over-year growth, the historical trend, and the narrative. The same history is what the run rate and one-time items (2d), the cost base (2e), and `mc` and `gsnext` (2f) are checked against. Forward-looking statements and the company outlook, in the press releases, the transcripts, and management's discussion and analysis, set the explicit-year totals and the wording in section 2.
 
 A number you cannot open stays out, or goes in with the citation text `link unverified`. Do not invent a URL or a figure.
 
@@ -54,19 +64,21 @@ New cases also carry a `cash_share_adjustments` block: milestone payments the co
 
 ## 1. Frame the forecast
 
-Reported periods stay put. Forecast only periods the company has not reported.
+The reported history sets the baseline, the year-over-year growth, the trend, and the narrative. Reported periods stay put. Forecast only periods the company has not reported.
 
 A business line is a unit the company already reports revenue for, and margin if it reports that too: a segment, a product, an operating business, a geography, a channel. Do not split finer than the disclosure. A single-segment filer's lines are the revenue breakdown it reports: geography, revenue type (e.g. service vs. vehicle sales), or both crossed if both are reported. Say which one you used.
 
 Royalties, license revenue, earn-outs, and similar contingent payments stay inside the reported line that already includes them. A contingent item is its own line only when management already reports it as its own line. Build the operating piece and the contingent piece, then one line total. See [driver patterns](references/driver-patterns.md). If those dollars already sit in the reported line, in guidance, or in Consensus, leave them there: they are an allocation inside the line when the base is top-down, calibrated top-down, or Consensus, and they are not added again on top of that total. When the dollars cannot be split out, keep the single line, say the piece is not separable, and state how the build treats it: in the run rate, probability-weighted, or already inside the total. A payment the company owes another party, and an equity offering, are not revenue. Section 2g records them.
 
-The baseline year shows year-over-year growth for the total and for each line.
+The baseline year, year 0, is the last fiscal year. It shows year-over-year growth for the total and for each line, year 0 relative to year -1.
 
 Lines add up to the total. If they do not, fix the lines before scaling anything.
 
 Bear, base, and bull differ in two or three levers, named up front. They do not each invent a new story.
 
 ## 2. Set the totals, then the lines
+
+The outlook and other forward-looking statements, in the press releases, the transcripts, and management's discussion and analysis, set the wording, and they set the total for a year that has a calibrated top-down. Consensus, when it exists, is a separate pull and sets the total when calibrated top-down is absent. A year with neither is bottom-up. The run rate, the cost base, and the inputs past the explicit years are checked against the reported history.
 
 Four views are recorded for revenue and for EBITDA, for each explicit year, including the one chosen as the base. A view that does not exist is recorded as absent, with the reason.
 
@@ -75,9 +87,9 @@ Four views are recorded for revenue and for EBITDA, for each explicit year, incl
 - **Calibrated top-down.** `Low + C * (High - Low)` on the like-for-like range. Absent, with the reason, when there is no range, when `C` is not applied, or when this step says to leave guidance. `C` is not applied when `C < 0` and a Consensus exists, when guidance has been revised, or when there is no completed original range. When `C < 0` and no Consensus exists, apply `C` anyway: calibrated top-down is then the base, and it is flagged.
 - **Consensus.** Analyst estimates, the latest pull, tagged `[E]`. Record `analysts` (the count on the pull) and `as_of` (the pull date) on the fact. If `analysts` is 1, or `as_of` is missing, flag it in the `[C]` block and on the assumptions list. The figure can still be the base. Absent when none exists.
 
-The base is chosen separately for revenue and for EBITDA. For each metric: calibrated top-down while still on guidance. Consensus when leaving guidance and an estimate exists. Bottom-up when neither exists, or when a single-point guide is enforced on the line build. Top-down is the base only when the base is an explicit point inside the range, named in the citation. Bottom-up stays a recorded view beside that base. The dollars on `lines` are the scaled base-case dollars.
+The base is chosen separately for revenue and for EBITDA, and separately for each explicit year. Calibrated top-down when that view exists. Consensus when it does not and an estimate exists. Bottom-up when neither exists. Bottom-up stays a recorded view beside that base. The dollars on `lines` are the scaled base-case dollars.
 
-Do this separately for revenue and for EBITDA. A later explicit year with no guidance range has top-down and calibrated top-down absent.
+Do this separately for revenue and for EBITDA. A year with no guidance range has top-down and calibrated top-down absent. Its base is then Consensus if that year has an estimate, otherwise bottom-up.
 
 `forecast.md` shows the four views, which one is the base for each metric, and the ratios beside the `[C]` block. `forecast.json` records them under `views`:
 
@@ -111,7 +123,7 @@ Leave guidance when `C < 0` (the low end was missed) or when this year's guidanc
 
 If `C < 0` and no Consensus exists, the base is calibrated top-down anyway, and flag it.
 
-Single-point guidance (`more than $X`, `about $X`) does not have a `C`. Top-down is that point. Calibrated top-down is absent. The base is bottom-up, and the words are enforced: `more than $X` means the total stays at or above `X`; `about $X` means it stays inside a stated band. If the build violates the words, flag it and adjust.
+Single-point guidance (`more than $X`, `about $X`) does not have a `C`. Top-down is that point. Calibrated top-down is absent. The base is Consensus if one exists, otherwise bottom-up. The words are enforced on that base: `more than $X` means the total stays at or above `X`; `about $X` means it stays inside a stated band. If the base violates the words, flag it and adjust.
 
 No guidance at all: top-down and calibrated top-down are absent. There is no `C`. The base is Consensus if one exists, otherwise bottom-up. Say so in the `[C]` block, name the view used, and flag it in the assumptions list.
 
@@ -149,29 +161,36 @@ M&A-related costs are the exception. Treat them as one-time unless the company s
 
 ### 2e. Costs
 
-Gross margin stays at the trailing level unless a source moves it. State the gross margin basis (GAAP or cash), and keep management's margin language on the same basis.
+EBITDA is the company's adjusted EBITDA when it reports one. Reconcile the cash cost to that figure. Show a gap, including the effect of including or excluding stock comp. When the company does not report adjusted EBITDA, state the definition as a calculation with the same items the cash cost removes: operating income + D&A + stock comp + one-time items, tagged `[C]`. Keep it consistent with any acquired company's own definition.
 
-Define the cost base first. Cash opex = GAAP operating expenses − stock comp − depreciation (− company-flagged one-time items − M&A costs treated as one-time under 2d). Integration costs stay in that base only while the integration work is unfinished. Reconcile it to reported adjusted EBITDA: gross profit + amortization in COGS − cash opex = adjusted EBITDA (HROW Q2'26: 50.363 + 5.527 − 57.122 = −1.232). State where amortization and stock comp sit. Gross profit minus adjusted EBITDA is not the cost base: it nets amortization into opex and understates EBITDA.
+Adjusted EBITDA equals revenue minus cash cost. State which basis is used, and use it for the history, for management's margin language, and for the forecast. Stock comp is SBC.
 
-When management describes how it gets to its EBITDA guide (HROW: "substantially higher revenue, increasing gross margins into the high 70s, and a base operating expense structure that remains approximately flat"), the cost step follows that description first. Only when there isn't one, cash operating cost is the latest-quarter run rate plus step changes the company has actually announced, grown for inflation.
+1. GAAP COGS + GAAP opex − D&A − stock comp − one-time items. D&A and stock comp come out wherever the company records them, in COGS or in opex.
+2. When the disclosure is sufficient, cash COGS + cash opex. D&A, stock comp, and one-time items are already out of the cash lines. Reported D&A, stock comp, and one-time items equal the amounts removed to get from the GAAP lines to cash COGS and cash opex.
 
-When the company doesn't report adjusted EBITDA, state the definition as a calculation, e.g. operating income + D&A + stock comp, tagged `[C]`. Keep it consistent with any acquired company's own definition, and show the effect of including or excluding stock comp.
+One-time items are items the company flags and M&A costs treated as one-time under 2d. Integration costs stay in cash cost while the integration work is unfinished, and come out once that work is done.
 
-When a revenue Consensus exists but no EBITDA Consensus does, bottom-up EBITDA is the cost build above, and that build is the base. Flag it. Consensus EBITDA is absent.
+*Example.* Revenue 100, GAAP COGS 40, of which D&A is 5, GAAP opex 30, of which stock comp is 3 and a company-flagged one-time item is 2. Cash cost on basis 1 is 40 + 30 − 5 − 3 − 2 = 60. Adjusted EBITDA is 100 − 60 = 40.
 
-If you have a calibrated top-down or Consensus EBITDA total, and the operating cost it implies differs from the bottom-up cost build by more than 10%, keep that total as the base, flag the gap, and record the cost-based figure as bottom-up.
+Gross margin stays at the trailing level unless a source moves it, on the stated basis.
+
+When management describes how it gets to its EBITDA guide (for example higher revenue, a higher gross margin, and an operating-expense base that stays about flat), the cost step follows that description first. Only when there isn't one, the cash operating-expense piece is the latest-quarter run rate plus step changes the company has actually announced, grown for inflation.
+
+When a revenue Consensus exists but no EBITDA Consensus does, EBITDA equals that revenue base minus the cash cost of the same revenue. Variable cash costs scale with the revenue base. Fixed cash operating expenses stay at the build. The margin is that EBITDA divided by the revenue base. The unscaled cost build remains the bottom-up view. Flag it. Consensus EBITDA is absent. An unscaled cash cost, or unscaled EBITDA dollars, set against a different revenue is not that margin. Section 2c states the same rule when revenue is scaled and costs are held fixed.
+
+If you have a calibrated top-down or Consensus EBITDA total, and the cash cost it implies differs from the bottom-up cash cost of that same revenue by more than 10%, keep that total as the base, flag the gap, and record the cost-based figure as bottom-up. The comparison uses one revenue figure.
 
 ### 2f. Where the explicit years stop
 
-Stop when the specific evidence stops. That is usually two years.
+The explicit window is the longest of three horizons, unless the prompt states a different one, tagged `[P]`. The three are two years, the years management guidance covers, and the years Consensus estimates cover. Count a year when either revenue or EBITDA has that guidance or that estimate. On an update, keep the explicit window already in the case unless the prompt changes it. A new guide, a longer or shorter Consensus, or a product launch date does not move it.
 
-Products still in development can move that stop. From the history window and the latest pipeline disclosure, list each one management names: what it is, the stated timing, and whether a dollar figure or a peak-sales figure was given. If none is named, say so in one line.
+A product does not lengthen the window. From the history window and the latest pipeline disclosure, list each one management names: what it is, the stated timing, and whether a dollar figure or a peak-sales figure was given. If none is named, say so in one line.
 
-Leave the explicit years as they are when the base already covers the launch. Do not add pipeline revenue on top of top-down, calibrated top-down, or Consensus. Add explicit-year dollars only when the base is bottom-up, or when management says the guide or the estimates exclude the product, and a launch date falls inside the window. Those dollars sit inside the reported line that will hold them. A new line is used only when management already reports the product on its own. An unapproved product uses a probability, tagged `[S]` unless a source states it. An approved product that has not launched is phased from the stated launch date. Do not put peak sales or the full undiscounted amount in the base.
+Leave the product inside the line when the base already covers the launch. Do not add pipeline revenue on top of calibrated top-down or Consensus. Add explicit-year dollars only when the base is bottom-up, or when management says the guide or the estimates exclude the product and a launch date falls inside the window. When those dollars are added because the published total excludes them, the base for that year is bottom-up, and the published view stays recorded beside it. Those dollars sit inside the reported line that will hold them. A new line is used only when management already reports the product on its own. An unapproved product uses a probability, tagged `[S]` unless a source states it. An approved product that has not launched is phased from the stated launch date. Do not put peak sales or the full undiscounted amount in the base.
 
-Extend the explicit window when the product's impact is well enough understood to write year by year: a timing, a basis for the dollars (a company figure, a stated ramp, or a probability times a stated amount), and the line that holds them. Say why the window moved. The same rule applies to the added years: do not add the product on top of a total that already includes it. Each added year still records the four views. Top-down and Consensus are absent when nobody published them, and the base for that year is bottom-up. `gsnext` then starts the year after the longer window.
+When the prompt sets a longer window, each added year records the four views and uses the same base order. `gsnext` starts the year after the window.
 
-When the impact is not that clear, leave the window at the usual stop. `gsnext` and `mc` take the pipeline in, together with the history window. `mc` moves when the new product's margin differs from the current mix. Tag `[S]`, name the product, cite the stated timing, and do not invent a dollar figure or a trend the company did not give. A product with no amount and no timing leaves `gsnext` and `mc` unchanged and is recorded as considered. `gsnext` is one more year of the same build as an explicit year. A phrase that reaches that next year is read against that line's own prior growth, the same way section 2b reads an explicit year. A phrase that stops at the last explicit year does not set the next year, and it does not set the line to zero. The line keeps the growth its history and the last explicit year already support. The write-up names where the phrase stopped. A rank or other comparison scored under 2b continues one more year on its own dollars and is included. It does not replace the other lines. Company `gsnext` is that next-year total divided by last explicit revenue, minus 1. It does not step down to a round rate nobody stated. Finagle fades `gsnext` toward terminal growth after that next year, and that fade is the later decline. A launch curve is not built product by product past `gsnext` unless the explicit window was extended. A separate risk, such as a contract renewal, may set the bear. It does not replace the implied growth in the base.
+`gsnext` and `mc` take the pipeline in, together with the history window. `mc` moves when the new product's margin differs from the current mix. Tag `[S]`, name the product, cite the stated timing, and do not invent a dollar figure or a trend the company did not give. A product with no amount and no timing leaves `gsnext` and `mc` unchanged and is recorded as considered. `gsnext` is one more year of the same build as an explicit year. A phrase that reaches that next year is read against that line's own prior growth, the same way section 2b reads an explicit year. A phrase that stops at the last explicit year does not set the next year, and it does not set the line to zero. The line keeps the growth its history and the last explicit year already support. The write-up names where the phrase stopped. A rank or other comparison scored under 2b continues one more year on its own dollars and is included. It does not replace the other lines. Company `gsnext` is that next-year total divided by last explicit revenue, minus 1. It does not step down to a round rate nobody stated. Finagle fades `gsnext` toward terminal growth after that next year, and that fade is the later decline. A launch curve is not built product by product past `gsnext`. The prompt is what lengthens the window. A separate risk, such as a contract renewal, may set the bear. It does not replace the implied growth in the base.
 
 Write the growth of those dollars on `forecast.json` under `finagle`. That is the block the tests check. `sales_growth` and `ebitda_growth` are one rate per explicit year, and they compound back to the revenue and EBITDA you just wrote. `me` is the last explicit year's EBITDA divided by revenue. `mc` is the contribution margin. `gsnext` is sales growth in the year after the explicit window. Set `mc`, `gsnext`, and any other input past the explicit years against the history window, the transcript language, and any unlaunched product recorded above. Tag them `[S]`, cite the quarters, and do not invent a trend the series does not show. `me` and `mc` are not zero.
 
@@ -203,7 +222,7 @@ Put the probability, a year-end date the source did not give, and an issue price
 
 ## 3. Pick a driver pattern
 
-Use [driver-patterns.md](references/driver-patterns.md). One pattern per line, or a new line when the disclosure adds one. The pattern builds the bottom-up line; 2c still scales it to the base-case total. A royalty, license, or earn-out uses the pattern inside the reported line that already holds it. A product still in development uses ramping or milestone-dependent the same way, inside the line that will hold it. Section 2f says whether that product extends the explicit years.
+Use [driver-patterns.md](references/driver-patterns.md). One pattern per line, or a new line when the disclosure adds one. The pattern builds the bottom-up line; 2c still scales it to the base-case total. A royalty, license, or earn-out uses the pattern inside the reported line that already holds it. A product still in development uses ramping or milestone-dependent the same way, inside the line that will hold it. Section 2f places the product inside the explicit window when the launch falls there. The product does not lengthen the window.
 
 Choose from what management discusses, then the simplest pattern that fits the history.
 
@@ -217,7 +236,7 @@ End every case with an assumptions list:
 
 Each entry says what to revise. A driver explains why (volume, price, a coverage win, destocking), not the number over again.
 
-On an update, first check EDGAR or SEDAR+ for filings since the last revision, and record the consensus pull date and source in the file. Then add a revision-log row per line for this year and next year: old, new, change, one line of why, including the growth rate old to new. Store it in `forecasts/<TICKER>/revision_log.md`.
+On an update, keep the explicit window already in the case unless the prompt changes it. First check EDGAR or SEDAR+ for filings since the last revision, and record the consensus pull date and source in the file. Then add a revision-log row per line for this year and next year: old, new, change, one line of why, including the growth rate old to new. Store it in `forecasts/<TICKER>/revision_log.md`.
 
 ## 5. Check
 
