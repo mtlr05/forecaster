@@ -88,3 +88,15 @@ Authorized by David May on 12 November 2026: “pull repo” and “update the r
 - Finagle blocks added (finagle_handoff true): me / mc / gsnext base 0.539251 / 0.648431 / 0.106938, bull 0.565309 / 0.664961 / 0.118788, bear 0.224509 / 0.490126 / 0.008596 (S43, S44). ebitda_basis total, acquisition_disclosure none (C18, C20). Terminal growth, capex and SBC paths were not set.
 - `cash_share_adjustments`: the −30.0 TYRVAYA close cash (2026-10-01) is added to all scenarios because year-0 cash is the 31 December 2025 balance (P5, A21, A23, C19); a year-0 equity raise is appended under P6 (base 50, bull 100, bear 50; 2026-11-12; at the share price) because opening cash plus the schedule's PV would otherwise be negative (C21).
 - Finagle results (12 November 2026, price 29.37): base 132.69, bull 153.28, bear 14.71 per share. Report rewritten with a Valuation section, Balance Sheet Adjustments, Appendix A builds and Appendix B/C updates; the Q4 outlook moved into Section 8 as Figures 6b/6c.
+
+## 13 November 2026 (America/Toronto) — report structure
+
+The report was reordered to the forecast-report skill. Business Drivers by Line now sits inside Forecast, one subsection per line, each with a build table on the same years as Figure 6. Figure 6, Figure 6a, Figure 6b, and Figure 6c are unchanged. Samsung, TYRVAYA, and Melt contingent terms are under Contingent payments at the end of Forecast. Risks is the last section before the appendices. Upcoming catalysts are in Key Developments. `forecast.json` was not edited, and no accepted forecast number changed. Growth rates in the new line tables are the figure in that table divided by the prior fiscal year, tagged [C10].
+
+## 13 November 2026 (America/Toronto) — VEVYE TRx in the line table
+
+The VEVYE table now shows reconstructed TRx. FY2026E–FY2028E are the levels already in `drivers.csv` (1,251,095.5 / 2,043,199 / 2,835,815). Nine-month 2026 and FY2029E–FY2032E continue that same quarterly add and are tagged [C27]. FY2024A and FY2025A stay n/a. No forecast number changed.
+
+## 13 November 2026 (America/Toronto) — untagged summary
+
+The summary is the base case only. Each bullet is one untagged paragraph that points to the section holding the detail. Bull and bear values are no longer in the summary. Figure 2 is unchanged. No forecast number changed.
