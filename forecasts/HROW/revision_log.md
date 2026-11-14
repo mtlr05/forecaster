@@ -97,6 +97,23 @@ The report was reordered to the forecast-report skill. Business Drivers by Line 
 
 The VEVYE table now shows reconstructed TRx. FY2026E–FY2028E are the levels already in `drivers.csv` (1,251,095.5 / 2,043,199 / 2,835,815). Nine-month 2026 and FY2029E–FY2032E continue that same quarterly add and are tagged [C27]. FY2024A and FY2025A stay n/a. No forecast number changed.
 
+## 14 November 2026 (America/Toronto) — Vevye workbook and no equity raise
+
+VEVYE is now the monthly workbook in `Vevye model.xlsx` [P8]. Bull is 8% above the published workbook dollars from January 2027. Bear matches the workbook through December 2028 and then holds that month's 21.48% share. Every year-0 equity raise is removed [P9]. Other product lines are unchanged. Growth rates below are this year or next year versus the prior fiscal year, old path then new path.
+
+| Line | FY2026E old | FY2026E new | FY2026E growth old | FY2026E growth new | FY2027E old | FY2027E new | FY2027E growth old | FY2027E growth new | Why |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| VEVYE | 140.113 | 136.727 | 58.0% | 54.2% | 264.435 | 285.252 | 88.7% | 108.6% | Workbook replaces the constant 49,538.5 TRx add and the held $129.42 price. Q4 is lower; FY2027E is higher because share rises toward 22% and price glides toward $200. |
+| IHEEZO | 81.120 | 81.120 | — | — | 116.158 | 116.158 | — | — | Unchanged. |
+| TRIESENCE | 33.538 | 33.538 | — | — | 80.591 | 80.591 | — | — | Unchanged. |
+| Other branded | 31.944 | 31.944 | — | — | 79.000 | 79.000 | — | — | Unchanged. |
+| Other revenues | 0.527 | 0.527 | — | — | 0.500 | 0.500 | — | — | Unchanged. |
+| ImprimisRx | 60.890 | 60.890 | — | — | 72.000 | 72.000 | — | — | Unchanged. |
+| G-MELT | 0.000 | 0.000 | — | — | 0.000 | 0.000 | — | — | Unchanged. |
+| YOCHIL | 0.000 | 0.000 | — | — | 0.000 | 0.000 | — | — | Unchanged. |
+| Revenue | 348.132 | 344.746 | 27.8% | 26.6% | 612.684 | 633.501 | 76.0% | 83.8% | Moves one-for-one with VEVYE. |
+| Adjusted EBITDA | 43.289 | 40.580 | — | — | 177.177 | 192.998 | — | — | FY2026E moves with VEVYE gross profit at 80%. From FY2027E, EBITDA also nets the 4% same-store variable opex on the VEVYE increment. |
+
 ## 13 November 2026 (America/Toronto) — untagged summary
 
 The summary is the base case only. Each bullet is one untagged paragraph that points to the section holding the detail. Bull and bear values are no longer in the summary. Figure 2 is unchanged. No forecast number changed.

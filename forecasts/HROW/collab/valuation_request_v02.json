@@ -1,0 +1,539 @@
+{
+ "mode": "collaborative",
+ "ticker": "HROW",
+ "version": "v02",
+ "parent_version": "v01",
+ "forecast_commit": "uncommitted (VEVYE workbook applied 14 November 2026)",
+ "scenarios": [
+  "base",
+  "bull",
+  "bear"
+ ],
+ "forecaster": {
+  "base": {
+   "forecast.sales_growth": {
+    "value": [
+     0.2660382,
+     0.837587673,
+     0.345538523,
+     0.262958705,
+     0.216725528,
+     0.182605635,
+     0.122612648
+    ],
+    "tag": "C",
+    "cite_id": "C18_base",
+    "evidence": "Revenue growth FY2026E\u2013FY2032E off FY2025A (base)."
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     -0.344669993,
+     3.755988172,
+     0.736131981,
+     0.484979258,
+     0.324765059,
+     0.251347915,
+     0.157804002
+    ],
+    "tag": "C",
+    "cite_id": "C18_base_e",
+    "evidence": "Adjusted EBITDA growth FY2026E\u2013FY2032E off FY2025A (base)."
+   },
+   "forecast.margin_path.me": {
+    "value": 0.549178,
+    "tag": "C",
+    "cite_id": "C18_base_me",
+    "evidence": "FY2032E Adjusted EBITDA / revenue (base)."
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.654348,
+    "tag": "S",
+    "cite_id": "S43_base",
+    "evidence": "Contribution margin (mc) is set halfway between the last explicit year\u2019s EBITDA margin (me) and that year\u2019s GAAP gross margin, the band an extra dollar of sales falls in. GAAP gross margin was 75% in FY2024A and FY2025A and 71% in 9M 2026. Base: (0.5393 + 0.7576) / 2 = 0.6484. Bull: (0.5653 + 0.7646) / 2 = 0.6650. Bear: (0.2245 + 0.7557) / 2 = 0.4901. All sit above the reported history of low-20s Adjusted EBITDA margins."
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.114885,
+    "tag": "S",
+    "cite_id": "S44_base",
+    "evidence": "gsnext is FY2033E revenue from one more year of the same build divided by FY2032E revenue, minus 1. Base FY2033E 1,838.379: VEVYE +102.582 (constant TRx add) to 879.926; IHEEZO +16.999 to 218.152; TRIESENCE +43.158 to 339.536; Other branded +5.5 (components\u2019 last steps) to 135.5; Other revenues 0.5; compounding +2 to 79; G-MELT 750,000 units at $200 = 150.0; YOCHIL 536,477/3 units at $200 = 35.765. gsnext 10.69%. Bull FY2033E 2,064.574 (VEVYE 950.321, G-MELT 1.4 million units = 280.0, Other branded 151.76, compounding 88.48, Other revenues 0.56, others as base): gsnext 11.88%. Bear FY2033E 641.437 (VEVYE flat 264.655; IHEEZO 158.655; TRIESENCE \u00d70.92 to 75.127; Other branded 76.32; Other revenues 0.28; compounding 44.4; G-MELT +7 to 22; YOCHIL 0): gsnext 0.86%."
+   },
+   "forecast.ebitda_basis": {
+    "value": "total",
+    "tag": "C",
+    "cite_id": "C18",
+    "evidence": "Finagle growth leaves: sales_growth and ebitda_growth are year / prior \u2212 1 on totals from FY2025A (year 0) through FY2032E, so they compound back to the revenue and Adjusted EBITDA in this file. me is FY2032E Adjusted EBITDA / revenue. ebitda_basis is total: TYRVAYA (closed 1 October 2026) is inside the Other branded line and the cost build, no further deal is forecast, and its $30 close cash is a dated item on cash_share_adjustments rather than a Finagle acquisition."
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "C",
+    "cite_id": "C20",
+    "evidence": "No acquisition after TYRVAYA is forecast. TYRVAYA closed 1 October 2026 and is already inside the explicit lines and costs; its $30 close cash is a dated item on cash_share_adjustments."
+   }
+  },
+  "bull": {
+   "forecast.sales_growth": {
+    "value": [
+     0.295600856,
+     0.894695518,
+     0.375168489,
+     0.293518737,
+     0.21722299,
+     0.173754639,
+     0.136001667
+    ],
+    "tag": "C",
+    "cite_id": "C18_bull",
+    "evidence": "Revenue growth FY2026E\u2013FY2032E off FY2025A (bull)."
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     -0.249535714,
+     3.7750425,
+     0.746513085,
+     0.509527729,
+     0.312494231,
+     0.231653031,
+     0.172303349
+    ],
+    "tag": "C",
+    "cite_id": "C18_bull_e",
+    "evidence": "Adjusted EBITDA growth FY2026E\u2013FY2032E off FY2025A (bull)."
+   },
+   "forecast.margin_path.me": {
+    "value": 0.574487,
+    "tag": "C",
+    "cite_id": "C18_bull_me",
+    "evidence": "FY2032E Adjusted EBITDA / revenue (bull)."
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.670652,
+    "tag": "S",
+    "cite_id": "S43_bull",
+    "evidence": "Contribution margin (mc) is set halfway between the last explicit year\u2019s EBITDA margin (me) and that year\u2019s GAAP gross margin, the band an extra dollar of sales falls in. GAAP gross margin was 75% in FY2024A and FY2025A and 71% in 9M 2026. Base: (0.5393 + 0.7576) / 2 = 0.6484. Bull: (0.5653 + 0.7646) / 2 = 0.6650. Bear: (0.2245 + 0.7557) / 2 = 0.4901. All sit above the reported history of low-20s Adjusted EBITDA margins."
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.126003,
+    "tag": "S",
+    "cite_id": "S44_bull",
+    "evidence": "gsnext is FY2033E revenue from one more year of the same build divided by FY2032E revenue, minus 1. Base FY2033E 1,838.379: VEVYE +102.582 (constant TRx add) to 879.926; IHEEZO +16.999 to 218.152; TRIESENCE +43.158 to 339.536; Other branded +5.5 (components\u2019 last steps) to 135.5; Other revenues 0.5; compounding +2 to 79; G-MELT 750,000 units at $200 = 150.0; YOCHIL 536,477/3 units at $200 = 35.765. gsnext 10.69%. Bull FY2033E 2,064.574 (VEVYE 950.321, G-MELT 1.4 million units = 280.0, Other branded 151.76, compounding 88.48, Other revenues 0.56, others as base): gsnext 11.88%. Bear FY2033E 641.437 (VEVYE flat 264.655; IHEEZO 158.655; TRIESENCE \u00d70.92 to 75.127; Other branded 76.32; Other revenues 0.28; compounding 44.4; G-MELT +7 to 22; YOCHIL 0): gsnext 0.86%."
+   },
+   "forecast.ebitda_basis": {
+    "value": "total",
+    "tag": "C",
+    "cite_id": "C18",
+    "evidence": "Finagle growth leaves: sales_growth and ebitda_growth are year / prior \u2212 1 on totals from FY2025A (year 0) through FY2032E, so they compound back to the revenue and Adjusted EBITDA in this file. me is FY2032E Adjusted EBITDA / revenue. ebitda_basis is total: TYRVAYA (closed 1 October 2026) is inside the Other branded line and the cost build, no further deal is forecast, and its $30 close cash is a dated item on cash_share_adjustments rather than a Finagle acquisition."
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "C",
+    "cite_id": "C20",
+    "evidence": "No acquisition after TYRVAYA is forecast. TYRVAYA closed 1 October 2026 and is already inside the explicit lines and costs; its $30 close cash is a dated item on cash_share_adjustments."
+   }
+  },
+  "bear": {
+   "forecast.sales_growth": {
+    "value": [
+     0.229288697,
+     0.729254733,
+     0.288873264,
+     0.179727449,
+     0.112355721,
+     0.113515164,
+     0.107099122
+    ],
+    "tag": "C",
+    "cite_id": "C18_bear",
+    "evidence": "Revenue growth FY2026E\u2013FY2032E off FY2025A (bear)."
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     -0.464496229,
+     3.644119421,
+     0.694426587,
+     0.331980532,
+     0.174130455,
+     0.143238362,
+     0.150474876
+    ],
+    "tag": "C",
+    "cite_id": "C18_bear_e",
+    "evidence": "Adjusted EBITDA growth FY2026E\u2013FY2032E off FY2025A (bear)."
+   },
+   "forecast.margin_path.me": {
+    "value": 0.444719,
+    "tag": "C",
+    "cite_id": "C18_bear_me",
+    "evidence": "FY2032E Adjusted EBITDA / revenue (bear)."
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.603603,
+    "tag": "S",
+    "cite_id": "S43_bear",
+    "evidence": "Contribution margin (mc) is set halfway between the last explicit year\u2019s EBITDA margin (me) and that year\u2019s GAAP gross margin, the band an extra dollar of sales falls in. GAAP gross margin was 75% in FY2024A and FY2025A and 71% in 9M 2026. Base: (0.5393 + 0.7576) / 2 = 0.6484. Bull: (0.5653 + 0.7646) / 2 = 0.6650. Bear: (0.2245 + 0.7557) / 2 = 0.4901. All sit above the reported history of low-20s Adjusted EBITDA margins."
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.105336,
+    "tag": "S",
+    "cite_id": "S44_bear",
+    "evidence": "gsnext is FY2033E revenue from one more year of the same build divided by FY2032E revenue, minus 1. Base FY2033E 1,838.379: VEVYE +102.582 (constant TRx add) to 879.926; IHEEZO +16.999 to 218.152; TRIESENCE +43.158 to 339.536; Other branded +5.5 (components\u2019 last steps) to 135.5; Other revenues 0.5; compounding +2 to 79; G-MELT 750,000 units at $200 = 150.0; YOCHIL 536,477/3 units at $200 = 35.765. gsnext 10.69%. Bull FY2033E 2,064.574 (VEVYE 950.321, G-MELT 1.4 million units = 280.0, Other branded 151.76, compounding 88.48, Other revenues 0.56, others as base): gsnext 11.88%. Bear FY2033E 641.437 (VEVYE flat 264.655; IHEEZO 158.655; TRIESENCE \u00d70.92 to 75.127; Other branded 76.32; Other revenues 0.28; compounding 44.4; G-MELT +7 to 22; YOCHIL 0): gsnext 0.86%."
+   },
+   "forecast.ebitda_basis": {
+    "value": "total",
+    "tag": "C",
+    "cite_id": "C18",
+    "evidence": "Finagle growth leaves: sales_growth and ebitda_growth are year / prior \u2212 1 on totals from FY2025A (year 0) through FY2032E, so they compound back to the revenue and Adjusted EBITDA in this file. me is FY2032E Adjusted EBITDA / revenue. ebitda_basis is total: TYRVAYA (closed 1 October 2026) is inside the Other branded line and the cost build, no further deal is forecast, and its $30 close cash is a dated item on cash_share_adjustments rather than a Finagle acquisition."
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "C",
+    "cite_id": "C20",
+    "evidence": "No acquisition after TYRVAYA is forecast. TYRVAYA closed 1 October 2026 and is already inside the explicit lines and costs; its $30 close cash is a dated item on cash_share_adjustments."
+   }
+  }
+ },
+ "prompt_inputs": [
+  {
+   "path": "baseline.cash",
+   "value": 72.927,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Standing instruction (recorded 2 November 2026): year-0 cash is the last fiscal year-end cash plus short-term investments (e.g., FY2025), adjusted for equity raises made during the following year, and the share count is raised from the last fiscal-year figure to reflect those raises. Applied: FY2025 year-end cash and cash equivalents $72.927 with no short-term investments, plus $0 of FY2026 equity raises (none through 12 November 2026); shares 37.229159 million at 31 December 2025, plus 0 raise shares. Harrow 10-Q for Q3 2026 balance sheet and equity statement.",
+   "date": "2026-11-02",
+   "includes_adjustments": false,
+   "source_doc": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+   "cite_id": "P5"
+  },
+  {
+   "path": "market.shares",
+   "value": 37.229159,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Standing instruction (recorded 2 November 2026): year-0 cash is the last fiscal year-end cash plus short-term investments (e.g., FY2025), adjusted for equity raises made during the following year, and the share count is raised from the last fiscal-year figure to reflect those raises. Applied: FY2025 year-end cash and cash equivalents $72.927 with no short-term investments, plus $0 of FY2026 equity raises (none through 12 November 2026); shares 37.229159 million at 31 December 2025, plus 0 raise shares. Harrow 10-Q for Q3 2026 balance sheet and equity statement.",
+   "date": "2026-11-02",
+   "includes_adjustments": false,
+   "source_doc": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+   "cite_id": "P5"
+  }
+ ],
+ "cash_share_adjustments": {
+  "base": [
+   {
+    "kind": "cash",
+    "name": "TYRVAYA close cash paid",
+    "when": {
+     "value": "2026-10-01",
+     "tag": "A",
+     "citation": {
+      "id": "A23",
+      "text": "On October 1, 2026, we paid $30,000,000 in cash at the closing of the TYRVAYA acquisition, funded with cash on hand and without borrowings under our credit facility.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+      "page": "MD&A liquidity"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "A",
+     "citation": {
+      "id": "C19",
+      "text": "Paid on 1 October 2026; contracted and settled, probability 1.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+      "page_status": "unverified"
+     }
+    },
+    "amount": {
+     "value": -30.0,
+     "tag": "A",
+     "citation": {
+      "id": "A23_1",
+      "text": "TYRVAYA close cash $30,000,000 paid 1 October 2026, recorded in millions as -30.0; after year-0 (31 Dec 2025) cash, so not inside that balance.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+      "page": "MD&A liquidity"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Melt FDA-approval milestone payable",
+    "when": {
+     "value": "2027-12-31",
+     "tag": "S",
+     "citation": {
+      "id": "S24",
+      "text": "Q4 2027 standard-review PDUFA is the dated approval window; a source that gives only a year uses that fiscal year-end of 31 December 2027 for the Melt FDA-approval cash.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "S",
+     "citation": {
+      "id": "S25",
+      "text": "Probability is 1 in the base because the unweighted 2028 G-MELT launch already in the revenue path is conditional on approval; the cash is not haircut a second time. A second FDA-approval cash payment is not added for YOCHIL; Schedule A is treated as a single approval payment unless the contract clearly pays on each product.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "amount": {
+     "value": -87.16794,
+     "tag": "A",
+     "citation": {
+      "id": "A15",
+      "text": "FDA-approval cash $87,167,940 payable under Melt Schedule A, recorded in millions as -87.16794. A single payment; not duplicated for YOCHIL.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Melt first commercial Annual Net Sales cash milestone",
+    "when": {
+     "value": "2030-12-31",
+     "tag": "S",
+     "citation": {
+      "id": "S34",
+      "text": "Combined base G-MELT + YOCHIL sales first exceed $100 of Annual Net Sales in FY2030E ($109.399). The item is dated 31 December 2030, the year-end of the year the threshold is hit. Payment is due within 75 days after that year-end.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "S",
+     "citation": {
+      "id": "S35",
+      "text": "Probability is 1 on the unweighted base path that already includes those product dollars; the cash is not haircut a second time. It is not an EBITDA item.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "amount": {
+     "value": -10.02,
+     "tag": "A",
+     "citation": {
+      "id": "A18",
+      "text": "First commercial Annual Net Sales cash milestone, $10,024,313.10 on Schedule A, recorded in millions as -10.02, at $100 of Annual Net Sales of Melt Products (G-MELT + YOCHIL). Payable within 75 days after year-end if the threshold is hit; dated at that fiscal year-end. Outside EBITDA.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    }
+   }
+  ],
+  "bear": [
+   {
+    "kind": "cash",
+    "name": "TYRVAYA close cash paid",
+    "when": {
+     "value": "2026-10-01",
+     "tag": "A",
+     "citation": {
+      "id": "A23",
+      "text": "On October 1, 2026, we paid $30,000,000 in cash at the closing of the TYRVAYA acquisition, funded with cash on hand and without borrowings under our credit facility.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+      "page": "MD&A liquidity"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "A",
+     "citation": {
+      "id": "C19",
+      "text": "Paid on 1 October 2026; contracted and settled, probability 1.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+      "page_status": "unverified"
+     }
+    },
+    "amount": {
+     "value": -30.0,
+     "tag": "A",
+     "citation": {
+      "id": "A23_1",
+      "text": "TYRVAYA close cash $30,000,000 paid 1 October 2026, recorded in millions as -30.0; after year-0 (31 Dec 2025) cash, so not inside that balance.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+      "page": "MD&A liquidity"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Melt FDA-approval milestone payable",
+    "when": {
+     "value": "2030-12-31",
+     "tag": "S",
+     "citation": {
+      "id": "S26",
+      "text": "In the bear case, G-MELT approval is delayed past 2030; the FDA-approval cash is dated 31 December 2030.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "S",
+     "citation": {
+      "id": "S27",
+      "text": "Probability is 1 on the delayed-approval path that still assumes eventual approval with late, small revenue in FY2031E\u2013FY2032E. The cash is not an EBITDA item.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "amount": {
+     "value": -87.16794,
+     "tag": "A",
+     "citation": {
+      "id": "A16",
+      "text": "FDA-approval cash $87,167,940 payable under Melt Schedule A, recorded in millions as -87.16794. A single payment; not duplicated for YOCHIL. (bear timing).",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    }
+   }
+  ],
+  "bull": [
+   {
+    "kind": "cash",
+    "name": "TYRVAYA close cash paid",
+    "when": {
+     "value": "2026-10-01",
+     "tag": "A",
+     "citation": {
+      "id": "A23",
+      "text": "On October 1, 2026, we paid $30,000,000 in cash at the closing of the TYRVAYA acquisition, funded with cash on hand and without borrowings under our credit facility.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+      "page": "MD&A liquidity"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "A",
+     "citation": {
+      "id": "C19",
+      "text": "Paid on 1 October 2026; contracted and settled, probability 1.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+      "page_status": "unverified"
+     }
+    },
+    "amount": {
+     "value": -30.0,
+     "tag": "A",
+     "citation": {
+      "id": "A23_1",
+      "text": "TYRVAYA close cash $30,000,000 paid 1 October 2026, recorded in millions as -30.0; after year-0 (31 Dec 2025) cash, so not inside that balance.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930.htm",
+      "page": "MD&A liquidity"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Melt FDA-approval milestone payable",
+    "when": {
+     "value": "2027-12-31",
+     "tag": "S",
+     "citation": {
+      "id": "S28",
+      "text": "Bull keeps the Q4 2027 standard-review PDUFA and dates the FDA-approval cash at 31 December 2027.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "S",
+     "citation": {
+      "id": "S29",
+      "text": "Probability is 1 on the unweighted bull path that launches in 2028. The cash is not haircut a second time and is not an EBITDA item.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "amount": {
+     "value": -87.16794,
+     "tag": "A",
+     "citation": {
+      "id": "A17",
+      "text": "FDA-approval cash $87,167,940 payable under Melt Schedule A, recorded in millions as -87.16794. A single payment; not duplicated for YOCHIL. (bull).",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Melt first commercial Annual Net Sales cash milestone",
+    "when": {
+     "value": "2029-12-31",
+     "tag": "S",
+     "citation": {
+      "id": "S36",
+      "text": "Combined bull G-MELT + YOCHIL sales first exceed $100 of Annual Net Sales in FY2029E ($101.078). The item is dated 31 December 2029. Payment is due within 75 days after that year-end.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "S",
+     "citation": {
+      "id": "S37",
+      "text": "Probability is 1 on the bull path that reaches the $100 trigger in FY2029E. The cash is not an EBITDA item.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "amount": {
+     "value": -10.02,
+     "tag": "A",
+     "citation": {
+      "id": "A19",
+      "text": "First commercial Annual Net Sales cash milestone, $10,024,313.10 on Schedule A, recorded in millions as -10.02, at $100 of Annual Net Sales of Melt Products (G-MELT + YOCHIL). Payable within 75 days after year-end if the threshold is hit; dated at that fiscal year-end. Outside EBITDA. (bull timing).",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Melt second commercial Annual Net Sales cash milestone",
+    "when": {
+     "value": "2032-12-31",
+     "tag": "S",
+     "citation": {
+      "id": "S38",
+      "text": "Combined bull G-MELT + YOCHIL sales first exceed $250 of Annual Net Sales in FY2032E ($275.904). The item is dated 31 December 2032. Payment is due within 75 days after that year-end.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "S",
+     "citation": {
+      "id": "S39",
+      "text": "Probability is 1 on the bull path that reaches the $250 trigger in FY2032E. The cash is not an EBITDA item.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    },
+    "amount": {
+     "value": -25.02,
+     "tag": "A",
+     "citation": {
+      "id": "A20",
+      "text": "Second commercial Annual Net Sales cash milestone, $25,017,198.78 on Schedule A, recorded in millions as -25.02, at $250 of Annual Net Sales of Melt Products. Payable within 75 days after year-end if the threshold is hit; dated at that fiscal year-end. Outside EBITDA.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm",
+      "page": "Schedule A"
+     }
+    }
+   }
+  ]
+ },
+ "post_finagle": null
+}

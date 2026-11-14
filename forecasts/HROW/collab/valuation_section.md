@@ -2,59 +2,57 @@
 
 Finagle commit `377f177b4013e713fe7c4603962e5f883a67e298`.
 
-Fetched price 29.3700 on 2026-11-12, risk-free rate 0.0500 on 2026-11-12, shares 37.2297 (10k).
+Fetched price 28.3000 on 2026-11-14, risk-free rate 0.0510 on 2026-11-14, shares 37.2297 (10k).
 
 ### base
 
-Value per share 132.6926.
-Warning: average EBITDA growth is 68.1% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.
+Value per share 148.4989.
+Flag: negative cash
+Warning: average EBITDA growth is 76.7% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.
 Warning: forecast evidence mentions acquisitions but the case has none, so MnA stays zero
 Defaults filled: baseline.nol, baseline.noa, rates.re, rates.gt, rates.roict, rates.t, rates.rd, forecast.dwc.mode, debt.mode, debt.leverage, debt.start_year, distribution.mode.
 
 ### bull
 
-Value per share 153.2803.
+Value per share 176.8200.
 Flag: negative cash
-Warning: average EBITDA growth is 68.9% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.
+Warning: average EBITDA growth is 78.5% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.
 Warning: forecast evidence mentions acquisitions but the case has none, so MnA stays zero
 Defaults filled: baseline.nol, baseline.noa, rates.re, rates.gt, rates.roict, rates.t, rates.rd, forecast.dwc.mode, debt.mode, debt.leverage, debt.start_year, distribution.mode.
 
 ### bear
 
-Value per share 14.7099.
-Flag: negative FCFE after year 1
-Warning: average EBITDA growth is 30.2% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.
+Value per share 81.7192.
+Flag: negative cash
+Warning: average EBITDA growth is 66.8% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.
 Warning: forecast evidence mentions acquisitions but the case has none, so MnA stays zero
 Defaults filled: baseline.nol, baseline.noa, rates.re, rates.gt, rates.roict, rates.t, rates.rd, forecast.dwc.mode, debt.mode, debt.leverage, debt.start_year, distribution.mode.
 
 ### Balance Sheet Adjustments
 
-Year-0 cash 8.4528 equals opening 72.9270 plus present value -64.4742. Share count 38.9316 equals opening 37.2292 plus 1.7024 shares.
+Year-0 cash -41.4840 equals opening 72.9270 plus present value -114.4110. Share count 37.2292 equals opening 37.2292 plus 0.0 shares.
 
 | Item | Amount | When | Probability | Discount | Present value | Shares |
 | --- | --- | --- | --- | --- | --- | --- |
 | TYRVAYA close cash paid | -30.0 | 2026-10-01 | 1.0 | 1.0 | -30.0 | 0.0 |
-| Melt FDA-approval milestone payable | -87.1679 | 2027-12-31 | 1.0 | 0.8930 | -77.8423 | 0.0 |
-| Melt first commercial Annual Net Sales cash milestone | -10.0200 | 2030-12-31 | 1.0 | 0.6619 | -6.6318 | 0.0 |
-| Year-0 equity raise (David May rule, cash would otherwise be negative) | 50.0 | 2026-11-12 | 1.0 | 1.0 | 50.0 | 1.7024 |
+| Melt FDA-approval milestone payable | -87.1679 | 2027-12-31 | 1.0 | 0.8925 | -77.8015 | 0.0 |
+| Melt first commercial Annual Net Sales cash milestone | -10.0200 | 2030-12-31 | 1.0 | 0.6596 | -6.6095 | 0.0 |
 
-Year-0 cash 44.1963 equals opening 72.9270 plus present value -28.7307. Share count 40.6340 equals opening 37.2292 plus 3.4048 shares.
-
-| Item | Amount | When | Probability | Discount | Present value | Shares |
-| --- | --- | --- | --- | --- | --- | --- |
-| TYRVAYA close cash paid | -30.0 | 2026-10-01 | 1.0 | 1.0 | -30.0 | 0.0 |
-| Melt FDA-approval milestone payable | -87.1679 | 2027-12-31 | 1.0 | 0.8930 | -77.8423 | 0.0 |
-| Melt first commercial Annual Net Sales cash milestone | -10.0200 | 2029-12-31 | 1.0 | 0.7313 | -7.3275 | 0.0 |
-| Melt second commercial Annual Net Sales cash milestone | -25.0200 | 2032-12-31 | 1.0 | 0.5420 | -13.5608 | 0.0 |
-| Year-0 equity raise (David May rule, cash would otherwise be negative) | 100.0 | 2026-11-12 | 1.0 | 1.0 | 100.0 | 3.4048 |
-
-Year-0 cash 35.2340 equals opening 72.9270 plus present value -37.6930. Share count 38.9316 equals opening 37.2292 plus 1.7024 shares.
+Year-0 cash -55.6737 equals opening 72.9270 plus present value -128.6007. Share count 37.2292 equals opening 37.2292 plus 0.0 shares.
 
 | Item | Amount | When | Probability | Discount | Present value | Shares |
 | --- | --- | --- | --- | --- | --- | --- |
 | TYRVAYA close cash paid | -30.0 | 2026-10-01 | 1.0 | 1.0 | -30.0 | 0.0 |
-| Melt FDA-approval milestone payable | -87.1679 | 2030-12-31 | 1.0 | 0.6619 | -57.6930 | 0.0 |
-| Year-0 equity raise (David May rule, cash would otherwise be negative) | 50.0 | 2026-11-12 | 1.0 | 1.0 | 50.0 | 1.7024 |
+| Melt FDA-approval milestone payable | -87.1679 | 2027-12-31 | 1.0 | 0.8925 | -77.8015 | 0.0 |
+| Melt first commercial Annual Net Sales cash milestone | -10.0200 | 2029-12-31 | 1.0 | 0.7295 | -7.3098 | 0.0 |
+| Melt second commercial Annual Net Sales cash milestone | -25.0200 | 2032-12-31 | 1.0 | 0.5391 | -13.4894 | 0.0 |
+
+Year-0 cash -14.5716 equals opening 72.9270 plus present value -87.4986. Share count 37.2292 equals opening 37.2292 plus 0.0 shares.
+
+| Item | Amount | When | Probability | Discount | Present value | Shares |
+| --- | --- | --- | --- | --- | --- | --- |
+| TYRVAYA close cash paid | -30.0 | 2026-10-01 | 1.0 | 1.0 | -30.0 | 0.0 |
+| Melt FDA-approval milestone payable | -87.1679 | 2030-12-31 | 1.0 | 0.6596 | -57.4986 | 0.0 |
 
 ### Prompt inputs
 
