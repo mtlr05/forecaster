@@ -114,6 +114,25 @@ VEVYE is now the monthly workbook in `Vevye model.xlsx` [P8]. Bull is 8% above t
 | Revenue | 348.132 | 344.746 | 27.8% | 26.6% | 612.684 | 633.501 | 76.0% | 83.8% | Moves one-for-one with VEVYE. |
 | Adjusted EBITDA | 43.289 | 40.580 | — | — | 177.177 | 192.998 | — | — | FY2026E moves with VEVYE gross profit at 80%. From FY2027E, EBITDA also nets the 4% same-store variable opex on the VEVYE increment. |
 
+## 15 November 2026 (America/Toronto) — Vevye and Iheezo workbook
+
+VEVYE and IHEEZO now follow `Vevye and Iheezo model.xlsx` [P10]. The explicit window stays FY2026E–FY2032E. No Harrow filing after the 9 November 2026 8-K and 10-Q was found. Bull VEVYE stays 8% above the published dollars from January 2027, and bear VEVYE still freezes share after December 2028; that month’s share is now 16.63% [P8][S45]. Bull IHEEZO uses the full 2025 Q4 distributor/clinic ratio in Q4 and the base units from FY2027E. Bear IHEEZO drops the Q4 seasonal multiplier and takes half of each later unit increment above the normalized 2026 rate, at the same 2027 ASP [S45]. The 10% ASP step is in all three cases because it is in the workbook. YOCHIL units follow the new IHEEZO customer units; FY2026E and FY2027E stay zero. TRIESENCE, Other branded, compounding, G-MELT and the other lines are unchanged. No year-0 equity raise is added [P9]. Growth rates below are this year or next year versus the prior fiscal year, old path then new path.
+
+| Line | FY2026E old | FY2026E new | FY2026E growth old | FY2026E growth new | FY2027E old | FY2027E new | FY2027E growth old | FY2027E growth new | Why |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| VEVYE | 136.727 | 136.727 | 54.2% | 54.2% | 285.252 | 291.577 | 108.6% | 113.2% | Q4 is unchanged (share starts in January). FY2027E is higher because December market size is 1,200 thousand TRx and the monthly share gain starts at 0.57 points. |
+| IHEEZO | 81.120 | 83.440 | −0.3% | 2.6% | 116.158 | 140.894 | 43.2% | 68.8% | The sheet’s 10% ASP step and half of the 2025 Q4 distributor/clinic ratio replace the held $406.64 realization and the 1.242 Q4 recognition lift. Later years grow at a rate that halves each year, off a 2025 base stated at 75% of units. |
+| TRIESENCE | 33.538 | 33.538 | — | — | 80.591 | 80.591 | — | — | Unchanged. |
+| Other branded | 31.944 | 31.944 | — | — | 79.000 | 79.000 | — | — | Unchanged. |
+| Other revenues | 0.527 | 0.527 | — | — | 0.500 | 0.500 | — | — | Unchanged. |
+| ImprimisRx | 60.890 | 60.890 | — | — | 72.000 | 72.000 | — | — | Unchanged. |
+| G-MELT | 0.000 | 0.000 | — | — | 0.000 | 0.000 | — | — | Unchanged. |
+| YOCHIL | 0.000 | 0.000 | — | — | 0.000 | 0.000 | — | — | Still zero in FY2026E and FY2027E. From FY2028E the line uses the new IHEEZO units: 1.711 / 7.890 / 16.836 / 26.430 / 27.383, was 1.528 / 7.385 / 16.899 / 28.682 / 32.154. |
+| Revenue | 344.746 | 347.066 | 26.6% | 27.5% | 633.501 | 664.562 | 83.8% | 91.5% | Moves with VEVYE, IHEEZO and, from FY2028E, YOCHIL. |
+| Adjusted EBITDA | 40.580 | 42.482 | −34.5% | −31.4% | 192.998 | 217.099 | 375.6% | 411.0% | FY2026E moves with IHEEZO gross profit at 82% on the Q4 dollar increase. From FY2027E, EBITDA also nets the 4% same-store variable opex on the revenue increment. |
+
+Combined base G-MELT + YOCHIL sales still first exceed 100 in FY2030E. The dollar in that year is 109.336. The milestone year, the −10.02 and −25.02 amounts, and the FDA-approval cash date do not move.
+
 ## 13 November 2026 (America/Toronto) — untagged summary
 
 The summary is the base case only. Each bullet is one untagged paragraph that points to the section holding the detail. Bull and bear values are no longer in the summary. Figure 2 is unchanged. No forecast number changed.

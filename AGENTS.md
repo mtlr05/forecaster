@@ -2,7 +2,7 @@
 
 Revenue and EBITDA forecasts for a public company, and the inputs a Finagle valuation reads. The same skill updates an existing forecast for a company update or a modelling refinement. The explicit window is the longest of two years, the guidance horizon, and the Consensus horizon, unless the prompt states otherwise. On an update the window stays unless the prompt changes it. Every forecast writes those inputs. A collaborative run sends them. The method is the skill, not this file.
 
-Read `.cursor/skills/forecaster/SKILL.md` before forecasting. Tables are in `.cursor/skills/forecaster/references/`. Every forecast also gets an analyst-style `report.md` and `report.pdf` beside it, written with `.cursor/skills/forecast-report/SKILL.md`.
+Read `.cursor/skills/forecaster/SKILL.md` before forecasting. Tables are in `.cursor/skills/forecaster/references/`. Every forecast also gets an analyst-style `report.md` and `report.pdf` beside it, written with `.cursor/skills/forecast-report/SKILL.md`. Figure contents are in `.cursor/skills/forecast-report/references/figures.md`. The skill decides order, conditions, and numbers.
 
 ## Layout
 
