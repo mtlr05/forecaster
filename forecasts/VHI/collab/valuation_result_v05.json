@@ -1,0 +1,2269 @@
+{
+ "ticker": "VHI.TO",
+ "version": "v05",
+ "parent_version": "v04",
+ "mode": "collaborative",
+ "currency": "CAD",
+ "finagle_commit": "377f177b4013e713fe7c4603962e5f883a67e298",
+ "ff_log": "Already up to date (377f177b); no commits since 377f177b.",
+ "run_at": "2026-11-18T14:33:45.262045-05:00",
+ "sec_user_agent": "David May davidmay44@hotmail.com",
+ "hash_check": {
+  "sidecar_present": false,
+  "file_bytes": "ba766900bf9dd16f1178d9a00f12325b518624426d9b84fca32e4a52509b6446",
+  "file_bytes_matches_brief_exactly": true,
+  "whole_request": "1ae2e4c24c092cc088734bf5ea95dc648750282f8fce37eaa6b3d09c8d10f297",
+  "blocks": {
+   "base": "49b7bed19fd62f1761ecb758852c4d963ab895802c4e96b5df4fb2d22802ff2a",
+   "bull": "b3aecd1f3422836803becf2e4ad7d4cfeb5e44ff39db4884e3488552a1bdc0a2",
+   "bear": "25e35874995e3aaf15fa64df5b32ca41d9f1b7f9c90114635f10fdb15027fa8c"
+  },
+  "prompt_inputs": "ac69eba17e56b33760115db6fb4865d3ae3b940c7c796bcf98c07952533ff4f8",
+  "note": "No sidecar was present. File sha256 matches the brief exactly."
+ },
+ "request_diff": {
+  "vs_v04_changed_keys": [
+   "version",
+   "parent_version",
+   "prompt_inputs"
+  ],
+  "vs_v04_unchanged": [
+   "mode",
+   "ticker",
+   "forecast_commit",
+   "scenarios",
+   "forecaster",
+   "cash_share_adjustments",
+   "post_finagle"
+  ],
+  "prompt_inputs_v04": 8,
+  "prompt_inputs_v05": 10,
+  "added": [
+   {
+    "path": "baseline.ebitda",
+    "value": 26.554099,
+    "quote": "Yes, do the quick fix",
+    "date": "2026-11-18",
+    "stamps": "fiscal_year / 2025-12-31 / CAD"
+   },
+   {
+    "path": "baseline.ebitda_definition",
+    "value": "before_sbc",
+    "quote": "Yes, do the quick fix",
+    "date": "2026-11-18"
+   }
+  ],
+  "all_v04_prompt_inputs_carried_unchanged": true,
+  "note": "The only material change is those two prompt_inputs, as expected."
+ },
+ "rd_provenance": {
+  "applied": true,
+  "value": 0.028,
+  "quote_field": "Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.",
+  "date": "2026-11-18",
+  "flag": "rd is not a direct David quote. The quote field is a Forecaster proposal: \"Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.\" David did not object. Applied as given because it is in prompt_inputs. Immaterial if debt is held at 0 and interest is 0 every year."
+ },
+ "includes_adjustments_rule": "collaborative-run.md: a stated year-0 cash or share count is the opening figure, before the schedule; the runner discounts the schedule and adds PV to cash and new shares to the count, unless includes_adjustments is true (that side is not added again). forecastcheck.collaborative._openings reads includes_adjustments from the prompt item (default False). Both baseline.cash and market.shares have includes_adjustments false, so remaining CSA items are added on top of 106.812709 cash and 63.307054 shares.",
+ "forecast_commit": "uncommitted (live case /workspace/forecaster-work/output/VHI/2026-11-17/forecast.json, v3 of 18 Nov 2026; forecaster method 3a46f0a61f6b26de1a588acbc941120420d2ec41)",
+ "prompt_inputs": [
+  {
+   "path": "rates.risk_free",
+   "value": 0.0381,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "3.81% use this",
+   "date": "2026-11-18",
+   "note": "David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+  },
+  {
+   "path": "baseline.debt",
+   "value": 0.0,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18",
+   "note": "Leases excluded; Vitalhub has no borrowings."
+  },
+  {
+   "path": "debt.mode",
+   "value": "hold",
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18",
+   "note": "Hold debt at zero; no target re-borrowing."
+  },
+  {
+   "path": "rates.t",
+   "value": 0.265,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18"
+  },
+  {
+   "path": "baseline.cash",
+   "value": 106.812709,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "cash should be from the 2025 filling adjusted for the cash price of Buddy (+$12.37). shares should be from the 2025 filling (63.23M) adjusted for Buddy (+0.075M). Isn't that logical?",
+   "date": "2026-11-18",
+   "includes_adjustments": false,
+   "note": "FY2025 cash + STI 119.180625 (FY25 FS) minus Buddy closing cash 12.367916 (Q3'26 FS Note 4(c)); user wrote +12.37, sign confirmed as an outflow. Buddy items removed from cash_share_adjustments to avoid double counting; remaining schedule items still apply."
+  },
+  {
+   "path": "market.shares",
+   "value": 63.307054,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "cash should be from the 2025 filling adjusted for the cash price of Buddy (+$12.37). shares should be from the 2025 filling (63.23M) adjusted for Buddy (+0.075M). Isn't that logical?",
+   "date": "2026-11-18",
+   "includes_adjustments": false,
+   "note": "FY2025 shares 63,232,054 (FY25 FS) + 75,000 Buddy consideration shares (Q3'26 FS Note 4(c))."
+  },
+  {
+   "path": "baseline.da",
+   "value": 1.271558,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "remove the \"amortization of intangible assets\" when calculating capex using method 1.",
+   "date": "2026-11-18",
+   "note": "FY25 depreciation of PP&E 0.713788 + right-of-use 0.557770; excludes amortization of acquired intangibles 9.809967 (FY25 FS p.income statement, Note 7). Capex stays on Finagle method 1."
+  },
+  {
+   "path": "rates.rd",
+   "value": 0.028,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.",
+   "date": "2026-11-18"
+  },
+  {
+   "path": "baseline.ebitda",
+   "value": 26.554099,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Yes, do the quick fix",
+   "date": "2026-11-18",
+   "basis": "fiscal_year",
+   "period_end": "2025-12-31",
+   "currency": "CAD",
+   "note": "Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated."
+  },
+  {
+   "path": "baseline.ebitda_definition",
+   "value": "before_sbc",
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Yes, do the quick fix",
+   "date": "2026-11-18",
+   "basis": "fiscal_year",
+   "period_end": "2025-12-31",
+   "currency": "CAD",
+   "note": "Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated."
+  }
+ ],
+ "post_finagle": null,
+ "build_baseline": {
+  "ok": true,
+  "canadian": true,
+  "currency": "CAD",
+  "period_end": "2025-12-31",
+  "warnings": [
+   "Yahoo has no last close for the 10-year yield CA10Y=RR."
+  ],
+  "assumptions": [
+   "rates.roict",
+   "debt.mode",
+   "debt.leverage",
+   "debt.start_year",
+   "year",
+   "baseline.nol",
+   "baseline.noa",
+   "rates.t",
+   "rates.rd",
+   "forecast.dwc.mode",
+   "distribution.mode"
+  ]
+ },
+ "fetched": {
+  "price": 6.73,
+  "price_date": "2026-11-18",
+  "price_source": "yahoo",
+  "price_currency": "CAD",
+  "rf": 0.0381,
+  "rf_source": "prompt",
+  "shares_prompt_opening": 63.307054,
+  "re_derived": 0.0931,
+  "gt_derived": 0.0381,
+  "year0_da_yahoo": 11.081525,
+  "year0_da_prompt": 1.271558,
+  "year0_capex_yahoo": 0.423144,
+  "year0_cash_yahoo": 119.180625,
+  "year0_ebitda_yahoo": 25.89751,
+  "year0_ebitda_prompt": 26.554099
+ },
+ "defaults_filled": [
+  "baseline.noa",
+  "baseline.nol",
+  "debt.start_year",
+  "distribution.mode",
+  "forecast.dwc.mode",
+  "rates.gt",
+  "rates.re",
+  "rates.roict",
+  "year"
+ ],
+ "scenarios": {
+  "base": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 9.226091066761155,
+   "value_per_share_DDM": 9.226091066761155,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 16.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode",
+    "rates.re",
+    "rates.gt"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.0381,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+    },
+    "re": {
+     "value": 0.0931,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.0381,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.028,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.\""
+    },
+    "t": {
+     "value": 0.265,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\""
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    }
+   },
+   "year0_da": {
+    "value": 1.271558,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"remove the \"amortization of intangible assets\" when calculating capex using method 1.\" FY25 depreciation of PP&E 0.713788 + right-of-use 0.557770; excludes amortization of acquired intangibles 9.809967 (FY25 FS p.income statement, Note 7). Capex stays on Finagle method 1.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "year0_da_ok": true,
+   "year0_debt": {
+    "value": 0.0,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Leases excluded; Vitalhub has no borrowings.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md and forecastcheck.collaborative._openings. includes_adjustments is false on baseline.cash and market.shares, so the stated figures are openings and the remaining schedule is added. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Discount factor = 1/(1+re)^t. Buddy closing cash and consideration shares were removed from the schedule (already reflected in the stated openings).",
+    "price_date": "2026-11-18",
+    "cost_of_equity": 0.0931,
+    "includes_adjustments_cash": false,
+    "includes_adjustments_shares": false,
+    "opening_cash": 106.812709,
+    "opening_shares": 63.307054,
+    "items": [
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": 0.9459481560663991,
+      "amount": -4.5,
+      "present_value": -3.5944138034211037,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": 0.8260712408097017,
+      "amount": -7.248555,
+      "present_value": -2.6478152522984817,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -7.023282055719585,
+    "sum_new_shares": 0.0,
+    "adjusted_cash": 99.78942694428041,
+    "adjusted_shares": 63.307054,
+    "complete": true,
+    "applied_to_case": true,
+    "buddy_items_in_schedule": []
+   },
+   "year0_cash_used": 99.78942694428041,
+   "shares_used": 63.307054,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (Finagle company.fin), display_fin line skipped",
+    "cols": {
+     "revenue": [
+      108.966918,
+      128.99999999081265,
+      136.7049500452639,
+      142.4099001046955,
+      161.40990015220464,
+      174.32479049308301,
+      187.05529413081663,
+      199.408799865804,
+      211.18518565507887,
+      222.18180945732448,
+      232.19898742761268
+     ],
+     "ebitda": [
+      26.554099,
+      33.99999998826875,
+      37.163959985177065,
+      41.32791999290994,
+      48.327920006763286,
+      54.78536517720246,
+      61.15061699606926,
+      67.32736986356295,
+      73.21556275820038,
+      78.71387465932318,
+      83.72246364446728
+     ],
+     "da": [
+      1.271558,
+      1.5053282684228784,
+      1.5952389593110792,
+      1.6618112274894887,
+      1.8835262443390122,
+      2.0342328297273102,
+      2.182787767700221,
+      2.3269434374546796,
+      2.4643645725687215,
+      2.5926865002269475,
+      2.7095790674329296
+     ],
+     "capex": [
+      0.423144,
+      3.000137022291614,
+      3.9912777033177393,
+      4.725144639140179,
+      7.1692452307728685,
+      8.830576338356224,
+      10.468188517038609,
+      12.057304864413501,
+      13.57218230667092,
+      14.986753605293316,
+      16.275332054896058
+     ],
+     "sbc": [
+      2.647812,
+      3.3902716100040844,
+      3.705762308721966,
+      4.120966879436084,
+      4.818963977235601,
+      5.4628608314135905,
+      6.097564729633498,
+      6.71347266774822,
+      7.300607173977775,
+      7.848865137147068,
+      8.348290932687425
+     ],
+     "interest": [
+      0.070346,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_pretax": [
+      22.564383,
+      29.104400109841784,
+      31.86295871714402,
+      35.54514188598437,
+      41.62542978518867,
+      47.288271516061556,
+      52.870264498735544,
+      58.28695375836005,
+      63.45059101165388,
+      68.27232302194916,
+      72.66459364434694
+     ],
+     "nol": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_taxable": [
+      22.564383,
+      29.104400109841784,
+      31.86295871714402,
+      35.54514188598437,
+      41.62542978518867,
+      47.288271516061556,
+      52.870264498735544,
+      58.28695375836005,
+      63.45059101165388,
+      68.27232302194916,
+      72.66459364434694
+     ],
+     "tax": [
+      -0.209562,
+      7.712666029108073,
+      8.443684060043166,
+      9.41946259978586,
+      11.030738893075,
+      12.531391951756314,
+      14.01062009216492,
+      15.446042745965414,
+      16.814406618088277,
+      18.09216560081653,
+      19.25611731575194
+     ],
+     "tax_cash": [
+      -0.209562,
+      7.712666029108073,
+      8.443684060043166,
+      9.41946259978586,
+      11.030738893075,
+      12.531391951756314,
+      14.01062009216492,
+      15.446042745965414,
+      16.814406618088277,
+      18.09216560081653,
+      19.25611731575194
+     ],
+     "wacc": [
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931
+     ],
+     "value_per_share": [
+      9.226091066761155,
+      8.047719818661527,
+      8.464878909841934,
+      8.888665674287134,
+      9.316419218723068,
+      9.742112436487549,
+      10.166151494268064,
+      10.589605028772583,
+      11.014290181046887,
+      11.442850454815717,
+      11.878823057144196
+     ],
+     "shares": [
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054
+     ],
+     "debt": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "cash": [
+      99.78942694428041,
+      119.68635227114538,
+      140.70958818423958,
+      163.7719340587874,
+      189.0809059644672,
+      217.04144202014353,
+      247.61568567737578,
+      280.7262352628116,
+      316.254601922275,
+      354.0406922383413,
+      393.8834155794732
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "revenue": [
+     108.966918,
+     128.99999999081265,
+     136.7049500452639,
+     142.4099001046955,
+     161.40990015220464,
+     174.32479049308301,
+     187.05529413081663,
+     199.408799865804,
+     211.18518565507887,
+     222.18180945732448,
+     232.19898742761268
+    ],
+    "ebitda": [
+     26.554099,
+     33.99999998826875,
+     37.163959985177065,
+     41.32791999290994,
+     48.327920006763286,
+     54.78536517720246,
+     61.15061699606926,
+     67.32736986356295,
+     73.21556275820038,
+     78.71387465932318,
+     83.72246364446728
+    ],
+    "capex": [
+     0.423144,
+     3.000137022291614,
+     3.9912777033177393,
+     4.725144639140179,
+     7.1692452307728685,
+     8.830576338356224,
+     10.468188517038609,
+     12.057304864413501,
+     13.57218230667092,
+     14.986753605293316,
+     16.275332054896058
+    ],
+    "da": [
+     1.271558,
+     1.5053282684228784,
+     1.5952389593110792,
+     1.6618112274894887,
+     1.8835262443390122,
+     2.0342328297273102,
+     2.182787767700221,
+     2.3269434374546796,
+     2.4643645725687215,
+     2.5926865002269475,
+     2.7095790674329296
+    ],
+    "sbc": [
+     2.647812,
+     3.3902716100040844,
+     3.705762308721966,
+     4.120966879436084,
+     4.818963977235601,
+     5.4628608314135905,
+     6.097564729633498,
+     6.71347266774822,
+     7.300607173977775,
+     7.848865137147068,
+     8.348290932687425
+    ],
+    "debt": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "cash": [
+     99.78942694428041,
+     119.68635227114538,
+     140.70958818423958,
+     163.7719340587874,
+     189.0809059644672,
+     217.04144202014353,
+     247.61568567737578,
+     280.7262352628116,
+     316.254601922275,
+     354.0406922383413,
+     393.8834155794732
+    ],
+    "interest": [
+     0.070346,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "terminal_capex": 16.275332054896058,
+    "terminal_da": 2.7095790674329296,
+    "fy35_capex_to_ebitda": 0.19439623903102377,
+    "year0_da_to_revenue": 0.011669211383954164,
+    "year0_capex_to_revenue": 0.0038832336250897727
+   },
+   "capex_fill": {
+    "steps": [
+     {
+      "method": "forecast_capex",
+      "args": {
+       "capex_f": [
+        0.423144
+       ],
+       "method": 1
+      },
+      "pass_financials": true
+     }
+    ],
+    "notebook_capex_lines": [
+     "'capex': [0.423144],",
+     "co.forecast_capex(capex_f=[0.423144], method=1, financials=financials)"
+    ],
+    "notebook_da_lines": [
+     "'da': [1.271558],"
+    ]
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "hold",
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Hold debt at zero; no target re-borrowing."
+    },
+    "start_year": {
+     "value": 1,
+     "source": "assumption",
+     "evidence": "The target applies from the first forecast year."
+    }
+   },
+   "interest_all_zero": false,
+   "min_cash": 99.78942694428041,
+   "negative_cash_years": [],
+   "not_a_valuation": false,
+   "not_a_valuation_reason": [],
+   "flags": [
+    "rates.rd provenance: Forecaster proposal without an explicit David quote (applied as given; see rd_provenance)",
+    "year-0 capex remains Yahoo 0.423144 vs method-1 ratio on new D&A (1.271558 / revenue)"
+   ],
+   "steps": [
+    {
+     "method": "forecast_ebitda",
+     "args": {
+      "ebitda_ttm": 26.554099,
+      "gf": [
+       0.280404957,
+       0.093057647,
+       0.112042958,
+       0.169377022
+      ],
+      "me": 0.29941112633854255,
+      "mc": 0.5,
+      "gsnext": 0.080013
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_sbc",
+     "args": {
+      "sbc_f": [
+       2.647812
+      ]
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_capex",
+     "args": {
+      "capex_f": [
+       0.423144
+      ],
+      "method": 1
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "load_financials",
+     "args": {},
+     "pass_financials": true
+    },
+    {
+     "method": "fcf_from_ebitda",
+     "args": {}
+    },
+    {
+     "method": "value",
+     "args": {}
+    }
+   ],
+   "ebitda_confirmation": {
+    "build_baseline_yahoo_ebitda": 25.89751,
+    "build_baseline_source": "yahoo",
+    "applied_via": "update_case overlay after build_baseline (build_baseline still filled Yahoo 25.89751; the prompt leaf replaced it). Stamped fiscal_year / 2025-12-31 / CAD.",
+    "case_year0_ebitda": 26.554099,
+    "case_year0_source": "prompt",
+    "not_yahoo_25_89751": true,
+    "ebitda_definition": "before_sbc",
+    "ebitda_definition_source": "prompt",
+    "notebook_lines": [
+     "'ebitda': [26.554099],  # TTM only, or a full list of year + 1 values",
+     "ebitda_ttm = 26.554099",
+     "# co.forecast_ebitda(ebitda_ttm, gf, financials)",
+     "co.forecast_ebitda(ebitda_ttm, gf, financials, me=me, mc=mc, gsnext=gsnext)"
+    ],
+    "notebook_ebitda_ttm": 26.554099,
+    "fy26_growth_rate": 0.280404957,
+    "fy26_expected_26_554099_times_1_plus_g": 33.99999998826875,
+    "fy26_actual": 33.99999998826875,
+    "fy26_matches": true,
+    "ebitda_path_v05": [
+     26.554099,
+     33.99999998826875,
+     37.163959985177065,
+     41.32791999290994,
+     48.327920006763286,
+     54.78536517720246,
+     61.15061699606926,
+     67.32736986356295,
+     73.21556275820038,
+     78.71387465932318,
+     83.72246364446728
+    ],
+    "ebitda_path_v04": [
+     25.89751,
+     33.15930017795707,
+     36.245026628684435,
+     40.30602662495101,
+     47.13294138333792,
+     53.5903865537771,
+     59.955638372643904,
+     66.1323912401376,
+     72.02058413477504,
+     77.51889603589784,
+     82.52748502104195
+    ]
+   },
+   "year0_ebitda": {
+    "value": 26.554099,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Yes, do the quick fix\" Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "ebitda_definition": {
+    "value": "before_sbc",
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Yes, do the quick fix\" Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   }
+  },
+  "bull": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 11.215840162924994,
+   "value_per_share_DDM": 11.215840162924998,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 21.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode",
+    "rates.re",
+    "rates.gt"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.0381,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+    },
+    "re": {
+     "value": 0.0931,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.0381,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.028,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.\""
+    },
+    "t": {
+     "value": 0.265,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\""
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    }
+   },
+   "year0_da": {
+    "value": 1.271558,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"remove the \"amortization of intangible assets\" when calculating capex using method 1.\" FY25 depreciation of PP&E 0.713788 + right-of-use 0.557770; excludes amortization of acquired intangibles 9.809967 (FY25 FS p.income statement, Note 7). Capex stays on Finagle method 1.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "year0_da_ok": true,
+   "year0_debt": {
+    "value": 0.0,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Leases excluded; Vitalhub has no borrowings.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md and forecastcheck.collaborative._openings. includes_adjustments is false on baseline.cash and market.shares, so the stated figures are openings and the remaining schedule is added. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Discount factor = 1/(1+re)^t. Buddy closing cash and consideration shares were removed from the schedule (already reflected in the stated openings).",
+    "price_date": "2026-11-18",
+    "cost_of_equity": 0.0931,
+    "includes_adjustments_cash": false,
+    "includes_adjustments_shares": false,
+    "opening_cash": 106.812709,
+    "opening_shares": 63.307054,
+    "items": [
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": 0.9459481560663991,
+      "amount": -4.5,
+      "present_value": -3.5944138034211037,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": 0.8260712408097017,
+      "amount": -7.248555,
+      "present_value": -2.6478152522984817,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -7.023282055719585,
+    "sum_new_shares": 0.0,
+    "adjusted_cash": 99.78942694428041,
+    "adjusted_shares": 63.307054,
+    "complete": true,
+    "applied_to_case": true,
+    "buddy_items_in_schedule": []
+   },
+   "year0_cash_used": 99.78942694428041,
+   "shares_used": 63.307054,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (Finagle company.fin), display_fin line skipped",
+    "cols": {
+     "revenue": [
+      108.966918,
+      129.12299999541344,
+      139.98799995275252,
+      148.32900000578934,
+      169.1600000744214,
+      184.7335463212729,
+      200.07936201418104,
+      214.90044083474353,
+      228.88659132515033,
+      241.72438245939534,
+      253.1081505269381
+     ],
+     "ebitda": [
+      26.554099,
+      34.284000007080394,
+      41.230000016862896,
+      48.294000032402046,
+      57.535000048270135,
+      66.87912779638106,
+      76.08661721212593,
+      84.97926450446342,
+      93.37095479870747,
+      101.07362947925448,
+      107.90389031978013
+     ],
+     "da": [
+      1.271558,
+      1.5067635814767921,
+      1.633549562665635,
+      1.7308824554380946,
+      1.9739637985781262,
+      2.155694801730423,
+      2.3347683689101686,
+      2.507718670605559,
+      2.67092601712591,
+      2.8207329155744683,
+      2.953572511500532
+     ],
+     "capex": [
+      0.423144,
+      3.2359253214729775,
+      4.752136108111087,
+      5.916122698209589,
+      8.823088839445946,
+      10.996377279243298,
+      13.13788591934513,
+      15.206167526854133,
+      17.15793488261694,
+      18.94944868572573,
+      20.538053564176366
+     ],
+     "sbc": [
+      2.647812,
+      3.41859035122026,
+      4.111202899584345,
+      4.815581685290641,
+      5.737037568015779,
+      6.66877671612173,
+      7.586891127191835,
+      8.4736114114093,
+      9.31037933418397,
+      10.07844284299474,
+      10.75951459077552
+     ],
+     "interest": [
+      0.070346,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_pretax": [
+      22.564383,
+      29.35864607438334,
+      35.48524755461291,
+      41.747535891673316,
+      49.82399868167623,
+      58.05465627852891,
+      66.16495771602393,
+      73.99793442244857,
+      81.3896494473976,
+      88.17445372068528,
+      94.19080321750408
+     ],
+     "nol": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_taxable": [
+      22.564383,
+      29.35864607438334,
+      35.48524755461291,
+      41.747535891673316,
+      49.82399868167623,
+      58.05465627852891,
+      66.16495771602393,
+      73.99793442244857,
+      81.3896494473976,
+      88.17445372068528,
+      94.19080321750408
+     ],
+     "tax": [
+      -0.209562,
+      7.780041209711586,
+      9.403590601972422,
+      11.06309701129343,
+      13.203359650644202,
+      15.384483913810163,
+      17.533713794746344,
+      19.609452621948872,
+      21.568257103560367,
+      23.3662302359816,
+      24.960562852638585
+     ],
+     "tax_cash": [
+      -0.209562,
+      7.780041209711586,
+      9.403590601972422,
+      11.06309701129343,
+      13.203359650644202,
+      15.384483913810163,
+      17.533713794746344,
+      19.609452621948872,
+      21.568257103560367,
+      23.3662302359816,
+      24.960562852638585
+     ],
+     "wacc": [
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931
+     ],
+     "value_per_share": [
+      11.215840162924994,
+      10.223464585875318,
+      10.812543834825041,
+      11.400609581177692,
+      11.991734663456963,
+      12.573793589848414,
+      13.146879628276803,
+      13.712317192368396,
+      14.272830730459312,
+      14.832688402720107,
+      15.397813830863742
+     ],
+     "shares": [
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054
+     ],
+     "debt": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "cash": [
+      99.78942694428041,
+      119.63887006895598,
+      142.60194047615101,
+      169.10113911375942,
+      198.87265310392362,
+      232.7021429911295,
+      270.5302693619721,
+      312.22030230622323,
+      357.5546857845694,
+      406.23419349912183,
+      457.87995281131145
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "revenue": [
+     108.966918,
+     129.12299999541344,
+     139.98799995275252,
+     148.32900000578934,
+     169.1600000744214,
+     184.7335463212729,
+     200.07936201418104,
+     214.90044083474353,
+     228.88659132515033,
+     241.72438245939534,
+     253.1081505269381
+    ],
+    "ebitda": [
+     26.554099,
+     34.284000007080394,
+     41.230000016862896,
+     48.294000032402046,
+     57.535000048270135,
+     66.87912779638106,
+     76.08661721212593,
+     84.97926450446342,
+     93.37095479870747,
+     101.07362947925448,
+     107.90389031978013
+    ],
+    "capex": [
+     0.423144,
+     3.2359253214729775,
+     4.752136108111087,
+     5.916122698209589,
+     8.823088839445946,
+     10.996377279243298,
+     13.13788591934513,
+     15.206167526854133,
+     17.15793488261694,
+     18.94944868572573,
+     20.538053564176366
+    ],
+    "da": [
+     1.271558,
+     1.5067635814767921,
+     1.633549562665635,
+     1.7308824554380946,
+     1.9739637985781262,
+     2.155694801730423,
+     2.3347683689101686,
+     2.507718670605559,
+     2.67092601712591,
+     2.8207329155744683,
+     2.953572511500532
+    ],
+    "sbc": [
+     2.647812,
+     3.41859035122026,
+     4.111202899584345,
+     4.815581685290641,
+     5.737037568015779,
+     6.66877671612173,
+     7.586891127191835,
+     8.4736114114093,
+     9.31037933418397,
+     10.07844284299474,
+     10.75951459077552
+    ],
+    "debt": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "cash": [
+     99.78942694428041,
+     119.63887006895598,
+     142.60194047615101,
+     169.10113911375942,
+     198.87265310392362,
+     232.7021429911295,
+     270.5302693619721,
+     312.22030230622323,
+     357.5546857845694,
+     406.23419349912183,
+     457.87995281131145
+    ],
+    "interest": [
+     0.070346,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "terminal_capex": 20.538053564176366,
+    "terminal_da": 2.953572511500532,
+    "fy35_capex_to_ebitda": 0.1903365439680675,
+    "year0_da_to_revenue": 0.011669211383954164,
+    "year0_capex_to_revenue": 0.0038832336250897727
+   },
+   "capex_fill": {
+    "steps": [
+     {
+      "method": "forecast_capex",
+      "args": {
+       "capex_f": [
+        0.423144
+       ],
+       "method": 1
+      },
+      "pass_financials": true
+     }
+    ],
+    "notebook_capex_lines": [
+     "'capex': [0.423144],",
+     "co.forecast_capex(capex_f=[0.423144], method=1, financials=financials)"
+    ],
+    "notebook_da_lines": [
+     "'da': [1.271558],"
+    ]
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "hold",
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Hold debt at zero; no target re-borrowing."
+    },
+    "start_year": {
+     "value": 1,
+     "source": "assumption",
+     "evidence": "The target applies from the first forecast year."
+    }
+   },
+   "interest_all_zero": false,
+   "min_cash": 99.78942694428041,
+   "negative_cash_years": [],
+   "not_a_valuation": false,
+   "not_a_valuation_reason": [],
+   "flags": [
+    "rates.rd provenance: Forecaster proposal without an explicit David quote (applied as given; see rd_provenance)",
+    "year-0 capex remains Yahoo 0.423144 vs method-1 ratio on new D&A (1.271558 / revenue)"
+   ],
+   "steps": [
+    {
+     "method": "forecast_ebitda",
+     "args": {
+      "ebitda_ttm": 26.554099,
+      "gf": [
+       0.291100105,
+       0.202601797,
+       0.171331555,
+       0.191348822
+      ],
+      "me": 0.3401217783338721,
+      "mc": 0.6,
+      "gsnext": 0.092064
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_sbc",
+     "args": {
+      "sbc_f": [
+       2.647812
+      ]
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_capex",
+     "args": {
+      "capex_f": [
+       0.423144
+      ],
+      "method": 1
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "load_financials",
+     "args": {},
+     "pass_financials": true
+    },
+    {
+     "method": "fcf_from_ebitda",
+     "args": {}
+    },
+    {
+     "method": "value",
+     "args": {}
+    }
+   ],
+   "ebitda_confirmation": {
+    "build_baseline_yahoo_ebitda": 25.89751,
+    "build_baseline_source": "yahoo",
+    "applied_via": "update_case overlay after build_baseline (build_baseline still filled Yahoo 25.89751; the prompt leaf replaced it). Stamped fiscal_year / 2025-12-31 / CAD.",
+    "case_year0_ebitda": 26.554099,
+    "case_year0_source": "prompt",
+    "not_yahoo_25_89751": true,
+    "ebitda_definition": "before_sbc",
+    "ebitda_definition_source": "prompt",
+    "notebook_lines": [
+     "'ebitda': [26.554099],  # TTM only, or a full list of year + 1 values",
+     "ebitda_ttm = 26.554099",
+     "# co.forecast_ebitda(ebitda_ttm, gf, financials)",
+     "co.forecast_ebitda(ebitda_ttm, gf, financials, me=me, mc=mc, gsnext=gsnext)"
+    ],
+    "notebook_ebitda_ttm": 26.554099,
+    "fy26_growth_rate": 0.291100105,
+    "fy26_expected_26_554099_times_1_plus_g": 34.284000007080394,
+    "fy26_actual": 34.284000007080394,
+    "fy26_matches": true,
+    "ebitda_path_v05": [
+     26.554099,
+     34.284000007080394,
+     41.230000016862896,
+     48.294000032402046,
+     57.535000048270135,
+     66.87912779638106,
+     76.08661721212593,
+     84.97926450446342,
+     93.37095479870747,
+     101.07362947925448,
+     107.90389031978013
+    ],
+    "ebitda_path_v04": [
+     25.89751,
+     33.43627788023855,
+     40.21052786376623,
+     47.09986013003613,
+     56.1123628822833,
+     65.45649063039421,
+     74.6639800461391,
+     83.55662733847659,
+     91.94831763272066,
+     99.65099231326768,
+     106.48125315379335
+    ]
+   },
+   "year0_ebitda": {
+    "value": 26.554099,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Yes, do the quick fix\" Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "ebitda_definition": {
+    "value": "before_sbc",
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Yes, do the quick fix\" Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   }
+  },
+  "bear": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 6.826657434831162,
+   "value_per_share_DDM": 6.826657434831161,
+   "validation": {
+    "errors": [],
+    "warnings": [],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode",
+    "rates.re",
+    "rates.gt"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.0381,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+    },
+    "re": {
+     "value": 0.0931,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.0381,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.028,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.\""
+    },
+    "t": {
+     "value": 0.265,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\""
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    }
+   },
+   "year0_da": {
+    "value": 1.271558,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"remove the \"amortization of intangible assets\" when calculating capex using method 1.\" FY25 depreciation of PP&E 0.713788 + right-of-use 0.557770; excludes amortization of acquired intangibles 9.809967 (FY25 FS p.income statement, Note 7). Capex stays on Finagle method 1.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "year0_da_ok": true,
+   "year0_debt": {
+    "value": 0.0,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Leases excluded; Vitalhub has no borrowings.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md and forecastcheck.collaborative._openings. includes_adjustments is false on baseline.cash and market.shares, so the stated figures are openings and the remaining schedule is added. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Discount factor = 1/(1+re)^t. Buddy closing cash and consideration shares were removed from the schedule (already reflected in the stated openings).",
+    "price_date": "2026-11-18",
+    "cost_of_equity": 0.0931,
+    "includes_adjustments_cash": false,
+    "includes_adjustments_shares": false,
+    "opening_cash": 106.812709,
+    "opening_shares": 63.307054,
+    "items": [
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": 0.9459481560663991,
+      "amount": -4.5,
+      "present_value": -3.5944138034211037,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": 0.8260712408097017,
+      "amount": -7.248555,
+      "present_value": -2.6478152522984817,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -7.023282055719585,
+    "sum_new_shares": 0.0,
+    "adjusted_cash": 99.78942694428041,
+    "adjusted_shares": 63.307054,
+    "complete": true,
+    "applied_to_case": true,
+    "buddy_items_in_schedule": []
+   },
+   "year0_cash_used": 99.78942694428041,
+   "shares_used": 63.307054,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (Finagle company.fin), display_fin line skipped",
+    "cols": {
+     "revenue": [
+      108.966918,
+      128.87699998621184,
+      131.3490000331074,
+      131.54200005058803,
+      146.40500009048,
+      154.02157381518714,
+      161.676959439048,
+      169.3376449158286,
+      176.96833787102568,
+      184.53220058941713,
+      191.99111515870842
+     ],
+     "ebitda": [
+      26.554099,
+      33.739999988998875,
+      32.293999984650355,
+      32.30299999950608,
+      36.506999992874796,
+      39.55362948275764,
+      42.615783732301985,
+      45.680057923014225,
+      48.73233510509305,
+      51.75788019244964,
+      54.741446020166165
+     ],
+     "da": [
+      1.271558,
+      1.5038929553689637,
+      1.5327392464573326,
+      1.534991404458421,
+      1.7084308937236394,
+      1.7973103025387183,
+      1.8866426156092344,
+      1.976036773783775,
+      2.0650809428840198,
+      2.1533452558241395,
+      2.240384906628055
+     ],
+     "capex": [
+      0.423144,
+      2.965045185389276,
+      3.280643074631402,
+      3.305283202861609,
+      5.202828247930027,
+      6.175228953906301,
+      7.152584738045206,
+      8.130617149353622,
+      9.104820444025615,
+      10.070491586078964,
+      11.02276409799172
+     ],
+     "sbc": [
+      2.647812,
+      3.3643460036385,
+      3.2201597458590867,
+      3.22105717217866,
+      3.6402542848519843,
+      3.9440455045377165,
+      4.249384758104351,
+      4.554935399210952,
+      4.859289772147292,
+      5.160978584441161,
+      5.458481482258096
+     ],
+     "interest": [
+      0.070346,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_pretax": [
+      22.564383,
+      28.87176102999141,
+      27.541100992333938,
+      27.546951422868997,
+      31.15831481429917,
+      33.812273675681205,
+      36.4797563585884,
+      39.149085750019495,
+      41.80796439006174,
+      44.44355635218434,
+      47.04257963128002
+     ],
+     "nol": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_taxable": [
+      22.564383,
+      28.87176102999141,
+      27.541100992333938,
+      27.546951422868997,
+      31.15831481429917,
+      33.812273675681205,
+      36.4797563585884,
+      39.149085750019495,
+      41.80796439006174,
+      44.44355635218434,
+      47.04257963128002
+     ],
+     "tax": [
+      -0.209562,
+      7.6510166729477245,
+      7.298391762968494,
+      7.299942127060285,
+      8.25695342578928,
+      8.96025252405552,
+      9.667135435025926,
+      10.374507723755166,
+      11.079110563366362,
+      11.77754243332885,
+      12.466283602289206
+     ],
+     "tax_cash": [
+      -0.209562,
+      7.6510166729477245,
+      7.298391762968494,
+      7.299942127060285,
+      8.25695342578928,
+      8.96025252405552,
+      9.667135435025926,
+      10.374507723755166,
+      11.079110563366362,
+      11.77754243332885,
+      12.466283602289206
+     ],
+     "wacc": [
+      0.0931,
+      0.0931,
+      0.09310000000000002,
+      0.0931,
+      0.09309999999999999,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931
+     ],
+     "value_per_share": [
+      6.826657434831162,
+      5.427068234674124,
+      5.640183822643967,
+      5.873426188889155,
+      6.11368921905249,
+      6.359464188195168,
+      6.6111783616433994,
+      6.869372949997955,
+      7.134717657556132,
+      7.408026065131311,
+      7.690271858212813
+     ],
+     "shares": [
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054
+     ],
+     "debt": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "cash": [
+      99.78942694428041,
+      119.54901907130379,
+      138.04382447249517,
+      156.5205419699007,
+      175.92750600420422,
+      196.40160850446233,
+      217.94828730558885,
+      240.56828495628332,
+      264.2573992818371,
+      289.00626687043774,
+      314.8001837080649
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "revenue": [
+     108.966918,
+     128.87699998621184,
+     131.3490000331074,
+     131.54200005058803,
+     146.40500009048,
+     154.02157381518714,
+     161.676959439048,
+     169.3376449158286,
+     176.96833787102568,
+     184.53220058941713,
+     191.99111515870842
+    ],
+    "ebitda": [
+     26.554099,
+     33.739999988998875,
+     32.293999984650355,
+     32.30299999950608,
+     36.506999992874796,
+     39.55362948275764,
+     42.615783732301985,
+     45.680057923014225,
+     48.73233510509305,
+     51.75788019244964,
+     54.741446020166165
+    ],
+    "capex": [
+     0.423144,
+     2.965045185389276,
+     3.280643074631402,
+     3.305283202861609,
+     5.202828247930027,
+     6.175228953906301,
+     7.152584738045206,
+     8.130617149353622,
+     9.104820444025615,
+     10.070491586078964,
+     11.02276409799172
+    ],
+    "da": [
+     1.271558,
+     1.5038929553689637,
+     1.5327392464573326,
+     1.534991404458421,
+     1.7084308937236394,
+     1.7973103025387183,
+     1.8866426156092344,
+     1.976036773783775,
+     2.0650809428840198,
+     2.1533452558241395,
+     2.240384906628055
+    ],
+    "sbc": [
+     2.647812,
+     3.3643460036385,
+     3.2201597458590867,
+     3.22105717217866,
+     3.6402542848519843,
+     3.9440455045377165,
+     4.249384758104351,
+     4.554935399210952,
+     4.859289772147292,
+     5.160978584441161,
+     5.458481482258096
+    ],
+    "debt": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "cash": [
+     99.78942694428041,
+     119.54901907130379,
+     138.04382447249517,
+     156.5205419699007,
+     175.92750600420422,
+     196.40160850446233,
+     217.94828730558885,
+     240.56828495628332,
+     264.2573992818371,
+     289.00626687043774,
+     314.8001837080649
+    ],
+    "interest": [
+     0.070346,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "terminal_capex": 11.02276409799172,
+    "terminal_da": 2.240384906628055,
+    "fy35_capex_to_ebitda": 0.20136048459390443,
+    "year0_da_to_revenue": 0.011669211383954164,
+    "year0_capex_to_revenue": 0.0038832336250897727
+   },
+   "capex_fill": {
+    "steps": [
+     {
+      "method": "forecast_capex",
+      "args": {
+       "capex_f": [
+        0.423144
+       ],
+       "method": 1
+      },
+      "pass_financials": true
+     }
+    ],
+    "notebook_capex_lines": [
+     "'capex': [0.423144],",
+     "co.forecast_capex(capex_f=[0.423144], method=1, financials=financials)"
+    ],
+    "notebook_da_lines": [
+     "'da': [1.271558],"
+    ]
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "hold",
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Hold debt at zero; no target re-borrowing."
+    },
+    "start_year": {
+     "value": 1,
+     "source": "assumption",
+     "evidence": "The target applies from the first forecast year."
+    }
+   },
+   "interest_all_zero": false,
+   "min_cash": 99.78942694428041,
+   "negative_cash_years": [],
+   "not_a_valuation": false,
+   "not_a_valuation_reason": [],
+   "flags": [
+    "rates.rd provenance: Forecaster proposal without an explicit David quote (applied as given; see rd_provenance)",
+    "year-0 capex remains Yahoo 0.423144 vs method-1 ratio on new D&A (1.271558 / revenue)"
+   ],
+   "steps": [
+    {
+     "method": "forecast_ebitda",
+     "args": {
+      "ebitda_ttm": 26.554099,
+      "gf": [
+       0.270613625,
+       -0.042857143,
+       0.00027869,
+       0.130142711
+      ],
+      "me": 0.2493562376306345,
+      "mc": 0.4,
+      "gsnext": 0.052024
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_sbc",
+     "args": {
+      "sbc_f": [
+       2.647812
+      ]
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_capex",
+     "args": {
+      "capex_f": [
+       0.423144
+      ],
+      "method": 1
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "load_financials",
+     "args": {},
+     "pass_financials": true
+    },
+    {
+     "method": "fcf_from_ebitda",
+     "args": {}
+    },
+    {
+     "method": "value",
+     "args": {}
+    }
+   ],
+   "ebitda_confirmation": {
+    "build_baseline_yahoo_ebitda": 25.89751,
+    "build_baseline_source": "yahoo",
+    "applied_via": "update_case overlay after build_baseline (build_baseline still filled Yahoo 25.89751; the prompt leaf replaced it). Stamped fiscal_year / 2025-12-31 / CAD.",
+    "case_year0_ebitda": 26.554099,
+    "case_year0_source": "prompt",
+    "not_yahoo_25_89751": true,
+    "ebitda_definition": "before_sbc",
+    "ebitda_definition_source": "prompt",
+    "notebook_lines": [
+     "'ebitda': [26.554099],  # TTM only, or a full list of year + 1 values",
+     "ebitda_ttm = 26.554099",
+     "# co.forecast_ebitda(ebitda_ttm, gf, financials)",
+     "co.forecast_ebitda(ebitda_ttm, gf, financials, me=me, mc=mc, gsnext=gsnext)"
+    ],
+    "notebook_ebitda_ttm": 26.554099,
+    "fy26_growth_rate": 0.270613625,
+    "fy26_expected_26_554099_times_1_plus_g": 33.739999988998875,
+    "fy26_actual": 33.739999988998875,
+    "fy26_matches": true,
+    "ebitda_path_v05": [
+     26.554099,
+     33.739999988998875,
+     32.293999984650355,
+     32.30299999950608,
+     36.506999992874796,
+     39.55362948275764,
+     42.615783732301985,
+     45.680057923014225,
+     48.73233510509305,
+     51.75788019244964,
+     54.741446020166165
+    ],
+    "ebitda_path_v04": [
+     25.89751,
+     32.90572905957375,
+     31.495483523748344,
+     31.504261000051578,
+     35.60431093464986,
+     38.65094042453271,
+     41.71309467407705,
+     44.77736886478929,
+     47.82964604686811,
+     50.855191134224704,
+     53.83875696194122
+    ]
+   },
+   "year0_ebitda": {
+    "value": 26.554099,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Yes, do the quick fix\" Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "ebitda_definition": {
+    "value": "before_sbc",
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Yes, do the quick fix\" Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   }
+  }
+ },
+ "ebitda_confirmation": {
+  "base": {
+   "build_baseline_yahoo_ebitda": 25.89751,
+   "build_baseline_source": "yahoo",
+   "applied_via": "update_case overlay after build_baseline (build_baseline still filled Yahoo 25.89751; the prompt leaf replaced it). Stamped fiscal_year / 2025-12-31 / CAD.",
+   "case_year0_ebitda": 26.554099,
+   "case_year0_source": "prompt",
+   "not_yahoo_25_89751": true,
+   "ebitda_definition": "before_sbc",
+   "ebitda_definition_source": "prompt",
+   "notebook_lines": [
+    "'ebitda': [26.554099],  # TTM only, or a full list of year + 1 values",
+    "ebitda_ttm = 26.554099",
+    "# co.forecast_ebitda(ebitda_ttm, gf, financials)",
+    "co.forecast_ebitda(ebitda_ttm, gf, financials, me=me, mc=mc, gsnext=gsnext)"
+   ],
+   "notebook_ebitda_ttm": 26.554099,
+   "fy26_growth_rate": 0.280404957,
+   "fy26_expected_26_554099_times_1_plus_g": 33.99999998826875,
+   "fy26_actual": 33.99999998826875,
+   "fy26_matches": true,
+   "ebitda_path_v05": [
+    26.554099,
+    33.99999998826875,
+    37.163959985177065,
+    41.32791999290994,
+    48.327920006763286,
+    54.78536517720246,
+    61.15061699606926,
+    67.32736986356295,
+    73.21556275820038,
+    78.71387465932318,
+    83.72246364446728
+   ],
+   "ebitda_path_v04": [
+    25.89751,
+    33.15930017795707,
+    36.245026628684435,
+    40.30602662495101,
+    47.13294138333792,
+    53.5903865537771,
+    59.955638372643904,
+    66.1323912401376,
+    72.02058413477504,
+    77.51889603589784,
+    82.52748502104195
+   ]
+  },
+  "bull": {
+   "build_baseline_yahoo_ebitda": 25.89751,
+   "build_baseline_source": "yahoo",
+   "applied_via": "update_case overlay after build_baseline (build_baseline still filled Yahoo 25.89751; the prompt leaf replaced it). Stamped fiscal_year / 2025-12-31 / CAD.",
+   "case_year0_ebitda": 26.554099,
+   "case_year0_source": "prompt",
+   "not_yahoo_25_89751": true,
+   "ebitda_definition": "before_sbc",
+   "ebitda_definition_source": "prompt",
+   "notebook_lines": [
+    "'ebitda': [26.554099],  # TTM only, or a full list of year + 1 values",
+    "ebitda_ttm = 26.554099",
+    "# co.forecast_ebitda(ebitda_ttm, gf, financials)",
+    "co.forecast_ebitda(ebitda_ttm, gf, financials, me=me, mc=mc, gsnext=gsnext)"
+   ],
+   "notebook_ebitda_ttm": 26.554099,
+   "fy26_growth_rate": 0.291100105,
+   "fy26_expected_26_554099_times_1_plus_g": 34.284000007080394,
+   "fy26_actual": 34.284000007080394,
+   "fy26_matches": true,
+   "ebitda_path_v05": [
+    26.554099,
+    34.284000007080394,
+    41.230000016862896,
+    48.294000032402046,
+    57.535000048270135,
+    66.87912779638106,
+    76.08661721212593,
+    84.97926450446342,
+    93.37095479870747,
+    101.07362947925448,
+    107.90389031978013
+   ],
+   "ebitda_path_v04": [
+    25.89751,
+    33.43627788023855,
+    40.21052786376623,
+    47.09986013003613,
+    56.1123628822833,
+    65.45649063039421,
+    74.6639800461391,
+    83.55662733847659,
+    91.94831763272066,
+    99.65099231326768,
+    106.48125315379335
+   ]
+  },
+  "bear": {
+   "build_baseline_yahoo_ebitda": 25.89751,
+   "build_baseline_source": "yahoo",
+   "applied_via": "update_case overlay after build_baseline (build_baseline still filled Yahoo 25.89751; the prompt leaf replaced it). Stamped fiscal_year / 2025-12-31 / CAD.",
+   "case_year0_ebitda": 26.554099,
+   "case_year0_source": "prompt",
+   "not_yahoo_25_89751": true,
+   "ebitda_definition": "before_sbc",
+   "ebitda_definition_source": "prompt",
+   "notebook_lines": [
+    "'ebitda': [26.554099],  # TTM only, or a full list of year + 1 values",
+    "ebitda_ttm = 26.554099",
+    "# co.forecast_ebitda(ebitda_ttm, gf, financials)",
+    "co.forecast_ebitda(ebitda_ttm, gf, financials, me=me, mc=mc, gsnext=gsnext)"
+   ],
+   "notebook_ebitda_ttm": 26.554099,
+   "fy26_growth_rate": 0.270613625,
+   "fy26_expected_26_554099_times_1_plus_g": 33.739999988998875,
+   "fy26_actual": 33.739999988998875,
+   "fy26_matches": true,
+   "ebitda_path_v05": [
+    26.554099,
+    33.739999988998875,
+    32.293999984650355,
+    32.30299999950608,
+    36.506999992874796,
+    39.55362948275764,
+    42.615783732301985,
+    45.680057923014225,
+    48.73233510509305,
+    51.75788019244964,
+    54.741446020166165
+   ],
+   "ebitda_path_v04": [
+    25.89751,
+    32.90572905957375,
+    31.495483523748344,
+    31.504261000051578,
+    35.60431093464986,
+    38.65094042453271,
+    41.71309467407705,
+    44.77736886478929,
+    47.82964604686811,
+    50.855191134224704,
+    53.83875696194122
+   ]
+  }
+ },
+ "ebitda_definition_effect": {
+  "catalog": "baseline.ebitda_definition allowed values: before_sbc or after_sbc. after_sbc is rejected by validate_case. The model subtracts SBC from EBITDA; EBITDA must be before stock-based compensation. SEC/yfinance baselines already add SBC back. If an article EBITDA is after SBC, add SBC back and record before_sbc.",
+  "value_applied": "before_sbc",
+  "expressible": true,
+  "sbc_path_change": "Default forecast_sbc holds the SBC-to-EBITDA ratio. Year-0 SBC is still Yahoo 2.647812. The year-0 ratio falls from 2.647812/25.89751 = 0.10224 in v04 to 2.647812/26.554099 = 0.09971 in v05. Through the explicit EBITDA-growth years (FY26-FY29) SBC dollars match v04, because sbc[t] = sbc[t-1] * (1+g_ebitda) from the same year-0 SBC. From FY30, v05 SBC is slightly lower than v04, because the ratio at the end of the explicit window is lower (same SBC dollars on a higher EBITDA). before_sbc itself did not change the mechanics: Yahoo was already before_sbc. The path change comes from the higher year-0 EBITDA in the default ratio."
+ },
+ "defaults_filled_note": "Same Finagle defaults as v04. baseline.ebitda and baseline.ebitda_definition are prompt, not defaults. rates.re and rates.gt are derived from the prompt rf."
+}

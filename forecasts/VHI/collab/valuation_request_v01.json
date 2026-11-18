@@ -1,0 +1,362 @@
+{
+ "mode": "collaborative",
+ "ticker": "VHI.TO",
+ "version": "v01",
+ "parent_version": null,
+ "forecast_commit": "uncommitted (live case /workspace/forecaster-work/output/VHI/2026-11-17/forecast.json, v3 of 18 Nov 2026; forecaster method 3a46f0a61f6b26de1a588acbc941120420d2ec41)",
+ "scenarios": [
+  "base",
+  "bull",
+  "bear"
+ ],
+ "forecaster": {
+  "base": {
+   "forecast.sales_growth": {
+    "value": [
+     0.183845541,
+     0.059728295,
+     0.041731847,
+     0.133417691
+    ],
+    "tag": "C",
+    "cite_id": "C22",
+    "evidence": "Revenue growth FY2026E-FY2029E on totals; compounds to the base revenue."
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     0.280404957,
+     0.093057647,
+     0.112042958,
+     0.169377022
+    ],
+    "tag": "C",
+    "cite_id": "C23",
+    "evidence": "Adjusted EBITDA growth FY2026E-FY2029E on totals; compounds to the base EBITDA."
+   },
+   "forecast.margin_path.me": {
+    "value": 0.299411,
+    "tag": "C",
+    "cite_id": "C24",
+    "evidence": "me = FY2029E Adjusted EBITDA 48.328 / revenue 161.410 = 29.9% (event-adjusted Consensus)."
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.5,
+    "tag": "S",
+    "cite_id": "S16",
+    "evidence": "Contribution margin mc = 1 - 20% cash cost of sales - 30% variable opex = 0.50 (bull 0.60, bear 0.40)."
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.080013,
+    "tag": "S",
+    "cite_id": "S6",
+    "evidence": "gsnext = FY2030 one more year of the same build on the scaled FY2029 lines (organic ARR adds 11.89, virtual care -5%, perpetual flat, services 16.5% of term) = 174.325 / 161.410 - 1. FY2030 (gsnext year) organic ARR adds 11.89 base (bull 14.21, bear 7.23), one more year of the same dollar-add build; no management phrase reaches 2030."
+   },
+   "forecast.ebitda_basis": {
+    "value": "total",
+    "tag": "C",
+    "cite_id": "C20",
+    "evidence": "Leaves are on totals: Buddy (closed 10 Jul 2026) sits inside the term line and the cost build; no acquisition after it is forecast. The same basis goes to Finagle for every case (P9)."
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "C",
+    "cite_id": "C21",
+    "evidence": "No future acquisition is forecast. Management hopes to close another deal before year-end (G12) but none is announced; announced-but-unclosed deals are excluded."
+   }
+  },
+  "bull": {
+   "forecast.sales_growth": {
+    "value": [
+     0.184974324,
+     0.084144575,
+     0.059583679,
+     0.140437811
+    ],
+    "tag": "C",
+    "cite_id": "C27",
+    "evidence": "bull revenue growth on totals."
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     0.291100105,
+     0.202601797,
+     0.171331555,
+     0.191348822
+    ],
+    "tag": "C",
+    "cite_id": "C27_1",
+    "evidence": "bull EBITDA growth on totals."
+   },
+   "forecast.margin_path.me": {
+    "value": 0.340122,
+    "tag": "C",
+    "cite_id": "C27_2",
+    "evidence": "bull me = FY2029E EBITDA / revenue."
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.6,
+    "tag": "S",
+    "cite_id": "S16_1",
+    "evidence": "Contribution margin mc = 1 - 20% cash cost of sales - 30% variable opex = 0.50 (bull 0.60, bear 0.40)."
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.092064,
+    "tag": "S",
+    "cite_id": "S6_1",
+    "evidence": "bull gsnext: FY2030 one more year of the bull build (organic ARR adds 14.21)."
+   },
+   "forecast.ebitda_basis": {
+    "value": "total",
+    "tag": "C",
+    "cite_id": "C20",
+    "evidence": "Leaves are on totals: Buddy (closed 10 Jul 2026) sits inside the term line and the cost build; no acquisition after it is forecast. The same basis goes to Finagle for every case (P9)."
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "C",
+    "cite_id": "C21",
+    "evidence": "No future acquisition is forecast. Management hopes to close another deal before year-end (G12) but none is announced; announced-but-unclosed deals are excluded."
+   }
+  },
+  "bear": {
+   "forecast.sales_growth": {
+    "value": [
+     0.182716758,
+     0.01918108,
+     0.001469368,
+     0.112990528
+    ],
+    "tag": "C",
+    "cite_id": "C27_3",
+    "evidence": "bear revenue growth on totals."
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     0.270613625,
+     -0.042857143,
+     0.00027869,
+     0.130142711
+    ],
+    "tag": "C",
+    "cite_id": "C27_4",
+    "evidence": "bear EBITDA growth on totals."
+   },
+   "forecast.margin_path.me": {
+    "value": 0.249356,
+    "tag": "C",
+    "cite_id": "C27_5",
+    "evidence": "bear me = FY2029E EBITDA / revenue."
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.4,
+    "tag": "S",
+    "cite_id": "S16_2",
+    "evidence": "Contribution margin mc = 1 - 20% cash cost of sales - 30% variable opex = 0.50 (bull 0.60, bear 0.40)."
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.052024,
+    "tag": "S",
+    "cite_id": "S6_2",
+    "evidence": "bear gsnext: FY2030 one more year of the bear build (organic ARR adds 7.23)."
+   },
+   "forecast.ebitda_basis": {
+    "value": "total",
+    "tag": "C",
+    "cite_id": "C20",
+    "evidence": "Leaves are on totals: Buddy (closed 10 Jul 2026) sits inside the term line and the cost build; no acquisition after it is forecast. The same basis goes to Finagle for every case (P9)."
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "C",
+    "cite_id": "C21",
+    "evidence": "No future acquisition is forecast. Management hopes to close another deal before year-end (G12) but none is announced; announced-but-unclosed deals are excluded."
+   }
+  }
+ },
+ "prompt_inputs": [],
+ "cash_share_adjustments": {
+  "base": [
+   {
+    "kind": "cash",
+    "name": "Buddy Healthcare cash consideration on closing",
+    "when": {
+     "value": "2026-07-10",
+     "tag": "A",
+     "citation": {
+      "id": "A45",
+      "text": "Buddy acquired July 10, 2026; cash consideration on closing C$12,367,916 (after the 31 Dec 2025 year-0 balance).",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.8"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "C",
+     "citation": {
+      "id": "C19",
+      "text": "Paid at close; probability 1.",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "amount": {
+     "value": -12.367916,
+     "tag": "A",
+     "citation": {
+      "id": "A45_1",
+      "text": "Buddy cash consideration on closing C$12,367,916, recorded as -12.368.",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.8"
+     }
+    }
+   },
+   {
+    "kind": "equity",
+    "name": "Buddy Healthcare consideration shares",
+    "when": {
+     "value": "2026-07-10",
+     "tag": "A",
+     "citation": {
+      "id": "A46",
+      "text": "75,000 shares issued at $7.36/share on the Buddy close.",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.8"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "C",
+     "citation": {
+      "id": "C19",
+      "text": "Issued at close; probability 1.",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "shares": {
+     "value": 0.075,
+     "tag": "A",
+     "citation": {
+      "id": "A46_1",
+      "text": "75,000 shares issued at $7.36/share.",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.8"
+     }
+    },
+    "price": {
+     "value": 7.36,
+     "tag": "A",
+     "citation": {
+      "id": "A47",
+      "text": "Issue price $7.36 per share (filing price).",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.8"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Contingent consideration paid in 9M 2026",
+    "when": {
+     "value": "2026-09-30",
+     "tag": "S",
+     "citation": {
+      "id": "S25",
+      "text": "Payments of contingent consideration C$781,053 in the nine months to 30 Sep 2026; exact date not given, dated at the quarter end.",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.6"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "C",
+     "citation": {
+      "id": "C19",
+      "text": "Paid; probability 1.",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "amount": {
+     "value": -0.781053,
+     "tag": "A",
+     "citation": {
+      "id": "A48",
+      "text": "Payments of contingent consideration (781,053) in the nine months to 30 Sep 2026.",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.6"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Novari earn-out (maximum)",
+    "when": {
+     "value": "2027-07-04",
+     "tag": "S",
+     "citation": {
+      "id": "S21",
+      "text": "Earn-out dates are the end of each earn-out window: Novari 24 months after 4 Jul 2025 close (2027-07-04); Buddy 30 months after 10 Jul 2026 close (2029-01-10). The filings give windows, not payment dates.",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "probability": {
+     "value": 0.8444,
+     "tag": "S",
+     "citation": {
+      "id": "S20",
+      "text": "Earn-out probabilities = accrued fair value / maximum: Novari 3.8 / 4.5 = 0.844; Buddy 3.205624 / 7.248555 = 0.442 (D2).",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "amount": {
+     "value": -4.5,
+     "tag": "A",
+     "citation": {
+      "id": "A49",
+      "text": "Novari: \"remaining potential performance-based consideration payable of up to $4,500,000 ... in the 24-month period following the acquisition. A balance of $3,800,000 is accrued\".",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.8"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Buddy earn-out (maximum)",
+    "when": {
+     "value": "2029-01-10",
+     "tag": "S",
+     "citation": {
+      "id": "S21_1",
+      "text": "Earn-out dates are the end of each earn-out window: Novari 24 months after 4 Jul 2025 close (2027-07-04); Buddy 30 months after 10 Jul 2026 close (2029-01-10). The filings give windows, not payment dates.",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "probability": {
+     "value": 0.4422,
+     "tag": "S",
+     "citation": {
+      "id": "S20_1",
+      "text": "Earn-out probabilities = accrued fair value / maximum: Novari 3.8 / 4.5 = 0.844; Buddy 3.205624 / 7.248555 = 0.442 (D2).",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "amount": {
+     "value": -7.248555,
+     "tag": "A",
+     "citation": {
+      "id": "A51",
+      "text": "Buddy: \"remaining potential performance-based consideration payable of up to $7,248,555, if certain revenue targets are met in the 30-month period following the acquisition\"; fair value at close C$3,205,624.",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.9"
+     }
+    }
+   }
+  ]
+ },
+ "post_finagle": null
+}

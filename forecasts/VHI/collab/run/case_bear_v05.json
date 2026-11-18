@@ -1,0 +1,245 @@
+{
+ "path": "ebitda",
+ "ticker": "VHI.TO",
+ "year": 10,
+ "market": {
+  "shares": {
+   "value": 63.307054,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"cash should be from the 2025 filling adjusted for the cash price of Buddy (+$12.37). shares should be from the 2025 filling (63.23M) adjusted for Buddy (+0.075M). Isn't that logical?\" FY2025 shares 63,232,054 (FY25 FS) + 75,000 Buddy consideration shares (Q3'26 FS Note 4(c)).",
+   "note": "Shares after cash_share_adjustments (opening 63.307054 +0.000000; includes_adjustments=False)."
+  },
+  "price": {
+   "value": 6.73,
+   "source": "yahoo",
+   "evidence": "info.previousClose",
+   "as_of": "2026-11-18",
+   "currency": "CAD"
+  }
+ },
+ "rates": {
+  "roict": {
+   "value": 0.15,
+   "source": "assumption",
+   "evidence": "Terminal ROIC of 15 percent."
+  },
+  "t": {
+   "value": 0.265,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\""
+  },
+  "rd": {
+   "value": 0.028,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.\""
+  },
+  "risk_free": {
+   "value": 0.0381,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+  },
+  "re": {
+   "value": 0.0931,
+   "source": "assumption",
+   "evidence": "0.055 plus the 10-year yield.",
+   "derived_from": [
+    "rates.risk_free"
+   ]
+  },
+  "gt": {
+   "value": 0.0381,
+   "source": "assumption",
+   "evidence": "Terminal growth equals the 10-year yield.",
+   "derived_from": [
+    "rates.risk_free"
+   ]
+  }
+ },
+ "baseline": {
+  "date": {
+   "value": "2025-12-31",
+   "source": "yahoo",
+   "evidence": "annual statement column",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year"
+  },
+  "revenue": {
+   "value": 108.966918,
+   "source": "yahoo",
+   "evidence": "Total Revenue",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "ebitda": {
+   "value": 26.554099,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"Yes, do the quick fix\" Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated.",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "capex": {
+   "value": 0.423144,
+   "source": "yahoo",
+   "evidence": "Capital Expenditure",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD",
+   "note": "Positive cash outflow."
+  },
+  "da": {
+   "value": 1.271558,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"remove the \"amortization of intangible assets\" when calculating capex using method 1.\" FY25 depreciation of PP&E 0.713788 + right-of-use 0.557770; excludes amortization of acquired intangibles 9.809967 (FY25 FS p.income statement, Note 7). Capex stays on Finagle method 1.",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "tax": {
+   "value": -0.209562,
+   "source": "yahoo",
+   "evidence": "Tax Provision",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "interest": {
+   "value": 0.070346,
+   "source": "yahoo",
+   "evidence": "Interest Expense",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD",
+   "note": "Interest expense, as a positive number."
+  },
+  "sbc": {
+   "value": 2.647812,
+   "source": "yahoo",
+   "evidence": "Stock Based Compensation",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "debt": {
+   "value": 0.0,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Leases excluded; Vitalhub has no borrowings.",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "cash": {
+   "value": 99.78942694428041,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"cash should be from the 2025 filling adjusted for the cash price of Buddy (+$12.37). shares should be from the 2025 filling (63.23M) adjusted for Buddy (+0.075M). Isn't that logical?\" FY2025 cash + STI 119.180625 (FY25 FS) minus Buddy closing cash 12.367916 (Q3'26 FS Note 4(c)); user wrote +12.37, sign confirmed as an outflow. Buddy items removed from cash_share_adjustments to avoid double counting; remaining schedule items still apply.",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD",
+   "note": "Year-0 cash after cash_share_adjustments (opening 106.812709 -7.023282; includes_adjustments=False)."
+  },
+  "gross_margin": {
+   "value": 0.8038069040366912,
+   "source": "yahoo",
+   "evidence": "Gross Profit / Total Revenue",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "note": "Gross profit divided by revenue."
+  },
+  "ebitda_definition": {
+   "value": "before_sbc",
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"Yes, do the quick fix\" Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated.",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "nol": {
+   "value": 0,
+   "source": "assumption",
+   "evidence": "No net operating loss was stated."
+  },
+  "noa": {
+   "value": 0,
+   "source": "assumption",
+   "evidence": "No non-operating assets were stated."
+  }
+ },
+ "forecast": {
+  "dwc": {
+   "mode": {
+    "value": "zero",
+    "source": "assumption",
+    "evidence": "No working-capital change was stated."
+   }
+  },
+  "sales_growth": {
+   "value": [
+    0.182716758,
+    0.01918108,
+    0.001469368,
+    0.112990528
+   ],
+   "source": "assumption",
+   "evidence": "Forecaster [C] cite: C27_3 bear revenue growth on totals."
+  },
+  "ebitda_growth": {
+   "value": [
+    0.270613625,
+    -0.042857143,
+    0.00027869,
+    0.130142711
+   ],
+   "source": "assumption",
+   "evidence": "Forecaster [C] cite: C27_4 bear EBITDA growth on totals."
+  },
+  "margin_path": {
+   "me": {
+    "value": 0.249356,
+    "source": "assumption",
+    "evidence": "Forecaster [C] cite: C27_5 bear me = FY2029E EBITDA / revenue."
+   },
+   "mc": {
+    "value": 0.4,
+    "source": "assumption",
+    "evidence": "Forecaster [S] cite: S16_2 Contribution margin mc = 1 - 20% cash cost of sales - 30% variable opex = 0.50 (bull 0.60, bear 0.40)."
+   },
+   "gsnext": {
+    "value": 0.052024,
+    "source": "assumption",
+    "evidence": "Forecaster [S] cite: S6_2 bear gsnext: FY2030 one more year of the bear build (organic ARR adds 7.23)."
+   }
+  },
+  "ebitda_basis": {
+   "value": "total",
+   "source": "assumption",
+   "evidence": "Forecaster [C] cite: C20 Leaves are on totals: Buddy (closed 10 Jul 2026) sits inside the term line and the cost build; no acquisition after it is forecast. The same basis goes to Finagle for every case (P9)."
+  },
+  "acquisition_disclosure": {
+   "status": {
+    "value": "none",
+    "source": "assumption",
+    "evidence": "Forecaster [C] cite: C21 No future acquisition is forecast. Management hopes to close another deal before year-end (G12) but none is announced; announced-but-unclosed deals are excluded."
+   }
+  }
+ },
+ "debt": {
+  "mode": {
+   "value": "hold",
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Hold debt at zero; no target re-borrowing."
+  },
+  "start_year": {
+   "value": 1,
+   "source": "assumption",
+   "evidence": "The target applies from the first forecast year."
+  }
+ },
+ "distribution": {
+  "mode": {
+   "value": "none",
+   "source": "assumption",
+   "evidence": "No distribution was stated."
+  }
+ }
+}

@@ -1,0 +1,262 @@
+{
+ "path": "ebitda",
+ "ticker": "VHI.TO",
+ "year": 10,
+ "market": {
+  "shares": {
+   "value": 63.414153000000006,
+   "source": "yahoo",
+   "evidence": "info.sharesOutstanding",
+   "as_of": "2026-11-18",
+   "note": "Shares after cash_share_adjustments (opening 63.339153 +0.075000)."
+  },
+  "price": {
+   "value": 6.73,
+   "source": "yahoo",
+   "evidence": "info.previousClose",
+   "as_of": "2026-11-18",
+   "currency": "CAD"
+  }
+ },
+ "rates": {
+  "roict": {
+   "value": 0.15,
+   "source": "assumption",
+   "evidence": "Terminal ROIC of 15 percent."
+  },
+  "t": {
+   "value": 0.21,
+   "source": "assumption",
+   "evidence": "US federal statutory tax rate. No marginal rate was stated."
+  },
+  "rd": {
+   "value": 0.027976427674336665,
+   "source": "assumption",
+   "evidence": "Year-0 interest divided by year-0 debt.",
+   "derived_from": [
+    "baseline.interest",
+    "baseline.debt"
+   ]
+  },
+  "risk_free": {
+   "value": 0.0381,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+  },
+  "re": {
+   "value": 0.0931,
+   "source": "assumption",
+   "evidence": "0.055 plus the 10-year yield.",
+   "derived_from": [
+    "rates.risk_free"
+   ]
+  },
+  "gt": {
+   "value": 0.0381,
+   "source": "assumption",
+   "evidence": "Terminal growth equals the 10-year yield.",
+   "derived_from": [
+    "rates.risk_free"
+   ]
+  }
+ },
+ "baseline": {
+  "date": {
+   "value": "2025-12-31",
+   "source": "yahoo",
+   "evidence": "annual statement column",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year"
+  },
+  "revenue": {
+   "value": 108.966918,
+   "source": "yahoo",
+   "evidence": "Total Revenue",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "ebitda": {
+   "value": 25.89751,
+   "source": "yahoo",
+   "evidence": "Operating Income + Depreciation And Amortization + Stock Based Compensation",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD",
+   "note": "Operating income plus depreciation and amortization plus stock-based compensation. Yahoo's own EBITDA row does not add back SBC."
+  },
+  "capex": {
+   "value": 0.423144,
+   "source": "yahoo",
+   "evidence": "Capital Expenditure",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD",
+   "note": "Positive cash outflow."
+  },
+  "da": {
+   "value": 11.081525,
+   "source": "yahoo",
+   "evidence": "Depreciation And Amortization",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "tax": {
+   "value": -0.209562,
+   "source": "yahoo",
+   "evidence": "Tax Provision",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "interest": {
+   "value": 0.070346,
+   "source": "yahoo",
+   "evidence": "Interest Expense",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD",
+   "note": "Interest expense, as a positive number."
+  },
+  "sbc": {
+   "value": 2.647812,
+   "source": "yahoo",
+   "evidence": "Stock Based Compensation",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "debt": {
+   "value": 2.514474,
+   "source": "yahoo",
+   "evidence": "Total Debt",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD",
+   "note": "Yahoo Total Debt can include lease liabilities."
+  },
+  "cash": {
+   "value": 100.34142694428041,
+   "source": "yahoo",
+   "evidence": "Cash Cash Equivalents And Short Term Investments",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD",
+   "note": "Year-0 cash after cash_share_adjustments PV (opening 119.180625 -18.839198)."
+  },
+  "gross_margin": {
+   "value": 0.8038069040366912,
+   "source": "yahoo",
+   "evidence": "Gross Profit / Total Revenue",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "note": "Gross profit divided by revenue."
+  },
+  "ebitda_definition": {
+   "value": "before_sbc",
+   "source": "yahoo",
+   "evidence": "rebuilt as Operating Income + D&A + Stock Based Compensation"
+  },
+  "nol": {
+   "value": 0,
+   "source": "assumption",
+   "evidence": "No net operating loss was stated."
+  },
+  "noa": {
+   "value": 0,
+   "source": "assumption",
+   "evidence": "No non-operating assets were stated."
+  }
+ },
+ "forecast": {
+  "dwc": {
+   "mode": {
+    "value": "zero",
+    "source": "assumption",
+    "evidence": "No working-capital change was stated."
+   }
+  },
+  "sales_growth": {
+   "value": [
+    0.182716758,
+    0.01918108,
+    0.001469368,
+    0.112990528
+   ],
+   "source": "assumption",
+   "evidence": "Forecaster [C] cite: C27_3 bear revenue growth on totals."
+  },
+  "ebitda_growth": {
+   "value": [
+    0.270613625,
+    -0.042857143,
+    0.00027869,
+    0.130142711
+   ],
+   "source": "assumption",
+   "evidence": "Forecaster [C] cite: C27_4 bear EBITDA growth on totals."
+  },
+  "margin_path": {
+   "me": {
+    "value": 0.249356,
+    "source": "assumption",
+    "evidence": "Forecaster [C] cite: C27_5 bear me = FY2029E EBITDA / revenue."
+   },
+   "mc": {
+    "value": 0.4,
+    "source": "assumption",
+    "evidence": "Forecaster [S] cite: S16_2 Contribution margin mc = 1 - 20% cash cost of sales - 30% variable opex = 0.50 (bull 0.60, bear 0.40)."
+   },
+   "gsnext": {
+    "value": 0.052024,
+    "source": "assumption",
+    "evidence": "Forecaster [S] cite: S6_2 bear gsnext: FY2030 one more year of the bear build (organic ARR adds 7.23)."
+   }
+  },
+  "ebitda_basis": {
+   "value": "total",
+   "source": "assumption",
+   "evidence": "Forecaster [C] cite: C20 Leaves are on totals: Buddy (closed 10 Jul 2026) sits inside the term line and the cost build; no acquisition after it is forecast. The same basis goes to Finagle for every case (P9)."
+  },
+  "acquisition_disclosure": {
+   "status": {
+    "value": "none",
+    "source": "assumption",
+    "evidence": "Forecaster [C] cite: C21 No future acquisition is forecast. Management hopes to close another deal before year-end (G12) but none is announced; announced-but-unclosed deals are excluded."
+   }
+  }
+ },
+ "debt": {
+  "mode": {
+   "value": "target",
+   "source": "assumption",
+   "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+   "derived_from": [
+    "baseline.debt",
+    "baseline.ebitda"
+   ]
+  },
+  "leverage": {
+   "value": 0.09709327267370492,
+   "source": "assumption",
+   "evidence": "Year-0 debt divided by year-0 EBITDA.",
+   "derived_from": [
+    "baseline.debt",
+    "baseline.ebitda"
+   ]
+  },
+  "start_year": {
+   "value": 1,
+   "source": "assumption",
+   "evidence": "The target applies from the first forecast year."
+  }
+ },
+ "distribution": {
+  "mode": {
+   "value": "none",
+   "source": "assumption",
+   "evidence": "No distribution was stated."
+  }
+ }
+}

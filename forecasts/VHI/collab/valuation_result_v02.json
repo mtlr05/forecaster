@@ -1,0 +1,2419 @@
+{
+ "ticker": "VHI.TO",
+ "version": "v02",
+ "parent_version": "v01",
+ "mode": "collaborative",
+ "currency": "CAD",
+ "finagle_commit": "377f177b4013e713fe7c4603962e5f883a67e298",
+ "ff_log": "Already up to date (377f177b); no commits since 377f177b.",
+ "run_at": "2026-11-18T13:36:35.688888-05:00",
+ "sec_user_agent": "David May davidmay44@hotmail.com",
+ "hash_check": {
+  "sidecar_present": false,
+  "file_bytes": "640ef5819dc7a6533826386d34445a5061905a0a521fd7e20789b0e180e1dadf",
+  "file_bytes_matches_brief": true,
+  "whole_request": "c6f1c1ba230038d6e69a97c86e9f490b7d6d7d4a2a0385df54b0082fe4d9a747",
+  "blocks": {
+   "base": "49b7bed19fd62f1761ecb758852c4d963ab895802c4e96b5df4fb2d22802ff2a",
+   "bull": "b3aecd1f3422836803becf2e4ad7d4cfeb5e44ff39db4884e3488552a1bdc0a2",
+   "bear": "25e35874995e3aaf15fa64df5b32ca41d9f1b7f9c90114635f10fdb15027fa8c"
+  },
+  "prompt_inputs": "f3e9258a9da26bce1db8b7d0c11840f5c34b896943d3e085e2251d566f927276",
+  "forecast_json_bytes": "2fb8fcf0e0f3e24376227fedeb8b29361536fd9d4fba60510e54c3a72019b7e7",
+  "note": "No sidecar was present. File sha256 matches the brief (640ef581\u2026dadf). Canonical hashes recorded here."
+ },
+ "request_diff_vs_v01": {
+  "changed_keys": [
+   "version",
+   "parent_version",
+   "prompt_inputs"
+  ],
+  "prompt_inputs_added": [
+   {
+    "path": "rates.risk_free",
+    "value": 0.0381,
+    "applies_to": [
+     "base",
+     "bull",
+     "bear"
+    ],
+    "quote": "3.81% use this",
+    "date": "2026-11-18",
+    "note": "David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+   }
+  ],
+  "forecaster_unchanged": true,
+  "cash_share_adjustments_unchanged": true,
+  "post_finagle_unchanged": true,
+  "forecast_commit_unchanged": true
+ },
+ "catalog_rf_path": {
+  "request_path": "rates.risk_free",
+  "in_describe_inputs_fields": false,
+  "describe_inputs_rate_fields": [
+   "rates.re",
+   "rates.rd",
+   "rates.t",
+   "rates.te",
+   "rates.gt",
+   "rates.roict"
+  ],
+  "note": "describe_inputs() fields does not list rates.risk_free (rate fields are rates.re, rates.rd, rates.t, rates.te, rates.gt, rates.roict). The path rates.risk_free is the name Finagle uses in schema.py, defaults.py and validate.py, and it is the path in the request. update_case accepts it; apply_defaults (fetch_yield=False) then derives re and gt from it. Not a guess.",
+  "used_path": "rates.risk_free"
+ },
+ "forecast_commit": "uncommitted (live case /workspace/forecaster-work/output/VHI/2026-11-17/forecast.json, v3 of 18 Nov 2026; forecaster method 3a46f0a61f6b26de1a588acbc941120420d2ec41)",
+ "prompt_inputs": [
+  {
+   "path": "rates.risk_free",
+   "value": 0.0381,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "3.81% use this",
+   "date": "2026-11-18",
+   "note": "David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+  }
+ ],
+ "post_finagle": null,
+ "build_baseline": {
+  "ok": true,
+  "canadian": true,
+  "currency": "CAD",
+  "period_end": "2025-12-31",
+  "period_source": "yahoo",
+  "warnings": [
+   "Yahoo has no last close for the 10-year yield CA10Y=RR."
+  ],
+  "assumptions": [
+   "rates.roict",
+   "debt.mode",
+   "debt.leverage",
+   "debt.start_year",
+   "year",
+   "baseline.nol",
+   "baseline.noa",
+   "rates.t",
+   "rates.rd",
+   "forecast.dwc.mode",
+   "distribution.mode"
+  ],
+  "sources_used": {
+   "date": "yahoo",
+   "revenue": "yahoo",
+   "ebitda": "yahoo",
+   "capex": "yahoo",
+   "da": "yahoo",
+   "tax": "yahoo",
+   "interest": "yahoo",
+   "sbc": "yahoo",
+   "debt": "yahoo",
+   "cash": "yahoo",
+   "gross_margin": "yahoo",
+   "ebitda_definition": "yahoo",
+   "shares": "yahoo",
+   "price": "yahoo",
+   "rates.roict": "assumption",
+   "debt.mode": "assumption",
+   "debt.leverage": "assumption",
+   "debt.start_year": "assumption",
+   "year": "assumption",
+   "baseline.nol": "assumption",
+   "baseline.noa": "assumption",
+   "rates.t": "assumption",
+   "rates.rd": "assumption",
+   "forecast.dwc.mode": "assumption",
+   "distribution.mode": "assumption"
+  }
+ },
+ "fetched": {
+  "price": 6.73,
+  "price_date": "2026-11-18",
+  "price_source": "yahoo",
+  "price_currency": "CAD",
+  "price_evidence": "info.previousClose",
+  "rf": 0.0381,
+  "rf_source": "prompt",
+  "rf_evidence": "David 2026-11-18: \"3.81% use this\"",
+  "rf_note": "User-stated. Yahoo CA10Y=RR still has no quote; that warning remains on build_baseline. The BoC 3.81% was applied only because it is the prompt_input.",
+  "shares_unadjusted": 63.339153,
+  "shares_source": "yahoo",
+  "shares_as_of": "2026-11-18",
+  "re_derived": 0.0931,
+  "gt_derived": 0.0381,
+  "year0": {
+   "date": "2025-12-31",
+   "revenue": 108.966918,
+   "ebitda": 25.89751,
+   "capex": 0.423144,
+   "da": 11.081525,
+   "tax": -0.209562,
+   "interest": 0.070346,
+   "sbc": 2.647812,
+   "debt": 2.514474,
+   "cash": 119.180625,
+   "gross_margin": 0.8038069040366912,
+   "ebitda_definition": "before_sbc",
+   "nol": 0,
+   "noa": 0
+  },
+  "year0_sources": {
+   "date": "yahoo",
+   "revenue": "yahoo",
+   "ebitda": "yahoo",
+   "capex": "yahoo",
+   "da": "yahoo",
+   "tax": "yahoo",
+   "interest": "yahoo",
+   "sbc": "yahoo",
+   "debt": "yahoo",
+   "cash": "yahoo",
+   "gross_margin": "yahoo",
+   "ebitda_definition": "yahoo",
+   "nol": "assumption",
+   "noa": "assumption"
+  }
+ },
+ "defaults_filled": [
+  "rates.roict",
+  "debt.mode",
+  "debt.leverage",
+  "debt.start_year",
+  "year",
+  "baseline.nol",
+  "baseline.noa",
+  "rates.t",
+  "rates.rd",
+  "forecast.dwc.mode",
+  "distribution.mode",
+  "rates.re",
+  "rates.gt"
+ ],
+ "known_issue_checks": {
+  "buddy_consideration_share_proceeds": {
+   "flagged": true,
+   "patched": false,
+   "detail": "Written offering rule adds proceeds = 0.075 * stated price 7.36 = 0.552 to year-0 cash, plus 0.075 to shares. These were Buddy Healthcare consideration shares, not a cash offering."
+  },
+  "lease_as_debt": {
+   "flagged": true,
+   "patched": false,
+   "year0_debt": 2.514474,
+   "finagle_note": "Yahoo Total Debt can include lease liabilities.",
+   "rd": {
+    "value": 0.027976427674336665,
+    "source": "assumption",
+    "evidence": "Year-0 interest divided by year-0 debt.",
+    "derived_from": [
+     "baseline.interest",
+     "baseline.debt"
+    ]
+   },
+   "default_leverage": {
+    "value": 0.09709327267370492,
+    "source": "assumption",
+    "evidence": "Year-0 debt divided by year-0 EBITDA.",
+    "derived_from": [
+     "baseline.debt",
+     "baseline.ebitda"
+    ]
+   },
+   "detail": "Yahoo Total Debt 2.514474 CAD; Finagle notes it can include lease liabilities. Default target leverage and rd follow from it."
+  },
+  "yahoo_ebitda_vs_adj": {
+   "flagged": true,
+   "patched": false,
+   "yahoo_ebitda": 25.89751,
+   "reported_adj_ebitda_fy25_context_only": 26.55
+  },
+  "tax_default_21pct": {
+   "flagged": true,
+   "patched": false,
+   "rates_t": {
+    "value": 0.21,
+    "source": "assumption",
+    "evidence": "US federal statutory tax rate. No marginal rate was stated."
+   },
+   "detail": "US federal statutory 21% default vs Canadian combined ~26.5%."
+  },
+  "capex_method_1_vs_actual": {
+   "flagged": true,
+   "patched": false,
+   "year0_capex": 0.423144,
+   "year0_da": 11.081525,
+   "da_to_revenue": 0.10169623224546002,
+   "paths": {
+    "base": {
+     "capex": [
+      0.423144,
+      5.839629482387423,
+      7.922871099009111,
+      9.465358629825786,
+      14.602522470611268,
+      18.094412339083558,
+      21.536448275884876,
+      24.87655263430739,
+      28.06061700801954,
+      31.033851640985926,
+      33.742266605565014
+     ],
+     "da": [
+      11.081525,
+      13.118813958730026,
+      13.90237834890717,
+      14.482550275099877,
+      16.414778692595117,
+      17.728174380125736,
+      19.02281863467037,
+      20.27912362294127,
+      21.4767376871795,
+      22.595052895288624,
+      23.613762152599154
+     ],
+     "sbc": [
+      2.647812,
+      3.3902716100040844,
+      3.7057623087219658,
+      4.120966879436084,
+      4.818963977235601,
+      5.4791857827926185,
+      6.129981560032104,
+      6.761504836346475,
+      7.363525177481038,
+      7.925683324404653,
+      8.437771243974234
+     ],
+     "debt": [
+      2.514474,
+      3.219544973847618,
+      3.5191482535245537,
+      3.913444033489979,
+      4.57629152964618,
+      5.20326601435513,
+      5.821289144841161,
+      6.421010295242814,
+      6.992714213517219,
+      7.5265633101780125,
+      8.012863606223124
+     ],
+     "cash": [
+      100.34142694428041,
+      121.42377859575677,
+      142.3548726624524,
+      164.8335645440137,
+      187.68254274049565,
+      211.84472776671848,
+      237.32836406826019,
+      264.0844902931288,
+      292.042855519158,
+      321.1119035058041,
+      351.1793537124875
+     ],
+     "ebitda": [
+      25.89751,
+      33.15930017795707,
+      36.245026628684435,
+      40.30602662495101,
+      47.13294138333792,
+      53.5903865537771,
+      59.955638372643904,
+      66.1323912401376,
+      72.02058413477504,
+      77.51889603589784,
+      82.52748502104195
+     ],
+     "revenue": [
+      108.966918,
+      128.99999999081265,
+      136.7049500452639,
+      142.4099001046955,
+      161.40990015220464,
+      174.32479049308304,
+      187.05529413081666,
+      199.40879986580404,
+      211.18518565507893,
+      222.18180945732453,
+      232.19898742761268
+     ],
+     "interest": [
+      0.070346,
+      0.070346,
+      0.09007136710512202,
+      0.09845319658999786,
+      0.10948418396049675,
+      0.12802828899582586,
+      0.14556879532094028,
+      0.16285887473204985,
+      0.1796369301210317,
+      0.19563116344177048,
+      0.21056635408351113
+     ],
+     "tax_cash": [
+      -0.209562,
+      3.4817724079368215,
+      3.8948310668295374,
+      4.536851817503262,
+      5.4158400512048095,
+      6.353549601391213,
+      7.278026570350302,
+      8.175069820284737,
+      9.030143711398626,
+      9.828531017080184,
+      10.55573090678086
+     ],
+     "terminal_capex": 33.742266605565014,
+     "terminal_da": 23.613762152599154
+    },
+    "bull": {
+     "capex": [
+      0.423144,
+      5.923433100728417,
+      8.888326816598672,
+      11.164459236149913,
+      16.848923243631226,
+      21.09870783474071,
+      25.28634821131274,
+      29.33079585328635,
+      33.147404216014635,
+      36.65064272581945,
+      39.757100391618465
+     ],
+     "da": [
+      11.081525,
+      13.131322595764097,
+      14.236252154772565,
+      15.08450043332559,
+      17.202934654210388,
+      18.786705630215614,
+      20.34731726691762,
+      21.854565140781816,
+      23.27690394927418,
+      24.582458937981066,
+      25.740145259206344
+     ],
+     "sbc": [
+      2.647812,
+      3.41859035122026,
+      4.111202899584346,
+      4.815581685290641,
+      5.737037568015779,
+      6.692399437978608,
+      7.633791137986921,
+      8.542992764414278,
+      9.400975568992129,
+      10.188512071584409,
+      10.886851279356659
+     ],
+     "debt": [
+      2.514474,
+      3.24643764541977,
+      3.904171746230264,
+      4.57307956249896,
+      5.448132949695411,
+      6.355384893040677,
+      7.249370173523847,
+      8.112786401869855,
+      8.927563075802176,
+      9.675440968877371,
+      10.33861334709906
+     ],
+     "cash": [
+      100.34142694428041,
+      121.56593504200667,
+      144.77167125531523,
+      170.76215732277691,
+      198.09633938259057,
+      228.15331247058114,
+      260.84727264026037,
+      296.0699019389216,
+      333.65852069874506,
+      373.396120188975,
+      415.0133595839749
+     ],
+     "ebitda": [
+      25.89751,
+      33.43627788023855,
+      40.21052786376623,
+      47.09986013003613,
+      56.1123628822833,
+      65.45649063039421,
+      74.6639800461391,
+      83.55662733847659,
+      91.94831763272066,
+      99.65099231326768,
+      106.48125315379335
+     ],
+     "revenue": [
+      108.966918,
+      129.12299999541344,
+      139.98799995275252,
+      148.32900000578934,
+      169.1600000744214,
+      184.7335463212729,
+      200.07936201418104,
+      214.90044083474353,
+      228.88659132515033,
+      241.72438245939534,
+      253.1081505269381
+     ],
+     "interest": [
+      0.070346,
+      0.070346,
+      0.09082372798633001,
+      0.10922477848659966,
+      0.12793842962923932,
+      0.15241929742732416,
+      0.17780096580272436,
+      0.20281148034408333,
+      0.22696678200925396,
+      0.24976132269825815,
+      0.27068427448311166
+     ],
+     "tax_cash": [
+      -0.209562,
+      3.53136397598338,
+      4.572172307098827,
+      5.689016178915993,
+      6.939334968389858,
+      8.36324291560226,
+      9.766064841840686,
+      11.120814170116647,
+      12.399128979813472,
+      13.572354596010827,
+      14.612550191556918
+     ],
+     "terminal_capex": 39.757100391618465,
+     "terminal_da": 25.740145259206344
+    },
+    "bear": {
+     "capex": [
+      0.423144,
+      6.390236868584257,
+      7.13110041003956,
+      7.188942915597444,
+      11.64341485625675,
+      13.926117799781567,
+      16.220452749986055,
+      18.51637607710349,
+      20.803310583292117,
+      23.070215928891415,
+      25.305668096522865
+     ],
+     "da": [
+      11.081525,
+      13.106305321695947,
+      13.357698412575823,
+      13.377325787176913,
+      14.888836891098048,
+      15.663413741520532,
+      16.44193761585324,
+      17.221000465259344,
+      17.997013188224855,
+      18.76622952790717,
+      19.52477303624486
+     ],
+     "sbc": [
+      2.647812,
+      3.3643460036385004,
+      3.2201597458590867,
+      3.2210571721786603,
+      3.6402542848519848,
+      3.9517476339371167,
+      4.264828264769752,
+      4.5781256425276196,
+      4.8901964226927594,
+      5.199534061285961,
+      5.504579658388452
+     ],
+     "debt": [
+      2.514474,
+      3.19492492410825,
+      3.0579995697614786,
+      3.0588518036615753,
+      3.4569390699373326,
+      3.7527462977342787,
+      4.050060875254231,
+      4.347581284800051,
+      4.643936865515358,
+      4.93769693966866,
+      5.227381110119088
+     ],
+     "cash": [
+      100.34142694428041,
+      120.6660843915494,
+      138.47006883534576,
+      156.3673615889798,
+      173.43268965993093,
+      190.42765516160304,
+      207.4585134878697,
+      224.52395813783218,
+      241.62245357111684,
+      258.75223760142546,
+      275.9113261769359
+     ],
+     "ebitda": [
+      25.89751,
+      32.90572905957375,
+      31.495483523748344,
+      31.504261000051578,
+      35.60431093464986,
+      38.65094042453271,
+      41.71309467407705,
+      44.77736886478929,
+      47.82964604686811,
+      50.855191134224704,
+      53.83875696194122
+     ],
+     "revenue": [
+      108.966918,
+      128.87699998621184,
+      131.3490000331074,
+      131.54200005058803,
+      146.40500009048,
+      154.02157381518714,
+      161.676959439048,
+      169.33764491582858,
+      176.96833787102562,
+      184.53220058941707,
+      191.99111515870834
+     ],
+     "interest": [
+      0.070346,
+      0.070346,
+      0.08938258606425001,
+      0.08555190379158464,
+      0.08557574625165232,
+      0.09671280586469044,
+      0.10498843537869773,
+      0.11330623515321064,
+      0.1216297933725083,
+      0.12992076384227613,
+      0.13813912131043377
+     ],
+     "tax_cash": [
+      -0.209562,
+      3.436593664190253,
+      3.113930983642329,
+      3.112268488749928,
+      3.5678252426141164,
+      3.977203911074178,
+      4.3892814751958245,
+      4.801636669588314,
+      5.212369394941377,
+      5.6194964240497525,
+      6.0209656806594705
+     ],
+     "terminal_capex": 25.305668096522865,
+     "terminal_da": 19.52477303624486
+    }
+   }
+  }
+ },
+ "scenarios": {
+  "base": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 7.659555132747004,
+   "value_per_share_DDM": 7.659555132747006,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 16.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "assumptions": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode"
+   ],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode",
+    "rates.re",
+    "rates.gt"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.0381,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+    },
+    "re": {
+     "value": 0.0931,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.0381,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.027976427674336665,
+     "source": "assumption",
+     "evidence": "Year-0 interest divided by year-0 debt.",
+     "derived_from": [
+      "baseline.interest",
+      "baseline.debt"
+     ]
+    },
+    "t": {
+     "value": 0.21,
+     "source": "assumption",
+     "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    }
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Discount factor = 1/(1+re)^t. Applied to year-0 cash and shares only.",
+    "price_date": "2026-11-18",
+    "cost_of_equity": 0.0931,
+    "opening_cash": 119.180625,
+    "opening_shares": 63.339153,
+    "items": [
+     {
+      "name": "Buddy Healthcare cash consideration on closing",
+      "kind": "cash",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -12.367916,
+      "present_value": -12.367916,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy Healthcare consideration shares",
+      "kind": "equity",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "shares": 0.075,
+      "issue_price": 7.36,
+      "issue_price_stated": true,
+      "proceeds": 0.552,
+      "present_value": 0.552,
+      "new_shares": 0.075,
+      "note": "Procedure adds probability-weighted proceeds to year-0 cash and shares to the share count. This item is consideration shares, not a cash offering.",
+      "status": "applied (written offering rule; flagged)"
+     },
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": 0.9459481560663991,
+      "amount": -4.5,
+      "present_value": -3.5944138034211037,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": 0.8260712408097017,
+      "amount": -7.248555,
+      "present_value": -2.6478152522984817,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -18.839198055719585,
+    "sum_new_shares": 0.075,
+    "adjusted_cash": 100.34142694428041,
+    "adjusted_shares": 63.414153000000006,
+    "complete": true,
+    "applied_to_case": true
+   },
+   "year0_cash_used": 100.34142694428041,
+   "shares_used": 63.414153000000006,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (Finagle company.fin), display_fin line skipped",
+    "cols": {
+     "revenue": [
+      108.966918,
+      128.99999999081265,
+      136.7049500452639,
+      142.4099001046955,
+      161.40990015220464,
+      174.32479049308304,
+      187.05529413081666,
+      199.40879986580404,
+      211.18518565507893,
+      222.18180945732453,
+      232.19898742761268
+     ],
+     "ebitda": [
+      25.89751,
+      33.15930017795707,
+      36.245026628684435,
+      40.30602662495101,
+      47.13294138333792,
+      53.5903865537771,
+      59.955638372643904,
+      66.1323912401376,
+      72.02058413477504,
+      77.51889603589784,
+      82.52748502104195
+     ],
+     "da": [
+      11.081525,
+      13.118813958730026,
+      13.90237834890717,
+      14.482550275099877,
+      16.414778692595117,
+      17.728174380125736,
+      19.02281863467037,
+      20.27912362294127,
+      21.4767376871795,
+      22.595052895288624,
+      23.613762152599154
+     ],
+     "capex": [
+      0.423144,
+      5.839629482387423,
+      7.922871099009111,
+      9.465358629825786,
+      14.602522470611268,
+      18.094412339083558,
+      21.536448275884876,
+      24.87655263430739,
+      28.06061700801954,
+      31.033851640985926,
+      33.742266605565014
+     ],
+     "sbc": [
+      2.647812,
+      3.3902716100040844,
+      3.7057623087219658,
+      4.120966879436084,
+      4.818963977235601,
+      5.4791857827926185,
+      6.129981560032104,
+      6.761504836346475,
+      7.363525177481038,
+      7.925683324404653,
+      8.437771243974234
+     ],
+     "interest": [
+      0.070346,
+      0.070346,
+      0.09007136710512202,
+      0.09845319658999786,
+      0.10948418396049675,
+      0.12802828899582586,
+      0.14556879532094028,
+      0.16285887473204985,
+      0.1796369301210317,
+      0.19563116344177048,
+      0.21056635408351113
+     ],
+     "income_pretax": [
+      12.097827000000002,
+      16.57986860922296,
+      18.54681460395018,
+      21.604056273825055,
+      25.78971452954671,
+      30.25499810186292,
+      34.657269382620484,
+      38.928903906117796,
+      43.00068433999346,
+      46.80252865276279,
+      50.26538527038505
+     ],
+     "nol": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_taxable": [
+      12.097827000000002,
+      16.57986860922296,
+      18.54681460395018,
+      21.604056273825055,
+      25.78971452954671,
+      30.25499810186292,
+      34.657269382620484,
+      38.928903906117796,
+      43.00068433999346,
+      46.80252865276279,
+      50.26538527038505
+     ],
+     "tax": [
+      -0.209562,
+      3.4817724079368215,
+      3.8948310668295374,
+      4.536851817503262,
+      5.4158400512048095,
+      6.353549601391213,
+      7.278026570350302,
+      8.175069820284737,
+      9.030143711398626,
+      9.828531017080184,
+      10.55573090678086
+     ],
+     "tax_cash": [
+      -0.209562,
+      3.4817724079368215,
+      3.8948310668295374,
+      4.536851817503262,
+      5.4158400512048095,
+      6.353549601391213,
+      7.278026570350302,
+      8.175069820284737,
+      9.030143711398626,
+      9.828531017080184,
+      10.55573090678086
+     ],
+     "wacc": [
+      0.09263976422815882,
+      0.09253335705278926,
+      0.09250514237076655,
+      0.09246377697642767,
+      0.09238563553605147,
+      0.09231931736586003,
+      0.09225980340331813,
+      0.092207881495704,
+      0.09216432166499924,
+      0.09212984581344598,
+      0.09210509237616286
+     ],
+     "value_per_share": [
+      7.659555132747004,
+      6.310571691749794,
+      6.568016159320694,
+      6.825024094576568,
+      7.100120293950478,
+      7.38011953081904,
+      7.665348268421701,
+      7.957065461993214,
+      8.25698299819298,
+      8.567308111359605,
+      8.890780338098017
+     ],
+     "shares": [
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006
+     ],
+     "debt": [
+      2.514474,
+      3.219544973847618,
+      3.5191482535245537,
+      3.913444033489979,
+      4.57629152964618,
+      5.20326601435513,
+      5.821289144841161,
+      6.421010295242814,
+      6.992714213517219,
+      7.5265633101780125,
+      8.012863606223124
+     ],
+     "cash": [
+      100.34142694428041,
+      121.42377859575677,
+      142.3548726624524,
+      164.8335645440137,
+      187.68254274049565,
+      211.84472776671848,
+      237.32836406826019,
+      264.0844902931288,
+      292.042855519158,
+      321.1119035058041,
+      351.1793537124875
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "capex": [
+     0.423144,
+     5.839629482387423,
+     7.922871099009111,
+     9.465358629825786,
+     14.602522470611268,
+     18.094412339083558,
+     21.536448275884876,
+     24.87655263430739,
+     28.06061700801954,
+     31.033851640985926,
+     33.742266605565014
+    ],
+    "da": [
+     11.081525,
+     13.118813958730026,
+     13.90237834890717,
+     14.482550275099877,
+     16.414778692595117,
+     17.728174380125736,
+     19.02281863467037,
+     20.27912362294127,
+     21.4767376871795,
+     22.595052895288624,
+     23.613762152599154
+    ],
+    "sbc": [
+     2.647812,
+     3.3902716100040844,
+     3.7057623087219658,
+     4.120966879436084,
+     4.818963977235601,
+     5.4791857827926185,
+     6.129981560032104,
+     6.761504836346475,
+     7.363525177481038,
+     7.925683324404653,
+     8.437771243974234
+    ],
+    "debt": [
+     2.514474,
+     3.219544973847618,
+     3.5191482535245537,
+     3.913444033489979,
+     4.57629152964618,
+     5.20326601435513,
+     5.821289144841161,
+     6.421010295242814,
+     6.992714213517219,
+     7.5265633101780125,
+     8.012863606223124
+    ],
+    "cash": [
+     100.34142694428041,
+     121.42377859575677,
+     142.3548726624524,
+     164.8335645440137,
+     187.68254274049565,
+     211.84472776671848,
+     237.32836406826019,
+     264.0844902931288,
+     292.042855519158,
+     321.1119035058041,
+     351.1793537124875
+    ],
+    "ebitda": [
+     25.89751,
+     33.15930017795707,
+     36.245026628684435,
+     40.30602662495101,
+     47.13294138333792,
+     53.5903865537771,
+     59.955638372643904,
+     66.1323912401376,
+     72.02058413477504,
+     77.51889603589784,
+     82.52748502104195
+    ],
+    "revenue": [
+     108.966918,
+     128.99999999081265,
+     136.7049500452639,
+     142.4099001046955,
+     161.40990015220464,
+     174.32479049308304,
+     187.05529413081666,
+     199.40879986580404,
+     211.18518565507893,
+     222.18180945732453,
+     232.19898742761268
+    ],
+    "interest": [
+     0.070346,
+     0.070346,
+     0.09007136710512202,
+     0.09845319658999786,
+     0.10948418396049675,
+     0.12802828899582586,
+     0.14556879532094028,
+     0.16285887473204985,
+     0.1796369301210317,
+     0.19563116344177048,
+     0.21056635408351113
+    ],
+    "tax_cash": [
+     -0.209562,
+     3.4817724079368215,
+     3.8948310668295374,
+     4.536851817503262,
+     5.4158400512048095,
+     6.353549601391213,
+     7.278026570350302,
+     8.175069820284737,
+     9.030143711398626,
+     9.828531017080184,
+     10.55573090678086
+    ],
+    "terminal_capex": 33.742266605565014,
+    "terminal_da": 23.613762152599154
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "target",
+     "source": "assumption",
+     "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+     "derived_from": [
+      "baseline.debt",
+      "baseline.ebitda"
+     ]
+    },
+    "leverage": {
+     "value": 0.09709327267370492,
+     "source": "assumption",
+     "evidence": "Year-0 debt divided by year-0 EBITDA.",
+     "derived_from": [
+      "baseline.debt",
+      "baseline.ebitda"
+     ]
+    },
+    "start_year": {
+     "value": 1,
+     "source": "assumption",
+     "evidence": "The target applies from the first forecast year."
+    }
+   },
+   "min_cash": 100.34142694428041,
+   "negative_cash_years": [],
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "default capex method 1 appears to anchor on year-0 D&A/revenue (0.1017); year-0 capex is only 0.423 vs D&A 11.082 (mostly acquired-intangible amortization). Forecast capex path: [0.423, 5.84, 7.923, 9.465, 14.603, 18.094, 21.536, 24.877, 28.061, 31.034, 33.742]"
+   ],
+   "flags": [
+    "default capex method 1 appears to anchor on year-0 D&A/revenue (0.1017); year-0 capex is only 0.423 vs D&A 11.082 (mostly acquired-intangible amortization). Forecast capex path: [0.423, 5.84, 7.923, 9.465, 14.603, 18.094, 21.536, 24.877, 28.061, 31.034, 33.742]",
+    "lease-as-debt: year-0 Yahoo Total Debt 2.514474 is flagged by Finagle as possibly lease liabilities; default target leverage and rd follow from it (not patched)",
+    "Buddy consideration-share proceeds of 0.552 added to year-0 cash under the written offering rule (shares were non-cash consideration; not patched)",
+    "rates.t default 0.21 (US federal statutory) vs Canadian combined ~26.5% (not patched)",
+    "year-0 EBITDA Yahoo 25.8975 vs reported Adj. EBITDA 26.55 FY25 context (not patched)"
+   ],
+   "steps": [
+    {
+     "method": "forecast_ebitda",
+     "args": {
+      "ebitda_ttm": 25.89751,
+      "gf": [
+       0.280404957,
+       0.093057647,
+       0.112042958,
+       0.169377022
+      ],
+      "me": 0.29200774759722287,
+      "mc": 0.5,
+      "gsnext": 0.080013
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_sbc",
+     "args": {
+      "sbc_f": [
+       2.647812
+      ]
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_capex",
+     "args": {
+      "capex_f": [
+       0.423144
+      ],
+      "method": 1
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "load_financials",
+     "args": {},
+     "pass_financials": true
+    },
+    {
+     "method": "fcf_from_ebitda",
+     "args": {}
+    },
+    {
+     "method": "fcf_to_debt",
+     "args": {
+      "leverage": 0.09709327267370492,
+      "year_d": 1
+     }
+    },
+    {
+     "method": "value",
+     "args": {}
+    }
+   ],
+   "checks": null
+  },
+  "bull": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 9.606186573812561,
+   "value_per_share_DDM": 9.606186573812561,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 21.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "assumptions": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode"
+   ],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode",
+    "rates.re",
+    "rates.gt"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.0381,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+    },
+    "re": {
+     "value": 0.0931,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.0381,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.027976427674336665,
+     "source": "assumption",
+     "evidence": "Year-0 interest divided by year-0 debt.",
+     "derived_from": [
+      "baseline.interest",
+      "baseline.debt"
+     ]
+    },
+    "t": {
+     "value": 0.21,
+     "source": "assumption",
+     "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    }
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Discount factor = 1/(1+re)^t. Applied to year-0 cash and shares only.",
+    "price_date": "2026-11-18",
+    "cost_of_equity": 0.0931,
+    "opening_cash": 119.180625,
+    "opening_shares": 63.339153,
+    "items": [
+     {
+      "name": "Buddy Healthcare cash consideration on closing",
+      "kind": "cash",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -12.367916,
+      "present_value": -12.367916,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy Healthcare consideration shares",
+      "kind": "equity",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "shares": 0.075,
+      "issue_price": 7.36,
+      "issue_price_stated": true,
+      "proceeds": 0.552,
+      "present_value": 0.552,
+      "new_shares": 0.075,
+      "note": "Procedure adds probability-weighted proceeds to year-0 cash and shares to the share count. This item is consideration shares, not a cash offering.",
+      "status": "applied (written offering rule; flagged)"
+     },
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": 0.9459481560663991,
+      "amount": -4.5,
+      "present_value": -3.5944138034211037,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": 0.8260712408097017,
+      "amount": -7.248555,
+      "present_value": -2.6478152522984817,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -18.839198055719585,
+    "sum_new_shares": 0.075,
+    "adjusted_cash": 100.34142694428041,
+    "adjusted_shares": 63.414153000000006,
+    "complete": true,
+    "applied_to_case": true
+   },
+   "year0_cash_used": 100.34142694428041,
+   "shares_used": 63.414153000000006,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (Finagle company.fin), display_fin line skipped",
+    "cols": {
+     "revenue": [
+      108.966918,
+      129.12299999541344,
+      139.98799995275252,
+      148.32900000578934,
+      169.1600000744214,
+      184.7335463212729,
+      200.07936201418104,
+      214.90044083474353,
+      228.88659132515033,
+      241.72438245939534,
+      253.1081505269381
+     ],
+     "ebitda": [
+      25.89751,
+      33.43627788023855,
+      40.21052786376623,
+      47.09986013003613,
+      56.1123628822833,
+      65.45649063039421,
+      74.6639800461391,
+      83.55662733847659,
+      91.94831763272066,
+      99.65099231326768,
+      106.48125315379335
+     ],
+     "da": [
+      11.081525,
+      13.131322595764097,
+      14.236252154772565,
+      15.08450043332559,
+      17.202934654210388,
+      18.786705630215614,
+      20.34731726691762,
+      21.854565140781816,
+      23.27690394927418,
+      24.582458937981066,
+      25.740145259206344
+     ],
+     "capex": [
+      0.423144,
+      5.923433100728417,
+      8.888326816598672,
+      11.164459236149913,
+      16.848923243631226,
+      21.09870783474071,
+      25.28634821131274,
+      29.33079585328635,
+      33.147404216014635,
+      36.65064272581945,
+      39.757100391618465
+     ],
+     "sbc": [
+      2.647812,
+      3.41859035122026,
+      4.111202899584346,
+      4.815581685290641,
+      5.737037568015779,
+      6.692399437978608,
+      7.633791137986921,
+      8.542992764414278,
+      9.400975568992129,
+      10.188512071584409,
+      10.886851279356659
+     ],
+     "interest": [
+      0.070346,
+      0.070346,
+      0.09082372798633001,
+      0.10922477848659966,
+      0.12793842962923932,
+      0.15241929742732416,
+      0.17780096580272436,
+      0.20281148034408333,
+      0.22696678200925396,
+      0.24976132269825815,
+      0.27068427448311166
+     ],
+     "income_pretax": [
+      12.097827000000002,
+      16.816018933254192,
+      21.772249081422988,
+      27.0905532329333,
+      33.04445223042789,
+      39.82496626477267,
+      46.50507067543184,
+      52.95625795293641,
+      59.0434713324451,
+      64.63025998100393,
+      69.58357234074722
+     ],
+     "nol": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_taxable": [
+      12.097827000000002,
+      16.816018933254192,
+      21.772249081422988,
+      27.0905532329333,
+      33.04445223042789,
+      39.82496626477267,
+      46.50507067543184,
+      52.95625795293641,
+      59.0434713324451,
+      64.63025998100393,
+      69.58357234074722
+     ],
+     "tax": [
+      -0.209562,
+      3.53136397598338,
+      4.572172307098827,
+      5.689016178915993,
+      6.939334968389858,
+      8.36324291560226,
+      9.766064841840686,
+      11.120814170116647,
+      12.399128979813472,
+      13.572354596010827,
+      14.612550191556918
+     ],
+     "tax_cash": [
+      -0.209562,
+      3.53136397598338,
+      4.572172307098827,
+      5.689016178915993,
+      6.939334968389858,
+      8.36324291560226,
+      9.766064841840686,
+      11.120814170116647,
+      12.399128979813472,
+      13.572354596010827,
+      14.612550191556918
+     ],
+     "wacc": [
+      0.09275087073335744,
+      0.09267175057942281,
+      0.09260981196306292,
+      0.0925519569854445,
+      0.09247682742056988,
+      0.09240457096018728,
+      0.09233958104941406,
+      0.09228279665491473,
+      0.09223519092970078,
+      0.09219772458735156,
+      0.09217128823858742
+     ],
+     "value_per_share": [
+      9.606186573812561,
+      8.436192805163726,
+      8.85566296931219,
+      9.270272109471431,
+      9.70229214762333,
+      10.131596605493913,
+      10.559285735058252,
+      10.986917253003629,
+      11.417051148375748,
+      11.85334247923169,
+      12.300611832675834
+     ],
+     "shares": [
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006
+     ],
+     "debt": [
+      2.514474,
+      3.24643764541977,
+      3.904171746230264,
+      4.57307956249896,
+      5.448132949695411,
+      6.355384893040677,
+      7.249370173523847,
+      8.112786401869855,
+      8.927563075802176,
+      9.675440968877371,
+      10.33861334709906
+     ],
+     "cash": [
+      100.34142694428041,
+      121.56593504200667,
+      144.77167125531523,
+      170.76215732277691,
+      198.09633938259057,
+      228.15331247058114,
+      260.84727264026037,
+      296.0699019389216,
+      333.65852069874506,
+      373.396120188975,
+      415.0133595839749
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "capex": [
+     0.423144,
+     5.923433100728417,
+     8.888326816598672,
+     11.164459236149913,
+     16.848923243631226,
+     21.09870783474071,
+     25.28634821131274,
+     29.33079585328635,
+     33.147404216014635,
+     36.65064272581945,
+     39.757100391618465
+    ],
+    "da": [
+     11.081525,
+     13.131322595764097,
+     14.236252154772565,
+     15.08450043332559,
+     17.202934654210388,
+     18.786705630215614,
+     20.34731726691762,
+     21.854565140781816,
+     23.27690394927418,
+     24.582458937981066,
+     25.740145259206344
+    ],
+    "sbc": [
+     2.647812,
+     3.41859035122026,
+     4.111202899584346,
+     4.815581685290641,
+     5.737037568015779,
+     6.692399437978608,
+     7.633791137986921,
+     8.542992764414278,
+     9.400975568992129,
+     10.188512071584409,
+     10.886851279356659
+    ],
+    "debt": [
+     2.514474,
+     3.24643764541977,
+     3.904171746230264,
+     4.57307956249896,
+     5.448132949695411,
+     6.355384893040677,
+     7.249370173523847,
+     8.112786401869855,
+     8.927563075802176,
+     9.675440968877371,
+     10.33861334709906
+    ],
+    "cash": [
+     100.34142694428041,
+     121.56593504200667,
+     144.77167125531523,
+     170.76215732277691,
+     198.09633938259057,
+     228.15331247058114,
+     260.84727264026037,
+     296.0699019389216,
+     333.65852069874506,
+     373.396120188975,
+     415.0133595839749
+    ],
+    "ebitda": [
+     25.89751,
+     33.43627788023855,
+     40.21052786376623,
+     47.09986013003613,
+     56.1123628822833,
+     65.45649063039421,
+     74.6639800461391,
+     83.55662733847659,
+     91.94831763272066,
+     99.65099231326768,
+     106.48125315379335
+    ],
+    "revenue": [
+     108.966918,
+     129.12299999541344,
+     139.98799995275252,
+     148.32900000578934,
+     169.1600000744214,
+     184.7335463212729,
+     200.07936201418104,
+     214.90044083474353,
+     228.88659132515033,
+     241.72438245939534,
+     253.1081505269381
+    ],
+    "interest": [
+     0.070346,
+     0.070346,
+     0.09082372798633001,
+     0.10922477848659966,
+     0.12793842962923932,
+     0.15241929742732416,
+     0.17780096580272436,
+     0.20281148034408333,
+     0.22696678200925396,
+     0.24976132269825815,
+     0.27068427448311166
+    ],
+    "tax_cash": [
+     -0.209562,
+     3.53136397598338,
+     4.572172307098827,
+     5.689016178915993,
+     6.939334968389858,
+     8.36324291560226,
+     9.766064841840686,
+     11.120814170116647,
+     12.399128979813472,
+     13.572354596010827,
+     14.612550191556918
+    ],
+    "terminal_capex": 39.757100391618465,
+    "terminal_da": 25.740145259206344
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "target",
+     "source": "assumption",
+     "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+     "derived_from": [
+      "baseline.debt",
+      "baseline.ebitda"
+     ]
+    },
+    "leverage": {
+     "value": 0.09709327267370492,
+     "source": "assumption",
+     "evidence": "Year-0 debt divided by year-0 EBITDA.",
+     "derived_from": [
+      "baseline.debt",
+      "baseline.ebitda"
+     ]
+    },
+    "start_year": {
+     "value": 1,
+     "source": "assumption",
+     "evidence": "The target applies from the first forecast year."
+    }
+   },
+   "min_cash": 100.34142694428041,
+   "negative_cash_years": [],
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "default capex method 1 appears to anchor on year-0 D&A/revenue (0.1017); year-0 capex is only 0.423 vs D&A 11.082 (mostly acquired-intangible amortization). Forecast capex path: [0.423, 5.923, 8.888, 11.164, 16.849, 21.099, 25.286, 29.331, 33.147, 36.651, 39.757]"
+   ],
+   "flags": [
+    "default capex method 1 appears to anchor on year-0 D&A/revenue (0.1017); year-0 capex is only 0.423 vs D&A 11.082 (mostly acquired-intangible amortization). Forecast capex path: [0.423, 5.923, 8.888, 11.164, 16.849, 21.099, 25.286, 29.331, 33.147, 36.651, 39.757]",
+    "lease-as-debt: year-0 Yahoo Total Debt 2.514474 is flagged by Finagle as possibly lease liabilities; default target leverage and rd follow from it (not patched)",
+    "Buddy consideration-share proceeds of 0.552 added to year-0 cash under the written offering rule (shares were non-cash consideration; not patched)",
+    "rates.t default 0.21 (US federal statutory) vs Canadian combined ~26.5% (not patched)",
+    "year-0 EBITDA Yahoo 25.8975 vs reported Adj. EBITDA 26.55 FY25 context (not patched)"
+   ],
+   "steps": [
+    {
+     "method": "forecast_ebitda",
+     "args": {
+      "ebitda_ttm": 25.89751,
+      "gf": [
+       0.291100105,
+       0.202601797,
+       0.171331555,
+       0.191348822
+      ],
+      "me": 0.33171176908014216,
+      "mc": 0.6,
+      "gsnext": 0.092064
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_sbc",
+     "args": {
+      "sbc_f": [
+       2.647812
+      ]
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_capex",
+     "args": {
+      "capex_f": [
+       0.423144
+      ],
+      "method": 1
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "load_financials",
+     "args": {},
+     "pass_financials": true
+    },
+    {
+     "method": "fcf_from_ebitda",
+     "args": {}
+    },
+    {
+     "method": "fcf_to_debt",
+     "args": {
+      "leverage": 0.09709327267370492,
+      "year_d": 1
+     }
+    },
+    {
+     "method": "value",
+     "args": {}
+    }
+   ],
+   "checks": null
+  },
+  "bear": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 5.437874066463395,
+   "value_per_share_DDM": 5.437874066463395,
+   "validation": {
+    "errors": [],
+    "warnings": [],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "assumptions": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode"
+   ],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode",
+    "rates.re",
+    "rates.gt"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.0381,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+    },
+    "re": {
+     "value": 0.0931,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.0381,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.027976427674336665,
+     "source": "assumption",
+     "evidence": "Year-0 interest divided by year-0 debt.",
+     "derived_from": [
+      "baseline.interest",
+      "baseline.debt"
+     ]
+    },
+    "t": {
+     "value": 0.21,
+     "source": "assumption",
+     "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    }
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Discount factor = 1/(1+re)^t. Applied to year-0 cash and shares only.",
+    "price_date": "2026-11-18",
+    "cost_of_equity": 0.0931,
+    "opening_cash": 119.180625,
+    "opening_shares": 63.339153,
+    "items": [
+     {
+      "name": "Buddy Healthcare cash consideration on closing",
+      "kind": "cash",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -12.367916,
+      "present_value": -12.367916,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy Healthcare consideration shares",
+      "kind": "equity",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "shares": 0.075,
+      "issue_price": 7.36,
+      "issue_price_stated": true,
+      "proceeds": 0.552,
+      "present_value": 0.552,
+      "new_shares": 0.075,
+      "note": "Procedure adds probability-weighted proceeds to year-0 cash and shares to the share count. This item is consideration shares, not a cash offering.",
+      "status": "applied (written offering rule; flagged)"
+     },
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": 0.9459481560663991,
+      "amount": -4.5,
+      "present_value": -3.5944138034211037,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": 0.8260712408097017,
+      "amount": -7.248555,
+      "present_value": -2.6478152522984817,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -18.839198055719585,
+    "sum_new_shares": 0.075,
+    "adjusted_cash": 100.34142694428041,
+    "adjusted_shares": 63.414153000000006,
+    "complete": true,
+    "applied_to_case": true
+   },
+   "year0_cash_used": 100.34142694428041,
+   "shares_used": 63.414153000000006,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (Finagle company.fin), display_fin line skipped",
+    "cols": {
+     "revenue": [
+      108.966918,
+      128.87699998621184,
+      131.3490000331074,
+      131.54200005058803,
+      146.40500009048,
+      154.02157381518714,
+      161.676959439048,
+      169.33764491582858,
+      176.96833787102562,
+      184.53220058941707,
+      191.99111515870834
+     ],
+     "ebitda": [
+      25.89751,
+      32.90572905957375,
+      31.495483523748344,
+      31.504261000051578,
+      35.60431093464986,
+      38.65094042453271,
+      41.71309467407705,
+      44.77736886478929,
+      47.82964604686811,
+      50.855191134224704,
+      53.83875696194122
+     ],
+     "da": [
+      11.081525,
+      13.106305321695947,
+      13.357698412575823,
+      13.377325787176913,
+      14.888836891098048,
+      15.663413741520532,
+      16.44193761585324,
+      17.221000465259344,
+      17.997013188224855,
+      18.76622952790717,
+      19.52477303624486
+     ],
+     "capex": [
+      0.423144,
+      6.390236868584257,
+      7.13110041003956,
+      7.188942915597444,
+      11.64341485625675,
+      13.926117799781567,
+      16.220452749986055,
+      18.51637607710349,
+      20.803310583292117,
+      23.070215928891415,
+      25.305668096522865
+     ],
+     "sbc": [
+      2.647812,
+      3.3643460036385004,
+      3.2201597458590867,
+      3.2210571721786603,
+      3.6402542848519848,
+      3.9517476339371167,
+      4.264828264769752,
+      4.5781256425276196,
+      4.8901964226927594,
+      5.199534061285961,
+      5.504579658388452
+     ],
+     "interest": [
+      0.070346,
+      0.070346,
+      0.08938258606425001,
+      0.08555190379158464,
+      0.08557574625165232,
+      0.09671280586469044,
+      0.10498843537869773,
+      0.11330623515321064,
+      0.1216297933725083,
+      0.12992076384227613,
+      0.13813912131043377
+     ],
+     "income_pretax": [
+      12.097827000000002,
+      16.3647317342393,
+      14.828242779249186,
+      14.82032613690442,
+      16.989644012448174,
+      18.939066243210373,
+      20.901340358075355,
+      22.864936521849117,
+      24.82080664257799,
+      26.759506781189298,
+      28.671265145997477
+     ],
+     "nol": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_taxable": [
+      12.097827000000002,
+      16.3647317342393,
+      14.828242779249186,
+      14.82032613690442,
+      16.989644012448174,
+      18.939066243210373,
+      20.901340358075355,
+      22.864936521849117,
+      24.82080664257799,
+      26.759506781189298,
+      28.671265145997477
+     ],
+     "tax": [
+      -0.209562,
+      3.436593664190253,
+      3.113930983642329,
+      3.112268488749928,
+      3.5678252426141164,
+      3.977203911074178,
+      4.3892814751958245,
+      4.801636669588314,
+      5.212369394941377,
+      5.6194964240497525,
+      6.0209656806594705
+     ],
+     "tax_cash": [
+      -0.209562,
+      3.436593664190253,
+      3.113930983642329,
+      3.112268488749928,
+      3.5678252426141164,
+      3.977203911074178,
+      4.3892814751958245,
+      4.801636669588314,
+      5.212369394941377,
+      5.6194964240497525,
+      6.0209656806594705
+     ],
+     "wacc": [
+      0.09237726284776374,
+      0.09219312929179689,
+      0.09224916868997997,
+      0.0922671308059952,
+      0.09218445526925728,
+      0.0921346931589249,
+      0.09208974480157513,
+      0.09205003663002877,
+      0.09201594105161649,
+      0.09198776732532928,
+      0.09196575352939085
+     ],
+     "value_per_share": [
+      5.437874066463395,
+      3.894000463609608,
+      3.9757746372738527,
+      4.063690575071669,
+      4.172911029293546,
+      4.293409479814621,
+      4.424560329550751,
+      4.567375919539349,
+      4.72296645157215,
+      4.892549061286704,
+      5.07745769832361
+     ],
+     "shares": [
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006,
+      63.414153000000006
+     ],
+     "debt": [
+      2.514474,
+      3.19492492410825,
+      3.0579995697614786,
+      3.0588518036615753,
+      3.4569390699373326,
+      3.7527462977342787,
+      4.050060875254231,
+      4.347581284800051,
+      4.643936865515358,
+      4.93769693966866,
+      5.227381110119088
+     ],
+     "cash": [
+      100.34142694428041,
+      120.6660843915494,
+      138.47006883534576,
+      156.3673615889798,
+      173.43268965993093,
+      190.42765516160304,
+      207.4585134878697,
+      224.52395813783218,
+      241.62245357111684,
+      258.75223760142546,
+      275.9113261769359
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "capex": [
+     0.423144,
+     6.390236868584257,
+     7.13110041003956,
+     7.188942915597444,
+     11.64341485625675,
+     13.926117799781567,
+     16.220452749986055,
+     18.51637607710349,
+     20.803310583292117,
+     23.070215928891415,
+     25.305668096522865
+    ],
+    "da": [
+     11.081525,
+     13.106305321695947,
+     13.357698412575823,
+     13.377325787176913,
+     14.888836891098048,
+     15.663413741520532,
+     16.44193761585324,
+     17.221000465259344,
+     17.997013188224855,
+     18.76622952790717,
+     19.52477303624486
+    ],
+    "sbc": [
+     2.647812,
+     3.3643460036385004,
+     3.2201597458590867,
+     3.2210571721786603,
+     3.6402542848519848,
+     3.9517476339371167,
+     4.264828264769752,
+     4.5781256425276196,
+     4.8901964226927594,
+     5.199534061285961,
+     5.504579658388452
+    ],
+    "debt": [
+     2.514474,
+     3.19492492410825,
+     3.0579995697614786,
+     3.0588518036615753,
+     3.4569390699373326,
+     3.7527462977342787,
+     4.050060875254231,
+     4.347581284800051,
+     4.643936865515358,
+     4.93769693966866,
+     5.227381110119088
+    ],
+    "cash": [
+     100.34142694428041,
+     120.6660843915494,
+     138.47006883534576,
+     156.3673615889798,
+     173.43268965993093,
+     190.42765516160304,
+     207.4585134878697,
+     224.52395813783218,
+     241.62245357111684,
+     258.75223760142546,
+     275.9113261769359
+    ],
+    "ebitda": [
+     25.89751,
+     32.90572905957375,
+     31.495483523748344,
+     31.504261000051578,
+     35.60431093464986,
+     38.65094042453271,
+     41.71309467407705,
+     44.77736886478929,
+     47.82964604686811,
+     50.855191134224704,
+     53.83875696194122
+    ],
+    "revenue": [
+     108.966918,
+     128.87699998621184,
+     131.3490000331074,
+     131.54200005058803,
+     146.40500009048,
+     154.02157381518714,
+     161.676959439048,
+     169.33764491582858,
+     176.96833787102562,
+     184.53220058941707,
+     191.99111515870834
+    ],
+    "interest": [
+     0.070346,
+     0.070346,
+     0.08938258606425001,
+     0.08555190379158464,
+     0.08557574625165232,
+     0.09671280586469044,
+     0.10498843537869773,
+     0.11330623515321064,
+     0.1216297933725083,
+     0.12992076384227613,
+     0.13813912131043377
+    ],
+    "tax_cash": [
+     -0.209562,
+     3.436593664190253,
+     3.113930983642329,
+     3.112268488749928,
+     3.5678252426141164,
+     3.977203911074178,
+     4.3892814751958245,
+     4.801636669588314,
+     5.212369394941377,
+     5.6194964240497525,
+     6.0209656806594705
+    ],
+    "terminal_capex": 25.305668096522865,
+    "terminal_da": 19.52477303624486
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "target",
+     "source": "assumption",
+     "evidence": "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA.",
+     "derived_from": [
+      "baseline.debt",
+      "baseline.ebitda"
+     ]
+    },
+    "leverage": {
+     "value": 0.09709327267370492,
+     "source": "assumption",
+     "evidence": "Year-0 debt divided by year-0 EBITDA.",
+     "derived_from": [
+      "baseline.debt",
+      "baseline.ebitda"
+     ]
+    },
+    "start_year": {
+     "value": 1,
+     "source": "assumption",
+     "evidence": "The target applies from the first forecast year."
+    }
+   },
+   "min_cash": 100.34142694428041,
+   "negative_cash_years": [],
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "default capex method 1 appears to anchor on year-0 D&A/revenue (0.1017); year-0 capex is only 0.423 vs D&A 11.082 (mostly acquired-intangible amortization). Forecast capex path: [0.423, 6.39, 7.131, 7.189, 11.643, 13.926, 16.22, 18.516, 20.803, 23.07, 25.306]"
+   ],
+   "flags": [
+    "default capex method 1 appears to anchor on year-0 D&A/revenue (0.1017); year-0 capex is only 0.423 vs D&A 11.082 (mostly acquired-intangible amortization). Forecast capex path: [0.423, 6.39, 7.131, 7.189, 11.643, 13.926, 16.22, 18.516, 20.803, 23.07, 25.306]",
+    "lease-as-debt: year-0 Yahoo Total Debt 2.514474 is flagged by Finagle as possibly lease liabilities; default target leverage and rd follow from it (not patched)",
+    "Buddy consideration-share proceeds of 0.552 added to year-0 cash under the written offering rule (shares were non-cash consideration; not patched)",
+    "rates.t default 0.21 (US federal statutory) vs Canadian combined ~26.5% (not patched)",
+    "year-0 EBITDA Yahoo 25.8975 vs reported Adj. EBITDA 26.55 FY25 context (not patched)"
+   ],
+   "steps": [
+    {
+     "method": "forecast_ebitda",
+     "args": {
+      "ebitda_ttm": 25.89751,
+      "gf": [
+       0.270613625,
+       -0.042857143,
+       0.00027869,
+       0.130142711
+      ],
+      "me": 0.2431905393439157,
+      "mc": 0.4,
+      "gsnext": 0.052024
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_sbc",
+     "args": {
+      "sbc_f": [
+       2.647812
+      ]
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_capex",
+     "args": {
+      "capex_f": [
+       0.423144
+      ],
+      "method": 1
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "load_financials",
+     "args": {},
+     "pass_financials": true
+    },
+    {
+     "method": "fcf_from_ebitda",
+     "args": {}
+    },
+    {
+     "method": "fcf_to_debt",
+     "args": {
+      "leverage": 0.09709327267370492,
+      "year_d": 1
+     }
+    },
+    {
+     "method": "value",
+     "args": {}
+    }
+   ],
+   "checks": null
+  }
+ }
+}

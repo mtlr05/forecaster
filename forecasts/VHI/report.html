@@ -1,0 +1,2514 @@
+<html><head><meta charset="utf-8"><title>Vitalhub VHI — Company Update, 17 November 2026</title><style>@page{size:letter;margin:16mm 14mm;@bottom-right{content:counter(page);font-size:7pt;color:#667}}
+body{font-family:'DejaVu Sans',sans-serif;font-size:9pt;line-height:1.37;color:#17222d}
+h1{font-size:16pt;margin:0}h2{font-size:11.5pt;border-bottom:1px solid #456;margin-top:13px}
+h3{font-size:10pt;margin-top:11px}
+table{border-collapse:collapse;width:100%;font-size:7.2pt}
+th,td{border:1px solid #bec6cd;padding:3px 4px}th{background:#e7eef4}
+thead{display:table-header-group}tr{break-inside:avoid}
+.fig{break-inside:avoid;page-break-inside:avoid;margin:6px 0}
+.fig>p:first-child{break-after:avoid}
+p,li{orphans:2;widows:2}code{font-size:7.8pt}
+sup{font-size:0.75em;line-height:0;vertical-align:super}</style></head><body><h1>Vitalhub Corp. (TSX: VHI)</h1>
+<p><strong>Company Update: FY2026E–FY2029E Revenue and EBITDA Forecast</strong></p>
+<p><em>17 November 2026, revised 18 November 2026 12:55 ET (America/Toronto), version 3; valuation added 18 November 2026 (v3.3, Finagle result v05). C$ millions unless noted. Version 2 added a partial roll-off of NHS SHREWD contracts in 2027 after the UK government extended the Palantir-led NHS Federated Data Platform contract to March 2029 <sup>D23, G26, P7</sup>. Version 3 forecasts organic ARR additions in dollars rather than as a percentage of an ARR base enlarged by acquisitions, based on the ARR bridge in the Dan Matlow CEO bot's term-licence product sheet, checked against the filings <sup>D24, P8</sup>. Earlier versions are archived in <code>v1/</code>, <code>v2/</code>, <code>v3/</code>, <code>v3.1/</code> and <code>v3.2/</code>, and <code>revision_log.md</code> lists every change. Section 7 adds a Finagle valuation of the v3 forecast, run by the Finagle bot on 18 November 2026 (result v05) with inputs David May stated that day <sup>P9, P15, D25</sup>. Values are in C$ per share against the C$6.73 Yahoo price; the report carries no rating or price target. The audit record is <code>forecast.md</code> / <code>forecast.json</code> in this folder. Numbered sources are in Appendix B.</em></p><hr>
+<h2>1. Estimate comparison</h2>
+<p>Vitalhub publishes no revenue or Adjusted EBITDA guidance. On the Q2 2026 call management said it was still comfortable with an organic run rate of about 10%–11% <sup>G13</sup>. That comfort was not repeated on the Q3 2026 call, where management put about 7%–8% of ARR in the SHREWD product line at risk <sup>G2, G3</sup>. We treat the 10%–11% as withdrawn. There is therefore no top-down or calibrated top-down view. The base starts from the FactSet consensus pulled on 17 November 2026, after the Q3 release <sup>E1, E2</sup>.</p><p>That pull very probably predates the news behind version 2. On Monday 16 November the health minister told MPs that the Palantir-led FDP contract will run to March 2029, so the February 2027 break clause will not be used <sup>G26</sup>. The pull came about a day later. Our v1 build, which left SHREWD unresolved, matched FactSet to within 1.2% in FY2026E and FY2027E, so FactSet does not yet appear to carry a 2027 SHREWD loss. The forecaster skill has no specific rule for news after the Consensus pull, but it lets an instruction in the prompt override the default method. David's instruction to assume some SHREWD roll-off in 2027 is that override <sup>P7</sup>.</p><p>The base is FactSet plus the effect of the SHREWD roll-off alone, measured on our build with and without the loss. That lowers revenue by 2.30 in FY2027E and 4.59 in each of FY2028E and FY2029E. It lowers Adjusted EBITDA by 1.84 and then 3.67 <sup>C36</sup>.</p><p>Version 3 isolates that adjustment. In version 2 the adjustment also carried our change in the organic growth rate. That change rested on information analysts already had, so under the skill it moves the bottom-up view, not the base. FY2026E is unchanged. The unadjusted FactSet figures stay in Figure 1 and in the forecast file.</p>
+<p>On the adjusted base, the bottom-up build is within 1.3% on revenue in FY2026E and FY2027E. It is 2.9% above in FY2028E and 2.2% below in FY2029E <sup>C11</sup>. On Adjusted EBITDA it matches in FY2026E and FY2027E. It falls 5% short in FY2028E and 10% short in FY2029E, because our slower dollar-based organic path and our cost build both sit below the Consensus margin path <sup>C13</sup>. FactSet's own revenue path is uneven, at +7.8%, +5.8% and +12.9% for FY2027–FY2029, which most likely reflects thin, rounded coverage in the later years <sup>C34</sup>.</p><div class="fig" id="figure-check-0">
+<p><strong>Figure 1 – Estimate comparison, revenue (C$ millions)</strong></p>
+<p>Each recorded view against the revenue base. The base is FactSet plus the SHREWD event adjustment. Top-down and calibrated top-down are absent because there is no guidance.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">9M 2026A</th>
+<th style="text-align: right;">Q4 2026E</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bottom-up (v3)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">34.0</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">146</td>
+<td style="text-align: right;">158</td>
+</tr>
+<tr>
+<td>Top-down</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Calibrated top-down</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Consensus, FactSet as pulled</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">33.4</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">139</td>
+<td style="text-align: right;">147</td>
+<td style="text-align: right;">166</td>
+</tr>
+<tr>
+<td>SHREWD event adjustment</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">−2.30</td>
+<td style="text-align: right;">−4.59</td>
+<td style="text-align: right;">−4.59</td>
+</tr>
+<tr>
+<td><strong>Base (event-adjusted Consensus)</strong></td>
+<td style="text-align: right;"><strong>109</strong></td>
+<td style="text-align: right;"><strong>95.6</strong></td>
+<td style="text-align: right;"><strong>33.4</strong></td>
+<td style="text-align: right;"><strong>129</strong></td>
+<td style="text-align: right;"><strong>137</strong></td>
+<td style="text-align: right;"><strong>142</strong></td>
+<td style="text-align: right;"><strong>161</strong></td>
+</tr>
+<tr>
+<td>Bottom-up / base</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.017</td>
+<td style="text-align: right;">1.005</td>
+<td style="text-align: right;">1.013</td>
+<td style="text-align: right;">1.029</td>
+<td style="text-align: right;">0.978</td>
+</tr>
+<tr>
+<td>Top-down / base</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Calibrated / base</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Event-adjusted Consensus / base</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.000</td>
+</tr>
+<tr>
+<td>FactSet as pulled / base</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.017</td>
+<td style="text-align: right;">1.032</td>
+<td style="text-align: right;">1.028</td>
+</tr>
+<tr>
+<td>Bottom-up / calibrated</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Bottom-up / Consensus (adjusted)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.017</td>
+<td style="text-align: right;">1.005</td>
+<td style="text-align: right;">1.013</td>
+<td style="text-align: right;">1.029</td>
+<td style="text-align: right;">0.978</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [A1_1][A1_2][E1][E1_1][E1_2][E1_3][C5][C9][C11][C36]. Q4 2026E Consensus = FY2026 Consensus less nine-month actual. Totals of 100 and above are whole numbers. May not sum due to rounding.</em></p>
+</div>
+<div class="fig" id="figure-check-1">
+<p><strong>Figure 1 (continued) – Estimate comparison, Adjusted EBITDA (C$ millions)</strong></p>
+<p>FactSet's EBITDA history for 2025 equals Vitalhub's reported Adjusted EBITDA of 26.6, so the Consensus is on the company's adjusted basis.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">9M 2026A</th>
+<th style="text-align: right;">Q4 2026E</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bottom-up (v3)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">9.39</td>
+<td style="text-align: right;">34.2</td>
+<td style="text-align: right;">37.2</td>
+<td style="text-align: right;">39.1</td>
+<td style="text-align: right;">43.4</td>
+</tr>
+<tr>
+<td>Top-down</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Calibrated top-down</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Consensus, FactSet as pulled</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">9.23</td>
+<td style="text-align: right;">34.0</td>
+<td style="text-align: right;">39.0</td>
+<td style="text-align: right;">45.0</td>
+<td style="text-align: right;">52.0</td>
+</tr>
+<tr>
+<td>SHREWD event adjustment</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">−1.84</td>
+<td style="text-align: right;">−3.67</td>
+<td style="text-align: right;">−3.67</td>
+</tr>
+<tr>
+<td><strong>Base (event-adjusted Consensus)</strong></td>
+<td style="text-align: right;"><strong>26.6</strong></td>
+<td style="text-align: right;"><strong>24.8</strong></td>
+<td style="text-align: right;"><strong>9.23</strong></td>
+<td style="text-align: right;"><strong>34.0</strong></td>
+<td style="text-align: right;"><strong>37.2</strong></td>
+<td style="text-align: right;"><strong>41.3</strong></td>
+<td style="text-align: right;"><strong>48.3</strong></td>
+</tr>
+<tr>
+<td>Bottom-up / base</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.018</td>
+<td style="text-align: right;">1.005</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">0.946</td>
+<td style="text-align: right;">0.897</td>
+</tr>
+<tr>
+<td>Top-down / base</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Calibrated / base</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Event-adjusted Consensus / base</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.000</td>
+</tr>
+<tr>
+<td>FactSet as pulled / base</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.049</td>
+<td style="text-align: right;">1.089</td>
+<td style="text-align: right;">1.076</td>
+</tr>
+<tr>
+<td>Bottom-up / calibrated</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Bottom-up / Consensus (adjusted)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.018</td>
+<td style="text-align: right;">1.005</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">0.946</td>
+<td style="text-align: right;">0.897</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [A2_1][A2_2][E2][E2_1][E2_2][E2_3][C10][C13][C36]. May not sum due to rounding.</em></p>
+</div>
+<hr>
+<h2>2. Summary</h2>
+<p><strong>FORECAST UPDATE</strong></p>
+<p>■ <strong>We forecast FY2027E revenue of 137 (+6.0%) and Adjusted EBITDA of 37.2 (27.2%), because about half of Vitalhub's NHS SHREWD ARR rolls off during 2027 now that the government has kept the Palantir-led data platform to March 2029.</strong> We take 4.0 of the roughly 7.5–8.6 of SHREWD ARR out evenly over 2027. Lost SHREWD revenue saves only its cost of sales, so most of it falls through to Adjusted EBITDA. FY2026E is unchanged at 129 and 34.0. See Estimate comparison and the term-licence subsection.</p>
+<p>■ <strong>Organic ARR additions are now forecast in dollars: 8.94 in FY2027, 9.83 in FY2028 and 10.8 in FY2029, because the filed ARR bridge shows dollar additions rising about 10% a year while the percentage fell only because acquisitions enlarged the base.</strong> Printed organic additions were 6.39 in 2023, 6.48 in 2024 and 7.23 in 2025, and 8.12 in the four quarters to Q2 2026. Over the same period the organic rate fell from 17.7% to 14.5% to 10.2%, as 38 of acquired ARR joined the base without adding much organic growth. The new path is 8.2%–8.8% of opening ARR, against the 9%–10% in version 2. It moves the bottom-up view and the bull, but not the Consensus-based base. See How the evidence becomes the numbers and Figure 6.</p>
+<p>■ <strong>We forecast FY2029E revenue of 161 and Adjusted EBITDA of 48.3, a 29.9% margin, which is still above every year Vitalhub has reported.</strong> The best full-year margin so far was 26.0% in FY2024, and the best quarter in the nine we track was 27.6% in Q3 2024. Our own build reaches 43.4 (27.5%) on 158 of revenue, 10% below the base. That gap is the main risk to the base. See the cash opex bridge and Appendix A.</p>
+<p>■ <strong>SHREWD and the pace of dollar additions are the swing factors.</strong> The bear loses all SHREWD ARR in 2027 and holds organic additions flat at 7.23 a year, giving revenue of 131 in FY2027E and 146 in FY2029E and Adjusted EBITDA of 32.3 and 36.5. The bull loses 1.5 and grows additions 15% a year, giving revenue of 140 and 169 and Adjusted EBITDA of 41.2 and 57.5. The new FDP procurement would earn revenue mostly after FY2029 and is in no case. See Appendix A.</p>
+<div class="fig" id="figure-check-2">
+<p><strong>Figure 2 – Financial summary (FY2024A–FY2029E, C$ millions)</strong></p>
+<p>The base case, version 3. FY2025A includes the Induction and Novari acquisitions from mid-2025. FY2026E includes Buddy from 10 July 2026. FY2027E onward includes the SHREWD roll-off.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2024A</th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue</td>
+<td style="text-align: right;">68.6</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">137</td>
+<td style="text-align: right;">142</td>
+<td style="text-align: right;">161</td>
+</tr>
+<tr>
+<td>Revenue growth</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">58.9%</td>
+<td style="text-align: right;">18.4%</td>
+<td style="text-align: right;">6.0%</td>
+<td style="text-align: right;">4.2%</td>
+<td style="text-align: right;">13.3%</td>
+</tr>
+<tr>
+<td>Gross margin</td>
+<td style="text-align: right;">81%</td>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">80%</td>
+</tr>
+<tr>
+<td>Adjusted EBITDA</td>
+<td style="text-align: right;">17.8</td>
+<td style="text-align: right;">26.6</td>
+<td style="text-align: right;">34.0</td>
+<td style="text-align: right;">37.2</td>
+<td style="text-align: right;">41.3</td>
+<td style="text-align: right;">48.3</td>
+</tr>
+<tr>
+<td>EBITDA growth</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">48.8%</td>
+<td style="text-align: right;">28.0%</td>
+<td style="text-align: right;">9.3%</td>
+<td style="text-align: right;">11.2%</td>
+<td style="text-align: right;">16.9%</td>
+</tr>
+<tr>
+<td>EBITDA margin</td>
+<td style="text-align: right;">26.0%</td>
+<td style="text-align: right;">24.4%</td>
+<td style="text-align: right;">26.4%</td>
+<td style="text-align: right;">27.2%</td>
+<td style="text-align: right;">29.0%</td>
+<td style="text-align: right;">29.9%</td>
+</tr>
+<tr>
+<td><em>Change from v2: revenue</em></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: right;">−0.62</td>
+<td style="text-align: right;">−1.08</td>
+<td style="text-align: right;">−0.73</td>
+</tr>
+<tr>
+<td><em>Change from v2: Adjusted EBITDA</em></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: right;">−0.31</td>
+<td style="text-align: right;">−0.54</td>
+<td style="text-align: right;">−0.37</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: FY2024A–FY2025A [A1][A1_1][A2][A2_1][A63][A72][C6][C7]; FY2026E–FY2029E [E1][E2][C36][S10][C22][C23][C40]. Gross margin for estimate years is the cash cost-build assumption. May not sum due to rounding.</em></p>
+</div>
+<hr>
+<h2>3. Business Description and Reporting Lines</h2>
+<p>Vitalhub sells software to health and human services providers, mainly hospitals, mental health and community care, in the United Kingdom, Canada, Australia, the United States and Western Asia <sup>D16</sup>. It reports one operating segment <sup>D4</sup>. The business grew mostly by acquisition. Revenue rose from 68.6 in FY2024 to 109 in FY2025 after the Induction Healthcare (June 2025) and Novari Health (July 2025) acquisitions <sup>A1, A1_1, A58</sup>. Buddy Healthcare in Finland closed on 10 July 2026 <sup>A45</sup>. In FY2025 the United Kingdom was 60.0 of revenue (55%), Canada 33.1, Australia 10.2 and the United States 3.34 <sup>A53</sup>. In Q3 2026 UK revenue fell to 14.6 from 16.6 a year earlier, the quarter in which NHS SHREWD suspensions hit, while Finland added 1.20 from Buddy <sup>A54</sup>.</p><p>The filings report revenue in four types, which are the four forecast lines <sup>A3_1, A4_1, A5_1, A1_1</sup>. Term licences, maintenance and support is the recurring core: 78% of FY2025 revenue and 81% of Q3 2026 revenue <sup>C35, A66</sup>. Vitalhub defines ARR as annual renewable software licence fees and maintenance services. It splits ARR growth into organic additions net of churn, acquired ARR and foreign exchange, and it counts an acquired company's growth after close as organic <sup>G24</sup>. Virtual care is the Attend Anywhere video-consultation product that came with Induction <sup>A4</sup>. Perpetual licences are one-off sales, and services, hardware and other is implementation work, which is lumpy by milestone <sup>D1</sup>.</p><div class="fig" id="figure-check-3">
+<p><strong>Figure 3 – FY2025A revenue by line (C$ millions)</strong></p>
+<p>Term licences carry the business. Virtual care entered in mid-2025 with Induction, so FY2025 holds about half a year of it.</p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th style="text-align: right;">FY2024A</th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">Share of FY2025A</th>
+<th style="text-align: right;">Growth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Term licences, maintenance and support</td>
+<td style="text-align: right;">57.1</td>
+<td style="text-align: right;">85.4</td>
+<td style="text-align: right;">78.4%</td>
+<td style="text-align: right;">49.7%</td>
+</tr>
+<tr>
+<td>Virtual care (Attend Anywhere)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">5.18</td>
+<td style="text-align: right;">4.8%</td>
+<td style="text-align: right;">n/a</td>
+</tr>
+<tr>
+<td>Perpetual licences</td>
+<td style="text-align: right;">0.498</td>
+<td style="text-align: right;">2.09</td>
+<td style="text-align: right;">1.9%</td>
+<td style="text-align: right;">319%</td>
+</tr>
+<tr>
+<td>Services, hardware and other</td>
+<td style="text-align: right;">11.0</td>
+<td style="text-align: right;">16.2</td>
+<td style="text-align: right;">14.9%</td>
+<td style="text-align: right;">47.4%</td>
+</tr>
+<tr>
+<td><strong>Total revenue</strong></td>
+<td style="text-align: right;"><strong>68.6</strong></td>
+<td style="text-align: right;"><strong>109</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+<td style="text-align: right;"><strong>58.9%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [A3][A3_1][A4_1][A5][A5_1][A6][A6_1][A1][A1_1][C35]. May not sum due to rounding.</em></p>
+</div>
+<p>Products in development are part of the term line, not separate lines. AI Scribe launched on 15 September 2026 into an installed base of about 22,000 practitioners <sup>A70</sup>. Management sizes AI add-ons at about 30–40 of total addressable market <sup>G21</sup>. Neither the filings nor the call give revenue for these products, so they enter only through the organic ARR growth rate.</p><hr>
+<h2>4. Management</h2>
+<p>Dan Matlow has been President and Chief Executive Officer since May 2016 and a director since November 2016, and holds 726,862 shares <sup>A55</sup>. Before Vitalhub he ran Medworxx Solutions, which was sold to Aptean in 2015 <sup>A55</sup>. Directors and executive officers as a group own about 16% of the shares <sup>A56</sup>.</p><p>The record since FY2024 is one of acquisition-led growth funded with equity. Vitalhub raised 34.5 in January 2025 at $10.90 a share and 74.8 in August 2025 at $12.70 <sup>A57</sup>. It added 14.6 of acquired ARR in Q4 2024, 3.87 in Q2 2025, 12.0 in Q3 2025 and 4.48 with Buddy in Q3 2026 <sup>A28_1, A28_2, A28_3, A28_4</sup>. No equity was raised in 2026 <sup>A62</sup>. The company had 129 of cash and short-term investments and no debt at 30 September 2026 <sup>A44, A64</sup>. It did not buy shares under its normal course issuer bid through September, which management linked to keeping room for larger acquisitions <sup>G20</sup>.</p><p>Integration has delivered margin. Quarterly cash opex has held at about 17 since Q4 2025 (17.2, 17.8, 16.8, 17.2) while R&amp;D fell from 9.24 in Q3 2025 to 7.49 in Q3 2026 <sup>C32, A59</sup>. The CFO attributed the Q3 margin rise to lower R&amp;D, Induction and Novari synergies and favourable FX <sup>G17</sup>. The guidance record is thinner. Vitalhub gives no formal guidance. The one forward comfort on record, the 10%–11% organic run rate from the Q2 call, was followed by a 0.816 organic add in Q3, the weakest of the nine quarters we track <sup>G13, A27_8</sup>. We weight management's directional comments, but we do not take them as targets.</p><hr>
+<h2>5. Key Developments</h2>
+<p>The Q3 2026 report on 12 November showed revenue of 31.9, flat against 32.0 a year earlier, and Adjusted EBITDA of 8.62, a 27.0% margin <sup>A20_8, A20_4, A21_8</sup>. Closing ARR was 107.2. Of the 5.66 increase in the quarter, 0.816 was organic, 4.48 was Buddy and 0.366 was foreign exchange <sup>A26_8, A27_8, A28_4, D1</sup>. Services revenue fell to 3.65 from 5.48, which management put down to summer seasonality against a busy prior-year quarter <sup>A25_8, A25_4, G25</sup>. Excluding a 0.592 FX gain inside Adjusted EBITDA, the Q3 margin was 25.2%, down from 26.4% in Q2 on the same basis <sup>C29</sup>.</p><p>On the 13 November call, management said about 7%–8% of ARR sits in SHREWD, the NHS England product affected by the move to the Palantir-based Federated Data Platform (FDP) <sup>G2</sup>. Some suspended accounts have already been taken out of ARR and others have not <sup>G3</sup>. Management pointed to the FDP break clause in February 2027 <sup>G18</sup>. It also said it expects margins to keep rising and to reach the Rule of 40 in 2027 <sup>G5, G6</sup>.</p><p>On 16 November the health minister told MPs that the current FDP contract will continue until March 2029 while the government procures a new version <sup>G26</sup>. The formal procurement starts in the second half of 2027 and takes about 18 months. It is to welcome UK small and medium-sized companies and UK sovereign AI capability as well as international providers <sup>G27</sup>. The government will also work with other providers on new capabilities, starting with maternity systems. The minister said migration away from the platform was "possible in principle" <sup>G28</sup>. For Vitalhub, the break clause that might have reopened the market in early 2027 is gone. The platform that is displacing SHREWD now has more than two more years to bed in. That is the basis for the 2027 roll-off in this version.</p><div class="fig" id="figure-check-4">
+<p><strong>Figure 4 – Recent events and catalysts</strong></p>
+<p>Events since the start of FY2025 that move the forecast, and the next dated catalysts.</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event</th>
+<th>Effect on the forecast</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9 Jan 2025</td>
+<td>Bought deal, 34.5 at $10.90</td>
+<td>Funds 2025 acquisitions; in FY2025 cash</td>
+<td>A57</td>
+</tr>
+<tr>
+<td>18 Jun / 4 Jul 2025</td>
+<td>Induction and Novari close</td>
+<td>Virtual care line starts; 12.0 acquired ARR in Q3 2025</td>
+<td>A58, A28_3</td>
+</tr>
+<tr>
+<td>20 Aug 2025</td>
+<td>Bought deal, 74.8 at $12.70</td>
+<td>In year-0 cash</td>
+<td>A57</td>
+</tr>
+<tr>
+<td>10 Jul 2026</td>
+<td>Buddy Healthcare closes; 12.4 cash, 75,000 shares</td>
+<td>4.48 acquired ARR held flat in the term line</td>
+<td>A45, A46, A28_4</td>
+</tr>
+<tr>
+<td>7 Aug 2026</td>
+<td>Q2 call: 10%–11% organic comfort</td>
+<td>Treated as withdrawn after Q3</td>
+<td>G13</td>
+</tr>
+<tr>
+<td>15 Sep 2026</td>
+<td>AI Scribe launch</td>
+<td>Inside organic ARR growth; no separate line</td>
+<td>A70</td>
+</tr>
+<tr>
+<td>12–13 Nov 2026</td>
+<td>Q3 results and call: organic ARR 0.816; SHREWD 7%–8% of ARR at risk</td>
+<td>SHREWD sized at 7.5–8.6</td>
+<td>A27_8, G2</td>
+</tr>
+<tr>
+<td>16 Nov 2026</td>
+<td>FDP contract extended to March 2029; break clause not used</td>
+<td>Base: 4.0 of SHREWD ARR rolls off in 2027</td>
+<td>G26, D23</td>
+</tr>
+<tr>
+<td>Mar 2027</td>
+<td>Attend Anywhere renewals; FY2026 results</td>
+<td>Virtual care band; first read on SHREWD</td>
+<td>G9</td>
+</tr>
+<tr>
+<td>18 Nov 2026</td>
+<td>ARR bridge trend reviewed (CEO bot product sheet, checked to filings)</td>
+<td>Organic adds forecast in dollars, +10% a year</td>
+<td>D24, C38</td>
+</tr>
+<tr>
+<td>H2 2027</td>
+<td>New FDP procurement opens (about 18 months)</td>
+<td>Upside outside the window; in no case</td>
+<td>G27, S28</td>
+</tr>
+<tr>
+<td>Mar 2029</td>
+<td>Current FDP contract ends</td>
+<td>Outside the window</td>
+<td>G26</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: as listed.</em></p>
+</div>
+<hr>
+<h2>6. Forecast</h2>
+<h3>How the evidence becomes the numbers</h3>
+<p>The base revenue and Adjusted EBITDA are the FactSet totals plus the SHREWD event adjustment. The four lines are our bottom-up build scaled to those totals. The scale factors are 0.983 for Q4 2026, 0.987 for FY2027, 0.971 for FY2028 and 1.023 for FY2029, all within 10% of 1 <sup>C1, C2</sup>. Buddy's acquired ARR is not scaled <sup>S17</sup>.</p><p><strong>The ARR bridge trend.</strong> Vitalhub prints a quarterly ARR bridge: organic additions net of churn, acquired ARR and foreign exchange <sup>G24</sup>. Figure 6 sets it out by year.</p><ul>
+<li><strong>Dollars vs. percentages:</strong> Organic additions were 6.39 in 2023, 6.48 in 2024 and 7.23 in 2025, and 8.12 in the four quarters to Q2 2026 <sup>A75, A77, C38</sup>. Opening ARR more than doubled over the same period, from 36.2 to 96.1, mostly through acquisitions: 17.9 of acquired ARR in 2024, 15.9 in 2025 and 4.48 with Buddy in 2026 <sup>A76, A77, A28_4</sup>. The organic rate therefore fell from 17.7% to 14.5% to 10.2%, and to 7.7% in the twelve months to Q3 2026 <sup>C38, A78</sup>.</li><li><strong>Acquired books:</strong> If the acquired ARR had grown at the legacy rate after close, dollar additions would have risen by about 5 a year. They rose by about 0.8. In aggregate the acquired books (Induction, Novari, Strata, MedCurrent, Buddy and others) add little net organic growth after close, or they add some while the legacy book slows. The filings do not split the two.</li>
+<li><strong>Seasonality:</strong> Q4 is the strongest quarter, averaging 1.84 over 2022–2025, followed by Q1 at 1.57, Q2 at 1.35 and Q3 at 1.28 <sup>C38</sup>. The 0.816 in Q3 2026 is the weakest Q3 since 2022, consistent with the SHREWD suspensions.</li><li><strong>FX:</strong> Foreign exchange added 2.09 to ARR in 2024, 1.99 in 2025 and 1.22 in the first nine months of 2026, positive in nine of the last ten quarters <sup>C38, A75, A78</sup>. We hold it at zero.</li><li><strong>Conversion to revenue:</strong> Term revenue has run at 0.979–0.994 of average ARR in the four quarters since Q4 2025, which supports the 0.985 we use <sup>C39, S1</sup>. The ratio was 1.05–1.08 in 2024, and 1.14 in Q4 2024, when 14.6 of ARR arrived in the quarter. ARR excludes virtual care <sup>A79</sup>, so the step down is not Attend Anywhere leaving the line. The filings do not explain it.</li></ul>
+<p>So we forecast organic additions in dollars, not as a percentage of a base that acquisitions inflate <sup>S29</sup>. Dollar additions grew about 10% a year from 2023 to the four quarters to Q2 2026, the last four before the Q3 SHREWD drag.</p><p>Management commentary does not move that trend either way. On one side are the Novari and Strata pipelines, AI add-ons, "margins will continue to increase" and the Rule of 40 in 2027 <sup>G8, G21, G5</sup>. On the other, the 10%–11% comfort was not repeated <sup>G13</sup>. The base therefore grows additions 10% a year from 8.12, giving 8.94 in FY2027, 9.83 in FY2028 and 10.8 in FY2029 <sup>S3, S4, S5</sup>.</p><p>These figures are 8.2%, 8.7% and 8.8% of opening ARR. Version 2 used 9% and 10%, which meant 9.8–12.6 of additions a year, more than Vitalhub has ever added in dollars. The flat-dollar reading, about 7 a year or 6.5% of the base, is the bear: it would mean no growth in additions at all despite the pipelines management describes. Q4 2026 adds 1.5, below the 1.88–2.61 of the last two fourth quarters because SHREWD suspensions continue <sup>S2</sup>.</p><p><strong>SHREWD roll-off.</strong> We take 4.0 of SHREWD ARR out evenly over calendar 2027, and nothing in 2028 or 2029 <sup>S26</sup>. That is about half of the 7.5–8.6 implied by management's "7%, 8% of our ARR" <sup>G2, C31</sup>.</p><ul>
+<li><strong>For a 2027 loss:</strong> The FDP extension to March 2029 removes the February 2027 exit point <sup>G26</sup>, and some suspended accounts are still counted in ARR <sup>G3</sup>.</li><li><strong>Against losing all of it:</strong> SHREWD is spread "in all different pockets" <sup>G1</sup>, and a new FDP procurement from the second half of 2027 invites UK SMEs and new capability providers <sup>G27, G28</sup>.</li><li><strong>How the loss reaches EBITDA:</strong> Lost revenue saves only the 20% cash cost of sales <sup>S27, G14</sup>.</li></ul>
+<p>Closing ARR is 108.7 at the end of FY2026, 113.6 at the end of FY2027, 123.5 at the end of FY2028 and 134.3 at the end of FY2029 <sup>C28</sup>.</p><p>The Dan Matlow CEO bot, asked on 17 November before the FDP news, put organic ARR growth at low-to-high single digits for Q4 2026 and early 2027 <sup>S19</sup>. That view is simulated and not company disclosure. Net FY2027 ARR growth of 4.5% sits inside it.</p><p>Margins come from a cash cost build. Gross margin is 80% <sup>S10, G15</sup>. Core cash opex is the Q3 2026 run rate of 17.2 a quarter, rising 2% a year <sup>S11, S12</sup>. Variable opex is 30% of revenue before the SHREWD loss above 127.65 <sup>S13, S27</sup>. Buddy savings are 0.5 a year from FY2027 <sup>S14</sup>, and FX is zero <sup>S15</sup>. On base revenue this build gives 36.3 in FY2027E, 37.1 in FY2028E and 45.1 in FY2029E. The base implies cash costs 0.9%, 4.1% and 2.8% lower, inside the 10% tolerance <sup>C15</sup>.</p><div class="fig" id="figure-check-5">
+<p><strong>Figure 5 – Evidence → judgements → impact</strong></p>
+<p>How each main piece of evidence moves the base numbers.</p>
+<table>
+<thead>
+<tr>
+<th>Evidence</th>
+<th>Judgement</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organic adds 6.39 / 6.48 / 7.23 / 8.12 while opening ARR doubled through acquisitions [A75][A77][C38]</td>
+<td>Forecast organic adds in dollars, +10% a year [S29]</td>
+<td>Bottom-up FY2029E revenue 158 (v2 162); bull lower</td>
+</tr>
+<tr>
+<td>FDP extended to March 2029; break clause not used [G26]</td>
+<td>4.0 of SHREWD ARR rolls off evenly in 2027 [S26]</td>
+<td>Base revenue −2.30 / −4.59 / −4.59 vs FactSet [C36]</td>
+</tr>
+<tr>
+<td>SHREWD "in all different pockets"; new FDP procurement from H2 2027 [G1][G27]</td>
+<td>No further SHREWD loss in 2028–29; no procurement revenue [S26][S28]</td>
+<td>Loss capped at about half</td>
+</tr>
+<tr>
+<td>Q2 10%–11% comfort not restated; pipelines and Rule of 40 [G13][G8][G5]</td>
+<td>No acceleration or deceleration of the dollar trend [S29]</td>
+<td>Base = event-adjusted Consensus</td>
+</tr>
+<tr>
+<td>Term revenue 0.979–0.994 of average ARR since Q4 2025 [C39]</td>
+<td>Keep 0.985 [S1]</td>
+<td>Term line conversion unchanged</td>
+</tr>
+<tr>
+<td>Management: 1 of ARR is about a point of Adjusted EBITDA when no cost is added [G14]</td>
+<td>Lost SHREWD revenue saves only cost of sales [S27]</td>
+<td>About 80% fall-through</td>
+</tr>
+<tr>
+<td>Attend Anywhere "theoretically" declining; March renewals [G9]</td>
+<td>−5% a year [S7]</td>
+<td>Virtual care about 8.2 by FY2029E</td>
+</tr>
+<tr>
+<td>Margin to "sustain, if not improve"; Rule of 40 in 2027 [G6][G5]</td>
+<td>Accept the Consensus margin path; band it in the bear [P2]</td>
+<td>FY2029E margin 29.9%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: as tagged.</em></p>
+</div>
+<div class="fig" id="figure-check-6">
+<p><strong>Figure 6 – ARR bridge trend (C$ millions)</strong></p>
+<p>Organic additions rose in dollars while the organic percentage fell, because acquisitions enlarged the base. The twelve-month columns overlap.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">12 months to Q2 2026</th>
+<th style="text-align: right;">12 months to Q3 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opening ARR</td>
+<td style="text-align: right;">36.2</td>
+<td style="text-align: right;">44.6</td>
+<td style="text-align: right;">71.1</td>
+<td style="text-align: right;">79.6</td>
+<td style="text-align: right;">93.7</td>
+</tr>
+<tr>
+<td>Organic net of churn</td>
+<td style="text-align: right;">6.39</td>
+<td style="text-align: right;">6.48</td>
+<td style="text-align: right;">7.23</td>
+<td style="text-align: right;">8.12</td>
+<td style="text-align: right;">7.23</td>
+</tr>
+<tr>
+<td>Organic % of opening ARR</td>
+<td style="text-align: right;">17.7%</td>
+<td style="text-align: right;">14.5%</td>
+<td style="text-align: right;">10.2%</td>
+<td style="text-align: right;">10.2%</td>
+<td style="text-align: right;">7.7%</td>
+</tr>
+<tr>
+<td>Acquired ARR</td>
+<td style="text-align: right;">1.10</td>
+<td style="text-align: right;">17.9</td>
+<td style="text-align: right;">15.9</td>
+<td style="text-align: right;">12.0</td>
+<td style="text-align: right;">4.48</td>
+</tr>
+<tr>
+<td>Foreign exchange</td>
+<td style="text-align: right;">0.94</td>
+<td style="text-align: right;">2.09</td>
+<td style="text-align: right;">1.99</td>
+<td style="text-align: right;">1.82</td>
+<td style="text-align: right;">1.79</td>
+</tr>
+<tr>
+<td>Closing ARR</td>
+<td style="text-align: right;">44.6</td>
+<td style="text-align: right;">71.1</td>
+<td style="text-align: right;">96.1</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">107</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: FY2024 MD&amp;A quarterly bridge for 2023–2024 [A75][A76]; FY2025 MD&amp;A [A77]; Q3 2026 MD&amp;A [A78][A26_8]; Q3 2025 to Q2 2026 quarters [A27_4]–[A27_7]; indexed by the CEO bot's product sheet [D24]; calculations [C38]. 2023 opening ARR rebuilt back from 107.2 through the printed bridge. May not sum due to rounding.</em></p>
+</div>
+<h3>Term licences, maintenance and support</h3>
+<p>This line is 78% of revenue and is driven by ARR. SHREWD sits inside it. Its share of revenue was 83% in FY2024 <sup>A80</sup> and 78% in FY2025, after virtual care became a separate line from Q2 2025 <sup>C35</sup>. It was 81% in Q3 2026 <sup>A66</sup>. Term revenue was 25.8 in Q3 2026, up 9.1% from 23.6, helped by acquired ARR <sup>A22_8, A22_4</sup>.</p><p>The line follows closing ARR (Figure 6) at 0.985 of the average balance <sup>S1, C39</sup>. The 4.0 SHREWD roll-off lowers it by about 2.0 in FY2027E and about 3.9 a year after that, before scaling <sup>S26</sup>. Buddy's 4.48 of acquired ARR is held flat at 4.41 of revenue a year (174/365 of that in FY2026), and its growth after close sits in the organic additions, as the company defines it <sup>S17, G24, C4</sup>. FY2029E grows 14.3% because the Consensus total rises sharply that year. The unscaled build grows 8.7%.</p><div class="fig" id="figure-check-7">
+<p><strong>Term licences, maintenance and support (C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Term licences, maintenance and support</td>
+<td style="text-align: right;">85.4</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">130</td>
+</tr>
+<tr>
+<td>Growth</td>
+<td style="text-align: right;">49.7%</td>
+<td style="text-align: right;">17.5%</td>
+<td style="text-align: right;">7.7%</td>
+<td style="text-align: right;">5.0%</td>
+<td style="text-align: right;">14.3%</td>
+</tr>
+<tr>
+<td>Closing ARR (base)</td>
+<td style="text-align: right;">96.1</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: right;">134</td>
+</tr>
+<tr>
+<td>Organic ARR additions before SHREWD</td>
+<td style="text-align: right;">7.23</td>
+<td style="text-align: right;">6.85</td>
+<td style="text-align: right;">8.94</td>
+<td style="text-align: right;">9.83</td>
+<td style="text-align: right;">10.8</td>
+</tr>
+<tr>
+<td>SHREWD ARR lost in the year</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">4.0</td>
+<td style="text-align: right;">0.0</td>
+<td style="text-align: right;">0.0</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [A3_1][A26_5][A77][C2][C28][S1]–[S5][S17][S26][S29]. FY2026E = nine-month actual 74.3 + Q4 26.1; FY2026E additions = nine-month actual 5.35 + Q4 1.5.</em></p>
+</div>
+<h3>Virtual care (Attend Anywhere)</h3>
+<p>Virtual care ran at 2.28–2.40 a quarter through 2026 <sup>A23_4, A23_5, A23_6</sup>. Q3 was 2.34, down 6% from 2.48 a year earlier <sup>A23_6, A23_2</sup>. Management said a moderate decline is possible but some new deals may offset it, with renewals in March <sup>G9</sup>. We hold Q4 at the Q3 level and take 5% off each year from FY2027 <sup>S24, S7</sup>. FY2026E is 9.32, the first full year, against 5.18 in FY2025, which held about half a year <sup>A4_1</sup>.</p><div class="fig" id="figure-check-8">
+<p><strong>Virtual care (C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Virtual care</td>
+<td style="text-align: right;">5.18</td>
+<td style="text-align: right;">9.32</td>
+<td style="text-align: right;">8.77</td>
+<td style="text-align: right;">8.20</td>
+<td style="text-align: right;">8.21</td>
+</tr>
+<tr>
+<td>Growth</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">79.7%</td>
+<td style="text-align: right;">−5.8%</td>
+<td style="text-align: right;">−6.5%</td>
+<td style="text-align: right;">0.0%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [A4_1][A4_2][S7][S24][C2].</em></p>
+</div>
+<h3>Perpetual licences</h3>
+<p>Perpetual sales are small and uneven: 0.140 in Q3 2026 against 0.996 in Q1 <sup>A24_8, A24_6</sup>. We take 0.5 in Q4 2026 and 2.0 a year after that, close to the FY2025–FY2026 average <sup>S8</sup>.</p><div class="fig" id="figure-check-9">
+<p><strong>Perpetual licences (C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Perpetual licences</td>
+<td style="text-align: right;">2.09</td>
+<td style="text-align: right;">2.44</td>
+<td style="text-align: right;">1.97</td>
+<td style="text-align: right;">1.94</td>
+<td style="text-align: right;">2.05</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [A5_1][A5_2][S8][C2].</em></p>
+</div>
+<h3>Services, hardware and other</h3>
+<p>Services fell to 3.65 in Q3 2026 from 5.48 a year earlier <sup>A25_8, A25_4</sup>. Management said the services backlog has "never been stronger" and expects more milestones in Q4 <sup>G7</sup>. We put Q4 at 4.6, about the Q1 2026 level of 4.58. After that, services run at 16.5% of term revenue, close to the nine-month 2026 ratio of 16.6% <sup>A25_6, S9</sup>. They therefore fall with the SHREWD roll-off.</p><div class="fig" id="figure-check-10">
+<p><strong>Services, hardware and other (C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Services, hardware and other</td>
+<td style="text-align: right;">16.2</td>
+<td style="text-align: right;">16.9</td>
+<td style="text-align: right;">17.8</td>
+<td style="text-align: right;">18.7</td>
+<td style="text-align: right;">21.4</td>
+</tr>
+<tr>
+<td>Growth</td>
+<td style="text-align: right;">47.4%</td>
+<td style="text-align: right;">3.8%</td>
+<td style="text-align: right;">5.8%</td>
+<td style="text-align: right;">5.0%</td>
+<td style="text-align: right;">14.5%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [A6_1][S9][C2].</em></p>
+</div>
+<h3>Base case</h3>
+<p>No future acquisition is in the base. Management hopes to close another deal before year-end and has two or three targets in market <sup>G12</sup>, but none is announced, so none is forecast <sup>C21</sup>. Earn-outs owed on Novari and Buddy are cash items outside Adjusted EBITDA and are not in any line.</p><div class="fig" id="figure-check-11">
+<p><strong>Figure 7 – Base case by line (C$ millions)</strong></p>
+<p>Lines scaled to the event-adjusted Consensus totals; Buddy unscaled inside the term line.</p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Term licences, maintenance and support</td>
+<td style="text-align: right;">85.4</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">130</td>
+</tr>
+<tr>
+<td>Virtual care</td>
+<td style="text-align: right;">5.18</td>
+<td style="text-align: right;">9.32</td>
+<td style="text-align: right;">8.77</td>
+<td style="text-align: right;">8.20</td>
+<td style="text-align: right;">8.21</td>
+</tr>
+<tr>
+<td>Perpetual licences</td>
+<td style="text-align: right;">2.09</td>
+<td style="text-align: right;">2.44</td>
+<td style="text-align: right;">1.97</td>
+<td style="text-align: right;">1.94</td>
+<td style="text-align: right;">2.05</td>
+</tr>
+<tr>
+<td>Services, hardware and other</td>
+<td style="text-align: right;">16.2</td>
+<td style="text-align: right;">16.9</td>
+<td style="text-align: right;">17.8</td>
+<td style="text-align: right;">18.7</td>
+<td style="text-align: right;">21.4</td>
+</tr>
+<tr>
+<td><strong>Revenue</strong></td>
+<td style="text-align: right;"><strong>109</strong></td>
+<td style="text-align: right;"><strong>129</strong></td>
+<td style="text-align: right;"><strong>137</strong></td>
+<td style="text-align: right;"><strong>142</strong></td>
+<td style="text-align: right;"><strong>161</strong></td>
+</tr>
+<tr>
+<td><strong>Adjusted EBITDA</strong></td>
+<td style="text-align: right;"><strong>26.6</strong></td>
+<td style="text-align: right;"><strong>34.0</strong></td>
+<td style="text-align: right;"><strong>37.2</strong></td>
+<td style="text-align: right;"><strong>41.3</strong></td>
+<td style="text-align: right;"><strong>48.3</strong></td>
+</tr>
+<tr>
+<td>EBITDA margin</td>
+<td style="text-align: right;">24.4%</td>
+<td style="text-align: right;">26.4%</td>
+<td style="text-align: right;">27.2%</td>
+<td style="text-align: right;">29.0%</td>
+<td style="text-align: right;">29.9%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [A1_1][A2_1][C2][E1][E2][C36]. May not sum due to rounding.</em></p>
+</div>
+<div class="fig" id="figure-check-12">
+<p><strong>Figure 8 – Cash opex and margin bridge, base (C$ millions)</strong></p>
+<p>The cost build on base revenue, compared with base Adjusted EBITDA. The gap is what the base implies beyond our build.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Q4 2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue (base)</td>
+<td style="text-align: right;">33.4</td>
+<td style="text-align: right;">137</td>
+<td style="text-align: right;">142</td>
+<td style="text-align: right;">161</td>
+</tr>
+<tr>
+<td>Cash cost of sales (20%)</td>
+<td style="text-align: right;">6.69</td>
+<td style="text-align: right;">27.3</td>
+<td style="text-align: right;">28.5</td>
+<td style="text-align: right;">32.3</td>
+</tr>
+<tr>
+<td>Gross profit</td>
+<td style="text-align: right;">26.8</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">129</td>
+</tr>
+<tr>
+<td>Core cash opex</td>
+<td style="text-align: right;">17.2</td>
+<td style="text-align: right;">70.2</td>
+<td style="text-align: right;">71.6</td>
+<td style="text-align: right;">73.0</td>
+</tr>
+<tr>
+<td>Buddy cost saving</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.50</td>
+</tr>
+<tr>
+<td>Variable opex (30% of pre-SHREWD-loss revenue above 127.65)</td>
+<td style="text-align: right;">0.459</td>
+<td style="text-align: right;">3.40</td>
+<td style="text-align: right;">5.80</td>
+<td style="text-align: right;">11.5</td>
+</tr>
+<tr>
+<td>Cost-build Adjusted EBITDA</td>
+<td style="text-align: right;">9.10</td>
+<td style="text-align: right;">36.3</td>
+<td style="text-align: right;">37.1</td>
+<td style="text-align: right;">45.1</td>
+</tr>
+<tr>
+<td>Base Adjusted EBITDA</td>
+<td style="text-align: right;">9.23</td>
+<td style="text-align: right;">37.2</td>
+<td style="text-align: right;">41.3</td>
+<td style="text-align: right;">48.3</td>
+</tr>
+<tr>
+<td>Gap</td>
+<td style="text-align: right;">0.129</td>
+<td style="text-align: right;">0.867</td>
+<td style="text-align: right;">4.27</td>
+<td style="text-align: right;">3.20</td>
+</tr>
+<tr>
+<td>Cash cost gap</td>
+<td style="text-align: right;">−0.5%</td>
+<td style="text-align: right;">−0.9%</td>
+<td style="text-align: right;">−4.1%</td>
+<td style="text-align: right;">−2.8%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [S10]–[S14][S27][C14][C15][C36]. Q4 2026E core opex is one quarter; full years are annualized +2% a year. May not sum due to rounding.</em></p>
+</div>
+<p>The bridge shows where the margin risk sits. In FY2027E the build and the base agree to within 1. In FY2028E and FY2029E the base needs 3–4 more of Adjusted EBITDA than the build. That is equivalent to a variable opex rate of about 8% in FY2028E and 22% in FY2029E, instead of 30%. It is possible if management holds cash opex flat, as it has for four quarters <sup>C32</sup>. It is a judgement on top of the reported cost base, so the bear tests it.</p><h3>Contingent payments</h3>
+<p>Vitalhub receives no royalty or milestone revenue that needs a separate path. It owes earn-outs: up to 4.5 on Novari through July 2027, with 3.8 accrued, and up to 7.25 on Buddy over 30 months from July 2026, with 3.21 accrued <sup>A49, A51</sup>. Changes in their fair value are excluded from Adjusted EBITDA <sup>G23</sup>. The cash amounts are in the forecast file's dated adjustments, probability-weighted at accrued over maximum <sup>S20, S21</sup>.</p><hr>
+<h2>7. Valuation</h2>
+<p>Finagle values the base case at C$9.23 a share against the C$6.73 share price read from Yahoo on 18 November 2026, about 37% above (derived) <sup>C41, D26, C42</sup>. About 53% of that value is terminal value (derived) <sup>C42</sup>. The bull case is C$11.22 and the bear case C$6.83 a share, about 1% above the price; Appendix A has those cases <sup>C41</sup>. The Finagle bot ran this valuation (result v05) from our request plus inputs David May stated on 18 November, including the reported FY2025 Adjusted EBITDA as the year-0 level <sup>D25, P9, P15</sup>.</p><h3>Method</h3>
+<p>Finagle discounts free cash flow to equity at the cost of equity <sup>D25</sup>.</p><ul>
+<li><strong>Explicit years.</strong> It takes the FY2026E–FY2029E revenue and Adjusted EBITDA growth from the forecast file as given, compounding from year 0, FY2025A <sup>C22, C23</sup>.</li><li><strong>Extension.</strong> Finagle extends those four explicit years by six more, FY2030E–FY2035E, to a ten-year horizon. Revenue in those years starts at 8.0% next-period growth and fades toward terminal growth. EBITDA grows from the starting margin, with each extra dollar of revenue earning the 50% incremental margin <sup>S6, S16, C41</sup>.</li><li><strong>Terminal value.</strong> A terminal value is added at the end of FY2035E.</li>
+<li><strong>Rates.</strong> Terminal growth of 3.81% and the 9.31% cost of equity are Finagle's own defaults, derived from the 3.81% risk-free rate David chose. We did not set either <sup>P10, S30</sup>.</li><li><strong>Cash flow.</strong> Free cash flow to equity is positive in every year of every case, so no year needs funding and no year-0 raise applies <sup>C42, P3</sup>.</li></ul>
+<h3>Balance Sheet Adjustments</h3>
+<p>Year-0 cash of 99.79 equals the opening 106.81 plus the present value below. The share count of 63,307,054 equals the opening count, with no new shares <sup>C41</sup>.</p><ul>
+<li><strong>Openings.</strong> These are David's stated figures <sup>P12</sup>:</li><li><strong>Cash:</strong> FY2025 cash and short-term investments of 119.18, less the 12.37 Buddy closing cash.</li>
+<li><strong>Shares:</strong> 63,232,054 at FY2025, plus the 75,000 Buddy consideration shares.</li>
+<li><strong>No double count.</strong> The Buddy closing cash and shares are already in those openings, so they were taken off the schedule and are not added again.</li>
+<li><strong>Outside EBITDA.</strong> These dollars sit outside EBITDA and are not in a later cash-flow year.</li>
+</ul>
+<p>The schedule is the same in all three cases.</p>
+<div class="fig" id="figure-check-13">
+<p><strong>Balance Sheet Adjustments – all cases (C$ millions unless noted)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Amount</th>
+<th>Timing</th>
+<th style="text-align: right;">Probability</th>
+<th style="text-align: right;">Discount</th>
+<th style="text-align: right;">Present value</th>
+<th style="text-align: right;">Shares issued (millions)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contingent consideration paid in 9M 2026</td>
+<td style="text-align: right;">−0.781</td>
+<td>2026-09-30</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.0000</td>
+<td style="text-align: right;">−0.781</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td>Novari earn-out (maximum)</td>
+<td style="text-align: right;">−4.50</td>
+<td>2027-07-04</td>
+<td style="text-align: right;">0.844</td>
+<td style="text-align: right;">0.9459</td>
+<td style="text-align: right;">−3.59</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td>Buddy earn-out (maximum)</td>
+<td style="text-align: right;">−7.25</td>
+<td>2029-01-10</td>
+<td style="text-align: right;">0.442</td>
+<td style="text-align: right;">0.8261</td>
+<td style="text-align: right;">−2.65</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td><strong>Total present value / new shares</strong></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>−7.02</strong></td>
+<td style="text-align: right;"><strong>0.000</strong></td>
+</tr>
+<tr>
+<td>Opening cash / shares</td>
+<td style="text-align: right;"></td>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">106.81</td>
+<td style="text-align: right;">63.307</td>
+</tr>
+<tr>
+<td><strong>Year-0 cash / shares used</strong></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>99.79</strong></td>
+<td style="text-align: right;"><strong>63.307</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: worked schedule in the valuation result [D25][C41]; items from the forecast file [S25][A48][A49][A51][S20][S21]; openings [A40][A41][A45][A46][P12]. Discount at the 9.31% cost of equity from the 18 November 2026 price date. May not sum due to rounding.</em></p>
+</div>
+<p>Figure 9 sets out each valuation input and who set it. David stated the rates, the debt treatment and the year-0 figures. The Forecaster's judgements are the growth paths, the starting and incremental margins and next-period growth. The rest are Finagle's defaults.</p>
+<div class="fig" id="figure-check-14">
+<p><strong>Figure 9 – Valuation inputs, three cases (C$ millions unless noted)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th style="text-align: right;">Bull</th>
+<th style="text-align: right;">Base</th>
+<th style="text-align: right;">Bear</th>
+<th>Set by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue growth FY2026E–FY2029E</td>
+<td style="text-align: right;">18.5 / 8.4 / 6.0 / 14.0%</td>
+<td style="text-align: right;">18.4 / 6.0 / 4.2 / 13.3%</td>
+<td style="text-align: right;">18.3 / 1.9 / 0.2 / 11.3%</td>
+<td>Forecaster [C22][C27]</td>
+</tr>
+<tr>
+<td>EBITDA growth FY2026E–FY2029E</td>
+<td style="text-align: right;">29.1 / 20.3 / 17.1 / 19.1%</td>
+<td style="text-align: right;">28.0 / 9.3 / 11.2 / 16.9%</td>
+<td style="text-align: right;">27.1 / −4.3 / 0.0 / 13.0%</td>
+<td>Forecaster [C23][C27]</td>
+</tr>
+<tr>
+<td>Starting margin, FY2029E</td>
+<td style="text-align: right;">34.0%</td>
+<td style="text-align: right;">29.9%</td>
+<td style="text-align: right;">24.9%</td>
+<td>Forecaster [C24][C27]</td>
+</tr>
+<tr>
+<td>Incremental margin</td>
+<td style="text-align: right;">60%</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">40%</td>
+<td>Forecaster [S16]</td>
+</tr>
+<tr>
+<td>Next-period growth, FY2030E</td>
+<td style="text-align: right;">9.2%</td>
+<td style="text-align: right;">8.0%</td>
+<td style="text-align: right;">5.2%</td>
+<td>Forecaster [S6]</td>
+</tr>
+<tr>
+<td>Year-0 revenue (Yahoo) / EBITDA (reported, before SBC)</td>
+<td style="text-align: right;">109.0 / 26.6</td>
+<td style="text-align: right;">109.0 / 26.6</td>
+<td style="text-align: right;">109.0 / 26.6</td>
+<td>Finagle / David [D26][P15]</td>
+</tr>
+<tr>
+<td>Year-0 D&amp;A for capex</td>
+<td style="text-align: right;">1.27</td>
+<td style="text-align: right;">1.27</td>
+<td style="text-align: right;">1.27</td>
+<td>David [P13]</td>
+</tr>
+<tr>
+<td>Capex path</td>
+<td style="text-align: right;">method 1</td>
+<td style="text-align: right;">method 1</td>
+<td style="text-align: right;">method 1</td>
+<td>Finagle default [C43]</td>
+</tr>
+<tr>
+<td>Risk-free rate</td>
+<td style="text-align: right;">3.81%</td>
+<td style="text-align: right;">3.81%</td>
+<td style="text-align: right;">3.81%</td>
+<td>David [P10]</td>
+</tr>
+<tr>
+<td>Cost of equity</td>
+<td style="text-align: right;">9.31%</td>
+<td style="text-align: right;">9.31%</td>
+<td style="text-align: right;">9.31%</td>
+<td>Finagle, derived [S30]</td>
+</tr>
+<tr>
+<td>Terminal growth</td>
+<td style="text-align: right;">3.81%</td>
+<td style="text-align: right;">3.81%</td>
+<td style="text-align: right;">3.81%</td>
+<td>Finagle, derived [S30]</td>
+</tr>
+<tr>
+<td>Tax rate</td>
+<td style="text-align: right;">26.5%</td>
+<td style="text-align: right;">26.5%</td>
+<td style="text-align: right;">26.5%</td>
+<td>David [P11]</td>
+</tr>
+<tr>
+<td>Debt / policy</td>
+<td style="text-align: right;">0, held</td>
+<td style="text-align: right;">0, held</td>
+<td style="text-align: right;">0, held</td>
+<td>David [P11]</td>
+</tr>
+<tr>
+<td>Cost of debt</td>
+<td style="text-align: right;">2.8%</td>
+<td style="text-align: right;">2.8%</td>
+<td style="text-align: right;">2.8%</td>
+<td>Forecaster proposal [P14]</td>
+</tr>
+<tr>
+<td>Terminal ROIC</td>
+<td style="text-align: right;">15%</td>
+<td style="text-align: right;">15%</td>
+<td style="text-align: right;">15%</td>
+<td>Finagle default [S30]</td>
+</tr>
+<tr>
+<td>Working-capital change / distribution</td>
+<td style="text-align: right;">zero / none</td>
+<td style="text-align: right;">zero / none</td>
+<td style="text-align: right;">zero / none</td>
+<td>Finagle default [S30]</td>
+</tr>
+<tr>
+<td>Price (C$ per share)</td>
+<td style="text-align: right;">6.73</td>
+<td style="text-align: right;">6.73</td>
+<td style="text-align: right;">6.73</td>
+<td>Finagle fetch [D26]</td>
+</tr>
+<tr>
+<td>Year-0 cash after schedule / shares (millions)</td>
+<td style="text-align: right;">99.79 / 63.307</td>
+<td style="text-align: right;">99.79 / 63.307</td>
+<td style="text-align: right;">99.79 / 63.307</td>
+<td>David + schedule [P12][C41]</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: valuation result [D25][C41]; forecast file leaves as tagged. Growth paths and margins in percent.</em></p>
+</div>
+<p>The growth paths and margins are the Forecaster's leaves, set as described in Section 6 and Appendix A. The starting margin is the last explicit year's EBITDA divided by revenue, and Finagle carries the forecast's 29.9% past FY2029E because its year-0 EBITDA is now the reported 26.6 <sup>C44</sup>. The incremental margin is one minus the 20% cash cost of sales minus the 30% variable opex rate. The bull and bear move that rate to 20% and 40% <sup>S16, S13</sup>.</p><p><strong>Run record.</strong></p>
+<ul>
+<li><strong>Prompt inputs</strong>, each tagged [P] and dated 18 November 2026:</li>
+<li><strong>Risk-free rate:</strong> 3.81%, "3.81% use this" <sup>P10</sup>.</li><li><strong>Debt and tax:</strong> debt 0, held, with leases excluded, and a 26.5% tax rate. David's words: "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares." <sup>P11</sup></li><li><strong>Opening cash and shares:</strong> cash 106.81 and 63,307,054 shares. David's words: "cash should be from the 2025 filling adjusted for the cash price of Buddy (+$12.37). shares should be from the 2025 filling (63.23M) adjusted for Buddy (+0.075M). Isn't that logical?" The Buddy cash is applied as an outflow, and the Buddy items were removed from the schedule <sup>P12</sup>.</li><li><strong>Year-0 D&amp;A:</strong> 1.271558, which excludes amortization of acquired intangibles so that the method-1 capex rule runs on depreciation only. David's words: "remove the "amortization of intangible assets" when calculating capex using method 1." <sup>P13</sup></li><li><strong>Year-0 EBITDA:</strong> 26.554099, Vitalhub's reported FY2025 Adjusted EBITDA, with the EBITDA definition set to before stock-based compensation. This replaces Yahoo's 25.898. David's words: "Yes, do the quick fix" <sup>P15, A2_1</sup>.</li><li><strong>Cost of debt:</strong> 2.8%. This was proposed by the Forecaster, and David did not object; it is not his own figure. It has no effect, because debt is zero and forecast-year interest is zero <sup>P14</sup>.</li><li><strong>Defaults filled</strong> (result list): baseline.noa, baseline.nol, debt.start_year, distribution.mode, forecast.dwc.mode, rates.gt, rates.re, rates.roict, year <sup>S30</sup>. Each case also lists the earlier build_baseline defaults for tax, cost of debt and debt policy, which the prompt inputs replaced.</li><li><strong>Sanity flags:</strong> none.</li>
+<li><strong>Validation warnings, in the result's words.</strong> Base: "average EBITDA growth is 16.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero." The bull warning is the same at 21.4%; the bear has none.</li>
+<li><strong>What the warning means for the base case.</strong> The FY2026E growth includes Buddy, which closed in July 2026. Its purchase price is already in the opening cash and the earn-out schedule, so leaving the deal out of Finagle's acquisitions does not drop its cost.</li>
+<li><strong>Result flags.</strong> "rates.rd provenance: Forecaster proposal without an explicit David quote (applied as given; see rd_provenance)" and "year-0 capex remains Yahoo 0.423144 vs method-1 ratio on new D&amp;A (1.271558 / revenue)" <sup>C41</sup>.</li><li><strong>Fetched inputs:</strong> price C$6.73 from Yahoo, dated 18 November 2026 <sup>D26</sup>. The risk-free rate is the prompt figure, from the Bank of Canada <sup>D27</sup>.</li><li><strong>Run details:</strong> Finagle commit 377f177b. Request v05, sha256 ba766900…9b6446. Run at 14:33 ET <sup>D25</sup>.</li></ul>
+<h3>Medium-term organic growth</h3>
+<p>The medium-term organic growth forecast (gsnext) is 8.0% for FY2030E in the base. It is one more year of the same build:</p>
+<ul>
+<li><strong>Term licences:</strong> organic ARR additions grow another 10% to 11.9 <sup>S6, S29</sup>.</li><li><strong>Virtual care:</strong> falls 5%.</li>
+<li><strong>Perpetual licences:</strong> flat.</li>
+<li><strong>Services:</strong> 16.5% of term revenue.</li>
+</ul>
+<p>The three leaves are set this way:</p>
+<ul>
+<li><strong>Starting margin (me):</strong> the FY2029E EBITDA margin.</li>
+<li><strong>Incremental margin (mc):</strong> the contribution margin. It did not move in this update.</li>
+<li><strong>Next-period growth (gsnext):</strong> comes from section 2f of the forecaster method.</li>
+</ul>
+<p>Management's commentary stops before 2030, so no phrase sets the year. The bull grows additions 15% to 14.2, giving 9.2%. The bear keeps them flat at 7.23, giving 5.2% <sup>S6</sup>.</p><div class="fig" id="figure-check-15">
+<p><strong>Figure 10 – Medium-term organic growth, base case (C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th style="text-align: right;">FY2029E</th>
+<th style="text-align: right;">FY2030E</th>
+<th style="text-align: right;">Growth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Term licences, maintenance and support</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">141</td>
+<td style="text-align: right;">8.8%</td>
+</tr>
+<tr>
+<td>Virtual care</td>
+<td style="text-align: right;">8.21</td>
+<td style="text-align: right;">7.80</td>
+<td style="text-align: right;">−5.0%</td>
+</tr>
+<tr>
+<td>Perpetual licences</td>
+<td style="text-align: right;">2.05</td>
+<td style="text-align: right;">2.05</td>
+<td style="text-align: right;">0.0%</td>
+</tr>
+<tr>
+<td>Services, hardware and other</td>
+<td style="text-align: right;">21.4</td>
+<td style="text-align: right;">23.3</td>
+<td style="text-align: right;">8.8%</td>
+</tr>
+<tr>
+<td><strong>Revenue</strong></td>
+<td style="text-align: right;"><strong>161</strong></td>
+<td style="text-align: right;"><strong>174</strong></td>
+<td style="text-align: right;"><strong>8.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [S6][C2]. FY2030E is a Finagle input (next-period growth), not an explicit forecast year. May not sum due to rounding.</em></p>
+</div>
+<div class="fig" id="figure-check-16">
+<p><strong>Figure 11 – Value bridge, three cases (C$ millions unless noted)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Bull</th>
+<th style="text-align: right;">Base</th>
+<th style="text-align: right;">Bear</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Year-0 cash after schedule</td>
+<td style="text-align: right;">99.8</td>
+<td style="text-align: right;">99.8</td>
+<td style="text-align: right;">99.8</td>
+</tr>
+<tr>
+<td>PV of free cash flow to equity, FY2026E–FY2029E (derived)</td>
+<td style="text-align: right;">78.5</td>
+<td style="text-align: right;">71.2</td>
+<td style="text-align: right;">61.3</td>
+</tr>
+<tr>
+<td>PV of free cash flow to equity, FY2030E–FY2035E (derived)</td>
+<td style="text-align: right;">132</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">71.2</td>
+</tr>
+<tr>
+<td>PV of terminal value (derived, residual)</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">309</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr>
+<td><strong>Equity value (derived)</strong></td>
+<td style="text-align: right;"><strong>710</strong></td>
+<td style="text-align: right;"><strong>584</strong></td>
+<td style="text-align: right;"><strong>432</strong></td>
+</tr>
+<tr>
+<td>Shares (millions)</td>
+<td style="text-align: right;">63.307</td>
+<td style="text-align: right;">63.307</td>
+<td style="text-align: right;">63.307</td>
+</tr>
+<tr>
+<td><strong>Value per share (C$)</strong></td>
+<td style="text-align: right;"><strong>11.22</strong></td>
+<td style="text-align: right;"><strong>9.23</strong></td>
+<td style="text-align: right;"><strong>6.83</strong></td>
+</tr>
+<tr>
+<td>Share price (C$)</td>
+<td style="text-align: right;">6.73</td>
+<td style="text-align: right;">6.73</td>
+<td style="text-align: right;">6.73</td>
+</tr>
+<tr>
+<td>Value vs price (derived)</td>
+<td style="text-align: right;">+67%</td>
+<td style="text-align: right;">+37%</td>
+<td style="text-align: right;">+1.4%</td>
+</tr>
+<tr>
+<td>Terminal share of value (derived)</td>
+<td style="text-align: right;">56%</td>
+<td style="text-align: right;">53%</td>
+<td style="text-align: right;">46%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: value per share, shares, cash and the year paths from the valuation result [D25][C41]; present values derived at the 9.31% cost of equity [C42]. May not sum due to rounding.</em></p>
+</div>
+<p>The spread comes from the operating path. The bull adds EBITDA from faster dollar additions and a smaller SHREWD loss, and the bear removes it. Cash and the rates are the same in every case.</p>
+<p>The value per share is the result for the case, not a row of the statement below. Free cash flow to equity is EBITDA less capex, stock comp, cash tax and interest. It equals the yearly change in Finagle's cash balance (derived).</p>
+<div class="fig" id="figure-check-17">
+<p><strong>Figure 12 – Finagle base-case statement, FY2025A–FY2030E (C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+<th style="text-align: right;">FY2030E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">137</td>
+<td style="text-align: right;">142</td>
+<td style="text-align: right;">161</td>
+<td style="text-align: right;">174</td>
+</tr>
+<tr>
+<td>EBITDA</td>
+<td style="text-align: right;">26.6</td>
+<td style="text-align: right;">34.0</td>
+<td style="text-align: right;">37.2</td>
+<td style="text-align: right;">41.3</td>
+<td style="text-align: right;">48.3</td>
+<td style="text-align: right;">54.8</td>
+</tr>
+<tr>
+<td>EBITDA margin</td>
+<td style="text-align: right;">24.4%</td>
+<td style="text-align: right;">26.4%</td>
+<td style="text-align: right;">27.2%</td>
+<td style="text-align: right;">29.0%</td>
+<td style="text-align: right;">29.9%</td>
+<td style="text-align: right;">31.4%</td>
+</tr>
+<tr>
+<td>Stock-based compensation</td>
+<td style="text-align: right;">2.65</td>
+<td style="text-align: right;">3.39</td>
+<td style="text-align: right;">3.71</td>
+<td style="text-align: right;">4.12</td>
+<td style="text-align: right;">4.82</td>
+<td style="text-align: right;">5.46</td>
+</tr>
+<tr>
+<td>D&amp;A (excl. acquired intangibles)</td>
+<td style="text-align: right;">1.27</td>
+<td style="text-align: right;">1.51</td>
+<td style="text-align: right;">1.60</td>
+<td style="text-align: right;">1.66</td>
+<td style="text-align: right;">1.88</td>
+<td style="text-align: right;">2.03</td>
+</tr>
+<tr>
+<td>Capex</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">3.00</td>
+<td style="text-align: right;">3.99</td>
+<td style="text-align: right;">4.73</td>
+<td style="text-align: right;">7.17</td>
+<td style="text-align: right;">8.83</td>
+</tr>
+<tr>
+<td>Cash tax</td>
+<td style="text-align: right;">−0.21</td>
+<td style="text-align: right;">7.71</td>
+<td style="text-align: right;">8.44</td>
+<td style="text-align: right;">9.42</td>
+<td style="text-align: right;">11.0</td>
+<td style="text-align: right;">12.5</td>
+</tr>
+<tr>
+<td>Interest</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr>
+<td>Free cash flow to equity (derived)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">19.9</td>
+<td style="text-align: right;">21.0</td>
+<td style="text-align: right;">23.1</td>
+<td style="text-align: right;">25.3</td>
+<td style="text-align: right;">28.0</td>
+</tr>
+<tr>
+<td>Debt</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr>
+<td>Cash balance</td>
+<td style="text-align: right;">99.8</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">141</td>
+<td style="text-align: right;">164</td>
+<td style="text-align: right;">189</td>
+<td style="text-align: right;">217</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: result paths and notebook replay [D25][C41][C42]. FY2025A cash is after the schedule. Year-0 tax is Yahoo's provision (a small credit). May not sum due to rounding.</em></p>
+</div>
+<div class="fig" id="figure-check-18">
+<p><strong>Figure 12 (continued) – Finagle base-case statement, FY2031E–FY2035E (C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2031E</th>
+<th style="text-align: right;">FY2032E</th>
+<th style="text-align: right;">FY2033E</th>
+<th style="text-align: right;">FY2034E</th>
+<th style="text-align: right;">FY2035E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue</td>
+<td style="text-align: right;">187</td>
+<td style="text-align: right;">199</td>
+<td style="text-align: right;">211</td>
+<td style="text-align: right;">222</td>
+<td style="text-align: right;">232</td>
+</tr>
+<tr>
+<td>EBITDA</td>
+<td style="text-align: right;">61.2</td>
+<td style="text-align: right;">67.3</td>
+<td style="text-align: right;">73.2</td>
+<td style="text-align: right;">78.7</td>
+<td style="text-align: right;">83.7</td>
+</tr>
+<tr>
+<td>EBITDA margin</td>
+<td style="text-align: right;">32.7%</td>
+<td style="text-align: right;">33.8%</td>
+<td style="text-align: right;">34.7%</td>
+<td style="text-align: right;">35.4%</td>
+<td style="text-align: right;">36.1%</td>
+</tr>
+<tr>
+<td>Stock-based compensation</td>
+<td style="text-align: right;">6.10</td>
+<td style="text-align: right;">6.71</td>
+<td style="text-align: right;">7.30</td>
+<td style="text-align: right;">7.85</td>
+<td style="text-align: right;">8.35</td>
+</tr>
+<tr>
+<td>D&amp;A (excl. acquired intangibles)</td>
+<td style="text-align: right;">2.18</td>
+<td style="text-align: right;">2.33</td>
+<td style="text-align: right;">2.46</td>
+<td style="text-align: right;">2.59</td>
+<td style="text-align: right;">2.71</td>
+</tr>
+<tr>
+<td>Capex</td>
+<td style="text-align: right;">10.5</td>
+<td style="text-align: right;">12.1</td>
+<td style="text-align: right;">13.6</td>
+<td style="text-align: right;">15.0</td>
+<td style="text-align: right;">16.3</td>
+</tr>
+<tr>
+<td>Cash tax</td>
+<td style="text-align: right;">14.0</td>
+<td style="text-align: right;">15.4</td>
+<td style="text-align: right;">16.8</td>
+<td style="text-align: right;">18.1</td>
+<td style="text-align: right;">19.3</td>
+</tr>
+<tr>
+<td>Free cash flow to equity (derived)</td>
+<td style="text-align: right;">30.6</td>
+<td style="text-align: right;">33.1</td>
+<td style="text-align: right;">35.5</td>
+<td style="text-align: right;">37.8</td>
+<td style="text-align: right;">39.8</td>
+</tr>
+<tr>
+<td>Cash balance</td>
+<td style="text-align: right;">248</td>
+<td style="text-align: right;">281</td>
+<td style="text-align: right;">316</td>
+<td style="text-align: right;">354</td>
+<td style="text-align: right;">394</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: result paths and notebook replay [D25][C41][C42]. Debt and interest are zero throughout. May not sum due to rounding.</em></p>
+</div>
+<p>Three points about the statement:</p>
+<ul>
+<li><strong>EBITDA matches the forecast.</strong> The explicit-year EBITDA now equals our forecast (FY2026E base 34.000), because Finagle compounds the forecast growth from the stated year-0 Adjusted EBITDA of 26.554 <sup>C44, P15</sup>.</li><li><strong>Stock comp.</strong> Year-0 stock comp is still Yahoo's 2.648. The stock comp to EBITDA ratio that Finagle holds therefore moves to 0.0997, from 0.1022 in v04. Stock comp dollars are unchanged through FY2029E and slightly lower after <sup>C44</sup>.</li><li><strong>Cash build-up.</strong> Cash builds to 394 by FY2035E because distribution is "none". The value counts each year's free cash flow to equity once, so this is not double counted.</li>
+</ul>
+<div class="fig" id="figure-check-19">
+<p><strong>Figure 13 – Capex path by case (C$ millions unless noted)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2025A</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+<th style="text-align: right;">FY2035E</th>
+<th style="text-align: right;">FY2035E capex / D&amp;A</th>
+<th style="text-align: right;">FY2035E capex / EBITDA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bull</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">3.24</td>
+<td style="text-align: right;">4.75</td>
+<td style="text-align: right;">5.92</td>
+<td style="text-align: right;">8.82</td>
+<td style="text-align: right;">20.5</td>
+<td style="text-align: right;">6.9x</td>
+<td style="text-align: right;">19.0%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">3.00</td>
+<td style="text-align: right;">3.99</td>
+<td style="text-align: right;">4.73</td>
+<td style="text-align: right;">7.17</td>
+<td style="text-align: right;">16.3</td>
+<td style="text-align: right;">6.0x</td>
+<td style="text-align: right;">19.4%</td>
+</tr>
+<tr>
+<td>Bear</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">2.97</td>
+<td style="text-align: right;">3.28</td>
+<td style="text-align: right;">3.31</td>
+<td style="text-align: right;">5.20</td>
+<td style="text-align: right;">11.0</td>
+<td style="text-align: right;">4.9x</td>
+<td style="text-align: right;">20.1%</td>
+</tr>
+<tr>
+<td>Reported FY2025A capex / EBITDA</td>
+<td style="text-align: right;">1.6%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: result capex and D&amp;A paths [D25][C43]; FY2025 purchase of property and equipment [A82]; ratios derived. Capex/D&amp;A in multiples, capex/EBITDA in percent.</em></p>
+</div>
+<h3>Caveats</h3>
+<ul>
+<li><strong>Capex is the largest judgement inside this value.</strong> Vitalhub spent 0.42 on property and equipment in FY2025, about 1.6% of EBITDA <sup>A82, C43</sup>.</li><li>Finagle's method-1 rule ends at terminal capex of 16.3 in the base, about 6x terminal D&amp;A of 2.71, and 19%–20% of EBITDA by FY2035E in every case.</li>
+<li>The rule sets terminal capex as depreciation plus growth reinvestment at a 15% terminal return on invested capital. With 3.81% growth and a 26.5% tax rate, about 14.1 of the 16.3 is growth capex.</li>
+<li>For a software company that grows through R&amp;D, which is expensed inside EBITDA, and through acquisitions, which this value does not model, that reinvestment counts the cost of growth a second time. It probably understates value.</li>
+<li>David's year-0 D&amp;A input already removed the larger distortion of v02, a rule anchored on acquired-intangible amortization <sup>P13</sup>. The growth-capex term remains.</li><li>We did not resize it. A stated capex path would need a year-by-year list from David.</li>
+<li><strong>Terminal value.</strong> About 53% of the base value (46%–56% across cases) is terminal value at 3.81% growth (derived) <sup>C42</sup>.</li><li><strong>Stock comp and working capital.</strong> Stock comp is deducted at about 10% of EBITDA throughout. Working capital is held flat.</li>
+<li><strong>What is not in the value:</strong></li>
+<li>acquisitions beyond Buddy, although management is in market <sup>G12</sup>;</li><li>the funding of any such deal;</li>
+<li>any SHREWD loss beyond the case assumptions;</li>
+<li>FX.</li>
+<li><strong>Earn-outs.</strong> These are weighted at accrued over maximum. The maximum Buddy earn-out would cost a further 4.04 undiscounted (derived) <sup>S20</sup>.</li><li><strong>Price date.</strong> The C$6.73 price is the Yahoo price dated 18 November 2026 <sup>D26</sup>.</li><li><strong>No rating.</strong> This report draws no rating or price target.</li>
+</ul>
+<hr>
+<h2>8. Risks</h2>
+<ul>
+<li><strong>NHS SHREWD.</strong> About 7.5–8.6 of ARR depends on NHS England decisions around the FDP, which now runs to March 2029 <sup>C31, G26</sup>. The base loses 4.0 in 2027 and the bear loses all of it. A faster switch by trusts, or a 2028 tail the evidence does not yet show, would push results toward the bear.</li><li><strong>UK concentration and FX.</strong> 55% of FY2025 revenue was in the United Kingdom <sup>A53</sup>. Revenue is reported in C$ but earned largely in GBP and AUD. FX gains and losses sit inside Adjusted EBITDA, and the Q3 2026 gain of 0.592 lifted the margin by 1.9 points <sup>G23, C29</sup>. We found no hedging programme in the filings reviewed.</li><li><strong>Margin path.</strong> The base margins of 29.0%–29.9% in FY2028–29 exceed anything reported. They need flat costs on rising revenue (Figure 8).</li>
+<li><strong>Organic additions.</strong> The base assumes dollar additions keep growing about 10% a year. The twelve months to Q3 2026 printed 7.23, the same as FY2025, with the SHREWD drag included <sup>A78, C38</sup>. If additions stay flat once SHREWD is out of the numbers, the outcome moves toward the bear.</li><li><strong>Attend Anywhere renewals</strong> in March each year <sup>G9</sup>.</li><li><strong>Acquisitions.</strong> Management is in market for further deals <sup>G12</sup>. A deal changes the revenue path, and an equity-funded one changes the share count. Neither is forecast.</li><li><strong>Consensus quality and timing.</strong> The FactSet figures are whole numbers with no analyst count, and they probably predate the FDP news <sup>D17</sup>. When analysts update, the base should move back toward their numbers, not ours.</li></ul>
+<hr>
+<h2>Appendix A – Bull and bear cases</h2>
+<p>The three cases differ in three levers: the SHREWD roll-off together with organic ARR additions in dollars, the cost build, and Attend Anywhere <sup>S18</sup>. Each scenario total is the base plus the difference between the scenario's bottom-up build and the base build. The cases therefore differ only by those levers, and they inherit the shape of the Consensus path. The unscaled bottom-up totals are shown as a sensitivity <sup>C33</sup>.</p><p><strong>Why the bands are where they are.</strong></p>
+<ul>
+<li><strong>Bear: flat additions and all SHREWD lost.</strong> Organic additions stay at 7.23 a year, the FY2025 printed figure <sup>A77</sup>. That is the flat-dollar reading of the ARR bridge, and it puts organic growth at about 6.5%–6.7% of opening ARR. On top of that, all 8.0 of SHREWD ARR rolls off evenly in 2027 as trusts move onto the extended FDP <sup>S22, G26</sup>. A loss before 2027 is possible, but the March renewal cycle and management's "another quarter or so" point to 2027.</li><li><strong>Bull: faster additions and a limited SHREWD loss.</strong> Additions grow 15% a year, from 9.34 in FY2027 to 12.4 in FY2029. That is about the pace from 2024 to the four quarters to Q1 2026 (6.48 to 8.18), and it requires the Strata pipeline and AI add-ons to convert <sup>G8, G21</sup>. Only 1.5 of SHREWD rolls off: the accounts already suspended but still counted <sup>G3</sup>.</li><li><strong>No procurement win in any case.</strong> A role in the new FDP procurement would earn revenue mostly after FY2029 <sup>S28, G27</sup>.</li><li><strong>Cost band.</strong> The band follows management's rule that 1 of ARR is about a point of Adjusted EBITDA when no cost is added <sup>G14</sup>. The bull charges 20% of each new dollar to opex and doubles the Buddy savings to 1.0. The bear charges 40% and gets no Buddy saving. Lost SHREWD revenue saves only cost of sales in every case <sup>S27</sup>.</li><li><strong>Attend Anywhere.</strong> Flat in the bull and down 15% a year in the bear <sup>S7</sup>.</li><li><strong>Bear margin.</strong> The bear's FY2029 margin is 24.9%, about the FY2025 level, and it bands the above-history base margin <sup>P2</sup>. On its own unscaled build the bear margin is about 22%.</li><li><strong>Why the v3 bear sits above the v2 bear in FY2028–29.</strong> The base stays on Consensus while our base build came down, so the bear-minus-base lever gap narrowed. On unscaled builds the bear is almost unchanged from version 2.</li>
+<li><strong>Variables held fixed across cases.</strong> Gross margin 80%, core opex inflation 2%, term/ARR 0.985 and services at 16.5% of term. Their bands (78%–82%, 1%–3%, 0.975–0.995, 15%–19%) each move FY2029 EBITDA by less than the two main levers.</li>
+</ul>
+<div class="fig" id="figure-check-20">
+<p><strong>Figure 14 – Headline scenarios (C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue – bull</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">148</td>
+<td style="text-align: right;">169</td>
+</tr>
+<tr>
+<td>Revenue – base</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">137</td>
+<td style="text-align: right;">142</td>
+<td style="text-align: right;">161</td>
+</tr>
+<tr>
+<td>Revenue – bear</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">131</td>
+<td style="text-align: right;">132</td>
+<td style="text-align: right;">146</td>
+</tr>
+<tr>
+<td>Adj. EBITDA – bull</td>
+<td style="text-align: right;">34.3</td>
+<td style="text-align: right;">41.2</td>
+<td style="text-align: right;">48.3</td>
+<td style="text-align: right;">57.5</td>
+</tr>
+<tr>
+<td>Adj. EBITDA – base</td>
+<td style="text-align: right;">34.0</td>
+<td style="text-align: right;">37.2</td>
+<td style="text-align: right;">41.3</td>
+<td style="text-align: right;">48.3</td>
+</tr>
+<tr>
+<td>Adj. EBITDA – bear</td>
+<td style="text-align: right;">33.7</td>
+<td style="text-align: right;">32.3</td>
+<td style="text-align: right;">32.3</td>
+<td style="text-align: right;">36.5</td>
+</tr>
+<tr>
+<td>Margin – bull</td>
+<td style="text-align: right;">26.6%</td>
+<td style="text-align: right;">29.5%</td>
+<td style="text-align: right;">32.6%</td>
+<td style="text-align: right;">34.0%</td>
+</tr>
+<tr>
+<td>Margin – base</td>
+<td style="text-align: right;">26.4%</td>
+<td style="text-align: right;">27.2%</td>
+<td style="text-align: right;">29.0%</td>
+<td style="text-align: right;">29.9%</td>
+</tr>
+<tr>
+<td>Margin – bear</td>
+<td style="text-align: right;">26.2%</td>
+<td style="text-align: right;">24.6%</td>
+<td style="text-align: right;">24.6%</td>
+<td style="text-align: right;">24.9%</td>
+</tr>
+<tr>
+<td>Organic adds – bull / base / bear</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">9.34 / 8.94 / 7.23</td>
+<td style="text-align: right;">10.7 / 9.83 / 7.23</td>
+<td style="text-align: right;">12.4 / 10.8 / 7.23</td>
+</tr>
+<tr>
+<td>SHREWD ARR lost in 2027 – bull / base / bear</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">1.5 / 4.0 / 8.0</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>Closing ARR – bull / base / bear</td>
+<td style="text-align: right;">110 / 109 / 108</td>
+<td style="text-align: right;">118 / 114 / 107</td>
+<td style="text-align: right;">128 / 123 / 114</td>
+<td style="text-align: right;">141 / 134 / 121</td>
+</tr>
+<tr>
+<td>Change from v2, revenue – bull / base / bear</td>
+<td style="text-align: right;">0 / 0 / 0</td>
+<td style="text-align: right;">−1.07 / −0.62 / −0.31</td>
+<td style="text-align: right;">−2.40 / −1.08 / +0.93</td>
+<td style="text-align: right;">−2.72 / −0.73 / +3.27</td>
+</tr>
+<tr>
+<td>Change from v2, EBITDA – bull / base / bear</td>
+<td style="text-align: right;">0 / 0 / 0</td>
+<td style="text-align: right;">−0.63 / −0.31 / −0.14</td>
+<td style="text-align: right;">−1.52 / −0.54 / +0.45</td>
+<td style="text-align: right;">−1.94 / −0.37 / +1.62</td>
+</tr>
+<tr>
+<td>Sensitivity: unscaled bottom-up revenue, bull / bear</td>
+<td style="text-align: right;">130 / 129</td>
+<td style="text-align: right;">142 / 133</td>
+<td style="text-align: right;">152 / 136</td>
+<td style="text-align: right;">166 / 143</td>
+</tr>
+<tr>
+<td>Sensitivity: unscaled bottom-up EBITDA, bull / bear</td>
+<td style="text-align: right;">34.4 / 33.9</td>
+<td style="text-align: right;">41.2 / 32.3</td>
+<td style="text-align: right;">46.1 / 30.1</td>
+<td style="text-align: right;">52.6 / 31.5</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: scenarios in <code>forecast.json</code> [S18][S22][S26][S29][C28][C33][C40]. May not sum due to rounding.</em></p>
+</div>
+<div class="fig" id="figure-check-21">
+<p><strong>Figure 15 – Key assumptions and bands</strong></p>
+<table>
+<thead>
+<tr>
+<th>Driver</th>
+<th>Bear</th>
+<th>Base</th>
+<th>Bull</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organic ARR adds before SHREWD, FY27 / FY28 / FY29</td>
+<td>7.23 flat</td>
+<td>8.94 / 9.83 / 10.8</td>
+<td>9.34 / 10.7 / 12.4</td>
+<td>Dollar adds 6.39 → 8.12, about +10% a year [S29][C38]</td>
+</tr>
+<tr>
+<td>Growth in dollar adds a year</td>
+<td>0%</td>
+<td>10%</td>
+<td>15%</td>
+<td>2023–2026 trend; 2024–Q1 2026 pace [S29]</td>
+</tr>
+<tr>
+<td>SHREWD ARR lost, evenly over 2027</td>
+<td>8.0 (all)</td>
+<td>4.0 (about half)</td>
+<td>1.5</td>
+<td>7%–8% of ARR; FDP to March 2029 [S26][S22][G26]</td>
+</tr>
+<tr>
+<td>SHREWD ARR lost in 2028–29</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>No evidence of a later tail [S26]</td>
+</tr>
+<tr>
+<td>FDP procurement revenue</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>Award around 2029 at the earliest [S28][G27]</td>
+</tr>
+<tr>
+<td>Q4 2026 organic ARR add</td>
+<td>0.5</td>
+<td>1.5</td>
+<td>2.5</td>
+<td>Q3 0.816; Q4 average 1.84 [S2][C38]</td>
+</tr>
+<tr>
+<td>Fall-through of lost SHREWD revenue</td>
+<td>80%</td>
+<td>80%</td>
+<td>80%</td>
+<td>Saves only cost of sales [S27][G14]</td>
+</tr>
+<tr>
+<td>Virtual care growth a year</td>
+<td>−15%</td>
+<td>−5%</td>
+<td>0%</td>
+<td>Q3 −6% YoY; March renewals [S7]</td>
+</tr>
+<tr>
+<td>Variable opex on pre-loss revenue above 127.65</td>
+<td>40%</td>
+<td>30%</td>
+<td>20%</td>
+<td>1 of ARR ≈ 1 point of margin [S13][G14]</td>
+</tr>
+<tr>
+<td>Buddy cost saving a year</td>
+<td>0</td>
+<td>0.5</td>
+<td>1.0</td>
+<td>Breakeven at close; 6–12 months [S14]</td>
+</tr>
+<tr>
+<td>Contribution margin mc</td>
+<td>0.40</td>
+<td>0.50</td>
+<td>0.60</td>
+<td>1 − 20% COGS − variable opex [S16]</td>
+</tr>
+<tr>
+<td>Next-year growth (gsnext)</td>
+<td>5.2%</td>
+<td>8.0%</td>
+<td>9.2%</td>
+<td>One more year of the build [S6]</td>
+</tr>
+<tr>
+<td>Held fixed: GM 80%; inflation 2%; term/ARR 0.985; services 16.5% of term</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Bands 78–82%, 1–3%, 0.975–0.995, 15–19% [S10][S12][S1][S9]</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: as tagged; <code>drivers.csv</code>.</em></p>
+</div>
+<div class="fig" id="figure-check-22">
+<p><strong>Figure 16 – Bull and bear line builds (C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Case</th>
+<th style="text-align: right;">FY2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Term licences, maintenance and support</td>
+<td>Bull</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: right;">118</td>
+<td style="text-align: right;">135</td>
+</tr>
+<tr>
+<td></td>
+<td>Bear</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: right;">119</td>
+</tr>
+<tr>
+<td>Virtual care</td>
+<td>Bull</td>
+<td style="text-align: right;">9.32</td>
+<td style="text-align: right;">9.24</td>
+<td style="text-align: right;">9.12</td>
+<td style="text-align: right;">9.54</td>
+</tr>
+<tr>
+<td></td>
+<td>Bear</td>
+<td style="text-align: right;">9.32</td>
+<td style="text-align: right;">7.84</td>
+<td style="text-align: right;">6.52</td>
+<td style="text-align: right;">5.93</td>
+</tr>
+<tr>
+<td>Perpetual licences</td>
+<td>Bull</td>
+<td style="text-align: right;">2.44</td>
+<td style="text-align: right;">1.97</td>
+<td style="text-align: right;">1.94</td>
+<td style="text-align: right;">2.05</td>
+</tr>
+<tr>
+<td></td>
+<td>Bear</td>
+<td style="text-align: right;">2.44</td>
+<td style="text-align: right;">1.97</td>
+<td style="text-align: right;">1.94</td>
+<td style="text-align: right;">2.05</td>
+</tr>
+<tr>
+<td>Services, hardware and other</td>
+<td>Bull</td>
+<td style="text-align: right;">16.9</td>
+<td style="text-align: right;">18.2</td>
+<td style="text-align: right;">19.4</td>
+<td style="text-align: right;">22.3</td>
+</tr>
+<tr>
+<td></td>
+<td>Bear</td>
+<td style="text-align: right;">16.9</td>
+<td style="text-align: right;">17.2</td>
+<td style="text-align: right;">17.4</td>
+<td style="text-align: right;">19.6</td>
+</tr>
+<tr>
+<td><strong>Revenue</strong></td>
+<td>Bull</td>
+<td style="text-align: right;"><strong>129</strong></td>
+<td style="text-align: right;"><strong>140</strong></td>
+<td style="text-align: right;"><strong>148</strong></td>
+<td style="text-align: right;"><strong>169</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>Bear</td>
+<td style="text-align: right;"><strong>129</strong></td>
+<td style="text-align: right;"><strong>131</strong></td>
+<td style="text-align: right;"><strong>132</strong></td>
+<td style="text-align: right;"><strong>146</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: scenario lines in <code>forecast.json</code> [S18][C25]. May not sum due to rounding.</em></p>
+</div>
+<div class="fig" id="figure-check-23">
+<p><strong>Figure 17 – Cash opex bridge, bull (bottom-up, C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Q4 2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue (bull bottom-up)</td>
+<td style="text-align: right;">34.1</td>
+<td style="text-align: right;">142</td>
+<td style="text-align: right;">152</td>
+<td style="text-align: right;">166</td>
+</tr>
+<tr>
+<td>Cash cost of sales (20%)</td>
+<td style="text-align: right;">6.83</td>
+<td style="text-align: right;">28.3</td>
+<td style="text-align: right;">30.5</td>
+<td style="text-align: right;">33.1</td>
+</tr>
+<tr>
+<td>Core cash opex</td>
+<td style="text-align: right;">17.2</td>
+<td style="text-align: right;">70.2</td>
+<td style="text-align: right;">71.6</td>
+<td style="text-align: right;">73.0</td>
+</tr>
+<tr>
+<td>Buddy cost saving</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+<tr>
+<td>Variable opex (20% of pre-loss revenue above 127.65)</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: right;">2.99</td>
+<td style="text-align: right;">5.29</td>
+<td style="text-align: right;">7.94</td>
+</tr>
+<tr>
+<td>Adjusted EBITDA (bottom-up)</td>
+<td style="text-align: right;">9.67</td>
+<td style="text-align: right;">41.2</td>
+<td style="text-align: right;">46.1</td>
+<td style="text-align: right;">52.6</td>
+</tr>
+<tr>
+<td>Margin</td>
+<td style="text-align: right;">28.3%</td>
+<td style="text-align: right;">29.1%</td>
+<td style="text-align: right;">30.2%</td>
+<td style="text-align: right;">31.7%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [S13][S14][S16][S18][S27][C33]. Headline bull EBITDA in Figure 14 adds the base Consensus-minus-build gap. May not sum due to rounding.</em></p>
+</div>
+<div class="fig" id="figure-check-24">
+<p><strong>Figure 18 – Cash opex bridge, bear (bottom-up, C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Q4 2026E</th>
+<th style="text-align: right;">FY2027E</th>
+<th style="text-align: right;">FY2028E</th>
+<th style="text-align: right;">FY2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue (bear bottom-up)</td>
+<td style="text-align: right;">33.9</td>
+<td style="text-align: right;">133</td>
+<td style="text-align: right;">136</td>
+<td style="text-align: right;">143</td>
+</tr>
+<tr>
+<td>Cash cost of sales (20%)</td>
+<td style="text-align: right;">6.78</td>
+<td style="text-align: right;">26.6</td>
+<td style="text-align: right;">27.1</td>
+<td style="text-align: right;">28.6</td>
+</tr>
+<tr>
+<td>Core cash opex</td>
+<td style="text-align: right;">17.2</td>
+<td style="text-align: right;">70.2</td>
+<td style="text-align: right;">71.6</td>
+<td style="text-align: right;">73.0</td>
+</tr>
+<tr>
+<td>Buddy cost saving</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr>
+<td>Variable opex (40% of pre-loss revenue above 127.65)</td>
+<td style="text-align: right;">0.79</td>
+<td style="text-align: right;">4.01</td>
+<td style="text-align: right;">6.85</td>
+<td style="text-align: right;">9.77</td>
+</tr>
+<tr>
+<td>Adjusted EBITDA (bottom-up)</td>
+<td style="text-align: right;">9.13</td>
+<td style="text-align: right;">32.3</td>
+<td style="text-align: right;">30.1</td>
+<td style="text-align: right;">31.5</td>
+</tr>
+<tr>
+<td>Margin</td>
+<td style="text-align: right;">26.9%</td>
+<td style="text-align: right;">24.3%</td>
+<td style="text-align: right;">22.2%</td>
+<td style="text-align: right;">22.1%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: [S13][S14][S16][S22][S27][C33]. May not sum due to rounding.</em></p>
+</div>
+<hr>
+<h2>Appendix B – Numbered sources</h2>
+<p>Tags in the text resolve here; the full list, including every quarterly figure, is in <code>forecast.md</code> and <code>forecast.json</code>. Page numbers are PDF pages of the original SEDAR filing (via OTC Markets).</p>
+<p><strong>Documents</strong></p>
+<ul>
+<li><strong>D1</strong> Vitalhub Corp., Interim MD&amp;A for the three and nine months ended September 30, 2026, filed 2026-11-12 (SEDAR, PDF via OTC Markets; PDF page numbers) (https://www.otcmarkets.com/filing/607877/content)</li>
+<li><strong>D2</strong> Vitalhub Corp., Interim condensed consolidated financial statements, three and nine months ended September 30, 2026, filed 2026-11-12 (PDF page numbers) (https://www.otcmarkets.com/filing/607876/content)</li>
+<li><strong>D3</strong> Vitalhub Corp., Annual MD&amp;A for the year ended December 31, 2025, filed 2026-03-18 (PDF page numbers) (https://www.otcmarkets.com/filing/538307/content)</li>
+<li><strong>D4</strong> Vitalhub Corp., Audited consolidated financial statements for the year ended December 31, 2025, filed 2026-03-18 (PDF page numbers) (https://www.otcmarkets.com/filing/538304/content)</li>
+<li><strong>D5</strong> Vitalhub Corp., Annual MD&amp;A for the year ended December 31, 2024, filed 2025-03-27 (PDF page numbers) (https://www.otcmarkets.com/filing/449868/content)</li>
+<li><strong>D6</strong> Vitalhub Corp., Interim MD&amp;A, three and nine months ended September 30, 2025, filed 2025-11-06 (PDF page numbers) (https://www.otcmarkets.com/filing/505549/content)</li>
+<li><strong>D7</strong> Vitalhub Corp., Interim MD&amp;A, three and six months ended June 30, 2026, filed 2026-08-06 (PDF page numbers) (https://www.otcmarkets.com/filing/583610/content)</li>
+<li><strong>D8</strong> Vitalhub Corp., Interim MD&amp;A, three months ended March 31, 2026, filed 2026-05-07 (PDF page numbers) (https://www.otcmarkets.com/filing/560702/content)</li>
+<li><strong>D11</strong> Vitalhub Corp., Interim MD&amp;A, three and nine months ended September 30, 2024, filed 2024-11-13 (PDF page numbers) (https://www.otcmarkets.com/filing/424935/content)</li>
+<li><strong>D12</strong> Seeking Alpha, "Vitalhub Corp. (VHI:CA) Q3 2026 Earnings Call Transcript", call held 2026-11-13 (HTML; no page numbers; text read from the ceochat mirror companies/vhi/sources/calls/seeking-alpha/2026-Q3.md at commit 8f8b44f; Seeking Alpha link unverified) (https://seekingalpha.com/article/4967874-vitalhub-corp-vhi-ca-q3-2026-earnings-call-transcript)</li>
+<li><strong>D13</strong> Seeking Alpha, "Vitalhub Corp. (VHI:CA) Q2 2026 Earnings Call Transcript", call held 2026-08-07 (HTML; no page numbers; text read from the ceochat mirror 2026-Q2.md; link unverified) (https://seekingalpha.com/article/4933144-vitalhub-corp-vhi-ca-q2-2026-earnings-call-transcript)</li>
+<li><strong>D15</strong> Vitalhub Corp., news release "VitalHub Reports Third Quarter 2026 Results", 2026-11-12 (PDF) (https://www.otcmarkets.com/filing/607875/content)</li>
+<li><strong>D16</strong> Vitalhub Corp., Annual Information Form for the year ended December 31, 2025, filed 2026-03-18 (PDF page numbers) (https://www.otcmarkets.com/filing/538308/content)</li>
+<li><strong>D17</strong> Markets Insider, "Vitalhub Estimates in CAD" (source: FactSet), pulled 2026-11-17; the Q3 2026 column shows as reported, so the pull is post-release (HTML; no page numbers) (https://markets.businessinsider.com/stocks/vhibf-stock)</li>
+<li><strong>D18</strong> StockAnalysis, "Vitalhub (TSX:VHI) Stock Forecast" (S&amp;P Global Market Intelligence), last updated 2026-11-17 (HTML) (https://stockanalysis.com/quote/tsx/VHI/forecast/)</li>
+<li><strong>D19</strong> Vitalhub Corp., news release "VitalHub Announces Expansion of AI Capabilities with Launch of AI Scribe", 2026-09-15 (PDF) (https://www.otcmarkets.com/filing/593890/content)</li>
+<li><strong>D22</strong> Dan Matlow CEO bot (David May's CEO-simulation bot for Vitalhub), answers relayed 17 Nov 2026; simulated view built from public material, not company disclosure (link unverified) (https://github.com/mtlr05/ceochat/tree/main/companies/vhi)</li>
+<li><strong>D23</strong> The Register (Lindsay Clark), "MPs ask what the break clause was for as Palantir wins two more years in the NHS", published 17 Nov 2026 10:15 UTC (HTML; no page numbers; fetched 17 Nov 2026) (https://www.theregister.com/public-sector/2026/11/17/mps-ask-what-the-break-clause-was-for-as-palantir-wins-two-more-years-in-the-nhs/5310348)</li>
+<li><strong>D24</strong> Dan Matlow CEO bot product sheet "Term licences, maintenance and support" (ceochat companies/vhi/sources/products/term-licences-maintenance-and-support.md at commit 25246c9, read 18 Nov 2026): TLMS revenue 2019 Q1-2026 Q3 and the ARR bridge by quarter, each row citing the printed SEDAR filing (OTC Markets URL). Used as an index; figures cited here were checked in the filings D1, D3, D5 (link unverified) (https://github.com/mtlr05/ceochat/blob/main/companies/vhi/sources/products/term-licences-maintenance-and-support.md)</li>
+<li><strong>D25</strong> Finagle valuation result v05 for VHI.TO (finagle-run/valuation_result_v05.json; request valuation_request_v05.json, sha256 ba766900bf9dd16f1178d9a00f12325b518624426d9b84fca32e4a52509b6446), run by the Finagle bot on 18 Nov 2026 14:33 ET with mtlr05/finagle at commit 377f177b4013e713fe7c4603962e5f883a67e298; notebooks notebook_base/bull/bear_v05.py in the same folder (https://github.com/mtlr05/finagle)</li>
+<li><strong>D26</strong> Yahoo Finance quote for VHI.TO as fetched by Finagle (results v04/v05, price_date 2026-11-18, v04 and v05): C$6.73, Yahoo previous close (HTML/API) (https://finance.yahoo.com/quote/VHI.TO/)</li>
+<li><strong>D27</strong> Bank of Canada Valet, BD.CDN.10YR.DQ.YLD, Government of Canada 10-year benchmark bond yield: 3.81% on 16 Nov 2026 (JSON, read 18 Nov 2026) (https://www.bankofcanada.ca/valet/observations/BD.CDN.10YR.DQ.YLD/json?recent=5)</li>
+</ul>
+<p><strong>Actuals</strong></p>
+<ul>
+<li><strong>A1</strong> Revenue FY2024: C$68,594,310. (D5; p.5)</li>
+<li><strong>A1_1</strong> Revenue FY2025: C$108,966,918. (D3; p.5)</li>
+<li><strong>A1_2</strong> Revenue nine months to 30 Sep 2026: C$95,557,489. (D1; p.5)</li>
+<li><strong>A2</strong> Adjusted EBITDA FY2024: C$17,840,272. (D5; p.5)</li>
+<li><strong>A2_1</strong> Adjusted EBITDA FY2025: C$26,554,099. (D3; p.5)</li>
+<li><strong>A2_2</strong> Adjusted EBITDA nine months to 30 Sep 2026: C$24,772,636. (D1; p.5)</li>
+<li><strong>A3</strong> Term licences, maintenance and support, FY2024: C$57,070,350 (reported). (D5; p.6)</li>
+<li><strong>A3_1</strong> Term licences, maintenance and support, FY2025: C$85,442,864 (reported). (D3; p.6)</li>
+<li><strong>A4</strong> No virtual care revenue before the Induction acquisition (June 2025); FY2025 MD&amp;A shows prior-year virtual care of 0. (D3; p.7)</li>
+<li><strong>A4_1</strong> Virtual care term licences (Attend Anywhere), FY2025: C$5,184,921 (reported). (D3; p.7)</li>
+<li><strong>A4_2</strong> Virtual care term licences (Attend Anywhere), nine months to 30 Sep 2026: C$7,018,965 (reported). (D1; p.7)</li>
+<li><strong>A5</strong> Perpetual licences, FY2024: C$498,274 (reported). (D5; p.7)</li>
+<li><strong>A5_1</strong> Perpetual licences, FY2025: C$2,089,242 (reported). (D3; p.7)</li>
+<li><strong>A5_2</strong> Perpetual licences, nine months to 30 Sep 2026: C$1,944,450 (reported). (D1; p.7)</li>
+<li><strong>A6</strong> Services, hardware and other, FY2024: C$11,025,686 (reported). (D5; p.7)</li>
+<li><strong>A6_1</strong> Services, hardware and other, FY2025: C$16,249,891 (reported). (D3; p.7)</li>
+<li><strong>A20</strong> Q3FY24 revenue: C$16,509,135. (D11; p.5)</li>
+<li><strong>A20_4</strong> Q3FY25 revenue: C$32,044,030. (D6; p.5)</li>
+<li><strong>A20_8</strong> Q3FY26 revenue: C$31,913,575. (D1; p.5)</li>
+<li><strong>A21_8</strong> Q3FY26 Adjusted EBITDA: C$8,619,958. (D1; p.5)</li>
+<li><strong>A22_4</strong> Q3FY25 term licences, maintenance and support: C$23,627,391. (D6; p.6)</li>
+<li><strong>A22_8</strong> Q3FY26 term licences, maintenance and support: C$25,783,746. (D1; p.6)</li>
+<li><strong>A23_2</strong> Q3FY25 virtual care: C$2,479,354. (D6; p.7)</li>
+<li><strong>A23_4</strong> Q1FY26 virtual care: C$2,398,653. (D8; p.7)</li>
+<li><strong>A23_5</strong> Q2FY26 virtual care: C$2,282,218. (D7; p.7)</li>
+<li><strong>A23_6</strong> Q3FY26 virtual care: C$2,338,094. (D1; p.7)</li>
+<li><strong>A24_6</strong> Q1FY26 perpetual licences: C$995,851. (D8; p.7)</li>
+<li><strong>A24_8</strong> Q3FY26 perpetual licences: C$140,512. (D1; p.7)</li>
+<li><strong>A25_4</strong> Q3FY25 services, hardware and other: C$5,482,720. (D6; p.7)</li>
+<li><strong>A25_6</strong> Q1FY26 services, hardware and other: C$4,584,759. (D8; p.7)</li>
+<li><strong>A25_8</strong> Q3FY26 services, hardware and other: C$3,651,223. (D1; p.7)</li>
+<li><strong>A26_5</strong> Q4FY25 closing ARR: C$96,149,750 (ARR bridge, non-IFRS section). (D1; p.10)</li>
+<li><strong>A26_8</strong> Q3FY26 closing ARR: C$107,194,390 (ARR bridge, non-IFRS section). (D1; p.5)</li>
+<li><strong>A27_4</strong> Q3FY25 organic ARR net of churn: C$1,711,335 (ARR bridge, non-IFRS section). (D1; p.10)</li>
+<li><strong>A27_7</strong> Q2FY26 organic ARR net of churn: C$1,802,495 (ARR bridge, non-IFRS section). (D1; p.10)</li>
+<li><strong>A27_8</strong> Q3FY26 organic ARR net of churn: C$815,535 (ARR bridge, non-IFRS section). (D1; p.5)</li>
+<li><strong>A28_1</strong> Q4FY24 acquired ARR: C$14,600,000 (ARR bridge, non-IFRS section). (D1; p.10)</li>
+<li><strong>A28_2</strong> Q2FY25 acquired ARR: C$3,870,000 (ARR bridge, non-IFRS section). (D1; p.10)</li>
+<li><strong>A28_3</strong> Q3FY25 acquired ARR: C$12,000,000 (ARR bridge, non-IFRS section). (D1; p.10)</li>
+<li><strong>A28_4</strong> Q3FY26 acquired ARR: C$4,480,000 (ARR bridge, non-IFRS section). (D1; p.5)</li>
+<li><strong>A40</strong> Cash and cash equivalents 31 Dec 2025: C$57,629,569. (D4; p.9)</li>
+<li><strong>A41</strong> Short-term investments 31 Dec 2025: C$61,551,056. (D4; p.9)</li>
+<li><strong>A44</strong> Cash and cash equivalents and short-term investments at 30 Sep 2026: C$129,007,023; no debt. (D1; p.5)</li>
+<li><strong>A45</strong> Buddy acquired July 10, 2026; cash consideration on closing C$12,367,916 (after the 31 Dec 2025 year-0 balance). (D2; p.8)</li>
+<li><strong>A46</strong> 75,000 shares issued at $7.36/share on the Buddy close. (D2; p.8)</li>
+<li><strong>A48</strong> Payments of contingent consideration (781,053) in the nine months to 30 Sep 2026. (D2; p.6)</li>
+<li><strong>A49</strong> Novari: "remaining potential performance-based consideration payable of up to $4,500,000 ... in the 24-month period following the acquisition. A balance of $3,800,000 is accrued". (D2; p.8)</li>
+<li><strong>A51</strong> Buddy: "remaining potential performance-based consideration payable of up to $7,248,555, if certain revenue targets are met in the 30-month period following the acquisition"; fair value at close C$3,205,624. (D2; p.9)</li>
+<li><strong>A53</strong> FY2025 revenue by geography: United Kingdom 60,045,988; Canada 33,145,120; Australia 10,243,026; United States 3,336,556; Western Asia 1,522,928; rest of the world 673,300 (C$). (D4; p.26)</li>
+<li><strong>A54</strong> Q3 2026 revenue by geography: United Kingdom 14,643,256 vs 16,571,510 in Q3 2025; Finland 1,200,877 (Buddy, new) (C$). (D2; p.12)</li>
+<li><strong>A55</strong> AIF: Dan Matlow, President and Chief Executive Officer since May 2016, director since November 28, 2016, holds 726,862 common shares; previously CEO of Medworxx Solutions, sold to Aptean in 2015. (D16; p.18)</li>
+<li><strong>A56</strong> AIF: directors and executive officers as a group own 10,231,462 common shares (about 16% of shares outstanding). (D16; p.18)</li>
+<li><strong>A57</strong> Equity raises in 2025: 9 Jan 2025 bought deal of 3,165,145 shares at $10.90, gross $34,500,080; 20 Aug 2025 bought deal of 5,885,828 shares at $12.70, gross $74,750,016. No share issue for cash in 2026. (D2; p.10)</li>
+<li><strong>A58</strong> Acquisitions in 2025: Induction Healthcare Group (closed June 18, 2025) and Novari Health (closed July 4, 2025). (D4; p.20)</li>
+<li><strong>A59</strong> Q3 2026 cash opex lines: G&amp;A 6,327,731; S&amp;M 3,378,727; R&amp;D 7,490,494 (vs 9,237,648 in Q3 2025); 9M 2026 G&amp;A 17,181,503, S&amp;M 9,618,629 and R&amp;D 24,994,218. (D1; p.6)</li>
+<li><strong>A62</strong> No equity offering in 2026: nine-month 2026 financing cash flow of C$167,507 "relates primarily to proceeds from the exercise of options, net of principal payments on lease liabilities"; the prior-year period held the January and August 2025 offerings. (D1; p.9)</li>
+<li><strong>A63</strong> Gross profit FY2024 C$55,494,433, 81% of revenue. (D5; p.6)</li>
+<li><strong>A64</strong> As at September 30, 2026 the Company "has no debt outstanding"; Scotia C$5 operating line and C$60 revolving facility undrawn. (D1; p.10)</li>
+<li><strong>A66</strong> Term licences, maintenance and support were 81% of revenues in Q3 2026. (D1; p.7)</li>
+<li><strong>A70</strong> AI Scribe launch release (15 Sep 2026): serviceable base of about 22,000 practitioners in the installed base. (D19; p.1)</li>
+<li><strong>A72</strong> FY2025 gross profit 87,588,361, 80% of revenue (FY2024 81%); Q3 2026 gross margin 79%, nine months 2026 80%. (D3; p.6)</li>
+<li><strong>A73</strong> Q3 2026 release: VitalHub is headquartered in Toronto with over 700 employees globally. (D15; p.3)</li>
+<li><strong>A75</strong> Organic net of churn in ARR by year: 2024 6,475,919 (15%) and acquisition growth 17,911,500 (40%); 2023 quarters 1,462,767 / 1,491,003 / 1,475,975 / 1,959,986 (sum 6,389,731); FX effect 2023 926,600 / (116,818) / 127,489 / 1,587 and 2024 652,250 / (39,000) / 1,087,357 / 392,445. (D5; p.11)</li>
+<li><strong>A76</strong> ARR at December 31, 2024 was 71,054,210 against 44,573,739 at December 31, 2023 (+59%), with organic growth 6,475,919 and acquisitions 17,911,500. (D5; p.5)</li>
+<li><strong>A77</strong> FY2025 organic growth 7,231,031 (10%) and acquisition growth 15,870,000 (22%) for the movement from December 31, 2024. (D3; p.5)</li>
+<li><strong>A78</strong> Organic ARR growth September 30, 2025 to September 30, 2026: 7,228,813, printed as 8%; quarterly FX effects Q4 2025-Q3 2026 574,556 / 199,681 / 651,853 / 365,698. (D1; p.5)</li>
+<li><strong>A79</strong> ARR excludes perpetual license and virtual care revenue. (D6; p.11)</li>
+<li><strong>A80</strong> Term licenses, maintenance and support represented 83% of revenues for the year ended December 31, 2024. (D5; p.7)</li>
+<li><strong>A81</strong> FY2025 depreciation and amortization 11,081,525 = depreciation of property and equipment 713,788 + depreciation of right-of-use assets 557,770 + amortization of intangible assets 9,809,967. (D4; p.10)</li>
+<li><strong>A82</strong> FY2025 purchase of property and equipment 423,144 (FY2024 883,719). (D4; p.12)</li>
+</ul>
+<p><strong>Guidance and management statements</strong></p>
+<ul>
+<li><strong>G1</strong> Matlow (Q3 2026 call): "I still think there's close to about $10 million or so-ish of SHREWD revenue that's still out there to a degree in all different pockets of it that are there. But it's hard to say which ones are not at risk or at risk". (D12)</li>
+<li><strong>G2</strong> Matlow (Q3 2026 call): "Take that back, Paul. 7%, 8% of our ARR number, not our revenue number." (D12)</li>
+<li><strong>G3</strong> Matlow (Q3 2026 call), on whether suspended SHREWD accounts were removed from ARR: "In some of the cases, yes, in some of the cases, no." and "I think we'll know more in another quarter or so how that comes out". (D12)</li>
+<li><strong>G5</strong> Matlow (Q3 2026 call), asked about a path to Rule of 40 in 2027: "Yes, we think so. We do believe that's the case. Margins will continue to increase, and we're seeing real pipelines". (D12)</li>
+<li><strong>G6</strong> Matlow (Q3 2026 call): "We're comfortable that we're going to sustain, if not improve that number on a quarter-over-quarter basis at this stage." (D12)</li>
+<li><strong>G7</strong> Matlow (Q3 2026 call): "our backlog for our services revenue has never been stronger" and "we do think there's a lot more milestones that should be hit in Q4 than in Q3." (D12)</li>
+<li><strong>G8</strong> Matlow (Q3 2026 call): "I think we should be able to get that Novari product well over the $20 million in ARR numbers. And Strata ... we see another $3 million to $5 million in the pipeline of some stuff that could happen over the next couple of years." (D12)</li>
+<li><strong>G9</strong> Matlow (Q3 2026 call), on Attend Anywhere declining moderately: "Theoretically, yes. ... we also see some new deals cooking on it that maybe offset some of that stuff. ... all that stuff gets renewed in the March time frame". (D12)</li>
+<li><strong>G12</strong> Matlow (Q3 2026 call): "with any luck, we'll be able to get another one over the finish line before the end of the year ... there are 2 or 3 companies that we have earmarked since the very beginning that are now in market". (D12)</li>
+<li><strong>G13</strong> Matlow (Q2 2026 call, 7 Aug 2026), replying to an analyst who noted no formal ARR guidance and a 10%-11% run rate: "we still feel comfortable with the rest of our business that we -- even with that headwind that we should still be in the range where we were this quarter and above it for sure ... we're still getting 10%, 11% organic growth." Not restated on the Q3 2026 call (D12). (D13)</li>
+<li><strong>G14</strong> Matlow (Q2 2026 call): "every $1 million of ARR theoretically if we don't add more costs, that's a point of adjusted EBITDA, right? And we're still not completed on the other side of some reductions." (D13)</li>
+<li><strong>G15</strong> Goffenberg (Q2 2026 call), on gross margin: "I think we're still, I think, continue to be probably to be the 80% line." (D13)</li>
+<li><strong>G17</strong> Goffenberg (Q3 2026 call): "The increase was primarily due to lower research and development expenses, synergies from the integration of Induction and Novari and a favorable foreign exchange impact in the quarter." (D12)</li>
+<li><strong>G18</strong> Matlow (Q3 2026 call): "They have a break clause in their contract for February of 2027 that they can exercise on the Palantir product." (D12)</li>
+<li><strong>G20</strong> Matlow (Q3 2026 call), on no NCIB purchases through September: "I think it's more of the latter" (preserving flexibility for larger M&amp;A). (D12)</li>
+<li><strong>G21</strong> Matlow (Q3 2026 call): "we believe just by adding AI products into our installed base, there's probably about $30 million, $40 million of TAM just on top of that." (D12)</li>
+<li><strong>G23</strong> Q3 2026 MD&amp;A: Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + business acquisition, restructuring and integration costs + change in fair value of contingent consideration; foreign currency gains and losses stay inside Adjusted EBITDA. "The increase in Adjusted EBITDA was primarily attributable to lower research and development expenses and a favourable foreign exchange impact". (D1)</li>
+<li><strong>G24</strong> Q3 2026 MD&amp;A: ARR "is defined as annual renewable software licence fees and maintenance services"; acquisition revenue is "the annual contract value of recurring revenues of the acquired companies at the time of acquisition"; organic growth is "the revenue over and above the acquisition revenues". (D1)</li>
+<li><strong>G25</strong> Goffenberg (Q3 2026 call): "Services revenue is seasonally lighter over the summer against elevated projected activity in the prior year period." (D12)</li>
+<li><strong>G26</strong> The Register (17 Nov 2026): "Health minister James Frith told MPs on Monday that the current contract would continue until March 2029 as the government procures a new version of the Federated Data Platform (FDP)." The February 2027 break clause is therefore not exercised. (D23)</li>
+<li><strong>G27</strong> The Register (17 Nov 2026): "The formal process is set to start during the second half of next year and take around 18 months"; the new iteration would "welcome international and UK capability alike - whether that is UK small and medium-sized enterprises that want a crack at NHS contracts, sovereign AI-backed capability in the UK or any international provider worth merit." (D23)</li>
+<li><strong>G28</strong> The Register (17 Nov 2026), Frith: "We will also start work, alongside the new procurement, with different providers on developing new capabilities and expertise starting with systems used in maternity care." Frith also said migration was "possible in principle" under the contracts' exit and transition provisions. (D23)</li>
+</ul>
+<p><strong>Estimates</strong></p>
+<ul>
+<li><strong>E1</strong> FactSet consensus revenue FY26E: 129 (C$ millions, rounded to whole numbers on the page), pulled 17 Nov 2026 after the Q3 2026 release; analyst count not shown on the page. (D17)</li>
+<li><strong>E1_1</strong> FactSet consensus revenue FY27E: 139 (C$ millions, rounded to whole numbers on the page), pulled 17 Nov 2026 after the Q3 2026 release; analyst count not shown on the page. (D17)</li>
+<li><strong>E1_2</strong> FactSet consensus revenue FY28E: 147 (C$ millions, rounded to whole numbers on the page), pulled 17 Nov 2026 after the Q3 2026 release; analyst count not shown on the page. (D17)</li>
+<li><strong>E1_3</strong> FactSet consensus revenue FY29E: 166 (C$ millions, rounded to whole numbers on the page), pulled 17 Nov 2026 after the Q3 2026 release; analyst count not shown on the page. (D17)</li>
+<li><strong>E2</strong> FactSet consensus EBITDA FY26E: 34 (C$ millions, whole numbers), pulled 17 Nov 2026; FactSet EBITDA history for 2025 equals Vitalhub Adjusted EBITDA (26.55); analyst count not shown. (D17)</li>
+<li><strong>E2_1</strong> FactSet consensus EBITDA FY27E: 39 (C$ millions, whole numbers), pulled 17 Nov 2026; FactSet EBITDA history for 2025 equals Vitalhub Adjusted EBITDA (26.55); analyst count not shown. (D17)</li>
+<li><strong>E2_2</strong> FactSet consensus EBITDA FY28E: 45 (C$ millions, whole numbers), pulled 17 Nov 2026; FactSet EBITDA history for 2025 equals Vitalhub Adjusted EBITDA (26.55); analyst count not shown. (D17)</li>
+<li><strong>E2_3</strong> FactSet consensus EBITDA FY29E: 52 (C$ millions, whole numbers), pulled 17 Nov 2026; FactSet EBITDA history for 2025 equals Vitalhub Adjusted EBITDA (26.55); analyst count not shown. (D17)</li>
+</ul>
+<p><strong>Assumptions</strong></p>
+<ul>
+<li><strong>S1</strong> Term revenue = 0.985 x average closing ARR. Basis: Q2 2026 term 24.542 x 4 / average ARR (99.079, 101.533) = 0.979; Q3 2026 25.784 x 4 / average (101.533, 107.194) = 0.988; average 0.984 rounded to 0.985. Band 0.975-0.995.</li>
+<li><strong>S2</strong> Q4 2026 organic net ARR add of 1.5 (base). Q4 is a stronger selling quarter than Q3 (Q4 2024 +2.61, Q4 2025 +1.88) but SHREWD suspensions continue (G1, G3); the FDP extension (G26) puts the SHREWD roll-off in 2027 rather than Q4 2026. Bull 2.5, bear 0.5.</li>
+<li><strong>S3</strong> FY2027 organic ARR adds 8.94 before the SHREWD roll-off (base): the 8.123 of organic adds in the four quarters to Q2 2026 (the last four before the Q3 SHREWD drag, A27_4-A27_7) grown 10%, the trend in dollar adds (S29). As a share of opening ARR this is 8.2%; net of the 4.0 roll-off FY2027 closing ARR grows 4.5%. v2 used 9% of opening ARR (9.8 of adds), above any year Vitalhub has printed. Band 7.23 (bear, flat at FY2025) to 9.34 (bull, +15%).</li>
+<li><strong>S4</strong> FY2028 organic ARR adds 9.83 (base), the dollar trend continued at +10% (S29); 8.7% of opening ARR. The Novari and Strata pipelines and AI add-ons (G8, G21) and the Rule of 40 aim (G5) support continued growth in dollar adds; the withdrawn 10%-11% comfort (G13) argues against a step-up beyond the trend, so the trend rate is used unchanged. No further SHREWD loss (S26). Band 7.23 (bear) to 10.74 (bull).</li>
+<li><strong>S5</strong> FY2029 organic ARR adds 10.81 (base), +10% again; 8.8% of opening ARR. Band 7.23 (bear) to 12.35 (bull).</li>
+<li><strong>S6</strong> FY2030 (gsnext year) organic ARR adds 11.89 base (bull 14.21, bear 7.23), one more year of the same dollar-add build; no management phrase reaches 2030.</li>
+<li><strong>S7</strong> Virtual care (Attend Anywhere) declines 5% a year from FY2027: management expects a moderate decline offset by some new deals, renewals in March (G9); Q3 2026 was -6% YoY. Band 0% (bull) to -15% (bear).</li>
+<li><strong>S8</strong> Perpetual licences 0.5 in Q4 2026 (Q4 2025 0.512) and 2.0 a year thereafter, about the FY2025-FY2026 average; term licences are the preferred model (D1).</li>
+<li><strong>S9</strong> Services, hardware and other: Q4 2026 4.6 (back to the Q1 2026 level of 4.585; management expects more Q4 milestones, G7) and 16.5% of term revenue thereafter (9M 2026 ratio 16.6%; FY2025 19.0%). Band 15%-19%.</li>
+<li><strong>S10</strong> Cash gross margin 80% (9M 2026 80%; CFO "80% line", G15). Cost of sales holds no D&amp;A or SBC (D1). Band 78%-82%.</li>
+<li><strong>S11</strong> Core cash opex = Q3 2026 G&amp;A 6.328 + S&amp;M 3.379 + R&amp;D 7.490 = 17.197 a quarter (ex SBC, D&amp;A, FX, one-time), annualized 68.79; includes Buddy for 82 of 92 days.</li>
+<li><strong>S12</strong> Core opex inflation 2.0% a year: the Bank of Canada inflation-control target midpoint (no company rate stated). Band 1%-3%.</li>
+<li><strong>S13</strong> Variable cash opex 30% of revenue above Q3 2026 annualized revenue (127.65). The incremental rate cannot be measured from FY2025-26 because integration synergies cut opex while revenue grew; management says $1 of ARR is "a point of adjusted EBITDA" if no costs are added (G14) and R&amp;D holds level with AI spend (G11). Band 20% (bull) to 40% (bear).</li>
+<li><strong>S14</strong> Buddy cost saving 0.5 a year from FY2027 (Buddy was about breakeven, G16; margin through "a little bit of cost reduction and revenue generation" in 6-12 months, G10). Band 0 (bear) to 1.0 (bull).</li>
+<li><strong>S15</strong> Foreign exchange gains and losses, which sit inside Adjusted EBITDA (G23), are forecast at zero; FX on ARR is held at zero.</li>
+<li><strong>S16</strong> Contribution margin mc = 1 - 20% cash cost of sales - 30% variable opex = 0.50 (bull 0.60, bear 0.40).</li>
+<li><strong>S17</strong> Buddy component inside the term line is held at the acquired ARR of 4.48 x 0.985 a year (stub 174/365 in FY2026); Vitalhub counts post-close growth as organic (G24), so Buddy growth sits in the organic ARR rate. Not scaled to Consensus.</li>
+<li><strong>S18</strong> Scenario levers: (1) SHREWD roll-off size and organic ARR adds in dollars, (2) the cost build (variable opex rate, Buddy saving), (3) Attend Anywhere. Bull and bear differ from base by the bottom-up difference of those levers, added to the base lines and EBITDA.</li>
+<li><strong>S19</strong> Dan Matlow CEO bot view: treat the 10-11% organic comfort as withdrawn until the NHS FDP decision; low-to-high single-digit organic ARR growth in Q4 2026 and early 2027. simulated CEO view (Dan Matlow CEO bot), 17 Nov 2026; not company disclosure; link unverified. Used only as a cross-check of S2-S3, which rest on the filings and the Q3 call. (D22)</li>
+<li><strong>S20</strong> Earn-out probabilities = accrued fair value / maximum: Novari 3.8 / 4.5 = 0.844; Buddy 3.205624 / 7.248555 = 0.442 (D2).</li>
+<li><strong>S21</strong> Earn-out dates are the end of each earn-out window: Novari 24 months after 4 Jul 2025 close (2027-07-04); Buddy 30 months after 10 Jul 2026 close (2029-01-10). The filings give windows, not payment dates.</li>
+<li><strong>S22</strong> Bear: all SHREWD ARR (8.0, the midpoint of 7.5-8.6, G2) rolls off straight-line during 2027 as trusts migrate onto FDP (G26); organic adds stay flat at the FY2025 printed 7.23 a year (A75), so organic growth falls to about 6.5% of opening ARR. Bull: only 1.5 rolls off (suspended accounts still in ARR, G3) and organic adds grow 15% a year (the 2024-to-TTM-Q1 2026 pace, S29) as the Strata pipeline and AI add-ons convert. A place in the new FDP procurement is not in bull revenue (S28).</li>
+<li><strong>S24</strong> Q4 2026 virtual care held at the Q3 2026 level (2.338); renewals fall in March (G9).</li>
+<li><strong>S25</strong> Payments of contingent consideration C$781,053 in the nine months to 30 Sep 2026; exact date not given, dated at the quarter end. (D2; p.6)</li>
+<li><strong>S26</strong> Base SHREWD roll-off: 4.0 of ARR, about half of the 7.5-8.6 SHREWD ARR (G2, C31), straight-line during calendar 2027, none in 2028-29. Why half: the FDP extension to March 2029 (G26) means the platform displacing SHREWD stays and trusts keep migrating onto it, and some suspended accounts are still in ARR (G3), so a 2027 loss is more likely than not; but SHREWD sits "in all different pockets" and management cannot say which are at risk (G1), a new FDP iteration is procured from H2 2027 that invites UK SMEs and new capability providers (G27, G28), and trusts mid-procurement have reason to keep tools that work. The evidence does not identify losses beyond 2027. Band 1.5 (bull) to 8.0 (bear, all of it).</li>
+<li><strong>S27</strong> Lost SHREWD revenue (average ARR lost x 0.985 term ratio x 1.165 for the services that ride on term revenue) saves only the 20% cash cost of sales; opex is not cut (G14: "every $1 million of ARR theoretically if we don't add more costs, that's a point of adjusted EBITDA"). Variable opex is charged on revenue before the SHREWD loss.</li>
+<li><strong>S28</strong> FDP re-procurement upside is excluded from every case: the formal process starts in H2 2027 and takes about 18 months (G27), so an award lands around early 2029 at the earliest and its revenue mostly after FY2029; Vitalhub has not announced a consortium or bid.</li>
+<li><strong>S29</strong> Organic adds are forecast in dollars. Printed organic net of churn was 6.39 in 2023, 6.48 in 2024 and 7.23 in 2025 (A75) while acquisitions took opening ARR from 36.2 to 71.1 (A76); organic growth fell from 17.7% to 14.5% to 10.2% (and 7.7% TTM Q3 2026) because the acquired ARR (17.9 in 2024, 15.9 in 2025, 4.48 in 2026) added little net organic growth after close in aggregate, not because dollar adds shrank (C38). Dollar adds grew about 10% a year from 2023 (6.39) to the four quarters to Q2 2026 (8.12), about 2.5 years apart. Base keeps that 10% trend; management commentary is mixed (pipelines and Rule of 40 vs the withdrawn 10%-11%), so no acceleration or deceleration is applied.</li>
+<li><strong>S30</strong> Finagle defaults filled on the v05 case that ran (result defaults_filled, unchanged from v04): baseline.noa, baseline.nol, debt.start_year, distribution.mode, forecast.dwc.mode, rates.gt, rates.re, rates.roict, year. Values: noa 0, nol 0, debt policy start year 1, distribution none, working-capital change zero, terminal growth 3.81% (= the 10-year yield), cost of equity 9.31% (0.055 + the 10-year yield), terminal ROIC 15%, ten-year horizon. Each scenario also lists the build_baseline defaults rates.t, rates.rd, debt.mode and debt.leverage, which the prompt inputs P11 and P14 replaced. Capex and SBC paths were not set: forecast_capex method 1 and forecast_sbc ran from year-0 capex 0.423144 and SBC 2.647812 (Yahoo). (D25)</li>
+</ul>
+<p><strong>Calculations</strong></p>
+<ul>
+<li><strong>C1</strong> Term licences, maintenance and support Q4 2026E = bottom-up Q4 (26.581) scaled by the Q4 organic factor 0.9825 to the Consensus remainder; Buddy component not scaled. (inputs E1, S1, S2, S8, S9, S17, S24)</li>
+<li><strong>C2</strong> Term licences, maintenance and support FY26E = bottom-up 100.834 x organic scale factor 0.9825 to event-adjusted Consensus revenue (Buddy component unscaled). (inputs E1, S1, S3, S7, S8, S9, S17, S26, C36)</li>
+<li><strong>C4</strong> Days from 10 Jul 2026 close to 31 Dec 2026 (174) / 365. (inputs A45)</li>
+<li><strong>C5</strong> Q4 2026E revenue = FY2026 Consensus 129 (E1) - 9M 2026 reported 95.557 (A1). (inputs E1, A1)</li>
+<li><strong>C6</strong> FY2025A / FY2024A - 1 (+58.9%, acquisitions plus organic). (inputs A1, A1_1)</li>
+<li><strong>C7</strong> Adjusted EBITDA / revenue, FY24A. (inputs A1, A2, E1, E2)</li>
+<li><strong>C9</strong> Bottom-up revenue FY26E: sum of unscaled lines (term from the ARR path, virtual care, perpetual, services). (inputs S1, S2, S3, S4, S5, S7, S8, S9, S17)</li>
+<li><strong>C10</strong> Bottom-up Adjusted EBITDA FY26E: unscaled revenue - 20% cash cost of sales - core opex (Q3 2026 annualized, +2%/yr) + Buddy saving - 30% variable opex on revenue above 127.65. (inputs S10, S11, S12, S13, S14, S15)</li>
+<li><strong>C11</strong> Bottom-up / base (event-adjusted Consensus) revenue FY26E. (inputs C9, E1)</li>
+<li><strong>C13</strong> Bottom-up / base (event-adjusted Consensus) Adjusted EBITDA FY26E. (inputs C10, E2)</li>
+<li><strong>C14</strong> Base revenue for the bridge (Q4E). (inputs E1, A1)</li>
+<li><strong>C15</strong> Consensus-implied cash cost / cost-build cash cost on the same revenue - 1; inside the 10% rule. (inputs E1, E2, S10, S11, S13)</li>
+<li><strong>C16</strong> Year-0 cash = FY2025 cash 57.630 + short-term investments 61.551 + 2026 equity raises 0 = 119.181 (P3). (inputs A40, A41, A62, P3)</li>
+<li><strong>C17</strong> Year-0 shares = FY2025 63.232054 + 2026 equity raises 0 (P3). The 75,000 Buddy consideration shares are on cash_share_adjustments. (inputs A42, A62, P3)</li>
+<li><strong>C18</strong> No year-0 equity raise: opening cash 119.181 less the dated Buddy and earn-out items (about 26 undiscounted in the base) stays positive in every case, and EBITDA is positive in every year of every case (P3). (inputs C16, P3)</li>
+<li><strong>C21</strong> No future acquisition is forecast. Management hopes to close another deal before year-end (G12) but none is announced; announced-but-unclosed deals are excluded. (inputs G12)</li>
+<li><strong>C22</strong> Revenue growth FY2026E-FY2029E on totals; compounds to the base revenue. (inputs E1, A1)</li>
+<li><strong>C23</strong> Adjusted EBITDA growth FY2026E-FY2029E on totals; compounds to the base EBITDA. (inputs E2, A2)</li>
+<li><strong>C24</strong> me = FY2029E Adjusted EBITDA 48.328 / revenue 161.410 = 29.9% (event-adjusted Consensus). (inputs C36)</li>
+<li><strong>C25</strong> bull Term licences, maintenance and support Q4 2026E = base + (bull bottom-up - base bottom-up). (inputs C1, S18, S22)</li>
+<li><strong>C27</strong> bull revenue growth on totals. (inputs C26)</li>
+<li><strong>C28</strong> base closing ARR FY26E from organic adds (S2-S5, S22); FX zero. (inputs A26, S2, S3, S4, S5, S22)</li>
+<li><strong>C29</strong> Q3 2026 Adjusted EBITDA excluding the FX gain: (8.620 - 0.592) / 31.914 = 25.2%; Q2 2026 excluding the FX loss: (8.163 + 0.223) / 31.738 = 26.4%. (inputs A21_8, C8, A59)</li>
+<li><strong>C31</strong> SHREWD ARR = 7-8% (G2) x closing ARR 107.194 = 7.5 to 8.6. (inputs G2, A26)</li>
+<li><strong>C32</strong> Cash opex per quarter (G&amp;A + S&amp;M + R&amp;D): Q4 2025 17.157; Q1 2026 17.817; Q2 2026 16.781 (9M less Q1 and Q3); Q3 2026 17.197. (inputs A59, A67, A68)</li>
+<li><strong>C33</strong> Unscaled bottom-up scenario totals (Appendix A sensitivity) from model.py v3: bull revenue 129.70/141.73/152.40/165.65, EBITDA 34.44/41.24/46.06/52.58; bear revenue 129.45/133.09/135.61/142.89, EBITDA 33.90/32.30/30.07/31.55. (inputs S18, S22, S26, S29)</li>
+<li><strong>C34</strong> Consensus revenue growth path: FY2027 +7.8%, FY2028 +5.8%, FY2029 +12.9%; the FY2028 dip and FY2029 jump reflect thinner, rounded later-year coverage (E-series). (inputs E1)</li>
+<li><strong>C35</strong> Revenue shares FY2025 by line: term 78.4%, virtual care 4.8%, perpetual 1.9%, services 14.9%. (inputs A3_1, A4_1, A5_1, A6_1, A1_1)</li>
+<li><strong>C36</strong> Event-adjusted Consensus revenue FY27E = FactSet 139 (E1) -2.295 for the 16 Nov 2026 FDP extension (P7): the effect of the 4.0 SHREWD roll-off alone on the v3 bottom-up build (with vs without the loss). The 17 Nov pull is taken to predate the announcement. v3 isolates the event: the organic-driver change (S29) uses information analysts already had and does not move the base. (inputs E1, P7, S26, S27, D23)</li>
+<li><strong>C38</strong> ARR bridge trend from the printed series (A75-A78, A27 series): organic adds 6.39 (2023), 6.48 (2024), 7.23 (2025), 8.12 (four quarters to Q2 2026), 7.23 (TTM Q3 2026); organic growth on opening ARR 17.7%, 14.5%, 10.2%, 10.2%, 7.7%. Opening ARR (rebuilt back from 107.194 through the bridge): 36.15 (2023), 44.57 (2024), 71.05 (2025), 96.15 (2026). Organic adds per dollar of opening ARR including acquired ARR fell by more than half while dollar adds rose about 13% from 2023 to 2025. Seasonality, 2022-2025 average adds: Q1 1.57, Q2 1.35, Q3 1.28, Q4 1.84. FX added 2.09 (2024), 1.99 (2025) and 1.22 (9M 2026), positive in 9 of the last 10 quarters. (inputs A75, A76, A77, A78, A27_8)</li>
+<li><strong>C39</strong> TLMS revenue x 4 / average ARR by quarter: 1.01-1.06 in 2023, 1.05-1.08 in Q1-Q3 2024, 1.14 in Q4 2024 (14.6 acquired in the quarter, so the average understates the ARR earning revenue), 1.01-1.09 in 2025 (acquisition quarters Q2 and Q3 high), then 0.994 / 0.980 / 0.979 / 0.988 in Q4 2025-Q3 2026 (average 0.985). ARR excludes virtual care (A79), so the step down is not Attend Anywhere leaving the TLMS line; the cause is not disclosed. The 0.985 conversion matches the four clean quarters since Q4 2025. (inputs A22_8, A26_8, A79, S1)</li>
+<li><strong>C40</strong> Change from v2 (17 Nov 2026) to v3 (18 Nov 2026): organic adds in dollars (S29) and the event adjustment limited to the SHREWD effect (C36). See revision_log.md for figures. (inputs S29, C36)</li>
+<li><strong>C41</strong> Finagle v05 result (D25): value per share (free cash flow to equity; DDM identical) base 9.226, bull 11.216, bear 6.827 vs price 6.73 (Yahoo, 2026-11-18); cost of equity 9.31% and terminal growth 3.81%, both derived by Finagle from the 3.81% risk-free rate (P10); tax 26.5%, cost of debt 2.8%, debt 0 held; year-0 EBITDA 26.554 before SBC (P15); opening cash 106.813 and shares 63.307054; cash after schedule 99.789 (present value -7.023); ten-year horizon FY2026E-FY2035E; no sanity flags; validation warning base "average EBITDA growth is 16.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero." (bull 21.4%, bear none); result flags: "rates.rd provenance: Forecaster proposal without an explicit David quote (applied as given; see rd_provenance)" and "year-0 capex remains Yahoo 0.423144 vs method-1 ratio on new D&amp;A (1.271558 / revenue)". (inputs D25, P10, P11, P12, P13, P14, P15, S30)</li>
+<li><strong>C42</strong> Value bridge (derived): FCFE each year = Finagle EBITDA - capex - SBC - cash tax - interest, which equals the yearly change in the result cash path; discounted at the 9.31% cost of equity. Base 99.79 cash + 71.18 PV FY2026E-FY2029E + 104.34 PV FY2030E-FY2035E + 308.76 terminal (residual) = 584.08 = 9.226 x 63.307; bull 99.79 + 78.52 + 131.50 + 400.23 = 710.04; bear 99.79 + 61.29 + 71.20 + 199.89 = 432.18. Terminal share of value 52.9% base, 56.4% bull, 46.3% bear. Value vs 6.73: base +37%, bull +67%, bear +1.4%. (inputs C41)</li>
+<li><strong>C43</strong> Finagle capex path (v05 result paths, method 1 on year-0 D&amp;A 1.271558): base capex 0.42 (FY2025A), 3.00, 3.99, 4.73, 7.17 (FY2029E), 16.28 (FY2035E) against D&amp;A 2.71 in FY2035E (about 6.0x, derived; bull 6.9x, bear 4.9x); FY2035E capex / EBITDA 19.4% base, 19.0% bull, 20.1% bear vs FY2025 actual 0.423 / 26.554 = 1.6% (derived). Mechanism: terminal capex = D&amp;A x (1 - C) + C x (EBITDA - SBC) with C = 3.81% / 15% x (1 - 26.5%) = 0.187, so about 14.1 of the 16.3 base terminal capex is growth reinvestment at the 15% terminal ROIC (derived). (inputs D25, A81, A82, S30)</li>
+<li><strong>C44</strong> Finagle v05 EBITDA path: year-0 EBITDA is the stated 26.554 (P15), so the forecast growth compounds to the forecast dollars: base 34.000 / 37.164 / 41.328 / 48.328 for FY2026E-FY2029E, equal to the forecast (C23), and the starting margin passed past FY2029E is 29.9%. Year-0 SBC is still Yahoo's 2.648, so the SBC/EBITDA ratio Finagle holds moves from 0.1022 (v04) to 0.0997; SBC dollars in FY2026E-FY2029E are unchanged and slightly lower from FY2030E. (inputs D25, P15, A2_1, C23)</li>
+</ul>
+<p><strong>Prompt and brief</strong></p>
+<ul>
+<li><strong>P2</strong> David May standing preferences (brief, 17 Nov 2026): base case accelerates or decelerates current trends on management commentary, no conservative haircut; a later-year margin well beyond history is flagged and banded in the bear, not capped.</li>
+<li><strong>P3</strong> David May standing preference: year-0 cash = FY2025 cash plus short-term investments adjusted for 2026 equity raises; shares raised likewise; add a year-0 raise rounded up to the next C$50 only if a case goes cash-negative.</li>
+<li><strong>P6</strong> Brief and David May (t214u, 17 Nov 2026): Dan Matlow CEO bot may be used; his own views are tagged [S] "simulated CEO view (Dan Matlow CEO bot), 17 Nov 2026" and never shown as company disclosure.</li>
+<li><strong>P7</strong> David May, 17 Nov 2026 (revision, pt220u): "I think Palantirs contract was renewed. Probably have to assume that some of the shrewd contracts roll off in 2027." Base assumes a partial SHREWD roll-off in 2027; the base stays Consensus-anchored but is adjusted for this post-pull event (C36).</li>
+<li><strong>P8</strong> David May, 18 Nov 2026 (pt221u): "ask the Dan Matlow bot for his product sheet on licenses. Update the forecast if it provides any insight into trends". v3 forecasts organic ARR adds in dollars from the sheet's ARR bridge (S29).</li>
+<li><strong>P9</strong> David May, 18 Nov 2026 (pt223u): "do a finagle valuation." The Finagle bot runs the valuation; the Forecaster wrote the collaborative request (v01) and writes the report section from the result only. v01-v03 stopped; v04 was superseded by v05 (D25), which is the valuation.</li>
+<li><strong>P10</strong> David May, 2026-11-18, risk-free rate for the Finagle run: "3.81% use this" (Bank of Canada 10-year benchmark, 3.81% on 16 Nov 2026, D27, because Yahoo CA10Y=RR has no quote).</li>
+<li><strong>P11</strong> David May, 2026-11-18: "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares." Applied in v04 as year-0 debt 0, debt policy hold, tax rate 26.5%.</li>
+<li><strong>P12</strong> David May, 2026-11-18: "cash should be from the 2025 filling adjusted for the cash price of Buddy (+$12.37). shares should be from the 2025 filling (63.23M) adjusted for Buddy (+0.075M). Isn't that logical?" Applied as opening cash 106.812709 = 119.180625 - 12.367916 (the Buddy closing cash is an outflow) and shares 63,307,054 = 63,232,054 + 75,000; the Buddy closing cash and consideration shares were removed from the schedule so they are not counted twice.</li>
+<li><strong>P13</strong> David May, 2026-11-18: "remove the "amortization of intangible assets" when calculating capex using method 1." Applied as year-0 D&amp;A 1.271558 = depreciation of property and equipment 0.713788 + right-of-use assets 0.557770 (A81); capex stays on Finagle method 1.</li>
+<li><strong>P14</strong> Cost of debt 2.8% for the Finagle run: proposed by the Forecaster on 2026-11-18 (Finagle's own earlier default was 0.027976); David did not object. Not a direct David quote. Immaterial: debt is held at zero and forecast-year interest is zero.</li>
+<li><strong>P15</strong> David May, 2026-11-18 (t237u): "Yes, do the quick fix". Applied in v05 as year-0 EBITDA 26.554099 (Vitalhub reported FY2025 Adjusted EBITDA, A2_1) and EBITDA definition before stock-based compensation, replacing Yahoo's 25.898.</li>
+</ul>
+<p><strong>Not verified</strong></p>
+<ul>
+<li>D12 and D13 (Seeking Alpha transcripts): text read from the ceochat mirror; Seeking Alpha links not opened (link unverified).</li>
+<li>D22 and S19 (Dan Matlow CEO bot): simulated CEO view, not company disclosure; link unverified.</li>
+<li>E-series: whole-number consensus with no analyst count on the page.</li>
+</ul>
+<hr>
+<h2>Appendix C – Method</h2>
+<p>This forecast follows the repository's forecaster skill at commit 3a46f0a. The repository was fetched again for versions 2 and 3 and had not moved. With no company guidance, the base totals start from FactSet consensus, pulled from Markets Insider on 17 November 2026 after the Q3 release <sup>D17</sup>. StockAnalysis (S&amp;P Global) shows FY2026 revenue of 128.81 from nine analysts and FY2027 of 139.28, which supports the unadjusted path <sup>D18</sup>. The Markets Insider page rounds to whole numbers and shows no analyst count.</p><p><strong>Event adjustment (versions 2 and 3).</strong> The FactSet pull is treated as predating the 16 November FDP announcement <sup>D23</sup>. The skill gives no specific rule for news after the Consensus pull. It does allow a prompt instruction to override the default method, tagged [P], and David May's request is that instruction <sup>P7</sup>. FY2027E–FY2029E totals are FactSet plus the effect of the 4.0 SHREWD roll-off alone, measured as the v3 bottom-up build with the loss minus the same build without it. Lost revenue saves only cost of sales. The adjustment is recorded in each total, with the raw FactSet figure kept beside it in the forecast file <sup>C36</sup>. Version 2 measured the adjustment as the v1-to-v2 change in the whole build, which also carried our organic-rate change. Version 3 confines it to the post-pull event. When FactSet updates after the announcement, this adjustment should be dropped and the new pull used.</p><p>The bottom-up build (<code>model.py</code>) works from closing ARR, the four reported revenue types, an 80% cash gross margin and core cash opex at the Q3 2026 run rate. It is scaled to the base line by line, with acquired Buddy ARR left unscaled. The history window is the nine quarters from Q3 2024 to Q3 2026, each read from that quarter's MD&amp;A (Figure 19). For the ARR bridge trend, version 3 also uses 2023 and 2024 quarters from the FY2024 MD&amp;A <sup>A75</sup>. It uses the CEO bot's term-licence product sheet as an index to the filings <sup>D24</sup>: every bridge figure used here was checked in the filing the sheet names. The FY2023 MD&amp;A could not be downloaded (the OTC Markets mirror was temporarily unavailable), so 2023 quarters come from the comparative columns of the FY2024 MD&amp;A. Every filing figure was checked against the original SEDAR PDF and cited to its page. Call quotes are from the Seeking Alpha transcripts as mirrored in the ceochat repository; the Seeking Alpha links themselves were not opened. The FDP facts are from The Register's report of the minister's statement to MPs. Hansard was not checked.</p><p>The forecast file also holds the year-0 cash and share schedule, unchanged in this version. Year-0 cash is FY2025 cash plus short-term investments, with no 2026 equity raise. Year-0 shares are the FY2025 count. Dated items cover the Buddy close and the Novari and Buddy earn-outs. No case goes cash-negative, so no raise is added <sup>C16, C17, C18</sup>.</p><p>The Dan Matlow CEO bot is a simulation built from public material. Its views are tagged S and never carry a number on their own <sup>S19, P6</sup>. Questions that would sharpen the next update, for relay to the CEO bot or to management:</p><ol>
+<li>How much of the SHREWD ARR has already been taken out of the 107.2, and how much is suspended but still counted?</li>
+<li>Which SHREWD modules overlap FDP functions, and which do not?</li>
+<li>Will Vitalhub bid in the new FDP procurement or the maternity work, alone or in a consortium?</li>
+<li>What is net revenue retention, excluding SHREWD?</li>
+<li>What are headcount and R&amp;D headcount after Buddy, against the "over 700" in the release <sup>A73</sup>?</li><li>What is the currency mix of ARR?</li>
+<li>How much organic ARR growth have the acquired books (Induction, Novari, Buddy) added since close, against the legacy book?</li>
+<li>Why did term revenue fall from about 1.05× to 0.985× of average ARR after 2024?</li>
+</ol>
+<p><strong>Valuation run history.</strong> Runs v01–v04 of the Finagle bot are not the valuation in this report.</p>
+<ul>
+<li><strong>v01</strong> stopped: Finagle's Yahoo symbol for the Canadian 10-year yield returned no quote, which left the cost of equity and terminal growth empty.</li>
+<li><strong>v02</strong> completed, but the bot ruled it not a valuation. Its default capex was anchored on year-0 D&amp;A that was 89% amortization of acquired intangibles <sup>A81</sup>.</li><li><strong>v03</strong> stopped because two of David's inputs could not be expressed:</li>
+<li>capex as a ratio of revenue, which was not a year-by-year list;</li>
+<li>
+<p>Buddy consideration shares with no cash proceeds.</p>
+</li>
+<li>
+<p><strong>v04</strong> ran with David's risk-free rate, debt, tax, D&amp;A and opening cash and share inputs <sup>P10</sup>–<sup>P14</sup>, and is superseded. Finagle uses its own year-0 EBITDA unless one is stated, so v04 compounded our growth from Yahoo's 25.9 rather than the reported 26.6.</p>
+</li></ul>
+<p>v05 adds the reported year-0 EBITDA <sup>P15</sup> and is the valuation in Section 7 <sup>D25</sup>.</p><p><strong>Method suggestions</strong> (not made as repository edits):</p>
+<ol>
+<li>Add a non-cash consideration-share item type to the cash and share schedule, so that shares issued for an acquisition add to the count without adding proceeds to cash.</li>
+<li>Give Finagle a working Canadian risk-free source, such as the Bank of Canada 10-year series, since the Yahoo symbol returns no quote.</li>
+<li>Set a lease-versus-debt default, so that Yahoo's total debt, which includes leases, does not create a leverage target for a company with no borrowings.</li>
+<li>Set a cost-of-debt default when year-0 debt is zero, so that validation does not stop on a missing cost of debt.</li>
+<li>State plainly in the forecaster skill that the Finagle bot runs collaborative valuations and the Forecaster writes the request and the report section only.</li>
+<li>Have the collaborative handoff send year-0 EBITDA and revenue as Forecaster leaves, so the forecast's level always supersedes Finagle's sources. Finagle has no SEDAR+ source: for Canadian tickers it reads the prompt, the article, the attachments and then yfinance.</li>
+</ol>
+<div class="fig" id="figure-check-25">
+<p><strong>Figure 19 – Quarterly history, Q3 2024–Q3 2026 (C$ millions)</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Q3'24</th>
+<th style="text-align: right;">Q4'24</th>
+<th style="text-align: right;">Q1'25</th>
+<th style="text-align: right;">Q2'25</th>
+<th style="text-align: right;">Q3'25</th>
+<th style="text-align: right;">Q4'25</th>
+<th style="text-align: right;">Q1'26</th>
+<th style="text-align: right;">Q2'26</th>
+<th style="text-align: right;">Q3'26</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue</td>
+<td style="text-align: right;">16.5</td>
+<td style="text-align: right;">20.6</td>
+<td style="text-align: right;">21.7</td>
+<td style="text-align: right;">23.9</td>
+<td style="text-align: right;">32.0</td>
+<td style="text-align: right;">31.4</td>
+<td style="text-align: right;">31.9</td>
+<td style="text-align: right;">31.7</td>
+<td style="text-align: right;">31.9</td>
+</tr>
+<tr>
+<td>Adjusted EBITDA</td>
+<td style="text-align: right;">4.55</td>
+<td style="text-align: right;">5.05</td>
+<td style="text-align: right;">5.61</td>
+<td style="text-align: right;">6.30</td>
+<td style="text-align: right;">7.21</td>
+<td style="text-align: right;">7.43</td>
+<td style="text-align: right;">7.99</td>
+<td style="text-align: right;">8.16</td>
+<td style="text-align: right;">8.62</td>
+</tr>
+<tr>
+<td>Margin</td>
+<td style="text-align: right;">27.6%</td>
+<td style="text-align: right;">24.5%</td>
+<td style="text-align: right;">25.9%</td>
+<td style="text-align: right;">26.4%</td>
+<td style="text-align: right;">22.5%</td>
+<td style="text-align: right;">23.7%</td>
+<td style="text-align: right;">25.0%</td>
+<td style="text-align: right;">25.7%</td>
+<td style="text-align: right;">27.0%</td>
+</tr>
+<tr>
+<td>Closing ARR</td>
+<td style="text-align: right;">53.5</td>
+<td style="text-align: right;">71.1</td>
+<td style="text-align: right;">73.7</td>
+<td style="text-align: right;">79.6</td>
+<td style="text-align: right;">93.7</td>
+<td style="text-align: right;">96.1</td>
+<td style="text-align: right;">99.1</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">107</td>
+</tr>
+<tr>
+<td>Organic ARR add</td>
+<td style="text-align: right;">1.08</td>
+<td style="text-align: right;">2.61</td>
+<td style="text-align: right;">1.78</td>
+<td style="text-align: right;">1.86</td>
+<td style="text-align: right;">1.71</td>
+<td style="text-align: right;">1.88</td>
+<td style="text-align: right;">2.73</td>
+<td style="text-align: right;">1.80</td>
+<td style="text-align: right;">0.816</td>
+</tr>
+<tr>
+<td>Acquired ARR</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">14.6</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">3.87</td>
+<td style="text-align: right;">12.0</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">4.48</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: quarterly MD&amp;As D1, D3, D5–D11; [A20]–[A28_4] series in <code>forecast.json</code>. May not sum due to rounding.</em></p>
+</div></body></html>

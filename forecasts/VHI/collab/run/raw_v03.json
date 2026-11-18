@@ -1,0 +1,8 @@
+{
+ "stopped": true,
+ "reasons": [
+  "forecast.capex is not a numeric list",
+  "shares-without-proceeds cannot be expressed",
+  "rates.rd would be missing if debt=0 were applied"
+ ]
+}

@@ -1,0 +1,728 @@
+{
+ "ticker": "VHI.TO",
+ "version": "v01",
+ "parent_version": null,
+ "mode": "collaborative",
+ "currency": "CAD",
+ "finagle_commit": "377f177b4013e713fe7c4603962e5f883a67e298",
+ "ff_log": "Already up to date (377f177b); no commits since 377f177b. AGENTS.md and catalog.py were not re-read.",
+ "run_at": "2026-11-18T13:20:27.636105-05:00",
+ "sec_user_agent": "David May davidmay44@hotmail.com",
+ "hash_check": {
+  "sidecar_present": false,
+  "file_bytes": "70e2176f3de738a45f85769f9b2bfcfc2d428c392607c1da417476be2baa93c4",
+  "file_bytes_matches_brief": true,
+  "whole_request": "501f5cf3650b2acf03e0a5d2dbb62bc698d83b8ac423ea170beab2f35dae5284",
+  "blocks": {
+   "base": "49b7bed19fd62f1761ecb758852c4d963ab895802c4e96b5df4fb2d22802ff2a",
+   "bull": "b3aecd1f3422836803becf2e4ad7d4cfeb5e44ff39db4884e3488552a1bdc0a2",
+   "bear": "25e35874995e3aaf15fa64df5b32ca41d9f1b7f9c90114635f10fdb15027fa8c"
+  },
+  "prompt_inputs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "forecast_json_bytes": "2fb8fcf0e0f3e24376227fedeb8b29361536fd9d4fba60510e54c3a72019b7e7",
+  "forecast_json_path": "/workspace/forecaster-work/output/VHI/2026-11-17/forecast.json",
+  "note": "No sidecar *.sha256.json was present in the finagle-run folder, so whole-request, block, prompt_inputs and forecast hashes could not be cross-checked against a sidecar. The file sha256 matches the brief (70e2176f\u2026a93c4). Canonical hashes are recorded here."
+ },
+ "collaborative_run_md": "Fetched current main copy of mtlr05/forecaster .cursor/skills/forecaster/references/collaborative-run.md via the cursor-github connector (includes cash_share_adjustments).",
+ "forecast_commit": "uncommitted (live case /workspace/forecaster-work/output/VHI/2026-11-17/forecast.json, v3 of 18 Nov 2026; forecaster method 3a46f0a61f6b26de1a588acbc941120420d2ec41)",
+ "prompt_inputs": [],
+ "post_finagle": null,
+ "build_baseline": {
+  "ok": true,
+  "canadian": true,
+  "currency": "CAD",
+  "period_end": "2025-12-31",
+  "period_source": "yahoo",
+  "warnings": [
+   "Yahoo has no last close for the 10-year yield CA10Y=RR."
+  ],
+  "missing": [],
+  "skipped": [],
+  "assumptions": [
+   "rates.roict",
+   "debt.mode",
+   "debt.leverage",
+   "debt.start_year",
+   "year",
+   "baseline.nol",
+   "baseline.noa",
+   "rates.t",
+   "rates.rd",
+   "forecast.dwc.mode",
+   "distribution.mode"
+  ],
+  "sources_used": {
+   "date": "yahoo",
+   "revenue": "yahoo",
+   "ebitda": "yahoo",
+   "capex": "yahoo",
+   "da": "yahoo",
+   "tax": "yahoo",
+   "interest": "yahoo",
+   "sbc": "yahoo",
+   "debt": "yahoo",
+   "cash": "yahoo",
+   "gross_margin": "yahoo",
+   "ebitda_definition": "yahoo",
+   "shares": "yahoo",
+   "price": "yahoo",
+   "rates.roict": "assumption",
+   "debt.mode": "assumption",
+   "debt.leverage": "assumption",
+   "debt.start_year": "assumption",
+   "year": "assumption",
+   "baseline.nol": "assumption",
+   "baseline.noa": "assumption",
+   "rates.t": "assumption",
+   "rates.rd": "assumption",
+   "forecast.dwc.mode": "assumption",
+   "distribution.mode": "assumption"
+  },
+  "note": "Year 0 is the fiscal year ending 2025-12-31. case holds the merged leaves and the computed assumptions. nol and noa are never in the data feeds, so an unstated balance is a zero assumption. validate_case still lists anything a source did not supply and the defaults could not fill."
+ },
+ "fetched": {
+  "price": 6.73,
+  "price_date": "2026-11-18",
+  "price_source": "yahoo",
+  "price_currency": "CAD",
+  "price_evidence": "info.previousClose",
+  "rf": null,
+  "rf_date": null,
+  "rf_source": null,
+  "rf_note": "Unset. Yahoo has no last close for CA10Y=RR.",
+  "shares": 63.339153,
+  "shares_source": "yahoo",
+  "shares_as_of": "2026-11-18",
+  "shares_evidence": "info.sharesOutstanding",
+  "re": null,
+  "gt": null,
+  "year0": {
+   "date": "2025-12-31",
+   "revenue": 108.966918,
+   "ebitda": 25.89751,
+   "capex": 0.423144,
+   "da": 11.081525,
+   "tax": -0.209562,
+   "interest": 0.070346,
+   "sbc": 2.647812,
+   "debt": 2.514474,
+   "cash": 119.180625,
+   "gross_margin": 0.8038069040366912,
+   "ebitda_definition": "before_sbc",
+   "nol": 0,
+   "noa": 0
+  },
+  "year0_sources": {
+   "date": "yahoo",
+   "revenue": "yahoo",
+   "ebitda": "yahoo",
+   "capex": "yahoo",
+   "da": "yahoo",
+   "tax": "yahoo",
+   "interest": "yahoo",
+   "sbc": "yahoo",
+   "debt": "yahoo",
+   "cash": "yahoo",
+   "gross_margin": "yahoo",
+   "ebitda_definition": "yahoo",
+   "nol": "assumption",
+   "noa": "assumption"
+  },
+  "year0_currency": {
+   "date": null,
+   "revenue": "CAD",
+   "ebitda": "CAD",
+   "capex": "CAD",
+   "da": "CAD",
+   "tax": "CAD",
+   "interest": "CAD",
+   "sbc": "CAD",
+   "debt": "CAD",
+   "cash": "CAD",
+   "gross_margin": null,
+   "ebitda_definition": null,
+   "nol": null,
+   "noa": null
+  }
+ },
+ "defaults_filled": [
+  "rates.roict",
+  "debt.mode",
+  "debt.leverage",
+  "debt.start_year",
+  "year",
+  "baseline.nol",
+  "baseline.noa",
+  "rates.t",
+  "rates.rd",
+  "forecast.dwc.mode",
+  "distribution.mode"
+ ],
+ "cash_share_adjustments_schedule": {
+  "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Schedule was NOT applied to the case: validate_case reported missing rates.re and rates.gt, so the scenario stopped before run_case.",
+  "price_date": "2026-11-18",
+  "cost_of_equity": null,
+  "opening_cash": 119.180625,
+  "opening_shares": 63.339153,
+  "items": [
+   {
+    "name": "Buddy Healthcare cash consideration on closing",
+    "kind": "cash",
+    "date": "2026-07-10",
+    "t_years": 0.0,
+    "probability": 1.0,
+    "source_list": "base",
+    "discount_factor": 1.0,
+    "amount": -12.367916,
+    "present_value": -12.367916,
+    "new_shares": 0.0,
+    "status": "computed (not applied: scenario stopped on missing rates)"
+   },
+   {
+    "name": "Buddy Healthcare consideration shares",
+    "kind": "equity",
+    "date": "2026-07-10",
+    "t_years": 0.0,
+    "probability": 1.0,
+    "source_list": "base",
+    "discount_factor": 1.0,
+    "shares": 0.075,
+    "issue_price": 7.36,
+    "issue_price_stated": true,
+    "proceeds": 0.552,
+    "present_value": 0.552,
+    "new_shares": 0.075,
+    "note": "Procedure adds probability-weighted proceeds to year-0 cash and shares to the share count. This item is consideration shares, not a cash offering.",
+    "status": "computed (not applied: scenario stopped on missing rates)"
+   },
+   {
+    "name": "Contingent consideration paid in 9M 2026",
+    "kind": "cash",
+    "date": "2026-09-30",
+    "t_years": 0.0,
+    "probability": 1.0,
+    "source_list": "base",
+    "discount_factor": 1.0,
+    "amount": -0.781053,
+    "present_value": -0.781053,
+    "new_shares": 0.0,
+    "status": "computed (not applied: scenario stopped on missing rates)"
+   },
+   {
+    "name": "Novari earn-out (maximum)",
+    "kind": "cash",
+    "date": "2027-07-04",
+    "t_years": 0.6242299794661191,
+    "probability": 0.8444,
+    "source_list": "base",
+    "discount_factor": null,
+    "status": "not applied: rates.re is unset, so the item cannot be discounted"
+   },
+   {
+    "name": "Buddy earn-out (maximum)",
+    "kind": "cash",
+    "date": "2029-01-10",
+    "t_years": 2.1464750171115674,
+    "probability": 0.4422,
+    "source_list": "base",
+    "discount_factor": null,
+    "status": "not applied: rates.re is unset, so the item cannot be discounted"
+   }
+  ],
+  "sum_pv_cash_of_computable_items": -12.596969,
+  "sum_new_shares_of_computable_items": 0.075,
+  "adjusted_cash_if_computable_items_applied": 106.583656,
+  "adjusted_shares_if_computable_items_applied": 63.414153000000006,
+  "complete": false,
+  "applied_to_case": false
+ },
+ "known_issue_checks": {
+  "1_cad_risk_free_yahoo_CA10Y_RR": {
+   "occurred": true,
+   "detail": "build_baseline warning: \"Yahoo has no last close for the 10-year yield CA10Y=RR.\" rates has only roict, t and rd. rates.risk_free, rates.re and rates.gt are absent. validate_case missing: rates.re, rates.gt. Context only (not used): Forecaster said the Bank of Canada 10-year was 3.81% on 16 Nov 2026.",
+   "finagle_warning": [
+    "Yahoo has no last close for the 10-year yield CA10Y=RR."
+   ]
+  },
+  "2_yahoo_total_debt_may_be_leases": {
+   "occurred": true,
+   "detail": "Year-0 debt is 2.514474 CAD from Yahoo Total Debt. Finagle note: \"Yahoo Total Debt can include lease liabilities.\" Default debt.mode=target, debt.leverage=year-0 Debt/EBITDA (0.097093), start_year=1, rates.rd=year-0 interest/debt (0.027976). Not patched."
+  },
+  "3_yahoo_ebitda_vs_reported_adj_ebitda": {
+   "occurred": true,
+   "detail": "Year-0 EBITDA is 25.897510 CAD from Yahoo (Operating Income + D&A + SBC; Yahoo's own EBITDA row does not add back SBC). The Forecaster's discarded-test note of reported Adj. EBITDA 26.55 FY25 is context only; the Yahoo figure was left in place.",
+   "yahoo_ebitda": 25.89751,
+   "reported_adj_ebitda_fy25_context_only": 26.55
+  },
+  "4_tax_default_21pct_vs_canadian_combined": {
+   "occurred": true,
+   "detail": "rates.t is 0.21, source assumption, evidence \"US federal statutory tax rate. No marginal rate was stated.\" Context only: Canadian combined statutory rate is about 26.5%. Not patched.",
+   "rates_t": {
+    "value": 0.21,
+    "source": "assumption",
+    "evidence": "US federal statutory tax rate. No marginal rate was stated."
+   }
+  },
+  "5_capex_rule_anchors_on_DA": {
+   "occurred_as_year0_inputs": true,
+   "capex_path_observed": false,
+   "detail": "Year-0 D&A is 11.081525 CAD (Yahoo Depreciation And Amortization) and year-0 capex is 0.423144 CAD (Yahoo Capital Expenditure). The default capex forecast (method 1) was not run because the scenario stopped before run_case, so any inflation of capex from the D&A/revenue ratio was not observed. Not patched.",
+   "year0_da": 11.081525,
+   "year0_capex": 0.423144,
+   "da_to_revenue": 0.10169623224546002
+  },
+  "currency_consistency": {
+   "ok": true,
+   "detail": "Ticker VHI.TO, canadian=True, reporting currency CAD. Price 6.73 CAD (Yahoo previousClose, as_of 2026-11-18). Year-0 money leaves (revenue, ebitda, capex, da, tax, interest, sbc, debt, cash) are all CAD. Shares are a count (63.339153, Yahoo sharesOutstanding, as_of 2026-11-18).",
+   "currency": "CAD",
+   "price_currency": "CAD"
+  }
+ },
+ "scenarios": {
+  "base": {
+   "ok": false,
+   "stopped": true,
+   "stopped_reason": "validate_case reported missing fields and/or errors; run_case was not called; no value is presented.",
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 16.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+    ],
+    "missing": [
+     "rates.re",
+     "rates.gt"
+    ]
+   },
+   "update_case_ok": true,
+   "value_per_share": null,
+   "value_per_share_DDM": null,
+   "log": [],
+   "sanity_flags": [],
+   "assumptions": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode"
+   ],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode"
+   ],
+   "forecaster_leaves_landed": {
+    "forecast.sales_growth": [
+     0.183845541,
+     0.059728295,
+     0.041731847,
+     0.133417691
+    ],
+    "forecast.ebitda_growth": [
+     0.280404957,
+     0.093057647,
+     0.112042958,
+     0.169377022
+    ],
+    "forecast.margin_path.me": 0.299411,
+    "forecast.margin_path.mc": 0.5,
+    "forecast.margin_path.gsnext": 0.080013,
+    "forecast.ebitda_basis": "total",
+    "forecast.acquisition_disclosure.status": "none"
+   },
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "validate_case missing: ['rates.re', 'rates.gt']",
+    "Yahoo CA10Y=RR had no last close, so rates.risk_free, rates.re and rates.gt were left unset. The Bank of Canada 10-year (3.81% on 16 Nov 2026) was not injected."
+   ],
+   "notebook_code": null,
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Schedule was NOT applied to the case: validate_case reported missing rates.re and rates.gt, so the scenario stopped before run_case.",
+    "price_date": "2026-11-18",
+    "cost_of_equity": null,
+    "opening_cash": 119.180625,
+    "opening_shares": 63.339153,
+    "items": [
+     {
+      "name": "Buddy Healthcare cash consideration on closing",
+      "kind": "cash",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -12.367916,
+      "present_value": -12.367916,
+      "new_shares": 0.0,
+      "status": "computed (not applied: scenario stopped on missing rates)"
+     },
+     {
+      "name": "Buddy Healthcare consideration shares",
+      "kind": "equity",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "shares": 0.075,
+      "issue_price": 7.36,
+      "issue_price_stated": true,
+      "proceeds": 0.552,
+      "present_value": 0.552,
+      "new_shares": 0.075,
+      "note": "Procedure adds probability-weighted proceeds to year-0 cash and shares to the share count. This item is consideration shares, not a cash offering.",
+      "status": "computed (not applied: scenario stopped on missing rates)"
+     },
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "computed (not applied: scenario stopped on missing rates)"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": null,
+      "status": "not applied: rates.re is unset, so the item cannot be discounted"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": null,
+      "status": "not applied: rates.re is unset, so the item cannot be discounted"
+     }
+    ],
+    "sum_pv_cash_of_computable_items": -12.596969,
+    "sum_new_shares_of_computable_items": 0.075,
+    "adjusted_cash_if_computable_items_applied": 106.583656,
+    "adjusted_shares_if_computable_items_applied": 63.414153000000006,
+    "complete": false,
+    "applied_to_case": false
+   }
+  },
+  "bull": {
+   "ok": false,
+   "stopped": true,
+   "stopped_reason": "validate_case reported missing fields and/or errors; run_case was not called; no value is presented.",
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 21.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+    ],
+    "missing": [
+     "rates.re",
+     "rates.gt"
+    ]
+   },
+   "update_case_ok": true,
+   "value_per_share": null,
+   "value_per_share_DDM": null,
+   "log": [],
+   "sanity_flags": [],
+   "assumptions": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode"
+   ],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode"
+   ],
+   "forecaster_leaves_landed": {
+    "forecast.sales_growth": [
+     0.184974324,
+     0.084144575,
+     0.059583679,
+     0.140437811
+    ],
+    "forecast.ebitda_growth": [
+     0.291100105,
+     0.202601797,
+     0.171331555,
+     0.191348822
+    ],
+    "forecast.margin_path.me": 0.340122,
+    "forecast.margin_path.mc": 0.6,
+    "forecast.margin_path.gsnext": 0.092064,
+    "forecast.ebitda_basis": "total",
+    "forecast.acquisition_disclosure.status": "none"
+   },
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "validate_case missing: ['rates.re', 'rates.gt']",
+    "Yahoo CA10Y=RR had no last close, so rates.risk_free, rates.re and rates.gt were left unset. The Bank of Canada 10-year (3.81% on 16 Nov 2026) was not injected."
+   ],
+   "notebook_code": null,
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Schedule was NOT applied to the case: validate_case reported missing rates.re and rates.gt, so the scenario stopped before run_case.",
+    "price_date": "2026-11-18",
+    "cost_of_equity": null,
+    "opening_cash": 119.180625,
+    "opening_shares": 63.339153,
+    "items": [
+     {
+      "name": "Buddy Healthcare cash consideration on closing",
+      "kind": "cash",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -12.367916,
+      "present_value": -12.367916,
+      "new_shares": 0.0,
+      "status": "computed (not applied: scenario stopped on missing rates)"
+     },
+     {
+      "name": "Buddy Healthcare consideration shares",
+      "kind": "equity",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "shares": 0.075,
+      "issue_price": 7.36,
+      "issue_price_stated": true,
+      "proceeds": 0.552,
+      "present_value": 0.552,
+      "new_shares": 0.075,
+      "note": "Procedure adds probability-weighted proceeds to year-0 cash and shares to the share count. This item is consideration shares, not a cash offering.",
+      "status": "computed (not applied: scenario stopped on missing rates)"
+     },
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "computed (not applied: scenario stopped on missing rates)"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": null,
+      "status": "not applied: rates.re is unset, so the item cannot be discounted"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": null,
+      "status": "not applied: rates.re is unset, so the item cannot be discounted"
+     }
+    ],
+    "sum_pv_cash_of_computable_items": -12.596969,
+    "sum_new_shares_of_computable_items": 0.075,
+    "adjusted_cash_if_computable_items_applied": 106.583656,
+    "adjusted_shares_if_computable_items_applied": 63.414153000000006,
+    "complete": false,
+    "applied_to_case": false
+   }
+  },
+  "bear": {
+   "ok": false,
+   "stopped": true,
+   "stopped_reason": "validate_case reported missing fields and/or errors; run_case was not called; no value is presented.",
+   "validation": {
+    "errors": [],
+    "warnings": [],
+    "missing": [
+     "rates.re",
+     "rates.gt"
+    ]
+   },
+   "update_case_ok": true,
+   "value_per_share": null,
+   "value_per_share_DDM": null,
+   "log": [],
+   "sanity_flags": [],
+   "assumptions": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode"
+   ],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode"
+   ],
+   "forecaster_leaves_landed": {
+    "forecast.sales_growth": [
+     0.182716758,
+     0.01918108,
+     0.001469368,
+     0.112990528
+    ],
+    "forecast.ebitda_growth": [
+     0.270613625,
+     -0.042857143,
+     0.00027869,
+     0.130142711
+    ],
+    "forecast.margin_path.me": 0.249356,
+    "forecast.margin_path.mc": 0.4,
+    "forecast.margin_path.gsnext": 0.052024,
+    "forecast.ebitda_basis": "total",
+    "forecast.acquisition_disclosure.status": "none"
+   },
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "validate_case missing: ['rates.re', 'rates.gt']",
+    "Yahoo CA10Y=RR had no last close, so rates.risk_free, rates.re and rates.gt were left unset. The Bank of Canada 10-year (3.81% on 16 Nov 2026) was not injected."
+   ],
+   "notebook_code": null,
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Schedule was NOT applied to the case: validate_case reported missing rates.re and rates.gt, so the scenario stopped before run_case.",
+    "price_date": "2026-11-18",
+    "cost_of_equity": null,
+    "opening_cash": 119.180625,
+    "opening_shares": 63.339153,
+    "items": [
+     {
+      "name": "Buddy Healthcare cash consideration on closing",
+      "kind": "cash",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -12.367916,
+      "present_value": -12.367916,
+      "new_shares": 0.0,
+      "status": "computed (not applied: scenario stopped on missing rates)"
+     },
+     {
+      "name": "Buddy Healthcare consideration shares",
+      "kind": "equity",
+      "date": "2026-07-10",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "shares": 0.075,
+      "issue_price": 7.36,
+      "issue_price_stated": true,
+      "proceeds": 0.552,
+      "present_value": 0.552,
+      "new_shares": 0.075,
+      "note": "Procedure adds probability-weighted proceeds to year-0 cash and shares to the share count. This item is consideration shares, not a cash offering.",
+      "status": "computed (not applied: scenario stopped on missing rates)"
+     },
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "computed (not applied: scenario stopped on missing rates)"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": null,
+      "status": "not applied: rates.re is unset, so the item cannot be discounted"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": null,
+      "status": "not applied: rates.re is unset, so the item cannot be discounted"
+     }
+    ],
+    "sum_pv_cash_of_computable_items": -12.596969,
+    "sum_new_shares_of_computable_items": 0.075,
+    "adjusted_cash_if_computable_items_applied": 106.583656,
+    "adjusted_shares_if_computable_items_applied": 63.414153000000006,
+    "complete": false,
+    "applied_to_case": false
+   }
+  }
+ }
+}
