@@ -1,0 +1,22 @@
+driver,tag,base,bull,bear,FY26E,FY27E,FY28E,FY29E,note
+closing ARR (base),C28,,,,108.694,113.63,123.459,134.27,organic adds; FX zero
+closing ARR (bull),C28,,,,109.694,117.536,128.279,140.633,organic adds; FX zero
+closing ARR (bear),C28,,,,107.694,106.925,114.156,121.387,organic adds; FX zero
+Q4 2026 organic ARR add,S2,1.5,2.5,0.5,,,,,
+organic ARR adds before SHREWD (base),"S3-S6,S22,S29",,,,1.5,8.935,9.829,10.812,dollars; FY26E column = Q4 2026 add; FY30E 11.893
+organic ARR adds before SHREWD (bull),"S3-S6,S22,S29",,,,2.5,9.341,10.743,12.354,dollars; FY26E column = Q4 2026 add; FY30E 14.207
+organic ARR adds before SHREWD (bear),"S3-S6,S22,S29",,,,0.5,7.231,7.231,7.231,dollars; FY26E column = Q4 2026 add; FY30E 7.231
+organic adds growth a year (dollars),S29,10%,15%,0%,,,,,anchor 8.123 = four quarters to Q2 2026; v2 used 9/10/10% of opening ARR
+SHREWD ARR roll-off in 2027 (straight-line),"S26,S22",4.0,1.5,8.0,,,,,none in 2028-29; SHREWD ARR 7.5-8.6 (midpoint 8.0); v2 17 Nov 2026
+lost SHREWD revenue fall-through to EBITDA,S27,80%,80%,80%,,,,,saves only cash cost of sales
+event adjustment to Consensus revenue,C36,,,,0.0,-2.295,-4.59,-4.59,FDP extension 16 Nov 2026
+event adjustment to Consensus Adj. EBITDA,C36,,,,0.0,-1.836,-3.672,-3.672,FDP extension 16 Nov 2026
+term revenue / average ARR,S1,0.985,0.985,0.985,,,,,band 0.975-0.995
+virtual care growth,S7,-5%,0%,-15%,,,,,from FY2027
+services % of term,S9,16.5%,16.5%,16.5%,,,,,band 15-19%
+perpetual a year,S8,2.0,2.0,2.0,,,,,Q4 2026 0.5
+cash gross margin,S10,80%,80%,80%,,,,,band 78-82%
+core opex inflation,S12,2%,2%,2%,,,,,band 1-3%
+variable opex rate,S13,30%,20%,40%,,,,,
+Buddy cost saving a year,S14,0.5,1.0,0.0,,,,,from FY2027
+organic scale factor to event-adjusted Consensus,C1/C2,,,,0.9825,0.987,0.9714,1.0229,FY26E column = Q4 factor

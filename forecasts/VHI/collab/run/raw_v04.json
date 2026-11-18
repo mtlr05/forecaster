@@ -1,0 +1,48 @@
+{
+ "bb_warnings": [
+  "Yahoo has no last close for the 10-year yield CA10Y=RR."
+ ],
+ "scenario_ok": {
+  "base": true,
+  "bull": true,
+  "bear": true
+ },
+ "rates_sample": {
+  "risk_free": {
+   "value": 0.0381,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+  },
+  "re": {
+   "value": 0.0931,
+   "source": "assumption",
+   "evidence": "0.055 plus the 10-year yield.",
+   "derived_from": [
+    "rates.risk_free"
+   ]
+  },
+  "gt": {
+   "value": 0.0381,
+   "source": "assumption",
+   "evidence": "Terminal growth equals the 10-year yield.",
+   "derived_from": [
+    "rates.risk_free"
+   ]
+  },
+  "rd": {
+   "value": 0.028,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.\""
+  },
+  "t": {
+   "value": 0.265,
+   "source": "prompt",
+   "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\""
+  },
+  "roict": {
+   "value": 0.15,
+   "source": "assumption",
+   "evidence": "Terminal ROIC of 15 percent."
+  }
+ }
+}

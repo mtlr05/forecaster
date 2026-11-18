@@ -1,0 +1,148 @@
+{
+ "bb_keys": [
+  "ok",
+  "ticker",
+  "canadian",
+  "period_end",
+  "period_source",
+  "currency",
+  "baseline",
+  "shares",
+  "price",
+  "rates",
+  "forecast",
+  "debt",
+  "distribution",
+  "case",
+  "assumptions",
+  "sources_used",
+  "missing",
+  "skipped",
+  "warnings",
+  "layers",
+  "note"
+ ],
+ "raw": {
+  "base": {
+   "update": {
+    "ok": true
+   },
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 16.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+    ],
+    "missing": [
+     "rates.re",
+     "rates.gt"
+    ]
+   }
+  },
+  "bull": {
+   "update": {
+    "ok": true
+   },
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 21.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+    ],
+    "missing": [
+     "rates.re",
+     "rates.gt"
+    ]
+   }
+  },
+  "bear": {
+   "update": {
+    "ok": true
+   },
+   "validation": {
+    "errors": [],
+    "warnings": [],
+    "missing": [
+     "rates.re",
+     "rates.gt"
+    ]
+   }
+  }
+ },
+ "worked_schedule": {
+  "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Schedule was NOT applied to the case: validate_case reported missing rates.re and rates.gt, so the scenario stopped before run_case.",
+  "price_date": "2026-11-18",
+  "cost_of_equity": null,
+  "opening_cash": 119.180625,
+  "opening_shares": 63.339153,
+  "items": [
+   {
+    "name": "Buddy Healthcare cash consideration on closing",
+    "kind": "cash",
+    "date": "2026-07-10",
+    "t_years": 0.0,
+    "probability": 1.0,
+    "source_list": "base",
+    "discount_factor": 1.0,
+    "amount": -12.367916,
+    "present_value": -12.367916,
+    "new_shares": 0.0,
+    "status": "computed (not applied: scenario stopped on missing rates)"
+   },
+   {
+    "name": "Buddy Healthcare consideration shares",
+    "kind": "equity",
+    "date": "2026-07-10",
+    "t_years": 0.0,
+    "probability": 1.0,
+    "source_list": "base",
+    "discount_factor": 1.0,
+    "shares": 0.075,
+    "issue_price": 7.36,
+    "issue_price_stated": true,
+    "proceeds": 0.552,
+    "present_value": 0.552,
+    "new_shares": 0.075,
+    "note": "Procedure adds probability-weighted proceeds to year-0 cash and shares to the share count. This item is consideration shares, not a cash offering.",
+    "status": "computed (not applied: scenario stopped on missing rates)"
+   },
+   {
+    "name": "Contingent consideration paid in 9M 2026",
+    "kind": "cash",
+    "date": "2026-09-30",
+    "t_years": 0.0,
+    "probability": 1.0,
+    "source_list": "base",
+    "discount_factor": 1.0,
+    "amount": -0.781053,
+    "present_value": -0.781053,
+    "new_shares": 0.0,
+    "status": "computed (not applied: scenario stopped on missing rates)"
+   },
+   {
+    "name": "Novari earn-out (maximum)",
+    "kind": "cash",
+    "date": "2027-07-04",
+    "t_years": 0.6242299794661191,
+    "probability": 0.8444,
+    "source_list": "base",
+    "discount_factor": null,
+    "status": "not applied: rates.re is unset, so the item cannot be discounted"
+   },
+   {
+    "name": "Buddy earn-out (maximum)",
+    "kind": "cash",
+    "date": "2029-01-10",
+    "t_years": 2.1464750171115674,
+    "probability": 0.4422,
+    "source_list": "base",
+    "discount_factor": null,
+    "status": "not applied: rates.re is unset, so the item cannot be discounted"
+   }
+  ],
+  "sum_pv_cash_of_computable_items": -12.596969,
+  "sum_new_shares_of_computable_items": 0.075,
+  "adjusted_cash_if_computable_items_applied": 106.583656,
+  "adjusted_shares_if_computable_items_applied": 63.414153000000006,
+  "complete": false,
+  "applied_to_case": false
+ }
+}

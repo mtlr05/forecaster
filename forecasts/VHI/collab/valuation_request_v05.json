@@ -1,0 +1,411 @@
+{
+ "mode": "collaborative",
+ "ticker": "VHI.TO",
+ "version": "v05",
+ "parent_version": "v04",
+ "forecast_commit": "uncommitted (live case /workspace/forecaster-work/output/VHI/2026-11-17/forecast.json, v3 of 18 Nov 2026; forecaster method 3a46f0a61f6b26de1a588acbc941120420d2ec41)",
+ "scenarios": [
+  "base",
+  "bull",
+  "bear"
+ ],
+ "forecaster": {
+  "base": {
+   "forecast.sales_growth": {
+    "value": [
+     0.183845541,
+     0.059728295,
+     0.041731847,
+     0.133417691
+    ],
+    "tag": "C",
+    "cite_id": "C22",
+    "evidence": "Revenue growth FY2026E-FY2029E on totals; compounds to the base revenue."
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     0.280404957,
+     0.093057647,
+     0.112042958,
+     0.169377022
+    ],
+    "tag": "C",
+    "cite_id": "C23",
+    "evidence": "Adjusted EBITDA growth FY2026E-FY2029E on totals; compounds to the base EBITDA."
+   },
+   "forecast.margin_path.me": {
+    "value": 0.299411,
+    "tag": "C",
+    "cite_id": "C24",
+    "evidence": "me = FY2029E Adjusted EBITDA 48.328 / revenue 161.410 = 29.9% (event-adjusted Consensus)."
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.5,
+    "tag": "S",
+    "cite_id": "S16",
+    "evidence": "Contribution margin mc = 1 - 20% cash cost of sales - 30% variable opex = 0.50 (bull 0.60, bear 0.40)."
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.080013,
+    "tag": "S",
+    "cite_id": "S6",
+    "evidence": "gsnext = FY2030 one more year of the same build on the scaled FY2029 lines (organic ARR adds 11.89, virtual care -5%, perpetual flat, services 16.5% of term) = 174.325 / 161.410 - 1. FY2030 (gsnext year) organic ARR adds 11.89 base (bull 14.21, bear 7.23), one more year of the same dollar-add build; no management phrase reaches 2030."
+   },
+   "forecast.ebitda_basis": {
+    "value": "total",
+    "tag": "C",
+    "cite_id": "C20",
+    "evidence": "Leaves are on totals: Buddy (closed 10 Jul 2026) sits inside the term line and the cost build; no acquisition after it is forecast. The same basis goes to Finagle for every case (P9)."
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "C",
+    "cite_id": "C21",
+    "evidence": "No future acquisition is forecast. Management hopes to close another deal before year-end (G12) but none is announced; announced-but-unclosed deals are excluded."
+   }
+  },
+  "bull": {
+   "forecast.sales_growth": {
+    "value": [
+     0.184974324,
+     0.084144575,
+     0.059583679,
+     0.140437811
+    ],
+    "tag": "C",
+    "cite_id": "C27",
+    "evidence": "bull revenue growth on totals."
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     0.291100105,
+     0.202601797,
+     0.171331555,
+     0.191348822
+    ],
+    "tag": "C",
+    "cite_id": "C27_1",
+    "evidence": "bull EBITDA growth on totals."
+   },
+   "forecast.margin_path.me": {
+    "value": 0.340122,
+    "tag": "C",
+    "cite_id": "C27_2",
+    "evidence": "bull me = FY2029E EBITDA / revenue."
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.6,
+    "tag": "S",
+    "cite_id": "S16_1",
+    "evidence": "Contribution margin mc = 1 - 20% cash cost of sales - 30% variable opex = 0.50 (bull 0.60, bear 0.40)."
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.092064,
+    "tag": "S",
+    "cite_id": "S6_1",
+    "evidence": "bull gsnext: FY2030 one more year of the bull build (organic ARR adds 14.21)."
+   },
+   "forecast.ebitda_basis": {
+    "value": "total",
+    "tag": "C",
+    "cite_id": "C20",
+    "evidence": "Leaves are on totals: Buddy (closed 10 Jul 2026) sits inside the term line and the cost build; no acquisition after it is forecast. The same basis goes to Finagle for every case (P9)."
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "C",
+    "cite_id": "C21",
+    "evidence": "No future acquisition is forecast. Management hopes to close another deal before year-end (G12) but none is announced; announced-but-unclosed deals are excluded."
+   }
+  },
+  "bear": {
+   "forecast.sales_growth": {
+    "value": [
+     0.182716758,
+     0.01918108,
+     0.001469368,
+     0.112990528
+    ],
+    "tag": "C",
+    "cite_id": "C27_3",
+    "evidence": "bear revenue growth on totals."
+   },
+   "forecast.ebitda_growth": {
+    "value": [
+     0.270613625,
+     -0.042857143,
+     0.00027869,
+     0.130142711
+    ],
+    "tag": "C",
+    "cite_id": "C27_4",
+    "evidence": "bear EBITDA growth on totals."
+   },
+   "forecast.margin_path.me": {
+    "value": 0.249356,
+    "tag": "C",
+    "cite_id": "C27_5",
+    "evidence": "bear me = FY2029E EBITDA / revenue."
+   },
+   "forecast.margin_path.mc": {
+    "value": 0.4,
+    "tag": "S",
+    "cite_id": "S16_2",
+    "evidence": "Contribution margin mc = 1 - 20% cash cost of sales - 30% variable opex = 0.50 (bull 0.60, bear 0.40)."
+   },
+   "forecast.margin_path.gsnext": {
+    "value": 0.052024,
+    "tag": "S",
+    "cite_id": "S6_2",
+    "evidence": "bear gsnext: FY2030 one more year of the bear build (organic ARR adds 7.23)."
+   },
+   "forecast.ebitda_basis": {
+    "value": "total",
+    "tag": "C",
+    "cite_id": "C20",
+    "evidence": "Leaves are on totals: Buddy (closed 10 Jul 2026) sits inside the term line and the cost build; no acquisition after it is forecast. The same basis goes to Finagle for every case (P9)."
+   },
+   "forecast.acquisition_disclosure.status": {
+    "value": "none",
+    "tag": "C",
+    "cite_id": "C21",
+    "evidence": "No future acquisition is forecast. Management hopes to close another deal before year-end (G12) but none is announced; announced-but-unclosed deals are excluded."
+   }
+  }
+ },
+ "prompt_inputs": [
+  {
+   "path": "rates.risk_free",
+   "value": 0.0381,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "3.81% use this",
+   "date": "2026-11-18",
+   "note": "David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+  },
+  {
+   "path": "baseline.debt",
+   "value": 0.0,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18",
+   "note": "Leases excluded; Vitalhub has no borrowings."
+  },
+  {
+   "path": "debt.mode",
+   "value": "hold",
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18",
+   "note": "Hold debt at zero; no target re-borrowing."
+  },
+  {
+   "path": "rates.t",
+   "value": 0.265,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18"
+  },
+  {
+   "path": "baseline.cash",
+   "value": 106.812709,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "cash should be from the 2025 filling adjusted for the cash price of Buddy (+$12.37). shares should be from the 2025 filling (63.23M) adjusted for Buddy (+0.075M). Isn't that logical?",
+   "date": "2026-11-18",
+   "includes_adjustments": false,
+   "note": "FY2025 cash + STI 119.180625 (FY25 FS) minus Buddy closing cash 12.367916 (Q3'26 FS Note 4(c)); user wrote +12.37, sign confirmed as an outflow. Buddy items removed from cash_share_adjustments to avoid double counting; remaining schedule items still apply."
+  },
+  {
+   "path": "market.shares",
+   "value": 63.307054,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "cash should be from the 2025 filling adjusted for the cash price of Buddy (+$12.37). shares should be from the 2025 filling (63.23M) adjusted for Buddy (+0.075M). Isn't that logical?",
+   "date": "2026-11-18",
+   "includes_adjustments": false,
+   "note": "FY2025 shares 63,232,054 (FY25 FS) + 75,000 Buddy consideration shares (Q3'26 FS Note 4(c))."
+  },
+  {
+   "path": "baseline.da",
+   "value": 1.271558,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "remove the \"amortization of intangible assets\" when calculating capex using method 1.",
+   "date": "2026-11-18",
+   "note": "FY25 depreciation of PP&E 0.713788 + right-of-use 0.557770; excludes amortization of acquired intangibles 9.809967 (FY25 FS p.income statement, Note 7). Capex stays on Finagle method 1."
+  },
+  {
+   "path": "rates.rd",
+   "value": 0.028,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.",
+   "date": "2026-11-18"
+  },
+  {
+   "path": "baseline.ebitda",
+   "value": 26.554099,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Yes, do the quick fix",
+   "date": "2026-11-18",
+   "basis": "fiscal_year",
+   "period_end": "2025-12-31",
+   "currency": "CAD",
+   "note": "Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated."
+  },
+  {
+   "path": "baseline.ebitda_definition",
+   "value": "before_sbc",
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Yes, do the quick fix",
+   "date": "2026-11-18",
+   "basis": "fiscal_year",
+   "period_end": "2025-12-31",
+   "currency": "CAD",
+   "note": "Quick fix agreed 18 Nov 2026: v05 with FY25 EBITDA of 26.55 (Vitalhub Adjusted EBITDA, before share-based compensation) so Finagle compounds the Forecaster growth leaves onto the reported level instead of Yahoo's 25.898. Source: Vitalhub FY2025 MD&A Adjusted EBITDA = EBITDA + share-based and deferred share-based compensation + acquisition, restructuring and integration costs + change in fair value of contingent consideration (forecast.json, value 26.554099). FY25 revenue 108.966918 already matches Yahoo, so it is not restated."
+  }
+ ],
+ "cash_share_adjustments": {
+  "base": [
+   {
+    "kind": "cash",
+    "name": "Contingent consideration paid in 9M 2026",
+    "when": {
+     "value": "2026-09-30",
+     "tag": "S",
+     "citation": {
+      "id": "S25",
+      "text": "Payments of contingent consideration C$781,053 in the nine months to 30 Sep 2026; exact date not given, dated at the quarter end.",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.6"
+     }
+    },
+    "probability": {
+     "value": 1.0,
+     "tag": "C",
+     "citation": {
+      "id": "C19",
+      "text": "Paid; probability 1.",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "amount": {
+     "value": -0.781053,
+     "tag": "A",
+     "citation": {
+      "id": "A48",
+      "text": "Payments of contingent consideration (781,053) in the nine months to 30 Sep 2026.",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.6"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Novari earn-out (maximum)",
+    "when": {
+     "value": "2027-07-04",
+     "tag": "S",
+     "citation": {
+      "id": "S21",
+      "text": "Earn-out dates are the end of each earn-out window: Novari 24 months after 4 Jul 2025 close (2027-07-04); Buddy 30 months after 10 Jul 2026 close (2029-01-10). The filings give windows, not payment dates.",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "probability": {
+     "value": 0.8444,
+     "tag": "S",
+     "citation": {
+      "id": "S20",
+      "text": "Earn-out probabilities = accrued fair value / maximum: Novari 3.8 / 4.5 = 0.844; Buddy 3.205624 / 7.248555 = 0.442 (D2).",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "amount": {
+     "value": -4.5,
+     "tag": "A",
+     "citation": {
+      "id": "A49",
+      "text": "Novari: \"remaining potential performance-based consideration payable of up to $4,500,000 ... in the 24-month period following the acquisition. A balance of $3,800,000 is accrued\".",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.8"
+     }
+    }
+   },
+   {
+    "kind": "cash",
+    "name": "Buddy earn-out (maximum)",
+    "when": {
+     "value": "2029-01-10",
+     "tag": "S",
+     "citation": {
+      "id": "S21_1",
+      "text": "Earn-out dates are the end of each earn-out window: Novari 24 months after 4 Jul 2025 close (2027-07-04); Buddy 30 months after 10 Jul 2026 close (2029-01-10). The filings give windows, not payment dates.",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "probability": {
+     "value": 0.4422,
+     "tag": "S",
+     "citation": {
+      "id": "S20_1",
+      "text": "Earn-out probabilities = accrued fair value / maximum: Novari 3.8 / 4.5 = 0.844; Buddy 3.205624 / 7.248555 = 0.442 (D2).",
+      "url": "https://www.otcmarkets.com/filing/607877/content",
+      "page_status": "unverified"
+     }
+    },
+    "amount": {
+     "value": -7.248555,
+     "tag": "A",
+     "citation": {
+      "id": "A51",
+      "text": "Buddy: \"remaining potential performance-based consideration payable of up to $7,248,555, if certain revenue targets are met in the 30-month period following the acquisition\"; fair value at close C$3,205,624.",
+      "url": "https://www.otcmarkets.com/filing/607876/content",
+      "page": "p.9"
+     }
+    }
+   }
+  ]
+ },
+ "post_finagle": null
+}

@@ -1,0 +1,307 @@
+{
+ "ticker": "VHI.TO",
+ "version": "v03",
+ "parent_version": "v02",
+ "mode": "collaborative",
+ "currency": "CAD",
+ "finagle_commit": "377f177b4013e713fe7c4603962e5f883a67e298",
+ "ff_log": "Already up to date (377f177b); no commits since 377f177b.",
+ "run_at": "2026-11-18T13:45:34.941749-05:00",
+ "sec_user_agent": "David May davidmay44@hotmail.com",
+ "stopped_before_run_case": true,
+ "hash_check": {
+  "sidecar_present": false,
+  "file_bytes": "3cdc39356b8f8a351381c8cd1cd690cfdd1e58cd2dc60a4228e90f688c5504c8",
+  "file_bytes_matches_brief": true,
+  "whole_request": "186549f24cbce6db9d8fb15992c4ad6c8c2e53885a2ccfb27393c0e2940cf94d",
+  "blocks": {
+   "base": "49b7bed19fd62f1761ecb758852c4d963ab895802c4e96b5df4fb2d22802ff2a",
+   "bull": "b3aecd1f3422836803becf2e4ad7d4cfeb5e44ff39db4884e3488552a1bdc0a2",
+   "bear": "25e35874995e3aaf15fa64df5b32ca41d9f1b7f9c90114635f10fdb15027fa8c"
+  },
+  "prompt_inputs": "d7d5f34a360313dadf11134e0fe6b4d5db52c3a989dc974e8913300955f8d792",
+  "forecast_json_bytes": "2fb8fcf0e0f3e24376227fedeb8b29361536fd9d4fba60510e54c3a72019b7e7",
+  "note": "No sidecar was present. File sha256 matches the brief (3cdc3935…5504c8). Canonical hashes recorded here."
+ },
+ "request_diff_vs_v02": {
+  "changed_keys": [
+   "version",
+   "parent_version",
+   "prompt_inputs"
+  ],
+  "unchanged": [
+   "mode",
+   "ticker",
+   "forecast_commit",
+   "scenarios",
+   "forecaster",
+   "cash_share_adjustments",
+   "post_finagle"
+  ],
+  "prompt_inputs_v02_count": 1,
+  "prompt_inputs_v03_count": 6,
+  "carried_from_v02": {
+   "path": "rates.risk_free",
+   "value": 0.0381,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "3.81% use this",
+   "date": "2026-11-18"
+  },
+  "added_prompt_inputs": [
+   {
+    "path": "forecast.capex",
+    "value": "FY25 capex/revenue ratio = 0.423144/108.966918 = 0.0038833, applied to each scenario's own revenue in every forecast year (full list, year 0 = 0.423144)",
+    "applies_to": [
+     "base",
+     "bull",
+     "bear"
+    ],
+    "date": "2026-11-18",
+    "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares."
+   },
+   {
+    "path": "baseline.debt",
+    "value": 0.0,
+    "applies_to": [
+     "base",
+     "bull",
+     "bear"
+    ],
+    "date": "2026-11-18",
+    "note": "Leases excluded; Vitalhub has no borrowings.",
+    "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares."
+   },
+   {
+    "path": "debt.mode",
+    "value": "hold",
+    "applies_to": [
+     "base",
+     "bull",
+     "bear"
+    ],
+    "date": "2026-11-18",
+    "note": "Hold debt at zero; no target re-borrowing.",
+    "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares."
+   },
+   {
+    "path": "rates.t",
+    "value": 0.265,
+    "applies_to": [
+     "base",
+     "bull",
+     "bear"
+    ],
+    "date": "2026-11-18",
+    "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares."
+   },
+   {
+    "path": "cash_share_adjustments.<all>.'Buddy Healthcare consideration shares'.proceeds",
+    "value": 0.0,
+    "applies_to": [
+     "base",
+     "bull",
+     "bear"
+    ],
+    "date": "2026-11-18",
+    "note": "Non-cash consideration shares: add the 0.075 shares but no proceeds to cash. The item in forecast.json is otherwise unchanged.",
+    "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares."
+   }
+  ],
+  "cash_share_adjustments_unchanged": true,
+  "note": "cash_share_adjustments is byte-for-byte the same as v02, including the Buddy consideration shares item (shares 0.075, price 7.36, no proceeds field). The new proceeds=0 instruction is only in prompt_inputs, via a non-Finagle path."
+ },
+ "stop_reasons": [
+  {
+   "item": "forecast.capex",
+   "verbatim_request_value": "FY25 capex/revenue ratio = 0.423144/108.966918 = 0.0038833, applied to each scenario's own revenue in every forecast year (full list, year 0 = 0.423144)",
+   "problem": "The prompt value is a prose description of a formula, not a year-by-year numeric list. collaborative-run.md says a prompt value is \"a list written out year by year\". Finagle forecast.capex is \"millions, short or full\" (a numeric list). The request contains no capex list to apply exactly. Building a list from 0.0038833 x each scenario's revenue would be inventing inputs. Stopped; did not approximate."
+  },
+  {
+   "item": "cash_share_adjustments.<all>.'Buddy Healthcare consideration shares'.proceeds = 0",
+   "verbatim_request_path": "cash_share_adjustments.<all>.'Buddy Healthcare consideration shares'.proceeds",
+   "verbatim_request_value": 0.0,
+   "verbatim_note": "Non-cash consideration shares: add the 0.075 shares but no proceeds to cash. The item in forecast.json is otherwise unchanged.",
+   "problem": "The schema and the collaborative rule cannot express \"add 0.075 shares and no proceeds to cash\". (1) That path is not a Finagle case field. update_case warning, verbatim: \"unknown field cash_share_adjustments is ignored\". The leaf is not applied to the schedule. (2) cash_share_adjustments in this request is unchanged from v02: the Buddy equity item still has shares 0.075 and price 7.36, and has no proceeds field. (3) collaborative-run.md (current main): \"An equity item is issued at today's price unless it states a price. Its proceeds are shares times that price ... The probability-weighted proceeds are added to year-0 cash.\" Following that rule would again add 0.552 of proceeds, which contradicts David. (4) The official forecaster helper forecastcheck.collaborative._equity_terms: if proceeds is stated, \"proceeds must be a positive number\" — 0.0 is rejected; if proceeds is omitted, proceeds = shares * price. There is no valid way to state zero proceeds. Stopped; did not approximate by dropping proceeds by hand."
+  }
+ ],
+ "rd_with_zero_debt": {
+  "label": "Diagnostic only, not a valuation: update_case with forecaster leaves plus the expressible prompt items (rates.risk_free 0.0381, baseline.debt 0 stamped fiscal_year/2025-12-31/CAD, debt.mode hold, rates.t 0.265). forecast.capex and the proceeds path were not applied.",
+  "baseline_debt_landed": {
+   "value": 0.0,
+   "source": "prompt",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "CAD"
+  },
+  "rd_after_update": null,
+  "rd_rule_verbatim_from_defaults_py": "if interest is not None and balance not in (None, 0): rd = interest / year-0 debt. When debt is 0, this branch is skipped (no division by zero). update_case first drops the old rd (derived_from includes baseline.debt). apply_defaults then leaves rates.rd unset.",
+  "rates_keys_after_update": [
+   "roict",
+   "t",
+   "risk_free",
+   "re",
+   "gt"
+  ],
+  "re_gt_derived": {
+   "re": 0.0931,
+   "gt": 0.0381,
+   "rf": 0.0381,
+   "t": 0.265
+  },
+  "debt_policy_after_update": {
+   "mode": {
+    "value": "hold",
+    "source": "prompt"
+   },
+   "start_year": {
+    "value": 1,
+    "source": "assumption",
+    "evidence": "The target applies from the first forecast year."
+   },
+   "leverage": null,
+   "note": "The old target leverage leaf (derived from year-0 Debt/EBITDA) was dropped. start_year remains."
+  },
+  "validate_case_verbatim": {
+   "errors": [],
+   "warnings": [
+    "average EBITDA growth is 16.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+   ],
+   "missing": [
+    "rates.rd"
+   ]
+  },
+  "note": "Even if capex and proceeds had been expressible, validate_case would have stopped the run here: missing rates.rd. I would not inject an rd. debt.mode hold with baseline.debt 0 is expressible; the missing rd is a Finagle default gap when debt is zero, not a reason I invented."
+ },
+ "prompt_inputs": [
+  {
+   "path": "rates.risk_free",
+   "value": 0.0381,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "3.81% use this",
+   "date": "2026-11-18",
+   "note": "David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+  },
+  {
+   "path": "forecast.capex",
+   "value": "FY25 capex/revenue ratio = 0.423144/108.966918 = 0.0038833, applied to each scenario's own revenue in every forecast year (full list, year 0 = 0.423144)",
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18"
+  },
+  {
+   "path": "baseline.debt",
+   "value": 0.0,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18",
+   "note": "Leases excluded; Vitalhub has no borrowings."
+  },
+  {
+   "path": "debt.mode",
+   "value": "hold",
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18",
+   "note": "Hold debt at zero; no target re-borrowing."
+  },
+  {
+   "path": "rates.t",
+   "value": 0.265,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18"
+  },
+  {
+   "path": "cash_share_adjustments.<all>.'Buddy Healthcare consideration shares'.proceeds",
+   "value": 0.0,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18",
+   "note": "Non-cash consideration shares: add the 0.075 shares but no proceeds to cash. The item in forecast.json is otherwise unchanged."
+  }
+ ],
+ "post_finagle": null,
+ "forecast_commit": "uncommitted (live case /workspace/forecaster-work/output/VHI/2026-11-17/forecast.json, v3 of 18 Nov 2026; forecaster method 3a46f0a61f6b26de1a588acbc941120420d2ec41)",
+ "collaborative_run_md": "Fetched current main copy of mtlr05/forecaster .cursor/skills/forecaster/references/collaborative-run.md via the cursor-github connector.",
+ "scenarios": {
+  "base": {
+   "ok": false,
+   "stopped": true,
+   "stopped_reason": "Request inputs cannot be expressed in Finagle's schema / the collaborative rule without approximating. run_case was not called; no value is presented.",
+   "value_per_share": null,
+   "value_per_share_DDM": null,
+   "validation": null,
+   "log": [],
+   "sanity_flags": [],
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "forecast.capex: The prompt value is a prose description of a formula, not a year-by-year numeric list. collaborative-run.md says a prompt value is \"a list written out year by year\". Finagle forecast.capex is \"millions, short or full\" (a numeric list). The request contains no capex list to apply exactly. Building a list from 0.0038833 x each scenario's revenue would be inventing inputs. Stopped; did not approximate.",
+    "cash_share_adjustments.<all>.'Buddy Healthcare consideration shares'.proceeds = 0: The schema and the collaborative rule cannot express \"add 0.075 shares and no proceeds to cash\". (1) That path is not a Finagle case field. update_case warning, verbatim: \"unknown field cash_share_adjustments is ignored\". The leaf is not applied to the schedule. (2) cash_share_adjustments in this request is unchanged from v02: the Buddy equity item still has shares 0.075 and price 7.36, and has no proceeds field. (3) collaborative-run.md (current main): \"An equity item is issued at today's price unless it states a price. Its proceeds are shares times that price ... The probability-weighted proceeds are added to year-0 cash.\" Following that rule would again add 0.552 of proceeds, which contradicts David. (4) The official forecaster helper forecastcheck.collaborative._equity_terms: if proceeds is stated, \"proceeds must be a positive number\" — 0.0 is rejected; if proceeds is omitted, proceeds = shares * price. There is no valid way to state zero proceeds. Stopped; did not approximate by dropping proceeds by hand.",
+    "Diagnostic: with debt=0, validate_case missing is ['rates.rd'] (see rd_with_zero_debt)."
+   ],
+   "notebook_code": null
+  },
+  "bull": {
+   "ok": false,
+   "stopped": true,
+   "stopped_reason": "Request inputs cannot be expressed in Finagle's schema / the collaborative rule without approximating. run_case was not called; no value is presented.",
+   "value_per_share": null,
+   "value_per_share_DDM": null,
+   "validation": null,
+   "log": [],
+   "sanity_flags": [],
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "forecast.capex: The prompt value is a prose description of a formula, not a year-by-year numeric list. collaborative-run.md says a prompt value is \"a list written out year by year\". Finagle forecast.capex is \"millions, short or full\" (a numeric list). The request contains no capex list to apply exactly. Building a list from 0.0038833 x each scenario's revenue would be inventing inputs. Stopped; did not approximate.",
+    "cash_share_adjustments.<all>.'Buddy Healthcare consideration shares'.proceeds = 0: The schema and the collaborative rule cannot express \"add 0.075 shares and no proceeds to cash\". (1) That path is not a Finagle case field. update_case warning, verbatim: \"unknown field cash_share_adjustments is ignored\". The leaf is not applied to the schedule. (2) cash_share_adjustments in this request is unchanged from v02: the Buddy equity item still has shares 0.075 and price 7.36, and has no proceeds field. (3) collaborative-run.md (current main): \"An equity item is issued at today's price unless it states a price. Its proceeds are shares times that price ... The probability-weighted proceeds are added to year-0 cash.\" Following that rule would again add 0.552 of proceeds, which contradicts David. (4) The official forecaster helper forecastcheck.collaborative._equity_terms: if proceeds is stated, \"proceeds must be a positive number\" — 0.0 is rejected; if proceeds is omitted, proceeds = shares * price. There is no valid way to state zero proceeds. Stopped; did not approximate by dropping proceeds by hand.",
+    "Diagnostic: with debt=0, validate_case missing is ['rates.rd'] (see rd_with_zero_debt)."
+   ],
+   "notebook_code": null
+  },
+  "bear": {
+   "ok": false,
+   "stopped": true,
+   "stopped_reason": "Request inputs cannot be expressed in Finagle's schema / the collaborative rule without approximating. run_case was not called; no value is presented.",
+   "value_per_share": null,
+   "value_per_share_DDM": null,
+   "validation": null,
+   "log": [],
+   "sanity_flags": [],
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "forecast.capex: The prompt value is a prose description of a formula, not a year-by-year numeric list. collaborative-run.md says a prompt value is \"a list written out year by year\". Finagle forecast.capex is \"millions, short or full\" (a numeric list). The request contains no capex list to apply exactly. Building a list from 0.0038833 x each scenario's revenue would be inventing inputs. Stopped; did not approximate.",
+    "cash_share_adjustments.<all>.'Buddy Healthcare consideration shares'.proceeds = 0: The schema and the collaborative rule cannot express \"add 0.075 shares and no proceeds to cash\". (1) That path is not a Finagle case field. update_case warning, verbatim: \"unknown field cash_share_adjustments is ignored\". The leaf is not applied to the schedule. (2) cash_share_adjustments in this request is unchanged from v02: the Buddy equity item still has shares 0.075 and price 7.36, and has no proceeds field. (3) collaborative-run.md (current main): \"An equity item is issued at today's price unless it states a price. Its proceeds are shares times that price ... The probability-weighted proceeds are added to year-0 cash.\" Following that rule would again add 0.552 of proceeds, which contradicts David. (4) The official forecaster helper forecastcheck.collaborative._equity_terms: if proceeds is stated, \"proceeds must be a positive number\" — 0.0 is rejected; if proceeds is omitted, proceeds = shares * price. There is no valid way to state zero proceeds. Stopped; did not approximate by dropping proceeds by hand.",
+    "Diagnostic: with debt=0, validate_case missing is ['rates.rd'] (see rd_with_zero_debt)."
+   ],
+   "notebook_code": null
+  }
+ }
+}

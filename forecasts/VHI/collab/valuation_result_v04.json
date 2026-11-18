@@ -1,0 +1,1906 @@
+{
+ "ticker": "VHI.TO",
+ "version": "v04",
+ "parent_version": "v03",
+ "mode": "collaborative",
+ "currency": "CAD",
+ "finagle_commit": "377f177b4013e713fe7c4603962e5f883a67e298",
+ "ff_log": "Already up to date (377f177b); no commits since 377f177b.",
+ "run_at": "2026-11-18T14:12:36.461590-05:00",
+ "sec_user_agent": "David May davidmay44@hotmail.com",
+ "hash_check": {
+  "sidecar_present": false,
+  "file_bytes": "add5ef2219e948adfadb000b539d98745c5ab92668188f4f1e3b1dcc9295971c",
+  "file_bytes_starts_add5ef22": true,
+  "file_bytes_ends_9971c": false,
+  "file_bytes_actual_ending": "295971c",
+  "brief_end_mismatch": true,
+  "whole_request": "2a0f43dcdbbeecad49390c2401ae68a6262a2691b4a9d090b0c846671daafdb9",
+  "blocks": {
+   "base": "49b7bed19fd62f1761ecb758852c4d963ab895802c4e96b5df4fb2d22802ff2a",
+   "bull": "b3aecd1f3422836803becf2e4ad7d4cfeb5e44ff39db4884e3488552a1bdc0a2",
+   "bear": "25e35874995e3aaf15fa64df5b32ca41d9f1b7f9c90114635f10fdb15027fa8c"
+  },
+  "prompt_inputs": "5436d4feaaa5f0a0e8f13796def5952155b6af49b674ed55ea9b6873399bc917",
+  "forecast_json_bytes": "2fb8fcf0e0f3e24376227fedeb8b29361536fd9d4fba60510e54c3a72019b7e7",
+  "note": "No sidecar was present. File sha256 starts with add5ef22 as stated, but does not end with 9971c. Full file sha256 is add5ef2219e948adfadb000b539d98745c5ab92668188f4f1e3b1dcc9295971c (ends \u202695971c). Treated as a typo in the brief abbreviation (\u202695971c / \u20265971c, not \u20269971c). Content matches the expected v04 prompt_inputs. Ran anyway."
+ },
+ "request_diff": {
+  "vs_v03_changed_keys": [
+   "version",
+   "parent_version",
+   "prompt_inputs",
+   "cash_share_adjustments"
+  ],
+  "vs_v03_unchanged": [
+   "mode",
+   "ticker",
+   "forecast_commit",
+   "scenarios",
+   "forecaster",
+   "post_finagle"
+  ],
+  "forecaster_unchanged_from_v02_and_v03": true,
+  "prompt_inputs_v02": 1,
+  "prompt_inputs_v03": 6,
+  "prompt_inputs_v04": 8,
+  "dropped_from_v03_prompts": [
+   "forecast.capex (prose string)",
+   "cash_share_adjustments.<all>.'Buddy Healthcare consideration shares'.proceeds"
+  ],
+  "added_vs_v03_prompts": [
+   "baseline.cash 106.812709 includes_adjustments false",
+   "market.shares 63.307054 includes_adjustments false",
+   "baseline.da 1.271558",
+   "rates.rd 0.028"
+  ],
+  "cash_share_adjustments": "v02/v03 had five items including Buddy closing cash and consideration shares. v04 keeps only: contingent consideration -0.781053 (2026-09-30), Novari earn-out -4.5 (2027-07-04), Buddy earn-out -7.248555 (2029-01-10). Buddy closing cash and consideration shares were removed."
+ },
+ "rd_provenance": {
+  "applied": true,
+  "value": 0.028,
+  "quote_field": "Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.",
+  "date": "2026-11-18",
+  "flag": "rd is not a direct David quote. The quote field is a Forecaster proposal: \"Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.\" David did not object. Applied as given because it is in prompt_inputs. Immaterial if debt is held at 0 and interest is 0 every year."
+ },
+ "includes_adjustments_rule": "collaborative-run.md: a stated year-0 cash or share count is the opening figure, before the schedule; the runner discounts the schedule and adds PV to cash and new shares to the count, unless includes_adjustments is true (that side is not added again). forecastcheck.collaborative._openings reads includes_adjustments from the prompt item (default False). Both baseline.cash and market.shares have includes_adjustments false, so remaining CSA items are added on top of 106.812709 cash and 63.307054 shares.",
+ "forecast_commit": "uncommitted (live case /workspace/forecaster-work/output/VHI/2026-11-17/forecast.json, v3 of 18 Nov 2026; forecaster method 3a46f0a61f6b26de1a588acbc941120420d2ec41)",
+ "prompt_inputs": [
+  {
+   "path": "rates.risk_free",
+   "value": 0.0381,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "3.81% use this",
+   "date": "2026-11-18",
+   "note": "David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+  },
+  {
+   "path": "baseline.debt",
+   "value": 0.0,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18",
+   "note": "Leases excluded; Vitalhub has no borrowings."
+  },
+  {
+   "path": "debt.mode",
+   "value": "hold",
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18",
+   "note": "Hold debt at zero; no target re-borrowing."
+  },
+  {
+   "path": "rates.t",
+   "value": 0.265,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.",
+   "date": "2026-11-18"
+  },
+  {
+   "path": "baseline.cash",
+   "value": 106.812709,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "cash should be from the 2025 filling adjusted for the cash price of Buddy (+$12.37). shares should be from the 2025 filling (63.23M) adjusted for Buddy (+0.075M). Isn't that logical?",
+   "date": "2026-11-18",
+   "includes_adjustments": false,
+   "note": "FY2025 cash + STI 119.180625 (FY25 FS) minus Buddy closing cash 12.367916 (Q3'26 FS Note 4(c)); user wrote +12.37, sign confirmed as an outflow. Buddy items removed from cash_share_adjustments to avoid double counting; remaining schedule items still apply."
+  },
+  {
+   "path": "market.shares",
+   "value": 63.307054,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "cash should be from the 2025 filling adjusted for the cash price of Buddy (+$12.37). shares should be from the 2025 filling (63.23M) adjusted for Buddy (+0.075M). Isn't that logical?",
+   "date": "2026-11-18",
+   "includes_adjustments": false,
+   "note": "FY2025 shares 63,232,054 (FY25 FS) + 75,000 Buddy consideration shares (Q3'26 FS Note 4(c))."
+  },
+  {
+   "path": "baseline.da",
+   "value": 1.271558,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "remove the \"amortization of intangible assets\" when calculating capex using method 1.",
+   "date": "2026-11-18",
+   "note": "FY25 depreciation of PP&E 0.713788 + right-of-use 0.557770; excludes amortization of acquired intangibles 9.809967 (FY25 FS p.income statement, Note 7). Capex stays on Finagle method 1."
+  },
+  {
+   "path": "rates.rd",
+   "value": 0.028,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.",
+   "date": "2026-11-18"
+  }
+ ],
+ "post_finagle": null,
+ "build_baseline": {
+  "ok": true,
+  "canadian": true,
+  "currency": "CAD",
+  "period_end": "2025-12-31",
+  "warnings": [
+   "Yahoo has no last close for the 10-year yield CA10Y=RR."
+  ],
+  "assumptions": [
+   "rates.roict",
+   "debt.mode",
+   "debt.leverage",
+   "debt.start_year",
+   "year",
+   "baseline.nol",
+   "baseline.noa",
+   "rates.t",
+   "rates.rd",
+   "forecast.dwc.mode",
+   "distribution.mode"
+  ]
+ },
+ "fetched": {
+  "price": 6.73,
+  "price_date": "2026-11-18",
+  "price_source": "yahoo",
+  "price_currency": "CAD",
+  "rf": 0.0381,
+  "rf_source": "prompt",
+  "shares_prompt_opening": 63.307054,
+  "re_derived": 0.0931,
+  "gt_derived": 0.0381,
+  "year0_da_yahoo": 11.081525,
+  "year0_da_prompt": 1.271558,
+  "year0_capex_yahoo": 0.423144,
+  "year0_cash_yahoo": 119.180625
+ },
+ "defaults_filled": [
+  "baseline.noa",
+  "baseline.nol",
+  "debt.start_year",
+  "distribution.mode",
+  "forecast.dwc.mode",
+  "rates.gt",
+  "rates.re",
+  "rates.roict",
+  "year"
+ ],
+ "scenarios": {
+  "base": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 9.070236879075116,
+   "value_per_share_DDM": 9.070236879075118,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 16.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode",
+    "rates.re",
+    "rates.gt"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.0381,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+    },
+    "re": {
+     "value": 0.0931,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.0381,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.028,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.\""
+    },
+    "t": {
+     "value": 0.265,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\""
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    }
+   },
+   "year0_da": {
+    "value": 1.271558,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"remove the \"amortization of intangible assets\" when calculating capex using method 1.\" FY25 depreciation of PP&E 0.713788 + right-of-use 0.557770; excludes amortization of acquired intangibles 9.809967 (FY25 FS p.income statement, Note 7). Capex stays on Finagle method 1.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "year0_da_ok": true,
+   "year0_debt": {
+    "value": 0.0,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Leases excluded; Vitalhub has no borrowings.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md and forecastcheck.collaborative._openings. includes_adjustments is false on baseline.cash and market.shares, so the stated figures are openings and the remaining schedule is added. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Discount factor = 1/(1+re)^t. Buddy closing cash and consideration shares were removed from the schedule (already reflected in the stated openings).",
+    "price_date": "2026-11-18",
+    "cost_of_equity": 0.0931,
+    "includes_adjustments_cash": false,
+    "includes_adjustments_shares": false,
+    "opening_cash": 106.812709,
+    "opening_shares": 63.307054,
+    "items": [
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": 0.9459481560663991,
+      "amount": -4.5,
+      "present_value": -3.5944138034211037,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": 0.8260712408097017,
+      "amount": -7.248555,
+      "present_value": -2.6478152522984817,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -7.023282055719585,
+    "sum_new_shares": 0.0,
+    "adjusted_cash": 99.78942694428041,
+    "adjusted_shares": 63.307054,
+    "complete": true,
+    "applied_to_case": true,
+    "buddy_items_in_schedule": []
+   },
+   "year0_cash_used": 99.78942694428041,
+   "shares_used": 63.307054,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (Finagle company.fin), display_fin line skipped",
+    "cols": {
+     "revenue": [
+      108.966918,
+      128.99999999081265,
+      136.7049500452639,
+      142.4099001046955,
+      161.40990015220464,
+      174.32479049308304,
+      187.05529413081666,
+      199.40879986580404,
+      211.18518565507893,
+      222.18180945732453,
+      232.19898742761268
+     ],
+     "ebitda": [
+      25.89751,
+      33.15930017795707,
+      36.245026628684435,
+      40.30602662495101,
+      47.13294138333792,
+      53.5903865537771,
+      59.955638372643904,
+      66.1323912401376,
+      72.02058413477504,
+      77.51889603589784,
+      82.52748502104195
+     ],
+     "da": [
+      1.271558,
+      1.5053282684228784,
+      1.5952389593110792,
+      1.6618112274894887,
+      1.8835262443390122,
+      2.0342328297273102,
+      2.1827877677002214,
+      2.3269434374546796,
+      2.4643645725687224,
+      2.5926865002269484,
+      2.7095790674329296
+     ],
+     "capex": [
+      0.423144,
+      2.96115491552467,
+      3.9373026371152804,
+      4.660068386788787,
+      7.067197132014438,
+      8.703397326921335,
+      10.316237388551002,
+      11.881315214058505,
+      13.373277144445273,
+      14.766450259636303,
+      16.035536416374647
+     ],
+     "sbc": [
+      2.647812,
+      3.3902716100040844,
+      3.7057623087219658,
+      4.120966879436084,
+      4.818963977235601,
+      5.4791857827926185,
+      6.129981560032104,
+      6.761504836346475,
+      7.363525177481038,
+      7.925683324404653,
+      8.437771243974234
+     ],
+     "interest": [
+      0.070346,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_pretax": [
+      21.907794000000003,
+      28.263700299530107,
+      30.94402536065139,
+      34.52324851802544,
+      40.430451161763315,
+      46.07696794125717,
+      51.64286904491158,
+      57.04394296633644,
+      62.19269438472528,
+      67.00052621126623,
+      71.38013470963479
+     ],
+     "nol": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_taxable": [
+      21.907794000000003,
+      28.263700299530107,
+      30.94402536065139,
+      34.52324851802544,
+      40.430451161763315,
+      46.07696794125717,
+      51.64286904491158,
+      57.04394296633644,
+      62.19269438472528,
+      67.00052621126623,
+      71.38013470963479
+     ],
+     "tax": [
+      -0.209562,
+      7.489880579375479,
+      8.20016672057262,
+      9.148660857276743,
+      10.71406955786728,
+      12.210396504433152,
+      13.68536029690157,
+      15.116644886079158,
+      16.4810640119522,
+      17.755139445985552,
+      18.91573569805322
+     ],
+     "tax_cash": [
+      -0.209562,
+      7.489880579375479,
+      8.20016672057262,
+      9.148660857276743,
+      10.71406955786728,
+      12.210396504433152,
+      13.68536029690157,
+      15.116644886079158,
+      16.4810640119522,
+      17.755139445985552,
+      18.91573569805322
+     ],
+     "wacc": [
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.09309999999999999,
+      0.0931
+     ],
+     "value_per_share": [
+      9.070236879075116,
+      7.886500436215354,
+      8.298466301573255,
+      8.717596370256743,
+      9.141685206001114,
+      9.563165096095018,
+      9.982394092355849,
+      10.400391330783004,
+      10.818923057490291,
+      11.24058039772022,
+      11.668846510873362
+     ],
+     "shares": [
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054
+     ],
+     "debt": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "cash": [
+      99.78942694428041,
+      119.10742001733324,
+      139.5092149796078,
+      161.8855454810572,
+      186.4182561972778,
+      213.6156631369078,
+      243.43972226406703,
+      275.8126485677205,
+      310.615366368617,
+      347.68698937448835,
+      386.82543103712817
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "revenue": [
+     108.966918,
+     128.99999999081265,
+     136.7049500452639,
+     142.4099001046955,
+     161.40990015220464,
+     174.32479049308304,
+     187.05529413081666,
+     199.40879986580404,
+     211.18518565507893,
+     222.18180945732453,
+     232.19898742761268
+    ],
+    "ebitda": [
+     25.89751,
+     33.15930017795707,
+     36.245026628684435,
+     40.30602662495101,
+     47.13294138333792,
+     53.5903865537771,
+     59.955638372643904,
+     66.1323912401376,
+     72.02058413477504,
+     77.51889603589784,
+     82.52748502104195
+    ],
+    "capex": [
+     0.423144,
+     2.96115491552467,
+     3.9373026371152804,
+     4.660068386788787,
+     7.067197132014438,
+     8.703397326921335,
+     10.316237388551002,
+     11.881315214058505,
+     13.373277144445273,
+     14.766450259636303,
+     16.035536416374647
+    ],
+    "da": [
+     1.271558,
+     1.5053282684228784,
+     1.5952389593110792,
+     1.6618112274894887,
+     1.8835262443390122,
+     2.0342328297273102,
+     2.1827877677002214,
+     2.3269434374546796,
+     2.4643645725687224,
+     2.5926865002269484,
+     2.7095790674329296
+    ],
+    "sbc": [
+     2.647812,
+     3.3902716100040844,
+     3.7057623087219658,
+     4.120966879436084,
+     4.818963977235601,
+     5.4791857827926185,
+     6.129981560032104,
+     6.761504836346475,
+     7.363525177481038,
+     7.925683324404653,
+     8.437771243974234
+    ],
+    "debt": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "cash": [
+     99.78942694428041,
+     119.10742001733324,
+     139.5092149796078,
+     161.8855454810572,
+     186.4182561972778,
+     213.6156631369078,
+     243.43972226406703,
+     275.8126485677205,
+     310.615366368617,
+     347.68698937448835,
+     386.82543103712817
+    ],
+    "interest": [
+     0.070346,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "terminal_capex": 16.035536416374647,
+    "terminal_da": 2.7095790674329296,
+    "fy35_capex_to_ebitda": 0.194305405190599,
+    "year0_da_to_revenue": 0.011669211383954164,
+    "year0_capex_to_revenue": 0.0038832336250897727
+   },
+   "capex_fill": {
+    "steps": [
+     {
+      "method": "forecast_capex",
+      "args": {
+       "capex_f": [
+        0.423144
+       ],
+       "method": 1
+      },
+      "pass_financials": true
+     }
+    ],
+    "notebook_capex_lines": [
+     "'capex': [0.423144],",
+     "co.forecast_capex(capex_f=[0.423144], method=1, financials=financials)"
+    ],
+    "notebook_da_lines": [
+     "'da': [1.271558],"
+    ]
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "hold",
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Hold debt at zero; no target re-borrowing."
+    },
+    "start_year": {
+     "value": 1,
+     "source": "assumption",
+     "evidence": "The target applies from the first forecast year."
+    }
+   },
+   "interest_all_zero": false,
+   "min_cash": 99.78942694428041,
+   "negative_cash_years": [],
+   "not_a_valuation": false,
+   "not_a_valuation_reason": [],
+   "flags": [
+    "rates.rd provenance: Forecaster proposal without an explicit David quote (applied as given; see rd_provenance)",
+    "year-0 capex remains Yahoo 0.423144 vs method-1 ratio on new D&A (1.271558 / revenue)"
+   ],
+   "steps": [
+    {
+     "method": "forecast_ebitda",
+     "args": {
+      "ebitda_ttm": 25.89751,
+      "gf": [
+       0.280404957,
+       0.093057647,
+       0.112042958,
+       0.169377022
+      ],
+      "me": 0.29200774759722287,
+      "mc": 0.5,
+      "gsnext": 0.080013
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_sbc",
+     "args": {
+      "sbc_f": [
+       2.647812
+      ]
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_capex",
+     "args": {
+      "capex_f": [
+       0.423144
+      ],
+      "method": 1
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "load_financials",
+     "args": {},
+     "pass_financials": true
+    },
+    {
+     "method": "fcf_from_ebitda",
+     "args": {}
+    },
+    {
+     "method": "value",
+     "args": {}
+    }
+   ],
+   "interest_forecast_years_all_zero": true,
+   "interest_year0": 0.070346
+  },
+  "bull": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 11.031035421742558,
+   "value_per_share_DDM": 11.031035421742558,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 21.4% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero."
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode",
+    "rates.re",
+    "rates.gt"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.0381,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+    },
+    "re": {
+     "value": 0.0931,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.0381,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.028,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.\""
+    },
+    "t": {
+     "value": 0.265,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\""
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    }
+   },
+   "year0_da": {
+    "value": 1.271558,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"remove the \"amortization of intangible assets\" when calculating capex using method 1.\" FY25 depreciation of PP&E 0.713788 + right-of-use 0.557770; excludes amortization of acquired intangibles 9.809967 (FY25 FS p.income statement, Note 7). Capex stays on Finagle method 1.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "year0_da_ok": true,
+   "year0_debt": {
+    "value": 0.0,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Leases excluded; Vitalhub has no borrowings.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md and forecastcheck.collaborative._openings. includes_adjustments is false on baseline.cash and market.shares, so the stated figures are openings and the remaining schedule is added. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Discount factor = 1/(1+re)^t. Buddy closing cash and consideration shares were removed from the schedule (already reflected in the stated openings).",
+    "price_date": "2026-11-18",
+    "cost_of_equity": 0.0931,
+    "includes_adjustments_cash": false,
+    "includes_adjustments_shares": false,
+    "opening_cash": 106.812709,
+    "opening_shares": 63.307054,
+    "items": [
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": 0.9459481560663991,
+      "amount": -4.5,
+      "present_value": -3.5944138034211037,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": 0.8260712408097017,
+      "amount": -7.248555,
+      "present_value": -2.6478152522984817,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -7.023282055719585,
+    "sum_new_shares": 0.0,
+    "adjusted_cash": 99.78942694428041,
+    "adjusted_shares": 63.307054,
+    "complete": true,
+    "applied_to_case": true,
+    "buddy_items_in_schedule": []
+   },
+   "year0_cash_used": 99.78942694428041,
+   "shares_used": 63.307054,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (Finagle company.fin), display_fin line skipped",
+    "cols": {
+     "revenue": [
+      108.966918,
+      129.12299999541344,
+      139.98799995275252,
+      148.32900000578934,
+      169.1600000744214,
+      184.7335463212729,
+      200.07936201418104,
+      214.90044083474353,
+      228.88659132515033,
+      241.72438245939534,
+      253.1081505269381
+     ],
+     "ebitda": [
+      25.89751,
+      33.43627788023855,
+      40.21052786376623,
+      47.09986013003613,
+      56.1123628822833,
+      65.45649063039421,
+      74.6639800461391,
+      83.55662733847659,
+      91.94831763272066,
+      99.65099231326768,
+      106.48125315379335
+     ],
+     "da": [
+      1.271558,
+      1.5067635814767921,
+      1.633549562665635,
+      1.7308824554380946,
+      1.9739637985781262,
+      2.155694801730423,
+      2.3347683689101686,
+      2.507718670605559,
+      2.67092601712591,
+      2.8207329155744683,
+      2.953572511500532
+     ],
+     "capex": [
+      0.423144,
+      3.1954618338014877,
+      4.689861050516209,
+      5.837103019666515,
+      8.702250770074052,
+      10.844275197515023,
+      12.954976996076907,
+      14.993505175302053,
+      16.91719522774426,
+      18.682937067660607,
+      20.24868894526708
+     ],
+     "sbc": [
+      2.647812,
+      3.41859035122026,
+      4.111202899584346,
+      4.815581685290641,
+      5.737037568015779,
+      6.692399437978608,
+      7.633791137986921,
+      8.542992764414278,
+      9.400975568992129,
+      10.188512071584409,
+      10.886851279356659
+     ],
+     "interest": [
+      0.070346,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_pretax": [
+      21.907794000000003,
+      28.510923947541496,
+      34.46577540151625,
+      40.5533959893074,
+      48.401361515689395,
+      56.608396390685186,
+      64.69542053924201,
+      72.50591590345675,
+      79.87641604660263,
+      86.6417473261088,
+      92.64082936293616
+     ],
+     "nol": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_taxable": [
+      21.907794000000003,
+      28.510923947541496,
+      34.46577540151625,
+      40.5533959893074,
+      48.401361515689395,
+      56.608396390685186,
+      64.69542053924201,
+      72.50591590345675,
+      79.87641604660263,
+      86.6417473261088,
+      92.64082936293616
+     ],
+     "tax": [
+      -0.209562,
+      7.555394846098497,
+      9.133430481401806,
+      10.746649937166461,
+      12.82636080165769,
+      15.001225043531576,
+      17.144286442899134,
+      19.21406771441604,
+      21.167250252349696,
+      22.96006304141883,
+      24.54981978117808
+     ],
+     "tax_cash": [
+      -0.209562,
+      7.555394846098497,
+      9.133430481401806,
+      10.746649937166461,
+      12.82636080165769,
+      15.001225043531576,
+      17.144286442899134,
+      19.21406771441604,
+      21.167250252349696,
+      22.96006304141883,
+      24.54981978117808
+     ],
+     "wacc": [
+      0.0931,
+      0.0931,
+      0.0931,
+      0.09309999999999999,
+      0.09309999999999999,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931
+     ],
+     "value_per_share": [
+      11.031035421742558,
+      10.0306574831289,
+      10.612638846132224,
+      11.19470930150353,
+      11.781273238386412,
+      12.358126791234241,
+      12.925306461310276,
+      13.48407879836374,
+      14.037109373396614,
+      14.58860640711296,
+      15.144432311223962
+     ],
+     "shares": [
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054
+     ],
+     "debt": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "cash": [
+      99.78942694428041,
+      119.05625779339871,
+      141.33229122566257,
+      167.03281671357507,
+      195.87953045611084,
+      228.79812140747984,
+      265.72904687665596,
+      306.5351085610002,
+      350.99800514463476,
+      398.8174852772386,
+      449.6133784252301
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "revenue": [
+     108.966918,
+     129.12299999541344,
+     139.98799995275252,
+     148.32900000578934,
+     169.1600000744214,
+     184.7335463212729,
+     200.07936201418104,
+     214.90044083474353,
+     228.88659132515033,
+     241.72438245939534,
+     253.1081505269381
+    ],
+    "ebitda": [
+     25.89751,
+     33.43627788023855,
+     40.21052786376623,
+     47.09986013003613,
+     56.1123628822833,
+     65.45649063039421,
+     74.6639800461391,
+     83.55662733847659,
+     91.94831763272066,
+     99.65099231326768,
+     106.48125315379335
+    ],
+    "capex": [
+     0.423144,
+     3.1954618338014877,
+     4.689861050516209,
+     5.837103019666515,
+     8.702250770074052,
+     10.844275197515023,
+     12.954976996076907,
+     14.993505175302053,
+     16.91719522774426,
+     18.682937067660607,
+     20.24868894526708
+    ],
+    "da": [
+     1.271558,
+     1.5067635814767921,
+     1.633549562665635,
+     1.7308824554380946,
+     1.9739637985781262,
+     2.155694801730423,
+     2.3347683689101686,
+     2.507718670605559,
+     2.67092601712591,
+     2.8207329155744683,
+     2.953572511500532
+    ],
+    "sbc": [
+     2.647812,
+     3.41859035122026,
+     4.111202899584346,
+     4.815581685290641,
+     5.737037568015779,
+     6.692399437978608,
+     7.633791137986921,
+     8.542992764414278,
+     9.400975568992129,
+     10.188512071584409,
+     10.886851279356659
+    ],
+    "debt": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "cash": [
+     99.78942694428041,
+     119.05625779339871,
+     141.33229122566257,
+     167.03281671357507,
+     195.87953045611084,
+     228.79812140747984,
+     265.72904687665596,
+     306.5351085610002,
+     350.99800514463476,
+     398.8174852772386,
+     449.6133784252301
+    ],
+    "interest": [
+     0.070346,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "terminal_capex": 20.24868894526708,
+    "terminal_da": 2.953572511500532,
+    "fy35_capex_to_ebitda": 0.19016200829287225,
+    "year0_da_to_revenue": 0.011669211383954164,
+    "year0_capex_to_revenue": 0.0038832336250897727
+   },
+   "capex_fill": {
+    "steps": [
+     {
+      "method": "forecast_capex",
+      "args": {
+       "capex_f": [
+        0.423144
+       ],
+       "method": 1
+      },
+      "pass_financials": true
+     }
+    ],
+    "notebook_capex_lines": [
+     "'capex': [0.423144],",
+     "co.forecast_capex(capex_f=[0.423144], method=1, financials=financials)"
+    ],
+    "notebook_da_lines": [
+     "'da': [1.271558],"
+    ]
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "hold",
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Hold debt at zero; no target re-borrowing."
+    },
+    "start_year": {
+     "value": 1,
+     "source": "assumption",
+     "evidence": "The target applies from the first forecast year."
+    }
+   },
+   "interest_all_zero": false,
+   "min_cash": 99.78942694428041,
+   "negative_cash_years": [],
+   "not_a_valuation": false,
+   "not_a_valuation_reason": [],
+   "flags": [
+    "rates.rd provenance: Forecaster proposal without an explicit David quote (applied as given; see rd_provenance)",
+    "year-0 capex remains Yahoo 0.423144 vs method-1 ratio on new D&A (1.271558 / revenue)"
+   ],
+   "steps": [
+    {
+     "method": "forecast_ebitda",
+     "args": {
+      "ebitda_ttm": 25.89751,
+      "gf": [
+       0.291100105,
+       0.202601797,
+       0.171331555,
+       0.191348822
+      ],
+      "me": 0.33171176908014216,
+      "mc": 0.6,
+      "gsnext": 0.092064
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_sbc",
+     "args": {
+      "sbc_f": [
+       2.647812
+      ]
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_capex",
+     "args": {
+      "capex_f": [
+       0.423144
+      ],
+      "method": 1
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "load_financials",
+     "args": {},
+     "pass_financials": true
+    },
+    {
+     "method": "fcf_from_ebitda",
+     "args": {}
+    },
+    {
+     "method": "value",
+     "args": {}
+    }
+   ],
+   "interest_forecast_years_all_zero": true,
+   "interest_year0": 0.070346
+  },
+  "bear": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 6.707615986363877,
+   "value_per_share_DDM": 6.707615986363876,
+   "validation": {
+    "errors": [],
+    "warnings": [],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "defaults_filled": [
+    "rates.roict",
+    "debt.mode",
+    "debt.leverage",
+    "debt.start_year",
+    "year",
+    "baseline.nol",
+    "baseline.noa",
+    "rates.t",
+    "rates.rd",
+    "forecast.dwc.mode",
+    "distribution.mode",
+    "rates.re",
+    "rates.gt"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.0381,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"3.81% use this\" David chose the Bank of Canada 10-year benchmark (3.81% on 16 Nov 2026) because Yahoo CA10Y=RR has no quote."
+    },
+    "re": {
+     "value": 0.0931,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.0381,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.028,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Proposed by Forecaster 2026-11-18 (Finagle's own v02 default 0.027976); David did not object. Immaterial with zero debt held.\""
+    },
+    "t": {
+     "value": 0.265,
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\""
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    }
+   },
+   "year0_da": {
+    "value": 1.271558,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"remove the \"amortization of intangible assets\" when calculating capex using method 1.\" FY25 depreciation of PP&E 0.713788 + right-of-use 0.557770; excludes amortization of acquired intangibles 9.809967 (FY25 FS p.income statement, Note 7). Capex stays on Finagle method 1.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "year0_da_ok": true,
+   "year0_debt": {
+    "value": 0.0,
+    "source": "prompt",
+    "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Leases excluded; Vitalhub has no borrowings.",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "CAD"
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case by the runner from cash_share_adjustments, per collaborative-run.md and forecastcheck.collaborative._openings. includes_adjustments is false on baseline.cash and market.shares, so the stated figures are openings and the remaining schedule is added. t = 0 when the item date is on or before the price date; otherwise t = (item_date - price_date).days / 365.25. Discount factor = 1/(1+re)^t. Buddy closing cash and consideration shares were removed from the schedule (already reflected in the stated openings).",
+    "price_date": "2026-11-18",
+    "cost_of_equity": 0.0931,
+    "includes_adjustments_cash": false,
+    "includes_adjustments_shares": false,
+    "opening_cash": 106.812709,
+    "opening_shares": 63.307054,
+    "items": [
+     {
+      "name": "Contingent consideration paid in 9M 2026",
+      "kind": "cash",
+      "date": "2026-09-30",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -0.781053,
+      "present_value": -0.781053,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Novari earn-out (maximum)",
+      "kind": "cash",
+      "date": "2027-07-04",
+      "t_years": 0.6242299794661191,
+      "probability": 0.8444,
+      "source_list": "base",
+      "discount_factor": 0.9459481560663991,
+      "amount": -4.5,
+      "present_value": -3.5944138034211037,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Buddy earn-out (maximum)",
+      "kind": "cash",
+      "date": "2029-01-10",
+      "t_years": 2.1464750171115674,
+      "probability": 0.4422,
+      "source_list": "base",
+      "discount_factor": 0.8260712408097017,
+      "amount": -7.248555,
+      "present_value": -2.6478152522984817,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -7.023282055719585,
+    "sum_new_shares": 0.0,
+    "adjusted_cash": 99.78942694428041,
+    "adjusted_shares": 63.307054,
+    "complete": true,
+    "applied_to_case": true,
+    "buddy_items_in_schedule": []
+   },
+   "year0_cash_used": 99.78942694428041,
+   "shares_used": 63.307054,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (Finagle company.fin), display_fin line skipped",
+    "cols": {
+     "revenue": [
+      108.966918,
+      128.87699998621184,
+      131.3490000331074,
+      131.54200005058803,
+      146.40500009048,
+      154.02157381518714,
+      161.676959439048,
+      169.33764491582858,
+      176.96833787102562,
+      184.53220058941707,
+      191.99111515870834
+     ],
+     "ebitda": [
+      25.89751,
+      32.90572905957375,
+      31.495483523748344,
+      31.504261000051578,
+      35.60431093464986,
+      38.65094042453271,
+      41.71309467407705,
+      44.77736886478929,
+      47.82964604686811,
+      50.855191134224704,
+      53.83875696194122
+     ],
+     "da": [
+      1.271558,
+      1.503892955368964,
+      1.5327392464573328,
+      1.5349914044584212,
+      1.7084308937236399,
+      1.797310302538719,
+      1.886642615609235,
+      1.9760367737837754,
+      2.0650809428840198,
+      2.1533452558241395,
+      2.240384906628055
+     ],
+     "capex": [
+      0.423144,
+      2.9225677535021997,
+      3.2328917210352355,
+      3.2571200907853712,
+      5.122955468747981,
+      6.079106493189634,
+      7.040129792026267,
+      8.001818410989996,
+      8.959741901265396,
+      9.909275818788672,
+      10.84563500920993
+     ],
+     "sbc": [
+      2.647812,
+      3.3643460036385004,
+      3.2201597458590867,
+      3.2210571721786603,
+      3.6402542848519848,
+      3.9517476339371167,
+      4.264828264769752,
+      4.5781256425276196,
+      4.8901964226927594,
+      5.199534061285961,
+      5.504579658388452
+     ],
+     "interest": [
+      0.070346,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_pretax": [
+      21.907794000000003,
+      28.037490100566284,
+      26.742584531431927,
+      26.748212423414497,
+      30.255625756074235,
+      32.90188248805688,
+      35.56162379369806,
+      38.223206448477896,
+      40.87436868129133,
+      43.5023118171146,
+      46.09379239692471
+     ],
+     "nol": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "income_taxable": [
+      21.907794000000003,
+      28.037490100566284,
+      26.742584531431927,
+      26.748212423414497,
+      30.255625756074235,
+      32.90188248805688,
+      35.56162379369806,
+      38.223206448477896,
+      40.87436868129133,
+      43.5023118171146,
+      46.09379239692471
+     ],
+     "tax": [
+      -0.209562,
+      7.429934876650066,
+      7.0867849008294606,
+      7.088276292204841,
+      8.017740825359672,
+      8.718998859335072,
+      9.423830305329986,
+      10.129149708846642,
+      10.831707700542202,
+      11.52811263153537,
+      12.214854985185049
+     ],
+     "tax_cash": [
+      -0.209562,
+      7.429934876650066,
+      7.0867849008294606,
+      7.088276292204841,
+      8.017740825359672,
+      8.718998859335072,
+      9.423830305329986,
+      10.129149708846642,
+      10.831707700542202,
+      11.52811263153537,
+      12.214854985185049
+     ],
+     "wacc": [
+      0.0931,
+      0.0931,
+      0.0931,
+      0.09310000000000002,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931,
+      0.0931
+     ],
+     "value_per_share": [
+      6.707615986363877,
+      5.3059590053890595,
+      5.516315882870146,
+      5.746538782222111,
+      5.984207214895318,
+      6.226978771439584,
+      6.4752418041948,
+      6.729495723892663,
+      6.990365318405438,
+      7.258615879349441,
+      7.535169144352655
+     ],
+     "shares": [
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054,
+      63.307054
+     ],
+     "debt": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "cash": [
+      99.78942694428041,
+      118.97830737006339,
+      136.93395452608794,
+      154.87176197097065,
+      173.69512232666088,
+      193.59620976473178,
+      214.5805160766828,
+      236.64879117910783,
+      259.79679120147557,
+      284.01505982409026,
+      309.2887471332481
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "revenue": [
+     108.966918,
+     128.87699998621184,
+     131.3490000331074,
+     131.54200005058803,
+     146.40500009048,
+     154.02157381518714,
+     161.676959439048,
+     169.33764491582858,
+     176.96833787102562,
+     184.53220058941707,
+     191.99111515870834
+    ],
+    "ebitda": [
+     25.89751,
+     32.90572905957375,
+     31.495483523748344,
+     31.504261000051578,
+     35.60431093464986,
+     38.65094042453271,
+     41.71309467407705,
+     44.77736886478929,
+     47.82964604686811,
+     50.855191134224704,
+     53.83875696194122
+    ],
+    "capex": [
+     0.423144,
+     2.9225677535021997,
+     3.2328917210352355,
+     3.2571200907853712,
+     5.122955468747981,
+     6.079106493189634,
+     7.040129792026267,
+     8.001818410989996,
+     8.959741901265396,
+     9.909275818788672,
+     10.84563500920993
+    ],
+    "da": [
+     1.271558,
+     1.503892955368964,
+     1.5327392464573328,
+     1.5349914044584212,
+     1.7084308937236399,
+     1.797310302538719,
+     1.886642615609235,
+     1.9760367737837754,
+     2.0650809428840198,
+     2.1533452558241395,
+     2.240384906628055
+    ],
+    "sbc": [
+     2.647812,
+     3.3643460036385004,
+     3.2201597458590867,
+     3.2210571721786603,
+     3.6402542848519848,
+     3.9517476339371167,
+     4.264828264769752,
+     4.5781256425276196,
+     4.8901964226927594,
+     5.199534061285961,
+     5.504579658388452
+    ],
+    "debt": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "cash": [
+     99.78942694428041,
+     118.97830737006339,
+     136.93395452608794,
+     154.87176197097065,
+     173.69512232666088,
+     193.59620976473178,
+     214.5805160766828,
+     236.64879117910783,
+     259.79679120147557,
+     284.01505982409026,
+     309.2887471332481
+    ],
+    "interest": [
+     0.070346,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "terminal_capex": 10.84563500920993,
+    "terminal_da": 2.240384906628055,
+    "fy35_capex_to_ebitda": 0.20144660874835468,
+    "year0_da_to_revenue": 0.011669211383954164,
+    "year0_capex_to_revenue": 0.0038832336250897727
+   },
+   "capex_fill": {
+    "steps": [
+     {
+      "method": "forecast_capex",
+      "args": {
+       "capex_f": [
+        0.423144
+       ],
+       "method": 1
+      },
+      "pass_financials": true
+     }
+    ],
+    "notebook_capex_lines": [
+     "'capex': [0.423144],",
+     "co.forecast_capex(capex_f=[0.423144], method=1, financials=financials)"
+    ],
+    "notebook_da_lines": [
+     "'da': [1.271558],"
+    ]
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "hold",
+     "source": "prompt",
+     "evidence": "David 2026-11-18: \"Rerun VHI as v03 with capex at the FY25 ratio of revenue, no debt (leases excluded), 26.5% tax, and no cash from the Buddy consideration shares.\" Hold debt at zero; no target re-borrowing."
+    },
+    "start_year": {
+     "value": 1,
+     "source": "assumption",
+     "evidence": "The target applies from the first forecast year."
+    }
+   },
+   "interest_all_zero": false,
+   "min_cash": 99.78942694428041,
+   "negative_cash_years": [],
+   "not_a_valuation": false,
+   "not_a_valuation_reason": [],
+   "flags": [
+    "rates.rd provenance: Forecaster proposal without an explicit David quote (applied as given; see rd_provenance)",
+    "year-0 capex remains Yahoo 0.423144 vs method-1 ratio on new D&A (1.271558 / revenue)"
+   ],
+   "steps": [
+    {
+     "method": "forecast_ebitda",
+     "args": {
+      "ebitda_ttm": 25.89751,
+      "gf": [
+       0.270613625,
+       -0.042857143,
+       0.00027869,
+       0.130142711
+      ],
+      "me": 0.2431905393439157,
+      "mc": 0.4,
+      "gsnext": 0.052024
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_sbc",
+     "args": {
+      "sbc_f": [
+       2.647812
+      ]
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "forecast_capex",
+     "args": {
+      "capex_f": [
+       0.423144
+      ],
+      "method": 1
+     },
+     "pass_financials": true
+    },
+    {
+     "method": "load_financials",
+     "args": {},
+     "pass_financials": true
+    },
+    {
+     "method": "fcf_from_ebitda",
+     "args": {}
+    },
+    {
+     "method": "value",
+     "args": {}
+    }
+   ],
+   "interest_forecast_years_all_zero": true,
+   "interest_year0": 0.070346
+  }
+ },
+ "defaults_filled_note": "Finagle-filled assumption leaves on the case that ran. Forecaster leaves (sales_growth, ebitda_growth, me/mc/gsnext, ebitda_basis, acquisition_disclosure.status) are applied as source assumption with Forecaster evidence and are not listed here. debt.leverage was a build_baseline default but was dropped when baseline.debt became 0. debt.start_year remains on the hold policy. Prompt leaves (rf, rd, t, debt, da, cash, shares, debt.mode) are not defaults. rates.re and rates.gt are derived from the prompt rf.",
+ "interest_note": "Debt is 0 in every year (hold). Forecast-year interest (FY26-FY35) is 0.000 in all scenarios. Year-0 interest remains the Yahoo figure 0.070346 (Interest Expense); Finagle keeps the year-0 interest leaf and does not recompute it as rd x debt. So interest is not literally zero in year 0, but it is zero in every forecast year. rd 0.028 is therefore immaterial to the forecast."
+}
