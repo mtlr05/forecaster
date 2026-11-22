@@ -18,7 +18,7 @@ The Forecaster provides, for each scenario:
 
 `prompt_inputs` holds only what the user stated for this valuation. It may be empty. Each item has a path, a value (a list written out year by year), `applies_to`, a quote, and a date. Nothing is inferred from an earlier valuation.
 
-Finagle supplies price, shares, the risk-free rate, the cost of equity, terminal growth, and the year-0 figures, unless the user stated one. A stated one is a `prompt_inputs` item. The request does not carry price, shares, the risk-free rate, the cost of equity, or terminal growth unless that quote is present.
+Finagle supplies price, shares, the risk-free rate, expected inflation, the cost of equity, terminal growth, and the year-0 figures, unless the user stated one. A stated one is a `prompt_inputs` item. The request does not carry price, shares, the risk-free rate, expected inflation, the cost of equity, or terminal growth unless that quote is present. The inflation pass-through defaults to 0.25. A stated pass-through is a `prompt_inputs` item on `rates.lam`.
 
 A stated year-0 cash balance or share count is the opening figure, before the schedule. The runner then discounts the schedule at the cost of equity and adds the present value to that cash and the new shares to that share count. Set `includes_adjustments` true on the prompt item when the user says the stated cash or the stated share count already includes these items. That side is not added again. A stated price or a stated cost of equity is used for the discount and for an offering that has no price of its own.
 
@@ -55,7 +55,7 @@ The Forecaster writes `valuation_request_vNN.json` in the run folder. Commit it 
 
 1. Build or refresh `forecast.json` as usual. `pytest` passes.
 2. Write the request. Copy `prompt_inputs` unchanged. Copy `cash_share_adjustments` from the forecast.
-3. Check the request: every prompt item has a quote and a date, the Forecaster block matches `forecast.json`, `cash_share_adjustments` matches `forecast.json`, and price, shares, the risk-free rate, the cost of equity, and terminal growth appear only with a user quote.
+3. Check the request: every prompt item has a quote and a date, the Forecaster block matches `forecast.json`, `cash_share_adjustments` matches `forecast.json`, and price, shares, the risk-free rate, expected inflation, the cost of equity, and terminal growth appear only with a user quote.
 4. On the Finagle checkout already beside this repo, call `describe_inputs`, then `build_baseline(ticker)`. Lay the Forecaster leaves, then `prompt_inputs`, onto the case with `update_case` after `build_baseline`. For each item on the schedule, `t` is the number of years from the price date to the item's date, and zero when the date is already past. The discount factor is `1 / (1 + cost of equity) ^ t`. A cash item's present value is its amount times its probability times that factor. An equity item is issued at today's price unless it states a price. Its proceeds are shares times that price, or its shares are proceeds divided by that price, and the same factor discounts the proceeds. The probability-weighted proceeds are added to year-0 cash. The probability-weighted shares are added to the current share count. Only those two opening inputs change. `build_baseline` drops a prompt leaf that has no fiscal-year basis, so year-0 figures the user stated are stamped to the baseline year there. `validate_case` errors or missing fields stop the scenario. `run_case` runs once per scenario. The result records the Finagle commit, every leaf Finagle filled by default, and the worked schedule: opening cash and shares, each item's present value and new shares, and the adjusted totals. An empty or absent schedule leaves cash and shares untouched.
 5. Write the report's valuation section from `valuation_result_vNN.json` only. The result file's value is the raw value. Apply `post_finagle` in the report when the request has one, and show raw and adjusted side by side, tagged `[P]` with the user's date.
 
@@ -67,7 +67,7 @@ A prompt list, including a stock-comp list, uses Finagle source `prompt`. A full
 
 ## Result
 
-`valuation_result_vNN.json` carries `ticker`, `version`, `finagle_commit`, `run_at`, and `fetched` (price, price date, risk-free rate, rate date, shares, shares source). Each scenario keeps `run_case`'s own keys and adds `defaults_filled`, the leaves whose source is `assumption`. The runner also writes `notebook_<scenario>_vNN.py` into the run folder. That file is Finagle's notebook script for rerunning the case. The runner does not execute it.
+`valuation_result_vNN.json` carries `ticker`, `version`, `finagle_commit`, `run_at`, and `fetched` (price, price date, risk-free rate, rate date, inflation, inflation date, inflation source, shares, shares source). Each scenario keeps `run_case`'s own keys and adds `defaults_filled`, the leaves whose source is `assumption`. The runner also writes `notebook_<scenario>_vNN.py` into the run folder. That file is Finagle's notebook script for rerunning the case. The runner does not execute it.
 
 The valuation section of the report lists:
 

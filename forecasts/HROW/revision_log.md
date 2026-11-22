@@ -1,3 +1,17 @@
+# HROW forecast revision log — 22 November 2026 (America/Toronto)
+
+## Valuation rerun with a 0.25 inflation pass-through
+
+Trigger: "rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026." The operating forecast is unchanged.
+
+The recorded Finagle commit is `377f177b4013e713fe7c4603962e5f883a67e298`. The checkout also held the uncommitted pass-through, which is the change under test. Request `collab/valuation_request_v04.json`, sha256 `533d118d9c2ae6b76ea9e5d12a830c51505e983cc4292cfd3e1c3a1a37d92f07`.
+
+A reproduction of the 15 November result, on the same pins and with the pass-through held at zero, landed within a few tenths of a cent of $149.78, $178.55 and $85.13 (base 149.778, gaps of about 0.001 to 0.003). The 22 November values, with the pass-through at 0.25 and inflation at 2.24%, are $154.50 base, $184.15 bull and $87.85 bear. The base is $4.72 a share higher because terminal reinvestment is lower.
+
+The prior `report.md`, `report.html` and `report.pdf` are in `archive-pre-lam-20261122/`. The 22 November render has 46 pages and 49 figures, and no table is split across pages.
+
+---
+
 # HROW forecast revision log — 11 November 2026 (America/Toronto)
 
 ## vs. latest chat product bases (frozen lines)

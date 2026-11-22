@@ -1,0 +1,8 @@
+{
+  "tolerance": 0.01,
+  "scenarios": {
+    "base": {"value_per_share": 149.77928350773868},
+    "bull": {"value_per_share": 178.55470349174138},
+    "bear": {"value_per_share": 85.12883829968285}
+  }
+}

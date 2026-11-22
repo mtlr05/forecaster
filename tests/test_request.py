@@ -72,7 +72,38 @@ def test_prompt_item_needs_a_quote_and_a_date():
     assert any("date" in error for error in errors)
 
 
-def test_price_shares_and_rates_need_a_quote():
+def test_expected_inflation_belongs_in_prompt_inputs():
+    request = _synthetic()
+    request["forecaster"]["base"]["rates.inflation"] = {
+        "value": 0.02,
+        "tag": "C",
+        "evidence": "the forecaster does not set inflation",
+    }
+    errors = check_request(request)
+    assert any("rates.inflation" in error and "prompt_inputs" in error for error in errors)
+
+
+def test_the_valuation_section_reports_fetched_inflation():
+    request = _synthetic()
+    result = {
+        "finagle_commit": "abc",
+        "fetched": {
+            "price": 10.0,
+            "price_date": "2026-11-15",
+            "rf": 0.04,
+            "rf_date": "2026-11-15",
+            "inflation": 0.023,
+            "inflation_date": "2026-11-14",
+            "inflation_source": "fred",
+            "shares": 20.0,
+            "shares_source": "10k",
+        },
+        "scenarios": {"base": {"value_per_share": 12.5, "defaults_filled": ["rates.lam"]}},
+    }
+    section = render_valuation_section(result, request)
+    assert "inflation 0.0230 on 2026-11-14 (fred)" in section
+    assert "rates.lam" in section
+
     request = _synthetic()
     request["prompt_inputs"] = [
         {"path": path, "value": 1.0, "applies_to": ["base"], "date": "2026-10-26"}

@@ -1,0 +1,40 @@
+{
+  "_label": "Pins so a replication of the HROW v03 run matches. Not a new valuation.",
+  "prompt_inputs": [
+    {
+      "path": "market.price",
+      "value": 28.3,
+      "applies_to": ["base", "bull", "bear"],
+      "quote": "replication only: pinned v03 price",
+      "date": "2026-11-15"
+    },
+    {
+      "path": "market.shares",
+      "value": 37.229705,
+      "applies_to": ["base", "bull", "bear"],
+      "quote": "replication only: pinned v03 shares, millions",
+      "date": "2026-11-15"
+    },
+    {
+      "path": "rates.risk_free",
+      "value": 0.05103,
+      "applies_to": ["base", "bull", "bear"],
+      "quote": "replication only: pinned v03 risk-free rate",
+      "date": "2026-11-15"
+    },
+    {
+      "path": "baseline.interest",
+      "value": 24.18,
+      "applies_to": ["base", "bull", "bear"],
+      "quote": "replication only: pinned v03 year-0 interest",
+      "date": "2026-11-15"
+    },
+    {
+      "path": "rates.lam",
+      "value": 0.0,
+      "applies_to": ["base", "bull", "bear"],
+      "quote": "replication only: pinned v03 inflation pass-through of zero",
+      "date": "2026-11-15"
+    }
+  ]
+}

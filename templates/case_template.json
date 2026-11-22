@@ -16,6 +16,14 @@
     "value": null,
     "note": "Terminal growth. Finagle's default is the 10-year yield, and it must stay below the cost of equity. The forecaster never sets this."
   },
+  "rates.lam": {
+    "value": null,
+    "note": "Inflation pass-through, from 0 to 1. Finagle's default is 0.25. 0 keeps terminal reinvestment at growth divided by terminal ROIC. 1 is the Bradley-Jarrell rate. The forecaster never sets this."
+  },
+  "rates.inflation": {
+    "value": null,
+    "note": "Expected inflation, decimal. Finagle fetches it: the FRED 10-year breakeven for USD, the IMF furthest-year CPI projection for another mapped currency, or 0.02 when neither loads. A user value is a prompt input."
+  },
   "baseline.nol": {
     "value": null,
     "note": "Net operating loss, millions. Not filled by the SEC or yfinance helpers. Use the filing or an explicit assumption. Zero only if you mean zero."

@@ -130,11 +130,15 @@ def _fetched(case):
     price = market.get("price") if isinstance(market.get("price"), dict) else {}
     shares = market.get("shares") if isinstance(market.get("shares"), dict) else {}
     risk_free = rates.get("risk_free") if isinstance(rates.get("risk_free"), dict) else {}
+    inflation = rates.get("inflation") if isinstance(rates.get("inflation"), dict) else {}
     return {
         "price": price.get("value"),
         "price_date": price.get("as_of"),
         "rf": risk_free.get("value"),
         "rf_date": risk_free.get("as_of"),
+        "inflation": inflation.get("value"),
+        "inflation_date": inflation.get("as_of"),
+        "inflation_source": inflation.get("source"),
         "shares": shares.get("value"),
         "shares_source": shares.get("source"),
     }

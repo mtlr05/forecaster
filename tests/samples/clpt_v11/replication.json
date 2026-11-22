@@ -77,6 +77,17 @@
       ],
       "quote": "replication only: pinned v11 risk-free rate",
       "date": "2026-10-26"
+    },
+    {
+      "path": "rates.lam",
+      "value": 0.0,
+      "applies_to": [
+        "base",
+        "bull",
+        "bear"
+      ],
+      "quote": "replication only: pinned v11 inflation pass-through of zero",
+      "date": "2026-10-26"
     }
   ]
 }

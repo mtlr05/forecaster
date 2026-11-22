@@ -16,6 +16,7 @@ FINAGLE_DETERMINED = (
     "rates.risk_free",
     "rates.re",
     "rates.gt",
+    "rates.inflation",
 )
 
 # forecast.json ``finagle`` keys, and the request paths they match.
@@ -134,12 +135,10 @@ def scenario_updates(request, scenario):
         quote = item.get("quote") or ""
         date = item.get("date") or ""
         evidence = quote if not date else "%s (%s)" % (quote, date)
-        _place(
-            leaves,
-            plain,
-            item["path"],
-            {"value": item["value"], "source": "prompt", "evidence": evidence},
-        )
+        node = {"value": item["value"], "source": "prompt", "evidence": evidence}
+        if item.get("as_of"):
+            node["as_of"] = item["as_of"]
+        _place(leaves, plain, item["path"], node)
     return {"leaves": leaves, "plain": plain}
 
 
@@ -289,12 +288,15 @@ def render_valuation_section(result, request):
     fetched = (result or {}).get("fetched") or {}
     if fetched:
         lines.append(
-            "Fetched price %s on %s, risk-free rate %s on %s, shares %s (%s)."
+            "Fetched price %s on %s, risk-free rate %s on %s, inflation %s on %s (%s), shares %s (%s)."
             % (
                 _fmt(fetched.get("price")),
                 fetched.get("price_date"),
                 _fmt(fetched.get("rf")),
                 fetched.get("rf_date"),
+                _fmt(fetched.get("inflation")),
+                fetched.get("inflation_date"),
+                fetched.get("inflation_source"),
                 _fmt(fetched.get("shares")),
                 fetched.get("shares_source"),
             )
