@@ -1,3 +1,13 @@
+# HROW forecast revision log — 23 November 2026 (America/Toronto)
+
+## Report rewritten to the current forecast-report skill
+
+Report only. No forecast number and no valuation input changed. The base, bull, and bear values stay $157.11, $187.34, and $89.13 a share, checked against `collab/valuation_result_v06.json`. The operating figures were checked against `forecast.json`.
+
+The body is rewritten as an argument. Earlier runs, the pass-through formula, and the bull and bear debt figures sit in Appendix B or in the three-case tables. Stated inputs are written as assumptions. The valuation is not named as a tool, and the reader is not named, in the body. Figure numbers run 1 through 17. Estimate comparison, the financial summary, the reporting lines, and the valuation displays follow the current figure rules. The prior PDF was 47 pages. This render is 42 pages, and no table splits across a page.
+
+---
+
 # HROW forecast revision log — 22 November 2026 (America/Toronto)
 
 ## Valuation update to Finagle v06 (lambda=1, debt-funded schedule, 2.5x from FY2028E)

@@ -2,49 +2,57 @@
 
 **Company Update: FY2026E–FY2032E Revenue and EBITDA Forecast**
 
-*15 November 2026 (America/Toronto); valuation updated 22 November 2026 to Finagle v06. US$ millions unless noted; per-share values in US$. This update includes a valuation but carries no rating or price target. The audit record is `forecast.md` / `forecast.json` in this folder, and the valuation result is `collab/valuation_result_v06.json`. Numbered sources are in Appendix B.*
+*15 November 2026, with the valuation as of 22 November 2026 (America/Toronto). US$ millions unless noted; per-share values in US$. This update includes a valuation but carries no rating or price target. The audit record is `forecast.md` and `forecast.json` in this folder, and the valuation result is `collab/valuation_result_v06.json`. Numbered sources are in Appendix B.*
 
 ---
 
 ## 1. Estimate comparison
 
-Figure 1 compares the FY2026E forecast with the company’s published outlook and with the other recorded views. There is no current Consensus: no post-Q3 2026 estimate pull was taken, and a pre-Q3 print is not used as a current figure [P1].
+Figure 1 is the check on the base. FY2026E is the only explicit year with a view other than the base, so FY2027E is shown beside it. FY2025A is the last actual year, the first nine months of 2026 are the reported portion, and the fourth quarter is the remainder. There is no current Consensus, because no post-Q3 2026 estimate pull was taken, and a pre-Q3 print is not used as a current figure [P1].
 
-For FY2026E, the published revenue outlook is the reaffirmed $350–365 range [G2]. The midpoint of that range is about 3% above the $347 product build [C10]. First-half 2026 revenue was below the original first-half range [G4][C3]. That miss is not carried into the reaffirmed full-year range, so a calibrated view is not shown [G2][C3]. The published Adjusted EBITDA outlook is the revised floor of more than $40, including more than $33 in the fourth quarter, as stated in the 9 November 2026 stockholder letter [G1]. That floor is about 6% below the $42.5 cost build [C10]. The outlook is a single-point floor, not a range, so no calibrated midpoint is shown [G1].
-
-From FY2027E onward, there is no published revenue or Adjusted EBITDA guidance and no current Consensus. Figure 1 (continued) therefore shows only the product and cost build for those years.
+The published FY2026E revenue outlook is the reaffirmed $350–365 range [G2]. The midpoint of that range is about 3% above the $347 product build [C10]. A calibrated view is not applied: first-half 2026 revenue was below the original first-half range, and that miss is not carried into the reaffirmed full-year range [G2][G4][C3]. The published Adjusted EBITDA outlook is a floor of more than $40, including more than $33 in the fourth quarter, and that floor is about 6% below the $42.5 cost build [G1][C10]. From FY2027E there is no published range and no current Consensus [P1].
 
 <div class="fig" markdown="1">
 
-**Figure 1 – Estimate comparison, FY2026E (US$ millions)**
+**Figure 1 – Estimate comparison, revenue, FY2025A–FY2027E (US$ millions)**
 
-The table shows each recorded view against the FY2026E base. A missing view is marked n/a.
+| | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E |
+|---|---:|---:|---:|---:|---:|
+| Bottom-up | n/a (reported actual) | n/a (reported actual) | n/a (no remainder view) | 347 | 665 |
+| Top-down | n/a (reported actual) | n/a (reported actual) | n/a (no remainder view) | 350–365 | n/a (no range) |
+| Calibrated top-down | n/a (reported actual) | n/a (reported actual) | n/a (no remainder view) | n/a (not applied) | n/a (no range) |
+| Consensus | n/a (reported actual) | n/a (reported actual) | n/a (no remainder view) | n/a (no post-Q3 2026 pull) | n/a (no post-Q3 2026 pull) |
+| Base | 272 | 214 | 132.9 | 347 | 665 |
+| Bottom-up / base | n/a | n/a | n/a | 100.0% | 100.0% |
+| Top-down / base | n/a | n/a | n/a | 103.0% | n/a |
+| Calibrated top-down / base | n/a | n/a | n/a | n/a | n/a |
+| Consensus / base | n/a | n/a | n/a | n/a | n/a |
+| Bottom-up / calibrated top-down | n/a | n/a | n/a | n/a | n/a |
+| Bottom-up / Consensus | n/a | n/a | n/a | n/a | n/a |
 
-| | Revenue | vs. revenue base | Adjusted EBITDA | vs. EBITDA base |
-|---|---:|---:|---:|---:|
-| Bottom-up | 347 | 1.00 | 42.5 | 1.00 |
-| Top-down | 350–365 | 1.03 (midpoint) | 40.0 (floor) | 0.94 |
-| Calibrated top-down | n/a (not applied to the reaffirmed range) | n/a | n/a (single-point floor; no range) | n/a |
-| Consensus | n/a (no post-Q3 2026 pull) | n/a | n/a (no post-Q3 2026 pull) | n/a |
-| **Base (bottom-up)** | **347** | **1.00** | **42.5** | **1.00** |
-
-*Source: views in `forecast.json` [C1][C5][G1][G2][C10][P1]. Totals of $100 and above are whole numbers. May not sum due to rounding.*
+*Source: views in `forecast.json` [A1][A2][A3][C1][C10][G2][P1]. Ratios are the stored factors, shown as percentages [C10]. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**Figure 1 (continued) – Estimate comparison, FY2027E–FY2032E (US$ millions)**
+**Figure 1 (continued) – Estimate comparison, Adjusted EBITDA, FY2025A–FY2027E (US$ millions)**
 
-Later years have no published guidance and no current Consensus. The table therefore shows only the product and cost build for each year.
+| | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E |
+|---|---:|---:|---:|---:|---:|
+| Bottom-up | n/a (reported actual) | n/a (reported actual) | n/a (no remainder view) | 42.5 | 217 |
+| Top-down | n/a (reported actual) | n/a (reported actual) | n/a (no remainder view) | 40.0 (floor) | n/a (no range) |
+| Calibrated top-down | n/a (reported actual) | n/a (reported actual) | n/a (no remainder view) | n/a (single-point floor) | n/a (no range) |
+| Consensus | n/a (reported actual) | n/a (reported actual) | n/a (no remainder view) | n/a (no post-Q3 2026 pull) | n/a (no post-Q3 2026 pull) |
+| Base | 61.9 | 7.3 | 35.2 | 42.5 | 217 |
+| Bottom-up / base | n/a | n/a | n/a | 100.0% | 100.0% |
+| Top-down / base | n/a | n/a | n/a | 94.2% | n/a |
+| Calibrated top-down / base | n/a | n/a | n/a | n/a | n/a |
+| Consensus / base | n/a | n/a | n/a | n/a | n/a |
+| Bottom-up / calibrated top-down | n/a | n/a | n/a | n/a | n/a |
+| Bottom-up / Consensus | n/a | n/a | n/a | n/a | n/a |
 
-| | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E |
-|---|---:|---:|---:|---:|---:|---:|
-| Revenue base (bottom-up) | 665 | 899 | 1,125 | 1,353 | 1,582 | 1,760 |
-| Adj. EBITDA base (bottom-up) | 217 | 371 | 535 | 692 | 850 | 971 |
-| Top-down, calibrated top-down, Consensus | n/a | n/a | n/a | n/a | n/a | n/a |
-
-*Source: views in `forecast.json` [C10][C14][P1]. Whole numbers at $100 and above. n/a: no published guidance and no post-Q3 2026 Consensus pull. May not sum due to rounding.*
+*Source: views in `forecast.json` [A3][A4][C5][C10][C14][G1][P1]. The FY2026E top-down figure is the revised floor, not a range [G1]. May not sum due to rounding.*
 
 </div>
 
@@ -54,49 +62,30 @@ Later years have no published guidance and no current Consensus. The table there
 
 **FORECAST UPDATE**
 
-■ **We forecast FY2026E revenue of $347 and Adjusted EBITDA of $42.5, below the low end of the reaffirmed $350–365 range, because the fourth-quarter product build sums to $133.** Nine-month 2026 revenue was $214, so $136–151 is needed in the fourth quarter to hit the range. The product build is about $3 short of that implied fourth-quarter low end, and the shortfall is not closed by a plug. The 9 November 2026 stockholder letter described reasonable scenarios of a modest miss, mostly because of order timing and year-end purchasing. Fourth-quarter Adjusted EBITDA is $35.2, and the full-year $42.5 sits above the letter’s floor of more than $40, which includes more than $33 in the fourth quarter. Revenue and Adjusted EBITDA both use the bottom-up view as the base. See Estimate comparison and the fourth-quarter discussion in Forecast.
+■ **We forecast FY2026E revenue of $347 and Adjusted EBITDA of $42.5, below the low end of the reaffirmed $350–365 range, because the fourth-quarter product build is $133.** Nine-month revenue was $214, so the range needs $136–151 in the fourth quarter. The product build is about $3 short of that low end, and the shortfall is not closed with a plug. Fourth-quarter Adjusted EBITDA is $35.2, so the year sits above the floor of more than $40, which includes more than $33 in the fourth quarter. Revenue and Adjusted EBITDA both use the bottom-up view as the base. The comparison is in Estimate comparison, and the fourth-quarter build is in Forecast.
 
-■ **We forecast FY2027E revenue of $665 and Adjusted EBITDA of $217, because VEVYE follows the workbook’s larger market and a 0.57-point monthly share gain, IHEEZO steps price up 10% on the sheet’s unit path, TRIESENCE continues on recent net unit additions, and TYRVAYA contributes its first full year, while a modest YOCHIL program is added with no 2027 YOCHIL revenue.** VEVYE is $292, IHEEZO $141, and TRIESENCE $80.6. TYRVAYA is $33, just above the company’s 2027 revenue floor of more than $30, and those dollars are Harrow product sales. G-MELT and YOCHIL have no 2026 or 2027 revenue. See the VEVYE, IHEEZO, TRIESENCE, and TYRVAYA subsections.
+■ **We forecast FY2027E revenue of $665 and Adjusted EBITDA of $217, because VEVYE follows the workbook's larger market and share gains, IHEEZO takes the sheet's 10% price step, TRIESENCE keeps adding units, and TYRVAYA has its first full year.** VEVYE is $292, IHEEZO is $141, and TRIESENCE is $80.6. TYRVAYA is $33, inside Other branded, just above the company's 2027 floor of more than $30. G-MELT and YOCHIL have no revenue in FY2026E or FY2027E. The line subsections hold the builds.
 
-■ **We put G-MELT in the FY2028E base at $10.5, rising to $146 in FY2032E, and YOCHIL at $1.71 rising to $27.4, because the company plans 2028 launches if the products are approved.** The November 2026 corporate presentation times a year-end 2026 G-MELT NDA and a Q4 2027 PDUFA on a standard review, and a 2028 launch that is conditional on approval. G-MELT volume runs from a 60,000-unit mid-2028 stub to 750,000 units from FY2031E, at $175 to $195 per unit. YOCHIL is a separate 3 mg midazolam tablet and uses penetration of one-third of that year’s IHEEZO customer units from the 15 November workbook. A 2028 YOCHIL launch is tighter than G-MELT’s, because Phase 3 is still ahead. Both paths are unweighted and conditional. See the G-MELT and YOCHIL subsections.
+■ **We put G-MELT in the FY2028E base at $10.5, rising to $146 in FY2032E, and YOCHIL at $1.71, rising to $27.4, because the company plans 2028 launches if the products are approved.** Both paths are unweighted and conditional. G-MELT runs from 60,000 units in a mid-2028 stub to 750,000 units from FY2031E, at $175 to $195 per unit. YOCHIL is a separate 3 mg midazolam tablet and uses a fraction of that year's IHEEZO units. A 2028 YOCHIL launch is tighter, because Phase 3 is still ahead. See G-MELT and YOCHIL.
 
-■ **We forecast FY2032E revenue of $1,760 and Adjusted EBITDA of $971, a 55.2% margin, because the VEVYE workbook share approaches 17% on a 1,200-thousand-TRx December market while price glides toward $200, IHEEZO growth halves each year after a 10% price step, G-MELT ramps to the 15% unit rate, and the 2026 commercial build is already in the cost base.** FY2027E cash operating expenses are $293, including about $20 of incremental TYRVAYA cost, an assumed G-MELT program of $12, an assumed YOCHIL program of $6, and a 4% variable load of $8.5 on same-store revenue above the third-quarter 2026 annualized pace of $397. Cash opex rises to $392 by FY2032E. The 55.2% margin is well beyond the 20.2% and 22.7% Adjusted EBITDA margins reported for FY2024A and FY2025A, and the base is not capped for that gap. Melt FDA-approval cash of $87.2 would be a cash outflow around a Q4 2027 PDUFA, and combined Melt sales first exceed $100 of Annual Net Sales in FY2030E, which would trigger $10.0 of commercial cash. The base value is $149.78 per share vs. a $28.30 share price. See Figure 6a, Contingent payments, and Valuation.
+■ **We forecast FY2032E revenue of $1,760 and Adjusted EBITDA of $971, a 55.2% margin, because the workbook, the IHEEZO fade, and the G-MELT ramp compound on a cost base that already includes the 2026 commercial build.** Cash operating expenses are $293 in FY2027E and $392 in FY2032E. The 55.2% margin is far above the 20.2% and 22.7% margins reported for FY2024A and FY2025A, and the base is not capped for that gap. Melt approval cash of $87.2 would leave around a Q4 2027 decision, and the first commercial cash milestone of $10.0 falls in FY2030E. The base value is $157.11 a share against a $28.30 price. The cost bridge is in Forecast, the cash items are in Contingent payments, and the value is in Valuation.
+
+Figure 2 is the base case at the two actual years, the first two explicit years, and the last explicit year. FY2032E growth is vs. FY2031E.
 
 <div class="fig" markdown="1">
 
-**Figure 2 – Financial summary (FY2024A–FY2028E, US$ millions)**
+**Figure 2 – Financial summary, FY2024A, FY2025A, FY2026E, FY2027E, and FY2032E (US$ millions)**
 
-The table is the base case through FY2028E. Revenue growth in FY2027E is the first full year of TYRVAYA, the VEVYE workbook, and the IHEEZO price step.
-
-| | FY2024A | FY2025A | FY2026E | FY2027E | FY2028E |
+| | FY2024A | FY2025A | FY2026E | FY2027E | FY2032E |
 |---|---:|---:|---:|---:|---:|
-| Revenue | 200 | 272 | 347 | 665 | 899 |
-| Revenue growth | — | 36.4% | 27.5% | 91.5% | 35.2% |
-| GAAP gross margin | 75.0% | 75.0% | 72.1% | 73.1% | 74.5% |
-| Adjusted EBITDA | 40.3 | 61.9 | 42.5 | 217 | 371 |
-| EBITDA growth | — | 53.6% | -31.4% | 411.0% | 70.8% |
-| EBITDA margin | 20.2% | 22.7% | 12.2% | 32.7% | 41.3% |
+| Revenue | 200 | 272 | 347 | 665 | 1,760 |
+| Revenue growth | — | 36.4% | 27.5% | 91.5% | 11.2% |
+| GAAP gross margin | 75.0% | 75.0% | 72.1% | 73.1% | 76.0% |
+| Adjusted EBITDA | 40.3 | 61.9 | 42.5 | 217 | 971 |
+| EBITDA growth | — | 53.6% | -31.4% | 411.0% | 14.2% |
+| EBITDA margin | 20.2% | 22.7% | 12.2% | 32.7% | 55.2% |
 
-*Source: FY2024A–FY2025A [A1][A3]; FY2026E–FY2028E [C1][C5][C10][C13][C14]. Totals of $100 and above are whole numbers; exact figures are in `forecast.json` and Appendix B. May not sum due to rounding.*
-
-</div>
-
-<div class="fig" markdown="1">
-
-**Figure 2 (continued) – Financial summary (FY2029E–FY2032E, US$ millions)**
-
-The outer years add the 15% G-MELT unit ramp, the YOCHIL memo line, the VEVYE workbook, and the IHEEZO sheet, with cash opex still growing more slowly than revenue.
-
-| | FY2029E | FY2030E | FY2031E | FY2032E |
-|---|---:|---:|---:|---:|
-| Revenue | 1,125 | 1,353 | 1,582 | 1,760 |
-| Revenue growth | 25.2% | 20.3% | 16.9% | 11.2% |
-| GAAP gross margin | 75.0% | 75.4% | 75.7% | 76.0% |
-| Adjusted EBITDA | 535 | 692 | 850 | 971 |
-| EBITDA growth | 44.3% | 29.4% | 22.8% | 14.2% |
-| EBITDA margin | 47.6% | 51.2% | 53.7% | 55.2% |
-
-*Source: [C10][C13][C14][C17][S15][S19][S20][S40][S41]. Whole numbers at $100 and above. May not sum due to rounding.*
+*Source: FY2024A–FY2025A [A1][A3]; FY2026E–FY2027E and FY2032E [C1][C5][C10][C13][C14]. Whole numbers at $100 and above. May not sum due to rounding.*
 
 </div>
 
@@ -104,13 +93,13 @@ The outer years add the 15% G-MELT unit ramp, the YOCHIL memo line, the VEVYE wo
 
 ## 3. Business Description and Reporting Lines
 
-Harrow is a North American ophthalmic company that sells FDA-approved branded products and compounded formulations [D2]. It reports two segments, Branded and ImprimisRx (compounding), and, beginning in the 2026 quarterly reports, product revenue for VEVYE, IHEEZO, TRIESENCE, Other branded products (which excludes those three), Other revenues, and Compounding [A1][A2]. All operations are attributed to the United States [D2]. The company commercializes products it owns or licenses; it does not manufacture its branded finished goods, which are made by contract manufacturers [D2].
+Harrow is a North American ophthalmic company that sells FDA-approved branded products and compounded formulations [D2]. It reports Branded and ImprimisRx (compounding), and, from the 2026 quarterly reports, product revenue for VEVYE, IHEEZO, TRIESENCE, Other branded products, Other revenues, and Compounding [A1][A2]. Operations are attributed to the United States [D2]. The company commercializes products it owns or licenses. Contract manufacturers make the branded finished goods [D2].
+
+Figure 3 is the last full year. VEVYE, IHEEZO, and compounding were each about 30% of FY2025A revenue. TRIESENCE was still inside the 10-K Other branded total and is split out here to match the 2026 presentation [A1][C6]. G-MELT and YOCHIL had no commercial revenue [A7].
 
 <div class="fig" markdown="1">
 
-**Figure 3 – FY2025A revenue by line (US$ millions)**
-
-VEVYE, IHEEZO, and compounding each accounted for about 30% of FY2025A revenue. TRIESENCE was still inside the 10-K Other branded total and is split out here to match the 2026 presentation.
+**Figure 3 – Revenue by line, FY2025A (US$ millions)**
 
 | Line | FY2025A | Share of total |
 |---|---:|---:|
@@ -123,57 +112,68 @@ VEVYE, IHEEZO, and compounding each accounted for about 30% of FY2025A revenue. 
 | G-MELT | 0.0 | 0.0% |
 | **Total** | **272** | **100%** |
 
-*Source: 2025 Form 10-K product table [A1]; TRIESENCE $9.9 split [C6]. Shares are derived. May not sum due to rounding. G-MELT had no commercial revenue [A7].*
+*Source: 2025 Form 10-K product table [A1]; TRIESENCE $9.9 split [C6]. Shares are derived. May not sum due to rounding.*
 
 </div>
 
-VEVYE is a pharmacy-benefit, water-free cyclosporine 0.1% for dry eye disease [D2]. IHEEZO is a buy-and-bill chloroprocaine ophthalmic gel for ocular surface anesthesia; Harrow revenue is recognized on shipment to distributors, and “customer unit demand” is distributor shipments to practices [D2][S2]. TRIESENCE is a buy-and-bill triamcinolone injectable with U.S. patents listed as expiring in March and December 2029 [D2][S14]. Other branded is the residual FDA-approved book and, from mid-2026 and October 2026, the reporting bucket for BYOOVIZ and TYRVAYA; it is also the natural bucket for OPUVIZ and BYQLOVI if they are not broken out [A2][S4][S7]. ImprimisRx is the 503A / 503B compounding business, including compounded MKO Melt, which the company says is already used at more than 800 U.S. ophthalmic institutions [G17].
+VEVYE is a pharmacy-benefit, water-free cyclosporine 0.1% for dry eye disease, sold directly [D2]. IHEEZO is a buy-and-bill chloroprocaine gel for ocular surface anesthesia. Harrow recognizes revenue on shipment to distributors, and customer-unit demand is the distributor's shipment to the practice [D2][S2]. TRIESENCE is a buy-and-bill triamcinolone injectable, with U.S. patents listed as expiring in March and December 2029 [D2][S14].
+
+Other branded is the residual FDA-approved book. From the July 2026 BYOOVIZ launch and the October 2026 TYRVAYA close, it is also the bucket for those products, and for OPUVIZ and BYQLOVI if they are not broken out [A2][S4][S7]. TYRVAYA is a varenicline nasal spray for dry eye, acquired worldwide except Japan, where Viatris pays Harrow a royalty [D9][G14]. BYOOVIZ and OPUVIZ are Samsung Bioepis biosimilars that Harrow commercializes in the United States. Samsung develops, makes, and supplies them [D12][A8]. ImprimisRx is the 503A and 503B compounding business, including compounded MKO Melt, which the company says is already used at more than 800 U.S. ophthalmic institutions [G17]. Other revenues are the small residual outside those product lines [A1].
 
 The Samsung share of net sales, the TYRVAYA milestones, and the Melt cash and stock are under Contingent payments.
 
-
 ### Products still in development
 
-G-MELT (MELT-300) is an investigational Zydis orally disintegrating tablet of midazolam 3 mg plus ketamine 50 mg [G17][G18]. The company plans to file an NDA by year-end 2026, with PDUFA in Q4 2027 if review is standard, and a 2028 launch if approved [G7][G8][G18]. The explicit years include G-MELT from mid-2028 on the volume path in the G-MELT subsection, labelled unweighted and conditional [S15]. YOCHIL (MELT-210) is a 3 mg midazolam Zydis orally disintegrating tablet intended for sedation, anxiolysis and amnesia before diagnostic, therapeutic or endoscopic procedures or before induction of anesthesia [G25]. It is not the midazolam-plus-ketamine cataract combo [G17][G25]. End-of-Phase 2 was completed in the quarter ended 30 June 2026 [G24]. Phase 3 is still ahead, and there is no NDA in 2026 [G24][S32]. The November 2026 deck shows YOCHIL as expected in 2028, sitting with G-MELT on the Surgical team [G19][G23]. The explicit years include YOCHIL from 2028 on a unit path tied to one-third of IHEEZO customer units, also labelled unweighted and conditional, with a clear flag that a 2028 launch is tighter than G-MELT’s [S32][P4]. H-N08, a next-generation TRIESENCE pre-filled syringe, is expected in the second half of 2028 or the first half of 2029, is unapproved, and is not in the base as a replacement product [S23]. QUELL has been completed as IHEEZO-related development work and is not a separate revenue line [G15]. No dollar figure was given for H-N08 or QUELL in the sources used here.
+G-MELT (MELT-300) is an investigational orally disintegrating tablet of midazolam 3 mg plus ketamine 50 mg for sedation during cataract surgery [G17][G18]. The company plans to file a new drug application by year-end 2026, with a decision in Q4 2027 if review is standard, and a 2028 launch if approved [G7][G8][G18]. It will be its own line, not a row of Other branded, so that compounded MKO is not counted twice [P3][P4]. The explicit years include it from mid-2028, unweighted and conditional [S15].
+
+YOCHIL (MELT-210) is a separate 3 mg midazolam orally disintegrating tablet for sedation, anxiolysis, and amnesia before a procedure or before induction of anesthesia [G25]. It is not the midazolam-plus-ketamine cataract combination [G17][G25]. It will be its own line [P4]. End-of-Phase 2 was completed in the quarter ended 30 June 2026, Phase 3 is still ahead, and there is no 2026 application [G24][S32]. The November 2026 deck shows an expected 2028 launch, on the Surgical team with G-MELT [G19][G23]. The explicit years include it from 2028 on a unit path tied to one-third of IHEEZO customer units, also unweighted and conditional [S32][P4].
+
+H-N08, a next-generation TRIESENCE pre-filled syringe, is expected in the second half of 2028 or the first half of 2029. It is unapproved and is not in the base as a replacement product [S23]. QUELL is completed IHEEZO-related development work and is not a revenue line [G15]. No dollar figure was given for H-N08 or QUELL in the sources used here.
 
 ---
 
 ## 4. Management
 
-Mark L. Baum is a founder, Chairman of the Board, and Chief Executive Officer [A14]. In 2011 he led the restructuring and reorganization of the company, was appointed a director in December 2011, Chief Executive Officer in April 2012, and Chairman again from August 2021 [A14]. He is a graduate, cum laude, of The University of Texas at Arlington and a graduate of California Western School of Law [A14]. In 1999 he founded YesRx, an HIV-focused pharmacy business; before Harrow, as founder of TBLF, LLC, he made investments in, and provided advisory and board service to, private and public companies [A14]. As of 21 April 2026 he beneficially owned 3,663,630 shares, or 9.65% of 37,273,420 shares then outstanding [A13]. A Form 4 filed for a 14 May 2026 open-market purchase reported 2,996,130 shares held directly after buying 10,000 shares, which implies that the April beneficial total included additional indirectly or derivatively attributable shares as footnoted in the 24 April 2026 definitive proxy; we do not restate an option count that we have not quoted [A13].
+Mark L. Baum is a founder, Chairman, and Chief Executive Officer [A14]. He led the 2011 restructuring, became a director in December 2011, Chief Executive Officer in April 2012, and Chairman again from August 2021 [A14]. He is a graduate of The University of Texas at Arlington and of California Western School of Law [A14]. In 1999 he founded YesRx. Before Harrow, through TBLF, LLC, he invested in and advised private and public companies [A14].
 
-Andrew R. Boll is President and Chief Financial Officer and was part of the 2012 reorganization [D2]. The current commercial platform has been built largely by acquisition and licensing — IHEEZO, VEVYE, TRIESENCE, the Melt remaining interest in November 2025, the Samsung U.S. rights in 2025, and TYRVAYA in October 2026 [D2][D8][D9][D12]. That deal record is substantial. The execution record on annual targets is mixed. The original FY2025 revenue guide was a single point of more than $280 [A3]. Actual revenue was $272 after the range was revised to $270–280 [A3]. The original FY2026 Adjusted EBITDA range of $80–100 was cut in November 2026 to a floor of more than $40 [G1][G4]. As of 5 November 2026 the company had 37,533,160 common shares outstanding and $300 principal amount of 8.625% senior notes due 2030 [A6].
+As of 21 April 2026 he beneficially owned 3,663,630 shares, 9.65% of 37,273,420 shares then outstanding [A13]. A Form 4 for a 14 May 2026 open-market purchase reported 2,996,130 shares held directly after buying 10,000 shares, so the April beneficial total included shares attributed indirectly. We do not restate an option count we have not quoted [A13].
+
+Andrew R. Boll is President and Chief Financial Officer and was part of the 2012 reorganization [D2]. The commercial book has been built largely by acquisition and licensing: IHEEZO, VEVYE, TRIESENCE, the remaining Melt interest in November 2025, the Samsung U.S. rights in 2025, and TYRVAYA in October 2026 [D2][D8][D9][D12]. That deal record is substantial.
+
+The record against annual targets is mixed. The original FY2025 revenue guide was a single point of more than $280, and actual revenue was $272 after the range was revised to $270–280 [A3]. The original FY2026 Adjusted EBITDA range of $80–100 was cut in November 2026 to a floor of more than $40 [G1][G4].
+
+As of 5 November 2026 the company had 37,533,160 common shares outstanding and $300 principal amount of 8.625% senior notes due 2030 [A6].
 
 ---
 
 ## 5. Key Developments
 
-The table lists the dated events that set the current commercial book, the Melt and TYRVAYA contracts, and the November 2026 guidance.
+Figure 4 is the dated set that fixes the commercial book, the Melt and TYRVAYA contracts, and the November 2026 guidance.
 
 <div class="fig" markdown="1">
 
-**Figure 4 – Recent events**
+**Figure 4 – Recent events, 17 July 2025–10 November 2026**
 
 | Date | Event | Why it matters |
 |---|---|---|
-| 17 Jul 2025 | Exclusive U.S. commercial rights to BYOOVIZ and OPUVIZ with Samsung Bioepis [D12][D13][A8] | Harrow commercializes; Samsung develops, makes, and supplies. Upfront $4 paid February 2026 and capitalized. A “share of net sales” and one-off net-sales milestones are payable at undisclosed rates [A8][S7][S18]. |
-| 17–18 Nov 2025 | Remaining Melt equity acquired as an asset acquisition [A7][D8][D17] | Harrow already owned about 45–46%. $8.45 of in-process R&D was expensed in FY2025. A mid-single-digit royalty formerly payable to Harrow is now internalized [A7]. Contingent cash and stock remain payable to non-Harrow holders [A9][S12]. The then-current plan was an H1 2027 NDA, H1 2028 approval, and H2 2028 launch; that calendar has since been accelerated [D17][G9]. |
-| 2 Mar 2026 | FY2025 results and original FY2026 guidance [D4][G4] | Revenue $272, Adjusted EBITDA $61.9. Original FY2026 guide: revenue $350–365 (first half $133–153) and Adjusted EBITDA $80–100. |
-| 31 Mar 2026 | IHEEZO Medicare pass-through expected to expire [D2] | Context for 2026 IHEEZO realization; not a new Q4 2026 event. |
-| 24 Apr 2026 | 2026 definitive proxy filed; beneficial ownership as of 21 April 2026 [D16][A13] | Baum beneficially owned 9.65%. |
-| 1 Jul 2026 | BYOOVIZ U.S. launch [G11] | Sales are unprinted in the Q3 10-Q. Q3 was below the company’s model, with more accounts and small trials [G11]. |
-| 10 Aug 2026 | Q2 2026 stockholder letter: YOCHIL End-of-Phase 2 meeting completed [G24][D20] | Phase 3 design is being refined; a 2028 launch remains expected and is tighter than G-MELT’s, because Phase 3 is still ahead [G24][G19][S32]. |
-| 1 Oct 2026 | TYRVAYA close: $30 cash, up to $70 milestones through 31 Dec 2029, worldwide except Japan [D9][G14] | First contribution is in Q4 2026E. Incremental annual opex about $20. Novaliq consent remains outstanding [G5][G6]. |
-| 1 Nov 2026 | HarrowRx launched; four commercial teams (OSD, Retina, Surgical, Access+) [G13] | Surgical is the team that will carry G-MELT upon approval [G20][G23]. |
-| 9–10 Nov 2026 | Q3 results, letter, deck, and call [D1][D3][D14][D15] | Q3 revenue $99.3, nine-month revenue $214, nine-month Adjusted EBITDA $7.3. Revenue range reaffirmed; Adjusted EBITDA cut to more than $40, including more than $33 in Q4 [G1][G2]. Pre-NDA meeting complete; G-MELT NDA planned by year-end 2026; PDUFA Q4 2027 assuming standard review; 2028 launch is conditional [G7][G8][G9][G18]. |
+| 17 Jul 2025 | Exclusive U.S. commercial rights to BYOOVIZ and OPUVIZ with Samsung Bioepis [D12][D13][A8] | Harrow commercializes; Samsung develops, makes, and supplies. Upfront $4 paid February 2026 and capitalized. A share of net sales and one-off net-sales milestones are payable at undisclosed rates [A8][S7][S18]. |
+| 17–18 Nov 2025 | Remaining Melt equity acquired as an asset acquisition [A7][D8][D17] | Harrow already owned about 45–46%. $8.45 of in-process research was expensed in FY2025. A mid-single-digit royalty formerly payable to Harrow is now internalized [A7]. Contingent cash and stock remain payable to non-Harrow holders [A9][S12]. The plan at close was a first-half 2027 application, first-half 2028 approval, and second-half 2028 launch. That calendar has since been pulled forward [D17][G9]. |
+| 2 Mar 2026 | FY2025 results and original FY2026 guidance [D4][G4] | Revenue $272, Adjusted EBITDA $61.9. Original FY2026 guide: revenue $350–365, of which the first half was $133–153, and Adjusted EBITDA $80–100. |
+| 31 Mar 2026 | IHEEZO Medicare pass-through expected to expire [D2] | Context for 2026 IHEEZO realization. Not a new fourth-quarter event. |
+| 24 Apr 2026 | 2026 definitive proxy; beneficial ownership as of 21 April 2026 [D16][A13] | Baum beneficially owned 9.65%. |
+| 1 Jul 2026 | BYOOVIZ U.S. launch [G11] | Sales are not printed in the Q3 report. The quarter was below the company's model, with more accounts and small trials [G11]. |
+| 10 Aug 2026 | Q2 2026 stockholder letter: YOCHIL End-of-Phase 2 meeting completed [G24][D20] | Phase 3 design is being refined. A 2028 launch is still expected, and it is tighter than G-MELT's because Phase 3 is still ahead [G24][G19][S32]. |
+| 1 Oct 2026 | TYRVAYA close: $30 cash, up to $70 of milestones through 31 December 2029, worldwide except Japan [D9][G14] | First contribution is in Q4 2026E. Incremental annual operating cost about $20. Novaliq consent remains outstanding [G5][G6]. |
+| 1 Nov 2026 | Commercial platform launched with four teams: ocular surface, retina, surgical, and access [G13] | The surgical team is the one that would carry G-MELT if it is approved [G20][G23]. |
+| 9–10 Nov 2026 | Q3 results, letter, presentation, and call [D1][D3][D14][D15] | Q3 revenue $99.3, nine-month revenue $214, nine-month Adjusted EBITDA $7.3. Revenue range reaffirmed. Adjusted EBITDA cut to more than $40, including more than $33 in the fourth quarter [G1][G2]. Pre-application meeting complete. G-MELT application planned by year-end 2026. Decision in Q4 2027 if review is standard. 2028 launch is conditional [G7][G8][G9][G18]. |
 
-*Source: dates and facts as tagged in the table [D1]–[D17][A7][A8][A9][A13][G1][G2][G4][G5][G7][G8][G9][G11][G13][G14][G18][G20].*
+*Source: dates and facts as tagged in the table.*
 
 </div>
 
-The events that change the numbers are the TYRVAYA close, the November cut to the Adjusted EBITDA outlook, the still-unresolved Novaliq consent, the partly disclosed Samsung economics, and the accelerated G-MELT filing calendar that now supports a 2028 launch in the base if the product is approved [G1][G5][G6][S7][S15][A6]. There is no dated delay mechanism in the latest sources that would push a standard-review Q4 2027 PDUFA into a missed 2028 launch [G7][G8][S8][S15].
+The events that change the forecast are the TYRVAYA close, the November cut to the Adjusted EBITDA outlook, the unresolved Novaliq consent, the undisclosed Samsung economics, and the earlier G-MELT filing calendar that now supports a 2028 launch in the base if the product is approved [G1][G5][G6][S7][S15][A6]. Nothing in the latest sources dates a slip that would push a standard-review Q4 2027 decision past a 2028 launch [G7][G8][S8][S15].
 
-Upcoming catalysts are the G-MELT NDA planned by year-end 2026, a PDUFA in Q4 2027 if review is standard, and a 2028 launch if the product is approved [G7][G8][G18]. OPUVIZ is planned for a mid-2027 U.S. launch [G12]. YOCHIL is expected in 2028, and Phase 3 is still ahead [G19][G24][S32].
+The catalysts ahead are the G-MELT application planned by year-end 2026, a decision in Q4 2027 if review is standard, and a 2028 launch if the product is approved [G7][G8][G18]. OPUVIZ is planned for a mid-2027 U.S. launch [G12]. YOCHIL is expected in 2028, and Phase 3 is still ahead [G19][G24][S32].
 
 ---
 
@@ -181,29 +181,31 @@ Upcoming catalysts are the G-MELT NDA planned by year-end 2026, a PDUFA in Q4 20
 
 ### How the evidence becomes the numbers
 
-The company totals in this report are the sum of the product lines [P1]. Figure 1 shows how those totals sit against the published outlook [C1][C5]. There is no current Consensus and no calibrated view [P1]. The reaffirmed $350–365 range is used as a check on the product build, not as a target the lines are scaled to [P1]. First-half 2026 revenue was $115, below the original first-half range of $133–153 [G4][C3]. That miss is not applied to the reaffirmed full-year range [G2][C3]. The FY2026E revenue figure of $347 sits about $3 below the $350 low end [C1][C15]. The FY2026E Adjusted EBITDA figure of $42.5 sits above the floor of more than $40 [G1][C5].
+The company totals are the sum of the product lines, and the lines are not scaled to the outlook [P1]. Figure 1 is where those totals sit against the four views. Both revenue and Adjusted EBITDA use the bottom-up view as the base [C1][C5]. The reaffirmed $350–365 range is a check. FY2026E revenue of $347 is about $3 below the $350 low end, and FY2026E Adjusted EBITDA of $42.5 sits above the floor of more than $40 [C1][C15][G1][C5].
 
-A $2.5 TYRVAYA inventory step-up in Q4 2026E is not added back [S11]. The letter definition of Adjusted EBITDA does not list inventory step-up as an add-back [A4]. Melt closing in-process R&D of $8.45 was expensed in FY2025 and does not recur [A7]. Integration and transition costs tied to TYRVAYA are represented by the verified about $20 of incremental annual opex from FY2027E [G5][S20]. A $5 partial-quarter allowance is in Q4 2026E [S20]. The explicit window runs through FY2032E and includes G-MELT and YOCHIL year by year from 2028 if approved [P1][S15][S32]. G-MELT and YOCHIL launch inside the explicit window, so their FY2033E dollars sit inside the next-year build that sets next-period growth (gsnext) of 10.6% [S44]. The pipeline was considered for the incremental margin (mc) and did not move it, because their 72% product gross margin sits close to the FY2032E mix [S43][S16]. Both judgments rest on the history window: GAAP gross margin was 75% in FY2024A and FY2025A and 71% in the first nine months of 2026 [S43][A3][A5].
+One-time items are kept out of the forward cost base where the company treats them as one-time. A $2.5 TYRVAYA inventory step-up in Q4 2026E is not added back, because the letter's definition of Adjusted EBITDA does not list it [S11][A4]. Melt closing in-process research of $8.45 was expensed in FY2025 and does not recur [A7]. Integration cost that continues is the verified about $20 of incremental TYRVAYA operating cost from FY2027E, with a $5 partial-quarter allowance in Q4 2026E [G5][S20].
+
+G-MELT and YOCHIL launch inside the explicit window, so they are in the year-by-year totals from 2028 and are not added again on top [P1][S15][S32]. Their FY2033E dollars sit inside the next-year build that sets next-period growth of 10.6% [S44]. The pipeline was considered for the incremental margin and did not move it, because a 72% product gross margin sits close to the FY2032E mix [S43][S16]. That judgment uses the history: GAAP gross margin was 75% in FY2024A and FY2025A and 71% in the first nine months of 2026 [S43][A3][A5].
+
+Figure 5 is the map from each judgment to the base-case number it moves.
 
 <div class="fig" markdown="1">
 
-**Figure 5 – Evidence → judgements → forecast impact**
-
-Each row maps a development or driver to the base-case judgement it sets and to the effect on the base-case numbers.
+**Figure 5 – Evidence, judgements, and forecast impact**
 
 | Evidence | Judgement | Forecast impact |
 |---|---|---|
 | Reaffirmed $350–365 revenue range; nine-month revenue $214 [G2][A2] | Fourth-quarter product build; the range is a check [P1] | FY2026E $347, about $3 below the low end [C1][C15] |
-| Vevye and Iheezo workbook, 15 November 2026 [P10] | December market of 1,200 thousand TRx; share gains start at 0.57 points; bull +8% from January 2027; bear share frozen after December 2028 [S21][P8][P10] | VEVYE $46.7, then $137, $292, $433; $896 by FY2032E [S21] |
-| IHEEZO sheet: 10% ASP step and a growth rate that halves each year [S22][P10] | Q4 uses half the 2025 distributor/clinic ratio; later years are units times the $442.88 ASP [S22][S45] | IHEEZO $40.6, then $83.4, $141, $162; $187 by FY2032E [S22] |
+| Vevye and Iheezo workbook, 15 November 2026 [P10] | December market of 1,200 thousand prescriptions; share gains start at 0.57 points; bull 8% from January 2027; bear share frozen after December 2028 [S21][P8][P10] | VEVYE $46.7, then $137, $292, $433; $896 by FY2032E [S21] |
+| IHEEZO sheet: 10% price step and a growth rate that halves each year [S22][P10] | Fourth quarter uses half the 2025 distributor-to-clinic ratio; later years are units times the $442.88 price [S22][S45] | IHEEZO $40.6, then $83.4, $141, $162; $187 by FY2032E [S22] |
 | TRIESENCE last two increments of 4,669 and 5,419 [S23] | Constant quarterly add of 5,044 units at $534.76 per customer unit [S23] | $13.4, then $33.5, $80.6, $124; $296 by FY2032E [S23] |
-| TYRVAYA 2027 floor of more than $30, and about $20 opex [G5] | $33 FY2027E product sales; $20 opex once [S6][S20] | Inside Other branded; opex not double-counted [S13][C14] |
+| TYRVAYA 2027 floor of more than $30, and about $20 of operating cost [G5] | $33 of FY2027E product sales; $20 of operating cost once [S6][S20] | Inside Other branded; operating cost not double-counted [S13][C14] |
 | Samsung share undisclosed [A8] | Gross product sales; 40% share plus about 8% other cost [S18] | BYOOVIZ and OPUVIZ in Other branded at a 52% product gross margin [S7][C13] |
-| G-MELT NDA year-end 2026, PDUFA Q4 2027, 2028 launch if approved [G7][G8][G18]; 15% instruction [P4] | Mid-2028 first shipments, unweighted and conditional; 60,000–750,000 units at $175–$195 per unit, 15% of 5 million by FY2031E [S15][P4] | $10.5–146 in FY2028E–FY2032E; $0 in the bear case through FY2030E [C12] |
-| YOCHIL End-of-Phase 2 in Q2 2026; expected 2028 [G24][G19] | Penetration × (1/3) × the workbook’s IHEEZO units; same fractions as the G-MELT ramp; $175–$195 assumed [S32][P4] | $1.71–27.4 in FY2028E–FY2032E; $0 in the bear case [C16] |
-| No disclosed G-MELT or YOCHIL launch budget; “existing footprint” [G19][S17] | G-MELT program $12 / $20 / $16–19 and YOCHIL $6 / $10 / $8–9.5, about 40% either side; not zero [S17][S33] | Cash opex $293 in FY2027E rising to $392 [C14] |
-| Q3 2026 cash opex of $59.3 already pays for the Q3 revenue pace [C4][C17] | Core = Q3 run rate × 4, then 4% a year (BLS-based); variable 4% of same-store revenue above the Q3 annualized $397 [S40][S41][C17] | Variable opex $8.5 in FY2027E rising to $43.4 [C14] |
-| Melt approval cash $87.2 [A9] | Contingent cash, not EBITDA; funding not verified [S12] | Flagged around PDUFA; discounted on the valuation's cash schedule [S12][C25] |
+| G-MELT application by year-end 2026, decision in Q4 2027, 2028 launch if approved [G7][G8][G18]; 15% instruction [P4] | Mid-2028 first shipments, unweighted and conditional; 60,000 to 750,000 units at $175 to $195, 15% of 5 million surgeries by FY2031E [S15][P4] | $10.5 to $146 in FY2028E–FY2032E; $0 in the bear case through FY2030E [C12] |
+| YOCHIL End-of-Phase 2 in Q2 2026; expected 2028 [G24][G19] | Penetration times one-third of the workbook's IHEEZO units; same fractions as the G-MELT ramp; $175 to $195 [S32][P4] | $1.71 to $27.4 in FY2028E–FY2032E; $0 in the bear case [C16] |
+| No disclosed G-MELT or YOCHIL launch budget; an existing footprint [G19][S17] | G-MELT program $12, then $20, then $16 to $19, and YOCHIL $6, then $10, then $8 to $9.5, about 40% either side; not zero [S17][S33] | Cash operating cost $293 in FY2027E, rising to $392 [C14] |
+| Q3 2026 cash operating cost of $59.3 already pays for the Q3 revenue pace [C4][C17] | Core equals the Q3 run rate times four, then 4% a year; variable cost is 4% of same-store revenue above the Q3 annualized $397 [S40][S41][C17] | Variable cost $8.5 in FY2027E, rising to $43.4 [C14] |
+| Melt approval cash $87.2 [A9] | Contingent cash, not Adjusted EBITDA [S12] | On the cash schedule the valuation discounts [S12][C19] |
 
 *Source: tags in the table. Full precision is in `forecast.json` and Appendix B.*
 
@@ -211,357 +213,270 @@ Each row maps a development or driver to the base-case judgement it sets and to 
 
 ### VEVYE
 
-The cause of this path is the 15 November 2026 instruction to use the Vevye and Iheezo workbook for VEVYE [P10]. Nine-month 2026 printed revenue of $90.0 stays as reported [A2]. From October 2026 the workbook sets volume and price month by month [S1][S21].
+The path is set by the 15 November 2026 workbook, not by a new company event after the 9 November letter [P10]. Key Developments has the commercial history. From October 2026 the workbook sets volume and price [S1][S21]. Nine-month printed revenue of $90.0 stays as reported [A2]. Product gross margin stays 80% [S19].
 
-Through December 2026, monthly TRx grows 5% from a September 2026 base of 118 thousand, and price starts at $117 and each month closes 3% of the gap to $200 [S1][P10]. Q4 2026E is $46.7 on 390,595 TRx, at an average of about $120 per TRx [S1]. FY2026E is $137 [C1]. That quarter is unchanged from the 14 November sheet, because the share formula starts in January [S21][P10]. TRx in the workbook is a model unit, not a reported prescription count [S21].
+Through December 2026, monthly volume grows 5% from a September base of 118 thousand, and price starts at $117 and each month closes 3% of the gap to $200 [S1][P10]. The fourth quarter is $46.7 on 390,595 units, so FY2026E is $137 [S1][C1]. That quarter matches the 14 November sheet, because the share formula starts in January [S21][P10]. The unit is a model unit, not a reported prescription count [S21].
 
-From January 2027, monthly TRx is share times market size [S21][P10]. December 2026 market size is 1,200 thousand TRx, so December share is 11.4%. Monthly share gains start at 0.57 points in January 2027 and are multiplied by 0.9 each month, so share approaches 17.1%. January market size stays at 1,200 thousand; from February the market grows 1% a month. The price glide continues. The sheet runs through December 2032; calendar 2033 continues the same recurrences for next-period growth only [S21][P10].
+From January 2027, monthly volume is share times market size [S21][P10]. The December 2026 market is 1,200 thousand, so December share is 11.4%. Monthly share gains start at 0.57 points and are multiplied by 0.9 each month, so share approaches 17.1%. The market grows 1% a month from February, and the price glide continues through December 2032 [S21][P10].
 
-FY2027E is $292 and FY2028E is $433 [S21]. Average net revenue per TRx rises from about $136 in FY2027E to about $156 in FY2028E [C27]. Later years are $550, $662, $775, and $896 in FY2029E–FY2032E, and percentage growth decelerates to about 16% by FY2032E [S21][C27]. Product gross margin stays 80% [S19]. The bull is 8% above this path from January 2027, and the bear holds the December 2028 share of 16.6% while the market and the price path continue; both builds are in Appendix A [S21][P8][S45]. Composition-patent expiry from December 2030 is a later-window risk [D2][S21]. Other listed claims run into 2037–2039 [D2].
+FY2027E is $292 and FY2028E is $433 [S21]. Average net revenue per unit rises from about $136 in FY2027E to about $156 in FY2028E, and to about $190 by FY2032E [C27]. Later-year revenue is $550, $662, $775, and $896, and growth slows to about 16% by FY2032E [S21][C27]. The bull is 8% above this path from January 2027. The bear holds the December 2028 share of 16.6% while the market and the price path continue. Both builds are in Appendix A [S21][P8][S45]. Composition-patent expiry from December 2030 is a later-window risk. Other listed claims run into 2037–2039 [D2][S21].
 
 <div class="fig" markdown="1">
 
-**VEVYE (FY2024A–FY2028E)**
-
-The table uses the same years as Figure 6. Growth is the figure in this table divided by the prior fiscal year (derived). A partial period is not a growth year.
+**VEVYE, FY2024A–FY2028E (US$ millions)**
 
 | | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Revenue (US$ millions) | 28.1 | 88.7 | 90.0 | 46.7 | 137 | 292 | 433 |
+| Revenue | 28.1 | 88.7 | 90.0 | 46.7 | 137 | 292 | 433 |
 | Revenue growth | — | 215.7% | — | — | 54.2% | 113.2% | 48.5% |
-| TRx | n/a | n/a | 864,142 | 390,595 | 1,254,737 | 2,138,716 | 2,782,869 |
-| Average net revenue per TRx (US$) | n/a | n/a | n/a | 119.55 | 108.97 | 136.33 | 155.55 |
+| Units | n/a | n/a | 864,142 | 390,595 | 1,254,737 | 2,138,716 | 2,782,869 |
+| Average net revenue per unit (US$) | n/a | n/a | n/a | 119.55 | 108.97 | 136.33 | 155.55 |
 | Product gross margin | n/a | n/a | n/a | n/a | 80% | 80% | 80% |
 
-*Source: Revenue [A1][A2][S1][S21][C1]. TRx and average net revenue per TRx are the workbook path, with nine-month 2026 TRx kept at 864,142 [S1][S21][C27]. FY2026E average mixes nine-month actual dollars with the Q4 workbook. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
+*Source: Revenue [A1][A2][S21][C1]. Units and average net revenue [S21][C27]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**VEVYE (continued) (FY2029E–FY2032E)**
+**VEVYE (continued), FY2029E–FY2032E (US$ millions)**
 
 | | FY2029E | FY2030E | FY2031E | FY2032E |
 |---|---:|---:|---:|---:|
-| Revenue (US$ millions) | 550 | 662 | 775 | 896 |
+| Revenue | 550 | 662 | 775 | 896 |
 | Revenue growth | 27.1% | 20.2% | 17.2% | 15.5% |
-| TRx | 3,254,485 | 3,705,004 | 4,186,912 | 4,721,742 |
-| Average net revenue per TRx (US$) | 169.11 | 178.56 | 185.12 | 189.68 |
+| Units | 3,254,485 | 3,705,004 | 4,186,912 | 4,721,742 |
+| Average net revenue per unit (US$) | 169.11 | 178.56 | 185.12 | 189.68 |
 | Product gross margin | 80% | 80% | 80% | 80% |
 
-*Source: Revenue [S21][C1]. TRx and average net revenue per TRx [S21][C27]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
+*Source: Revenue [S21]. Units and average net revenue [S21][C27]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
 
 </div>
 
 ### IHEEZO
 
-The cause of the unit path is the 15 November 2026 IHEEZO sheet [P10][S22]. The sheet takes 2025 units at 75% (ex-ASC), builds a normalized 2026 year from the Q3 2026 customer-unit count of 62,210, and then halves the growth rate each year [S22][P10]. That ex-ASC step does not change 2026 units. It raises the growth rate used from 2027, because the denominator is 75% of 2025 units [S22][P10]. Q2 2026 stocking is in FY2026E shipments and is not carried into the forward run rate [S22].
+The unit path is the 15 November 2026 sheet, not a new event after pass-through expiry [P10][S22]. The sheet takes 2025 units at 75% excluding ambulatory surgery centers, builds a normalized 2026 year from the Q3 count of 62,210, and then halves the growth rate each year [S22]. That exclusion does not change 2026 units. It raises growth from 2027, because the base is 75% of 2025 units [S22]. Q2 2026 stocking stays in FY2026E shipments and is not carried forward [S22].
 
-The cause of the Q4 2026E dollar figure is that unit path plus the sheet’s seasonal assumption [S22][S45]. Q4 demand is still 75,811 customer units [S22]. The 2025 Q4 distributor-to-clinic ratio is 1.419 [S22]. The sheet applies half of that seasonal effect, a multiplier of 1.209, to an ASP of $442.88, which is 10% above the reconstructed 2025 ASP of $402.62 [S22][P10]. The 10% step is in the base, the bull and the bear, because it is the sheet’s price [S45].
+The fourth-quarter dollar figure is that unit path plus the sheet's seasonal assumption [S22][S45]. Demand is 75,811 customer units [S22]. The 2025 fourth-quarter distributor-to-clinic ratio is 1.419. The sheet applies half of it, a multiplier of 1.209, to a price of $442.88, which is 10% above the reconstructed 2025 price of $402.62 [S22][P10]. The 10% step is in the base, the bull, and the bear, because it is the sheet's price [S45].
 
-The first nine months of 2026 were slightly below the prior-year nine months [A2]. Q4 2026E is $40.6 [S22]. FY2026E is $83.4, about 3% above FY2025A $81.3, on about 249,000 reported units [C1][A1][S22].
-
-FY2027E is $141 and FY2028E is $162, at $442.88 per customer unit, with no further price step and no net full-year inventory [S22]. Those years are 318,127 and 366,579 units [S22]. The halving growth rate then takes the line to $175, $181, $185, and $187 in FY2029E–FY2032E [S22]. Percentage growth falls toward about 1% by FY2032E [S22]. From FY2027E the bull uses the same units. The bear takes half of each unit increment above the normalized 2026 rate, at the same ASP, and drops the Q4 seasonal multiplier; both builds are in Appendix A [S45]. Patents are listed into 2038–39 [D2]. Temporary Medicare pass-through was expected to expire on 31 March 2026 [D2].
+The first nine months were slightly below the prior-year nine months [A2]. The fourth quarter is $40.6, and FY2026E is $83.4, about 3% above FY2025A, on about 249,000 units [S22][C1][A1]. FY2027E is $141 and FY2028E is $162, at $442.88 per unit, with no further price step and no net full-year inventory [S22]. Those years are 318,127 and 366,579 units. The halving growth rate then takes the line to $175, $181, $185, and $187 [S22]. From FY2027E the bull uses the same units. The bear takes half of each unit increment above the normalized 2026 rate, at the same price, and drops the fourth-quarter seasonal multiplier. Both builds are in Appendix A [S45]. Patents are listed into 2038–2039 [D2]. Temporary Medicare pass-through was expected to expire on 31 March 2026 [D2].
 
 <div class="fig" markdown="1">
 
-**IHEEZO (FY2024A–FY2028E)**
-
-The table uses the same years as Figure 6. Growth is the figure in this table divided by the prior fiscal year (derived). A partial period is not a growth year.
+**IHEEZO, FY2024A–FY2028E (US$ millions)**
 
 | | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Revenue (US$ millions) | 49.3 | 81.3 | 42.8 | 40.6 | 83.4 | 141 | 162 |
+| Revenue | 49.3 | 81.3 | 42.8 | 40.6 | 83.4 | 141 | 162 |
 | Revenue growth | — | 64.9% | — | — | 2.6% | 68.8% | 15.2% |
 | Customer units | n/a | n/a | n/a | 75,811 | about 249,000 | 318,127 | 366,579 |
 | Realization per customer unit (US$) | n/a | n/a | n/a | 442.88 × 1.209 | n/a | 442.88 | 442.88 |
 | Product gross margin | n/a | n/a | n/a | n/a | 82% | 82% | 82% |
 
-*Source: Revenue as in Figure 6 [A1][A2][S22][C1]. Q4 demand and the half seasonal multiplier [S22][S45]. Units and the $442.88 ASP [S22][P10]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
+*Source: Revenue [A1][A2][S22][C1]. Fourth-quarter demand and the half seasonal multiplier [S22][S45]. Units and the $442.88 price [S22][P10]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**IHEEZO (continued) (FY2029E–FY2032E)**
+**IHEEZO (continued), FY2029E–FY2032E (US$ millions)**
 
 | | FY2029E | FY2030E | FY2031E | FY2032E |
 |---|---:|---:|---:|---:|
-| Revenue (US$ millions) | 175 | 181 | 185 | 187 |
+| Revenue | 175 | 181 | 185 | 187 |
 | Revenue growth | 7.6% | 3.8% | 1.9% | 1.0% |
 | Customer units | 394,494 | 409,514 | 417,311 | 421,283 |
 | Realization per customer unit (US$) | 442.88 | 442.88 | 442.88 | 442.88 |
 | Product gross margin | 82% | 82% | 82% | 82% |
 
-*Source: Revenue as in Figure 6 [A1][A2][S22][C1]. Q4 demand and the half seasonal multiplier [S22][S45]. Units and the $442.88 ASP [S22][P10]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
+*Source: Revenue [S22]. Units and price [S22][P10]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
 
 </div>
 
 ### TRIESENCE
 
-TRIESENCE was relaunched into a market that had been undersupplied and is still ramping, which is the cause of the steep near-term unit growth [A2]. The volume path holds the average of the last two deck increments, 4,669 and 5,419, or 5,044 customer units a quarter [S23][P2]. Steady net additions are a judgment, not a finding of saturation [S23]. Realization is held at the Q3 2026 ratio of $534.76 per customer unit [S3].
+The cause is the relaunch into a market that had been undersupplied, which is already in the reported run rate, not a new fourth-quarter event [A2]. The volume path holds the average of the last two increments, 4,669 and 5,419, or 5,044 customer units a quarter [S23][P2]. Steady additions are a judgment, not a finding that the market is full [S23]. Realization stays at the Q3 2026 ratio of $534.76 per customer unit [S3].
 
-Q3 2026 revenue was $10.7 and nine-month revenue $20.1 [A2]. Q4 2026E is $13.4, on 25,066 units [S3][C1]. FY2026E is $33.5, on 69,625 units [C1][S23]. Q1 and Q2 2026 dollars were not printed [A2]. The quarterly grid allocates first-half 2026 TRIESENCE of $9.4 using later-printed units at an equal realization, and is flagged as derived [A2].
+Q3 revenue was $10.7 and nine-month revenue was $20.1 [A2]. The fourth quarter is $13.4 on 25,066 units, and FY2026E is $33.5 on 69,625 units [S3][S23][C1]. The first and second quarters were not printed as a standalone line. Figure 9 allocates first-half revenue of $9.4 on later-printed units and marks that split as derived [A2].
 
-FY2027E is $80.6 and FY2028E is $124, at the same $534.76 per customer unit [S23]. Those years are 150,704 and 231,408 units [S23]. The same add continues, taking the line to $167, $210, $253, and $296 in FY2029E–FY2032E, with percentage growth decelerating as the base rises [S23]. U.S. Orange Book patents are listed through 2029 [S14][S23]. They are a named bear lever and are not used to invent a base-case fade [S14][S23]. H-N08 is unapproved and is not in the base [S23].
+FY2027E is $80.6 and FY2028E is $124, at the same price per unit, on 150,704 and 231,408 units [S23]. The same add takes the line to $167, $210, $253, and $296 [S23]. U.S. patents listed through 2029 are a bear lever, not a base-case fade [S14][S23]. H-N08 is unapproved and is not in the base [S23]. Product gross margin stays 80% [S19]. FY2024A was not a disclosed standalone line, so the table shows it as not disclosed rather than as a reported zero [A1].
 
 <div class="fig" markdown="1">
 
-**TRIESENCE (FY2024A–FY2028E)**
-
-The table uses the same years as Figure 6. Growth is the figure in this table divided by the prior fiscal year (derived). A partial period is not a growth year. FY2024A is not a disclosed standalone line.
+**TRIESENCE, FY2024A–FY2028E (US$ millions)**
 
 | | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Revenue (US$ millions) | n/a | 9.9 | 20.1 | 13.4 | 33.5 | 80.6 | 124 |
+| Revenue | N/D | 9.9 | 20.1 | 13.4 | 33.5 | 80.6 | 124 |
 | Revenue growth | — | — | — | — | 238.4% | 140.6% | 53.8% |
 | Customer units | n/a | n/a | n/a | 25,066 | 69,625 | 150,704 | 231,408 |
 | Realization per customer unit (US$) | n/a | n/a | n/a | 534.76 | 534.76 | 534.76 | 534.76 |
 | Product gross margin | n/a | n/a | n/a | n/a | 80% | 80% | 80% |
 
-*Source: Revenue as in Figure 6; FY2024A is N/D [A1][A2][S23][C1]. Units [S3][S23]. Realization [S3][S23]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
+*Source: Revenue [A1][A2][S23][C1]. FY2024A is not disclosed as its own line [A1]. Units [S3][S23]. Realization [S3]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**TRIESENCE (continued) (FY2029E–FY2032E)**
+**TRIESENCE (continued), FY2029E–FY2032E (US$ millions)**
 
 | | FY2029E | FY2030E | FY2031E | FY2032E |
 |---|---:|---:|---:|---:|
-| Revenue (US$ millions) | 167 | 210 | 253 | 296 |
+| Revenue | 167 | 210 | 253 | 296 |
 | Revenue growth | 34.7% | 25.7% | 20.5% | 17.0% |
 | Customer units | n/a | n/a | n/a | n/a |
 | Realization per customer unit (US$) | 534.76 | 534.76 | 534.76 | 534.76 |
 | Product gross margin | 80% | 80% | 80% | 80% |
 
-*Source: Revenue as in Figure 6; FY2024A is N/D [A1][A2][S23][C1]. Units [S3][S23]. Realization [S3][S23]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
+*Source: Revenue [S23]. Realization [S3][S23]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
 
 </div>
 
-### TYRVAYA
+### Other branded
 
-The cause is the 1 October 2026 close, which brought worldwide rights except Japan into Harrow’s dry-eye book [G14][D9]. The company expects TYRVAYA to contribute more than $30 of revenue in 2027 [G5]. It also expects about $20 of incremental annual operating expenses [G5]. Our FY2027E figure is $33, just above that floor, and FY2028E is $36 [S6]. Later years are $38, $40, $42, and $43 [S6]. Those dollars sit inside Other branded and are counted once [S6][S13]. The $20 of incremental opex is included once from FY2027E [G5][S20][C14]. A $5 partial-quarter allowance is already in Q4 2026E [S20]. Novaliq has not yet agreed that its restriction on other prescription dry-eye products does not apply to TYRVAYA [G6]. We treat that consent as a named bear lever, not as a silent haircut to the base [S6]. Product gross margin before amortization and inventory step-up is assumed at 79% [S19]. Japan royalties from Viatris are at unknown rates and are not separately forecast [G14].
+The line continues the residual branded book. What changes the dollars is the TYRVAYA close on 1 October 2026 and the BYOOVIZ launch on 1 July 2026, both in Key Developments, plus OPUVIZ from a planned mid-2027 launch [G14][G11][G12]. TYRVAYA, BYOOVIZ, OPUVIZ, the legacy book, and BYQLOVI are rows of this line. They are not separate reporting lines [S4][S7][S13].
+
+The company expects TYRVAYA to contribute more than $30 in 2027, and about $20 of incremental annual operating cost [G5]. FY2027E product sales are $33, just above that floor, then $36, $38, $40, $42, and $43 [S6]. Those dollars are Harrow product sales and are counted once [S6][S13]. The $20 operating cost is included once from FY2027E, and a $5 partial-quarter allowance is already in the fourth quarter [G5][S20][C14]. Novaliq has not agreed that its restriction on other prescription dry-eye products does not apply to TYRVAYA. That consent is a bear lever, not a haircut to the base [G6][S6]. Product gross margin before amortization and the inventory step-up is 79% [S19]. Japan royalties from Viatris are at unknown rates and are not forecast separately [G14].
+
+BYOOVIZ in FY2026E is $6.9, an illustrative third-quarter $2.92 plus a fourth-quarter $4.0 [S4]. The $2.92 is not a measured print. It is the residual under a flat-legacy hypothesis, and Figure 9 marks it [S4]. Third-quarter Other revenues were only $0.2, so the biosimilars are not being booked there [A2][S7]. OPUVIZ is $0 in FY2026E, $2 in FY2027E, then $8, $14, $18, $20, and $22 [S13]. BYOOVIZ is $18, $22, $26, $28, $30, and $31 in FY2027E–FY2032E [S13]. With TYRVAYA, BYQLOVI, and legacy, those rows sum to the line [S13]. The Samsung take is a 40% share plus about 8% other product cost, a 52% product gross margin, and it is an assumption because the rate is not disclosed [S18][A8]. A 30% share would be about a 62% product gross margin, and a 50% share about 42% [S18].
 
 <div class="fig" markdown="1">
 
-**TYRVAYA (FY2024A–FY2028E)**
-
-The table uses the same years as Figure 6. Growth is the figure in this table divided by the prior fiscal year (derived). A partial period is not a growth year. The dollars sit inside Other branded. Q4 and FY2026E revenue is the $5 in the unrounded Other branded sketch. FY2027E growth is against that one-quarter sketch.
+**Other branded, FY2024A–FY2028E (US$ millions)**
 
 | | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Revenue (US$ millions) | n/a | n/a | 0.0 | 5.0 | 5.0 | 33.0 | 36.0 |
-| Revenue growth | — | — | — | — | — | 560.0% | 9.1% |
-| Product gross margin | n/a | n/a | n/a | 79% | 79% | 79% | 79% |
-| Incremental cash opex (US$ millions) | n/a | n/a | n/a | 5.0 | 5.0 | 20.0 | 20.0 |
-
-*Source: Q4 and FY2026E $5 [S4]. FY2027E–FY2032E [S6]. Product gross margin [S19]. Q4 allowance $5 and $20 a year from FY2027E [G5][S20]. Growth (derived) [C10]. May not sum due to rounding.*
-
-</div>
-
-<div class="fig" markdown="1">
-
-**TYRVAYA (continued) (FY2029E–FY2032E)**
-
-| | FY2029E | FY2030E | FY2031E | FY2032E |
-|---|---:|---:|---:|---:|
-| Revenue (US$ millions) | 38.0 | 40.0 | 42.0 | 43.0 |
-| Revenue growth | 5.6% | 5.3% | 5.0% | 2.4% |
-| Product gross margin | 79% | 79% | 79% | 79% |
-| Incremental cash opex (US$ millions) | 20.0 | 20.0 | 20.0 | 20.0 |
-
-*Source: Q4 and FY2026E $5 [S4]. FY2027E–FY2032E [S6]. Product gross margin [S19]. Q4 allowance $5 and $20 a year from FY2027E [G5][S20]. Growth (derived) [C10]. May not sum due to rounding.*
-
-</div>
-
-### BYOOVIZ and OPUVIZ
-
-BYOOVIZ launched in the United States on 1 July 2026 [G11]. OPUVIZ is planned for a mid-2027 U.S. launch [G12]. Those launches are the cause of the biosimilar contribution inside Other branded. Q3 BYOOVIZ revenue was below the company’s model, with more accounts and small trials [G11]. It is not printed as a standalone figure [G11]. Q3 2026 Other revenues were only $0.2, so the biosimilars are not being booked there [A2][S7].
-
-FY2026E BYOOVIZ is $6.9, equal to an illustrative Q3 $2.92 plus Q4 $4.0 [S4]. The $2.92 Q3 figure is not independently measured; it is the residual under a flat-legacy hypothesis and is flagged with an asterisk in the quarterly grid [S4]. OPUVIZ contributes $0 in FY2026E, $2 in FY2027E, then $8, $14, $18, $20, and $22 [S13]. BYOOVIZ is $18, $22, $26, $28, $30, and $31 in FY2027E–FY2032E [S13]. Those components, together with TYRVAYA, BYQLOVI, and legacy, sum to Other branded in every year [S13]. The Samsung economic assumption is in the Business Description section [S18].
-
-<div class="fig" markdown="1">
-
-**BYOOVIZ and OPUVIZ (FY2024A–FY2028E)**
-
-The table uses the same years as Figure 6. Growth is the figure in this table divided by the prior fiscal year (derived). A partial period is not a growth year. Both components sit inside Other branded. Nine-month BYOOVIZ is not a printed figure.
-
-| | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| BYOOVIZ revenue (US$ millions) | n/a | n/a | n/a | 4.0 | 6.9 | 18.0 | 22.0 |
+| Line revenue | 37.8 | 15.4 | 16.9 | 15.0 | 31.9 | 79.0 | 95.0 |
+| TYRVAYA revenue | n/a | n/a | 0.0 | 5.0 | 5.0 | 33.0 | 36.0 |
+| TYRVAYA revenue growth | — | — | — | — | — | 560.0% | 9.1% |
+| TYRVAYA product gross margin | n/a | n/a | n/a | 79% | 79% | 79% | 79% |
+| TYRVAYA incremental cash operating cost | n/a | n/a | n/a | 5.0 | 5.0 | 20.0 | 20.0 |
+| BYOOVIZ revenue | n/a | n/a | n/a | 4.0 | 6.9 | 18.0 | 22.0 |
 | BYOOVIZ revenue growth | — | — | — | — | — | 160.9% | 22.2% |
-| OPUVIZ revenue (US$ millions) | n/a | n/a | n/a | 0.0 | 0.0 | 2.0 | 8.0 |
+| OPUVIZ revenue | n/a | n/a | n/a | 0.0 | 0.0 | 2.0 | 8.0 |
 | OPUVIZ revenue growth | — | — | — | — | — | — | 300.0% |
-| Product gross margin | n/a | n/a | n/a | n/a | 52% | 52% | 52% |
-
-*Source: BYOOVIZ Q4 $4 and FY2026E $6.9 [S4][S13]. BYOOVIZ FY2027E–FY2032E and OPUVIZ [S13]. Product gross margin [S18][S19]. Growth (derived) [C10]. May not sum due to rounding.*
-
-</div>
-
-<div class="fig" markdown="1">
-
-**BYOOVIZ and OPUVIZ (continued) (FY2029E–FY2032E)**
-
-| | FY2029E | FY2030E | FY2031E | FY2032E |
-|---|---:|---:|---:|---:|
-| BYOOVIZ revenue (US$ millions) | 26.0 | 28.0 | 30.0 | 31.0 |
-| BYOOVIZ revenue growth | 18.2% | 7.7% | 7.1% | 3.3% |
-| OPUVIZ revenue (US$ millions) | 14.0 | 18.0 | 20.0 | 22.0 |
-| OPUVIZ revenue growth | 75.0% | 28.6% | 11.1% | 10.0% |
-| Product gross margin | 52% | 52% | 52% | 52% |
-
-*Source: BYOOVIZ Q4 $4 and FY2026E $6.9 [S4][S13]. BYOOVIZ FY2027E–FY2032E and OPUVIZ [S13]. Product gross margin [S18][S19]. Growth (derived) [C10]. May not sum due to rounding.*
-
-</div>
-
-### Melt (G-MELT / MELT-300)
-
-The pre-NDA meeting is complete, and the company plans to submit the NDA by year-end 2026 [G9][G7]. That is an acceleration from the first-half 2027 plan at close, which is the cause of a 2028 launch in the base if the product is approved [D17][G9]. The LOUISE Phase 3 trial, conducted under a Special Protocol Assessment, was reported as P=0.009 versus midazolam and P=0.0001 versus placebo [G9]. The November 2026 corporate presentation times PDUFA in Q4 2027 assuming standard review [G7][G18]. It shows a 2028 launch that is conditional on approval [G8][G19]. If approved, the letter and the deck describe G-MELT as the only on-label product for sedation during cataract surgery [G18][G20]. The base indication is that anticipated label. We do not assert a broader approved use [S15]. We do not put the 100 million-plus short-duration procedure opportunity into the base [G18][S15].
-
-Competitive alternatives today are IV midazolam and opioids in the procedure room, and compounded MKO already paid by facilities out of capitated cataract-surgery fees [G22][G20]. The 2022 stockholder letter said customers pay for compounded MKO out of those fees [G22]. It also said that more than 400,000 MKO troches had been dispensed by late 2022 [G22]. The September 2025 Melt acquisition announcement said the product had been used in over 500,000 cataract surgeries over more than a decade [G26]. Those are cumulative counts, not an annual share of the 5 million-plus U.S. cataract surgeries [G22][G26][G18]. Current annual compounded MKO volume is not disclosed [S15]. We treat the more than 800 institutions as the early-adopter base, not as a measured annual unit count [G17][S15]. There is no dated delay mechanism in the latest sources that would cause a 2028 launch, if approved on the Q4 2027 standard-review clock, to be missed [G7][G8][S15]. The bear case is approval delay or non-approval [S8][S15].
-
-We assume 60,000 units in FY2028E, then 250,000, 500,000, 750,000, and 750,000 units in FY2029E–FY2032E, at $175, $180, $185, $190, and $195 per unit [S15][P4]. The launch year is a two-quarter stub, not 15% in year one; later years are one-third, two-thirds, and then the full 750,000 mature rate, held in FY2032E [S15]. Net realization is a mid assumption between bundled, capitated facility-paid economics and a possible later separate-reimbursement outcome [S15][G22]. Pass-through and a J-code are a contingent stock milestone and are not assumed as a base-case price path [A9][S12]. Revenue is $10.5, $45.0, $92.5, $142.5, and $146.25 [C12]. The 750,000 unit rate from FY2031E is 15% of the 5 million U.S. cataract surgeries used as the floor of the company’s 5 million-plus initial target, per the 11 November 2026 instruction that an FDA-approved product should exceed a 10% compounded reference [P4][G18][S15]. A 10% current annual MKO share of U.S. cataract surgeries is not a verified printed figure in the sources used [G22][G26]. Printed figures are cumulative: more than 400,000 troches by late 2022, and later “over 500,000 cataract surgeries” over more than a decade, plus an 800-institution early-adopter base [G22][G26][G17]. Current annual MKO volume is undisclosed [S15]. Combined with YOCHIL, FY2030E Melt sales of $109 exceed the $100 Annual Net Sales threshold; the $146 FY2032E G-MELT figure is the product of this volume and price path, not a cap [C12][S12][S34].
-
-No G-MELT launch budget has been disclosed [S17]. We book an assumed program of $12 in FY2027E, $20 in the FY2028E launch year, and $16–19 in-market in FY2029E–FY2032E [S17]. Bands are roughly 40% either side [S17]. FY2026E already includes a $4 filing allowance in the fourth quarter [S10]. Product gross margin is 72%, in a 65–78% band [S16][S19]. That uses a 7% Catalent Zydis royalty comparator, about 15% manufacturing, and about 6% distribution [S16]. The Surgical team, already expanded, is the team that will carry the product [G19][G20][G23]. Compounding is held flatter from FY2028E to allow some site conversion from compounded MKO [S13]. The conversion is not one-for-one [S13]. The compounding path is not cut further for the higher 15% G-MELT share, because current annual MKO volume is undisclosed and a one-for-one offset cannot be measured [S13][P4]. Cash and cash equivalents were $75.3 at 30 September 2026, after which $30 was paid to close TYRVAYA [A6][G14]. Operating free cash flow after that payment has not been independently verified [S12]. The $87.2 approval payment remains a funding-risk flag, and the valuation discounts it with the other scheduled cash items [S12][C25].
-
-<div class="fig" markdown="1">
-
-**G-MELT (FY2024A–FY2028E)**
-
-The table uses the same years as Figure 6. Growth is the figure in this table divided by the prior fiscal year (derived). A partial period is not a growth year. Revenue of $100 and above is shown as a whole number. The unrounded FY2031E and FY2032E build is $142.5 and $146.25.
-
-| | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Revenue (US$ millions) | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 10.5 |
-| Revenue growth | — | — | — | — | — | — | — |
-| Units | 0 | 0 | 0 | 0 | 0 | 0 | 60,000 |
-| Net price per unit (US$) | n/a | n/a | n/a | n/a | n/a | n/a | 175 |
-| Product gross margin | n/a | n/a | n/a | n/a | n/a | n/a | 72% |
-| Program cost (US$ millions) | n/a | n/a | n/a | n/a | n/a | 12.0 | 20.0 |
-
-*Source: Revenue, units and price [S15][C12][P4]. Figure 6 shows FY2031E 142 and FY2032E 146. Product gross margin [S16][S19]. Program cost [S17]. Growth (derived) [C10]. May not sum due to rounding.*
-
-</div>
-
-<div class="fig" markdown="1">
-
-**G-MELT (continued) (FY2029E–FY2032E)**
-
-| | FY2029E | FY2030E | FY2031E | FY2032E |
-|---|---:|---:|---:|---:|
-| Revenue (US$ millions) | 45.0 | 92.5 | 142 | 146 |
-| Revenue growth | 328.6% | 105.6% | 53.5% | 2.8% |
-| Units | 250,000 | 500,000 | 750,000 | 750,000 |
-| Net price per unit (US$) | 180 | 185 | 190 | 195 |
-| Product gross margin | 72% | 72% | 72% | 72% |
-| Program cost (US$ millions) | 16.0 | 17.0 | 18.0 | 19.0 |
-
-*Source: Revenue, units and price [S15][C12][P4]. Figure 6 shows FY2031E 142 and FY2032E 146. Product gross margin [S16][S19]. Program cost [S17]. Growth (derived) [C10]. May not sum due to rounding.*
-
-</div>
-
-### YOCHIL (MELT-210)
-
-YOCHIL is a 3 mg midazolam Zydis orally disintegrating tablet for sedation, anxiolysis and amnesia before diagnostic, therapeutic or endoscopic procedures or before induction of anesthesia [G25]. It is not the midazolam-plus-ketamine cataract combo [G17][G25]. Both products are shown as expected in 2028 and both sit with the Surgical team [G19][G23]. YOCHIL is earlier in development: End-of-Phase 2 was completed in the quarter ended 30 June 2026, Phase 3 is still ahead, and there is no NDA this year [G24][S32]. First revenue follows the company’s 2028 expected timing, unweighted and conditional, with a clear flag that a 2028 launch is tighter than G-MELT’s [G19][S32].
-
-Units equal penetration times one-third of that year’s IHEEZO customer units from the 15 November workbook [S32][P4][P10]. Those IHEEZO units are 366,579 in FY2028E, then 394,494, 409,514, 417,311, and 421,283 [S22]. Penetration uses the same fractions as the G-MELT ramp: 60/750 in FY2028E, then one-third, two-thirds, and full capture from FY2031E, after which units track IHEEZO [S32][P4]. That is 9,775, 43,833, 91,003, 139,104, and 140,428 units [C16]. Assumed net price follows the G-MELT path of $175 to $195 per unit, because no YOCHIL price is disclosed [S32]. Revenue is $1.71, $7.89, $16.8, $26.4, and $27.4 [C16]. Product gross margin is 72%, on the same Catalent comparator and 65–78% band; no disclosed reason to differ was found [S16][S19]. YOCHIL is not placed on the cataract 15% target, and G-MELT is not given the IHEEZO third [P4]. Compounded MKO remains in ImprimisRx and is not double-counted [P3]. The broader diagnostic, endoscopic and anesthesia-induction market stays out of the base [S32]. The bull uses a faster penetration of the same one-third, and the bear gives YOCHIL no revenue in the window [S45].
-
-An assumed modest program of $6.0, $10.0, $8.0, $8.5, $9.0, and $9.5 in FY2027E–FY2032E sits on the existing Surgical team [S33]. It is not zero and is not a second sales force [S33]. The band is about 40% either side [S33]. No incremental 2026 YOCHIL cost is added, because the fourth quarter already includes a $4 G-MELT filing allowance and accelerated R&D that already names YOCHIL [S10][G15][S33].
-
-<div class="fig" markdown="1">
-
-**YOCHIL (FY2024A–FY2028E)**
-
-The table uses the same years as Figure 6. Growth is the figure in this table divided by the prior fiscal year (derived). A partial period is not a growth year.
-
-| | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Revenue (US$ millions) | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.7 |
-| Revenue growth | — | — | — | — | — | — | — |
-| Units | 0 | 0 | 0 | 0 | 0 | 0 | 9,775 |
-| Net price per unit (US$) | n/a | n/a | n/a | n/a | n/a | n/a | 175 |
-| Product gross margin | n/a | n/a | n/a | n/a | n/a | n/a | 72% |
-| Program cost (US$ millions) | n/a | n/a | n/a | n/a | n/a | 6.0 | 10.0 |
-
-*Source: Revenue [S32][C16]. Units [C16][S32]. Price follows the G-MELT path [S32][S15]. Product gross margin [S16][S19]. Program cost [S33]. Growth (derived) [C10]. May not sum due to rounding.*
-
-</div>
-
-<div class="fig" markdown="1">
-
-**YOCHIL (continued) (FY2029E–FY2032E)**
-
-| | FY2029E | FY2030E | FY2031E | FY2032E |
-|---|---:|---:|---:|---:|
-| Revenue (US$ millions) | 7.9 | 16.8 | 26.4 | 27.4 |
-| Revenue growth | 361.1% | 113.4% | 57.0% | 3.6% |
-| Units | 43,833 | 91,003 | 139,104 | 140,428 |
-| Net price per unit (US$) | 180 | 185 | 190 | 195 |
-| Product gross margin | 72% | 72% | 72% | 72% |
-| Program cost (US$ millions) | 8.0 | 8.5 | 9.0 | 9.5 |
-
-*Source: Revenue [S32][C16]. Units [C16][S32]. Price follows the G-MELT path [S32][S15]. Product gross margin [S16][S19]. Program cost [S33]. Growth (derived) [C10]. May not sum due to rounding.*
-
-</div>
-
-### Other legacy branded products and compounding
-
-BYQLOVI was approved in May 2026 and is a small early contribution inside Other branded ($0.3 in FY2026E, rising to $8.5 by FY2032E) [S13]. Legacy products are $19.7 in FY2026E and about $23–25.5 a year thereafter [S13]. Q4 2026E rest of Other branded is $11.0, including TYRVAYA, on a rounded $15.0 Other branded total after a separate $4.0 BYOOVIZ row [S4]. ImprimisRx is $60.9 in FY2026E and $72 in FY2027E–FY2029E, then $73, $75, and $77 [S5][S13]. That modest path does not re-accelerate compounded MKO as if it were incremental branded G-MELT, and it is not cut further for the higher 15% G-MELT share [P3][S13][P4]. Other revenues stay at $0.5 [S5].
-
----
-
-<div class="fig" markdown="1">
-
-**Legacy branded products, BYQLOVI, compounding and other revenues (FY2024A–FY2028E)**
-
-The table uses the same years as Figure 6. Growth is the figure in this table divided by the prior fiscal year (derived). A partial period is not a growth year. Legacy and BYQLOVI are components of Other branded. Years without a stated figure are n/a.
-
-| | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| ImprimisRx revenue (US$ millions) | 83.5 | 76.5 | 43.9 | 17.0 | 60.9 | 72.0 | 72.0 |
-| ImprimisRx revenue growth | — | -8.4% | — | — | -20.4% | 18.2% | 0.0% |
-| ImprimisRx product gross margin | n/a | n/a | n/a | n/a | 55% | 55% | 55% |
-| Other revenues (US$ millions) | 0.9 | 0.4 | 0.3 | 0.2 | 0.5 | 0.5 | 0.5 |
-| Other revenues growth | — | -55.6% | — | — | 25.0% | 0.0% | 0.0% |
-| Legacy revenue (US$ millions) | n/a | n/a | n/a | n/a | 19.7 | n/a | n/a |
-| BYQLOVI revenue (US$ millions) | n/a | n/a | n/a | n/a | 0.3 | n/a | n/a |
+| Biosimilar product gross margin | n/a | n/a | n/a | n/a | 52% | 52% | 52% |
+| Legacy revenue | n/a | n/a | n/a | n/a | 19.7 | n/a | n/a |
+| BYQLOVI revenue | n/a | n/a | n/a | n/a | 0.3 | n/a | n/a |
 | Legacy and BYQLOVI product gross margin | n/a | n/a | n/a | n/a | 78% | n/a | n/a |
 
-*Source: ImprimisRx and other revenues as in Figure 6 [A1][A2][S5][S13]. Legacy FY2026E $19.7 [S13]. BYQLOVI FY2026E $0.3 and FY2032E $8.5 [S13]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
+*Source: Line revenue as in Figure 6 [A1][A2][S4][S13]. TYRVAYA [S4][S6][G5][S19][S20]. BYOOVIZ and OPUVIZ [S4][S13][S18]. Legacy and BYQLOVI [S4][S13][S19]. Growth (derived) [C10]. A component year the build does not set is n/a. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**Legacy branded products, BYQLOVI, compounding and other revenues (continued) (FY2029E–FY2032E)**
+**Other branded (continued), FY2029E–FY2032E (US$ millions)**
 
 | | FY2029E | FY2030E | FY2031E | FY2032E |
 |---|---:|---:|---:|---:|
-| ImprimisRx revenue (US$ millions) | 72.0 | 73.0 | 75.0 | 77.0 |
-| ImprimisRx revenue growth | 0.0% | 1.4% | 2.7% | 2.7% |
-| ImprimisRx product gross margin | 55% | 55% | 55% | 55% |
-| Other revenues (US$ millions) | 0.5 | 0.5 | 0.5 | 0.5 |
-| Other revenues growth | 0.0% | 0.0% | 0.0% | 0.0% |
-| Legacy revenue (US$ millions) | n/a | n/a | n/a | n/a |
-| BYQLOVI revenue (US$ millions) | n/a | n/a | n/a | 8.5 |
+| Line revenue | 108 | 118 | 125 | 130 |
+| TYRVAYA revenue | 38.0 | 40.0 | 42.0 | 43.0 |
+| TYRVAYA revenue growth | 5.6% | 5.3% | 5.0% | 2.4% |
+| TYRVAYA product gross margin | 79% | 79% | 79% | 79% |
+| TYRVAYA incremental cash operating cost | 20.0 | 20.0 | 20.0 | 20.0 |
+| BYOOVIZ revenue | 26.0 | 28.0 | 30.0 | 31.0 |
+| BYOOVIZ revenue growth | 18.2% | 7.7% | 7.1% | 3.3% |
+| OPUVIZ revenue | 14.0 | 18.0 | 20.0 | 22.0 |
+| OPUVIZ revenue growth | 75.0% | 28.6% | 11.1% | 10.0% |
+| Biosimilar product gross margin | 52% | 52% | 52% | 52% |
+| Legacy revenue | n/a | n/a | n/a | n/a |
+| BYQLOVI revenue | n/a | n/a | n/a | 8.5 |
 | Legacy and BYQLOVI product gross margin | n/a | n/a | n/a | 78% |
 
-*Source: ImprimisRx and other revenues as in Figure 6 [A1][A2][S5][S13]. Legacy FY2026E $19.7 [S13]. BYQLOVI FY2026E $0.3 and FY2032E $8.5 [S13]. Product gross margin [S19]. Growth (derived) [C10]. May not sum due to rounding.*
+*Source: Line revenue as in Figure 6 [S13]. Component paths [S6][S13][S18][S19][S20]. FY2030E line revenue of 117.5 and FY2031E of 124.5 round to 118 and 125. Growth (derived) [C10]. May not sum due to rounding.*
+
+</div>
+
+### Other revenues
+
+There is no new event. The line stays at the small residual already in the run rate [S5]. It is $0.5 from FY2026E, an explicit assumption, not a plug to the revenue range [S5][P1].
+
+<div class="fig" markdown="1">
+
+**Other revenues, FY2024A–FY2032E (US$ millions)**
+
+| | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Revenue | 0.9 | 0.4 | 0.3 | 0.2 | 0.5 | 0.5 | 0.5 | 0.5 | 0.5 | 0.5 | 0.5 |
+| Revenue growth | — | -55.6% | — | — | 25.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+
+*Source: [A1][A2][S5]. Growth (derived) [C10]. May not sum due to rounding.*
+
+</div>
+
+### ImprimisRx
+
+The cause is the lower run rate already reported, not a new event. Nine-month revenue was $43.9, against $76.5 in FY2025A [A2][A1]. FY2026E is $60.9, a fourth quarter of $17.0 that lifts the $13.5–15.8 quarterly pace and is not a plug to the company range [S5][P1]. The path is then $72 through FY2029E, and $73, $75, and $77 [S13]. That flattening leaves room for some compounded MKO to move to G-MELT. It is not a one-for-one transfer, because current annual MKO volume is not disclosed [S13][P3]. Product gross margin is 55%, in line with the third-quarter compounding margin [S19][A5].
+
+<div class="fig" markdown="1">
+
+**ImprimisRx, FY2024A–FY2032E (US$ millions)**
+
+| | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Revenue | 83.5 | 76.5 | 43.9 | 17.0 | 60.9 | 72.0 | 72.0 | 72.0 | 73.0 | 75.0 | 77.0 |
+| Revenue growth | — | -8.4% | — | — | -20.4% | 18.2% | 0.0% | 0.0% | 1.4% | 2.7% | 2.7% |
+| Product gross margin | n/a | n/a | n/a | n/a | 55% | 55% | 55% | 55% | 55% | 55% | 55% |
+
+*Source: [A1][A2][S5][S13][S19]. Growth (derived) [C10]. May not sum due to rounding.*
+
+</div>
+
+### G-MELT
+
+The cause is the filing calendar in Key Developments: an application by year-end 2026, a decision in Q4 2027 if review is standard, and a 2028 launch if approved [G7][G8][G18]. That is earlier than the first-half 2027 plan at the November 2025 close [D17][G9]. The LOUISE trial, under a special protocol assessment, was reported as P=0.009 vs. midazolam and P=0.0001 vs. placebo [G9]. If approved, the letter and the deck describe G-MELT as the only on-label product for sedation during cataract surgery [G18][G20]. The base uses that anticipated label and does not assert a broader use [S15]. The 100 million-plus short-duration procedure opportunity is not in the base [G18][S15].
+
+The volume path is a judgment on top of that calendar. We assume 60,000 units in FY2028E, then 250,000, 500,000, 750,000, and 750,000, at $175, $180, $185, $190, and $195 per unit [S15][P4]. The launch year is a two-quarter stub, not the mature rate. Later years are one-third, two-thirds, and then the full 750,000, held in FY2032E [S15]. Revenue is $10.5, $45.0, $92.5, $142, and $146 [C12]. The 750,000 unit rate is 15% of 5 million U.S. cataract surgeries, the floor of the company's 5 million-plus target, because an approved product should be above a 10% compounded reference [P4][G18][S15]. A 10% current annual share of surgeries is not a verified print. The printed history is cumulative: more than 400,000 troches by late 2022, and use in over 500,000 surgeries over more than a decade [G22][G26]. We treat the more than 800 institutions as the early-adopter base, not as an annual unit count [G17][S15].
+
+Net realization is a midpoint between facility-paid economics and a possible later separate-reimbursement outcome [S15][G22]. Pass-through and a procedure code are a contingent stock milestone, not the base price [A9][S12]. Product gross margin is 72% [S16][S19]. There is no disclosed launch budget. The assumed program is $12 in FY2027E, $20 in FY2028E, then $16, $17, $18, and $19, about 40% either side, and it is not zero [S17]. The bear is delay or non-approval: no revenue through FY2030E, then $8 and $15. That build is in Appendix A [S8][S15]. Years before the first shipment are omitted below. The FY2027E program cost is in Figure 7.
+
+<div class="fig" markdown="1">
+
+**G-MELT, FY2028E–FY2032E (US$ millions)**
+
+| | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E |
+|---|---:|---:|---:|---:|---:|
+| Revenue | 10.5 | 45.0 | 92.5 | 142 | 146 |
+| Revenue growth | — | 328.6% | 105.6% | 53.5% | 2.8% |
+| Units | 60,000 | 250,000 | 500,000 | 750,000 | 750,000 |
+| Net price per unit (US$) | 175 | 180 | 185 | 190 | 195 |
+| Product gross margin | 72% | 72% | 72% | 72% | 72% |
+| Program cost | 20.0 | 16.0 | 17.0 | 18.0 | 19.0 |
+
+*Source: [S15][C12][P4][S16][S17][S19]. FY2027E program cost of $12 is in Figure 7 [S17]. Growth (derived) [C10]. May not sum due to rounding.*
+
+</div>
+
+### YOCHIL
+
+The cause is the company's expected 2028 timing, which is tighter than G-MELT's because Phase 3 is still ahead [G24][G19][S32]. End-of-Phase 2 was completed in the quarter ended 30 June 2026 [G24]. The unit path is a fraction of that year's IHEEZO customer units from the workbook, times the same penetration steps as the G-MELT ramp: 60/750, one-third, two-thirds, then full [S32][P4][P10]. Price follows the same $175 to $195 path [S32]. Revenue is $1.71, $7.9, $16.8, $26.4, and $27.4 [C16]. The bull uses a faster penetration, 0.20, 0.50, then full, on the same units. The bear has no revenue in the window. Both are in Appendix A [S32][S45]. YOCHIL is not placed on the cataract 15% target, and G-MELT is not given the IHEEZO third [P4]. The broader procedural market is not in the base [S32]. Product gross margin is 72% [S16][S19]. The assumed program is $6 in FY2027E, $10 in FY2028E, then $8, $8.5, $9, and $9.5, about 40% either side, on the existing surgical team [S33]. No incremental 2026 program cost is added on top of the filing work already in the run rate [S33].
+
+<div class="fig" markdown="1">
+
+**YOCHIL, FY2028E–FY2032E (US$ millions)**
+
+| | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E |
+|---|---:|---:|---:|---:|---:|
+| Revenue | 1.7 | 7.9 | 16.8 | 26.4 | 27.4 |
+| Revenue growth | — | 361.1% | 113.4% | 57.0% | 3.6% |
+| Units | 9,775 | 43,833 | 91,003 | 139,104 | 140,428 |
+| Net price per unit (US$) | 175 | 180 | 185 | 190 | 195 |
+| Product gross margin | 72% | 72% | 72% | 72% | 72% |
+| Program cost | 10.0 | 8.0 | 8.5 | 9.0 | 9.5 |
+
+*Source: [S32][C16][P4][P10][S33][S16][S19]. FY2027E program cost of $6 is in Figure 7 [S33]. Revenue of $1.711 in FY2028E rounds to $1.7. Growth (derived) [C10]. May not sum due to rounding.*
 
 </div>
 
 ### Base case
 
-From FY2027E the total is the sum of the lines, including the G-MELT and YOCHIL memo lines [C10][P3][P4]. GAAP gross margin from FY2027E is weighted product gross profit minus amortization, divided by revenue [C13][S19]. Adjusted EBITDA from FY2027E is product gross profit minus cash opex [C13][C14]. The 2026 commercial expansion is already in the Q3 cash-opex run rate [S20]. Q3 selling, general and administrative expense was $53.1 versus $35.9 a year earlier [G15]. The ocular-surface team more than doubled, and the Surgical team was described as three times larger [G23]. FY2032E Adjusted EBITDA margin of 55.2% is that fully costed central result applied to the VEVYE workbook, the IHEEZO sheet, the TRIESENCE net-add path, and the 15% G-MELT / YOCHIL memo lines [C14].
-
-That later-year margin sits well beyond the history. Reported Adjusted EBITDA margins were 20.2% in FY2024A and 22.7% in FY2025A, and our FY2026E is 12.2% [A3][C5]. Management has described no margin beyond the FY2026 floor of more than $40 [G1]. The November 2026 deck says the cost structure lets revenue grow faster than operating expenses over time, which is direction, not a margin figure [G23]. The base margin reaches 55.2% because revenue grows about 2.6 times from FY2027E to FY2032E while cash opex grows about a third (derived) [C14][C23]. We do not cap or haircut the base for being high. Figure 6a shows the bridge, and the bear carries operating leverage as a named lever (Appendix A) [S42].
+G-MELT and YOCHIL fall inside the explicit window, from 2028. Their next year is inside the build that sets next-period growth at 10.6%, and the pipeline does not move the 65.6% incremental margin [S44][S43]. Figure 6 is the base by line. From FY2027E the total is the sum of the lines [C10]. GAAP gross margin is weighted product gross profit minus amortization, divided by revenue [C13][S19]. Adjusted EBITDA is that gross profit minus cash operating cost [C13][C14].
 
 <div class="fig" markdown="1">
 
-**Figure 6 – Base case by line (FY2024A–FY2028E, US$ millions)**
-
-The table is the official reporting lines plus the G-MELT and YOCHIL memo lines. FY2024A TRIESENCE is not disclosed as a standalone actual.
+**Figure 6 – Base case by line, FY2024A–FY2028E (US$ millions)**
 
 | Line | FY2024A | FY2025A | 9M 2026A | Q4 2026E | FY2026E | FY2027E | FY2028E |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -578,15 +493,13 @@ The table is the official reporting lines plus the G-MELT and YOCHIL memo lines.
 | Adjusted EBITDA | 40.3 | 61.9 | 7.3 | 35.2 | 42.5 | 217 | 371 |
 | EBITDA margin | 20.2% | 22.7% | 3.4% | 26.5% | 12.2% | 32.7% | 41.3% |
 
-*Source: actuals [A1][A2][A3][A4]; Q4 and FY [C1][C5][C10][C13][C14][S15]. FY2024A TRIESENCE is N/D: it was not a separately disclosed line; any relaunch dollars remain inside Other branded $37.8 [A1]. Totals of $100 and above are whole numbers; Q4 is shown to 1 decimal in this table (2 decimals in Figure 6c). May not sum due to rounding.*
+*Source: actuals [A1][A2][A3][A4]; forecast [C1][C5][C10][C13][C14][S15][S32]. FY2024A TRIESENCE is not disclosed as its own line; any relaunch dollars stay inside Other branded [A1]. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**Figure 6 (continued) – Base case by line (FY2029E–FY2032E, US$ millions)**
-
-G-MELT is $45.0 in FY2029E and $146 in FY2032E. YOCHIL is $7.9 in FY2029E and $27.4 in FY2032E. Other branded remains the sum of TYRVAYA, BYOOVIZ, OPUVIZ, BYQLOVI, and legacy.
+**Figure 6 (continued) – Base case by line, FY2029E–FY2032E (US$ millions)**
 
 | Line | FY2029E | FY2030E | FY2031E | FY2032E |
 |---|---:|---:|---:|---:|
@@ -603,205 +516,185 @@ G-MELT is $45.0 in FY2029E and $146 in FY2032E. YOCHIL is $7.9 in FY2029E and $2
 | Adjusted EBITDA | 535 | 692 | 850 | 971 |
 | EBITDA margin | 47.6% | 51.2% | 53.7% | 55.2% |
 
-*Source: [C10][C12][C13][C14][S13][S15][S21][S22][S23]. Whole numbers at $100 and above. May not sum due to rounding. Other branded FY2030E 117.5 and FY2031E 124.5 round to 118 and 125.*
+*Source: [C10][C12][C13][C14][C16][S13][S15][S21][S22][S23][S32]. Other branded FY2030E of 117.5 and FY2031E of 124.5 round to 118 and 125. May not sum due to rounding.*
 
 </div>
 
+FY2026E is built as the nine months plus the fourth quarter, not from this bridge [C5]. Figure 7 starts at FY2027E, the first year on the run-rate bridge. The 2026 commercial expansion is already in the third-quarter cash operating cost of $59.3 [S20][C4]. Third-quarter selling, general, and administrative expense was $53.1 vs. $35.9 a year earlier [G15]. The ocular-surface team more than doubled, and the surgical team was described as three times larger [G23].
+
 <div class="fig" markdown="1">
 
-**Figure 6a – Cash opex and margin bridge (FY2027E–FY2032E, US$ millions)**
-
-The bridge starts from the Q3 2026 cash-opex run rate, adds the verified TYRVAYA cost once, adds assumed G-MELT and YOCHIL programs, and applies a 4% variable load only to same-store revenue above the Q3 2026 annualized pace. Cash opex rises by about a third over the period while revenue nearly triples, which is the source of the margin path.
+**Figure 7 – Cash operating cost and margin bridge, FY2027E–FY2032E (US$ millions)**
 
 | | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E |
 |---|---:|---:|---:|---:|---:|---:|
-| Product GP before amort | 510 | 694 | 869 | 1,045 | 1,222 | 1,362 |
+| Product gross profit before amortization | 510 | 694 | 869 | 1,045 | 1,222 | 1,362 |
 | Amortization | 24.0 | 24.5 | 25.0 | 25.0 | 25.0 | 25.0 |
 | GAAP gross margin | 73.1% | 74.5% | 75.0% | 75.4% | 75.7% | 76.0% |
-| Core cash opex (Q3 run rate inflated) | 247 | 256 | 267 | 277 | 288 | 300 |
-| TYRVAYA incremental (once) | 20.0 | 20.0 | 20.0 | 20.0 | 20.0 | 20.0 |
-| G-MELT program (assumed) | 12.0 | 20.0 | 16.0 | 17.0 | 18.0 | 19.0 |
-| YOCHIL program (assumed) | 6.0 | 10.0 | 8.0 | 8.5 | 9.0 | 9.5 |
+| Core cash operating cost | 247 | 256 | 267 | 277 | 288 | 300 |
+| TYRVAYA incremental, once | 20.0 | 20.0 | 20.0 | 20.0 | 20.0 | 20.0 |
+| G-MELT program, assumed | 12.0 | 20.0 | 16.0 | 17.0 | 18.0 | 19.0 |
+| YOCHIL program, assumed | 6.0 | 10.0 | 8.0 | 8.5 | 9.0 | 9.5 |
 | Same-store revenue (memo) | 609 | 815 | 989 | 1,151 | 1,313 | 1,482 |
 | Less Q3 2026 annualized same-store revenue | 397 | 397 | 397 | 397 | 397 | 397 |
 | Same-store increment (memo) | 211 | 418 | 591 | 754 | 916 | 1,084 |
-| Same-store variable (4% of the increment) | 8.5 | 16.7 | 23.7 | 30.2 | 36.6 | 43.4 |
-| **Total cash opex** | **293** | **323** | **334** | **353** | **372** | **392** |
+| Same-store variable cost, 4% of the increment | 8.5 | 16.7 | 23.7 | 30.2 | 36.6 | 43.4 |
+| **Total cash operating cost** | **293** | **323** | **334** | **353** | **372** | **392** |
 | **Adjusted EBITDA** | **217** | **371** | **535** | **692** | **850** | **971** |
 | EBITDA margin | 32.7% | 41.3% | 47.6% | 51.2% | 53.7% | 55.2% |
 
-*Source: [C13][C14][C17][S16][S17][S18][S19][S20][S40][S41][G5]. Core FY2027E is Q3 cash opex $59.3 annualized and inflated 4%, then 4% a year [S20][S40][C14]. G-MELT and YOCHIL program figures are assumed, not a disclosed budget [S17][S33]. Same-store revenue is VEVYE, IHEEZO, TRIESENCE, legacy, compounding, and other revenues; the Q3 2026 annualized figure is 4 × $99.3 of printed Q3 revenue on those lines, with BYOOVIZ left inside printed Other branded because it is not separable [C17]. The variable load does not also take 4% of TYRVAYA, BYOOVIZ, OPUVIZ, BYQLOVI, G-MELT or YOCHIL [C14]. FY2026E cash opex of $229 is the nine-month-plus-Q4 build and is not re-derived from this bridge [C5]. May not sum due to rounding.*
+*Source: [C13][C14][C17][S16][S17][S18][S19][S20][S33][S40][S41][G5]. Core FY2027E is Q3 cash operating cost of $59.3, annualized and inflated 4%, then 4% a year [S20][S40]. Same-store revenue is VEVYE, IHEEZO, TRIESENCE, legacy, compounding, and other revenues. The Q3 annualized figure is four times printed Q3 revenue of $99.3 on those lines. BYOOVIZ stays inside printed Other branded because it is not separable [C17]. The variable load does not also take 4% of TYRVAYA, BYOOVIZ, OPUVIZ, BYQLOVI, G-MELT, or YOCHIL [C14]. FY2026E cash operating cost of $229 is the nine months plus the fourth quarter [C5]. May not sum due to rounding.*
 
 </div>
 
-A 30% Samsung share would add about $2 of gross profit in FY2027E and about $5 in FY2032E; a 50% share would subtract about the same amounts [S18][C13]. G-MELT program sensitivity of about 40% either side is about $8 in the launch year and about $8 by FY2032E [S17]. YOCHIL program sensitivity of about 40% either side is about $4 in the launch year and about $4 by FY2032E [S33]. Core cost inflation of 4% a year is a named rate, because Harrow states none: the U.S. Bureau of Labor Statistics Employment Cost Index showed private-industry compensation up 3.4% in the 12 months to September 2026, and the band is 3–5% [S40][D23]. Each point of core inflation moves FY2032E cash opex by about $17.7 (derived) [S40][C22]. The 4% variable rate cannot be measured from the history, because 2026 cost growth mixes the sales-force expansion and accelerated R&D with volume-driven cost, and Harrow does not disclose line-level opex; the band is 2–8% [S41]. Each point of variable rate moves FY2032E cash opex by about $10.8 (derived) [S41][C22]. Printed Q3 Other branded includes BYOOVIZ, which is not separable; taking the illustrative $2.92 out of the Q3 baseline would lower Adjusted EBITDA by about $0.47 a year [C17][S4].
+The margin is sensitive to assumptions that are not disclosed rates. A 30% Samsung share would add about $2 of gross profit in FY2027E and about $5 in FY2032E. A 50% share would subtract about the same [S18][C13]. A 40% band on the G-MELT program is about $8 in the launch year and about $8 by FY2032E [S17]. The same band on YOCHIL is about $4 and about $4 [S33]. Core inflation of 4% is a named rate, because the company states none. Private-industry compensation in the employment-cost index was up 3.4% in the twelve months to September 2026, and the band we use is 3–5% [S40][D23]. Each point of core inflation moves FY2032E cash operating cost by about $17.7 (derived) [S40][C22]. The 4% variable rate cannot be measured from the history, because 2026 cost growth mixes the sales-force build with volume, and the company does not disclose line-level operating cost. The band is 2–8% [S41]. Each point of that rate moves FY2032E cash operating cost by about $10.8 (derived) [S41][C22]. Taking the illustrative $2.92 of third-quarter BYOOVIZ out of the baseline would lower Adjusted EBITDA by about $0.47 a year [C17][S4].
 
-### Q4 2026E and FY2026E vs. guidance
+Figure 8 is the fourth quarter against the window implied by the reaffirmed range. The range was reaffirmed on 9–10 November 2026, when Adjusted EBITDA was lowered [G1][G2]. The original 2 March 2026 Adjusted EBITDA range of $80–100 is the prior outlook [G4]. Nine-month revenue of $214 means the range needs $136–151 in the fourth quarter [A2][C2][G2]. The letter also described reasonable scenarios of a modest miss, mostly order timing and year-end purchasing, and it still treated the low end as achievable [G2][G3].
 
-This subsection compares the same bottom-up fourth-quarter build with the reaffirmed FY2026E range. Guidance is as of 9–10 November 2026, when the revenue range was reaffirmed and Adjusted EBITDA was lowered [G1][G2]. The original 2 March 2026 Adjusted EBITDA range of $80–100 is the prior outlook [G4].
-
-Nine-month 2026 revenue was $214 [A2]. Hitting $350–365 therefore requires fourth-quarter revenue of $136–151 [C2]. Management said that reaching the range requires about $136–151 of fourth-quarter revenue [G2]. It also described reasonable scenarios of a modest miss, mostly because of order timing and year-end purchasing [G2]. It still believes the low end is achievable because second-half revenue should exceed the high end contemplated in March [G3].
-
-Our base Q4 2026E is $133 and FY2026E is $347, about $3 below the $350 low end and about $18 below the $365 high end [C1][C15][C2]. The shortfall is not closed by a plug [P1]. That $133 uses rounded Other branded of $15.0. An unrounded $15.3 sketch would lift Q4 by $0.3 and would still leave FY2026E below the low end; we disclose the $0.3 difference and do not silently switch to it [C11][S4]. The bear case Q4 is $123 and FY2026E $337, a miss consistent with a weaker mix, no IHEEZO seasonal multiplier, and the order-timing language [G2][S45]. The bull case Q4 is $145 and FY2026E $359, above the low end and not plugged to the high end [C2][S45].
+The base fourth quarter is $133 and the year is $347, about $3 below the $350 low end and about $18 below the $365 high end [C1][C15][C2]. The gap is not plugged [P1]. Rounded Other branded of $15.0 is the figure used. An unrounded $15.3 sketch would add $0.3 and would still leave the year below the low end [C11][S4]. The bear fourth quarter is $123 and the year is $337. The bull fourth quarter is $145 and the year is $359, above the low end and not set equal to the high end [C2][S45].
 
 <div class="fig" markdown="1">
 
-**Figure 6b – Q4 2026E product build vs. the implied guidance window (US$ millions)**
-
-The fourth-quarter column is the product build. The last rows show the implied window and the gap to the reaffirmed range.
+**Figure 8 – Stub bridge, 9M 2026A and Q4 2026E (US$ millions)**
 
 | Line | 9M 2026A | Q4 2026E | FY2026E | Q4 basis |
 |---|---:|---:|---:|---|
-| VEVYE | 90.03 | 46.69 | 136.73 | Workbook: TRx +5% a month from 118 thousand; price closes 3% of the gap to $200 [S1][P10] |
-| IHEEZO | 42.83 | 40.61 | 83.44 | Demand 75,811; $442.88 × 1.209 seasonal multiplier [S22][P10] |
-| TRIESENCE | 20.13 | 13.40 | 33.54 | Units +5,044 add; $534.76 per customer unit [S3] |
-| Other branded (ex-TRIESENCE) | 16.94 | 15.00 | 31.94 | Rounded; unrounded sketch 15.3 = BYOOVIZ 4 + TYRVAYA 5 + legacy 6 + BYQLOVI 0.3 [S4] |
-| Other revenues | 0.33 | 0.20 | 0.53 | Explicit assumption, not a plug [S5] |
-| ImprimisRx | 43.89 | 17.00 | 60.89 | A lift from the $13.5–15.8 quarterly run rate, not a plug [S5] |
-| G-MELT | 0.00 | 0.00 | 0.00 | Unapproved; first base shipments mid-2028 if approved [S15] |
-| YOCHIL | 0.00 | 0.00 | 0.00 | Phase 3 still ahead; no incremental 2026 program cost on top of existing R&D [S32][S33] |
-| **Total** | **214.16** | **132.91** | **347.07** | Bottom-up; not scaled to $350–365 [P1][C1] |
-| Implied Q4 to hit guide | — | 135.84–150.84 | 350–365 | [C2][G2] |
-| Buffer / gap | — | −2.93 vs. exact low; −17.93 vs. high | — | [C15][C2] |
+| VEVYE | 90.0 | 46.7 | 137 | Workbook: volume up 5% a month from 118 thousand; price closes 3% of the gap to $200 [S1][P10] |
+| IHEEZO | 42.8 | 40.6 | 83.4 | Demand 75,811; $442.88 times a 1.209 seasonal multiplier [S22][P10] |
+| TRIESENCE | 20.1 | 13.4 | 33.5 | Add of 5,044 units; $534.76 per customer unit [S3] |
+| Other branded | 16.9 | 15.0 | 31.9 | Rounded. Unrounded sketch 15.3 = BYOOVIZ 4 + TYRVAYA 5 + legacy 6 + BYQLOVI 0.3 [S4] |
+| Other revenues | 0.3 | 0.2 | 0.5 | Explicit assumption, not a plug [S5] |
+| ImprimisRx | 43.9 | 17.0 | 60.9 | A lift from the $13.5–15.8 quarterly pace, not a plug [S5] |
+| G-MELT | 0.0 | 0.0 | 0.0 | Unapproved. First base shipments mid-2028 if approved [S15] |
+| YOCHIL | 0.0 | 0.0 | 0.0 | Phase 3 still ahead. No incremental 2026 program cost [S32][S33] |
+| **Total** | **214** | **132.9** | **347** | Bottom-up. Not scaled to $350–365 [P1][C1] |
+| Implied fourth quarter to hit the range | — | 136–151 | 350–365 | [C2][G2] |
+| Gap | — | about 3 below the low end; about 18 below the high end | — | [C15][C2] |
 
-*Source: 9M [A2]; Q4 and FY [S1][S2][S3][S4][S5][S15][C1][C2][C11][C15][G2]. Other branded Q3 includes unprinted BYOOVIZ; Q4 adds first TYRVAYA. May not sum due to rounding.*
+*Source: nine months [A2]. Fourth quarter and year [S1][S2][S3][S4][S5][S15][C1][C2][C11][C15][G2]. Exact nine-month, fourth-quarter, and full-year totals are 214.161, 132.905, and 347.066 [C1]. The exact implied window is 135.839–150.839, and the exact gap to the low end is 2.934 [C2][C15]. May not sum due to rounding.*
 
 </div>
+
+Figure 9 is the quarterly grid. The printed quarters do not tie to the official first-half lines. The offsets are 0.001 on VEVYE, 0.065 on IHEEZO, and 0.066 the other way on the old Other branded line, and they net in the company total [A2]. First-half TRIESENCE of $9.4 is allocated on later-printed units and marked as derived [A2].
 
 <div class="fig" markdown="1">
 
-**Figure 6c – 2026 quarterly grid (US$ millions)**
+**Figure 9 – Quarterly grid, Q1 2026A–Q4 2026E (US$ millions)**
 
-Printed quarter columns are used below. First-half product-line sums differ from the printed first-half totals by $0.001 on VEVYE, $0.065 on IHEEZO, and $0.066 the other way on the old Other branded line; the offsets net in the company total [A2]. Q1 and Q2 TRIESENCE and the Q1–Q2 Other branded residual are derived from first-half TRIESENCE of $9.4 allocated on later-printed units, and are flagged with an asterisk. The Q3 BYOOVIZ figure of $2.92 is illustrative, not independently measured: it is the residual under a flat-legacy hypothesis [S4]. FY2026E in the forecast file is nine-month printed plus Q4, not the sum of four quarterly official lines.
-
-| Line | Q1 2026A | Q2 2026A | Q3 2026A | Q4 2026E | FY2026E (9M+Q4) |
+| Line | Q1 2026A | Q2 2026A | Q3 2026A | Q4 2026E | FY2026E |
 |---|---:|---:|---:|---:|---:|
-| VEVYE | 20.95 | 29.39 | 39.70 | 46.69 | 136.73 |
-| IHEEZO | 1.85 | 15.62 | 25.30 | 40.61 | 83.44 |
-| TRIESENCE | 3.82* | 5.61* | 10.71 | 13.40 | 33.54 |
-| BYOOVIZ (inside Other branded) | 0.00 | 0.00 | 2.92* | 4.00 | 6.92 |
-| Rest of Other branded (incl. TYRVAYA in Q4) | 4.02* | 5.40* | 4.68* | 11.00 | 25.02 |
-| Other revenues | 0.07 | 0.09 | 0.16 | 0.20 | 0.53 |
-| ImprimisRx | 13.50 | 14.56 | 15.84 | 17.00 | 60.89 |
-| G-MELT | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
-| YOCHIL | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
-| **Total** | **44.20** | **70.66** | **99.30** | **132.91** | **347.07** |
+| VEVYE | 21.0 | 29.4 | 39.7 | 46.7 | 137 |
+| IHEEZO | 1.9 | 15.6 | 25.3 | 40.6 | 83.4 |
+| TRIESENCE | 3.8* | 5.6* | 10.7 | 13.4 | 33.5 |
+| BYOOVIZ (inside Other branded) | 0.0 | 0.0 | 2.9* | 4.0 | 6.9 |
+| Rest of Other branded, including TYRVAYA in Q4 | 4.0* | 5.4* | 4.7* | 11.0 | 25.0 |
+| Other revenues | 0.1 | 0.1 | 0.2 | 0.2 | 0.5 |
+| ImprimisRx | 13.5 | 14.6 | 15.8 | 17.0 | 60.9 |
+| G-MELT | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| YOCHIL | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| **Total** | **44.2** | **70.7** | **99.3** | **132.9** | **347** |
 
-*Source: Q1–Q3 printed totals and Q3 product lines [A2]; Q1–Q2 TRIESENCE / Other branded derived as described; Q3 BYOOVIZ 2.92* is illustrative under a flat-legacy hypothesis, not a measured actual [S4]; Q4 [S1]–[S5]. BYOOVIZ launched 1 July 2026, so Q1–Q2 are zero [G11]. Q4 rest of Other branded ($11.00) includes TYRVAYA and BYQLOVI [S4]. * = derived or illustrative split. May not sum due to rounding.*
+*Source: Q1–Q3 printed totals and Q3 product lines [A2]. Exact cells before rounding: VEVYE 20.95 / 29.39 / 39.70 / 46.69; IHEEZO 1.85 / 15.62 / 25.30 / 40.61; TRIESENCE 3.82 / 5.61 / 10.71 / 13.40; BYOOVIZ 0 / 0 / 2.92 / 4.00; rest of Other branded 4.02 / 5.40 / 4.68 / 11.00; other revenues 0.07 / 0.09 / 0.16 / 0.20; ImprimisRx 13.50 / 14.56 / 15.84 / 17.00; totals 44.20 / 70.66 / 99.30 / 132.91 / 347.07 [A2][S1][S4]. An asterisk is a derived or illustrative split. BYOOVIZ launched 1 July 2026, so the first two quarters are zero [G11]. The third-quarter $2.92 is illustrative, not measured [S4]. May not sum due to rounding.*
 
 </div>
 
-Shipment timing, year-end purchasing and stocking (especially IHEEZO), VEVYE mix, TYRVAYA transition sell-in, and unprinted BYOOVIZ reorders are the items that move Q4 relative to the $136–151 window [G2][S2][S4][G11]. We do not assign the unnamed Q4 royalty-tier product to VEVYE [G15].
+Shipment timing, year-end purchasing, IHEEZO stocking, VEVYE mix, TYRVAYA sell-in, and unprinted BYOOVIZ reorders are what move the fourth quarter relative to the $136–151 window [G2][S2][S4][G11]. We do not assign the unnamed royalty-tier product to VEVYE [G15].
 
-Nine-month Adjusted EBITDA was $7.3, so the full-year floor of more than $40 implies more than $33 in the fourth quarter, consistent with the letter [A4][G1]. Our Q4 Adjusted EBITDA is $35.2 and FY2026E is $42.5, both above those floors, and neither is plugged to the floor [C5][P1]. The bear case FY2026E Adjusted EBITDA is $35.3, below the $40 floor. The bull case $51.7 is still well below the withdrawn $80–100 range. Q4 cash opex is $68.3 [C5]. It starts from Q3 cash opex of $59.3 [C4]. A $5.0 partial-quarter TYRVAYA allowance is added [S10]. A $4.0 allowance for the G-MELT application fee and other submission costs is also added [S10][G15]. Q4 GAAP gross margin of 73.6% is after a $2.5 inventory step-up that is not added back [S11][A4][C5]. Q4 product gross profit is the prior $95.9 plus 82% of the $2.3 IHEEZO dollar increase, or $97.8 [C5].
-
----
+Nine-month Adjusted EBITDA was $7.3, so a full-year floor of more than $40 implies more than $33 in the fourth quarter [A4][G1]. Our fourth quarter is $35.2 and the year is $42.5, both above those floors, and neither is set equal to the floor [C5][P1]. The bear year is $35.3, below the floor. The bull year is $51.7, still well below the withdrawn $80–100 range [C5][G4]. Fourth-quarter cash operating cost is $68.3, from the third-quarter $59.3 plus a $5.0 TYRVAYA allowance and a $4.0 allowance for the G-MELT submission [C4][C5][S10][G15]. Fourth-quarter GAAP gross margin of 73.6% is after a $2.5 inventory step-up that is not added back [S11][A4][C5]. Fourth-quarter product gross profit is the prior $95.9 plus 82% of the $2.3 IHEEZO increase, or $97.8 [C5].
 
 ### Contingent payments
 
 A royalty, license, earn-out, or similar contingent payment is discussed here when the filing or the call states an amount, a formula, or a trigger. Each item names the line that holds the dollars and says whether the base case includes them.
 
-### Samsung share on BYOOVIZ and OPUVIZ
+#### Samsung share on BYOOVIZ and OPUVIZ
 
-Under the Samsung Bioepis agreement, Samsung develops, manufactures, and supplies BYOOVIZ and OPUVIZ, and Harrow commercializes them in the United States [A8][G10]. Samsung is owed a “share of net sales” at an undisclosed rate, plus one-off net-sales milestones [A8]. We treat the dollars as Harrow-recognized product sales inside Other branded [S7]. We assume a 40% share plus about 8% other product cost, which implies a 52% product gross margin [S18]. The base case includes those product dollars and that take. The rate is not disclosed [A8]. A 30% share would imply about 62% product gross margin, and a 50% share about 42% [S18].
+Under the Samsung agreement, Samsung develops, manufactures, and supplies BYOOVIZ and OPUVIZ, and Harrow commercializes them in the United States [A8][G10]. Samsung is owed a share of net sales at an undisclosed rate, plus one-off net-sales milestones [A8]. The base treats the dollars as Harrow-recognized product sales inside Other branded and includes them [S7]. We assume a 40% share plus about 8% other product cost, which is a 52% product gross margin [S18]. The rate itself is not disclosed [A8].
 
-### TYRVAYA milestones
+#### TYRVAYA milestones
 
-TYRVAYA closed on 1 October 2026 for $30 cash plus up to $70 of milestones in periods ending 31 December 2029 [G14][D9]. Rights are worldwide except Japan, where Viatris pays Harrow tiered royalties at undisclosed rates [G14]. The first sales milestone is not expected on anticipated 2027 revenue, and no milestone liability was recorded in the Q3 2026 Form 10-Q [G5][A10]. The base includes TYRVAYA product sales inside Other branded and does not include a 2027 sales-milestone cash outflow [S6][S12]. The $30 close cash was paid on 1 October 2026 from cash on hand, after the 31 December 2025 balance sheet that sets the valuation's opening cash, so it is on the cash schedule the valuation discounts [A23][C19]. The up to $70 of milestones is not on that schedule, because the company does not expect the first net-sales milestone on its anticipated 2027 revenue [G5][C19].
+TYRVAYA closed on 1 October 2026 for $30 cash plus up to $70 of milestones in periods ending 31 December 2029 [G14][D9]. Rights are worldwide except Japan, where Viatris pays Harrow tiered royalties at undisclosed rates [G14]. The first sales milestone is not expected on anticipated 2027 revenue, and no milestone liability was recorded in the Q3 2026 report [G5][A10]. The base includes TYRVAYA product sales inside Other branded and does not include a 2027 sales-milestone cash outflow [S6][S12]. The $30 was paid on 1 October 2026, after the 31 December 2025 balance sheet that sets opening cash, so it is on the cash schedule the valuation discounts [A23][C19]. The up to $70 is not on that schedule [G5][C19].
 
-### Melt contingent cash and stock
+#### Melt contingent cash and stock
 
-The remaining Melt equity was acquired in November 2025 [A7][D8]. Schedule A of the Melt Milestone Payment Agreement still provides for FDA-approval cash of $87.2, payable to non-Harrow former holders within 75 days of achievement [A9]. A separate CMS pass-through and J-code stock milestone is $47.9 at a contractual $43.13 per share, or about 1.11 million fixed shares [A9][C7]. Commercial cash milestones total $260 and are triggered at Annual Net Sales of $100 / $250 / $500 / $750 / $1,000 [A9][C8]. The base does not deduct these amounts from Adjusted EBITDA [S12]. The $87.2 approval payment is a funding-risk flag around a Q4 2027 PDUFA, and the valuation discounts it with the other scheduled cash items [S12][A6][C25]. Combined G-MELT and YOCHIL sales in the base first exceed $100 of Annual Net Sales in FY2030E, so the first commercial cash milestone of $10.0 is recorded on the forecast-file cash-share schedule at 31 December 2030, payable within 75 days after year-end; it is still not an Adjusted EBITDA item [C12][C16][A18][S34][S12]. A second FDA-approval cash payment is not added for YOCHIL [S25]. The CMS J-code stock milestone remains undated and is omitted from the schedule [S12].
+The remaining Melt equity was acquired in November 2025 [A7][D8]. The milestone agreement still provides FDA-approval cash of $87.2, payable to non-Harrow former holders within 75 days of achievement [A9]. A separate pass-through and procedure-code stock milestone is $47.9 at a contractual $43.13 per share, or about 1.11 million shares [A9][C7]. Commercial cash milestones total $260, at annual net sales of $100, $250, $500, $750, and $1,000 [A9][C8]. The base does not deduct any of these from Adjusted EBITDA [S12]. The $87.2 approval payment is on the cash schedule, around a Q4 2027 decision [S12][C19]. Combined G-MELT and YOCHIL sales first exceed $100 of annual net sales in FY2030E, so the first commercial cash milestone of $10.0 is on the schedule at 31 December 2030, payable within 75 days after year-end, and it is still not an Adjusted EBITDA item [C12][C16][A18][S34][S12]. A second approval payment is not added for YOCHIL [S25]. The stock milestone is undated and is omitted from the schedule [S12]. The dollars, when included, sit with G-MELT and YOCHIL. They are not in Other branded.
+
+---
 
 ## 7. Valuation
 
-Finagle values the base case at $157.11 per share vs. a $28.30 share price on 15 November 2026, about 455% above (derived) [C30][A24][C31]. This result file does not break out the present value of explicit-period cash flows and the terminal value, so that split is not restated [C30][C31]. The bull is $187.34 and the bear $89.13 per share; their inputs, bridges and year rows are in Appendix A [C30]. Figure 8c places those values next to the 22 November v04 run, which used a 0.25 inflation pass-through and Finagle's default 4.04x debt policy, and next to v05, which set the pass-through at 1 but funded the cash schedule by reducing year-0 cash and was flagged as not a valuation [C28][C30][C31][P12][S47]. The base is $2.62 a share above v04 and $14.03 a share below v05 (derived) [C31].
-
-<div class="fig" markdown="1">
-
-**Figure 8c – Value per share by case and Finagle run (US$)**
-
-| | Bear | Base | Bull |
-|---|---:|---:|---:|
-| v04 (pass-through 0.25, default 4.04x debt policy) | 87.85 | 154.50 | 184.15 |
-| v05 (pass-through 1, cash-funded schedule; not a valuation) | 97.48 | 171.14 | 203.89 |
-| **v06 (pass-through 1, debt-funded schedule, 2.5x from FY2028E)** | **89.13** | **157.11** | **187.34** |
-| Share price (15 Nov 2026) | 28.30 | 28.30 | 28.30 |
-| v06 vs. price (derived) | 215% | 455% | 562% |
-
-*Source: v04 [D26][C28]; v05 [D27][C30]; v06 [D27][C30]; price [A24][P11]; vs. price (derived) [C31]. Per-share figures are rounded to 2 decimals. May not sum due to rounding.*
-
-</div>
+The valuation puts the base case at $157.11 a share against the $28.30 price on 15 November 2026, about 455% above (derived) [C30][A24][C31]. The result does not report the share of that value that is terminal, so that share is not stated [C30]. The bull is $187.34 and the bear is $89.13 [C30]. The builds are in Appendix A.
 
 ### Method
 
-Finagle discounts free cash flow to equity at the cost of equity [D27]. It takes the explicit revenue and Adjusted EBITDA for FY2026E–FY2032E from the forecast file as given, compounding from FY2025A [C18]. That is seven explicit years, and Finagle extends them by three more, FY2033E–FY2035E, to a ten-year horizon [C30]. In those extra years, revenue starts from next-period growth of 10.6% and fades toward terminal growth, and EBITDA moves from the 55.2% starting margin with each extra dollar of revenue earning the 65.6% incremental margin [S43][S44][C30]. A terminal value is added at the end of FY2035E [C30]. Terminal growth is Finagle's default of 5.10%, the 10-year Treasury yield on the 15 November price date; it was not set or overridden by us [D27][A24].
+The valuation discounts free cash flow to equity at the cost of equity [D27]. It takes explicit revenue and Adjusted EBITDA for FY2026E–FY2032E as given, seven years, and extends them by three, through FY2035E [C18][C30]. In the extension, revenue starts from next-period growth of 10.6% and fades toward terminal growth, and each extra dollar of revenue earns the 65.6% incremental margin off a 55.2% starting margin [S43][S44][C30]. A terminal value is added at the end of FY2035E [C30]. Terminal growth is the valuation's default of 5.10%, the 10-year yield on the 15 November price date. We do not set it [D27][A24]. Year-0 cash stays positive, and the low in the base is $59.0, so the case does not use a funding plug for negative cash [C30][P9].
 
-The inflation pass-through is 1, as David instructed: "rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate" [P12][S47]. At 1 the terminal reinvestment rate is the Bradley-Jarrell rate, growth less the 2.24% breakeven, divided by the 15% terminal return less that same inflation, rather than growth divided by the 15% return [S47][D25][P11]. v05 used that pass-through with the same operating forecast, but it subtracted the present value of the cash schedule from year-0 cash, leaving cash at −$41.51 in the base, −$55.70 in the bull and −$14.59 in the bear, and Finagle flagged every case as not a valuation because cash was negative [D27][C30]. David then instructed: "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3." and "Add the present value to debt and keep rd at 9.67%" [P13]. v06 leaves year-0 cash at the FY2025 10-K figure of $72.93, with the stated cash marked as already reflecting the schedule so it is not subtracted again, and it adds the absolute present value of that scenario's schedule to year-0 debt of $250, giving $364.43 in the base, $378.63 in the bull and $337.51 in the bear [P13][C30][A21]. Those present values are the v05 convention, discounted at the 10.60% cost of equity from 15 November 2026 [C30][P11]. The cost of debt is held at 9.67%, which is year-0 interest of $24.18 divided by the unadjusted 10-K debt of $250, so the higher year-0 debt does not recompute a lower rate [P13][C30]. Debt then stays at that raised year-0 balance through FY2027E and runs to a 2.5x Debt/EBITDA target from FY2028E, year 3 of Finagle's horizon [P13][C30]. When the target is above the starting balance, new borrowing is paid out in free cash flow to equity; that is Finagle's method, not a separate buyback path, and no distribution other than that residual is set [D27][C30]. Year-0 cash stays positive, and the lowest cash in the horizon is $58.96 in the base, $62.91 in the bull and $57.74 in the bear, so the not-a-valuation flag is clear [C30].
+We assume inflation passes through fully to the terminal reinvestment rate, which lowers terminal reinvestment and raises the value [P12][S47]. We assume the balance-sheet adjustments are funded with debt rather than cash, so year-0 cash stays at the FY2025 10-K figure of $72.9 and base year-0 debt rises from $250 to $364 [P13][A21][C30]. We also assume the cost of debt stays at 9.67% on the larger balance and that leverage moves to a 2.5x Debt/EBITDA target from FY2028E [P13][C30]. Borrowing up to that target is paid out to shareholders, so part of the value comes from the recapitalization rather than the operations [P13][C30].
 
 ### Balance Sheet Adjustments
 
-Year-0 cash of $72.93 and the share count of 37.23 equal Finagle's opening FY2025 10-K cash and shares; the cash schedule is not applied to cash a second time [D27][C30][P13]. Year-0 debt is the FY2025 10-K balance of $250 plus the absolute present value of the items below [P13][C30]. The 22 November instruction still pins the 15 November price, the 10-K share count, the 5.103% risk-free rate and year-0 interest, and it pins inflation at the 13 November breakeven [P11]. No equity was sold for cash in 2026 through 15 November, and this run does not add a year-0 equity raise in any case [A22][P9]. These dollars are outside EBITDA and are not in a later cash-flow year [S12][C19]. The TYRVAYA close cash is already paid, so its discount is 1 [C19].
+Year-0 cash of $72.9 and the share count of 37.23 are the opening FY2025 figures, used as stated. The cash schedule is not applied to cash a second time [D27][C30][P13]. Year-0 debt is the FY2025 balance of $250 plus the absolute present value of the items below [P13][C30]. These dollars are outside EBITDA and are not in a later cash-flow year [S12][C19]. The TYRVAYA close cash is already paid, so its discount is 1 [C19]. No shares are issued [P9]. The bull and bear schedules are in Appendix A. Bull year-0 debt is $379 and bear year-0 debt is $338, on the same cash treatment [C30].
 
 <div class="fig" markdown="1">
 
-**Balance Sheet Adjustments – base case (US$ unless noted; dollars in the units of the table, which is US$ millions except the share count)**
+**Balance Sheet Adjustments, base case (US$ millions unless noted)**
 
 | Item | Amount | Timing | Probability | Discount | Present value | Shares issued |
 |---|---:|---|---:|---:|---:|---:|
-| TYRVAYA close cash paid | -30.00 | 2026-10-01 | 1.00 | 1.0000 | -30.00 | 0.0000 |
-| Melt FDA-approval milestone payable | -87.17 | 2027-12-31 | 1.00 | 0.8928 | -77.82 | 0.0000 |
-| Melt first commercial Annual Net Sales cash milestone | -10.02 | 2030-12-31 | 1.00 | 0.6598 | -6.61 | 0.0000 |
-| **Total present value / new shares** | | | | | **-114.43** | **0.0000** |
-| Opening cash / shares (31 Dec 2025) | | | | | 72.927 | 37.229705 |
-| **Year-0 cash / shares used** | | | | | **72.927** | **37.229705** |
-| Opening debt (31 Dec 2025) | | | | | 250.000 | |
-| **Year-0 debt used (opening plus absolute PV)** | | | | | **364.434** | |
+| TYRVAYA close cash paid | -30.0 | 2026-10-01 | 1.00 | 1.0000 | -30.0 | 0 |
+| Melt FDA-approval cash | -87.2 | 2027-12-31 | 1.00 | 0.8928 | -77.8 | 0 |
+| Melt first commercial cash milestone | -10.0 | 2030-12-31 | 1.00 | 0.6598 | -6.6 | 0 |
+| **Total present value / new shares** | | | | | **-114.4** | **0** |
+| Opening cash / shares (31 Dec 2025) | | | | | 72.9 | 37.23 |
+| **Year-0 cash / shares used** | | | | | **72.9** | **37.23** |
+| Opening debt (31 Dec 2025) | | | | | 250 | |
+| **Year-0 debt used** | | | | | **364** | |
 
-*Source: worked schedule and year-0 figures in the v06 valuation result [D27][C30]; items from the forecast file [A23][A15][A18][S24][S25][S34][S35][C19][P9][P11][P13]. Discount is at the 10.60% cost of equity from the 15 November 2026 price date. Shares are in millions of shares. May not sum due to rounding.*
+*Source: worked schedule in the valuation result [D27][C30]. Items [A23][A15][A18][S24][S34][C19][P9][P13]. Full precision: present values -30.00, -77.82, -6.61, total -114.434; opening cash 72.927; shares 37.229705; year-0 debt 364.434 [C30]. Discount is at the 10.60% cost of equity from 15 November 2026. May not sum due to rounding.*
 
 </div>
 
-Figure 8 shows which inputs are stated by David, which come from the forecast file, which are Finagle defaults, and which are our judgments. The judgments are still the starting margin, incremental margin and next-period growth. The inflation pass-through, the year-0 cash and debt treatment, the cost of debt and the 2.5x debt policy from FY2028E are David's stated inputs [P11][P12][P13][S47].
+### Valuation inputs
+
+Figure 10 is the three cases. The judgments we set are the starting margin, the incremental margin, and next-period growth. The pass-through, the cash and debt treatment, the cost of debt, and the 2.5x target from FY2028E are stated assumptions [P11][P12][P13][S47]. Terminal growth, the cost of equity, the tax rate, and the terminal return are valuation defaults [D27].
+
+The incremental margin is set halfway between the FY2032E Adjusted EBITDA margin of 55.2% and that year's GAAP gross margin of 76.0%, because an extra dollar of revenue carries the product gross margin less some selling cost [S43]. That 65.6% is well above the reported history of low-20s margins [S43][A3]. Next-period growth is one more year of the same build: the workbook through December 2033 for VEVYE, the sheet's halving growth for IHEEZO, the same unit add for TRIESENCE, one more price step for G-MELT and YOCHIL, and the last step on the other lines [S44][P10].
 
 <div class="fig" markdown="1">
 
-**Figure 8 – Valuation inputs, base case**
+**Figure 10 – Valuation inputs, three cases**
 
-| Input | Base | Basis | Tags |
-|---|---:|---|---|
-| Cost of equity | 10.60% | Finagle default: 5.5% plus the 10-year yield | [D27][A24] |
-| Cost of debt | 9.67% | Stated: held at year-0 interest of $24.18 / unadjusted year-0 debt of $250 | [P13][C30] |
-| Tax rate | 21.0% | Finagle default: U.S. federal statutory rate | [D27] |
-| Terminal growth | 5.10% | Finagle default: equals the 10-year yield; not set by us | [D27][A24] |
-| Expected inflation | 2.24% | FRED 10-year breakeven, 13 November 2026, pinned | [P11][D25] |
-| Inflation pass-through | 1 | Stated: Bradley-Jarrell rate | [P12][S47] |
-| Terminal return on invested capital | 15.0% | Finagle default | [D27] |
-| Shares (adjusted) | 37.23 | Finagle: 37.23 from the FY2025 10-K, in millions of shares; no new shares | [D27][P9][P11][C30] |
-| Price (US$) | 28.30 | Pinned previous close, 15 Nov 2026 | [P11][A24] |
-| Debt (year 0) | 364.4 | FY2025 10-K debt of $250 plus the absolute PV of the base cash schedule | [P13][C30][D27] |
-| Debt policy | 2.5x from FY2028E | Stated: target Debt/EBITDA from year 3; years FY2026E–FY2027E hold year-0 debt | [P13][C30] |
-| Cash (year 0) | 72.93 | FY2025 10-K cash, left unreduced | [P13][C30][D27] |
-| Starting margin | 55.2% | Forecast-file input: FY2032E Adj. EBITDA / revenue | [C18] |
-| Incremental margin (mc) | 65.6% | Judgment | [S43] |
-| Next-period growth (gsnext) | 10.6% | Judgment: one more year of the same build | [S44] |
-| Terminal WACC | 9.80% | Finagle output, last horizon year | [C30] |
+| Input | Bull | Base | Bear | Basis |
+|---|---:|---:|---:|---|
+| Cost of equity | 10.60% | 10.60% | 10.60% | Valuation default [D27][A24] |
+| Cost of debt | 9.67% | 9.67% | 9.67% | Stated assumption [P13][C30] |
+| Tax rate | 21.0% | 21.0% | 21.0% | Valuation default [D27] |
+| Terminal growth | 5.10% | 5.10% | 5.10% | Valuation default; not set by us [D27][A24] |
+| Shares (adjusted) | 37.23 | 37.23 | 37.23 | Stated assumption; no new shares [P9][P11][C30] |
+| Price (US$) | 28.30 | 28.30 | 28.30 | Stated assumption, 15 Nov 2026 [P11][A24] |
+| Debt, year 0 | 379 | 364 | 338 | Stated assumption: $250 plus the schedule [P13][C30] |
+| Cash, year 0 | 72.9 | 72.9 | 72.9 | Stated assumption: FY2025 cash, unreduced [P13][C30] |
+| Starting margin | 57.7% | 55.2% | 45.1% | Forecast-file input [C18] |
+| Incremental margin | 67.2% | 65.6% | 60.7% | Judgment [S43] |
+| Next-period growth | 11.8% | 10.6% | 10.0% | Judgment [S44] |
+| Terminal WACC | 9.81% | 9.80% | 9.78% | Valuation output [C30] |
+| Terminal return on invested capital | 15.0% | 15.0% | 15.0% | Valuation default [D27] |
+| Expected inflation | 2.24% | 2.24% | 2.24% | Stated assumption, 13 Nov 2026 [P11][D25] |
+| Inflation pass-through | 1 | 1 | 1 | Stated assumption [P12][S47] |
+| Debt / EBITDA target | 2.5x from FY2028E | 2.5x from FY2028E | 2.5x from FY2028E | Stated assumption [P13][C30] |
 
-*Source: valuation result [D27][C30]; forecast file [C18][S43][S44][P9]; pinned market data [P11][A24][D25]; stated pass-through, cash, debt, rd and leverage [P12][P13][S47]. Finagle defaults are the leaves the result filled. May not sum due to rounding.*
+*Source: valuation result [D27][C30]; forecast file [C18][S43][S44]; stated assumptions [P9][P11][P12][P13][S47]. Full-precision year-0 debt is 378.628 / 364.434 / 337.514 [C30]. May not sum due to rounding.*
 
 </div>
 
-We set the incremental margin halfway between the FY2032E Adjusted EBITDA margin of 55.2% and that year's GAAP gross margin of 76.0%, because an extra dollar of revenue carries the product gross margin less some selling and variable cost [S43]. That 65.6% sits well above the reported history of low-20s Adjusted EBITDA margins, so it extends the long-window margin flag in the Forecast section into Finagle's extra years [S43][A3]. We set next-period growth as one more year of the same build: VEVYE continues the 15 November workbook through December 2033, IHEEZO continues the sheet's halving growth at the 2027 ASP, TRIESENCE adds the same units again, G-MELT and YOCHIL take one more price step, and the Other branded components and compounding take their last steps [S44][P10].
-
-*Run record.* The 22 November instruction pins the 15 November price, the share count, the risk-free rate and year-0 interest, and it pins inflation at the 13 November breakeven; it does not state a pass-through, so that stays at 0.25 [P11][S46]. The 15 November instruction is still the Vevye and Iheezo workbook [P10]. The 14 November instruction still removes every year-0 equity raise, including where cash would otherwise go negative [P9]. The bull 8% VEVYE increment and the bear share freeze are the 14 November rules kept on the new sheet [P8][S45]. Finagle filled defaults for net operating losses (zero), non-operating assets (zero), the cost of equity, terminal growth, terminal return on invested capital, the tax rate, the cost of debt, working capital (no change), the debt policy (target leverage from the first forecast year), distributions (none), and the inflation pass-through [D26][S46]. Every case carries the sanity flag “negative cash” [D26]. Each case has two validation warnings: “average EBITDA growth is 80.2% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero” (78.0% in the bull and 68.7% in the bear), and “forecast evidence mentions acquisitions but the case has none, so MnA stays zero” [D26]. Before those pins, the fetch read a $32.13 close and a 5.052% 10-year yield on 22 November 2026, and inflation stayed at the 2% fallback because the FRED series did not load; the pins then set $28.30, 5.103%, and 2.24% [D26][P11][D25]. The share count stayed at 37,229,705 from the 10-K [D26]. The recorded commit is 377f177b4013e713fe7c4603962e5f883a67e298, and the checkout also held the uncommitted pass-through this run uses [D26]. For the base case, the warnings mean only that no purchase price is deducted: TYRVAYA is already inside the revenue and cost lines, its $30 close cash is on the cash schedule, and the high average growth is the FY2027E rebound from a low FY2026E base, not acquired EBITDA [C20][C19][C18]. The negative-cash flag is the adjusted year-0 cash of −$41.6, and it is left in place [P9][C28].
+*Run record.* We assume the 15 November 2026 price of $28.30, the FY2025 share count, the 5.103% risk-free rate, year-0 interest of $24.2, and inflation of 2.24% as of 13 November 2026 [P11]. We assume the 15 November workbook for VEVYE and IHEEZO [P10], no year-0 equity raise [P9], an 8% VEVYE increment in the bull and a frozen December 2028 share in the bear [P8][S45], a full inflation pass-through [P12], and debt funding of the cash schedule at a 9.67% cost of debt with a 2.5x target from FY2028E [P13]. The result carries no sanity flag [C30]. It warns that average EBITDA growth is 80.2% in the base, with no acquisitions booked, and that the evidence mentions acquisitions the case does not include. For the base, that means no purchase price is deducted: TYRVAYA is already in the lines, and its $30 close cash is on the schedule [C30][C19][C20]. The filled defaults, the fetched market inputs, the version of the valuation process, and the earlier runs are in Appendix B [D27].
 
 ### Medium-term organic growth
 
-Next-period growth is the medium-term organic growth forecast [S44]. The starting margin is FY2032E Adjusted EBITDA divided by revenue, 55.2% [C18]. The incremental margin is the contribution margin, set at 65.6%, and it did not move for the pipeline [S43]. The medium-term organic growth forecast of 10.6% is FY2033E from one more year of the same line build, with VEVYE and IHEEZO extended on the 15 November workbook [S44][P10]. Figure 8a shows that VEVYE supplies about 70% of the $187 increase (derived) [S44][C26].
+Next-period growth is the medium-term organic growth forecast [S44]. The starting margin is FY2032E Adjusted EBITDA divided by revenue, 55.2% [C18]. The incremental margin is the contribution margin, 65.6%, and it did not move for the pipeline [S43]. The 10.6% growth rate is FY2033E from one more year of the same line build [S44][P10]. Figure 11 shows that VEVYE supplies about 70% of the $187 increase (derived) [S44][C26].
 
 <div class="fig" markdown="1">
 
-**Figure 8a – Medium-term organic growth, base case (US$ millions)**
+**Figure 11 – Medium-term organic growth, base case, FY2032E–FY2033E (US$ millions)**
 
 | Line | FY2032E | FY2033E | Change |
 |---|---:|---:|---:|
@@ -813,171 +706,173 @@ Next-period growth is the medium-term organic growth forecast [S44]. The startin
 | ImprimisRx | 77.0 | 79.0 | 2.0 |
 | G-MELT | 146 | 150 | 3.8 |
 | YOCHIL | 27.4 | 28.2 | 0.8 |
-| Continued path (none beyond the lines) | — | — | — |
+| Continued path | — | — | — |
 | **Total revenue** | **1,760** | **1,946** | **187** |
 | Growth (derived) | | | 10.6% |
 
-*Source: FY2032E lines [C10][C12][C16][S21][S22][S23]; FY2033E next-year build [S44]; growth (derived) [C26]. G-MELT and YOCHIL FY2033E use a $200 net price per unit [S44]. May not sum due to rounding.*
+*Source: FY2032E [C10][C12][C16][S21][S22][S23]. FY2033E [S44]. Growth (derived) [C26]. G-MELT and YOCHIL FY2033E use a $200 net price per unit [S44]. May not sum due to rounding.*
 
 </div>
 
-Figure 9 shows equity value as value per share times the share count (derived), year-0 debt and cash, and the value per share against the price. The result file does not carry a split of that equity value into the present value of explicit-period cash flows and the terminal value, so that split is omitted [C30][C31].
+The bull has its own next-year line build, in Figure 12, and growth of 11.8% (derived) [S44][C26]. The bear does not. It keeps VEVYE share frozen at the December 2028 level while the market and the price path continue, and the stated growth rate is 10.0% [S44][P8][P10].
 
 <div class="fig" markdown="1">
 
-**Figure 9 – Value bridge, base case (US$ millions unless noted)**
+**Figure 12 – Medium-term organic growth, bull case, FY2032E–FY2033E (US$ millions)**
 
-| | Base |
-|---|---:|
-| Equity value (derived: value per share × shares) | 5,849 |
-| Year-0 debt | 364.4 |
-| Firm value (derived: equity plus year-0 debt) | 6,214 |
-| Year-0 cash (not added again) | 72.93 |
-| Shares (millions of shares) | 37.23 |
-| **Value per share (US$)** | **157.11** |
-| Share price (US$, 15 Nov 2026) | 28.30 |
-| Upside (derived) | 455% |
+| Line | FY2032E | FY2033E | Change |
+|---|---:|---:|---:|
+| VEVYE | 967 | 1,108 | 141 |
+| IHEEZO | 187 | 187 | 0.9 |
+| TRIESENCE | 296 | 340 | 43.2 |
+| Other branded | 146 | 152 | 6.2 |
+| Other revenues | 0.6 | 0.6 | 0.0 |
+| ImprimisRx | 86.2 | 88.5 | 2.2 |
+| G-MELT | 244 | 280 | 36.2 |
+| YOCHIL | 27.4 | 28.2 | 0.8 |
+| Continued path | — | — | — |
+| **Total revenue** | **1,954** | **2,184** | **231** |
+| Growth (derived) | | | 11.8% |
 
-*Source: valuation result [D27][C30]; equity, firm value and upside (derived) [C31]; price [A24][P11]. Year-0 cash is already the opening cash Finagle uses and is not added on top of equity. Firm value follows the same convention as earlier runs, equity plus year-0 debt. May not sum due to rounding.*
+*Source: bull FY2032E lines in `forecast.json`; FY2033E [S44]; growth (derived) [C26]. May not sum due to rounding.*
 
 </div>
 
-Figures 9a and 9b are the base-case rows the result file does carry, FY2025A through FY2035E; the value per share of $157.11 is the result for the case [C30]. Debt stays at $364 through FY2027E and then follows the 2.5x Debt/EBITDA target from FY2028E, so the FY2028E debt change is the step up to 2.5 times that year's EBITDA, and later borrowing is paid out in free cash flow to equity [P13][C30]. Cash stays positive and is Finagle's year-end balance, with a low of $58.96 in FY2026E [C30]. Capex is Finagle's own reinvestment rule with a pass-through of 1, not a forecast-file input, and it is lower than in the 0.25 run; Harrow's nine-month 2026 capex was $1.06 [A6][C30][S47]. Debt change and Debt/EBITDA are marked derived. The result file does not carry FCF, FCFE, FCFF, dividend, EV or a year-by-year equity-value row, so they are not reproduced [D27].
+### Value bridge
+
+Figure 13 is the three cases. The spread is the operating cases: the bear freezes VEVYE share after December 2028, delays G-MELT, and gives YOCHIL no revenue in the window, so FY2032E Adjusted EBITDA is $560 against $971 in the base and $1,127 in the bull [C14][S21][S15][S32]. The result does not report the present value of explicit-period cash flows or the terminal value, so those rows are not filled [C30]. Equity value below is the value per share times the share count (derived). Year-0 cash is already the cash the valuation uses and is not added again [C31][P13].
 
 <div class="fig" markdown="1">
 
-**Figure 9a – Finagle base-case statement, FY2025A–FY2030E (US$ millions unless noted)**
+**Figure 13 – Value bridge, three cases (US$ millions unless noted)**
+
+| | Bull | Base | Bear |
+|---|---:|---:|---:|
+| Present value of explicit-period cash flows | n/a (not reported) | n/a (not reported) | n/a (not reported) |
+| Terminal value | n/a (not reported) | n/a (not reported) | n/a (not reported) |
+| Terminal share of the total | n/a (not reported) | n/a (not reported) | n/a (not reported) |
+| Firm value (derived) | 7,353 | 6,214 | 3,656 |
+| Less year-0 debt | 379 | 364 | 338 |
+| Plus year-0 cash (not added again) | 72.9 | 72.9 | 72.9 |
+| Equity value (derived) | 6,975 | 5,849 | 3,318 |
+| **Value per share (US$)** | **187.34** | **157.11** | **89.13** |
+| vs. price (derived) | 562% | 455% | 215% |
+
+*Source: valuation result [D27][C30]. Equity, firm value, and vs. price (derived) [C31]. Price [A24][P11]. Full-precision equity is 6,974.579 / 5,849.255 / 3,318.177, and firm value is equity plus year-0 debt [C31]. May not sum due to rounding.*
+
+</div>
+
+### Base-case year statement
+
+Figure 14 is the base-case statement from FY2025A through FY2035E. The value per share of $157.11 is the result for the case and is not a row in the statement [C30]. The per-year value-per-share series is in Appendix B [C30]. Debt stays at $364 through FY2027E and then follows the 2.5x target, so the FY2028E increase is the step up to 2.5 times that year's EBITDA, and later borrowing is paid out [P13][C30]. Cash stays positive. The low is $59.0 in FY2026E [C30]. Capital expenditure is the valuation's reinvestment rule with a pass-through of 1. It rises from $0.9 in FY2025A to $234 in FY2032E, far above reported capital expenditure. Nine-month 2026 capital expenditure was $1.06 [A6][C30][S47]. Debt change and Debt/EBITDA are derived [C31].
+
+<div class="fig" markdown="1">
+
+**Figure 14 – Base-case year statement, FY2025A–FY2030E (US$ millions unless noted)**
+
+*HROW. Price $28.30. Shares 37.23. Cost of equity 10.60%. Cost of debt 9.67%. Tax 21.0%. Terminal growth 5.10%.*
 
 | | FY2025A | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E |
 |---|---:|---:|---:|---:|---:|---:|
 | Revenue | 272 | 347 | 665 | 899 | 1,125 | 1,353 |
 | EBITDA | 61.9 | 42.5 | 217 | 371 | 535 | 692 |
-| SBC | 12.5 | 8.6 | 43.8 | 74.9 | 108 | 140 |
+| Stock-based compensation | 12.5 | 8.6 | 43.8 | 74.9 | 108 | 140 |
 | Interest | 24.2 | 35.2 | 35.2 | 35.2 | 89.7 | 129 |
 | Cash tax | 3.8 | 0.0 | 14.0 | 41.6 | 54.5 | 69.2 |
-| Capex | 0.9 | 12.6 | 62.4 | 99.2 | 135 | 171 |
+| Capital expenditure | 0.9 | 12.6 | 62.4 | 99.2 | 135 | 171 |
 | Debt | 364 | 364 | 364 | 927 | 1,338 | 1,731 |
 | Debt change (derived) | — | 0.0 | 0.0 | 563 | 411 | 393 |
-| Debt/EBITDA (derived) | 5.9x | 8.6x | 1.7x | 2.5x | 2.5x | 2.5x |
+| Debt / EBITDA (derived) | 5.9x | 8.6x | 1.7x | 2.5x | 2.5x | 2.5x |
 | Cash | 72.9 | 59.0 | 121 | 803 | 1,362 | 1,939 |
-| Shares (millions of shares) | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 |
+| Shares | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 |
 | WACC | 10.4% | 10.4% | 10.5% | 10.3% | 10.1% | 10.0% |
-| Value per share (US$) | 157.11 | 171.98 | 188.56 | 190.22 | 195.37 | 200.59 |
 
-*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. FY2025A is year 0. Revenue and EBITDA through FY2032E are the forecast file [C18]. May not sum due to rounding.*
+*Source: valuation result [D27][C30]. Debt change and Debt/EBITDA (derived) [C31]. FY2025A is year 0. Revenue and EBITDA through FY2032E are the forecast [C18]. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**Figure 9b – Finagle base-case statement, FY2031E–FY2035E (US$ millions unless noted)**
+**Figure 14 (continued) – Base-case year statement, FY2031E–FY2035E (US$ millions unless noted)**
 
 | | FY2031E | FY2032E | FY2033E | FY2034E | FY2035E |
 |---|---:|---:|---:|---:|---:|
 | Revenue | 1,582 | 1,760 | 1,946 | 2,117 | 2,264 |
 | EBITDA | 850 | 971 | 1,093 | 1,205 | 1,302 |
-| SBC | 172 | 196 | 221 | 243 | 263 |
+| Stock-based compensation | 172 | 196 | 221 | 243 | 263 |
 | Interest | 167 | 206 | 235 | 264 | 291 |
 | Cash tax | 84.2 | 93.9 | 106 | 116 | 124 |
-| Capex | 206 | 234 | 264 | 290 | 313 |
+| Capital expenditure | 206 | 234 | 264 | 290 | 313 |
 | Debt | 2,125 | 2,427 | 2,733 | 3,013 | 3,254 |
 | Debt change (derived) | 394 | 302 | 306 | 280 | 241 |
-| Debt/EBITDA (derived) | 2.5x | 2.5x | 2.5x | 2.5x | 2.5x |
+| Debt / EBITDA (derived) | 2.5x | 2.5x | 2.5x | 2.5x | 2.5x |
 | Cash | 2,553 | 3,096 | 3,671 | 4,242 | 4,793 |
-| Shares (millions of shares) | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 |
+| Shares | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 |
 | WACC | 10.0% | 9.9% | 9.9% | 9.8% | 9.8% |
-| Value per share (US$) | 205.36 | 212.56 | 219.66 | 227.60 | 236.94 |
 
-*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. FY2025A is year 0. Revenue and EBITDA through FY2032E are the forecast file [C18]. May not sum due to rounding.*
-
-</div>
-
-Figure 13 shows a wide spread: every case is above the share price, and the bear is the lowest because it freezes VEVYE share after December 2028, delays G-MELT, and gives YOCHIL no revenue in the window, so FY2032E Adjusted EBITDA is $560 against $971 in the base [C30][A24][C14].
-
-<div class="fig" markdown="1">
-
-**Figure 13 – Scenarios vs. price**
-
-| | Bear | Base | Bull |
-|---|---:|---:|---:|
-| Value per share (US$) | 89.13 | 157.11 | 187.34 |
-| Share price (US$, 15 Nov 2026) | 28.30 | 28.30 | 28.30 |
-| vs. price (derived) | 215% | 455% | 562% |
-| FY2032E Adj. EBITDA | 560 | 971 | 1,127 |
-
-*Source: valuation result [D27][C30]; price [A24][P11]; vs. price (derived) [C31]; EBITDA from the forecast file scenarios [C14][S42].*
+*Source: valuation result [D27][C30]. Debt change and Debt/EBITDA (derived) [C31]. May not sum due to rounding.*
 
 </div>
 
 ### Caveats
 
-The 2.5x Debt/EBITDA target from FY2028E is now a stated policy, not a default, but it still pays new borrowing out to equity once the target is above the starting balance, so the value depends on that recapitalization [P13][C30]. Base debt stays at $364 through FY2027E, when Debt/EBITDA is 5.9x, 8.6x and 1.7x as EBITDA first falls and then jumps, and then rises to $3,254 by FY2035E, about nine times the raised year-0 balance, at a cost of debt held at 9.67% [C30][P13][C31]. That rate is year-0 interest divided by the unadjusted $250 of 10-K debt; it is not reset as the balance grows, and the 8.625% coupon, the 2030 maturity and any refinancing of the notes are not modelled beyond it [A6][P13][C30]. Year-0 debt and cash still start from the FY2025 10-K and exclude the $50 of add-on notes issued in March 2026 and their proceeds [A6][D27]. Finagle warns that average EBITDA growth is 80.2% in the base, 78.0% in the bull and 68.7% in the bear, with no acquisitions booked, and that the forecast evidence mentions acquisitions but the case has none [C30]. G-MELT and YOCHIL revenue and the Melt approval cash are unweighted and conditional on approval [S15][S32][S25]. The CMS pass-through and J-code stock milestone of about 1.11, in the same unit as the share count in the tables, is undated and is not in the share count, and Samsung's net-sales milestones and the up to $70 of TYRVAYA milestones are not in cash [S12][C7][A8][C19]. The result file does not break out terminal value as a share of equity, and the 65.6% incremental margin still keeps margins rising after FY2032E [C30][S43]. Finagle's capex rule lifts capex from $0.9 in FY2025A to $234 in FY2032E, far above Harrow's reported capex, which lowers the value, even with the Bradley-Jarrell pass-through [C30][A6][S47]. The runner's fetch of the FRED 10-year breakeven timed out, so inflation remains the pinned 2.24% print [D25][P11]. This report draws no rating or price target.
+The 2.5x target from FY2028E pays new borrowing out to equity once the target is above the starting balance, so part of the value is that recapitalization [P13][C30]. Base debt stays at $364 through FY2027E, when Debt/EBITDA is 5.9x, 8.6x, and 1.7x, and then rises to $3,254 by FY2035E, at a cost of debt held at 9.67% [C30][P13][C31]. That rate is year-0 interest divided by the unadjusted $250 of 10-K debt. It is not reset as the balance grows. The 8.625% coupon, the 2030 maturity, and any refinancing are not modelled beyond it [A6][P13]. Year-0 debt and cash start from the FY2025 10-K and exclude the $50 of notes issued in March 2026 and their proceeds [A6][D27].
 
+The result warns that average EBITDA growth is 80.2% in the base, 78.0% in the bull, and 68.7% in the bear, with no acquisitions booked [C30]. G-MELT and YOCHIL revenue, and the Melt approval cash, are unweighted and conditional on approval [S15][S32][S25]. The stock milestone of about 1.11 million shares is not in the share count. Samsung's net-sales milestones and the up to $70 of TYRVAYA milestones are not in cash [S12][C7][A8][C19]. The 65.6% incremental margin keeps margins rising after FY2032E [S43]. The reinvestment rule lifts capital expenditure far above Harrow's reported level, which lowers the value [C30][A6][S47]. The fetch of the breakeven series did not load, so inflation remains the pinned 2.24% print [D25][P11]. This report draws no rating or price target.
+
+---
 
 ## 8. Risks
 
-Novaliq consent is the largest identifiable single-product downside in 2027. If discussions with the VEVYE licensor require a U.S. and Canadian divestiture, a termination, or modified terms, the $33 FY2027E TYRVAYA contribution and part of the $20 opex add-on would not hold [G6][S6]. Where the bear is that outcome, the build is in Appendix A.
+Novaliq consent is the largest identifiable single-product downside in 2027. If the VEVYE licensor requires a U.S. and Canadian divestiture, a termination, or modified terms, the $33 of FY2027E TYRVAYA revenue and part of the $20 operating-cost add would not hold [G6][S6]. Where the bear is that outcome, the build is in Appendix A.
 
-An undisclosed Samsung share of net sales can either reduce Harrow revenue or compress gross margin [A8][S18]. Net-sales milestones are also undisclosed [A8][S7]. A 50% share would take biosimilar product gross margin to about 42% [S18]. On FY2032E BYOOVIZ plus OPUVIZ of $53, that would cut about $5 of gross profit versus the base [S18]. Competitive anti-VEGF pricing can also cap realized price independently of the contract [S7].
+An undisclosed Samsung share of net sales can reduce Harrow revenue or compress gross margin, and the net-sales milestones are also undisclosed [A8][S18][S7]. A 50% share would take biosimilar product gross margin to about 42% [S18]. On FY2032E BYOOVIZ plus OPUVIZ of $53, that would cut about $5 of gross profit vs. the base [S18]. Competitive pricing in the category can also cap the realized price [S7].
 
-A complete response, a delayed G-MELT filing, or a failed reimbursement path would push the $10.5–146 FY2028E–FY2032E G-MELT path out of the window or into later years, which is the bear case [S15][S8]. A narrower label, a boxed warning, or REMS-like conditions would also change the volume path [G18][G20]. YOCHIL’s 2028 launch is tighter because Phase 3 is still ahead; the bear gives it no revenue in the explicit window [S32][S8]. H-N08 and the other unlaunched pipeline products remain out of the base [S23]. Melt approval cash of $87.2 would still be a cash use if approval occurs, and funding has not been verified [A9][S12]. Combined Melt sales in the base first exceed $100 of Annual Net Sales in FY2030E, which would add $10.0 of commercial cash, still outside EBITDA [A18][S34].
+A complete response, a delayed filing, or a failed reimbursement path would push the $10.5–$146 G-MELT path out of the window, which is the bear case [S15][S8]. A narrower label, a boxed warning, or restricted distribution would also change the volume path [G18][G20]. YOCHIL's 2028 launch is tighter because Phase 3 is still ahead, and the bear gives it no revenue in the window [S32][S8]. H-N08 and the other unlaunched products stay out of the base [S23]. Melt approval cash of $87.2 would still be a cash use if approval occurs [A9][S12]. Combined Melt sales in the base first exceed $100 of annual net sales in FY2030E, which adds $10.0 of commercial cash, still outside EBITDA [A18][S34].
 
-Q3 branded margin was already 79.3%, not a consolidated “high 70s” [A5]. Management cut the EBITDA outlook after lower-than-expected margins all year [G1][G15]. An unnamed product hit a royalty-tier step-up [G15]. Inventory step-up is not an Adjusted EBITDA add-back [S11]. The Catalent and Samsung rates are assumed, not disclosed [S16][S18]. G-MELT and YOCHIL program spend is assumed, with a roughly 40% band either side [S17][S33]. FY2032E Adjusted EBITDA margin of 55.2% would be lower if those bands land on the high-cost side, or if the VEVYE share gains fade sooner than the workbook [C14][S17][S33][S21][S23]. That margin is far above the reported history, so operating leverage is a named bear lever: 5% core cost inflation and an 8% variable rate take about $49 off bear FY2032E Adjusted EBITDA (derived), and the build is in Appendix A [S42][C22].
+Third-quarter branded gross margin was already 79.3% [A5]. The EBITDA outlook was cut after lower margins through the year, and an unnamed product hit a royalty-tier step-up [G1][G15]. The inventory step-up is not an add-back [S11]. The Catalent and Samsung rates, and the G-MELT and YOCHIL program dollars, are assumed [S16][S18][S17][S33]. The FY2032E margin of 55.2% would be lower if those bands land high, or if the VEVYE share gains fade sooner than the workbook [C14][S21]. That margin is far above the reported history, so operating leverage is a named bear lever: 5% core inflation and an 8% variable rate take about $49 off bear FY2032E Adjusted EBITDA (derived). The build is in Appendix A [S42][C22].
 
-The VEVYE path assumes the workbook’s share gains, 1% monthly market growth and the price glide continue through FY2032E, which is a judgment [S21][P10]. The bear freezes VEVYE share after December 2028; the build is in Appendix A. TRIESENCE assumes that recent net unit additions persist [S23]. Listed U.S. TRIESENCE patents expire in 2029 [S14][S23]. IHEEZO pass-through expiry in March 2026 is a reminder that Medicare packaging and average-selling-price inflation rebates can change buy-and-bill economics [D2].
+The VEVYE path assumes the workbook's share gains, 1% monthly market growth, and the price glide continue through FY2032E [S21][P10]. The bear freezes share after December 2028. TRIESENCE assumes that recent net unit additions persist, and the listed patents expire in 2029 [S23][S14]. IHEEZO pass-through expiry in March 2026 is a reminder that packaging and inflation rebates can change buy-and-bill economics [D2].
 
-Compounded products are not FDA-approved. The California license surrender is a concrete example of state-level restriction [D2]. Further state actions, FDA 503B observations, or a larger-than-assumed shift of MKO users to branded G-MELT would change the compounding path [P3][S13].
+Compounded products are not FDA-approved. A California license surrender is one state restriction already on the record [D2]. Further state action, observations at a compounding facility, or a larger shift of MKO users to branded G-MELT would change the compounding path [P3][S13].
 
-Coverage, prior authorization, and patient out-of-pocket costs drive VEVYE and TYRVAYA; Medicare Part B reimbursement drives IHEEZO, TRIESENCE, and the biosimilars [D2]. Inflation Reduction Act inflation rebates, 340B, and discarded-drug refunds apply to Part B products [D2]. Contract-manufacturer concentration and starting-material supply are named 10-K risks [D2]. Leverage is real: $300 of 8.625% notes due 2030 sit against $75.3 of cash at 30 September [A6]. After that date, $30 was paid for TYRVAYA [G14]. Melt approval cash of $87.2 could also come due around PDUFA [S12]. The valuation does not add a year-0 equity raise. Adjusted year-0 cash stays negative, about −$41.6 in the base, and the share count stays at 37.23 million [P9][C28].
+Coverage and out-of-pocket cost drive VEVYE and TYRVAYA. Medicare Part B reimbursement drives IHEEZO, TRIESENCE, and the biosimilars [D2]. Inflation rebates, 340B, and discarded-drug refunds apply to Part B products [D2]. Contract-manufacturer concentration and starting-material supply are named risks in the annual report [D2]. Leverage is real: $300 of 8.625% notes due 2030 sat against $75.3 of cash at 30 September, and $30 was paid for TYRVAYA after that date [A6][G14]. Melt approval cash of $87.2 could also come due around a decision [S12]. The valuation does not add a year-0 equity raise. Year-0 cash stays at the FY2025 figure of $72.9, and the added present value sits in debt rather than in a lower cash balance [P9][P13][C30].
 
 ---
 
 ## Appendix A – Bull and Bear Cases
 
-The bear misses the $350 FY2026E low end on a weaker fourth-quarter mix and no IHEEZO year-end recognition, then freezes VEVYE share after December 2028 while the market and the price path continue, and it delays G-MELT past 2030, gives YOCHIL no revenue in the window, haircuts the other lines, and sets product gross margins about 3 points below the base [G2][S8][S15][S32][S18][S21][S22][S23][P8]. Bear FY2026E revenue is $337 and Adjusted EBITDA is $35.3, below the floor of more than $40 [G1][C5]. Combined bear Melt sales do not reach $100 of Annual Net Sales in the explicit window. The bull finishes above the $350 low end at $359, is not plugged to the $365 high end, sets VEVYE 8% above the workbook from January 2027, ramps G-MELT faster than the 15% base, and uses a faster YOCHIL penetration of the same IHEEZO one-third [S15][S21][S32][P8]. Combined bull Melt sales reach $100 of Annual Net Sales in FY2029E and $250 in FY2032E, which would involve $10.0 and then $25.0 of commercial cash that is still not an EBITDA item [S12][A18][A20]. Product margins in the bull are about 1.5 points above the base, and launch spend is 8% above the base G-MELT and YOCHIL programs [S17][S33]. The bear also carries operating leverage as a named lever: core cash opex inflates at 5% instead of 4%, and variable opex is 8% instead of 4% of same-store revenue above the Q3 2026 annualized pace [S42][S40][S41]. That lever takes about $49 off bear FY2032E Adjusted EBITDA, to $560, so the bear margin is 45.1% rather than about 49% (derived) [S42][C22]. The bull keeps the base cost build, 4% core inflation and 4% variable, measured from the same Q3 2026 base [C14][C17].
+The bear misses the $350 FY2026E low end on a weaker fourth-quarter mix and no IHEEZO year-end recognition. It then freezes VEVYE share after December 2028, delays G-MELT past 2030, gives YOCHIL no revenue in the window, haircuts the other lines, and sets product gross margins about 3 points below the base [G2][S8][S15][S32][S18][S21][S22][S23][P8]. Bear FY2026E revenue is $337 and Adjusted EBITDA is $35.3, below the floor of more than $40 [G1][C5]. Combined bear Melt sales do not reach $100 of annual net sales in the window. The bull finishes at $359, above the low end and not set equal to the $365 high end. It sets VEVYE 8% above the workbook from January 2027, ramps G-MELT faster than the 15% base, and uses a faster YOCHIL penetration of the same IHEEZO one-third [S15][S21][S32][P8]. Combined bull Melt sales reach $100 in FY2029E and $250 in FY2032E, which would be $10.0 and then $25.0 of commercial cash, still not an EBITDA item [S12][A18][A20]. Product margins in the bull are about 1.5 points above the base, and launch spend is 8% above the base programs [S17][S33].
+
+The bear also carries operating leverage: core cash operating cost inflates at 5% instead of 4%, and the variable rate is 8% instead of 4% [S42][S40][S41]. That lever takes about $49 off bear FY2032E Adjusted EBITDA, to $560, so the margin is 45.1% rather than about 49% (derived) [S42][C22]. The bull keeps the base cost build [C14][C17]. Anything beyond those levers is qualitative. The forecast file does not contain a separate story for it.
+
+Figure 15 is revenue, EBITDA, and margin for the three cases.
 
 <div class="fig" markdown="1">
 
-**Figure 7 – Scenarios vs. the base (US$ millions)**
-
-By FY2032E the bear is $1,240 of revenue and $560 of Adjusted EBITDA, against $1,760 and $971 in the base and $1,954 and $1,127 in the bull.
+**Figure 15 – Headline scenarios, FY2026E–FY2032E (US$ millions)**
 
 | | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Revenue, bear | 337 | 602 | 782 | 920 | 1,018 | 1,126 | 1,240 |
 | Revenue, base | 347 | 665 | 899 | 1,125 | 1,353 | 1,582 | 1,760 |
 | Revenue, bull | 359 | 700 | 967 | 1,240 | 1,493 | 1,735 | 1,954 |
-| Adj. EBITDA, bear | 35.3 | 170 | 286 | 375 | 435 | 492 | 560 |
-| Adj. EBITDA, base | 42.5 | 217 | 371 | 535 | 692 | 850 | 971 |
-| Adj. EBITDA, bull | 51.7 | 247 | 425 | 625 | 804 | 974 | 1,127 |
+| Adjusted EBITDA, bear | 35.3 | 170 | 286 | 375 | 435 | 492 | 560 |
+| Adjusted EBITDA, base | 42.5 | 217 | 371 | 535 | 692 | 850 | 971 |
+| Adjusted EBITDA, bull | 51.7 | 247 | 425 | 625 | 804 | 974 | 1,127 |
 | EBITDA margin, bear | 10.5% | 28.3% | 36.6% | 40.8% | 42.7% | 43.6% | 45.1% |
 | EBITDA margin, base | 12.2% | 32.7% | 41.3% | 47.6% | 51.2% | 53.7% | 55.2% |
 | EBITDA margin, bull | 14.4% | 35.3% | 44.0% | 50.4% | 53.8% | 56.1% | 57.7% |
 
-*Source: `forecast.json` scenarios [C14][C17][S42]. Whole numbers at $100 and above. May not sum due to rounding.*
+*Source: `forecast.json` scenarios [C14][C17][S42]. May not sum due to rounding.*
 
 </div>
 
-<div class="fig" markdown="1">
-
-**Figure 7 (continued) – Value per share by scenario**
-
-The valuation keeps the same ordering as the EBITDA paths, and every case is above the share price.
-
-| | Bear | Base | Bull |
-|---|---:|---:|---:|
-| Value per share (US$) | 87.85 | 154.50 | 184.15 |
-| Share price (US$, 15 Nov 2026) | 28.30 | 28.30 | 28.30 |
-
-*Source: valuation result [D26][C28]; price [A24][P11].*
-
-</div>
-
-The line builds show that the bear's gap to the base is mostly VEVYE, whose share is frozen after December 2028, and G-MELT, which has only $15 of revenue by FY2032E; the bull's gain is mostly the 8% VEVYE increment from January 2027 and a faster G-MELT ramp [S21][S15][C12][P8].
+The bear's gap to the base is mostly VEVYE, whose share is frozen after December 2028, and G-MELT, which has $15 of revenue by FY2032E. The bull's gain is mostly the 8% VEVYE increment from January 2027 and a faster G-MELT ramp [S21][S15][C12][P8].
 
 <div class="fig" markdown="1">
 
-**Figure 14 – Bear case by line (US$ millions)**
+**Figure 16 – Bull and bear line builds, bear case, FY2026E–FY2032E (US$ millions)**
 
 | Line | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -993,13 +888,13 @@ The line builds show that the bear's gap to the base is mostly VEVYE, whose shar
 | Adjusted EBITDA | 35.3 | 170 | 286 | 375 | 435 | 492 | 560 |
 | EBITDA margin | 10.5% | 28.3% | 36.6% | 40.8% | 42.7% | 43.6% | 45.1% |
 
-*Source: `forecast.json` bear scenario [S8][S14][S15][S21][S22][S23][S32][S42]. Whole numbers at $100 and above. May not sum due to rounding.*
+*Source: bear scenario [S8][S14][S15][S21][S22][S23][S32][S42]. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**Figure 14 (continued) – Bull case by line (US$ millions)**
+**Figure 16 (continued) – Bull and bear line builds, bull case, FY2026E–FY2032E (US$ millions)**
 
 | Line | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -1015,220 +910,149 @@ The line builds show that the bear's gap to the base is mostly VEVYE, whose shar
 | Adjusted EBITDA | 51.7 | 247 | 425 | 625 | 804 | 974 | 1,127 |
 | EBITDA margin | 14.4% | 35.3% | 44.0% | 50.4% | 53.8% | 56.1% | 57.7% |
 
-*Source: `forecast.json` bull scenario [S15][S21][S32][S17][S33]. Whole numbers at $100 and above. May not sum due to rounding.*
+*Source: bull scenario [S15][S21][S32][S17][S33]. May not sum due to rounding.*
 
 </div>
 
-Figure 15 shows the bear cost build with the operating-leverage lever, which grows from about $9 of Adjusted EBITDA in FY2027E to about $49 by FY2032E (derived) [S42][C22].
+The bear cost build differs from the base. The bull keeps the base cost build, so it has no second bridge. Figure 17 is the bear bridge. The operating-leverage lever grows from about $9 of Adjusted EBITDA in FY2027E to about $49 by FY2032E (derived) [S42][C22].
 
 <div class="fig" markdown="1">
 
-**Figure 15 – Bear cash opex bridge with the operating-leverage lever (US$ millions)**
+**Figure 17 – Cash operating cost and margin bridge, bear case, FY2027E–FY2032E (US$ millions)**
 
 | | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E | FY2032E |
 |---|---:|---:|---:|---:|---:|---:|
-| Core cash opex (Q3 run rate, +5% a year) | 249 | 261 | 274 | 288 | 303 | 318 |
+| Core cash operating cost, up 5% a year | 249 | 261 | 274 | 288 | 303 | 318 |
 | TYRVAYA incremental | 20.0 | 20.0 | 20.0 | 20.0 | 20.0 | 20.0 |
 | G-MELT program | 0.0 | 0.0 | 0.0 | 0.0 | 9.0 | 9.5 |
 | YOCHIL program | 4.0 | 4.0 | 3.0 | 2.0 | 2.0 | 2.0 |
-| Same-store variable (8% of the increment) | 13.0 | 26.8 | 37.5 | 45.2 | 53.3 | 62.1 |
-| **Total cash opex** | **286** | **312** | **335** | **355** | **387** | **411** |
+| Same-store variable cost, 8% of the increment | 13.0 | 26.8 | 37.5 | 45.2 | 53.3 | 62.1 |
+| **Total cash operating cost** | **286** | **312** | **335** | **355** | **387** | **411** |
 | **Adjusted EBITDA** | **170** | **286** | **375** | **435** | **492** | **560** |
-| Adj. EBITDA without the lever (memo) | 179 | 304 | 402 | 468 | 532 | 609 |
+| Adjusted EBITDA without the lever (memo) | 179 | 304 | 402 | 468 | 532 | 609 |
 | Effect of the lever (derived) | -8.9 | -18.3 | -26.5 | -33.4 | -40.8 | -48.8 |
 
-*Source: `forecast.json` bear scenario and the cost-build file [S42][S40][S41][C14][C17]; lever effect (derived) [C22]. The bear's G-MELT and YOCHIL programs follow the bear launch path. May not sum due to rounding.*
+*Source: bear scenario [S42][S40][S41][C14][C17]. Lever effect (derived) [C22]. The G-MELT and YOCHIL programs follow the bear launch path. May not sum due to rounding.*
 
 </div>
 
-Figure 16 shows that the three cases share the stated 9.67% cost of debt, the pass-through of 1 and the 2.5x debt policy from FY2028E, and differ in year-0 debt, because the present value of each schedule is different, and in the three margin and growth judgments [D27][P13][S47][S43][S44].
+In the bull case, year-0 cash stays at $72.9 and the share count stays at 37.23. Year-0 debt is $250 plus the absolute present value of the bull schedule. These dollars are outside EBITDA and are not in a later cash-flow year [A21][P9][P13][C30].
 
 <div class="fig" markdown="1">
 
-**Figure 16 – Valuation inputs, three cases**
-
-| Input | Bear | Base | Bull |
-|---|---:|---:|---:|
-| Cost of equity | 10.60% | 10.60% | 10.60% |
-| Cost of debt | 9.67% | 9.67% | 9.67% |
-| Tax rate | 21.0% | 21.0% | 21.0% |
-| Terminal growth | 5.10% | 5.10% | 5.10% |
-| Expected inflation | 2.24% | 2.24% | 2.24% |
-| Inflation pass-through | 1 | 1 | 1 |
-| Terminal return on invested capital | 15.0% | 15.0% | 15.0% |
-| Shares (adjusted) | 37.23 | 37.23 | 37.23 |
-| Price (US$) | 28.30 | 28.30 | 28.30 |
-| Debt (year 0) | 337.5 | 364.4 | 378.6 |
-| Debt policy (Debt/EBITDA target) | 2.5x from FY2028E | 2.5x from FY2028E | 2.5x from FY2028E |
-| Cash (year 0) | 72.93 | 72.93 | 72.93 |
-| Starting margin | 45.1% | 55.2% | 57.7% |
-| Incremental margin (mc) | 60.7% | 65.6% | 67.2% |
-| Next-period growth (gsnext) | 10.0% | 10.6% | 11.8% |
-| Terminal WACC | 9.78% | 9.80% | 9.81% |
-
-*Source: valuation result [D27][C30]; judgments [S43][S44]; pinned market data [P11][A24][D25]; stated cash, debt, rd, pass-through and leverage [P12][P13][S47]. Shares are the 10-K count, in millions of shares. May not sum due to rounding.*
-
-</div>
-
-Figure 17 shows equity value as value per share times the share count (derived). The result file does not break out the terminal value, so that share is omitted [C30][C31].
-
-<div class="fig" markdown="1">
-
-**Figure 17 – Value bridge, three cases (US$ millions unless noted)**
-
-| | Bear | Base | Bull |
-|---|---:|---:|---:|
-| Equity value (derived: value per share × shares) | 3,318 | 5,849 | 6,975 |
-| Year-0 debt | 337.5 | 364.4 | 378.6 |
-| Firm value (derived: equity plus year-0 debt) | 3,656 | 6,214 | 7,353 |
-| Year-0 cash (not added again) | 72.93 | 72.93 | 72.93 |
-| Shares (millions of shares) | 37.23 | 37.23 | 37.23 |
-| **Value per share (US$)** | **89.13** | **157.11** | **187.34** |
-| vs. price (derived) | 215% | 455% | 562% |
-
-*Source: valuation result [D27][C30]; equity, firm value and vs. price (derived) [C31]; price [A24][P11]. May not sum due to rounding.*
-
-</div>
-
-In the bull case, year-0 cash stays at $72.93 and the share count stays at 37.23; year-0 debt is $250 plus the absolute present value of the bull schedule, $378.63. These dollars are outside EBITDA and are not in a later cash-flow year [A21][P5][P9][P13][C30].
-
-<div class="fig" markdown="1">
-
-**Balance Sheet Adjustments – bull case (US$ unless noted; dollars in the units of the table, which is US$ millions except the share count)**
+**Balance Sheet Adjustments, bull case (US$ millions unless noted)**
 
 | Item | Amount | Timing | Probability | Discount | Present value | Shares issued |
 |---|---:|---|---:|---:|---:|---:|
-| TYRVAYA close cash paid | -30.00 | 2026-10-01 | 1.00 | 1.0000 | -30.00 | 0.0000 |
-| Melt FDA-approval milestone payable | -87.17 | 2027-12-31 | 1.00 | 0.8928 | -77.82 | 0.0000 |
-| Melt first commercial Annual Net Sales cash milestone | -10.02 | 2029-12-31 | 1.00 | 0.7297 | -7.31 | 0.0000 |
-| Melt second commercial Annual Net Sales cash milestone | -25.02 | 2032-12-31 | 1.00 | 0.5393 | -13.49 | 0.0000 |
-| **Total present value / new shares** | | | | | **-128.63** | **0.0000** |
-| Opening cash / shares (31 Dec 2025) | | | | | 72.927 | 37.229705 |
-| **Year-0 cash / shares used** | | | | | **72.927** | **37.229705** |
-| Opening debt (31 Dec 2025) | | | | | 250.000 | |
-| **Year-0 debt used (opening plus absolute PV)** | | | | | **378.628** | |
+| TYRVAYA close cash paid | -30.0 | 2026-10-01 | 1.00 | 1.0000 | -30.0 | 0 |
+| Melt FDA-approval cash | -87.2 | 2027-12-31 | 1.00 | 0.8928 | -77.8 | 0 |
+| Melt first commercial cash milestone | -10.0 | 2029-12-31 | 1.00 | 0.7297 | -7.3 | 0 |
+| Melt second commercial cash milestone | -25.0 | 2032-12-31 | 1.00 | 0.5393 | -13.5 | 0 |
+| **Total present value / new shares** | | | | | **-128.6** | **0** |
+| Opening cash / shares (31 Dec 2025) | | | | | 72.9 | 37.23 |
+| **Year-0 cash / shares used** | | | | | **72.9** | **37.23** |
+| Opening debt (31 Dec 2025) | | | | | 250 | |
+| **Year-0 debt used** | | | | | **379** | |
 
-*Source: worked schedule and year-0 figures in the v06 valuation result [D27][C30]; items from the forecast file [A23][A15][A18][A20][S24][S25][S34][S35][S38][S39][C19][P9][P11][P13]. Discount is at the 10.60% cost of equity from the 15 November 2026 price date. Shares are in millions of shares. May not sum due to rounding.*
+*Source: [D27][C30][A23][A15][A18][A20][S34][S38][C19][P13]. Full precision: present values -30.00, -77.82, -7.31, -13.49, total -128.628; year-0 debt 378.628 [C30]. May not sum due to rounding.*
 
 </div>
 
-In the bear case, year-0 cash stays at $72.93 and the share count stays at 37.23; year-0 debt is $250 plus the absolute present value of the bear schedule, $337.51. These dollars are outside EBITDA and are not in a later cash-flow year [A21][P5][P9][P13][C30].
+In the bear case, year-0 cash stays at $72.9 and the share count stays at 37.23. Year-0 debt is $250 plus the absolute present value of the bear schedule [A21][P9][P13][C30].
 
 <div class="fig" markdown="1">
 
-**Balance Sheet Adjustments – bear case (US$ unless noted; dollars in the units of the table, which is US$ millions except the share count)**
+**Balance Sheet Adjustments, bear case (US$ millions unless noted)**
 
 | Item | Amount | Timing | Probability | Discount | Present value | Shares issued |
 |---|---:|---|---:|---:|---:|---:|
-| TYRVAYA close cash paid | -30.00 | 2026-10-01 | 1.00 | 1.0000 | -30.00 | 0.0000 |
-| Melt FDA-approval milestone payable | -87.17 | 2030-12-31 | 1.00 | 0.6598 | -57.51 | 0.0000 |
-| **Total present value / new shares** | | | | | **-87.51** | **0.0000** |
-| Opening cash / shares (31 Dec 2025) | | | | | 72.927 | 37.229705 |
-| **Year-0 cash / shares used** | | | | | **72.927** | **37.229705** |
-| Opening debt (31 Dec 2025) | | | | | 250.000 | |
-| **Year-0 debt used (opening plus absolute PV)** | | | | | **337.514** | |
+| TYRVAYA close cash paid | -30.0 | 2026-10-01 | 1.00 | 1.0000 | -30.0 | 0 |
+| Melt FDA-approval cash | -87.2 | 2030-12-31 | 1.00 | 0.6598 | -57.5 | 0 |
+| **Total present value / new shares** | | | | | **-87.5** | **0** |
+| Opening cash / shares (31 Dec 2025) | | | | | 72.9 | 37.23 |
+| **Year-0 cash / shares used** | | | | | **72.9** | **37.23** |
+| Opening debt (31 Dec 2025) | | | | | 250 | |
+| **Year-0 debt used** | | | | | **338** | |
 
-*Source: worked schedule and year-0 figures in the v06 valuation result [D27][C30]; items from the forecast file [A23][A15][S24][S25][C19][P9][P11][P13]. Discount is at the 10.60% cost of equity from the 15 November 2026 price date. Shares are in millions of shares. May not sum due to rounding.*
+*Source: [D27][C30][A23][A15][C19][P13]. Full precision: present values -30.00 and -57.51, total -87.514; year-0 debt 337.514 [C30]. May not sum due to rounding.*
 
 </div>
 
+The bull and bear year statements below are the rows the result carries for those cases. The value per share is the result for the case and is not a row. The per-year series is in Appendix B [C30]. In the bear series, value per share falls from $105.86 in FY2027E to $104.58 in FY2028E. That dip is left as printed [C30].
+
 <div class="fig" markdown="1">
 
-**Figure 11 – Finagle key rows, bull case, FY2025A–FY2030E (US$ millions unless noted)**
+**Bull-case year statement, FY2025A–FY2030E (US$ millions unless noted)**
+
+*HROW. Price $28.30. Shares 37.23. Cost of equity 10.60%. Cost of debt 9.67%. Tax 21.0%. Terminal growth 5.10%.*
 
 | | FY2025A | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E |
 |---|---:|---:|---:|---:|---:|---:|
 | Revenue | 272 | 359 | 700 | 967 | 1,240 | 1,493 |
 | EBITDA | 61.9 | 51.7 | 247 | 425 | 625 | 804 |
-| Capex | 0.9 | 14.6 | 68.6 | 111 | 154 | 194 |
+| Capital expenditure | 0.9 | 14.6 | 68.6 | 111 | 154 | 194 |
 | Debt | 379 | 379 | 379 | 1,063 | 1,563 | 2,009 |
 | Debt change (derived) | — | 0.0 | 0.0 | 684 | 499 | 447 |
-| Debt/EBITDA (derived) | 6.1x | 7.3x | 1.5x | 2.5x | 2.5x | 2.5x |
+| Debt / EBITDA (derived) | 6.1x | 7.3x | 1.5x | 2.5x | 2.5x | 2.5x |
 | Cash | 72.9 | 62.9 | 135 | 962 | 1,638 | 2,300 |
-| Value per share (US$) | 187.34 | 205.31 | 225.13 | 226.79 | 232.67 | 239.58 |
 
-*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. Header: HROW, price $28.30, shares 37.23 (millions of shares), cost of equity 10.60%, terminal growth 5.10%. May not sum due to rounding.*
+*Source: [D27][C30]. Debt change and Debt/EBITDA (derived) [C31]. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**Figure 11 (continued) – Finagle key rows, bull case, FY2031E–FY2035E (US$ millions unless noted)**
+**Bull-case year statement (continued), FY2031E–FY2035E (US$ millions unless noted)**
 
 | | FY2031E | FY2032E | FY2033E | FY2034E | FY2035E |
 |---|---:|---:|---:|---:|---:|
 | Revenue | 1,735 | 1,954 | 2,184 | 2,393 | 2,569 |
 | EBITDA | 974 | 1,127 | 1,282 | 1,423 | 1,541 |
-| Capex | 233 | 267 | 304 | 337 | 365 |
+| Capital expenditure | 233 | 267 | 304 | 337 | 365 |
 | Debt | 2,434 | 2,818 | 3,205 | 3,557 | 3,852 |
 | Debt change (derived) | 425 | 384 | 388 | 351 | 295 |
-| Debt/EBITDA (derived) | 2.5x | 2.5x | 2.5x | 2.5x | 2.5x |
+| Debt / EBITDA (derived) | 2.5x | 2.5x | 2.5x | 2.5x | 2.5x |
 | Cash | 2,978 | 3,647 | 4,356 | 5,057 | 5,725 |
-| Value per share (US$) | 246.77 | 254.95 | 262.94 | 271.98 | 282.89 |
 
-*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. May not sum due to rounding.*
+*Source: [D27][C30][C31]. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**Figure 11 – Finagle key rows, bear case, FY2025A–FY2030E (US$ millions unless noted)**
+**Bear-case year statement, FY2025A–FY2030E (US$ millions unless noted)**
+
+*HROW. Price $28.30. Shares 37.23. Cost of equity 10.60%. Cost of debt 9.67%. Tax 21.0%. Terminal growth 5.10%.*
 
 | | FY2025A | FY2026E | FY2027E | FY2028E | FY2029E | FY2030E |
 |---|---:|---:|---:|---:|---:|---:|
 | Revenue | 272 | 337 | 602 | 782 | 920 | 1,018 |
 | EBITDA | 61.9 | 35.3 | 170 | 286 | 375 | 435 |
-| Capex | 0.9 | 10.7 | 50.7 | 78.0 | 98.8 | 114 |
+| Capital expenditure | 0.9 | 10.7 | 50.7 | 78.0 | 98.8 | 114 |
 | Debt | 338 | 338 | 338 | 715 | 938 | 1,087 |
 | Debt change (derived) | — | 0.0 | 0.0 | 378 | 222 | 150 |
-| Debt/EBITDA (derived) | 5.5x | 9.6x | 2.0x | 2.5x | 2.5x | 2.5x |
+| Debt / EBITDA (derived) | 5.5x | 9.6x | 2.0x | 2.5x | 2.5x | 2.5x |
 | Cash | 72.9 | 57.7 | 103 | 569 | 888 | 1,141 |
-| Value per share (US$) | 89.13 | 96.82 | 105.86 | 104.58 | 107.10 | 111.65 |
 
-*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. Header: HROW, price $28.30, shares 37.23 (millions of shares), cost of equity 10.60%, terminal growth 5.10%. May not sum due to rounding.*
+*Source: [D27][C30][C31]. May not sum due to rounding.*
 
 </div>
 
 <div class="fig" markdown="1">
 
-**Figure 11 (continued) – Finagle key rows, bear case, FY2031E–FY2035E (US$ millions unless noted)**
+**Bear-case year statement (continued), FY2031E–FY2035E (US$ millions unless noted)**
 
 | | FY2031E | FY2032E | FY2033E | FY2034E | FY2035E |
 |---|---:|---:|---:|---:|---:|
 | Revenue | 1,126 | 1,240 | 1,365 | 1,479 | 1,579 |
 | EBITDA | 492 | 560 | 635 | 705 | 765 |
-| Capex | 130 | 147 | 166 | 183 | 198 |
+| Capital expenditure | 130 | 147 | 166 | 183 | 198 |
 | Debt | 1,229 | 1,400 | 1,588 | 1,762 | 1,913 |
 | Debt change (derived) | 142 | 170 | 189 | 174 | 151 |
-| Debt/EBITDA (derived) | 2.5x | 2.5x | 2.5x | 2.5x | 2.5x |
+| Debt / EBITDA (derived) | 2.5x | 2.5x | 2.5x | 2.5x | 2.5x |
 | Cash | 1,397 | 1,697 | 2,033 | 2,368 | 2,692 |
-| Value per share (US$) | 116.63 | 120.93 | 124.72 | 128.95 | 133.92 |
 
-*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. May not sum due to rounding.*
-
-</div>
-
-Figure 18 is the bull medium-term organic growth bridge; a faster G-MELT ramp to 1.4 million units adds more than in the base, and VEVYE is 8% above the extended workbook, for growth of 11.8% (derived) [S44][C26][P8][P10]. The bear's next year keeps VEVYE share frozen at the December 2028 level while the market and the price path continue, for growth of 10.0% [S44][P8][P10].
-
-<div class="fig" markdown="1">
-
-**Figure 18 – Medium-term organic growth, bull case (US$ millions)**
-
-| Line | FY2032E | FY2033E | Change |
-|---|---:|---:|---:|
-| VEVYE | 967 | 1,108 | 141 |
-| IHEEZO | 187 | 187 | 0.9 |
-| TRIESENCE | 296 | 340 | 43.2 |
-| Other branded | 146 | 152 | 6.2 |
-| Other revenues | 0.6 | 0.6 | 0.0 |
-| ImprimisRx | 86.2 | 88.5 | 2.2 |
-| G-MELT | 244 | 280 | 36.2 |
-| YOCHIL | 27.4 | 28.2 | 0.8 |
-| Continued path (none beyond the lines) | — | — | — |
-| **Total revenue** | **1,954** | **2,184** | **231** |
-| Growth (derived) | | | 11.8% |
-
-*Source: bull FY2032E lines (`forecast.json`); FY2033E next-year build [S44]; growth (derived) [C26]. May not sum due to rounding.*
+*Source: [D27][C30][C31]. May not sum due to rounding.*
 
 </div>
 
@@ -1248,15 +1072,15 @@ Canonical tags only. Instance suffixes such as C10_1 in `forecast.json` distingu
 
 **D5** SEC EDGAR / Harrow, Inc. Exhibit 99.2 to Form 8-K, Q4 and full-year 2025 Letter to Stockholders, dated 2 March 2026: https://www.sec.gov/Archives/edgar/data/1360214/000149315226008552/ex99-2.htm (HTML).
 
-**D6** SEC EDGAR / Melt Pharmaceuticals Milestone Payment Agreement, Exhibit 10.1 to Harrow Form 8-K, Schedule A (2025): https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm (HTML).
+**D6** SEC EDGAR / Harrow, Inc., Melt Pharmaceuticals Milestone Payment Agreement, dated 24 September 2025, Exhibit 10.1, Schedule A: https://www.sec.gov/Archives/edgar/data/1360214/000149315225016473/ex10-1.htm (HTML).
 
-**D7** SEC EDGAR / Harrow, Inc. Form 8-K announcing the Melt merger agreement (signing): https://www.sec.gov/Archives/edgar/data/1360214/000149315225015054/form8-k.htm (HTML).
+**D7** SEC EDGAR / Harrow, Inc. Form 8-K announcing the Melt merger agreement, earliest event 24 September 2025, filed 26 September 2025: https://www.sec.gov/Archives/edgar/data/1360214/000149315225015054/form8-k.htm (HTML).
 
 **D8** SEC EDGAR / Harrow, Inc. Form 8-K announcing closing of the Melt acquisition on 17 November 2025: https://www.sec.gov/Archives/edgar/data/1360214/000149315225023988/form8-k.htm (HTML).
 
 **D9** SEC EDGAR / Harrow, Inc. Form 8-K, closing of the TYRVAYA asset purchase on 1 October 2026: https://www.sec.gov/Archives/edgar/data/1360214/000162828026064749/hrow-20261001.htm (HTML).
 
-**D10** SEC EDGAR / Harrow, Inc. Form 8-K announcing the TYRVAYA asset purchase agreement (signing): https://www.sec.gov/Archives/edgar/data/1360214/000149315226036256/form8-k.htm (HTML).
+**D10** SEC EDGAR / Harrow, Inc. Form 8-K announcing the TYRVAYA asset purchase agreement, agreement dated 3 August 2026, filed 6 August 2026: https://www.sec.gov/Archives/edgar/data/1360214/000149315226036256/form8-k.htm (HTML).
 
 **D11** SEC EDGAR / TYRVAYA Asset Purchase Agreement, Exhibit 2.1 to the Q3 2026 Form 10-Q. Sales-milestone dollar thresholds in the APA were not independently re-verified in this pass: https://www.sec.gov/Archives/edgar/data/1360214/000162828026072325/hrow-20260930xexx21.htm (HTML).
 
@@ -1284,13 +1108,13 @@ Canonical tags only. Instance suffixes such as C10_1 in `forecast.json` distingu
 
 **D23** U.S. Bureau of Labor Statistics / Employment Cost Index News Release, September 2026 (USDL-26-1620), released 30 October 2026: https://www.bls.gov/news.release/eci.htm (HTML; Table A).
 
-**D24** Finagle / collaborative valuation result for HROW (values, worked cash schedule, year rows, run record), run 15 November 2026 at Finagle commit 377f177b4013e713fe7c4603962e5f883a67e298: file `collab/valuation_result_v03.json` in this folder, with the case files and notebooks beside it (local file; no public URL). The 14 November v02 result is left in the same folder and does not value this path. A later rerun with the pass-through held at zero matched these values within a few tenths of a cent.
+**D24** Valuation result for HROW (values, worked cash schedule, year rows, run record), run 15 November 2026 at commit 377f177b4013e713fe7c4603962e5f883a67e298: file `collab/valuation_result_v03.json` in this folder, with the case files and notebooks beside it (local file; no public URL). The 14 November v02 result is left in the same folder and does not value this path. A later rerun with the pass-through held at zero matched these values within a few tenths of a cent. Defaults filled on that run, not set by us: cost of equity 5.5% plus the 10-year yield; terminal growth equal to the 10-year yield; terminal return 15%; tax the U.S. federal statutory rate; cost of debt equal to year-0 interest of $24.18 divided by year-0 debt of $250; debt policy the year-0 Debt/EBITDA of 4.04x from the first forecast year; no working-capital change; no distribution; no net operating loss; no non-operating assets.
 
 **D25** Federal Reserve Bank of St. Louis / FRED series T10YIE, 10-year breakeven inflation rate: https://fred.stlouisfed.org/series/T10YIE (HTML). The last observation on or before 15 November 2026 is 13 November 2026, 2.24 percent. The runner's own fetch of the series did not load, so the 22 November request pins this print.
 
-**D26** Finagle / collaborative valuation result for HROW, run 22 November 2026 at 20:49 UTC. The recorded commit is 377f177b4013e713fe7c4603962e5f883a67e298, and the checkout also held the uncommitted inflation pass-through. File `collab/valuation_result_v04.json` in this folder, with the case files and notebooks beside it (local file; no public URL). The request is `collab/valuation_request_v04.json`.
+**D26** Valuation result for HROW, run 22 November 2026 at 20:49 UTC. The recorded commit is 377f177b4013e713fe7c4603962e5f883a67e298, and the checkout also held the uncommitted inflation pass-through. File `collab/valuation_result_v04.json` in this folder, with the case files and notebooks beside it (local file; no public URL). The request is `collab/valuation_request_v04.json`.
 
-**D27** Finagle / collaborative valuation results for HROW on 22 November 2026 at Finagle commit fd50e97984c3b7135cf0d17f665c4c115655f471. v05 (lam=1, cash-funded schedule, flagged not a valuation) is `collab/valuation_result_v05.json`, run at 21:33 ET; the v04 control on the same commit is `collab/valuation_result_v04_control.json`. v06 (lam=1, debt-funded schedule, 2.5x Debt/EBITDA from year 3) is `collab/valuation_result_v06.json`, run at 22:03 ET (America/Toronto), with the request `collab/valuation_request_v06.json`, sha256 8cad3282baaf7389837b3db6339d4db29c30fc60e7ca03f446108f2b150d757e, and the case files and notebooks beside it (local files; no public URL).
+**D27** Valuation results for HROW on 22 November 2026 at commit fd50e97984c3b7135cf0d17f665c4c115655f471. v05 (lam=1, cash-funded schedule, flagged not a valuation) is `collab/valuation_result_v05.json`, run at 21:33 ET; the v04 control on the same commit is `collab/valuation_result_v04_control.json`. v06 (lam=1, debt-funded schedule, 2.5x Debt/EBITDA from year 3) is `collab/valuation_result_v06.json`, run at 22:03 ET (America/Toronto), with the request `collab/valuation_request_v06.json`, sha256 8cad3282baaf7389837b3db6339d4db29c30fc60e7ca03f446108f2b150d757e, and the case files and notebooks beside it (local files; no public URL).
 
 
 ### Actuals
@@ -1338,7 +1162,7 @@ Canonical tags only. Instance suffixes such as C10_1 in `forecast.json` distingu
 
 **A23** "On October 1, 2026, we paid $30,000,000 in cash at the closing of the TYRVAYA acquisition, funded with cash on hand and without borrowings under our credit facility." (D1, MD&A liquidity.)
 
-**A24** "^TNX info.previousClose 5.103 on 2026-11-15, percent divided by 100"; share price "info.previousClose" $28.30 as of 2026-11-15, both fetched by Finagle from Yahoo Finance; shares fetched 37.229705 million from the FY2025 10-K. This run states no share-count override. (D24, market and rates fetch record.)
+**A24** "^TNX info.previousClose 5.103 on 2026-11-15, percent divided by 100"; share price "info.previousClose" $28.30 as of 2026-11-15, both fetched for the valuation from Yahoo Finance; shares fetched 37.229705, in millions of shares, from the FY2025 10-K. This run states no share-count override. (D24, market and rates fetch record.)
 
 ### Guidance and management statements
 
@@ -1401,9 +1225,9 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 ### Assumptions
 
-**S1** Q4 2026E VEVYE is the October–December 2026 path of the Vevye workbook (P8). September 2026 is 118 thousand TRx. October, November and December grow 5% a month. Price starts at $117 per TRx and each month closes 3% of the gap to $200. Revenue is price times TRx, and TRx on the sheet is in thousands, so dollars are divided by 1,000. Q4 2026E is $46.694 million on 390,595 TRx. Nine-month printed revenue of $90.033 million is unchanged. TRx is a model unit, not a reported prescription count. (P8; workbook in this folder, `Vevye model.xlsx`.)
+**S1** Q4 2026E VEVYE is the October–December 2026 path of the Vevye and Iheezo workbook (P10). September 2026 is 118 thousand TRx. October, November and December grow 5% a month. Price starts at $117 per TRx and each month closes 3% of the gap to $200. Those three months do not yet use the share formula, so this quarter matches the 14 November workbook. Revenue is price times TRx. TRx is in thousands on the sheet, so dollars are divided by 1,000. Q4 2026E is $46.694 on 390,595 TRx. Nine-month printed revenue of $90.033 is unchanged, so FY2026E VEVYE is $136.727. TRx is a model unit, not a reported prescription count. (P10; workbook in this folder.)
 
-**S2** Q4 2026E IHEEZO demand is 62,814 × (62,210 / 51,545) = 75,811 customer units, which is the Q3 2026 year-over-year unit add of 10,665 allocated with 2025 seasonal weights. Q4 dollars use the Q3 2026 realization of $406.64 per customer unit times the 2024 Q4/Q3 recognition lift of 1.242, not the 2025 lift of 1.344 and not a demand-only case. The lift is a channel-recognition mechanism, not a true ASP. 2026 is the first year-end without pass-through; the milder 2024 factor is used for that reason. (D3, IHEEZO seasonality commentary.)
+**S2** Q4 2026E IHEEZO customer units are 75,811, the sheet's normalized fourth quarter, which equals 62,814 × (62,210 / 51,545). Dollars use the sheet's assumption that Q4 2026 recognizes half of the 2025 fourth-quarter distributor-to-clinic seasonal effect. The 2025 fourth-quarter revenue per customer unit was $571.26 against a reconstructed 2025 price of $402.62 (FY2025A IHEEZO revenue divided by 202,045 units), a ratio of 1.419. Half of that effect is a multiplier of 1.209. The price is the sheet's 2027 price, 10% above the 2025 price, or $442.88 per customer unit. Q4 revenue is 75,811 × 1.209 × $442.88 = $40.607. The bull uses the full 2025 ratio (1.419) and the bear uses no seasonal multiplier (S45). Realization is revenue per customer unit, not a separate list price. (P10.)
 
 **S3** Q4 2026E TRIESENCE units continue the average of the last two deck increments (4,669 and 5,419, average 5,044), so Q4 units are 20,022 + 5,044 = 25,066. Realization is held at the Q3 2026 ratio of $534.76 per customer unit. Realization is not a true ASP. Q1–Q2 2026 dollars were allocated, not measured quarterly prices, and are not used as a seasonal price path. (D3, TRIESENCE.)
 
@@ -1413,7 +1237,7 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **S6** FY2027E TYRVAYA revenue of $33 sits just above the conditional management floor of revenue “in excess of $30 million,” and is Harrow product sales, not a profit share. The floor is conditional on the unresolved Novaliq consent. FY2028E $36 is a modest step-up, not a peak. No 2027 sales milestone is assumed, consistent with the 10-Q statement that anticipated 2027 revenue is not sufficient to hit the first milestone. (D1, TYRVAYA.)
 
-**S7** BYOOVIZ and OPUVIZ dollars are forecast as Harrow-recognized product sales inside Other branded, consistent with Other branded (not Other revenues) being the residual product bucket after July 1, 2026 and with Harrow having exclusive U.S. commercial rights and full commercial responsibility. The Samsung 'share of net sales' rate is undisclosed, and the filings reviewed do not include a principal-versus-agent policy for the biosimilars. If the share is presented net of revenue, Harrow-recognized dollars would be lower than an end-market figure; if presented gross, the share reduces gross margin. The rate is not assumed to be zero. Market-size figures of $9 billion / $4.2 billion are not used as a Harrow forecast. (D1 / D12 / D13, Samsung accounting.)
+**S7** BYOOVIZ and OPUVIZ dollars are forecast as Harrow-recognized product sales inside Other branded, consistent with Other branded (not Other revenues) being the residual product bucket after July 1, 2026 and with Harrow having exclusive U.S. commercial rights and full commercial responsibility. The Samsung 'share of net sales' rate is undisclosed, and the filings reviewed do not say whether Harrow is principal or agent for the biosimilars. If the share is presented net of revenue, Harrow-recognized dollars would be lower than an end-market figure; if presented gross, the share reduces gross margin. The rate is not assumed to be zero. Market-size figures of $9 billion / $4.2 billion are not used as a Harrow forecast. (D1 / D12 / D13, Samsung accounting.)
 
 **S8** Superseded as the base G-MELT timing assumption by S15. The November 2026 deck still dates a 2028 launch as conditional on approval (slide 5 and slide 27). There is no dated, specific mechanism in the latest sources that would cause a 2028 launch, if approved on a Q4 2027 standard-review PDUFA, to be missed. The base therefore uses mid-2028 first shipments. The earlier no-revenue-through-FY2028 path is retained only as the bear case (approval delay or non-approval). (D15 / D2, G-MELT timing.)
 
@@ -1441,7 +1265,7 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **S19** Product gross margins before amortization used in the weighted build: VEVYE 80%, IHEEZO 82%, TRIESENCE 80%, TYRVAYA 79% (company: branded-like before amort and inventory step-up), legacy/BYQLOVI 78%, compounding 55% (Q3 55.2%), G-MELT 72% after the Catalent comparator and manufacturing (S16), biosimilars 52% (S18). GAAP consolidated gross margin equals this product gross profit minus amortization, divided by revenue. (D1, product GM.)
 
-**S20** FY2027E core cash opex is the Q3 2026 cash run rate of $59.258 million, annualized and inflated 4% (S40, BLS ECI-based named rate), or $246.513 million. That run rate already includes the 2026 commercial expansion (Q3 SG&A $53.1 million vs. $35.9 million a year earlier) and elevated R&D (Q3 $10.3 million vs. $3.3 million) and already pays for the Q3 2026 revenue pace. TYRVAYA’s verified ~$20 million incremental annual opex is added once from FY2027E. Same-store volume-variable opex is 4% (S41) of same-store VEVYE, IHEEZO, TRIESENCE, legacy, compounding and other-revenue dollars above the Q3 2026 annualized same-store revenue (C17), so dedicated TYRVAYA, G-MELT and YOCHIL program costs and the Samsung take on BYOOVIZ/OPUVIZ are not double-counted as variable. Core opex then grows 4% a year. This is an assumption, not a company budget. (D3, SG&A / R&D run rate.)
+**S20** FY2027E core cash operating cost is the Q3 2026 cash run rate of $59.258, annualized and inflated 4% (S40), or $246.513. That run rate already includes the 2026 commercial expansion (Q3 selling, general and administrative expense of $53.1 vs. $35.9 a year earlier) and elevated research (Q3 $10.3 vs. $3.3) and already pays for the Q3 2026 revenue pace. TYRVAYA's verified incremental annual operating cost of about $20 is added once from FY2027E. Same-store variable operating cost is 4% (S41) of same-store VEVYE, IHEEZO, TRIESENCE, legacy, compounding and other-revenue dollars above the Q3 2026 annualized same-store revenue (C17), so dedicated TYRVAYA, G-MELT and YOCHIL program costs and the Samsung take on BYOOVIZ and OPUVIZ are not double-counted as variable. Core operating cost then grows 4% a year. This is an assumption, not a company budget. (D3, run rate.)
 
 **S21** FY2027E–FY2032E VEVYE follows the Vevye workbook (P8), extended with the same recurrences through December 2032. From January 2027, monthly TRx is share times market size. December 2026 share is 15.5%. Monthly share gains start at 0.65 points in January 2027 and are multiplied by 0.9 each month, so share approaches 22%. December 2026 market size is that month’s TRx divided by 15.5%, then the market grows 1% a month. Price continues to close 3% of the gap to $200 each month. Dollars, US$ millions: 285.252 / 415.967 / 526.599 / 632.244 / 740.493 / 855.547. Bull is 8% above the published workbook dollars from January 2027. Bear matches the workbook through December 2028 (share 21.48%) and then holds that share while the market and the price path continue. Product gross margin stays 80% in the base. TRx is a model unit. Composition-patent expiry from December 2030 remains a later-window risk. (P8; `Vevye model.xlsx`.)
 
@@ -1453,7 +1277,7 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **S25** Probability is 1 in the base because the unweighted 2028 G-MELT launch already in the revenue path is conditional on approval; the cash is not haircut a second time. The payment remains outside EBITDA. (Melt Schedule A; S12.)
 
-**S32** Base YOCHIL (MELT-210) revenue is an unweighted, conditional path on the company's expected 2028 timing. End-of-Phase 2 was completed in the quarter ended 30 June 2026 (letter dated 10 August 2026); Phase 3 is still ahead and there is no NDA in 2026, so a 2028 launch is tighter than G-MELT's. Units = penetration x (1/3) x that year's IHEEZO customer units, with the same penetration fractions as the G-MELT ramp (60/750, 1/3, 2/3, 1, 1). The official IHEEZO unit identity is used (FY28 327,457, then +41,804 a year). Assumed net price follows the G-MELT $175-$195 path; no YOCHIL price is disclosed. YOCHIL is not placed on the cataract 15% target, and G-MELT is not given the IHEEZO third. Compounded MKO remains in ImprimisRx and is not double-counted. The broader diagnostic, endoscopic and anesthesia-induction market is upside and is not in the base. (D20, D22, D15, P4.)
+**S32** Base YOCHIL (MELT-210) revenue is an unweighted, conditional path on the company's expected 2028 timing. End-of-Phase 2 was completed in the quarter ended 30 June 2026; Phase 3 is still ahead, so a 2028 launch is tighter than G-MELT's. Units = penetration × (1/3) × that year's IHEEZO customer units from the 15 November workbook (P10), with the same penetration fractions as the G-MELT ramp (60/750, 1/3, 2/3, 1, 1). IHEEZO units are 366,579 / 394,494 / 409,514 / 417,311 / 421,283 in FY2028E–FY2032E. Assumed net price follows the G-MELT $175–$195 path. Revenue is $1.711 / $7.890 / $16.836 / $26.430 / $27.383. The bull uses penetration 0.20 / 0.50 / 1 / 1 / 1 on the same units (S45). The bear has no YOCHIL revenue in the window. YOCHIL is not placed on the cataract 15% target. Compounded MKO remains in ImprimisRx. (D20, D15, P4, P10.)
 
 **S33** Assumed modest YOCHIL program on the existing Surgical team: $6.0 / $10.0 / $8.0 / $8.5 / $9.0 / $9.5 in FY2027E-FY2032E (about half the G-MELT program), with a +/-40% band. Not zero and not a second sales force. Starts in FY2027E because Q4 2026 already includes a $4 G-MELT filing allowance and accelerated R&D that already names YOCHIL. (D3, G15, G23.)
 
@@ -1475,15 +1299,19 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **S42** Named bear cost lever (operating leverage): core cash opex inflates at 5% (top of the S40 band) from the same Q3 2026 run rate and the variable rate is 8% (top of the S41 band). It sits beside the bear volume and product-margin levers. It is not a base-case opex path. (D23 / D1, n/a.)
 
-**S43** Contribution margin (mc) is set halfway between the last explicit year’s EBITDA margin (me) and that year’s GAAP gross margin, the band an extra dollar of sales falls in. GAAP gross margin was 75% in FY2024A and FY2025A and 71% in 9M 2026. Base: (0.5393 + 0.7576) / 2 = 0.6484. Bull: (0.5653 + 0.7646) / 2 = 0.6650. Bear: (0.2245 + 0.7557) / 2 = 0.4901. All sit above the reported history of low-20s Adjusted EBITDA margins. (D1 / D2, gross margin history.)
+**S43** Contribution margin (mc) is set halfway between the last explicit year's EBITDA margin (me) and that year's GAAP gross margin. GAAP gross margin was 75% in FY2024A and FY2025A and 71% in the first nine months of 2026. Base: (0.551603 + 0.760045) / 2 = 0.655824. Bull: (0.576890 + 0.767454) / 2 = 0.672172. Bear: (0.451310 + 0.762645) / 2 = 0.606977. All sit above the reported history of low-20s Adjusted EBITDA margins. The pipeline was considered and did not move mc, because a 72% product gross margin sits close to the FY2032E mix. (C18, S16, A3, A5.)
 
 **S44** gsnext is FY2033E revenue from one more year of the same build divided by FY2032E revenue, minus 1. VEVYE and IHEEZO use the 15 November workbook extended one more year (P10). Base FY2033E 1,946.467: VEVYE 1,026.244; IHEEZO 187.468; TRIESENCE 339.536; Other branded 135.5; Other revenues 0.5; compounding 79; G-MELT 150.0; YOCHIL 28.219. gsnext 10.61%. Bull FY2033E 2,184.367, with VEVYE at 1.08 times the workbook (1,108.344) and IHEEZO equal to the base: gsnext 11.80%. Bear FY2033E 1,364.881, with VEVYE share held at the December 2028 level (999.021) and IHEEZO on the half-increment path (147.733): gsnext 10.03%. (drivers.csv, n/a.)
 
-**S45** Finagle defaults filled in this run, not set by us: cost of equity "0.055 plus the 10-year yield"; terminal growth "Terminal growth equals the 10-year yield"; "Terminal ROIC of 15 percent"; tax "US federal statutory tax rate. No marginal rate was stated"; cost of debt "Year-0 interest divided by year-0 debt" (interest $24.18 from Yahoo Finance; debt $250.0 from the 10-K); debt policy "No debt policy was stated, so the target leverage is the year-0 Debt/EBITDA" (4.04x) and "The target applies from the first forecast year"; working capital "No working-capital change was stated"; distributions "No distribution was stated"; "No net operating loss was stated"; "No non-operating assets were stated". (D24, case provenance.)
+**S45** Scenario rules on the 15 November 2026 IHEEZO sheet, continuing the existing levers rather than a new story. Base Q4 uses half of the 2025 Q4 distributor/clinic ratio, which is the assumption written on the sheet. Bull Q4 uses the full 2025 ratio. Bear Q4 uses customer units times the 2027 ASP and no seasonal multiplier. From FY2027E the bull matches the base unit path. The bear adds half of each base-unit increment vs. the normalized 2026 base of 243,849, at the same 2027 ASP. The 10% ASP step is in all three cases because it is the sheet's price, not a scenario lever. Product gross margins stay 1.5 points above the base in the bull and 3 points below in the bear. Bull YOCHIL penetration is 0.20 / 0.50 / 1 / 1 / 1 of the same IHEEZO one-third. Bear YOCHIL revenue is zero. (judgment.)
+
+**S46** Inflation pass-through of 0.25, a valuation default on the 22 November run that pinned inflation and did not state a pass-through. Zero leaves the reinvestment rate at terminal growth divided by the terminal return. One is the Bradley-Jarrell rate, growth less inflation over the return less inflation. A quarter of the 2.24% breakeven is the offset used in that run. (D26, P11.)
+
+**S47** Inflation pass-through of 1, stated in P12. This is the Bradley-Jarrell rate: terminal reinvestment is (terminal growth − inflation) / (terminal return − inflation). Used on the runs that set the pass-through to 1. (P12, D27, D25.)
 
 ### Calculations
 
-**C1** FY2026E revenue = nine-month 2026 printed actual (A2) + Q4 2026E. VEVYE 90.033+46.694=136.727; IHEEZO 42.833+38.287=81.12; TRIESENCE 20.134+13.404=33.538; Other branded 16.944+15.0=31.944; Other revenues 0.327+0.2=0.527; Compounding 43.890+17.0=60.890; G-MELT 0; YOCHIL 0; total 214.161+130.585=344.746. Inputs: A2, S1, S2, S3, S4, S5, P2, P8.
+**C1** FY2026E revenue = nine-month 2026 printed actual (A2) + Q4 2026E. VEVYE 90.033+46.694=136.727; IHEEZO 42.833+40.607=83.440; TRIESENCE 20.134+13.404=33.538; Other branded 16.944+15.0=31.944; Other revenues 0.327+0.2=0.527; Compounding 43.890+17.0=60.890; G-MELT 0; YOCHIL 0; total 214.161+132.905=347.066. The VEVYE line identity is the same 90.033+46.694=136.727 (S1, P10). Exact quarterly dollars before display rounding: VEVYE 20.95 / 29.39 / 39.70 / 46.69; IHEEZO 1.85 / 15.62 / 25.30 / 40.61; TRIESENCE 3.82 / 5.61 / 10.71 / 13.40; BYOOVIZ 0 / 0 / 2.92 / 4.00; rest of Other branded 4.02 / 5.40 / 4.68 / 11.00; other revenues 0.07 / 0.09 / 0.16 / 0.20; ImprimisRx 13.50 / 14.56 / 15.84 / 17.00; totals 44.20 / 70.66 / 99.30 / 132.91 and FY 347.066. Inputs: A2, S1, S2, S3, S4, S5, P10.
 
 **C2** Implied Q4 2026 revenue to hit the reaffirmed $350–365 range: 350−214.161=135.839 and 365−214.161=150.839. Inputs: A2, G2.
 
@@ -1491,7 +1319,7 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **C4** Q3 2026 cash operating expenses = GAAP opex $63.432 − SBC $3.728 − depreciation $0.446 = $59.258. Q3 Adjusted EBITDA identity check: gross profit $74.903 + amortization $5.572 − cash opex $59.258 = $21.217. Inputs: A4.
 
-**C5** Q4 2026E cash opex $68.258 = $59.258 + $5.0 (TYRVAYA partial) + $4.0 (G-MELT filing allowance). Q4 GAAP gross profit is the prior $98.648 plus 80% of the VEVYE revenue change (46.694−50.080), equal to $95.939. Q4 Adjusted EBITDA 33.253 = 95.939 + amortization add-back $5.572 − cash opex $68.258. FY2026E Adjusted EBITDA 40.580 = 9M $7.327 + Q4 33.253. FY2026E GAAP gross profit = 9M $152.311 + Q4 $95.939 = $248.250; FY2026E GAAP gross margin 72.0% = 248.250 / 344.746. Inputs: C4, S10, S11, A4, S1, P8.
+**C5** Q4 2026E cash opex 68.258 = 59.258 + 5.0 (TYRVAYA partial) + 4.0 (G-MELT filing allowance). Q4 GAAP gross profit is the prior 95.939 plus 82% of the IHEEZO revenue change (40.607−38.287), equal to 97.841. Q4 Adjusted EBITDA 35.155 = 97.841 + amortization add-back 5.572 − cash opex 68.258. FY2026E Adjusted EBITDA 42.482 = 9M 7.327 + Q4 35.155. FY2026E GAAP gross profit = 9M 152.311 + Q4 97.841 = 250.152; FY2026E GAAP gross margin 72.1% = 250.152 / 347.066. Inputs: C4, S10, S11, A4, S22, P10.
 
 **C6** FY2025 Other branded excluding TRIESENCE = 25.326 − 9.900 = 15.426, using the printed $9.9 FY2025 TRIESENCE figure at one decimal (full-year TRIESENCE was not a 10-K line; it is split here to match the 2026 reporting presentation). Inputs: A1.
 
@@ -1503,7 +1331,7 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **C10** FY2025A→FY2026E and subsequent year-over-year growth rates are (year / prior) − 1, using the line and total values in this file. Inputs: A1, C1.
 
-**C11** Unrounded Q4 Other branded sketch of $15.3 would add $0.300 to the rounded Q4 total of 130.585 and the FY2026E total of 344.746, and would still leave FY2026E below the $350 low end. Inputs: S4, C1.
+**C11** Unrounded Q4 Other branded sketch of 15.3 would add 0.300 to the rounded Q4 total of 132.905 and the FY2026E total of 347.066, giving 133.205 and 347.366, still below the 350 low end. Inputs: S4, C1.
 
 **C12** G-MELT revenue (US$ millions) = units x net realization (US$ per unit) / 1,000,000. FY2028E 60,000 x $175 = $10.5; FY2029E 250,000 x $180 = $45.0; FY2030E 500,000 x $185 = $92.5; FY2031E 750,000 x $190 = $142.5; FY2032E 750,000 x $195 = $146.25. Inputs: G18, S15, P4.  
 
@@ -1511,37 +1339,37 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **C14** FY2027E cash opex = 59.258×4×1.04 (core, S20/S40) + 20.0 (TYRVAYA) + 12.0 (G-MELT pre-launch) + 6.0 (YOCHIL program) + 4% (S41) of same-store revenue above the Q3 2026 annualized same-store revenue of 397.188 (C17). Later years: core grows 4%; TYRVAYA $20 continues; G-MELT program follows S17; YOCHIL program follows S33; variable is 4% of the same-store increment over that Q3 annualized base (VEVYE, IHEEZO, TRIESENCE, legacy, compounding, other revenues — not TYRVAYA, BYOOVIZ, OPUVIZ, BYQLOVI, G-MELT or YOCHIL). Before 12 November 2026 the increment was measured vs. FY2026E. Adjusted EBITDA = product gross profit before amortization − cash opex, i.e. revenue − cash cost. Inputs: S17, S20, S33, C4, C17, S40, S41.
 
-**C15** The FY2026E bottom-up total of 344.746 is 5.254 below the exact $350 low end of the reaffirmed $350–365 range (C2 implied Q4 of 135.839–150.839 versus base Q4 130.585). The shortfall is not closed by a plug. Inputs: A2, C1.
+**C15** The FY2026E bottom-up total of 347.066 is 2.934 below the exact 350 low end of the reaffirmed 350–365 range. Implied Q4 to hit 350 is 135.839 vs. base Q4 132.905. The shortfall is not closed by a plug. Inputs: A2, C1, C2.
 
-**C16** YOCHIL revenue = penetration x (IHEEZO customer units / 3) x assumed net price / 1,000,000, using the official IHEEZO unit identity 327,457 / 369,261 / 411,065 / 452,869 / 494,673 in FY2028E-FY2032E and penetration 60/750, 1/3, 2/3, 1, 1. Result: $1.528 / $7.385 / $16.899 / $28.682 / $32.154. Inputs: S32, P4, S22.
+**C16** YOCHIL revenue = penetration × (IHEEZO customer units / 3) × assumed net price / 1,000,000. IHEEZO units 366,579 / 394,494 / 409,514 / 417,311 / 421,283 in FY2028E–FY2032E (P10). Penetration 60/750, 1/3, 2/3, 1, 1. Prices 175 / 180 / 185 / 190 / 195. Result: 1.711 / 7.890 / 16.836 / 26.430 / 27.383. Inputs: S32, P4, P10.
 
 **C17** Q3 2026 annualized same-store revenue = 4 × (VEVYE 39.699 + IHEEZO 25.297 + TRIESENCE 10.707 + Other branded 7.595 + Other revenues 0.164 + compounding 15.835) = 4 × 99.297 = 397.188. Q3 2026 is the quarter whose cash run rate ($59.258) is the core. TYRVAYA closed 1 October 2026 and is not in Q3. BYOOVIZ (launched 1 July 2026) sits inside printed Other branded and is not separable; the printed bucket is used as-is rather than an unmeasured split. Removing the illustrative $2.92 (S4) would lower the baseline to 385.508 and cut Adjusted EBITDA by about $0.47 a year. Inputs: A2, C4.
 
-**C18** Finagle growth leaves: sales_growth and ebitda_growth are year / prior − 1 on totals from FY2025A (year 0) through FY2032E, so they compound back to the revenue and Adjusted EBITDA in this file. me is FY2032E Adjusted EBITDA / revenue. ebitda_basis is total: TYRVAYA (closed 1 October 2026) is inside the Other branded line and the cost build, no further deal is forecast, and its $30 close cash is a dated item on cash_share_adjustments rather than a Finagle acquisition. Inputs: C10, C14.
+**C18** Growth leaves: sales growth and EBITDA growth are this year divided by the prior year, minus 1, on totals from FY2025A through FY2032E, so they compound back to the revenue and Adjusted EBITDA in this file. The starting margin is FY2032E Adjusted EBITDA divided by revenue. The EBITDA basis is the total: TYRVAYA, which closed on 1 October 2026, is inside Other branded and the cost build, no further deal is forecast, and its $30 close cash is a dated item on the cash schedule rather than an acquisition. Inputs: C10, C14.
 
-**C19** TYRVAYA close cash −30.0 on 1 October 2026 is listed on cash_share_adjustments because year-0 cash is the 31 December 2025 balance (P5), which is before the payment. The item is past at the price date, so Finagle’s discount factor is 1. The up-to-$70 of TYRVAYA milestones is not listed because the company does not expect the first net-sales milestone to be achieved on its anticipated 2027 revenue (G5). Inputs: A23, A21.
+**C19** TYRVAYA close cash −30.0 on 1 October 2026 is listed on cash_share_adjustments because year-0 cash is the 31 December 2025 balance (P5), which is before the payment. The item is past at the price date, so the discount factor is 1. The up-to-$70 of TYRVAYA milestones is not listed because the company does not expect the first net-sales milestone to be achieved on its anticipated 2027 revenue (G5). Inputs: A23, A21.
 
 **C20** acquisition_disclosure is none: no acquisition after TYRVAYA is forecast; TYRVAYA closed 1 October 2026, is inside the explicit lines and costs, and its $30 close cash is a dated cash_share_adjustments item. Inputs: C18, A23.
 
-**C21** No year-0 equity raise is on any schedule (P9). Opening cash 72.927 from the FY2025 10-K plus the present value of the cash items at Finagle's cost of equity (10.603%, price date 15 November 2026) is base −41.507, bull −55.701 and bear −14.587. The share count stays at 37.229705 million. Inputs: P9, A21, C25.
+**C21** No year-0 equity raise is on any schedule (P9). Opening cash 72.927 from the FY2025 10-K plus the present value of the cash items at the 10.603% cost of equity (price date 15 November 2026) is base −41.507, bull −55.701 and bear −14.587. The share count stays at 37.229705, in millions of shares. Inputs: P9, A21, C25.
 
-**C22** Bear operating-leverage lever on the workbook path (derived). Core gap versus 4% inflation is 248.884−246.513 = 2.371 in FY2027E and 317.646−299.921 = 17.725 in FY2032E. The variable gap is half of the 8% variable row: 11.191/2 = 5.596 in FY2027E and 59.38/2 = 29.69 in FY2032E. Combined lever FY2027E 7.967 and FY2032E 47.415, so bear FY2032E Adjusted EBITDA would be 536.746+47.415 = 584.161 without the lever. Inputs: S40, S41, S42, drivers.csv.
+**C22** Bear operating-leverage lever on the workbook path (derived). Core gap vs. 4% inflation is 248.884−246.513 = 2.371 in FY2027E and 317.646−299.921 = 17.725 in FY2032E. The variable gap is half of the 8% variable row: 11.191/2 = 5.596 in FY2027E and 59.38/2 = 29.69 in FY2032E. Combined lever FY2027E 7.967 and FY2032E 47.415, so bear FY2032E Adjusted EBITDA would be 536.746+47.415 = 584.161 without the lever. Inputs: S40, S41, S42, drivers.csv.
 
 **C23** Revenue FY2032E / FY2027E = 1,759.701 / 664.562 = 2.65; cash opex FY2032E / FY2027E = 391.796 / 292.968 = 1.34 (up about a third). Inputs: C10, C14.
 
 **C24** Valuation arithmetic (derived) from D24 rows: PV of FCFE = Σ FCFE_t / 1.10603^t for t = 1–10, and PV of terminal value = [terminal FCFE / (0.10603 − 0.05103)] / 1.10603^10. Base 3297.48 + 2320.26 = 5617.75, terminal share 41.3%; bull 3928.63 + 2774.61 = 6703.24, 41.4%; bear 1881.99 + 1301.92 = 3183.91, 40.9%. Value per share vs. price = value / 28.30 − 1: base +429.3%, bull +530.9%, bear +200.8%. Inputs: C25, A24.
 
-**C25** Finagle outputs as printed in D24 on 15 November 2026: value per share base 149.78, bull 178.55, bear 85.13; equity value 5617.75 / 6703.24 / 3183.91; firm value 5867.75 / 6953.24 / 3433.91; terminal WACC 9.26% / 9.27% / 9.23%; adjusted year-0 cash −41.507 / −55.701 / −14.587; shares 37.229705 million in every case; cash-schedule present value −114.43 / −128.63 / −87.51; year rows as in Figures 9a, 9b and 11. Inputs: D24, C18, P9, S43, S44.
+**C25** Valuation outputs as printed in D24 on 15 November 2026: value per share base 149.78, bull 178.55, bear 85.13; equity value 5617.75 / 6703.24 / 3183.91; firm value 5867.75 / 6953.24 / 3433.91; terminal WACC 9.26% / 9.27% / 9.23%; adjusted year-0 cash −41.507 / −55.701 / −14.587; shares 37.229705, in millions of shares, in every case; cash-schedule present value −114.43 / −128.63 / −87.51; year rows are in that result file, not in Figure 14. Inputs: D24, C18, P9, S43, S44.
 
 **C26** Medium-term organic growth (derived): base FY2033E 1,946.467 − FY2032E 1,759.701 = 186.766, and 186.766 / 1,759.701 = 10.61%; VEVYE supplies 130.634 / 186.766 = 70% of the increase. Bull 2,184.367 − 1,953.750 = 230.617, or 11.80%. Bear 1,364.881 − 1,240.499 = 124.382, or 10.03%. Inputs: S44, C10, P10.
 
 **C27** VEVYE workbook units and average price (derived). Nine-month 2026 TRx stays 864,142. Q4 TRx is 390,595, so FY2026E TRx is 1,254,737. Annual TRx FY2027E–FY2032E is 2,138,716 / 2,782,869 / 3,254,485 / 3,705,004 / 4,186,912 / 4,721,742. Average net revenue per TRx is FY dollars times 1,000 divided by TRx: Q4 119.55; FY2026E 108.97 (nine-month actual dollars mixed with Q4); then 136.33 / 155.55 / 169.11 / 178.56 / 185.12 / 189.68. Inputs: S1, S21, P10.
 
-**C28** Finagle outputs as printed in D26 on 22 November 2026: value per share base 154.50, bull 184.15, bear 87.85; equity value 5793.43 / 6911.63 / 3285.47; firm value 6043.43 / 7161.63 / 3535.47; terminal WACC 9.30% / 9.31% / 9.27%; terminal free cash flow to equity 368.3 / 440.4 / 206.8; adjusted year-0 cash −41.56 / −55.79 / −14.7; shares 37.229705 million in every case; cash-schedule present value −114.49 / −128.72 / −87.62; year rows as in Figures 9a, 9b and 11. Inputs: D26, P11, C18, S46.
+**C28** Valuation outputs as printed in D26 on 22 November 2026: value per share base 154.50, bull 184.15, bear 87.85; equity value 5793.43 / 6911.63 / 3285.47; firm value 6043.43 / 7161.63 / 3535.47; terminal WACC 9.30% / 9.31% / 9.27%; terminal free cash flow to equity 368.3 / 440.4 / 206.8; adjusted year-0 cash −41.56 / −55.79 / −14.7; shares 37.229705, in millions of shares, in every case; cash-schedule present value −114.49 / −128.72 / −87.62; year rows are in that result file, not in Figure 14. Inputs: D26, P11, C18, S46.
 
-**C29** Valuation arithmetic (derived) from D26 rows: PV of FCFE = Σ FCFE_t / 1.10603^t for t = 1–10, and PV of terminal value = [terminal FCFE / (0.10603 − 0.05103)] / 1.10603^10. Base 3348.9 + 2444.6 = 5793.5, terminal share 42.2%; bull 3988.8 + 2922.8 = 6911.6, 42.3%; bear 1912.9 + 1372.6 = 3285.5, 41.8%. Value per share vs. price = value / 28.30 − 1: base +446%, bull +551%, bear +210%. Versus the 15 November values in C25, the base is 154.50 − 149.78 = 4.72 a share, about 3%. Inputs: C28, C25, A24.
+**C29** Valuation arithmetic (derived) from D26 rows: PV of FCFE = Σ FCFE_t / 1.10603^t for t = 1–10, and PV of terminal value = [terminal FCFE / (0.10603 − 0.05103)] / 1.10603^10. Base 3348.9 + 2444.6 = 5793.5, terminal share 42.2%; bull 3988.8 + 2922.8 = 6911.6, 42.3%; bear 1912.9 + 1372.6 = 3285.5, 41.8%. Value per share vs. price = value / 28.30 − 1: base +446%, bull +551%, bear +210%. Compared with the 15 November values in C25, the base is 154.50 − 149.78 = 4.72 a share, about 3%. Inputs: C28, C25, A24.
 
-**C30** Finagle outputs as printed in D27 on 22 November 2026, v06, Finagle commit fd50e97: value per share base 157.1125845943119, bull 187.3390897055385, bear 89.12714549267243 (FCFE equals DDM); not_a_valuation false in every case; sanity_flags empty; year-0 cash 72.927 in every case; year-0 debt 364.4342838591708 / 378.62794453974345 / 337.51446718581144; rd 0.09672 (prompt); lam 1 (prompt); debt.mode target, leverage 2.5, start_year 3; min cash 58.964958985787 / 62.908003555047955 / 57.73675189965847; terminal WACC (last-year WACC) 0.098048 / 0.098098 / 0.097815; shares 37.229705 in every case; price 28.30; cash-schedule present value, unchanged from v05, −114.4342838591708 / −128.62794453974342 / −87.51446718581147, discounted at re 0.10603 from 2026-11-15; year rows as in Figures 9a, 9b and 11. v05 on the same commit, cash-funded, was 171.13952467729268 / 203.89197867182205 / 97.4769527622448 and was flagged not a valuation for negative cash. Validation warnings: average EBITDA growth 80.2% / 78.0% / 68.7% with no acquisitions, and forecast evidence mentions acquisitions but the case has none. The FRED T10YIE fetch timed out; inflation remains the pinned 0.0224. Inputs: D27, P11, P12, P13, S47.
+**C30** Valuation outputs as printed in D27 on 22 November 2026, v06, commit fd50e97: value per share base 157.1125845943119, bull 187.3390897055385, bear 89.12714549267243 (FCFE equals DDM); not_a_valuation false in every case; sanity_flags empty; year-0 cash 72.927 in every case; year-0 debt 364.4342838591708 / 378.62794453974345 / 337.51446718581144; rd 0.09672 (prompt); lam 1 (prompt); debt.mode target, leverage 2.5, start_year 3; min cash 58.964958985787 / 62.908003555047955 / 57.73675189965847; terminal WACC (last-year WACC) 0.098048 / 0.098098 / 0.097815; shares 37.229705 in every case; price 28.30; cash-schedule present value, unchanged from v05, −114.4342838591708 / −128.62794453974342 / −87.51446718581147, discounted at re 0.10603 from 2026-11-15; year rows as in Figure 14 and the bull and bear year statements in Appendix A. Per-year value per share, which is not a row in those statements: base 157.11 / 171.98 / 188.56 / 190.22 / 195.37 / 200.59 / 205.36 / 212.56 / 219.66 / 227.60 / 236.94; bull 187.34 / 205.31 / 225.13 / 226.79 / 232.67 / 239.58 / 246.77 / 254.95 / 262.94 / 271.98 / 282.89; bear 89.13 / 96.82 / 105.86 / 104.58 / 107.10 / 111.65 / 116.63 / 120.93 / 124.72 / 128.95 / 133.92, FY2025A through FY2035E. The bear series falls from 105.86 in FY2027E to 104.58 in FY2028E; that dip is left as printed. v05 on the same commit, cash-funded, was 171.13952467729268 / 203.89197867182205 / 97.4769527622448 and was flagged not a valuation for negative cash. Validation warnings: average EBITDA growth 80.2% / 78.0% / 68.7% with no acquisitions, and forecast evidence mentions acquisitions but the case has none. The FRED T10YIE fetch timed out; inflation remains the pinned 0.0224. Inputs: D27, P11, P12, P13, S47.
 
 **C31** Valuation arithmetic (derived) from C30. Equity value = value per share × 37.229705 shares: base 5,849.255, bull 6,974.579, bear 3,318.177. Firm value = equity + year-0 debt: base 6,213.689, bull 7,353.207, bear 3,655.692. Value per share vs. price = value / 28.30 − 1: base +455%, bull +562%, bear +215%. v06 minus v04 (154.49667362283273 / 184.14972926641576 / 87.85383991041672): +2.616 / +3.189 / +1.273. v06 minus v05 (171.13952467729268 / 203.89197867182205 / 97.4769527622448): −14.027 / −16.553 / −8.350. Debt change is this year's debt minus the prior year's debt. Debt/EBITDA is that year's debt divided by that year's EBITDA. Inputs: C30, D26, D27, A24.
 
@@ -1566,13 +1394,9 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **P9** Prompt [P], David May, 14 November 2026: remove every year-0 equity raise from the base, the bull and the bear. Do not put a raise back if year-0 cash is negative. This overrides P6 for this case. TYRVAYA close cash, Melt approval cash and the commercial cash milestones stay. (task brief.)
 
-**P10** Prompt [P], David, 15 November 2026: update the HROW forecast and run Finagle collaboratively using the Vevye and Iheezo workbook. The Vevye sheet replaces the 14 November sheet. December 2026 market size is 1,200 thousand TRx. Monthly share gains start at 0.57 points in January 2027 and shrink by 0.9. The market grows 1% a month after January 2027. The IHEEZO sheet replaces the constant 41,804 unit add. 2025 units are taken at 75% (ex-ASC). Later-year unit growth is half the prior year's growth. The ASP increase is 10%. Q4 uses half of the 2025 Q4 distributor/clinic seasonal effect. The explicit window stays FY2026E–FY2032E. (task brief; `Vevye and Iheezo model.xlsx`.)
+**P10** Prompt [P], David, 15 November 2026: update the HROW forecast and run the valuation collaboratively using the Vevye and Iheezo workbook. The Vevye sheet replaces the 14 November sheet. December 2026 market size is 1,200 thousand TRx. Monthly share gains start at 0.57 points in January 2027 and shrink by 0.9. The market grows 1% a month after January 2027. The IHEEZO sheet replaces the constant 41,804 unit add. 2025 units are taken at 75% (ex-ASC). Later-year unit growth is half the prior year's growth. The ASP increase is 10%. Q4 uses half of the 2025 Q4 distributor/clinic seasonal effect. The explicit window stays FY2026E–FY2032E. (task brief; `Vevye and Iheezo model.xlsx`.)
 
-**P11** Prompt [P], David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026. The price date stays 15 November 2026. The pass-through is not stated, so it stays at Finagle's 0.25 default. (task brief; `collab/valuation_request_v04.json`.)
-
-**S45** Scenario rules on the 15 November IHEEZO sheet, continuing the existing levers. Bull Q4 uses the full 2025 distributor/clinic ratio, and from FY2027E the bull matches the base units. Bear Q4 uses no seasonal multiplier, and later years take half of each unit increment above the normalized 2026 rate, at the same 2027 ASP. The 10% ASP step is in all three cases. Bull YOCHIL penetration is faster on the same IHEEZO one-third. Bear YOCHIL revenue is zero. (judgment.)
-
-**S46** Inflation pass-through of 0.25, a Finagle default, not set in the request. Zero leaves the reinvestment rate at terminal growth divided by the terminal return. One is the Bradley-Jarrell rate, growth less inflation over the return less inflation. A quarter of the 2.24% breakeven is the offset used in this run. (D26, P11.)
+**P11** Prompt [P], David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026. The price date stays 15 November 2026. The pass-through is not stated, so it stays at the valuation's 0.25 default. (task brief; `collab/valuation_request_v04.json`.)
 
 **P12** Prompt [P], David May, 22 November 2026: "rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate." Request `collab/valuation_request_v05.json`. (chat, n/a.)
 
@@ -1580,23 +1404,22 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **P14** Prompt [P], David May, 22 November 2026: "Yes", approving an update of the report's valuation section and PDF to v06. (chat, n/a.)
 
-**S47** Inflation pass-through of 1, stated in P12. This is the Bradley-Jarrell rate: terminal reinvestment is (terminal growth − inflation) / (terminal return − inflation). Used in v05 and v06. (P12, D27, D25.)
-
 
 ### Not verified
 
-The November 2026 stockholder letter (D3) and corporate presentation (D15) were retrieved from the SEC EDGAR accessions cited above. The Q3 2026 call transcript is cited from the GitHub ceochat mirror (D14) plus the original Seeking Alpha recording of the same call; a durable Seeking Alpha article URL is not restated. D11 APA sales-milestone dollar thresholds were not independently re-verified in this pass. D19 is a third-party Zydis comparator; Harrow’s Catalent rate is undisclosed. The 2026 proxy footnote that reconciles Baum’s 3,663,630 beneficial shares to the 2,996,130 shares held directly after the 14 May 2026 Form 4 was not re-quoted, so no option or derivative count is stated [A13]. Current annual compounded MKO unit volume is not disclosed; the 800-institution figure is a company claim [G17]. The Samsung share of net sales and the G-MELT launch budget are not disclosed; the central rates and program dollars in S17–S19 are assumed, not facts. Operating free cash flow after the $30 TYRVAYA close payment has not been independently verified, which is why the $87.2 Melt approval cash is flagged as a funding risk; the valuation discounts it on the cash schedule [S12][C25]. D24 is a local result file with no public URL; its fetched price, yield and share count are as recorded by Finagle on 15 November 2026 [A24]. Nothing in this list is marked unverified because a known SEC or GitHub URL “was not reconfirmed.”
+The November 2026 stockholder letter (D3) and corporate presentation (D15) were retrieved from the SEC EDGAR accessions cited above. The Q3 2026 call transcript is cited from the GitHub ceochat mirror (D14) plus the original Seeking Alpha recording of the same call; a durable Seeking Alpha article URL is not restated. D11 APA sales-milestone dollar thresholds were not independently re-verified in this pass. D19 is a third-party Zydis comparator; Harrow’s Catalent rate is undisclosed. The 2026 proxy footnote that reconciles Baum’s 3,663,630 beneficial shares to the 2,996,130 shares held directly after the 14 May 2026 Form 4 was not re-quoted, so no option or derivative count is stated [A13]. Current annual compounded MKO unit volume is not disclosed; the 800-institution figure is a company claim [G17]. The Samsung share of net sales and the G-MELT launch budget are not disclosed; the central rates and program dollars in S17–S19 are assumed, not facts. Operating free cash flow after the $30 TYRVAYA close payment has not been independently verified, which is why the $87.2 Melt approval cash is flagged as a funding risk; the valuation discounts it on the cash schedule [S12][C25]. D24 is a local result file with no public URL; its fetched price, yield and share count are as recorded on 15 November 2026 [A24]. Nothing in this list is marked unverified because a known SEC or GitHub URL “was not reconfirmed.”
+
 
 ## Appendix C – Method
 
-This forecast follows the forecaster method: a bottom-up build of official reporting lines over an explicit horizon, with a separately recorded set of views, a documented cost identity for Adjusted EBITDA, and named bull and bear cases. The explicit window is normally the longest of two years, the guidance horizon, and the Consensus horizon. Here the seven-year window FY2026E–FY2032E is a prompt override, and this update keeps it [P1]. A product launch does not lengthen the window. The 12 November 2026 request added a collaborative valuation [P7]. Bottom-up, top-down, calibrated top-down, and Consensus are recorded for revenue and for Adjusted EBITDA, and each metric has its own base, which may differ; in this case both bases are bottom-up in every explicit year (Figure 1). Harrow is a calendar-year filer. The baseline is FY2025A. FY2026E is a stub: nine-month printed actuals plus a fourth-quarter estimate, not a sum of four official quarterly lines, because some first-half product prints do not add exactly to the printed half-year totals [A2][C1].
+This forecast follows the forecaster method. Bottom-up, top-down, calibrated top-down, and Consensus are recorded, and revenue and Adjusted EBITDA each have their own base. In this case both bases are the bottom-up view in every explicit year (Figure 1). The history window is FY2024A and FY2025A from the 2025 annual report, and the printed Q1–Q3 2026 product lines from the 2026 quarterly reports and the 9 November 2026 stockholder letter, plus FY2024–FY2025 quarterly IHEEZO seasonality from those filings [A1][A2][S2]. That is more than nine reported quarters of filings. Reported results frame the forecast. The same history is the check for one-time items, the cost base, and the inputs past the explicit years [A3][A5][S43]. A full set of earnings-call transcripts was not re-opened for this update. Where a quarter's call was not re-read, the quarterly report or the stockholder letter is the document used. No new transcript or Consensus pull was made.
 
-The history used for this case is FY2024A and FY2025A from the 2025 Form 10-K, the printed Q1–Q3 2026 product lines and totals from the 2026 Forms 10-Q and the 9 November 2026 stockholder letter, and FY2024–FY2025 quarterly IHEEZO seasonality from those filings [A1][A2][S2]. Reported results frame the forecast, and the same history is the check for one-time items, the cost base, and the valuation's margin and growth inputs [A3][A5][S43]. The November 2026 corporate presentation and the 9 November 2026 letter are the latest primary documents for pipeline timing and guidance [D3][D15]. A full nine-quarter set of earnings-call transcripts was not re-opened for this update. Where a quarter's call was not re-read, the corresponding Form 10-Q or stockholder letter is the document used. No new transcript, Consensus, or CEOchat pull was made. Because that transcript window was not completed from primary sources, this report does not claim full method compliance on history coverage. M&A-related costs are treated as one-time unless the company says they continue. TYRVAYA incremental operating expenses of about $20 a year are treated as ongoing while the product is in the book [G5]. G-MELT and YOCHIL sit inside the seven-year window because their stated 2028 launch timing falls inside it; they are written year by year from FY2028E as memo lines and are not added on top of a total that already includes them [S15][S32][P1][P4]. A 2028 YOCHIL launch is tighter than G-MELT's, because Phase 3 is still ahead [G24][S32]. The 15% G-MELT unit rate is a task instruction; a 10% current annual MKO share is not a verified printed figure in the sources used [P4][G22][G26].
+The explicit window is normally the longest of two years, the guidance horizon, and the Consensus horizon. Here the seven-year window FY2026E–FY2032E is a prompt override, and this update keeps it [P1]. An unlaunched product sits inside that window when its launch falls there. G-MELT and YOCHIL do, from 2028, and they are not added on top of a total that already includes them [S15][S32][P1][P4]. A year with no calibrated top-down uses Consensus when an estimate exists, and the bottom-up build when it does not. Calibrated top-down is absent for FY2026E because the first-half miss is not applied to the reaffirmed range, and there is no current Consensus [G2][G4][C3][P1].
 
-Four views are recorded for each explicit year. Calibrated top-down is absent for FY2026E because first-half 2026 revenue was below the original first-half range of $133–153, and that miss is not applied to the reaffirmed full-year $350–365 range [G2][G4][C3][P1]. No post-Q3 2026 Consensus pull was taken [P1]. The revised Adjusted EBITDA outlook is a single-point floor of more than $40, including more than $33 in the fourth quarter [G1]. The 15 November update keeps that window and replaces VEVYE and IHEEZO with the attached workbook [P10]. The FY2026E revenue base of $347 sits about $3 below the $350 low end [C1][C15]. The FY2026E Adjusted EBITDA base of $42.5 is the cost build and sits above the floor of more than $40 [C5].
+M&A-related costs are one-time unless the company says they continue. Melt closing in-process research does not recur [A7]. TYRVAYA's incremental operating cost of about $20 a year stays while the product is in the book [G5]. Integration cost is that amount, not a separate add-on.
 
-Adjusted EBITDA is revenue minus cash cost. In this build that is product gross profit before amortization minus cash operating expenses, the same identity checked on the Q3 2026 letter: gross profit plus amortization minus cash operating expenses, where cash operating expenses are GAAP operating expenses minus stock-based compensation minus depreciation [C4][A4][C13][C14]. Inventory step-up is not listed as an add-back and is not added back [S11]. Melt and TYRVAYA contingent cash and stock are modelled as contingent M&A and dilution, not as EBITDA deductions [S12]. Milestone payments the company owes, similar contingent cash outside EBITDA, and equity offerings are a schedule in the forecast file under `cash_share_adjustments` [S24][S25][A15]. The base schedule records the $30 TYRVAYA close cash paid on 1 October 2026, Melt FDA-approval cash of $87.2 at 31 December 2027 with probability 1, consistent with the unweighted 2028 launch already in the revenue path, and the first commercial Annual Net Sales cash milestone of $10.0 at 31 December 2030 [C19][S24][A15][S34][A18]. No year-0 equity raise is on the schedule [P9]. A second FDA-approval cash payment is not added for YOCHIL [S25]. A valuation discounts that schedule at the cost of equity and adjusts year-0 cash and the current share count; the worked figures are the Balance Sheet Adjustments subsection of the Valuation section, and they are not written up in the Forecast section [C25][P5]. On the 22 November v06 run, David instructed that the present value be added to year-0 debt instead of reducing cash, that the cost of debt stay at 9.67%, and that debt then run to a 2.5x Debt/EBITDA target from year 3 [P12][P13][C30]. Forward gross margin is a weighted product-level build minus amortization [C13][S19]. Forward cash opex is an explicit bridge from the Q3 2026 cash run rate. The core is that quarter annualized and inflated at a named 4% rate [S20][S40]. The verified TYRVAYA add-on enters once, and the G-MELT and YOCHIL programs are assumed [S17][S33][G5]. A variable cost of 4%, the central rate in a 2–8% band, applies only to same-store revenue above the Q3 2026 annualized revenue that the run rate already pays for; the prior year is only the base for growth rates [S41][C14][C17]. Where a later-year margin moves well beyond the history, the report flags it, shows the bridge, and names a bear lever; it does not haircut the base [S42][C14].
+Adjusted EBITDA is revenue minus cash cost: product gross profit before amortization, minus cash operating expenses. The same identity was checked on the Q3 2026 letter [C4][A4][C13][C14]. The inventory step-up is not an add-back [S11]. Milestone payments the company owes, and equity offerings, are a schedule in the forecast file [S24][S25][A15]. The base schedule records the $30 TYRVAYA close cash, Melt approval cash of $87.2 at 31 December 2027, and the first commercial cash milestone of $10.0 at 31 December 2030 [C19][S24][S34]. No year-0 equity raise is on the schedule [P9]. A valuation discounts that schedule at the cost of equity and adjusts year-0 cash and the share count. On this run the present value is added to year-0 debt instead, cash is left at the FY2025 figure, the cost of debt stays at 9.67%, and debt then runs to a 2.5x Debt/EBITDA target from FY2028E [P12][P13][C30]. The worked figures are the Balance Sheet Adjustments subsection. They are not written up in the forecast section.
 
-The unit and net-price arithmetic for VEVYE, IHEEZO, and TRIESENCE is in Appendix B under S21, S22, and S23. G-MELT and YOCHIL are memo lines so that they are not mixed into the Other branded residual; compounded MKO Melt remains in ImprimisRx and is not double-counted [P3][P4]. The compounding path was not cut further for the higher 15% G-MELT share, because current annual MKO volume is undisclosed [S13]. Tags follow the method's letters: A for actuals, G for guidance and management statements, E for Consensus (none here), S for assumptions, C for calculations, D for documents, and P for task overrides.
+Forward gross margin is a weighted product-level build minus amortization [C13][S19]. Forward cash operating cost is the bridge from the Q3 2026 run rate: that quarter annualized and inflated at 4%, the TYRVAYA add-on once, the assumed G-MELT and YOCHIL programs, and a 4% variable cost on same-store revenue above the Q3 annualized pace [S20][S40][S41][S17][S33][C14][C17]. Where a later-year margin moves well beyond the history, the report flags it, shows the bridge, and names a bear lever. It does not haircut the base [S42].
 
-The v06 valuation also leaves two method points for a later skill or Finagle change, not used as local rules here. First, `cash_share_adjustments` items may only be kind `cash` or `equity`, and a cash item has no funding field, so adding the present value to debt had to be expressed as a computed `baseline.debt` prompt plus `includes_adjustments` on stated cash. A debt-funded kind, or a funding field on a cash item, would let the runner do that without a hand-computed debt figure. Second, `includes_adjustments` is documented as meaning the stated cash or share count already includes the schedule items. In v06 it was used to leave the unadjusted FY2025 10-K cash unreduced while the present value was added to debt. The collaborative-run skill should say whether that is a supported use, and whether a stated debt increment should carry a matching flag.
+Two points about how the schedule was funded are left here, because they do not change the forecast or the value now in the report. The schedule items are cash or equity, and a cash item has no funding field, so adding the present value to debt was expressed as a stated year-0 debt figure plus a flag that the stated cash already reflects the schedule. The flag is documented as meaning the stated cash or share count already includes the items. Here it was used to leave the unadjusted FY2025 cash unreduced while the present value was added to debt. A debt-funded kind, or a funding field, would make that explicit.
