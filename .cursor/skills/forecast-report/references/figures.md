@@ -66,7 +66,7 @@ One row per item: the name, the amount, the timing, the probability, the discoun
 
 ## Valuation inputs
 
-Columns are Bull, Base, Bear, and Basis. Basis is Finagle default, forecast-file input, or judgment, and the row gets tags. Rows, in this order: cost of equity, cost of debt, tax rate, terminal growth, shares, price, debt and cash, starting margin, incremental margin (mc), next-period growth (gsnext), and Finagle's terminal WACC. A further input the result file carries, such as terminal return on invested capital or the debt policy, is a row in those same columns. The cash row and the shares row are the adjusted figures from Balance Sheet Adjustments.
+Columns are Bull, Base, Bear, and Basis. Basis is valuation default, forecast-file input, stated assumption (tagged `[P]`), or judgment, and the row gets tags. Rows, in this order: cost of equity, cost of debt, tax rate, terminal growth, shares, price, debt and cash, starting margin, incremental margin (mc), next-period growth (gsnext), and the terminal WACC. A further input the result file carries, such as terminal return on invested capital or the debt policy, is a row in those same columns. The cash row and the shares row are the adjusted figures from Balance Sheet Adjustments.
 
 ## Medium-term organic growth, base case
 
@@ -82,7 +82,7 @@ For the bull, the base, and the bear: the present value of explicit-period cash 
 
 ## Base-case year statement
 
-The base-case Finagle statement from the last actual year through the end of Finagle's horizon. A header block (ticker, price, shares, rates, terminal growth), then one column per year. The rows are the ones the result file contains. Print Finagle's values as output. A sign flip is a note. Split into continued blocks when one table would not fit on a page. A year-by-year table that does not fit in portrait uses a landscape page.
+The base-case statement from the valuation, from the last actual year through the end of the valuation horizon. A header block (ticker, price, shares, rates, terminal growth), then one column per year. The rows are the ones the result file contains. Print the valuation's values as output. A sign flip is a note. Split into continued blocks when one table would not fit on a page. A year-by-year table that does not fit in portrait uses a landscape page.
 
 ## Sensitivity
 
