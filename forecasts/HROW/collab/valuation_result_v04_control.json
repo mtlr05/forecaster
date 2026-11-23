@@ -1,0 +1,1555 @@
+{
+ "ticker": "HROW",
+ "mode": "collaborative",
+ "currency": "USD",
+ "finagle_commit": "fd50e97984c3b7135cf0d17f665c4c115655f471",
+ "ff_log": "Fast-forwarded /workspace/finagle to origin/main; HEAD is fd50e97984c3b7135cf0d17f665c4c115655f471 (Forecaster said fd50e97). Log since 377f177: fd50e97, e02fcfb, 79d56c5, e27579d (inflation pass-through lam, FRED/IMF inflation, Bradley-Jarrell).",
+ "run_at": "2026-11-22T21:33:18.130071-05:00",
+ "sec_user_agent": "David May davidmay44@hotmail.com",
+ "build_baseline": {
+  "ok": true,
+  "canadian": false,
+  "currency": "USD",
+  "period_end": "2025-12-31",
+  "warnings": [
+   "The fred inflation series T10YIE could not be loaded: TimeoutError: The read operation timed out"
+  ],
+  "assumptions": [
+   "forecast.margin_path.me",
+   "forecast.margin_path.mc",
+   "rates.risk_free",
+   "rates.re",
+   "rates.gt",
+   "rates.roict",
+   "rates.inflation",
+   "rates.lam",
+   "forecast.margin_path.gsnext",
+   "debt.mode",
+   "debt.leverage",
+   "debt.start_year",
+   "year",
+   "baseline.nol",
+   "baseline.noa",
+   "rates.t",
+   "rates.rd",
+   "forecast.dwc.mode",
+   "distribution.mode"
+  ]
+ },
+ "catalog_note": "Since 377f177, AGENTS.md and catalog.py document rates.lam (default 0.25) and rates.inflation (FRED T10YIE for USD, else IMF, else 0.02). Terminal reinvestment is b = (gt - lam * inflation) / (roict - lam * inflation). lam 0 is gt/roict; lam 1 is Bradley-Jarrell. rates.lam is in describe_inputs fields and the schema. collaborative-run.md (current main) now mentions expected inflation and that a stated pass-through is prompt_inputs on rates.lam.",
+ "request_diff_v05_vs_v04": {
+  "changed_keys": [
+   "version",
+   "parent_version",
+   "prompt_inputs"
+  ],
+  "unchanged": [
+   "mode",
+   "ticker",
+   "forecast_commit",
+   "scenarios",
+   "forecaster",
+   "cash_share_adjustments",
+   "post_finagle"
+  ],
+  "only_new_prompt": {
+   "path": "rates.lam",
+   "value": 1,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate.",
+   "date": "2026-11-22"
+  }
+ },
+ "lam_provenance": "The rates.lam = 1 prompt quote was relayed by the Forecaster, not taken from a first-hand David message in this run. Applied as given in prompt_inputs with source prompt. Quote: \"rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate.\" Date: 2026-11-22.",
+ "published_v04_values_on_377f177": {
+  "base": 154.497,
+  "bull": 184.15,
+  "bear": 87.854
+ },
+ "effects": {
+  "base": {
+   "published_v04_on_377f177": 154.497,
+   "control_v04_request_on_fd50e97": 154.49806254727312,
+   "v05_lam1_on_fd50e97": 171.13952467729268,
+   "code_change_effect_control_minus_published": 0.001062547273107839,
+   "lambda_effect_v05_minus_control": 16.641462130019562
+  },
+  "bull": {
+   "published_v04_on_377f177": 184.15,
+   "control_v04_request_on_fd50e97": 184.15206552944613,
+   "v05_lam1_on_fd50e97": 203.89197867182205,
+   "code_change_effect_control_minus_published": 0.0020655294461278118,
+   "lambda_effect_v05_minus_control": 19.73991314237591
+  },
+  "bear": {
+   "published_v04_on_377f177": 87.854,
+   "control_v04_request_on_fd50e97": 87.85671123150921,
+   "v05_lam1_on_fd50e97": 97.4769527622448,
+   "code_change_effect_control_minus_published": 0.0027112315092097106,
+   "lambda_effect_v05_minus_control": 9.620241530735598
+  }
+ },
+ "version": "v04_control",
+ "parent_version": "v04",
+ "note": "Control: valuation_request_v04.json run unchanged on Finagle fd50e97984c3b7135cf0d17f665c4c115655f471 (same commit as v05). Existing v04 files were not modified. On this commit, rates.lam is not in the v04 request, so Finagle fills the default lam=0.25. rates.inflation 0.0224 is still the v04 prompt.",
+ "hash_check": {
+  "file_bytes_v04_request": "837d822da5af7a376bc4932265e7cd78dca045922104cfff2497bc4330799656",
+  "whole_request": "557107ae7bc0d060116a58845ca7645fd9e8622c6430cbac64512af1962e3423"
+ },
+ "prompt_inputs": [
+  {
+   "path": "market.price",
+   "value": 28.3,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.",
+   "date": "2026-11-15",
+   "as_of": "2026-11-15"
+  },
+  {
+   "path": "market.shares",
+   "value": 37.229705,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.",
+   "date": "2026-11-22"
+  },
+  {
+   "path": "rates.risk_free",
+   "value": 0.05103,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.",
+   "date": "2026-11-22",
+   "as_of": "2026-11-15"
+  },
+  {
+   "path": "baseline.interest",
+   "value": 24.18,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.",
+   "date": "2026-11-22"
+  },
+  {
+   "path": "rates.inflation",
+   "value": 0.0224,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.",
+   "date": "2026-11-22",
+   "as_of": "2026-11-13"
+  }
+ ],
+ "post_finagle": null,
+ "forecast_commit": "uncommitted (Vevye and Iheezo workbook applied 15 November 2026)",
+ "defaults_filled": [
+  "baseline.noa",
+  "baseline.nol",
+  "debt.leverage",
+  "debt.mode",
+  "debt.start_year",
+  "distribution.mode",
+  "forecast.dwc.mode",
+  "rates.gt",
+  "rates.lam",
+  "rates.rd",
+  "rates.re",
+  "rates.roict",
+  "rates.t",
+  "year"
+ ],
+ "lam_on_control": {
+  "base": {
+   "value": 0.25,
+   "source": "assumption",
+   "evidence": "Partial inflation pass-through; 0 is g/ROIC, 1 is Bradley-Jarrell."
+  },
+  "bull": {
+   "value": 0.25,
+   "source": "assumption",
+   "evidence": "Partial inflation pass-through; 0 is g/ROIC, 1 is Bradley-Jarrell."
+  },
+  "bear": {
+   "value": 0.25,
+   "source": "assumption",
+   "evidence": "Partial inflation pass-through; 0 is g/ROIC, 1 is Bradley-Jarrell."
+  }
+ },
+ "scenarios": {
+  "base": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 154.49806254727312,
+   "value_per_share_DDM": 154.49806254727307,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 80.2% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+     "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [
+    "negative cash"
+   ],
+   "defaults_filled": [
+    "baseline.noa",
+    "baseline.nol",
+    "debt.leverage",
+    "debt.mode",
+    "debt.start_year",
+    "distribution.mode",
+    "forecast.dwc.mode",
+    "rates.gt",
+    "rates.lam",
+    "rates.rd",
+    "rates.re",
+    "rates.roict",
+    "rates.t",
+    "year"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.05103,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\"",
+     "as_of": "2026-11-15"
+    },
+    "re": {
+     "value": 0.10603,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.05103,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.09672,
+     "source": "assumption",
+     "evidence": "Year-0 interest divided by year-0 debt.",
+     "derived_from": [
+      "baseline.interest",
+      "baseline.debt"
+     ]
+    },
+    "t": {
+     "value": 0.21,
+     "source": "assumption",
+     "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    },
+    "inflation": {
+     "value": 0.0224,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\"",
+     "as_of": "2026-11-13"
+    },
+    "lam": {
+     "value": 0.25,
+     "source": "assumption",
+     "evidence": "Partial inflation pass-through; 0 is g/ROIC, 1 is Bradley-Jarrell."
+    }
+   },
+   "rates_lam": {
+    "value": 0.25,
+    "source": "assumption",
+    "evidence": "Partial inflation pass-through; 0 is g/ROIC, 1 is Bradley-Jarrell."
+   },
+   "rates_lam_ok": null,
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case from cash_share_adjustments per collaborative-run.md. t=0 when item date is on or before the price date; else days/365.25. Discount = 1/(1+re)^t. includes_adjustments is false unless stated.",
+    "price_date": "2026-11-15",
+    "cost_of_equity": 0.10603,
+    "includes_adjustments_cash": false,
+    "includes_adjustments_shares": false,
+    "opening_cash": 72.927,
+    "opening_shares": 37.229705,
+    "items": [
+     {
+      "name": "TYRVAYA close cash paid",
+      "kind": "cash",
+      "date": "2026-10-01",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -30.0,
+      "present_value": -30.0,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Melt FDA-approval milestone payable",
+      "kind": "cash",
+      "date": "2027-12-31",
+      "t_years": 1.1252566735112937,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 0.8927934509941401,
+      "amount": -87.16794,
+      "present_value": -77.82296596865015,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Melt first commercial Annual Net Sales cash milestone",
+      "kind": "cash",
+      "date": "2030-12-31",
+      "t_years": 4.125941136208077,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 0.65981216472262,
+      "amount": -10.02,
+      "present_value": -6.611317890520652,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -114.4342838591708,
+    "sum_new_shares": 0.0,
+    "adjusted_cash": -41.5072838591708,
+    "adjusted_shares": 37.229705,
+    "complete": true,
+    "applied_to_case": true
+   },
+   "year0_cash_used": -41.5072838591708,
+   "shares_used": 37.229705,
+   "price_used": 28.3,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (display_fin skipped)",
+    "cols": {
+     "revenue": [
+      272.303,
+      347.06600002266305,
+      664.5620000968172,
+      898.6890003395662,
+      1125.3910006425767,
+      1353.3400011887072,
+      1582.0680015563107,
+      1759.7010020465077,
+      1946.4668678987143,
+      2117.3017766712915,
+      2264.238991135985
+     ],
+     "ebitda": [
+      61.923,
+      42.482000016879006,
+      217.09900007289608,
+      370.8260000608075,
+      535.1650000402675,
+      692.4970003050456,
+      850.0440005649083,
+      970.6560008666065,
+      1093.1415380732637,
+      1205.1791712841305,
+      1301.5441230232234
+     ],
+     "da": [
+      18.906,
+      24.096795835626,
+      46.14054628054198,
+      62.395986237462814,
+      78.1359083746729,
+      93.96240975117311,
+      109.84299709303096,
+      122.1760580848954,
+      135.1432140097358,
+      147.00428342599028,
+      157.206135688615
+     ],
+     "capex": [
+      0.887,
+      14.977787878194457,
+      74.81713070638455,
+      118.94368924441159,
+      161.67083765824958,
+      204.63301163158266,
+      247.74200584003478,
+      281.22098513883026,
+      316.4212606469427,
+      348.61898493536603,
+      376.3126451657894
+     ],
+     "sbc": [
+      12.502,
+      8.576941753646002,
+      43.831398654964175,
+      74.86825012935768,
+      108.04762092442913,
+      139.81230718495036,
+      171.62040106361906,
+      195.97146977430543,
+      220.70079791017787,
+      243.32073703461072,
+      262.7764259812402
+     ],
+     "interest": [
+      24.18,
+      24.18,
+      28.702628503218076,
+      84.77389373516506,
+      144.801974734272,
+      208.97388209508043,
+      270.4096614727323,
+      331.9293951142464,
+      379.02656688071545,
+      426.855326625188,
+      470.6043370258268
+     ],
+     "tax": [
+      3.771,
+      0.0,
+      20.669129593176084,
+      31.245452691352604,
+      42.87769416144763,
+      52.44716426750676,
+      62.61589759646046,
+      67.32160635756344,
+      75.23690144725325,
+      81.47975308165171,
+      86.3010171087837
+     ],
+     "tax_cash": [
+      3.771,
+      0.0,
+      17.651064702973557,
+      31.245452691352604,
+      42.87769416144763,
+      52.44716426750676,
+      62.61589759646046,
+      67.32160635756344,
+      75.23690144725325,
+      81.47975308165171,
+      86.3010171087837
+     ],
+     "wacc": [
+      0.10480465170493887,
+      0.10471070715149242,
+      0.10246657700641426,
+      0.10041966447898427,
+      0.09850597920829975,
+      0.09692168923225411,
+      0.0955090145125476,
+      0.0946814439943847,
+      0.09392094722469077,
+      0.09335143363536724,
+      0.09300657214390208
+     ],
+     "value_per_share": [
+      154.49806254727312,
+      170.99770464079043,
+      172.1576134091297,
+      172.1026524213855,
+      170.4405702824127,
+      169.12402915048028,
+      167.34843485645428,
+      169.48238100531168,
+      171.43679938424148,
+      174.64687295046915,
+      179.87955739919272
+     ],
+     "shares": [
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705
+     ],
+     "debt": [
+      250.0,
+      296.7600134741323,
+      876.4877350616736,
+      1497.1254625131512,
+      2160.606721413156,
+      2795.7988158884646,
+      3431.8589238445657,
+      3918.8023871041714,
+      4413.309828630976,
+      4865.636238893991,
+      5254.687769581671
+     ],
+     "cash": [
+      -41.5072838591708,
+      3.552713678800501e-14,
+      631.824499092897,
+      1313.456940804895,
+      2054.705072266769,
+      2776.5278018680033,
+      3510.243944416166,
+      4091.399952157433,
+      4687.663404872412,
+      5244.89418474274,
+      5739.495413172004
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "ebitda": [
+     61.923,
+     42.482000016879006,
+     217.09900007289608,
+     370.8260000608075,
+     535.1650000402675,
+     692.4970003050456,
+     850.0440005649083,
+     970.6560008666065,
+     1093.1415380732637,
+     1205.1791712841305,
+     1301.5441230232234
+    ],
+    "capex": [
+     0.887,
+     14.977787878194457,
+     74.81713070638455,
+     118.94368924441159,
+     161.67083765824958,
+     204.63301163158266,
+     247.74200584003478,
+     281.22098513883026,
+     316.4212606469427,
+     348.61898493536603,
+     376.3126451657894
+    ],
+    "da": [
+     18.906,
+     24.096795835626,
+     46.14054628054198,
+     62.395986237462814,
+     78.1359083746729,
+     93.96240975117311,
+     109.84299709303096,
+     122.1760580848954,
+     135.1432140097358,
+     147.00428342599028,
+     157.206135688615
+    ],
+    "sbc": [
+     12.502,
+     8.576941753646002,
+     43.831398654964175,
+     74.86825012935768,
+     108.04762092442913,
+     139.81230718495036,
+     171.62040106361906,
+     195.97146977430543,
+     220.70079791017787,
+     243.32073703461072,
+     262.7764259812402
+    ],
+    "debt": [
+     250.0,
+     296.7600134741323,
+     876.4877350616736,
+     1497.1254625131512,
+     2160.606721413156,
+     2795.7988158884646,
+     3431.8589238445657,
+     3918.8023871041714,
+     4413.309828630976,
+     4865.636238893991,
+     5254.687769581671
+    ],
+    "cash": [
+     -41.5072838591708,
+     3.552713678800501e-14,
+     631.824499092897,
+     1313.456940804895,
+     2054.705072266769,
+     2776.5278018680033,
+     3510.243944416166,
+     4091.399952157433,
+     4687.663404872412,
+     5244.89418474274,
+     5739.495413172004
+    ],
+    "interest": [
+     24.18,
+     24.18,
+     28.702628503218076,
+     84.77389373516506,
+     144.801974734272,
+     208.97388209508043,
+     270.4096614727323,
+     331.9293951142464,
+     379.02656688071545,
+     426.855326625188,
+     470.6043370258268
+    ],
+    "terminal_capex": 376.3126451657894,
+    "terminal_da": 157.206135688615
+   },
+   "min_cash": -41.5072838591708,
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "negative cash (min -41.51)"
+   ],
+   "flags": [
+    "negative cash (min -41.51)"
+   ]
+  },
+  "bull": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 184.15206552944613,
+   "value_per_share_DDM": 184.15206552944616,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 78.0% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+     "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [
+    "negative cash"
+   ],
+   "defaults_filled": [
+    "baseline.noa",
+    "baseline.nol",
+    "debt.leverage",
+    "debt.mode",
+    "debt.start_year",
+    "distribution.mode",
+    "forecast.dwc.mode",
+    "rates.gt",
+    "rates.lam",
+    "rates.rd",
+    "rates.re",
+    "rates.roict",
+    "rates.t",
+    "year"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.05103,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\"",
+     "as_of": "2026-11-15"
+    },
+    "re": {
+     "value": 0.10603,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.05103,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.09672,
+     "source": "assumption",
+     "evidence": "Year-0 interest divided by year-0 debt.",
+     "derived_from": [
+      "baseline.interest",
+      "baseline.debt"
+     ]
+    },
+    "t": {
+     "value": 0.21,
+     "source": "assumption",
+     "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    },
+    "inflation": {
+     "value": 0.0224,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\"",
+     "as_of": "2026-11-13"
+    },
+    "lam": {
+     "value": 0.25,
+     "source": "assumption",
+     "evidence": "Partial inflation pass-through; 0 is g/ROIC, 1 is Bradley-Jarrell."
+    }
+   },
+   "rates_lam": {
+    "value": 0.25,
+    "source": "assumption",
+    "evidence": "Partial inflation pass-through; 0 is g/ROIC, 1 is Bradley-Jarrell."
+   },
+   "rates_lam_ok": null,
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case from cash_share_adjustments per collaborative-run.md. t=0 when item date is on or before the price date; else days/365.25. Discount = 1/(1+re)^t. includes_adjustments is false unless stated.",
+    "price_date": "2026-11-15",
+    "cost_of_equity": 0.10603,
+    "includes_adjustments_cash": false,
+    "includes_adjustments_shares": false,
+    "opening_cash": 72.927,
+    "opening_shares": 37.229705,
+    "items": [
+     {
+      "name": "TYRVAYA close cash paid",
+      "kind": "cash",
+      "date": "2026-10-01",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "bull",
+      "discount_factor": 1.0,
+      "amount": -30.0,
+      "present_value": -30.0,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Melt FDA-approval milestone payable",
+      "kind": "cash",
+      "date": "2027-12-31",
+      "t_years": 1.1252566735112937,
+      "probability": 1.0,
+      "source_list": "bull",
+      "discount_factor": 0.8927934509941401,
+      "amount": -87.16794,
+      "present_value": -77.82296596865015,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Melt first commercial Annual Net Sales cash milestone",
+      "kind": "cash",
+      "date": "2029-12-31",
+      "t_years": 3.1266255989048597,
+      "probability": 1.0,
+      "source_list": "bull",
+      "discount_factor": 0.7297217119832068,
+      "amount": -10.02,
+      "present_value": -7.311811554071732,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Melt second commercial Annual Net Sales cash milestone",
+      "kind": "cash",
+      "date": "2032-12-31",
+      "t_years": 6.1273100616016425,
+      "probability": 1.0,
+      "source_list": "bull",
+      "discount_factor": 0.5392952444852736,
+      "amount": -25.02,
+      "present_value": -13.493167017021545,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -128.62794453974342,
+    "sum_new_shares": 0.0,
+    "adjusted_cash": -55.70094453974342,
+    "adjusted_shares": 37.229705,
+    "complete": true,
+    "applied_to_case": true
+   },
+   "year0_cash_used": -55.70094453974342,
+   "shares_used": 37.229705,
+   "price_used": 28.3,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (display_fin skipped)",
+    "cols": {
+     "revenue": [
+      272.303,
+      358.997999977365,
+      700.0079998571222,
+      967.1349999477112,
+      1240.0260001946422,
+      1493.1030008163427,
+      1734.5760003886085,
+      1953.7500004994877,
+      2184.3667430584464,
+      2393.415009102626,
+      2569.0102946604493
+     ],
+     "ebitda": [
+      61.923,
+      51.649999998045,
+      246.86000000480607,
+      425.25400010803924,
+      625.0070000461002,
+      803.6149998214672,
+      973.5489995546543,
+      1127.0989994546117,
+      1282.1131165339518,
+      1422.6295076174,
+      1540.659741901373
+     ],
+     "da": [
+      18.906,
+      24.925234711229997,
+      48.60156239666382,
+      67.1481926714411,
+      86.09501753443737,
+      103.66615620626203,
+      120.43162896973968,
+      135.6488819786903,
+      151.660604709691,
+      166.17482790161782,
+      178.36641032544793
+     ],
+     "capex": [
+      0.887,
+      17.44904530656001,
+      82.59493687439135,
+      133.6263628996626,
+      185.75893237912703,
+      234.1062736495493,
+      280.23680897766485,
+      322.1073865288975,
+      366.16396349077513,
+      406.1001403681667,
+      439.64552448243296
+     ],
+     "sbc": [
+      12.502,
+      10.427923388329999,
+      49.84002260969407,
+      85.85704034608638,
+      126.18635264080139,
+      162.2465760342358,
+      196.555554356738,
+      227.55667023854716,
+      258.85338538035086,
+      287.2230690411113,
+      311.05288977037554
+     ],
+     "interest": [
+      24.18,
+      24.18,
+      29.606757368242835,
+      96.39511651754937,
+      166.0552899990696,
+      244.0558316153077,
+      313.79956874962573,
+      380.15623934937804,
+      440.1152044767293,
+      500.6458853380965,
+      555.5154222855599
+     ],
+     "tax": [
+      3.771,
+      -0.0,
+      24.950448102343117,
+      36.9292666203221,
+      51.80077137307629,
+      61.665751552788954,
+      71.9800719704957,
+      80.5848136564792,
+      90.61162361310797,
+      98.4030023206806,
+      104.10225409919785
+     ],
+     "tax_cash": [
+      3.771,
+      0.0,
+      23.294984901024968,
+      36.9292666203221,
+      51.80077137307629,
+      61.665751552788954,
+      71.9800719704957,
+      80.5848136564792,
+      90.61162361310797,
+      98.4030023206806,
+      104.10225409919785
+     ],
+     "wacc": [
+      0.10499597533689264,
+      0.10488149748077638,
+      0.10261234068815467,
+      0.10060583550479846,
+      0.09862420651667496,
+      0.09712630528350634,
+      0.09589115426315581,
+      0.0949520126335677,
+      0.09409656863561423,
+      0.0934572616988591,
+      0.09307970376943188
+     ],
+     "value_per_share": [
+      184.15206552944613,
+      203.8363450285934,
+      205.24867396568382,
+      205.7198233296901,
+      203.31338642100968,
+      202.7746484061161,
+      202.86595083897163,
+      204.59009415469342,
+      206.07840178865212,
+      209.1922349770281,
+      215.07236035437603
+     ],
+     "shares": [
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705
+     ],
+     "debt": [
+      250.0,
+      306.10791323658844,
+      996.6409896355394,
+      1716.8661083443922,
+      2523.323321084654,
+      3244.4124146983636,
+      3930.4822099811627,
+      4550.405339916556,
+      5176.23950928553,
+      5743.542414035979,
+      6220.062585393847
+     ],
+     "cash": [
+      -55.70094453974342,
+      2.1316282072803006e-14,
+      752.0563746504038,
+      1544.7277070836753,
+      2446.390573477963,
+      3269.020234061258,
+      4066.0670248441875,
+      4802.684044460891,
+      5554.887153402854,
+      6252.447468702648,
+      6859.311291324322
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "ebitda": [
+     61.923,
+     51.649999998045,
+     246.86000000480607,
+     425.25400010803924,
+     625.0070000461002,
+     803.6149998214672,
+     973.5489995546543,
+     1127.0989994546117,
+     1282.1131165339518,
+     1422.6295076174,
+     1540.659741901373
+    ],
+    "capex": [
+     0.887,
+     17.44904530656001,
+     82.59493687439135,
+     133.6263628996626,
+     185.75893237912703,
+     234.1062736495493,
+     280.23680897766485,
+     322.1073865288975,
+     366.16396349077513,
+     406.1001403681667,
+     439.64552448243296
+    ],
+    "da": [
+     18.906,
+     24.925234711229997,
+     48.60156239666382,
+     67.1481926714411,
+     86.09501753443737,
+     103.66615620626203,
+     120.43162896973968,
+     135.6488819786903,
+     151.660604709691,
+     166.17482790161782,
+     178.36641032544793
+    ],
+    "sbc": [
+     12.502,
+     10.427923388329999,
+     49.84002260969407,
+     85.85704034608638,
+     126.18635264080139,
+     162.2465760342358,
+     196.555554356738,
+     227.55667023854716,
+     258.85338538035086,
+     287.2230690411113,
+     311.05288977037554
+    ],
+    "debt": [
+     250.0,
+     306.10791323658844,
+     996.6409896355394,
+     1716.8661083443922,
+     2523.323321084654,
+     3244.4124146983636,
+     3930.4822099811627,
+     4550.405339916556,
+     5176.23950928553,
+     5743.542414035979,
+     6220.062585393847
+    ],
+    "cash": [
+     -55.70094453974342,
+     2.1316282072803006e-14,
+     752.0563746504038,
+     1544.7277070836753,
+     2446.390573477963,
+     3269.020234061258,
+     4066.0670248441875,
+     4802.684044460891,
+     5554.887153402854,
+     6252.447468702648,
+     6859.311291324322
+    ],
+    "interest": [
+     24.18,
+     24.18,
+     29.606757368242835,
+     96.39511651754937,
+     166.0552899990696,
+     244.0558316153077,
+     313.79956874962573,
+     380.15623934937804,
+     440.1152044767293,
+     500.6458853380965,
+     555.5154222855599
+    ],
+    "terminal_capex": 439.64552448243296,
+    "terminal_da": 178.36641032544793
+   },
+   "min_cash": -55.70094453974342,
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "negative cash (min -55.70)"
+   ],
+   "flags": [
+    "negative cash (min -55.70)"
+   ]
+  },
+  "bear": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 87.85671123150921,
+   "value_per_share_DDM": 87.85671123150924,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 68.7% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+     "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [
+    "negative cash"
+   ],
+   "defaults_filled": [
+    "baseline.noa",
+    "baseline.nol",
+    "debt.leverage",
+    "debt.mode",
+    "debt.start_year",
+    "distribution.mode",
+    "forecast.dwc.mode",
+    "rates.gt",
+    "rates.lam",
+    "rates.rd",
+    "rates.re",
+    "rates.roict",
+    "rates.t",
+    "year"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.05103,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\"",
+     "as_of": "2026-11-15"
+    },
+    "re": {
+     "value": 0.10603,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.05103,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.09672,
+     "source": "assumption",
+     "evidence": "Year-0 interest divided by year-0 debt.",
+     "derived_from": [
+      "baseline.interest",
+      "baseline.debt"
+     ]
+    },
+    "t": {
+     "value": 0.21,
+     "source": "assumption",
+     "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    },
+    "inflation": {
+     "value": 0.0224,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\"",
+     "as_of": "2026-11-13"
+    },
+    "lam": {
+     "value": 0.25,
+     "source": "assumption",
+     "evidence": "Partial inflation pass-through; 0 is g/ROIC, 1 is Bradley-Jarrell."
+    }
+   },
+   "rates_lam": {
+    "value": 0.25,
+    "source": "assumption",
+    "evidence": "Partial inflation pass-through; 0 is g/ROIC, 1 is Bradley-Jarrell."
+   },
+   "rates_lam_ok": null,
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case from cash_share_adjustments per collaborative-run.md. t=0 when item date is on or before the price date; else days/365.25. Discount = 1/(1+re)^t. includes_adjustments is false unless stated.",
+    "price_date": "2026-11-15",
+    "cost_of_equity": 0.10603,
+    "includes_adjustments_cash": false,
+    "includes_adjustments_shares": false,
+    "opening_cash": 72.927,
+    "opening_shares": 37.229705,
+    "items": [
+     {
+      "name": "TYRVAYA close cash paid",
+      "kind": "cash",
+      "date": "2026-10-01",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "bear",
+      "discount_factor": 1.0,
+      "amount": -30.0,
+      "present_value": -30.0,
+      "new_shares": 0.0,
+      "status": "applied"
+     },
+     {
+      "name": "Melt FDA-approval milestone payable",
+      "kind": "cash",
+      "date": "2030-12-31",
+      "t_years": 4.125941136208077,
+      "probability": 1.0,
+      "source_list": "bear",
+      "discount_factor": 0.65981216472262,
+      "amount": -87.16794,
+      "present_value": -57.51446718581146,
+      "new_shares": 0.0,
+      "status": "applied"
+     }
+    ],
+    "sum_pv_cash": -87.51446718581147,
+    "sum_new_shares": 0.0,
+    "adjusted_cash": -14.587467185811462,
+    "adjusted_shares": 37.229705,
+    "complete": true,
+    "applied_to_case": true
+   },
+   "year0_cash_used": -14.587467185811462,
+   "shares_used": 37.229705,
+   "price_used": 28.3,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (display_fin skipped)",
+    "cols": {
+     "revenue": [
+      272.303,
+      337.486000075372,
+      601.9610001020201,
+      781.9909999658224,
+      919.5510000162334,
+      1017.5760000763529,
+      1126.486000345461,
+      1240.4990002236257,
+      1364.8813539780483,
+      1479.333934876329,
+      1579.104160334882
+     ],
+     "ebitda": [
+      61.923,
+      35.330000024438995,
+      170.28200012452,
+      286.1110002014928,
+      375.0870001381318,
+      434.90900014504626,
+      491.69100015519757,
+      559.8490000864911,
+      635.3462280212891,
+      704.8163122171848,
+      765.3745443553406
+     ],
+     "da": [
+      18.906,
+      23.431656343943995,
+      41.794158227888744,
+      54.2936429101179,
+      63.844435082635535,
+      70.65031181236903,
+      78.21193421494175,
+      86.12785793115705,
+      94.76372599019831,
+      102.71016982101509,
+      109.63721756753054
+     ],
+     "capex": [
+      0.887,
+      12.525113220903759,
+      59.745860821498,
+      91.88935711886849,
+      116.45003787003095,
+      133.95193327005268,
+      153.3972934491623,
+      173.75376982647938,
+      195.96164479391908,
+      216.39660626207205,
+      234.21010331834583
+     ],
+     "sbc": [
+      12.502,
+      7.132982257085999,
+      34.37923817574648,
+      57.764638737126155,
+      75.72852858755105,
+      87.80634529679389,
+      99.27039846164236,
+      113.03121940282789,
+      128.27380040892973,
+      142.29952578749808,
+      154.52598474767805
+     ],
+     "interest": [
+      24.18,
+      24.18,
+      26.413802818479116,
+      66.49255951764117,
+      111.7220416464334,
+      146.46583116677206,
+      169.82542227455417,
+      191.99793911394275,
+      218.61261279478308,
+      248.0931446078964,
+      275.2201674565432
+     ],
+     "tax": [
+      3.771,
+      0.0,
+      14.21590818950519,
+      22.58763339768759,
+      25.996318912517484,
+      27.29716749251337,
+      30.32048149285246,
+      35.4253165640983,
+      40.67617865374937,
+      44.459829120162794,
+      47.45814666255364
+     ],
+     "tax_cash": [
+      3.771,
+      0.0,
+      10.138834088421081,
+      22.58763339768759,
+      25.996318912517484,
+      27.29716749251337,
+      30.32048149285246,
+      35.4253165640983,
+      40.67617865374937,
+      44.459829120162794,
+      47.45814666255364
+     ],
+     "wacc": [
+      0.10393542516973472,
+      0.10395170450098444,
+      0.10122321602428738,
+      0.09853543635465593,
+      0.09684154748752402,
+      0.0960270051781377,
+      0.09538871417699035,
+      0.09459599899951082,
+      0.09374513350605466,
+      0.09309266851407767,
+      0.09266838187668662
+     ],
+     "value_per_share": [
+      87.85671123150921,
+      97.21370335162936,
+      95.32715288747976,
+      91.60138222768163,
+      90.45130360941106,
+      92.49665951844113,
+      95.10225617433136,
+      96.5688200464254,
+      97.2289717766797,
+      98.56583932904074,
+      101.00032166531204
+     ],
+     "shares": [
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705
+     ],
+     "debt": [
+      250.0,
+      273.09556263936224,
+      687.4747675521212,
+      1155.1079574693279,
+      1514.3282792263446,
+      1755.845970580585,
+      1985.090354776083,
+      2260.262746017195,
+      2565.0655976829653,
+      2845.5352301131434,
+      3090.0252909070155
+     ],
+     "cash": [
+      -14.587467185811462,
+      2.1316282072803006e-14,
+      453.9834691331343,
+      968.9934704805103,
+      1373.403865359126,
+      1654.3092796322805,
+      1922.4310683047647,
+      2243.2442147250194,
+      2599.8690577606976,
+      2933.905896630431,
+      3232.356099594523
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "ebitda": [
+     61.923,
+     35.330000024438995,
+     170.28200012452,
+     286.1110002014928,
+     375.0870001381318,
+     434.90900014504626,
+     491.69100015519757,
+     559.8490000864911,
+     635.3462280212891,
+     704.8163122171848,
+     765.3745443553406
+    ],
+    "capex": [
+     0.887,
+     12.525113220903759,
+     59.745860821498,
+     91.88935711886849,
+     116.45003787003095,
+     133.95193327005268,
+     153.3972934491623,
+     173.75376982647938,
+     195.96164479391908,
+     216.39660626207205,
+     234.21010331834583
+    ],
+    "da": [
+     18.906,
+     23.431656343943995,
+     41.794158227888744,
+     54.2936429101179,
+     63.844435082635535,
+     70.65031181236903,
+     78.21193421494175,
+     86.12785793115705,
+     94.76372599019831,
+     102.71016982101509,
+     109.63721756753054
+    ],
+    "sbc": [
+     12.502,
+     7.132982257085999,
+     34.37923817574648,
+     57.764638737126155,
+     75.72852858755105,
+     87.80634529679389,
+     99.27039846164236,
+     113.03121940282789,
+     128.27380040892973,
+     142.29952578749808,
+     154.52598474767805
+    ],
+    "debt": [
+     250.0,
+     273.09556263936224,
+     687.4747675521212,
+     1155.1079574693279,
+     1514.3282792263446,
+     1755.845970580585,
+     1985.090354776083,
+     2260.262746017195,
+     2565.0655976829653,
+     2845.5352301131434,
+     3090.0252909070155
+    ],
+    "cash": [
+     -14.587467185811462,
+     2.1316282072803006e-14,
+     453.9834691331343,
+     968.9934704805103,
+     1373.403865359126,
+     1654.3092796322805,
+     1922.4310683047647,
+     2243.2442147250194,
+     2599.8690577606976,
+     2933.905896630431,
+     3232.356099594523
+    ],
+    "interest": [
+     24.18,
+     24.18,
+     26.413802818479116,
+     66.49255951764117,
+     111.7220416464334,
+     146.46583116677206,
+     169.82542227455417,
+     191.99793911394275,
+     218.61261279478308,
+     248.0931446078964,
+     275.2201674565432
+    ],
+    "terminal_capex": 234.21010331834583,
+    "terminal_da": 109.63721756753054
+   },
+   "min_cash": -14.587467185811462,
+   "not_a_valuation": true,
+   "not_a_valuation_reason": [
+    "negative cash (min -14.59)"
+   ],
+   "flags": [
+    "negative cash (min -14.59)"
+   ]
+  }
+ },
+ "control_summary": {
+  "base": {
+   "fcfe": 154.49806254727312,
+   "ddm": 154.49806254727307,
+   "ok": true,
+   "not_a_valuation": true,
+   "reasons": [
+    "negative cash (min -41.51)"
+   ]
+  },
+  "bull": {
+   "fcfe": 184.15206552944613,
+   "ddm": 184.15206552944616,
+   "ok": true,
+   "not_a_valuation": true,
+   "reasons": [
+    "negative cash (min -55.70)"
+   ]
+  },
+  "bear": {
+   "fcfe": 87.85671123150921,
+   "ddm": 87.85671123150924,
+   "ok": true,
+   "not_a_valuation": true,
+   "reasons": [
+    "negative cash (min -14.59)"
+   ]
+  }
+ },
+ "code_change_note": {
+  "label": "Interpretation of the code-change effect. The diagnostic lam=0 figures below are NOT official control or v05 values; they were computed after the mandated runs, by setting rates.lam=0 on the already-built v04-control cases and calling run_case, to show what the 377f177 identity (b = gt/roict) would have produced on this commit.",
+  "observation": "Control (v04 request on fd50e97, default lam=0.25, inflation prompt 0.0224) matches the published v04 figures (said to have been run on 377f177) to about 0.001\u20130.003 per share, i.e. rounding at the third decimal. On 377f177, compile.py and defaults.py had no rates.lam / inflation pass-through, and forecast_capex method 1 used b = gt/roict (lam=0). A diagnostic lam=0 run on the control cases gives 149.779 / 178.555 / 85.129, which would have been the expected 377f177-equivalent levels. Those do not match published v04 (154.497 / 184.150 / 87.854). The published v04 figures instead match this control (default lam=0.25). So the mandated code-change effect (control minus published v04) is negligible, and the published v04 run appears already to have used the post-e27579d identity with default lam=0.25, rather than 377f177 as stated. The lambda effect (v05 lam=1 minus control lam=0.25) is the economically meaningful change.",
+  "diagnostic_lam0_not_official": {
+   "base": {
+    "fcfe": 149.77928350773868,
+    "ddm": 149.77928350773863
+   },
+   "bull": {
+    "fcfe": 178.55470349174138,
+    "ddm": 178.55470349174135
+   },
+   "bear": {
+    "fcfe": 85.12883829968285,
+    "ddm": 85.12883829968287
+   }
+  }
+ },
+ "artifact_sha256": {
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/valuation_request_v05.json": "7259bee44536b470339704b8cccd970631c9fd30ca05d3bcb70bc69e9847f2ad",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/valuation_request_v04.json": "837d822da5af7a376bc4932265e7cd78dca045922104cfff2497bc4330799656",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/case_base_v05.json": "b0f0a2a0316dab391ac0ccf4f99dce78a59ee37adb353cc3bfeac55af2c4cc02",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/case_bull_v05.json": "ab4d588e3107a098259a4171066e09bc38f950d7769b7dbbe11a7fd56ff5529e",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/case_bear_v05.json": "332ce07300b72b9e416e467ebab21463c953e6b7ccc5a94e585f487b13d1083d",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/notebook_base_v05.py": "f78d2b3fa61c164158bd91406a16e9b69d094969e8d5c8e1181121974f604060",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/notebook_bull_v05.py": "a3d62f59fd530a9441c0d39159eab30678425b1f73c1fec68b1dfa6a13a7c6b6",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/notebook_bear_v05.py": "a8e5733dc4d472bb8d1b1c75e0e5528b0eace0090faa630bfbf89bfd090879c8",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/run/run_hrow_v05.py": "80a91d0a1de747f133141d867341fc4a1d0fa9ebe98db1700557bb591cf21849",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/run/case_base_v04_control.json": "167b5ce7b36f396918e4760ccf401c170bfa00c1377e14dfdc51c825428d2863",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/run/case_bull_v04_control.json": "cdfb43ac05523c44b17130d326fbaba255396fbd41a3afe36916b20cad267053",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/run/case_bear_v04_control.json": "d9d6255159c512f90df4b9754aa7c112895d35973933eafb574f0ea96ac0a2d4",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/run/baseline_v05.json": "6f650450a16571101aa9ac8cc20870150ef053eb705882ffe1052129df428b0e"
+ }
+}

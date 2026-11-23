@@ -1,5 +1,19 @@
 # HROW forecast revision log — 22 November 2026 (America/Toronto)
 
+## Valuation update to Finagle v06 (lambda=1, debt-funded schedule, 2.5x from FY2028E)
+
+Trigger: David May, 22 November 2026, “Yes”, approving an update of the report’s valuation section and PDF to the v06 Finagle result. The operating forecast is unchanged. Prior 22 November values in this log are the v04 run (pass-through 0.25, default 4.04x debt policy).
+
+v06 is `collab/valuation_request_v06.json`, sha256 `8cad3282baaf7389837b3db6339d4db29c30fc60e7ca03f446108f2b150d757e`, and `collab/valuation_result_v06.json`, run 22 November 2026 at 22:03 ET (America/Toronto) on Finagle commit `fd50e97984c3b7135cf0d17f665c4c115655f471`. Value per share is $157.11 base, $187.34 bull and $89.13 bear, against a pinned $28.30 price on 15 November 2026. That is $2.62 a share above v04 ($154.50 / $184.15 / $87.85) and $14.03 a share below v05 ($171.14 / $203.89 / $97.48). v05 used a pass-through of 1 but subtracted the cash schedule from year-0 cash, leaving cash negative, and was flagged as not a valuation.
+
+David’s instructions, quoted in the request: “rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate.” Then: “rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3.” and “Add the present value to debt and keep rd at 9.67%.” Year-0 cash is the FY2025 10-K figure of $72.93 in every case. Year-0 debt is $250 plus the absolute present value of that scenario’s schedule (base $364.43, bull $378.63, bear $337.51). The cost of debt is held at 9.67%. Debt holds that raised year-0 balance through FY2027E and runs to 2.5x Debt/EBITDA from FY2028E. Minimum cash is $58.96 / $62.91 / $57.74. not_a_valuation is false and sanity_flags are empty.
+
+The Valuation section, the Appendix A valuation tables, Appendix B tags D27, C30, C31, P12–P14 and S47, and two method suggestions in Appendix C were updated. Forecast sections, Figure 8a and Figure 18 were not changed.
+
+---
+
+# HROW forecast revision log — 22 November 2026 (America/Toronto)
+
 ## Valuation rerun with a 0.25 inflation pass-through
 
 Trigger: "rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026." The operating forecast is unchanged.

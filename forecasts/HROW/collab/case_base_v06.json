@@ -1,0 +1,264 @@
+{
+ "path": "ebitda",
+ "ticker": "HROW",
+ "year": 10,
+ "market": {
+  "shares": {
+   "value": 37.229705,
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+  },
+  "price": {
+   "value": 28.3,
+   "source": "prompt",
+   "evidence": "David 2026-11-15: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+   "as_of": "2026-11-15"
+  }
+ },
+ "rates": {
+  "risk_free": {
+   "value": 0.05103,
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+   "as_of": "2026-11-15"
+  },
+  "roict": {
+   "value": 0.15,
+   "source": "assumption",
+   "evidence": "Terminal ROIC of 15 percent."
+  },
+  "inflation": {
+   "value": 0.0224,
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+   "as_of": "2026-11-13"
+  },
+  "lam": {
+   "value": 1,
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+  },
+  "t": {
+   "value": 0.21,
+   "source": "assumption",
+   "evidence": "US federal statutory tax rate. No marginal rate was stated."
+  },
+  "rd": {
+   "value": 0.09672,
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Pinned at the v05 default, year-0 interest 24.18 / unadjusted year-0 debt 250, so raising baseline.debt does not recompute a lower cost of debt. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+  },
+  "re": {
+   "value": 0.10603,
+   "source": "assumption",
+   "evidence": "0.055 plus the 10-year yield.",
+   "derived_from": [
+    "rates.risk_free"
+   ]
+  },
+  "gt": {
+   "value": 0.05103,
+   "source": "assumption",
+   "evidence": "Terminal growth equals the 10-year yield.",
+   "derived_from": [
+    "rates.risk_free"
+   ]
+  }
+ },
+ "baseline": {
+  "date": {
+   "value": "2025-12-31",
+   "source": "10k",
+   "evidence": "Period end of the latest 10-K.",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "note": "Period end of the latest 10-K."
+  },
+  "revenue": {
+   "value": 272.303,
+   "source": "10k",
+   "evidence": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD"
+  },
+  "ebitda": {
+   "value": 61.923,
+   "source": "10k",
+   "evidence": "OperatingIncomeLoss, DepreciationAndAmortization, AmortizationOfIntangibleAssets, ShareBasedCompensation",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD",
+   "note": "Operating income plus depreciation and amortization plus stock-based compensation."
+  },
+  "capex": {
+   "value": 0.887,
+   "source": "10k",
+   "evidence": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD",
+   "note": "Positive cash outflow."
+  },
+  "da": {
+   "value": 18.906,
+   "source": "10k",
+   "evidence": "DepreciationAndAmortization, AmortizationOfIntangibleAssets",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD",
+   "note": "Sum of separate depreciation and amortization lines."
+  },
+  "tax": {
+   "value": 3.771,
+   "source": "10k",
+   "evidence": "IncomeTaxExpenseBenefit",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD"
+  },
+  "interest": {
+   "value": 24.18,
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD"
+  },
+  "sbc": {
+   "value": 12.502,
+   "source": "10k",
+   "evidence": "ShareBasedCompensation",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD"
+  },
+  "debt": {
+   "value": 364.4342838591708,
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. baseline.debt is 250 plus the absolute present value of the base cash_share_adjustments as computed in v05 (sum_pv_cash -114.4342838591708). [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD"
+  },
+  "cash": {
+   "value": 72.927,
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. includes_adjustments is true so the runner does not subtract the schedule from this stated cash again. Cash stays at the unadjusted opening; the present value is added to debt instead. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "currency": "USD"
+  },
+  "gross_margin": {
+   "value": 0.7505205598175562,
+   "source": "10k",
+   "evidence": "us-gaap:GrossProfit / revenue",
+   "period_end": "2025-12-31",
+   "basis": "fiscal_year",
+   "note": "Gross profit 204.369 million divided by revenue 272.303 million."
+  },
+  "ebitda_definition": {
+   "value": "before_sbc",
+   "source": "10k",
+   "evidence": "last_10k adds stock-based compensation back to EBITDA"
+  },
+  "nol": {
+   "value": 0,
+   "source": "assumption",
+   "evidence": "No net operating loss was stated."
+  },
+  "noa": {
+   "value": 0,
+   "source": "assumption",
+   "evidence": "No non-operating assets were stated."
+  }
+ },
+ "forecast": {
+  "margin_path": {
+   "me": {
+    "value": 0.551603,
+    "source": "assumption",
+    "evidence": "Forecaster [C] cite: C18_base_me FY2032E Adjusted EBITDA / revenue (base) = 0.551603."
+   },
+   "mc": {
+    "value": 0.655824,
+    "source": "assumption",
+    "evidence": "Forecaster [S] cite: S43_base base mc = (me 0.551603 + FY2032E GAAP gross margin 0.760045) / 2 = 0.655824. Halfway between the last explicit EBITDA margin and GAAP gross margin."
+   },
+   "gsnext": {
+    "value": 0.106135,
+    "source": "assumption",
+    "evidence": "Forecaster [S] cite: S44_base base gsnext is FY2033E revenue 1946.467 / FY2032E revenue 1759.701 \u2212 1 = 0.106135. FY2033E is one more year of the same build."
+   }
+  },
+  "dwc": {
+   "mode": {
+    "value": "zero",
+    "source": "assumption",
+    "evidence": "No working-capital change was stated."
+   }
+  },
+  "sales_growth": {
+   "value": [
+    0.274558121,
+    0.914800067,
+    0.35230272,
+    0.252258568,
+    0.202550936,
+    0.169010005,
+    0.112278992
+   ],
+   "source": "assumption",
+   "evidence": "Forecaster [C] cite: C18_base Revenue growth FY2026E\u2013FY2032E off FY2025A (base): [0.274558121, 0.914800067, 0.35230272, 0.252258568, 0.202550936, 0.169010005, 0.112278992]."
+  },
+  "ebitda_growth": {
+   "value": [
+    -0.313954427,
+    4.110376159,
+    0.708096306,
+    0.443170112,
+    0.293987836,
+    0.227505679,
+    0.141889126
+   ],
+   "source": "assumption",
+   "evidence": "Forecaster [C] cite: C18_base_e Adjusted EBITDA growth FY2026E\u2013FY2032E off FY2025A (base): [-0.313954427, 4.110376159, 0.708096306, 0.443170112, 0.293987836, 0.227505679, 0.141889126]."
+  },
+  "ebitda_basis": {
+   "value": "total",
+   "source": "assumption",
+   "evidence": "Forecaster [C] cite: C18 Finagle growth leaves: sales_growth and ebitda_growth are year / prior \u2212 1 on totals from FY2025A (year 0) through FY2032E, so they compound back to the revenue and Adjusted EBITDA in this file. me is FY2032E Adjusted EBITDA / revenue. ebitda_basis is total: TYRVAYA (closed 1 October 2026) is inside the Other branded line and the cost build, no further deal is forecast, and its $30 close cash is a dated item on cash_share_adjustments rather than a Finagle acquisition."
+  },
+  "acquisition_disclosure": {
+   "status": {
+    "value": "none",
+    "source": "assumption",
+    "evidence": "Forecaster [C] cite: C20 No acquisition after TYRVAYA is forecast. TYRVAYA closed 1 October 2026 and is already inside the explicit lines and costs; its $30 close cash is a dated item on cash_share_adjustments."
+   }
+  }
+ },
+ "debt": {
+  "mode": {
+   "value": "target",
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Target Debt/EBITDA policy; leverage and start_year are the next two items. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+  },
+  "leverage": {
+   "value": 2.5,
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Debt/EBITDA target of 2.5x. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+  },
+  "start_year": {
+   "value": 3,
+   "source": "prompt",
+   "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Year 3 is FY2028E (year 0 is FY2025A, year 1 is FY2026E). Years 1-2 hold year-0 debt; the target applies from year 3. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+  }
+ },
+ "distribution": {
+  "mode": {
+   "value": "none",
+   "source": "assumption",
+   "evidence": "No distribution was stated."
+  }
+ }
+}
