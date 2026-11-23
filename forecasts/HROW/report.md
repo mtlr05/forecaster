@@ -2,7 +2,7 @@
 
 **Company Update: FY2026E–FY2032E Revenue and EBITDA Forecast**
 
-*15 November 2026 (America/Toronto); valuation rerun 22 November 2026. US$ millions unless noted; per-share values in US$. This update includes a valuation but carries no rating or price target. The audit record is `forecast.md` / `forecast.json` in this folder, and the valuation result is `collab/valuation_result_v04.json`. Numbered sources are in Appendix B.*
+*15 November 2026 (America/Toronto); valuation updated 22 November 2026 to Finagle v06. US$ millions unless noted; per-share values in US$. This update includes a valuation but carries no rating or price target. The audit record is `forecast.md` / `forecast.json` in this folder, and the valuation result is `collab/valuation_result_v06.json`. Numbered sources are in Appendix B.*
 
 ---
 
@@ -715,34 +715,54 @@ The remaining Melt equity was acquired in November 2025 [A7][D8]. Schedule A of 
 
 ## 7. Valuation
 
-Finagle values the base case at $154.50 per share vs. a $28.30 share price on 15 November 2026, about 446% above (derived) [C28][A24][C29]. About 42% of that equity value is the terminal value (derived) [C29]. The bull is $184.15 and the bear $87.85 per share; their inputs, bridges and year rows are in Appendix A [C28]. That is $4.72 a share above the 15 November value of $149.78, because a quarter of inflation now passes through the terminal reinvestment rate and terminal capex is lower [C29][P11][S46].
-
-### Method
-
-Finagle discounts free cash flow to equity at the cost of equity [D26]. It takes the explicit revenue and Adjusted EBITDA for FY2026E–FY2032E from the forecast file as given, compounding from FY2025A [C18]. That is seven explicit years, and Finagle extends them by three more, FY2033E–FY2035E, to a ten-year horizon [C28]. In those extra years, revenue starts from next-period growth of 10.6% and fades toward terminal growth, and EBITDA moves from the 55.2% starting margin with each extra dollar of revenue earning the 65.6% incremental margin [S43][S44][C28]. A terminal value is added at the end of FY2035E [C28]. Terminal growth is Finagle's default of 5.10%, the 10-year Treasury yield on the 15 November price date; it was not set or overridden by us [D26][A24]. A quarter of expected inflation passes through the terminal reinvestment rate, so that rate is growth less a quarter of the 2.24% breakeven, divided by the 15% terminal return less that same quarter, rather than growth divided by the 15% return [P11][D25][S46]. Year-0 cash after the cash schedule is negative, so Finagle's FY2026E free cash flow to equity is an implied equity inflow of $41.6 that brings balance-sheet cash to zero, and no equity is issued to fill the gap [P9][C28].
-
-### Balance Sheet Adjustments
-
-Year-0 cash of −$41.6 and the share count of 37.23 million equal Finagle's opening $72.9 of cash and 37.23 million shares at 31 December 2025 plus the present values below and no new shares [D26][C28]. The 22 November instruction pins the 15 November price, the 10-K share count, the 5.103% risk-free rate and year-0 interest, and it pins inflation at the 13 November breakeven [P11]. Those opening figures match the 31 December 2025 balance the forecast schedule was built against, and the cash items are added once [A21][C28]. No equity was sold for cash in 2026 through 15 November, and this run does not add a year-0 equity raise in any case [A22][P9]. These dollars are outside EBITDA and are not in a later cash-flow year [S12][C19]. The TYRVAYA close cash is already paid, so its discount is 1 [C19].
+Finagle values the base case at $157.11 per share vs. a $28.30 share price on 15 November 2026, about 455% above (derived) [C30][A24][C31]. This result file does not break out the present value of explicit-period cash flows and the terminal value, so that split is not restated [C30][C31]. The bull is $187.34 and the bear $89.13 per share; their inputs, bridges and year rows are in Appendix A [C30]. Figure 8c places those values next to the 22 November v04 run, which used a 0.25 inflation pass-through and Finagle's default 4.04x debt policy, and next to v05, which set the pass-through at 1 but funded the cash schedule by reducing year-0 cash and was flagged as not a valuation [C28][C30][C31][P12][S47]. The base is $2.62 a share above v04 and $14.03 a share below v05 (derived) [C31].
 
 <div class="fig" markdown="1">
 
-**Balance Sheet Adjustments – base case (US$ millions unless noted)**
+**Figure 8c – Value per share by case and Finagle run (US$)**
 
-| Item | Amount | Timing | Probability | Discount | Present value | Shares issued (millions) |
-|---|---:|---|---:|---:|---:|---:|
-| TYRVAYA close cash paid | -30.00 | 2026-10-01 | 1.00 | 1.0000 | -30.00 | 0.0000 |
-| Melt FDA-approval milestone payable | -87.17 | 2027-12-31 | 1.00 | 0.8933 | -77.86 | 0.0000 |
-| Melt first commercial Annual Net Sales cash milestone | -10.02 | 2030-12-31 | 1.00 | 0.6611 | -6.62 | 0.0000 |
-| **Total present value / new shares** | | | | | **-114.49** | **0.0000** |
-| Opening cash / shares (31 Dec 2025) | | | | | 72.927 | 37.229705 |
-| **Year-0 cash / shares used** | | | | | **-41.56** | **37.229705** |
+| | Bear | Base | Bull |
+|---|---:|---:|---:|
+| v04 (pass-through 0.25, default 4.04x debt policy) | 87.85 | 154.50 | 184.15 |
+| v05 (pass-through 1, cash-funded schedule; not a valuation) | 97.48 | 171.14 | 203.89 |
+| **v06 (pass-through 1, debt-funded schedule, 2.5x from FY2028E)** | **89.13** | **157.11** | **187.34** |
+| Share price (15 Nov 2026) | 28.30 | 28.30 | 28.30 |
+| v06 vs. price (derived) | 215% | 455% | 562% |
 
-*Source: worked schedule in the valuation result [D26][C28]; items from the forecast file [A23][A15][A18][S24][S25][S34][S35][C19][P9][P11]. Discount is at the 10.60% cost of equity from the 15 November 2026 price date. May not sum due to rounding.*
+*Source: v04 [D26][C28]; v05 [D27][C30]; v06 [D27][C30]; price [A24][P11]; vs. price (derived) [C31]. Per-share figures are rounded to 2 decimals. May not sum due to rounding.*
 
 </div>
 
-Figure 8 shows which inputs are Finagle defaults, which come from the forecast file, and which are our judgments; the judgments are the starting margin, incremental margin and next-period growth, while the rates and the debt policy are Finagle's defaults.
+### Method
+
+Finagle discounts free cash flow to equity at the cost of equity [D27]. It takes the explicit revenue and Adjusted EBITDA for FY2026E–FY2032E from the forecast file as given, compounding from FY2025A [C18]. That is seven explicit years, and Finagle extends them by three more, FY2033E–FY2035E, to a ten-year horizon [C30]. In those extra years, revenue starts from next-period growth of 10.6% and fades toward terminal growth, and EBITDA moves from the 55.2% starting margin with each extra dollar of revenue earning the 65.6% incremental margin [S43][S44][C30]. A terminal value is added at the end of FY2035E [C30]. Terminal growth is Finagle's default of 5.10%, the 10-year Treasury yield on the 15 November price date; it was not set or overridden by us [D27][A24].
+
+The inflation pass-through is 1, as David instructed: "rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate" [P12][S47]. At 1 the terminal reinvestment rate is the Bradley-Jarrell rate, growth less the 2.24% breakeven, divided by the 15% terminal return less that same inflation, rather than growth divided by the 15% return [S47][D25][P11]. v05 used that pass-through with the same operating forecast, but it subtracted the present value of the cash schedule from year-0 cash, leaving cash at −$41.51 in the base, −$55.70 in the bull and −$14.59 in the bear, and Finagle flagged every case as not a valuation because cash was negative [D27][C30]. David then instructed: "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3." and "Add the present value to debt and keep rd at 9.67%" [P13]. v06 leaves year-0 cash at the FY2025 10-K figure of $72.93, with the stated cash marked as already reflecting the schedule so it is not subtracted again, and it adds the absolute present value of that scenario's schedule to year-0 debt of $250, giving $364.43 in the base, $378.63 in the bull and $337.51 in the bear [P13][C30][A21]. Those present values are the v05 convention, discounted at the 10.60% cost of equity from 15 November 2026 [C30][P11]. The cost of debt is held at 9.67%, which is year-0 interest of $24.18 divided by the unadjusted 10-K debt of $250, so the higher year-0 debt does not recompute a lower rate [P13][C30]. Debt then stays at that raised year-0 balance through FY2027E and runs to a 2.5x Debt/EBITDA target from FY2028E, year 3 of Finagle's horizon [P13][C30]. When the target is above the starting balance, new borrowing is paid out in free cash flow to equity; that is Finagle's method, not a separate buyback path, and no distribution other than that residual is set [D27][C30]. Year-0 cash stays positive, and the lowest cash in the horizon is $58.96 in the base, $62.91 in the bull and $57.74 in the bear, so the not-a-valuation flag is clear [C30].
+
+### Balance Sheet Adjustments
+
+Year-0 cash of $72.93 and the share count of 37.23 equal Finagle's opening FY2025 10-K cash and shares; the cash schedule is not applied to cash a second time [D27][C30][P13]. Year-0 debt is the FY2025 10-K balance of $250 plus the absolute present value of the items below [P13][C30]. The 22 November instruction still pins the 15 November price, the 10-K share count, the 5.103% risk-free rate and year-0 interest, and it pins inflation at the 13 November breakeven [P11]. No equity was sold for cash in 2026 through 15 November, and this run does not add a year-0 equity raise in any case [A22][P9]. These dollars are outside EBITDA and are not in a later cash-flow year [S12][C19]. The TYRVAYA close cash is already paid, so its discount is 1 [C19].
+
+<div class="fig" markdown="1">
+
+**Balance Sheet Adjustments – base case (US$ unless noted; dollars in the units of the table, which is US$ millions except the share count)**
+
+| Item | Amount | Timing | Probability | Discount | Present value | Shares issued |
+|---|---:|---|---:|---:|---:|---:|
+| TYRVAYA close cash paid | -30.00 | 2026-10-01 | 1.00 | 1.0000 | -30.00 | 0.0000 |
+| Melt FDA-approval milestone payable | -87.17 | 2027-12-31 | 1.00 | 0.8928 | -77.82 | 0.0000 |
+| Melt first commercial Annual Net Sales cash milestone | -10.02 | 2030-12-31 | 1.00 | 0.6598 | -6.61 | 0.0000 |
+| **Total present value / new shares** | | | | | **-114.43** | **0.0000** |
+| Opening cash / shares (31 Dec 2025) | | | | | 72.927 | 37.229705 |
+| **Year-0 cash / shares used** | | | | | **72.927** | **37.229705** |
+| Opening debt (31 Dec 2025) | | | | | 250.000 | |
+| **Year-0 debt used (opening plus absolute PV)** | | | | | **364.434** | |
+
+*Source: worked schedule and year-0 figures in the v06 valuation result [D27][C30]; items from the forecast file [A23][A15][A18][S24][S25][S34][S35][C19][P9][P11][P13]. Discount is at the 10.60% cost of equity from the 15 November 2026 price date. Shares are in millions of shares. May not sum due to rounding.*
+
+</div>
+
+Figure 8 shows which inputs are stated by David, which come from the forecast file, which are Finagle defaults, and which are our judgments. The judgments are still the starting margin, incremental margin and next-period growth. The inflation pass-through, the year-0 cash and debt treatment, the cost of debt and the 2.5x debt policy from FY2028E are David's stated inputs [P11][P12][P13][S47].
 
 <div class="fig" markdown="1">
 
@@ -750,24 +770,24 @@ Figure 8 shows which inputs are Finagle defaults, which come from the forecast f
 
 | Input | Base | Basis | Tags |
 |---|---:|---|---|
-| Cost of equity | 10.60% | Finagle default: 5.5% plus the 10-year yield | [D26][A24] |
-| Cost of debt | 9.67% | Finagle default: year-0 interest of $24.2 divided by year-0 debt | [D26][P11] |
-| Tax rate | 21.0% | Finagle default: U.S. federal statutory rate | [D26] |
-| Terminal growth | 5.10% | Finagle default: equals the 10-year yield; not set by us | [D26][A24] |
+| Cost of equity | 10.60% | Finagle default: 5.5% plus the 10-year yield | [D27][A24] |
+| Cost of debt | 9.67% | Stated: held at year-0 interest of $24.18 / unadjusted year-0 debt of $250 | [P13][C30] |
+| Tax rate | 21.0% | Finagle default: U.S. federal statutory rate | [D27] |
+| Terminal growth | 5.10% | Finagle default: equals the 10-year yield; not set by us | [D27][A24] |
 | Expected inflation | 2.24% | FRED 10-year breakeven, 13 November 2026, pinned | [P11][D25] |
-| Inflation pass-through | 0.25 | Finagle default; 0 is g/ROIC and 1 is Bradley-Jarrell | [D26][S46] |
-| Terminal return on invested capital | 15.0% | Finagle default | [D26] |
-| Shares (adjusted, millions) | 37.23 | Finagle: 37.23 million from the FY2025 10-K; no new shares | [D26][P9][P11][C28] |
+| Inflation pass-through | 1 | Stated: Bradley-Jarrell rate | [P12][S47] |
+| Terminal return on invested capital | 15.0% | Finagle default | [D27] |
+| Shares (adjusted) | 37.23 | Finagle: 37.23 from the FY2025 10-K, in millions of shares; no new shares | [D27][P9][P11][C30] |
 | Price (US$) | 28.30 | Pinned previous close, 15 Nov 2026 | [P11][A24] |
-| Debt (year 0) | 250.0 | Fetched from the FY2025 10-K | [D26][C28] |
-| Debt policy | 4.04x | Finagle default: year-0 Debt/EBITDA held as a target from FY2026E | [D26] |
-| Cash (adjusted, year 0) | -41.56 | FY2025 10-K cash plus the cash schedule; left negative | [D26][P9][C28] |
+| Debt (year 0) | 364.4 | FY2025 10-K debt of $250 plus the absolute PV of the base cash schedule | [P13][C30][D27] |
+| Debt policy | 2.5x from FY2028E | Stated: target Debt/EBITDA from year 3; years FY2026E–FY2027E hold year-0 debt | [P13][C30] |
+| Cash (year 0) | 72.93 | FY2025 10-K cash, left unreduced | [P13][C30][D27] |
 | Starting margin | 55.2% | Forecast-file input: FY2032E Adj. EBITDA / revenue | [C18] |
 | Incremental margin (mc) | 65.6% | Judgment | [S43] |
 | Next-period growth (gsnext) | 10.6% | Judgment: one more year of the same build | [S44] |
-| Terminal WACC | 9.30% | Finagle output | [C28] |
+| Terminal WACC | 9.80% | Finagle output, last horizon year | [C30] |
 
-*Source: valuation result [D26][C28]; forecast file [C18][S43][S44][P9]; pinned market data [P11][A24][D25]. Finagle defaults are the leaves the result filled.*
+*Source: valuation result [D27][C30]; forecast file [C18][S43][S44][P9]; pinned market data [P11][A24][D25]; stated pass-through, cash, debt, rd and leverage [P12][P13][S47]. Finagle defaults are the leaves the result filled. May not sum due to rounding.*
 
 </div>
 
@@ -801,7 +821,7 @@ Next-period growth is the medium-term organic growth forecast [S44]. The startin
 
 </div>
 
-Figure 9 shows that the present value of the ten forecast years supplies the larger part of the equity value, with the terminal value at about 42% (derived) [C29].
+Figure 9 shows equity value as value per share times the share count (derived), year-0 debt and cash, and the value per share against the price. The result file does not carry a split of that equity value into the present value of explicit-period cash flows and the terminal value, so that split is omitted [C30][C31].
 
 <div class="fig" markdown="1">
 
@@ -809,23 +829,20 @@ Figure 9 shows that the present value of the ten forecast years supplies the lar
 
 | | Base |
 |---|---:|
-| PV of free cash flow to equity, FY2026E–FY2035E (derived) | 3,349 |
-| PV of terminal value (derived) | 2,445 |
-| Terminal value share of equity value (derived) | 42.2% |
-| Firm value (Finagle) | 6,043 |
-| Less year-0 debt | 250.0 |
-| Equity value (Finagle) | 5,793 |
-| Adjusted year-0 cash (not added again) | -41.56 |
-| Shares (millions) | 37.23 |
-| **Value per share (US$)** | **154.50** |
+| Equity value (derived: value per share × shares) | 5,849 |
+| Year-0 debt | 364.4 |
+| Firm value (derived: equity plus year-0 debt) | 6,214 |
+| Year-0 cash (not added again) | 72.93 |
+| Shares (millions of shares) | 37.23 |
+| **Value per share (US$)** | **157.11** |
 | Share price (US$, 15 Nov 2026) | 28.30 |
-| Upside (derived) | 446% |
+| Upside (derived) | 455% |
 
-*Source: valuation result [D26][C28]; PV split, terminal share and upside (derived) [C29]; price [A24][P11]. The PV split discounts Finagle's yearly free cash flow to equity and its terminal value (terminal cash flow of $368 divided by the cost of equity less terminal growth) at the 10.60% cost of equity; the two parts sum to Finagle's equity value. Adjusted year-0 cash is already the opening cash Finagle uses and is not added on top of equity. May not sum due to rounding.*
+*Source: valuation result [D27][C30]; equity, firm value and upside (derived) [C31]; price [A24][P11]. Year-0 cash is already the opening cash Finagle uses and is not added on top of equity. Firm value follows the same convention as earlier runs, equity plus year-0 debt. May not sum due to rounding.*
 
 </div>
 
-Figures 9a and 9b are the whole base-case Finagle statement, FY2025A through FY2035E; the value per share of $154.50 is the result for the case and is not a row in the statement [C28]. Two rows need a note. The debt row follows Finagle's default target of 4.04x Debt/EBITDA, so debt rises with EBITDA and the new borrowing is paid out in free cash flow to equity from FY2027E [D26][C28]. The cash row accumulates that free cash flow to equity because no distribution is set, while balance-sheet cash is zero after FY2026E; FY2025A cash is the adjusted −$41.6, and Finagle's values are printed as output and not corrected [C28]. Capex is Finagle's own reinvestment rule, not a forecast-file input, and the 0.25 pass-through lowers it relative to a rate of growth over the terminal return; Harrow's nine-month 2026 capex was $1.06 [A6][C28][S46]. The result file does not carry the SBC, interest, pre-tax income, NOL, cash tax, working-capital, EV, FCF-per-share or WACC rows of Finagle's report sheet, so they are not reproduced [D26].
+Figures 9a and 9b are the base-case rows the result file does carry, FY2025A through FY2035E; the value per share of $157.11 is the result for the case [C30]. Debt stays at $364 through FY2027E and then follows the 2.5x Debt/EBITDA target from FY2028E, so the FY2028E debt change is the step up to 2.5 times that year's EBITDA, and later borrowing is paid out in free cash flow to equity [P13][C30]. Cash stays positive and is Finagle's year-end balance, with a low of $58.96 in FY2026E [C30]. Capex is Finagle's own reinvestment rule with a pass-through of 1, not a forecast-file input, and it is lower than in the 0.25 run; Harrow's nine-month 2026 capex was $1.06 [A6][C30][S47]. Debt change and Debt/EBITDA are marked derived. The result file does not carry FCF, FCFE, FCFF, dividend, EV or a year-by-year equity-value row, so they are not reproduced [D27].
 
 <div class="fig" markdown="1">
 
@@ -835,21 +852,19 @@ Figures 9a and 9b are the whole base-case Finagle statement, FY2025A through FY2
 |---|---:|---:|---:|---:|---:|---:|
 | Revenue | 272 | 347 | 665 | 899 | 1,125 | 1,353 |
 | EBITDA | 61.9 | 42.5 | 217 | 371 | 535 | 692 |
-| Capex | 0.9 | 15.0 | 74.8 | 119 | 162 | 205 |
-| M&A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Debt change | 0.0 | 46.8 | 580 | 621 | 663 | 635 |
-| FCF | 20.6 | -5.3 | 52.1 | 61.0 | 77.8 | 86.6 |
-| FCFE | 20.6 | 41.6 | 632 | 682 | 741 | 722 |
-| FCFF | 39.7 | 13.8 | 74.8 | 128 | 192 | 252 |
-| Debt | 250 | 297 | 876 | 1,497 | 2,161 | 2,796 |
-| Cash (cumulative retained FCFE) | -41.6 | 0.0 | 632 | 1,313 | 2,055 | 2,776 |
-| Balance-sheet cash | -41.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Shares (millions) | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 |
-| Dividend per share (US$) | 0.55 | 1.12 | 16.97 | 18.31 | 19.91 | 19.39 |
-| Equity value | 5,793 | 6,366 | 6,409 | 6,407 | 6,345 | 6,296 |
-| Firm value | 6,043 | 6,663 | 7,286 | 7,904 | 8,506 | 9,092 |
+| SBC | 12.5 | 8.6 | 43.8 | 74.9 | 108 | 140 |
+| Interest | 24.2 | 35.2 | 35.2 | 35.2 | 89.7 | 129 |
+| Cash tax | 3.8 | 0.0 | 14.0 | 41.6 | 54.5 | 69.2 |
+| Capex | 0.9 | 12.6 | 62.4 | 99.2 | 135 | 171 |
+| Debt | 364 | 364 | 364 | 927 | 1,338 | 1,731 |
+| Debt change (derived) | — | 0.0 | 0.0 | 563 | 411 | 393 |
+| Debt/EBITDA (derived) | 5.9x | 8.6x | 1.7x | 2.5x | 2.5x | 2.5x |
+| Cash | 72.9 | 59.0 | 121 | 803 | 1,362 | 1,939 |
+| Shares (millions of shares) | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 |
+| WACC | 10.4% | 10.4% | 10.5% | 10.3% | 10.1% | 10.0% |
+| Value per share (US$) | 157.11 | 171.98 | 188.56 | 190.22 | 195.37 | 200.59 |
 
-*Source: valuation result [D26][C28]. FY2025A is year 0. Revenue and EBITDA through FY2032E are the forecast file [C18]. May not sum due to rounding.*
+*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. FY2025A is year 0. Revenue and EBITDA through FY2032E are the forecast file [C18]. May not sum due to rounding.*
 
 </div>
 
@@ -861,25 +876,23 @@ Figures 9a and 9b are the whole base-case Finagle statement, FY2025A through FY2
 |---|---:|---:|---:|---:|---:|
 | Revenue | 1,582 | 1,760 | 1,946 | 2,117 | 2,264 |
 | EBITDA | 850 | 971 | 1,093 | 1,205 | 1,302 |
-| Capex | 248 | 281 | 316 | 349 | 376 |
-| M&A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Debt change | 636 | 487 | 495 | 452 | 389 |
-| FCF | 97.7 | 94.2 | 102 | 105 | 106 |
-| FCFE | 734 | 581 | 596 | 557 | 495 |
-| FCFF | 311 | 356 | 401 | 442 | 477 |
-| Debt | 3,432 | 3,919 | 4,413 | 4,866 | 5,255 |
-| Cash (cumulative retained FCFE) | 3,510 | 4,091 | 4,688 | 5,245 | 5,739 |
-| Balance-sheet cash | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Shares (millions) | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 |
-| Dividend per share (US$) | 19.71 | 15.61 | 16.02 | 14.97 | 13.29 |
-| Equity value | 6,230 | 6,310 | 6,383 | 6,502 | 6,697 |
-| Firm value | 9,662 | 10,229 | 10,796 | 11,368 | 11,952 |
+| SBC | 172 | 196 | 221 | 243 | 263 |
+| Interest | 167 | 206 | 235 | 264 | 291 |
+| Cash tax | 84.2 | 93.9 | 106 | 116 | 124 |
+| Capex | 206 | 234 | 264 | 290 | 313 |
+| Debt | 2,125 | 2,427 | 2,733 | 3,013 | 3,254 |
+| Debt change (derived) | 394 | 302 | 306 | 280 | 241 |
+| Debt/EBITDA (derived) | 2.5x | 2.5x | 2.5x | 2.5x | 2.5x |
+| Cash | 2,553 | 3,096 | 3,671 | 4,242 | 4,793 |
+| Shares (millions of shares) | 37.23 | 37.23 | 37.23 | 37.23 | 37.23 |
+| WACC | 10.0% | 9.9% | 9.9% | 9.8% | 9.8% |
+| Value per share (US$) | 205.36 | 212.56 | 219.66 | 227.60 | 236.94 |
 
-*Source: valuation result [D26][C28]. FY2025A is year 0. Revenue and EBITDA through FY2032E are the forecast file [C18]. May not sum due to rounding.*
+*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. FY2025A is year 0. Revenue and EBITDA through FY2032E are the forecast file [C18]. May not sum due to rounding.*
 
 </div>
 
-Figure 13 shows a wide spread: every case is above the share price, and the bear is the lowest because it freezes VEVYE share after December 2028, delays G-MELT, and gives YOCHIL no revenue in the window, so FY2032E Adjusted EBITDA is $560 against $971 in the base [C28][A24][C14].
+Figure 13 shows a wide spread: every case is above the share price, and the bear is the lowest because it freezes VEVYE share after December 2028, delays G-MELT, and gives YOCHIL no revenue in the window, so FY2032E Adjusted EBITDA is $560 against $971 in the base [C30][A24][C14].
 
 <div class="fig" markdown="1">
 
@@ -887,18 +900,19 @@ Figure 13 shows a wide spread: every case is above the share price, and the bear
 
 | | Bear | Base | Bull |
 |---|---:|---:|---:|
-| Value per share (US$) | 87.85 | 154.50 | 184.15 |
+| Value per share (US$) | 89.13 | 157.11 | 187.34 |
 | Share price (US$, 15 Nov 2026) | 28.30 | 28.30 | 28.30 |
-| vs. price (derived) | 210% | 446% | 551% |
+| vs. price (derived) | 215% | 455% | 562% |
 | FY2032E Adj. EBITDA | 560 | 971 | 1,127 |
 
-*Source: valuation result [D26][C28]; price [A24][P11]; vs. price (derived) [C29]; EBITDA from the forecast file scenarios [C14][S42].*
+*Source: valuation result [D27][C30]; price [A24][P11]; vs. price (derived) [C31]; EBITDA from the forecast file scenarios [C14][S42].*
 
 </div>
 
 ### Caveats
 
-Finagle's default debt policy is the largest input we did not choose. It holds year-0 Debt/EBITDA of 4.04x from FY2026E, so base debt rises from $250 to about $5,250 by FY2035E and that borrowing is paid out to equity; a policy that held debt flat would lower the value, and this run does not size by how much [D26][C28]. Year-0 debt of $250 is the FY2025 10-K figure and excludes the $50 of add-on notes issued in March 2026, while year-0 cash likewise excludes their proceeds [A6][D26]. The 8.625% coupon, the 2030 maturity and any refinancing terms are not modelled beyond Finagle's 9.67% cost of debt [A6][D26]. Adjusted year-0 cash is negative in every case, about −$41.6 in the base, −$55.8 in the bull and −$14.7 in the bear, and the share count stays at 37.23 million because no equity raise is added to fill that gap [P9][C28]. G-MELT and YOCHIL revenue and the Melt approval cash are unweighted and conditional on approval [S15][S32][S25]. The CMS pass-through and J-code stock milestone of about 1.11 million shares is undated and is not in the share count, and Samsung's net-sales milestones and the up to $70 of TYRVAYA milestones are not in cash [S12][C7][A8][C19]. Terminal value is about 42% of the base equity value at a terminal growth rate equal to a 5.10% 10-year yield, and the 65.6% incremental margin keeps margins rising after FY2032E [C29][D26][S43]. A quarter of the 2.24% breakeven passes through the terminal reinvestment rate, which is why terminal capex is lower than in the 15 November run [P11][S46][C29]. Finagle's capex rule lifts capex from $0.9 in FY2025A to $281 in FY2032E, far above Harrow's reported capex, which lowers the value [C28][A6]. This report draws no rating or price target.
+The 2.5x Debt/EBITDA target from FY2028E is now a stated policy, not a default, but it still pays new borrowing out to equity once the target is above the starting balance, so the value depends on that recapitalization [P13][C30]. Base debt stays at $364 through FY2027E, when Debt/EBITDA is 5.9x, 8.6x and 1.7x as EBITDA first falls and then jumps, and then rises to $3,254 by FY2035E, about nine times the raised year-0 balance, at a cost of debt held at 9.67% [C30][P13][C31]. That rate is year-0 interest divided by the unadjusted $250 of 10-K debt; it is not reset as the balance grows, and the 8.625% coupon, the 2030 maturity and any refinancing of the notes are not modelled beyond it [A6][P13][C30]. Year-0 debt and cash still start from the FY2025 10-K and exclude the $50 of add-on notes issued in March 2026 and their proceeds [A6][D27]. Finagle warns that average EBITDA growth is 80.2% in the base, 78.0% in the bull and 68.7% in the bear, with no acquisitions booked, and that the forecast evidence mentions acquisitions but the case has none [C30]. G-MELT and YOCHIL revenue and the Melt approval cash are unweighted and conditional on approval [S15][S32][S25]. The CMS pass-through and J-code stock milestone of about 1.11, in the same unit as the share count in the tables, is undated and is not in the share count, and Samsung's net-sales milestones and the up to $70 of TYRVAYA milestones are not in cash [S12][C7][A8][C19]. The result file does not break out terminal value as a share of equity, and the 65.6% incremental margin still keeps margins rising after FY2032E [C30][S43]. Finagle's capex rule lifts capex from $0.9 in FY2025A to $234 in FY2032E, far above Harrow's reported capex, which lowers the value, even with the Bradley-Jarrell pass-through [C30][A6][S47]. The runner's fetch of the FRED 10-year breakeven timed out, so inflation remains the pinned 2.24% print [D25][P11]. This report draws no rating or price target.
+
 
 ## 8. Risks
 
@@ -1027,7 +1041,7 @@ Figure 15 shows the bear cost build with the operating-leverage lever, which gro
 
 </div>
 
-Figure 16 shows that the three cases share Finagle's default rates, the 0.25 inflation pass-through and the debt policy, and differ in opening cash and the three margin and growth judgments [D26][S43][S44][S46].
+Figure 16 shows that the three cases share the stated 9.67% cost of debt, the pass-through of 1 and the 2.5x debt policy from FY2028E, and differ in year-0 debt, because the present value of each schedule is different, and in the three margin and growth judgments [D27][P13][S47][S43][S44].
 
 <div class="fig" markdown="1">
 
@@ -1040,23 +1054,23 @@ Figure 16 shows that the three cases share Finagle's default rates, the 0.25 inf
 | Tax rate | 21.0% | 21.0% | 21.0% |
 | Terminal growth | 5.10% | 5.10% | 5.10% |
 | Expected inflation | 2.24% | 2.24% | 2.24% |
-| Inflation pass-through | 0.25 | 0.25 | 0.25 |
+| Inflation pass-through | 1 | 1 | 1 |
 | Terminal return on invested capital | 15.0% | 15.0% | 15.0% |
-| Shares (adjusted, millions) | 37.23 | 37.23 | 37.23 |
+| Shares (adjusted) | 37.23 | 37.23 | 37.23 |
 | Price (US$) | 28.30 | 28.30 | 28.30 |
-| Debt (year 0) | 250.0 | 250.0 | 250.0 |
-| Debt policy (Debt/EBITDA target) | 4.04x | 4.04x | 4.04x |
-| Cash (adjusted, year 0) | -14.7 | -41.56 | -55.79 |
+| Debt (year 0) | 337.5 | 364.4 | 378.6 |
+| Debt policy (Debt/EBITDA target) | 2.5x from FY2028E | 2.5x from FY2028E | 2.5x from FY2028E |
+| Cash (year 0) | 72.93 | 72.93 | 72.93 |
 | Starting margin | 45.1% | 55.2% | 57.7% |
 | Incremental margin (mc) | 60.7% | 65.6% | 67.2% |
 | Next-period growth (gsnext) | 10.0% | 10.6% | 11.8% |
-| Terminal WACC | 9.27% | 9.30% | 9.31% |
+| Terminal WACC | 9.78% | 9.80% | 9.81% |
 
-*Source: valuation result [D26][C28]; judgments [S43][S44]; pinned market data [P11][A24][D25]. Shares are Finagle's 10-K count. May not sum due to rounding.*
+*Source: valuation result [D27][C30]; judgments [S43][S44]; pinned market data [P11][A24][D25]; stated cash, debt, rd, pass-through and leverage [P12][P13][S47]. Shares are the 10-K count, in millions of shares. May not sum due to rounding.*
 
 </div>
 
-Figure 17 shows that the terminal value is about 42% of equity in the bear, the base and the bull [C29].
+Figure 17 shows equity value as value per share times the share count (derived). The result file does not break out the terminal value, so that share is omitted [C30][C31].
 
 <div class="fig" markdown="1">
 
@@ -1064,60 +1078,59 @@ Figure 17 shows that the terminal value is about 42% of equity in the bear, the 
 
 | | Bear | Base | Bull |
 |---|---:|---:|---:|
-| PV of FCFE, FY2026E–FY2035E (derived) | 1,913 | 3,349 | 3,989 |
-| PV of terminal value (derived) | 1,373 | 2,445 | 2,923 |
-| Terminal share of equity value (derived) | 41.8% | 42.2% | 42.3% |
-| Firm value (Finagle) | 3,535 | 6,043 | 7,162 |
-| Less year-0 debt | 250.0 | 250.0 | 250.0 |
-| Equity value (Finagle) | 3,285 | 5,793 | 6,912 |
-| Adjusted year-0 cash (not added again) | -14.7 | -41.56 | -55.79 |
-| Shares (millions) | 37.23 | 37.23 | 37.23 |
-| **Value per share (US$)** | **87.85** | **154.50** | **184.15** |
-| vs. price (derived) | 210% | 446% | 551% |
+| Equity value (derived: value per share × shares) | 3,318 | 5,849 | 6,975 |
+| Year-0 debt | 337.5 | 364.4 | 378.6 |
+| Firm value (derived: equity plus year-0 debt) | 3,656 | 6,214 | 7,353 |
+| Year-0 cash (not added again) | 72.93 | 72.93 | 72.93 |
+| Shares (millions of shares) | 37.23 | 37.23 | 37.23 |
+| **Value per share (US$)** | **89.13** | **157.11** | **187.34** |
+| vs. price (derived) | 215% | 455% | 562% |
 
-*Source: valuation result [D26][C28]; PV split, terminal share and vs. price (derived) [C29]; price [A24][P11]. May not sum due to rounding.*
+*Source: valuation result [D27][C30]; equity, firm value and vs. price (derived) [C31]; price [A24][P11]. May not sum due to rounding.*
 
 </div>
 
-In the bull case, year-0 cash of −$55.8 and 37.23 million shares equal the same opening figures plus the present values below and no new shares; these dollars are outside EBITDA and are not in a later cash-flow year [A21][P5][P9][C28].
+In the bull case, year-0 cash stays at $72.93 and the share count stays at 37.23; year-0 debt is $250 plus the absolute present value of the bull schedule, $378.63. These dollars are outside EBITDA and are not in a later cash-flow year [A21][P5][P9][P13][C30].
 
 <div class="fig" markdown="1">
 
-**Balance Sheet Adjustments – bull case (US$ millions unless noted)**
+**Balance Sheet Adjustments – bull case (US$ unless noted; dollars in the units of the table, which is US$ millions except the share count)**
 
-| Item | Amount | Timing | Probability | Discount | Present value | Shares issued (millions) |
+| Item | Amount | Timing | Probability | Discount | Present value | Shares issued |
 |---|---:|---|---:|---:|---:|---:|
 | TYRVAYA close cash paid | -30.00 | 2026-10-01 | 1.00 | 1.0000 | -30.00 | 0.0000 |
-| Melt FDA-approval milestone payable | -87.17 | 2027-12-31 | 1.00 | 0.8933 | -77.86 | 0.0000 |
-| Melt first commercial Annual Net Sales cash milestone | -10.02 | 2029-12-31 | 1.00 | 0.7308 | -7.32 | 0.0000 |
-| Melt second commercial Annual Net Sales cash milestone | -25.02 | 2032-12-31 | 1.00 | 0.5408 | -13.53 | 0.0000 |
-| **Total present value / new shares** | | | | | **-128.72** | **0.0000** |
+| Melt FDA-approval milestone payable | -87.17 | 2027-12-31 | 1.00 | 0.8928 | -77.82 | 0.0000 |
+| Melt first commercial Annual Net Sales cash milestone | -10.02 | 2029-12-31 | 1.00 | 0.7297 | -7.31 | 0.0000 |
+| Melt second commercial Annual Net Sales cash milestone | -25.02 | 2032-12-31 | 1.00 | 0.5393 | -13.49 | 0.0000 |
+| **Total present value / new shares** | | | | | **-128.63** | **0.0000** |
 | Opening cash / shares (31 Dec 2025) | | | | | 72.927 | 37.229705 |
-| **Year-0 cash / shares used** | | | | | **-55.79** | **37.229705** |
+| **Year-0 cash / shares used** | | | | | **72.927** | **37.229705** |
+| Opening debt (31 Dec 2025) | | | | | 250.000 | |
+| **Year-0 debt used (opening plus absolute PV)** | | | | | **378.628** | |
 
-*Source: worked schedule [D26][C28]; items [A23][A15][A19][A20][S36][S37][S38][S39][C19][P9][P11]. May not sum due to rounding.*
+*Source: worked schedule and year-0 figures in the v06 valuation result [D27][C30]; items from the forecast file [A23][A15][A18][A20][S24][S25][S34][S35][S38][S39][C19][P9][P11][P13]. Discount is at the 10.60% cost of equity from the 15 November 2026 price date. Shares are in millions of shares. May not sum due to rounding.*
 
 </div>
 
-In the bear case, year-0 cash of −$14.7 and 37.23 million shares equal the same opening figures plus the present values below and no new shares; these dollars are outside EBITDA and are not in a later cash-flow year [A21][P5][P9][C28].
+In the bear case, year-0 cash stays at $72.93 and the share count stays at 37.23; year-0 debt is $250 plus the absolute present value of the bear schedule, $337.51. These dollars are outside EBITDA and are not in a later cash-flow year [A21][P5][P9][P13][C30].
 
 <div class="fig" markdown="1">
 
-**Balance Sheet Adjustments – bear case (US$ millions unless noted)**
+**Balance Sheet Adjustments – bear case (US$ unless noted; dollars in the units of the table, which is US$ millions except the share count)**
 
-| Item | Amount | Timing | Probability | Discount | Present value | Shares issued (millions) |
+| Item | Amount | Timing | Probability | Discount | Present value | Shares issued |
 |---|---:|---|---:|---:|---:|---:|
 | TYRVAYA close cash paid | -30.00 | 2026-10-01 | 1.00 | 1.0000 | -30.00 | 0.0000 |
-| Melt FDA-approval milestone payable | -87.17 | 2030-12-31 | 1.00 | 0.6611 | -57.62 | 0.0000 |
-| **Total present value / new shares** | | | | | **-87.62** | **0.0000** |
+| Melt FDA-approval milestone payable | -87.17 | 2030-12-31 | 1.00 | 0.6598 | -57.51 | 0.0000 |
+| **Total present value / new shares** | | | | | **-87.51** | **0.0000** |
 | Opening cash / shares (31 Dec 2025) | | | | | 72.927 | 37.229705 |
-| **Year-0 cash / shares used** | | | | | **-14.7** | **37.229705** |
+| **Year-0 cash / shares used** | | | | | **72.927** | **37.229705** |
+| Opening debt (31 Dec 2025) | | | | | 250.000 | |
+| **Year-0 debt used (opening plus absolute PV)** | | | | | **337.514** | |
 
-*Source: worked schedule [D26][C28]; items [A23][A15][S8][C19][P9][P11]. The bear dates the Melt approval cash at 31 December 2030 on its delayed approval path. May not sum due to rounding.*
+*Source: worked schedule and year-0 figures in the v06 valuation result [D27][C30]; items from the forecast file [A23][A15][S24][S25][C19][P9][P11][P13]. Discount is at the 10.60% cost of equity from the 15 November 2026 price date. Shares are in millions of shares. May not sum due to rounding.*
 
 </div>
-
-Figure 11 gives the key Finagle rows for the bull and the bear. The valuation result carries revenue, EBITDA, capex, M&A, debt change, the three free-cash-flow measures, debt, cash, shares, dividend per share, equity and firm value by year; the SBC, interest, pre-tax income, NOL, cash tax, working-capital, EV, FCF-per-share and WACC rows of Finagle's report sheet are not in the result file and are not reproduced [D26][C28]. Finagle's values are printed as output. FY2026E free cash flow to equity is positive in both cases because year-0 cash is negative and is funded then, with no equity raise added [P9][C28].
 
 <div class="fig" markdown="1">
 
@@ -1127,14 +1140,14 @@ Figure 11 gives the key Finagle rows for the bull and the bear. The valuation re
 |---|---:|---:|---:|---:|---:|---:|
 | Revenue | 272 | 359 | 700 | 967 | 1,240 | 1,493 |
 | EBITDA | 61.9 | 51.7 | 247 | 425 | 625 | 804 |
-| Capex | 0.9 | 17.4 | 82.6 | 134 | 186 | 234 |
-| Debt change | 0.0 | 56.2 | 690 | 720 | 806 | 721 |
-| FCFE | 20.6 | 55.8 | 752 | 793 | 902 | 823 |
-| Debt | 250 | 306 | 997 | 1,717 | 2,523 | 3,244 |
-| Dividend per share (US$) | 0.55 | 1.50 | 20.20 | 21.29 | 24.22 | 22.10 |
-| Equity value | 6,912 | 7,589 | 7,641 | 7,659 | 7,569 | 7,549 |
+| Capex | 0.9 | 14.6 | 68.6 | 111 | 154 | 194 |
+| Debt | 379 | 379 | 379 | 1,063 | 1,563 | 2,009 |
+| Debt change (derived) | — | 0.0 | 0.0 | 684 | 499 | 447 |
+| Debt/EBITDA (derived) | 6.1x | 7.3x | 1.5x | 2.5x | 2.5x | 2.5x |
+| Cash | 72.9 | 62.9 | 135 | 962 | 1,638 | 2,300 |
+| Value per share (US$) | 187.34 | 205.31 | 225.13 | 226.79 | 232.67 | 239.58 |
 
-*Source: valuation result [D26][C28]. Header: HROW, price $28.30, shares 37.23 million, cost of equity 10.60%, terminal growth 5.10%. May not sum due to rounding.*
+*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. Header: HROW, price $28.30, shares 37.23 (millions of shares), cost of equity 10.60%, terminal growth 5.10%. May not sum due to rounding.*
 
 </div>
 
@@ -1146,14 +1159,14 @@ Figure 11 gives the key Finagle rows for the bull and the bear. The valuation re
 |---|---:|---:|---:|---:|---:|
 | Revenue | 1,735 | 1,954 | 2,184 | 2,393 | 2,569 |
 | EBITDA | 974 | 1,127 | 1,282 | 1,423 | 1,541 |
-| Capex | 280 | 322 | 366 | 406 | 440 |
-| Debt change | 686 | 620 | 626 | 567 | 477 |
-| FCFE | 797 | 737 | 752 | 698 | 607 |
-| Debt | 3,930 | 4,550 | 5,176 | 5,744 | 6,220 |
-| Dividend per share (US$) | 21.41 | 19.79 | 20.20 | 18.74 | 16.30 |
-| Equity value | 7,553 | 7,617 | 7,672 | 7,788 | 8,007 |
+| Capex | 233 | 267 | 304 | 337 | 365 |
+| Debt | 2,434 | 2,818 | 3,205 | 3,557 | 3,852 |
+| Debt change (derived) | 425 | 384 | 388 | 351 | 295 |
+| Debt/EBITDA (derived) | 2.5x | 2.5x | 2.5x | 2.5x | 2.5x |
+| Cash | 2,978 | 3,647 | 4,356 | 5,057 | 5,725 |
+| Value per share (US$) | 246.77 | 254.95 | 262.94 | 271.98 | 282.89 |
 
-*Source: valuation result [D26][C28]. May not sum due to rounding.*
+*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. May not sum due to rounding.*
 
 </div>
 
@@ -1165,14 +1178,14 @@ Figure 11 gives the key Finagle rows for the bull and the bear. The valuation re
 |---|---:|---:|---:|---:|---:|---:|
 | Revenue | 272 | 337 | 602 | 782 | 920 | 1,018 |
 | EBITDA | 61.9 | 35.3 | 170 | 286 | 375 | 435 |
-| Capex | 0.9 | 12.5 | 59.7 | 91.9 | 116 | 134 |
-| Debt change | 0.0 | 23.2 | 414 | 468 | 359 | 242 |
-| FCFE | 20.6 | 14.7 | 454 | 515 | 404 | 281 |
-| Debt | 250 | 273 | 687 | 1,155 | 1,514 | 1,756 |
-| Dividend per share (US$) | 0.55 | 0.39 | 12.19 | 13.83 | 10.86 | 7.55 |
-| Equity value | 3,285 | 3,619 | 3,549 | 3,410 | 3,367 | 3,444 |
+| Capex | 0.9 | 10.7 | 50.7 | 78.0 | 98.8 | 114 |
+| Debt | 338 | 338 | 338 | 715 | 938 | 1,087 |
+| Debt change (derived) | — | 0.0 | 0.0 | 378 | 222 | 150 |
+| Debt/EBITDA (derived) | 5.5x | 9.6x | 2.0x | 2.5x | 2.5x | 2.5x |
+| Cash | 72.9 | 57.7 | 103 | 569 | 888 | 1,141 |
+| Value per share (US$) | 89.13 | 96.82 | 105.86 | 104.58 | 107.10 | 111.65 |
 
-*Source: valuation result [D26][C28]. Header: HROW, price $28.30, shares 37.23 million, cost of equity 10.60%, terminal growth 5.10%. May not sum due to rounding.*
+*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. Header: HROW, price $28.30, shares 37.23 (millions of shares), cost of equity 10.60%, terminal growth 5.10%. May not sum due to rounding.*
 
 </div>
 
@@ -1184,16 +1197,17 @@ Figure 11 gives the key Finagle rows for the bull and the bear. The valuation re
 |---|---:|---:|---:|---:|---:|
 | Revenue | 1,126 | 1,240 | 1,365 | 1,479 | 1,579 |
 | EBITDA | 492 | 560 | 635 | 705 | 765 |
-| Capex | 153 | 174 | 196 | 216 | 234 |
-| Debt change | 229 | 275 | 305 | 280 | 244 |
-| FCFE | 268 | 321 | 357 | 334 | 298 |
-| Debt | 1,985 | 2,260 | 2,565 | 2,846 | 3,090 |
-| Dividend per share (US$) | 7.20 | 8.62 | 9.58 | 8.97 | 8.02 |
-| Equity value | 3,541 | 3,595 | 3,620 | 3,670 | 3,760 |
+| Capex | 130 | 147 | 166 | 183 | 198 |
+| Debt | 1,229 | 1,400 | 1,588 | 1,762 | 1,913 |
+| Debt change (derived) | 142 | 170 | 189 | 174 | 151 |
+| Debt/EBITDA (derived) | 2.5x | 2.5x | 2.5x | 2.5x | 2.5x |
+| Cash | 1,397 | 1,697 | 2,033 | 2,368 | 2,692 |
+| Value per share (US$) | 116.63 | 120.93 | 124.72 | 128.95 | 133.92 |
 
-*Source: valuation result [D26][C28]. May not sum due to rounding.*
+*Source: valuation result [D27][C30]; debt change and Debt/EBITDA (derived) [C31]. May not sum due to rounding.*
 
 </div>
+
 Figure 18 is the bull medium-term organic growth bridge; a faster G-MELT ramp to 1.4 million units adds more than in the base, and VEVYE is 8% above the extended workbook, for growth of 11.8% (derived) [S44][C26][P8][P10]. The bear's next year keeps VEVYE share frozen at the December 2028 level while the market and the price path continue, for growth of 10.0% [S44][P8][P10].
 
 <div class="fig" markdown="1">
@@ -1275,6 +1289,8 @@ Canonical tags only. Instance suffixes such as C10_1 in `forecast.json` distingu
 **D25** Federal Reserve Bank of St. Louis / FRED series T10YIE, 10-year breakeven inflation rate: https://fred.stlouisfed.org/series/T10YIE (HTML). The last observation on or before 15 November 2026 is 13 November 2026, 2.24 percent. The runner's own fetch of the series did not load, so the 22 November request pins this print.
 
 **D26** Finagle / collaborative valuation result for HROW, run 22 November 2026 at 20:49 UTC. The recorded commit is 377f177b4013e713fe7c4603962e5f883a67e298, and the checkout also held the uncommitted inflation pass-through. File `collab/valuation_result_v04.json` in this folder, with the case files and notebooks beside it (local file; no public URL). The request is `collab/valuation_request_v04.json`.
+
+**D27** Finagle / collaborative valuation results for HROW on 22 November 2026 at Finagle commit fd50e97984c3b7135cf0d17f665c4c115655f471. v05 (lam=1, cash-funded schedule, flagged not a valuation) is `collab/valuation_result_v05.json`, run at 21:33 ET; the v04 control on the same commit is `collab/valuation_result_v04_control.json`. v06 (lam=1, debt-funded schedule, 2.5x Debt/EBITDA from year 3) is `collab/valuation_result_v06.json`, run at 22:03 ET (America/Toronto), with the request `collab/valuation_request_v06.json`, sha256 8cad3282baaf7389837b3db6339d4db29c30fc60e7ca03f446108f2b150d757e, and the case files and notebooks beside it (local files; no public URL).
 
 
 ### Actuals
@@ -1525,6 +1541,11 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **C29** Valuation arithmetic (derived) from D26 rows: PV of FCFE = Σ FCFE_t / 1.10603^t for t = 1–10, and PV of terminal value = [terminal FCFE / (0.10603 − 0.05103)] / 1.10603^10. Base 3348.9 + 2444.6 = 5793.5, terminal share 42.2%; bull 3988.8 + 2922.8 = 6911.6, 42.3%; bear 1912.9 + 1372.6 = 3285.5, 41.8%. Value per share vs. price = value / 28.30 − 1: base +446%, bull +551%, bear +210%. Versus the 15 November values in C25, the base is 154.50 − 149.78 = 4.72 a share, about 3%. Inputs: C28, C25, A24.
 
+**C30** Finagle outputs as printed in D27 on 22 November 2026, v06, Finagle commit fd50e97: value per share base 157.1125845943119, bull 187.3390897055385, bear 89.12714549267243 (FCFE equals DDM); not_a_valuation false in every case; sanity_flags empty; year-0 cash 72.927 in every case; year-0 debt 364.4342838591708 / 378.62794453974345 / 337.51446718581144; rd 0.09672 (prompt); lam 1 (prompt); debt.mode target, leverage 2.5, start_year 3; min cash 58.964958985787 / 62.908003555047955 / 57.73675189965847; terminal WACC (last-year WACC) 0.098048 / 0.098098 / 0.097815; shares 37.229705 in every case; price 28.30; cash-schedule present value, unchanged from v05, −114.4342838591708 / −128.62794453974342 / −87.51446718581147, discounted at re 0.10603 from 2026-11-15; year rows as in Figures 9a, 9b and 11. v05 on the same commit, cash-funded, was 171.13952467729268 / 203.89197867182205 / 97.4769527622448 and was flagged not a valuation for negative cash. Validation warnings: average EBITDA growth 80.2% / 78.0% / 68.7% with no acquisitions, and forecast evidence mentions acquisitions but the case has none. The FRED T10YIE fetch timed out; inflation remains the pinned 0.0224. Inputs: D27, P11, P12, P13, S47.
+
+**C31** Valuation arithmetic (derived) from C30. Equity value = value per share × 37.229705 shares: base 5,849.255, bull 6,974.579, bear 3,318.177. Firm value = equity + year-0 debt: base 6,213.689, bull 7,353.207, bear 3,655.692. Value per share vs. price = value / 28.30 − 1: base +455%, bull +562%, bear +215%. v06 minus v04 (154.49667362283273 / 184.14972926641576 / 87.85383991041672): +2.616 / +3.189 / +1.273. v06 minus v05 (171.13952467729268 / 203.89197867182205 / 97.4769527622448): −14.027 / −16.553 / −8.350. Debt change is this year's debt minus the prior year's debt. Debt/EBITDA is that year's debt divided by that year's EBITDA. Inputs: C30, D26, D27, A24.
+
+
 ### Prompt / task overrides
 
 **P1** Prompt [P]: produce an explicit seven-year calendar fiscal forecast FY2026E–FY2032E with product drivers and EBITDA/costs; do not back-solve or scale product lines to guidance or consensus; use bottom-up product forecasts as the base; do not run a valuation; record four views; treat seven years as a method override of the usual two-year explicit window. (task brief.)
@@ -1553,6 +1574,14 @@ No post-Q3 2026 consensus pull was taken. A pre-Q3 print is not used as a curren
 
 **S46** Inflation pass-through of 0.25, a Finagle default, not set in the request. Zero leaves the reinvestment rate at terminal growth divided by the terminal return. One is the Bradley-Jarrell rate, growth less inflation over the return less inflation. A quarter of the 2.24% breakeven is the offset used in this run. (D26, P11.)
 
+**P12** Prompt [P], David May, 22 November 2026: "rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate." Request `collab/valuation_request_v05.json`. (chat, n/a.)
+
+**P13** Prompt [P], David May, 22 November 2026: "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3." and, answering the choice of method, "Add the present value to debt and keep rd at 9.67%." Year-0 cash stays at the FY2025 10-K figure of 72.927 with includes_adjustments true. Year-0 debt is 250 plus the absolute present value of that scenario's cash_share_adjustments as computed in v05 at re 0.10603 from 15 November 2026. The cost of debt is held at 0.09672. Request `collab/valuation_request_v06.json`. (chat and card t242s879, n/a.)
+
+**P14** Prompt [P], David May, 22 November 2026: "Yes", approving an update of the report's valuation section and PDF to v06. (chat, n/a.)
+
+**S47** Inflation pass-through of 1, stated in P12. This is the Bradley-Jarrell rate: terminal reinvestment is (terminal growth − inflation) / (terminal return − inflation). Used in v05 and v06. (P12, D27, D25.)
+
 
 ### Not verified
 
@@ -1566,6 +1595,8 @@ The history used for this case is FY2024A and FY2025A from the 2025 Form 10-K, t
 
 Four views are recorded for each explicit year. Calibrated top-down is absent for FY2026E because first-half 2026 revenue was below the original first-half range of $133–153, and that miss is not applied to the reaffirmed full-year $350–365 range [G2][G4][C3][P1]. No post-Q3 2026 Consensus pull was taken [P1]. The revised Adjusted EBITDA outlook is a single-point floor of more than $40, including more than $33 in the fourth quarter [G1]. The 15 November update keeps that window and replaces VEVYE and IHEEZO with the attached workbook [P10]. The FY2026E revenue base of $347 sits about $3 below the $350 low end [C1][C15]. The FY2026E Adjusted EBITDA base of $42.5 is the cost build and sits above the floor of more than $40 [C5].
 
-Adjusted EBITDA is revenue minus cash cost. In this build that is product gross profit before amortization minus cash operating expenses, the same identity checked on the Q3 2026 letter: gross profit plus amortization minus cash operating expenses, where cash operating expenses are GAAP operating expenses minus stock-based compensation minus depreciation [C4][A4][C13][C14]. Inventory step-up is not listed as an add-back and is not added back [S11]. Melt and TYRVAYA contingent cash and stock are modelled as contingent M&A and dilution, not as EBITDA deductions [S12]. Milestone payments the company owes, similar contingent cash outside EBITDA, and equity offerings are a schedule in the forecast file under `cash_share_adjustments` [S24][S25][A15]. The base schedule records the $30 TYRVAYA close cash paid on 1 October 2026, Melt FDA-approval cash of $87.2 at 31 December 2027 with probability 1, consistent with the unweighted 2028 launch already in the revenue path, and the first commercial Annual Net Sales cash milestone of $10.0 at 31 December 2030 [C19][S24][A15][S34][A18]. No year-0 equity raise is on the schedule [P9]. A second FDA-approval cash payment is not added for YOCHIL [S25]. A valuation discounts that schedule at the cost of equity and adjusts year-0 cash and the current share count; the worked figures are the Balance Sheet Adjustments subsection of the Valuation section, and they are not written up in the Forecast section [C25][P5]. Forward gross margin is a weighted product-level build minus amortization [C13][S19]. Forward cash opex is an explicit bridge from the Q3 2026 cash run rate. The core is that quarter annualized and inflated at a named 4% rate [S20][S40]. The verified TYRVAYA add-on enters once, and the G-MELT and YOCHIL programs are assumed [S17][S33][G5]. A variable cost of 4%, the central rate in a 2–8% band, applies only to same-store revenue above the Q3 2026 annualized revenue that the run rate already pays for; the prior year is only the base for growth rates [S41][C14][C17]. Where a later-year margin moves well beyond the history, the report flags it, shows the bridge, and names a bear lever; it does not haircut the base [S42][C14].
+Adjusted EBITDA is revenue minus cash cost. In this build that is product gross profit before amortization minus cash operating expenses, the same identity checked on the Q3 2026 letter: gross profit plus amortization minus cash operating expenses, where cash operating expenses are GAAP operating expenses minus stock-based compensation minus depreciation [C4][A4][C13][C14]. Inventory step-up is not listed as an add-back and is not added back [S11]. Melt and TYRVAYA contingent cash and stock are modelled as contingent M&A and dilution, not as EBITDA deductions [S12]. Milestone payments the company owes, similar contingent cash outside EBITDA, and equity offerings are a schedule in the forecast file under `cash_share_adjustments` [S24][S25][A15]. The base schedule records the $30 TYRVAYA close cash paid on 1 October 2026, Melt FDA-approval cash of $87.2 at 31 December 2027 with probability 1, consistent with the unweighted 2028 launch already in the revenue path, and the first commercial Annual Net Sales cash milestone of $10.0 at 31 December 2030 [C19][S24][A15][S34][A18]. No year-0 equity raise is on the schedule [P9]. A second FDA-approval cash payment is not added for YOCHIL [S25]. A valuation discounts that schedule at the cost of equity and adjusts year-0 cash and the current share count; the worked figures are the Balance Sheet Adjustments subsection of the Valuation section, and they are not written up in the Forecast section [C25][P5]. On the 22 November v06 run, David instructed that the present value be added to year-0 debt instead of reducing cash, that the cost of debt stay at 9.67%, and that debt then run to a 2.5x Debt/EBITDA target from year 3 [P12][P13][C30]. Forward gross margin is a weighted product-level build minus amortization [C13][S19]. Forward cash opex is an explicit bridge from the Q3 2026 cash run rate. The core is that quarter annualized and inflated at a named 4% rate [S20][S40]. The verified TYRVAYA add-on enters once, and the G-MELT and YOCHIL programs are assumed [S17][S33][G5]. A variable cost of 4%, the central rate in a 2–8% band, applies only to same-store revenue above the Q3 2026 annualized revenue that the run rate already pays for; the prior year is only the base for growth rates [S41][C14][C17]. Where a later-year margin moves well beyond the history, the report flags it, shows the bridge, and names a bear lever; it does not haircut the base [S42][C14].
 
 The unit and net-price arithmetic for VEVYE, IHEEZO, and TRIESENCE is in Appendix B under S21, S22, and S23. G-MELT and YOCHIL are memo lines so that they are not mixed into the Other branded residual; compounded MKO Melt remains in ImprimisRx and is not double-counted [P3][P4]. The compounding path was not cut further for the higher 15% G-MELT share, because current annual MKO volume is undisclosed [S13]. Tags follow the method's letters: A for actuals, G for guidance and management statements, E for Consensus (none here), S for assumptions, C for calculations, D for documents, and P for task overrides.
+
+The v06 valuation also leaves two method points for a later skill or Finagle change, not used as local rules here. First, `cash_share_adjustments` items may only be kind `cash` or `equity`, and a cash item has no funding field, so adding the present value to debt had to be expressed as a computed `baseline.debt` prompt plus `includes_adjustments` on stated cash. A debt-funded kind, or a funding field on a cash item, would let the runner do that without a hand-computed debt figure. Second, `includes_adjustments` is documented as meaning the stated cash or share count already includes the schedule items. In v06 it was used to leave the unadjusted FY2025 10-K cash unreduced while the present value was added to debt. The collaborative-run skill should say whether that is a supported use, and whether a stated debt increment should carry a matching flag.

@@ -1,0 +1,1838 @@
+{
+ "ticker": "HROW",
+ "mode": "collaborative",
+ "version": "v06",
+ "parent_version": "v05",
+ "currency": "USD",
+ "finagle_commit": "fd50e97984c3b7135cf0d17f665c4c115655f471",
+ "ff_log": "git fetch + merge --ff-only origin/main in /workspace/finagle; already up to date at fd50e97984c3b7135cf0d17f665c4c115655f471.",
+ "run_at": "2026-11-22T22:03:06.860133-05:00",
+ "sec_user_agent": "David May davidmay44@hotmail.com",
+ "build_baseline": {
+  "ok": true,
+  "canadian": false,
+  "currency": "USD",
+  "period_end": "2025-12-31",
+  "warnings": [
+   "The fred inflation series T10YIE could not be loaded: TimeoutError: The read operation timed out"
+  ]
+ },
+ "hash_check": {
+  "sidecar_present": false,
+  "file_bytes": "8cad3282baaf7389837b3db6339d4db29c30fc60e7ca03f446108f2b150d757e",
+  "file_bytes_matches_brief_exactly": true,
+  "whole_request": "ef2ce541c7749b3e4ce2b47044657942882839481a0f6142feff97eb4f0041f6",
+  "blocks": {
+   "base": "f9b34a56bbf29ee34ae70eb0aa1bc52661b522a8371b6e6274a8e2983f907e8d",
+   "bull": "f1daf82b2687588887e6a6dae510e420011a72eca133bbc6f354d1d8e2cce285",
+   "bear": "ad122a8c4e3a614c330628cc9951614981e429e9b779b87c9108a9815ace1f04"
+  },
+  "prompt_inputs": "41f30b702636e92731e140a0f50b322527beff2fef873345a99c75b03c54c3bf",
+  "note": "No sidecar was present. File sha256 matches the brief exactly."
+ },
+ "request_diff_v06_vs_v05": {
+  "changed_keys": [
+   "version",
+   "parent_version",
+   "prompt_inputs"
+  ],
+  "unchanged": [
+   "mode",
+   "ticker",
+   "forecast_commit",
+   "scenarios",
+   "forecaster",
+   "cash_share_adjustments",
+   "post_finagle"
+  ],
+  "carried_v05_prompts_unchanged": 6,
+  "new_prompts": [
+   "baseline.cash 72.927 includes_adjustments true (all scenarios)",
+   "baseline.debt base 364.4342838591708 / bull 378.62794453974345 / bear 337.51446718581144",
+   "rates.rd 0.09672",
+   "debt.mode target",
+   "debt.leverage 2.5",
+   "debt.start_year 3"
+  ],
+  "no_other_differences": true
+ },
+ "lam_and_debt_provenance": "The eight new prompt quotes were relayed by the Forecaster, not taken from a first-hand David message in this run. Combined quote: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3.\" and \"Add the present value to debt and keep rd at 9.67%.\" Date: 2026-11-22. Carried v05 prompts, including rates.lam=1, were left unchanged.",
+ "prompt_inputs": [
+  {
+   "path": "market.price",
+   "value": 28.3,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.",
+   "date": "2026-11-15",
+   "as_of": "2026-11-15"
+  },
+  {
+   "path": "market.shares",
+   "value": 37.229705,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.",
+   "date": "2026-11-22"
+  },
+  {
+   "path": "rates.risk_free",
+   "value": 0.05103,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.",
+   "date": "2026-11-22",
+   "as_of": "2026-11-15"
+  },
+  {
+   "path": "baseline.interest",
+   "value": 24.18,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.",
+   "date": "2026-11-22"
+  },
+  {
+   "path": "rates.inflation",
+   "value": 0.0224,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.",
+   "date": "2026-11-22",
+   "as_of": "2026-11-13"
+  },
+  {
+   "path": "rates.lam",
+   "value": 1,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate.",
+   "date": "2026-11-22"
+  },
+  {
+   "path": "baseline.cash",
+   "value": 72.927,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%",
+   "date": "2026-11-22",
+   "includes_adjustments": true,
+   "note": "Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. includes_adjustments is true so the runner does not subtract the schedule from this stated cash again. Cash stays at the unadjusted opening; the present value is added to debt instead."
+  },
+  {
+   "path": "baseline.debt",
+   "value": 364.4342838591708,
+   "applies_to": [
+    "base"
+   ],
+   "quote": "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%",
+   "date": "2026-11-22",
+   "note": "Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. baseline.debt is 250 plus the absolute present value of the base cash_share_adjustments as computed in v05 (sum_pv_cash -114.4342838591708)."
+  },
+  {
+   "path": "baseline.debt",
+   "value": 378.62794453974345,
+   "applies_to": [
+    "bull"
+   ],
+   "quote": "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%",
+   "date": "2026-11-22",
+   "note": "Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. baseline.debt is 250 plus the absolute present value of the bull cash_share_adjustments as computed in v05 (sum_pv_cash -128.62794453974342)."
+  },
+  {
+   "path": "baseline.debt",
+   "value": 337.51446718581144,
+   "applies_to": [
+    "bear"
+   ],
+   "quote": "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%",
+   "date": "2026-11-22",
+   "note": "Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. baseline.debt is 250 plus the absolute present value of the bear cash_share_adjustments as computed in v05 (sum_pv_cash -87.51446718581147)."
+  },
+  {
+   "path": "rates.rd",
+   "value": 0.09672,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%",
+   "date": "2026-11-22",
+   "note": "Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Pinned at the v05 default, year-0 interest 24.18 / unadjusted year-0 debt 250, so raising baseline.debt does not recompute a lower cost of debt."
+  },
+  {
+   "path": "debt.mode",
+   "value": "target",
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%",
+   "date": "2026-11-22",
+   "note": "Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Target Debt/EBITDA policy; leverage and start_year are the next two items."
+  },
+  {
+   "path": "debt.leverage",
+   "value": 2.5,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%",
+   "date": "2026-11-22",
+   "note": "Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Debt/EBITDA target of 2.5x."
+  },
+  {
+   "path": "debt.start_year",
+   "value": 3,
+   "applies_to": [
+    "base",
+    "bull",
+    "bear"
+   ],
+   "quote": "rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%",
+   "date": "2026-11-22",
+   "note": "Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Year 3 is FY2028E (year 0 is FY2025A, year 1 is FY2026E). Years 1-2 hold year-0 debt; the target applies from year 3."
+  }
+ ],
+ "post_finagle": null,
+ "forecast_commit": "uncommitted (Vevye and Iheezo workbook applied 15 November 2026)",
+ "defaults_filled": [
+  "baseline.noa",
+  "baseline.nol",
+  "distribution.mode",
+  "forecast.dwc.mode",
+  "rates.gt",
+  "rates.re",
+  "rates.roict",
+  "rates.t",
+  "year"
+ ],
+ "published_v05_values": {
+  "base": 171.14,
+  "bull": 203.892,
+  "bear": 97.477
+ },
+ "vs_v05": {
+  "base": {
+   "v05_fcfe": 171.14,
+   "v06_fcfe": 157.1125845943119,
+   "v06_ddm": 157.11258459431195,
+   "v06_minus_v05": -14.027415405688089
+  },
+  "bull": {
+   "v05_fcfe": 203.892,
+   "v06_fcfe": 187.3390897055385,
+   "v06_ddm": 187.33908970553844,
+   "v06_minus_v05": -16.552910294461498
+  },
+  "bear": {
+   "v05_fcfe": 97.477,
+   "v06_fcfe": 89.12714549267243,
+   "v06_ddm": 89.12714549267244,
+   "v06_minus_v05": -8.349854507327578
+  }
+ },
+ "v06_summary": {
+  "base": {
+   "fcfe": 157.1125845943119,
+   "ddm": 157.11258459431195,
+   "ok": true,
+   "not_a_valuation": false,
+   "reasons": [],
+   "year0_cash": 72.927,
+   "year0_debt": 364.4342838591708,
+   "rd": 0.09672,
+   "cash_stayed_72.927": true,
+   "debt_path": [
+    364.4342838591708,
+    364.4342838591708,
+    364.4342838591708,
+    927.0650001520187,
+    1337.9125001006687,
+    1731.242500762614,
+    2125.110001412271,
+    2426.6400021665163,
+    2732.853845183159,
+    3012.947928210326,
+    3253.8603075580586
+   ],
+   "debt_to_ebitda": [
+    5.885281460187181,
+    8.578557594142774,
+    1.6786548244662733,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5
+   ],
+   "ebitda_path": [
+    61.923,
+    42.482000016879006,
+    217.09900007289608,
+    370.8260000608075,
+    535.1650000402675,
+    692.4970003050456,
+    850.0440005649083,
+    970.6560008666065,
+    1093.1415380732637,
+    1205.1791712841305,
+    1301.5441230232234
+   ],
+   "sanity_flags": [],
+   "validation_warnings": [
+    "average EBITDA growth is 80.2% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+    "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+   ]
+  },
+  "bull": {
+   "fcfe": 187.3390897055385,
+   "ddm": 187.33908970553844,
+   "ok": true,
+   "not_a_valuation": false,
+   "reasons": [],
+   "year0_cash": 72.927,
+   "year0_debt": 378.62794453974345,
+   "rd": 0.09672,
+   "cash_stayed_72.927": true,
+   "debt_path": [
+    378.62794453974345,
+    378.62794453974345,
+    378.62794453974345,
+    1063.135000270098,
+    1562.5175001152504,
+    2009.037499553668,
+    2433.8724988866356,
+    2817.747498636529,
+    3205.2827913348797,
+    3556.5737690435,
+    3851.649354753433
+   ],
+   "debt_to_ebitda": [
+    6.114496141009696,
+    7.330647522828168,
+    1.5337760047491373,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5
+   ],
+   "ebitda_path": [
+    61.923,
+    51.649999998045,
+    246.86000000480607,
+    425.25400010803924,
+    625.0070000461002,
+    803.6149998214672,
+    973.5489995546543,
+    1127.0989994546117,
+    1282.1131165339518,
+    1422.6295076174,
+    1540.659741901373
+   ],
+   "sanity_flags": [],
+   "validation_warnings": [
+    "average EBITDA growth is 78.0% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+    "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+   ]
+  },
+  "bear": {
+   "fcfe": 89.12714549267243,
+   "ddm": 89.12714549267244,
+   "ok": true,
+   "not_a_valuation": false,
+   "reasons": [],
+   "year0_cash": 72.927,
+   "year0_debt": 337.51446718581144,
+   "rd": 0.09672,
+   "cash_stayed_72.927": true,
+   "debt_path": [
+    337.51446718581144,
+    337.51446718581144,
+    337.51446718581144,
+    715.277500503732,
+    937.7175003453295,
+    1087.2725003626156,
+    1229.227500387994,
+    1399.6225002162278,
+    1588.3655700532227,
+    1762.0407805429618,
+    1913.4363608883516
+   ],
+   "debt_to_ebitda": [
+    5.450550961449081,
+    9.553197479545455,
+    1.9820912776394535,
+    2.5,
+    2.5,
+    2.5,
+    2.5000000000000004,
+    2.5,
+    2.5,
+    2.5,
+    2.5
+   ],
+   "ebitda_path": [
+    61.923,
+    35.330000024438995,
+    170.28200012452,
+    286.1110002014928,
+    375.0870001381318,
+    434.90900014504626,
+    491.69100015519757,
+    559.8490000864911,
+    635.3462280212891,
+    704.8163122171848,
+    765.3745443553406
+   ],
+   "sanity_flags": [],
+   "validation_warnings": [
+    "average EBITDA growth is 68.7% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+    "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+   ]
+  }
+ },
+ "scenarios": {
+  "base": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 157.1125845943119,
+   "value_per_share_DDM": 157.11258459431195,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 80.2% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+     "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "defaults_filled": [
+    "baseline.noa",
+    "baseline.nol",
+    "distribution.mode",
+    "forecast.dwc.mode",
+    "rates.gt",
+    "rates.re",
+    "rates.roict",
+    "rates.t",
+    "year"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.05103,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+     "as_of": "2026-11-15"
+    },
+    "re": {
+     "value": 0.10603,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.05103,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.09672,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Pinned at the v05 default, year-0 interest 24.18 / unadjusted year-0 debt 250, so raising baseline.debt does not recompute a lower cost of debt. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    },
+    "t": {
+     "value": 0.21,
+     "source": "assumption",
+     "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    },
+    "inflation": {
+     "value": 0.0224,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+     "as_of": "2026-11-13"
+    },
+    "lam": {
+     "value": 1,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    }
+   },
+   "rates_rd": {
+    "value": 0.09672,
+    "source": "prompt",
+    "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Pinned at the v05 default, year-0 interest 24.18 / unadjusted year-0 debt 250, so raising baseline.debt does not recompute a lower cost of debt. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "target",
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Target Debt/EBITDA policy; leverage and start_year are the next two items. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    },
+    "leverage": {
+     "value": 2.5,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Debt/EBITDA target of 2.5x. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    },
+    "start_year": {
+     "value": 3,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Year 3 is FY2028E (year 0 is FY2025A, year 1 is FY2026E). Years 1-2 hold year-0 debt; the target applies from year 3. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    }
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case from cash_share_adjustments per collaborative-run.md. t=0 when item date is on or before the price date; else days/365.25. Discount = 1/(1+re)^t. includes_adjustments true on baseline.cash means the stated cash is already the opening used in the case; the schedule is NOT subtracted from cash. The present value was added to baseline.debt in prompt_inputs instead.",
+    "price_date": "2026-11-15",
+    "cost_of_equity": 0.10603,
+    "includes_adjustments_cash": true,
+    "includes_adjustments_shares": false,
+    "opening_cash": 72.927,
+    "opening_shares": 37.229705,
+    "items": [
+     {
+      "name": "TYRVAYA close cash paid",
+      "kind": "cash",
+      "date": "2026-10-01",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 1.0,
+      "amount": -30.0,
+      "present_value": -30.0,
+      "new_shares": 0.0,
+      "status": "computed, not applied to cash (includes_adjustments true on baseline.cash; PV already in baseline.debt)"
+     },
+     {
+      "name": "Melt FDA-approval milestone payable",
+      "kind": "cash",
+      "date": "2027-12-31",
+      "t_years": 1.1252566735112937,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 0.8927934509941401,
+      "amount": -87.16794,
+      "present_value": -77.82296596865015,
+      "new_shares": 0.0,
+      "status": "computed, not applied to cash (includes_adjustments true on baseline.cash; PV already in baseline.debt)"
+     },
+     {
+      "name": "Melt first commercial Annual Net Sales cash milestone",
+      "kind": "cash",
+      "date": "2030-12-31",
+      "t_years": 4.125941136208077,
+      "probability": 1.0,
+      "source_list": "base",
+      "discount_factor": 0.65981216472262,
+      "amount": -10.02,
+      "present_value": -6.611317890520652,
+      "new_shares": 0.0,
+      "status": "computed, not applied to cash (includes_adjustments true on baseline.cash; PV already in baseline.debt)"
+     }
+    ],
+    "sum_pv_cash": -114.4342838591708,
+    "sum_new_shares": 0.0,
+    "adjusted_cash_if_schedule_were_applied": -41.5072838591708,
+    "cash_used_in_case": 72.927,
+    "shares_used_in_case": 37.229705,
+    "cash_schedule_applied_to_case": false,
+    "shares_schedule_applied_to_case": false,
+    "complete": true
+   },
+   "year0_cash_used": 72.927,
+   "year0_debt_used": 364.4342838591708,
+   "year0_cash_leaf": {
+    "value": 72.927,
+    "source": "prompt",
+    "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. includes_adjustments is true so the runner does not subtract the schedule from this stated cash again. Cash stays at the unadjusted opening; the present value is added to debt instead. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD"
+   },
+   "year0_debt_leaf": {
+    "value": 364.4342838591708,
+    "source": "prompt",
+    "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. baseline.debt is 250 plus the absolute present value of the base cash_share_adjustments as computed in v05 (sum_pv_cash -114.4342838591708). [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD"
+   },
+   "cash_stayed_at_prompt_no_csa_subtraction": true,
+   "shares_used": 37.229705,
+   "price_used": 28.3,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (display_fin skipped)",
+    "cols": {
+     "revenue": [
+      272.303,
+      347.06600002266305,
+      664.5620000968172,
+      898.6890003395662,
+      1125.3910006425767,
+      1353.3400011887072,
+      1582.0680015563107,
+      1759.7010020465077,
+      1946.4668678987143,
+      2117.3017766712915,
+      2264.238991135985
+     ],
+     "ebitda": [
+      61.923,
+      42.482000016879006,
+      217.09900007289608,
+      370.8260000608075,
+      535.1650000402675,
+      692.4970003050456,
+      850.0440005649083,
+      970.6560008666065,
+      1093.1415380732637,
+      1205.1791712841305,
+      1301.5441230232234
+     ],
+     "da": [
+      18.906,
+      24.096795835626004,
+      46.14054628054199,
+      62.39598623746282,
+      78.13590837467291,
+      93.96240975117314,
+      109.84299709303099,
+      122.17605808489543,
+      135.14321400973583,
+      147.0042834259903,
+      157.20613568861503
+     ],
+     "capex": [
+      0.887,
+      12.619015342587005,
+      62.441359857264786,
+      99.1812118981027,
+      134.75591255141856,
+      170.52629590847897,
+      206.41892205749033,
+      234.29358046430963,
+      263.6013931923359,
+      290.4092763720074,
+      313.467067712299
+     ],
+     "sbc": [
+      12.502,
+      8.576941753646002,
+      43.831398654964175,
+      74.86825012935768,
+      108.04762092442913,
+      139.81230718495036,
+      171.62040106361906,
+      195.97146977430543,
+      220.70079791017787,
+      243.32073703461072,
+      262.7764259812402
+     ],
+     "interest": [
+      24.18,
+      35.248083934859004,
+      35.248083934859004,
+      35.248083934859004,
+      89.66572681470325,
+      129.40289700973668,
+      167.44577467376004,
+      205.54063933659484,
+      234.70462100954546,
+      264.3216239061152,
+      291.41232361650276
+     ],
+     "tax": [
+      3.771,
+      0.0,
+      19.294583952531486,
+      41.64587274941688,
+      54.45630622455707,
+      69.15707113542895,
+      84.23831382424463,
+      93.86324507087028,
+      105.54451008019895,
+      115.61183065265698,
+      123.93133992474174
+     ],
+     "tax_cash": [
+      3.771,
+      0.0,
+      13.952221436008564,
+      41.64587274941688,
+      54.45630622455707,
+      69.15707113542895,
+      84.23831382424463,
+      93.86324507087028,
+      105.54451008019895,
+      115.61183065265698,
+      123.93133992474174
+     ],
+     "wacc": [
+      0.10427207810036575,
+      0.1044348056759156,
+      0.10456814628529475,
+      0.10260121559065458,
+      0.10142797070142126,
+      0.10045542175804059,
+      0.09958742234839224,
+      0.09907858761749501,
+      0.09861073717105948,
+      0.09826021763115429,
+      0.09804790202328903
+     ],
+     "value_per_share": [
+      157.1125845943119,
+      171.97972140187676,
+      188.55944185840642,
+      190.2199067113343,
+      195.37169635692896,
+      200.590502817693,
+      205.36185473161726,
+      212.56421624573315,
+      219.6630067684912,
+      227.60028107972067,
+      236.93623847691472
+     ],
+     "shares": [
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705
+     ],
+     "debt": [
+      364.4342838591708,
+      364.4342838591708,
+      364.4342838591708,
+      927.0650001520187,
+      1337.9125001006687,
+      1731.242500762614,
+      2125.110001412271,
+      2426.6400021665163,
+      2732.853845183159,
+      3012.947928210326,
+      3253.8603075580586
+     ],
+     "cash": [
+      72.927,
+      58.964958985787,
+      120.59089517558655,
+      803.1041928175057,
+      1362.1911262913152,
+      1939.1195560197111,
+      2553.307645615162,
+      3095.824712589934,
+      3670.628771487582,
+      4242.238557833489,
+      4793.107902969661
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "ebitda": [
+     61.923,
+     42.482000016879006,
+     217.09900007289608,
+     370.8260000608075,
+     535.1650000402675,
+     692.4970003050456,
+     850.0440005649083,
+     970.6560008666065,
+     1093.1415380732637,
+     1205.1791712841305,
+     1301.5441230232234
+    ],
+    "capex": [
+     0.887,
+     12.619015342587005,
+     62.441359857264786,
+     99.1812118981027,
+     134.75591255141856,
+     170.52629590847897,
+     206.41892205749033,
+     234.29358046430963,
+     263.6013931923359,
+     290.4092763720074,
+     313.467067712299
+    ],
+    "da": [
+     18.906,
+     24.096795835626004,
+     46.14054628054199,
+     62.39598623746282,
+     78.13590837467291,
+     93.96240975117314,
+     109.84299709303099,
+     122.17605808489543,
+     135.14321400973583,
+     147.0042834259903,
+     157.20613568861503
+    ],
+    "sbc": [
+     12.502,
+     8.576941753646002,
+     43.831398654964175,
+     74.86825012935768,
+     108.04762092442913,
+     139.81230718495036,
+     171.62040106361906,
+     195.97146977430543,
+     220.70079791017787,
+     243.32073703461072,
+     262.7764259812402
+    ],
+    "debt": [
+     364.4342838591708,
+     364.4342838591708,
+     364.4342838591708,
+     927.0650001520187,
+     1337.9125001006687,
+     1731.242500762614,
+     2125.110001412271,
+     2426.6400021665163,
+     2732.853845183159,
+     3012.947928210326,
+     3253.8603075580586
+    ],
+    "cash": [
+     72.927,
+     58.964958985787,
+     120.59089517558655,
+     803.1041928175057,
+     1362.1911262913152,
+     1939.1195560197111,
+     2553.307645615162,
+     3095.824712589934,
+     3670.628771487582,
+     4242.238557833489,
+     4793.107902969661
+    ],
+    "interest": [
+     24.18,
+     35.248083934859004,
+     35.248083934859004,
+     35.248083934859004,
+     89.66572681470325,
+     129.40289700973668,
+     167.44577467376004,
+     205.54063933659484,
+     234.70462100954546,
+     264.3216239061152,
+     291.41232361650276
+    ],
+    "debt_to_ebitda": [
+     5.885281460187181,
+     8.578557594142774,
+     1.6786548244662733,
+     2.5,
+     2.5,
+     2.5,
+     2.5,
+     2.5,
+     2.5,
+     2.5,
+     2.5
+    ],
+    "terminal_capex": 313.467067712299,
+    "terminal_da": 157.20613568861503
+   },
+   "min_cash": 58.964958985787,
+   "not_a_valuation": false,
+   "not_a_valuation_reason": [],
+   "flags": []
+  },
+  "bull": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 187.3390897055385,
+   "value_per_share_DDM": 187.33908970553844,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 78.0% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+     "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "defaults_filled": [
+    "baseline.noa",
+    "baseline.nol",
+    "distribution.mode",
+    "forecast.dwc.mode",
+    "rates.gt",
+    "rates.re",
+    "rates.roict",
+    "rates.t",
+    "year"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.05103,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+     "as_of": "2026-11-15"
+    },
+    "re": {
+     "value": 0.10603,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.05103,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.09672,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Pinned at the v05 default, year-0 interest 24.18 / unadjusted year-0 debt 250, so raising baseline.debt does not recompute a lower cost of debt. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    },
+    "t": {
+     "value": 0.21,
+     "source": "assumption",
+     "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    },
+    "inflation": {
+     "value": 0.0224,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+     "as_of": "2026-11-13"
+    },
+    "lam": {
+     "value": 1,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    }
+   },
+   "rates_rd": {
+    "value": 0.09672,
+    "source": "prompt",
+    "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Pinned at the v05 default, year-0 interest 24.18 / unadjusted year-0 debt 250, so raising baseline.debt does not recompute a lower cost of debt. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "target",
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Target Debt/EBITDA policy; leverage and start_year are the next two items. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    },
+    "leverage": {
+     "value": 2.5,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Debt/EBITDA target of 2.5x. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    },
+    "start_year": {
+     "value": 3,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Year 3 is FY2028E (year 0 is FY2025A, year 1 is FY2026E). Years 1-2 hold year-0 debt; the target applies from year 3. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    }
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case from cash_share_adjustments per collaborative-run.md. t=0 when item date is on or before the price date; else days/365.25. Discount = 1/(1+re)^t. includes_adjustments true on baseline.cash means the stated cash is already the opening used in the case; the schedule is NOT subtracted from cash. The present value was added to baseline.debt in prompt_inputs instead.",
+    "price_date": "2026-11-15",
+    "cost_of_equity": 0.10603,
+    "includes_adjustments_cash": true,
+    "includes_adjustments_shares": false,
+    "opening_cash": 72.927,
+    "opening_shares": 37.229705,
+    "items": [
+     {
+      "name": "TYRVAYA close cash paid",
+      "kind": "cash",
+      "date": "2026-10-01",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "bull",
+      "discount_factor": 1.0,
+      "amount": -30.0,
+      "present_value": -30.0,
+      "new_shares": 0.0,
+      "status": "computed, not applied to cash (includes_adjustments true on baseline.cash; PV already in baseline.debt)"
+     },
+     {
+      "name": "Melt FDA-approval milestone payable",
+      "kind": "cash",
+      "date": "2027-12-31",
+      "t_years": 1.1252566735112937,
+      "probability": 1.0,
+      "source_list": "bull",
+      "discount_factor": 0.8927934509941401,
+      "amount": -87.16794,
+      "present_value": -77.82296596865015,
+      "new_shares": 0.0,
+      "status": "computed, not applied to cash (includes_adjustments true on baseline.cash; PV already in baseline.debt)"
+     },
+     {
+      "name": "Melt first commercial Annual Net Sales cash milestone",
+      "kind": "cash",
+      "date": "2029-12-31",
+      "t_years": 3.1266255989048597,
+      "probability": 1.0,
+      "source_list": "bull",
+      "discount_factor": 0.7297217119832068,
+      "amount": -10.02,
+      "present_value": -7.311811554071732,
+      "new_shares": 0.0,
+      "status": "computed, not applied to cash (includes_adjustments true on baseline.cash; PV already in baseline.debt)"
+     },
+     {
+      "name": "Melt second commercial Annual Net Sales cash milestone",
+      "kind": "cash",
+      "date": "2032-12-31",
+      "t_years": 6.1273100616016425,
+      "probability": 1.0,
+      "source_list": "bull",
+      "discount_factor": 0.5392952444852736,
+      "amount": -25.02,
+      "present_value": -13.493167017021545,
+      "new_shares": 0.0,
+      "status": "computed, not applied to cash (includes_adjustments true on baseline.cash; PV already in baseline.debt)"
+     }
+    ],
+    "sum_pv_cash": -128.62794453974342,
+    "sum_new_shares": 0.0,
+    "adjusted_cash_if_schedule_were_applied": -55.70094453974342,
+    "cash_used_in_case": 72.927,
+    "shares_used_in_case": 37.229705,
+    "cash_schedule_applied_to_case": false,
+    "shares_schedule_applied_to_case": false,
+    "complete": true
+   },
+   "year0_cash_used": 72.927,
+   "year0_debt_used": 378.62794453974345,
+   "year0_cash_leaf": {
+    "value": 72.927,
+    "source": "prompt",
+    "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. includes_adjustments is true so the runner does not subtract the schedule from this stated cash again. Cash stays at the unadjusted opening; the present value is added to debt instead. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD"
+   },
+   "year0_debt_leaf": {
+    "value": 378.62794453974345,
+    "source": "prompt",
+    "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. baseline.debt is 250 plus the absolute present value of the bull cash_share_adjustments as computed in v05 (sum_pv_cash -128.62794453974342). [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD"
+   },
+   "cash_stayed_at_prompt_no_csa_subtraction": true,
+   "shares_used": 37.229705,
+   "price_used": 28.3,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (display_fin skipped)",
+    "cols": {
+     "revenue": [
+      272.303,
+      358.997999977365,
+      700.0079998571222,
+      967.1349999477112,
+      1240.0260001946422,
+      1493.1030008163427,
+      1734.5760003886085,
+      1953.7500004994877,
+      2184.3667430584464,
+      2393.415009102626,
+      2569.0102946604493
+     ],
+     "ebitda": [
+      61.923,
+      51.649999998045,
+      246.86000000480607,
+      425.25400010803924,
+      625.0070000461002,
+      803.6149998214672,
+      973.5489995546543,
+      1127.0989994546117,
+      1282.1131165339518,
+      1422.6295076174,
+      1540.659741901373
+     ],
+     "da": [
+      18.906,
+      24.925234711229997,
+      48.60156239666382,
+      67.1481926714411,
+      86.09501753443737,
+      103.66615620626203,
+      120.43162896973968,
+      135.6488819786903,
+      151.660604709691,
+      166.17482790161782,
+      178.36641032544793
+     ],
+     "capex": [
+      0.887,
+      14.620178258783065,
+      68.63887734868456,
+      110.95392101828281,
+      154.18202820540068,
+      194.27144009355328,
+      232.52268582485024,
+      267.2415924976584,
+      303.77312068093266,
+      336.88803045685717,
+      364.7037217723553
+     ],
+     "sbc": [
+      12.502,
+      10.427923388329999,
+      49.84002260969407,
+      85.85704034608638,
+      126.18635264080139,
+      162.2465760342358,
+      196.555554356738,
+      227.55667023854716,
+      258.85338538035086,
+      287.2230690411113,
+      311.05288977037554
+     ],
+     "interest": [
+      24.18,
+      36.620894795883984,
+      36.620894795883984,
+      36.620894795883984,
+      102.8264172261239,
+      151.126692611147,
+      194.31410695683078,
+      235.4041480923154,
+      272.5325380681251,
+      310.0149515779096,
+      343.9918149418873
+     ],
+     "tax": [
+      3.771,
+      0.0,
+      23.477479242538475,
+      49.48185318187183,
+      65.07883465539487,
+      81.1808707436627,
+      97.07201894698262,
+      110.98275282046232,
+      125.80398355891481,
+      138.4354984103198,
+      148.52221164136907
+     ],
+     "tax_cash": [
+      3.771,
+      0.0,
+      19.20942813408469,
+      49.48185318187183,
+      65.07883465539487,
+      81.1808707436627,
+      97.07201894698262,
+      110.98275282046232,
+      125.80398355891481,
+      138.4354984103198,
+      148.52221164136907
+     ],
+     "wacc": [
+      0.10448948039259917,
+      0.10463193210984688,
+      0.10474969657972907,
+      0.10271731905476424,
+      0.10150339109160691,
+      0.10058457854609867,
+      0.09982626935543223,
+      0.0992493586655496,
+      0.09872353184984643,
+      0.09833035493323655,
+      0.09809807391296216
+     ],
+     "value_per_share": [
+      187.3390897055385,
+      205.30523160070265,
+      225.1250117055827,
+      226.78567212909425,
+      232.67110089989606,
+      239.57826688630874,
+      246.77164484367322,
+      254.94613209087316,
+      262.9425884186875,
+      271.98369933479984,
+      282.89384791513373
+     ],
+     "shares": [
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705
+     ],
+     "debt": [
+      378.62794453974345,
+      378.62794453974345,
+      378.62794453974345,
+      1063.135000270098,
+      1562.5175001152504,
+      2009.037499553668,
+      2433.8724988866356,
+      2817.747498636529,
+      3205.2827913348797,
+      3556.5737690435,
+      3851.649354753433
+     ],
+     "cash": [
+      72.927,
+      62.908003555047955,
+      135.4587806715067,
+      962.3061271677757,
+      1638.4219943313074,
+      2299.7314141085935,
+      2977.651046910814,
+      3647.439882466336,
+      4356.125264010315,
+      5057.484199850137,
+      5724.9488893354555
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "ebitda": [
+     61.923,
+     51.649999998045,
+     246.86000000480607,
+     425.25400010803924,
+     625.0070000461002,
+     803.6149998214672,
+     973.5489995546543,
+     1127.0989994546117,
+     1282.1131165339518,
+     1422.6295076174,
+     1540.659741901373
+    ],
+    "capex": [
+     0.887,
+     14.620178258783065,
+     68.63887734868456,
+     110.95392101828281,
+     154.18202820540068,
+     194.27144009355328,
+     232.52268582485024,
+     267.2415924976584,
+     303.77312068093266,
+     336.88803045685717,
+     364.7037217723553
+    ],
+    "da": [
+     18.906,
+     24.925234711229997,
+     48.60156239666382,
+     67.1481926714411,
+     86.09501753443737,
+     103.66615620626203,
+     120.43162896973968,
+     135.6488819786903,
+     151.660604709691,
+     166.17482790161782,
+     178.36641032544793
+    ],
+    "sbc": [
+     12.502,
+     10.427923388329999,
+     49.84002260969407,
+     85.85704034608638,
+     126.18635264080139,
+     162.2465760342358,
+     196.555554356738,
+     227.55667023854716,
+     258.85338538035086,
+     287.2230690411113,
+     311.05288977037554
+    ],
+    "debt": [
+     378.62794453974345,
+     378.62794453974345,
+     378.62794453974345,
+     1063.135000270098,
+     1562.5175001152504,
+     2009.037499553668,
+     2433.8724988866356,
+     2817.747498636529,
+     3205.2827913348797,
+     3556.5737690435,
+     3851.649354753433
+    ],
+    "cash": [
+     72.927,
+     62.908003555047955,
+     135.4587806715067,
+     962.3061271677757,
+     1638.4219943313074,
+     2299.7314141085935,
+     2977.651046910814,
+     3647.439882466336,
+     4356.125264010315,
+     5057.484199850137,
+     5724.9488893354555
+    ],
+    "interest": [
+     24.18,
+     36.620894795883984,
+     36.620894795883984,
+     36.620894795883984,
+     102.8264172261239,
+     151.126692611147,
+     194.31410695683078,
+     235.4041480923154,
+     272.5325380681251,
+     310.0149515779096,
+     343.9918149418873
+    ],
+    "debt_to_ebitda": [
+     6.114496141009696,
+     7.330647522828168,
+     1.5337760047491373,
+     2.5,
+     2.5,
+     2.5,
+     2.5,
+     2.5,
+     2.5,
+     2.5,
+     2.5
+    ],
+    "terminal_capex": 364.7037217723553,
+    "terminal_da": 178.36641032544793
+   },
+   "min_cash": 62.908003555047955,
+   "not_a_valuation": false,
+   "not_a_valuation_reason": [],
+   "flags": []
+  },
+  "bear": {
+   "ok": true,
+   "stopped": false,
+   "value_per_share": 89.12714549267243,
+   "value_per_share_DDM": 89.12714549267244,
+   "validation": {
+    "errors": [],
+    "warnings": [
+     "average EBITDA growth is 68.7% and there are no acquisitions. If that growth includes acquired EBITDA, use an organic path and book the purchase price with acquisitions, or MnA stays zero.",
+     "forecast evidence mentions acquisitions but the case has none, so MnA stays zero"
+    ],
+    "missing": []
+   },
+   "log": [],
+   "sanity_flags": [],
+   "defaults_filled": [
+    "baseline.noa",
+    "baseline.nol",
+    "distribution.mode",
+    "forecast.dwc.mode",
+    "rates.gt",
+    "rates.re",
+    "rates.roict",
+    "rates.t",
+    "year"
+   ],
+   "rates": {
+    "risk_free": {
+     "value": 0.05103,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+     "as_of": "2026-11-15"
+    },
+    "re": {
+     "value": 0.10603,
+     "source": "assumption",
+     "evidence": "0.055 plus the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "gt": {
+     "value": 0.05103,
+     "source": "assumption",
+     "evidence": "Terminal growth equals the 10-year yield.",
+     "derived_from": [
+      "rates.risk_free"
+     ]
+    },
+    "rd": {
+     "value": 0.09672,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Pinned at the v05 default, year-0 interest 24.18 / unadjusted year-0 debt 250, so raising baseline.debt does not recompute a lower cost of debt. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    },
+    "t": {
+     "value": 0.21,
+     "source": "assumption",
+     "evidence": "US federal statutory tax rate. No marginal rate was stated."
+    },
+    "roict": {
+     "value": 0.15,
+     "source": "assumption",
+     "evidence": "Terminal ROIC of 15 percent."
+    },
+    "inflation": {
+     "value": 0.0224,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"David May, 22 November 2026: rerun HROW with the v03 price, shares, risk-free rate and year-0 interest, and pin inflation to the FRED 10-year breakeven of 2.24 percent on 13 November 2026.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+     "as_of": "2026-11-13"
+    },
+    "lam": {
+     "value": 1,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rerun the HROW finagle with lambda=1, the inflation pass-through coefficient on the reinvestment rate.\" [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    }
+   },
+   "rates_rd": {
+    "value": 0.09672,
+    "source": "prompt",
+    "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Pinned at the v05 default, year-0 interest 24.18 / unadjusted year-0 debt 250, so raising baseline.debt does not recompute a lower cost of debt. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+   },
+   "debt_policy": {
+    "mode": {
+     "value": "target",
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Target Debt/EBITDA policy; leverage and start_year are the next two items. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    },
+    "leverage": {
+     "value": 2.5,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Debt/EBITDA target of 2.5x. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    },
+    "start_year": {
+     "value": 3,
+     "source": "prompt",
+     "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. Year 3 is FY2028E (year 0 is FY2025A, year 1 is FY2026E). Years 1-2 hold year-0 debt; the target applies from year 3. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]"
+    }
+   },
+   "cash_share_schedule": {
+    "label": "COMPUTED OUTSIDE run_case from cash_share_adjustments per collaborative-run.md. t=0 when item date is on or before the price date; else days/365.25. Discount = 1/(1+re)^t. includes_adjustments true on baseline.cash means the stated cash is already the opening used in the case; the schedule is NOT subtracted from cash. The present value was added to baseline.debt in prompt_inputs instead.",
+    "price_date": "2026-11-15",
+    "cost_of_equity": 0.10603,
+    "includes_adjustments_cash": true,
+    "includes_adjustments_shares": false,
+    "opening_cash": 72.927,
+    "opening_shares": 37.229705,
+    "items": [
+     {
+      "name": "TYRVAYA close cash paid",
+      "kind": "cash",
+      "date": "2026-10-01",
+      "t_years": 0.0,
+      "probability": 1.0,
+      "source_list": "bear",
+      "discount_factor": 1.0,
+      "amount": -30.0,
+      "present_value": -30.0,
+      "new_shares": 0.0,
+      "status": "computed, not applied to cash (includes_adjustments true on baseline.cash; PV already in baseline.debt)"
+     },
+     {
+      "name": "Melt FDA-approval milestone payable",
+      "kind": "cash",
+      "date": "2030-12-31",
+      "t_years": 4.125941136208077,
+      "probability": 1.0,
+      "source_list": "bear",
+      "discount_factor": 0.65981216472262,
+      "amount": -87.16794,
+      "present_value": -57.51446718581146,
+      "new_shares": 0.0,
+      "status": "computed, not applied to cash (includes_adjustments true on baseline.cash; PV already in baseline.debt)"
+     }
+    ],
+    "sum_pv_cash": -87.51446718581147,
+    "sum_new_shares": 0.0,
+    "adjusted_cash_if_schedule_were_applied": -14.587467185811462,
+    "cash_used_in_case": 72.927,
+    "shares_used_in_case": 37.229705,
+    "cash_schedule_applied_to_case": false,
+    "shares_schedule_applied_to_case": false,
+    "complete": true
+   },
+   "year0_cash_used": 72.927,
+   "year0_debt_used": 337.51446718581144,
+   "year0_cash_leaf": {
+    "value": 72.927,
+    "source": "prompt",
+    "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. includes_adjustments is true so the runner does not subtract the schedule from this stated cash again. Cash stays at the unadjusted opening; the present value is added to debt instead. [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD"
+   },
+   "year0_debt_leaf": {
+    "value": 337.51446718581144,
+    "source": "prompt",
+    "evidence": "David 2026-11-22: \"rather than reduce cash for these adjustments, increase debt. Then after use the method to run to a target leverage of 2.5x, starting in year 3. Add the present value to debt and keep rd at 9.67%\" Both 22 Nov 2026 messages quoted in full in the quote field (t242u and the answer to card t242s879). PV convention is v05's: discounted at re 0.10603 from the pinned price date 2026-11-15. Year-0 10-K cash is 72.927 and year-0 10-K debt is 250. baseline.debt is 250 plus the absolute present value of the bear cash_share_adjustments as computed in v05 (sum_pv_cash -87.51446718581147). [quotes relayed by the Forecaster; recorded as provenance, not as a first-hand transcript]",
+    "period_end": "2025-12-31",
+    "basis": "fiscal_year",
+    "currency": "USD"
+   },
+   "cash_stayed_at_prompt_no_csa_subtraction": true,
+   "shares_used": 37.229705,
+   "price_used": 28.3,
+   "per_year_from_notebook_replay": {
+    "label": "COMPUTED OUTSIDE run_case: replay of run_case notebook_code (display_fin skipped)",
+    "cols": {
+     "revenue": [
+      272.303,
+      337.486000075372,
+      601.9610001020201,
+      781.9909999658224,
+      919.5510000162334,
+      1017.5760000763529,
+      1126.486000345461,
+      1240.4990002236257,
+      1364.8813539780483,
+      1479.333934876329,
+      1579.104160334882
+     ],
+     "ebitda": [
+      61.923,
+      35.330000024438995,
+      170.28200012452,
+      286.1110002014928,
+      375.0870001381318,
+      434.90900014504626,
+      491.69100015519757,
+      559.8490000864911,
+      635.3462280212891,
+      704.8163122171848,
+      765.3745443553406
+     ],
+     "da": [
+      18.906,
+      23.431656343944,
+      41.79415822788876,
+      54.293642910117924,
+      63.84443508263556,
+      70.65031181236907,
+      78.21193421494178,
+      86.12785793115711,
+      94.76372599019837,
+      102.71016982101511,
+      109.63721756753058
+     ],
+     "capex": [
+      0.887,
+      10.742866601482845,
+      50.73228587760904,
+      77.95336592717571,
+      98.75285365601796,
+      113.5745299072759,
+      130.04205108578256,
+      147.28116122699615,
+      166.0881490116105,
+      183.3937251315271,
+      198.47928473728837
+     ],
+     "sbc": [
+      12.502,
+      7.132982257085999,
+      34.37923817574648,
+      57.764638737126155,
+      75.72852858755105,
+      87.80634529679389,
+      99.27039846164236,
+      113.03121940282789,
+      128.27380040892973,
+      142.29952578749808,
+      154.52598474767805
+     ],
+     "interest": [
+      24.18,
+      32.644399266211686,
+      32.644399266211686,
+      32.644399266211686,
+      69.18163984872096,
+      90.69603663340027,
+      105.16099623507218,
+      118.89088383752679,
+      135.37148822091356,
+      153.6267179355477,
+      170.42458429411528
+     ],
+     "tax": [
+      3.771,
+      0.0,
+      12.907482935481347,
+      29.69574705048778,
+      34.92980329003709,
+      39.008824344521436,
+      43.90001096114367,
+      50.777798172145644,
+      58.15681481426198,
+      64.29777872135601,
+      69.46521912666351
+     ],
+     "tax_cash": [
+      3.771,
+      0.0,
+      7.052884988492783,
+      29.69574705048778,
+      34.92980329003709,
+      39.008824344521436,
+      43.90001096114367,
+      50.777798172145644,
+      58.15681481426198,
+      64.29777872135601,
+      69.46521912666351
+     ],
+     "wacc": [
+      0.10323953395222003,
+      0.10349386113377183,
+      0.10369344152859608,
+      0.10143264577231538,
+      0.10039004408379804,
+      0.09988827725052793,
+      0.09949446236244858,
+      0.09900525546884874,
+      0.09847999197681082,
+      0.09807705365775048,
+      0.09781500406665453
+     ],
+     "value_per_share": [
+      89.12714549267243,
+      96.81877616860447,
+      105.86304870825859,
+      104.57576649067366,
+      107.09727635571132,
+      111.64699149722615,
+      116.62823207388912,
+      120.9291793763712,
+      124.72090248509686,
+      128.9502591149097,
+      133.92348312781837
+     ],
+     "shares": [
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705,
+      37.229705
+     ],
+     "debt": [
+      337.51446718581144,
+      337.51446718581144,
+      337.51446718581144,
+      715.277500503732,
+      937.7175003453295,
+      1087.2725003626156,
+      1229.227500387994,
+      1399.6225002162278,
+      1588.3655700532227,
+      1762.0407805429618,
+      1913.4363608883516
+     ],
+     "cash": [
+      72.927,
+      57.73675189965847,
+      103.20994371611849,
+      569.0258262545306,
+      887.9600008519328,
+      1141.3382648322736,
+      1396.610808269209,
+      1696.8737455444373,
+      2033.0727909470056,
+      2367.9465660780006,
+      2691.821617872986
+     ]
+    },
+    "error": null
+   },
+   "paths": {
+    "ebitda": [
+     61.923,
+     35.330000024438995,
+     170.28200012452,
+     286.1110002014928,
+     375.0870001381318,
+     434.90900014504626,
+     491.69100015519757,
+     559.8490000864911,
+     635.3462280212891,
+     704.8163122171848,
+     765.3745443553406
+    ],
+    "capex": [
+     0.887,
+     10.742866601482845,
+     50.73228587760904,
+     77.95336592717571,
+     98.75285365601796,
+     113.5745299072759,
+     130.04205108578256,
+     147.28116122699615,
+     166.0881490116105,
+     183.3937251315271,
+     198.47928473728837
+    ],
+    "da": [
+     18.906,
+     23.431656343944,
+     41.79415822788876,
+     54.293642910117924,
+     63.84443508263556,
+     70.65031181236907,
+     78.21193421494178,
+     86.12785793115711,
+     94.76372599019837,
+     102.71016982101511,
+     109.63721756753058
+    ],
+    "sbc": [
+     12.502,
+     7.132982257085999,
+     34.37923817574648,
+     57.764638737126155,
+     75.72852858755105,
+     87.80634529679389,
+     99.27039846164236,
+     113.03121940282789,
+     128.27380040892973,
+     142.29952578749808,
+     154.52598474767805
+    ],
+    "debt": [
+     337.51446718581144,
+     337.51446718581144,
+     337.51446718581144,
+     715.277500503732,
+     937.7175003453295,
+     1087.2725003626156,
+     1229.227500387994,
+     1399.6225002162278,
+     1588.3655700532227,
+     1762.0407805429618,
+     1913.4363608883516
+    ],
+    "cash": [
+     72.927,
+     57.73675189965847,
+     103.20994371611849,
+     569.0258262545306,
+     887.9600008519328,
+     1141.3382648322736,
+     1396.610808269209,
+     1696.8737455444373,
+     2033.0727909470056,
+     2367.9465660780006,
+     2691.821617872986
+    ],
+    "interest": [
+     24.18,
+     32.644399266211686,
+     32.644399266211686,
+     32.644399266211686,
+     69.18163984872096,
+     90.69603663340027,
+     105.16099623507218,
+     118.89088383752679,
+     135.37148822091356,
+     153.6267179355477,
+     170.42458429411528
+    ],
+    "debt_to_ebitda": [
+     5.450550961449081,
+     9.553197479545455,
+     1.9820912776394535,
+     2.5,
+     2.5,
+     2.5,
+     2.5000000000000004,
+     2.5,
+     2.5,
+     2.5,
+     2.5
+    ],
+    "terminal_capex": 198.47928473728837,
+    "terminal_da": 109.63721756753058
+   },
+   "min_cash": 57.73675189965847,
+   "not_a_valuation": false,
+   "not_a_valuation_reason": [],
+   "flags": []
+  }
+ },
+ "artifact_sha256": {
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/valuation_request_v06.json": "8cad3282baaf7389837b3db6339d4db29c30fc60e7ca03f446108f2b150d757e",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/case_base_v06.json": "1fb9bd4b0c173cdd58a5498b7c966f31e140bcd46a0f3bde6e235e871cac40aa",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/case_bull_v06.json": "d4cad791c065a9410a25bdd4286098e95355ee58db646d25199c1967730b03a5",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/case_bear_v06.json": "afa8b2ce2161b389b4948e999e8fbee5d7e2f75fba570d9f8b6323fda21f4575",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/notebook_base_v06.py": "776369acfa1533b9976556577aa8d1a3717cd6c4df806c1c23c7f3f62948f97e",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/notebook_bull_v06.py": "0a6522f6baa26dc657a80ff9410fd9d382a6e7614b49bf9d212d2b0169d1bb02",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/notebook_bear_v06.py": "36ea625ae247cdd728da19c026f92d570e258405449eeb91e0a7ead66ba8c467",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/run/run_hrow_v06.py": "dce49dec861707973729032c35114cad92e2e316a24f50d6a8787220f857f79b",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/run/baseline_v06.json": "6f650450a16571101aa9ac8cc20870150ef053eb705882ffe1052129df428b0e",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/run/case_base_v06.json": "1fb9bd4b0c173cdd58a5498b7c966f31e140bcd46a0f3bde6e235e871cac40aa",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/run/case_bull_v06.json": "d4cad791c065a9410a25bdd4286098e95355ee58db646d25199c1967730b03a5",
+  "/workspace/forecaster-work/output/HROW/2026-11-22/collab/run/case_bear_v06.json": "afa8b2ce2161b389b4948e999e8fbee5d7e2f75fba570d9f8b6323fda21f4575"
+ }
+}
